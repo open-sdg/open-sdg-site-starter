@@ -1,0 +1,113 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# For many of the values below, you will need to replace [github-org],
+# [site-repo], and [data-repo] with the appropriate values.
+
+# Replace this title as needed.
+title: Indicators For The Sustainable Development Goals
+# Replace the baseurl with the name of this repository.
+baseurl: "/[site-repo]"
+url: ""
+data_dir: data
+environment: staging
+# Replace [github-org] and [data-repo] as needed.
+remotedatabaseurl: "https://[github-org].github.io/[data-repo]"
+
+jekyll_get_data:
+  - data: meta
+    # Replace [github-org] and [data-repo] as needed.
+    json: 'https://[github-org].github.io/[data-repo]/meta/all.json'
+  - data: headlines
+    # Replace [github-org] and [data-repo] as needed.
+    json: 'https://[github-org].github.io/[data-repo]/headline/all.json'
+  - data: schema
+    # Replace [github-org] and [data-repo] as needed.
+    json: 'https://[github-org].github.io/[data-repo]/meta/schema.json'
+  - data: translations
+    # Note: No need to change the org and repo below.
+    json: 'https://opendataenterprise.github.io/sdg-translations/translations.json'
+
+analytics:
+  ga_prod: ''
+
+# Replace the email addresses below.
+email_contacts:
+  questions: test@example.com
+  suggestions: test@example.com
+  functional: test@example.com
+
+# Github Repo for Data
+# Replace this value as needed.
+repo_name: [data-repo]
+branch: develop
+# Replace this value as needed.
+org_name: [github-org]
+
+# Build settings
+markdown: kramdown
+
+# Travis Support
+exclude: [vendor, scripts, remotedata]
+
+# International Support
+# Eg name: Australia and adjective: Australian
+country:
+  name: Australia
+  adjective: Australian
+
+# Pages
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+  posts:
+    output: true
+    permalink: /news/:year/:month/:day/:title.html
+  indicators:
+    output: true
+  goals:
+    output: true
+
+# Menu
+menu:
+  # Use these to customise the main navigation.
+  - path: /reporting-status
+    # The "translation_key" refers to the member of the "menu" group in the
+    # [sdg-translations](translations repositor).
+    translation_key: reporting_status
+  - path: /about
+    translation_key: about
+  - path: /guidance
+    translation_key: guidance
+  - path: /faq
+    translation_key: faq
+
+# The list of languages that are translated. The first one is the default.
+languages:
+  - en
+  - es
+  - fr
+
+# This makes sure that all pages have a language.
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      language: "en"
+
+# Tell Jekyll to use the Remote Theme plugin.
+plugins:
+  - jekyll-remote-theme
+
+# Tell the Remote Theme plugin to use the ONSdigital/sdg-theme repo.
+remote_theme: ONSdigital/sdg-theme
+
+# Apply any custom CSS.
+custom_css:
+  - /assets/css/custom.scss
