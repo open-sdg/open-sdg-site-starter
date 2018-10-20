@@ -4,28 +4,20 @@ permalink: /guidance/
 layout: page
 ---
 
-This page shares information for people using this website and for countries wishing to take a copy of it.
+This page shares information for people using this website and for countries or localities wishing to take a copy of it.
 
-We have also developed a set of [wiki pages]( https://github.com/datasciencecampus/sdg-indicators/wiki) which include more detailed technical information.
+## The platform
+
+This site is built and hosted using an open-source platform with 100% free software and services. For detailed documentation on the underlying platform, including information for developers, data providers, and policy makers, see [here](https://github.com/ONSdigital/sdg-theme).
 
 ## Using this website
+
 Answers to some specific questions about the website are included in our [Frequently Asked Questions]({{ site.baseurl }}/faq/) page.
 
-View this [presentation (.ppsx file 6.45Mb)]({{ site.baseurl}}/public/NRP VIDEO DEMO May2018.ppsx) on the site's main features.
-
-Our wiki pages also include more detailed information for people adding data and metadata:
-- [Raw data format]( https://github.com/datasciencecampus/sdg-indicators/wiki/Raw-data-format)
--	[Metadata format](https://github.com/datasciencecampus/sdg-indicators/wiki/Metadata-format)
-- [Data scenarios and characteristics](https://github.com/datasciencecampus/sdg-indicators/wiki/Data-scenarios-and-characteristics)
+The platform documentation includes [information for people adding data and metadata](https://github.com/ONSdigital/sdg-theme/docs/data-providers/index.md).
 
 ## Creating a copy of this website
-Other countries wishing to reuse this UK SDG reporting platforms or the [US SDG reporting platform](https://sdg.data.gov/) are welcome to do so for free.
 
-The technical guidance in our [wiki pages]( https://github.com/datasciencecampus/sdg-indicators/wiki) is aimed at countries taking a copy of the UK website, including information such as:
--	[Required skill sets](https://github.com/datasciencecampus/sdg-indicators/wiki/Required-skill-sets)
--	[How do we create our own NRP](https://github.com/datasciencecampus/sdg-indicators/wiki/How-do-we-create-our-own-NRP)
--	[What do we need to change]( https://github.com/datasciencecampus/sdg-indicators/wiki/What-do-we-need-to-change)
--	[Development installation instructions](https://github.com/datasciencecampus/sdg-indicators/wiki/Development-installation-instructions)
--	[Differences between the US and UK]( https://github.com/datasciencecampus/sdg-indicators/wiki/Differences-between-the-US-and-UK-NRPs)
+Other countries or localities wishing to implement a version of this platform are welcome to do so for free.
 
-The US also provide various guidance and information on the [training materials page]( https://gsa.github.io/sdg-indicators/training/) of their reporting platform.
+The platform documentation includes [technical information and instructions for developers](https://github.com/ONSdigital/sdg-theme/).
