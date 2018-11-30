@@ -1,3 +1,4 @@
-# Sustainable Development Goals - Indicators starter
+# Open SDG - Site starter
 
-This is a starter repository to help in implementing the [sdg-theme](https://github.com/ONSdigital/sdg-theme) platform. See there for documentation.
+This is a starter repository to help in implementing the [Open SDG](https://github.com/open-sdg/open-sdg) platform. [See here for documentation](https://github.com/open-sdg/open-sdg/tree/master/docs).
+
