@@ -1,12 +1,13 @@
-# Welcome to Jekyll!
+# Jekyll configuration for Open SDG platform
 #
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
-
-# For many of the values below, you will need to replace [github-org],
-# [site-repo], and [data-repo] with the appropriate values.
+# You will need to change all of the capitalized variables below according
+# to your Github setup. For example, if your site and data repositories are:
+# -- https://github.com/my-awesome-github-org/my-awesome-site-repo
+# -- https://github.com/my-awesome-github-org/my-awesome-data-repo
+# Then you would want to make these replacements throughout this file:
+# -- replace "MY-GITHUB-ORG" with "my-awesome-github-org"
+# -- replace "OPEN-SDG-SITE-STARTER" with "my-awesome-site-repo"
+# -- replace "OPEN-SDG-DATA-STARTER" with "my-awesome-data-repo"
 
 # Replace this title as needed.
 title: Indicators For The Sustainable Development Goals
@@ -14,25 +15,24 @@ baseurl: ""
 url: ""
 data_dir: data
 environment: production
-# Replace [github-org] and [data-repo] as needed.
-remotedatabaseurl: "https://[github-org].github.io/[data-repo]"
+# Replace MY-GITHUB-ORG and OPEN-SDG-DATA-STARTER as needed.
+remotedatabaseurl: "https://MY-GITHUB-ORG.github.io/OPEN-SDG-DATA-STARTER"
 
 jekyll_get_data:
   - data: meta
-    # Replace [github-org] and [data-repo] as needed.
-    json: 'https://[github-org].github.io/[data-repo]/meta/all.json'
+    # Replace MY-GITHUB-ORG and OPEN-SDG-DATA-STARTER as needed.
+    json: 'https://MY-GITHUB-ORG.github.io/OPEN-SDG-DATA-STARTER/meta/all.json'
   - data: headlines
-    # Replace [github-org] and [data-repo] as needed.
-    json: 'https://[github-org].github.io/[data-repo]/headline/all.json'
+    # Replace MY-GITHUB-ORG and OPEN-SDG-DATA-STARTER as needed.
+    json: 'https://MY-GITHUB-ORG.github.io/OPEN-SDG-DATA-STARTER/headline/all.json'
   - data: schema
-    # Replace [github-org] and [data-repo] as needed.
-    json: 'https://[github-org].github.io/[data-repo]/meta/schema.json'
+    # Replace MY-GITHUB-ORG and OPEN-SDG-DATA-STARTER as needed.
+    json: 'https://MY-GITHUB-ORG.github.io/OPEN-SDG-DATA-STARTER/meta/schema.json'
   - data: translations
-    # Note: No need to change the org and repo below.
     json: 'https://opendataenterprise.github.io/sdg-translations/translations.json'
 
 analytics:
-  # For production you likely want to include a Google Analytics code below.
+  # For production, you likely want to enter a Google Analytics code below.
   ga_prod: ''
 
 # Replace the email addresses below.
@@ -43,10 +43,10 @@ email_contacts:
 
 # Github Repo for Data
 # Replace this value as needed.
-repo_name: [data-repo]
+repo_name: OPEN-SDG-DATA-STARTER
 branch: develop
 # Replace this value as needed.
-org_name: [github-org]
+org_name: MY-GITHUB-ORG
 
 # Build settings
 markdown: kramdown
@@ -78,7 +78,7 @@ menu:
   # Use these to customise the main navigation.
   - path: /reporting-status
     # The "translation_key" refers to the member of the "menu" group in the
-    # [sdg-translations](translations repositor).
+    # SDG Translations repository.
     translation_key: reporting_status
   - path: /about
     translation_key: about
@@ -90,8 +90,6 @@ menu:
 # The list of languages that are translated. The first one is the default.
 languages:
   - en
-  - es
-  - fr
 
 # This makes sure that all pages have a language.
 defaults:
@@ -105,8 +103,8 @@ defaults:
 plugins:
   - jekyll-remote-theme
 
-# Tell the Remote Theme plugin to use the ONSdigital/sdg-theme repo.
-remote_theme: ONSdigital/sdg-theme
+# Tell the Remote Theme plugin to use the Open SDG platform (Jekyll theme).
+remote_theme: open-sdg/open-sdg
 
 # Apply any custom CSS.
 custom_css:
