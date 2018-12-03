@@ -1,7 +1,21 @@
 #!/usr/bin/env bash
 # This script deploys the built site to the prod-pages branch of the same repo.
-git config --global user.email "no-reply@example.com"
-git config --global user.name "CircleCI"
+
+# Customize these variables for your specific implementation.
+###################################
+# This is the Github organisation or username of your fork. For example, if
+# your fork is located at https://github.com/xyz/open-sdg-site-starter, then
+# you should put "xyz" here. Changing this is required.
+GH_ORG_PROD="CHANGEME"
+# These variables only control the name/email on the automated Git commits.
+# Changing this is optional.
+GH_NAME="CircleCI"
+GH_EMAIL="no-reply@example.com"
+###################################
+
+# There is probably no need to modify anything below this point.
+git config --global user.email $GH_EMAIL
+git config --global user.name $GH_NAME
 
 # CircleCI will identify the SSH key with a "Host" of gh-prod. In order to tell
 # Git to use this key, we need to hack the SSH key:
