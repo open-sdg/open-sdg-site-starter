@@ -29,7 +29,7 @@ jekyll_get_data:
     # Replace MY-GITHUB-ORG and OPEN-SDG-DATA-STARTER as needed.
     json: 'https://MY-GITHUB-ORG.github.io/OPEN-SDG-DATA-STARTER/meta/schema.json'
   - data: translations
-    json: 'https://opendataenterprise.github.io/sdg-translations/translations.json'
+    json: 'https://open-sdg.github.io/sdg-translations/translations.json'
 
 analytics:
   # For production, you likely want to enter a Google Analytics code below.
