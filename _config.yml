@@ -77,15 +77,14 @@ collections:
 menu:
   # Use these to customise the main navigation.
   - path: /reporting-status
-    # The "translation_key" refers to the member of the "menu" group in the
-    # SDG Translations repository.
-    translation_key: reporting_status
+    # The "translation_key" refers to the key in the SDG Translations repository.
+    translation_key: menu.reporting_status
   - path: /about
-    translation_key: about
+    translation_key: menu.about
   - path: /guidance
-    translation_key: guidance
+    translation_key: menu.guidance
   - path: /faq
-    translation_key: faq
+    translation_key: menu.faq
 
 # The list of languages that are translated. The first one is the default.
 languages:
