@@ -19,8 +19,8 @@ JEKYLL_BASEURL=$(
 )
 # We have to create a temporary folder to test in, because html-proofer does not
 # like Jekyll's "baseurl", and interprets most links as broken.
-mkdir -p ./_test$JEKYLL_BASEURL
-cp -r ./_site/* ./_test$JEKYLL_BASEURL/
-touch ./_test/index.html
-bundle exec htmlproofer --disable-external ./_test
+mkdir -p ./_test$JEKYLL_BASEURL &&
+cp -r ./_site/* ./_test$JEKYLL_BASEURL/ &&
+touch ./_test/index.html &&
+bundle exec htmlproofer --disable-external ./_test &&
 rm -rf ./_test
