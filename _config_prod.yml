@@ -35,6 +35,9 @@ analytics:
   # For production, you likely want to enter a Google Analytics code below.
   ga_prod: ''
 
+# Social media accounts.
+twitter: 'MyTwitterAccount'
+
 # Replace the email addresses below.
 email_contacts:
   questions: test@example.com
