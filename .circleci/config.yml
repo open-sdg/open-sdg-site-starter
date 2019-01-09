@@ -86,6 +86,7 @@ workflows:
               ignore:
                 - master
                 - develop
+                - gh-pages
   deploy:
     jobs:
       #- deploy_prod:
