@@ -5,30 +5,30 @@
 # -- https://github.com/my-awesome-github-org/my-awesome-site-repo
 # -- https://github.com/my-awesome-github-org/my-awesome-data-repo
 # Then you would want to make these replacements throughout this file:
-# -- replace "MY-GITHUB-ORG" with "my-awesome-github-org"
-# -- replace "OPEN-SDG-SITE-STARTER" with "my-awesome-site-repo"
-# -- replace "OPEN-SDG-DATA-STARTER" with "my-awesome-data-repo"
+# -- replace "my-github-org" with "my-awesome-github-org"
+# -- replace "open-sdg-site-starter" with "my-awesome-site-repo"
+# -- replace "open-sdg-data-starter" with "my-awesome-data-repo"
 
 # Replace this title as needed.
 title: Indicators For The Sustainable Development Goals
 # Replace the baseurl with the name of this repository.
-baseurl: "/OPEN-SDG-SITE-STARTER"
+baseurl: "/open-sdg-site-starter"
 url: ""
 data_dir: data
 environment: staging
-# Replace MY-GITHUB-ORG and OPEN-SDG-DATA-STARTER as needed.
-remotedatabaseurl: "https://MY-GITHUB-ORG.github.io/OPEN-SDG-DATA-STARTER"
+# Replace my-github-org and open-sdg-data-starter as needed.
+remotedatabaseurl: "https://my-github-org.github.io/open-sdg-data-starter"
 
 jekyll_get_data:
   - data: meta
-    # Replace MY-GITHUB-ORG and OPEN-SDG-DATA-STARTER as needed.
-    json: 'https://MY-GITHUB-ORG.github.io/OPEN-SDG-DATA-STARTER/meta/all.json'
+    # Replace my-github-org and open-sdg-data-starter as needed.
+    json: 'https://my-github-org.github.io/open-sdg-data-starter/meta/all.json'
   - data: headlines
-    # Replace MY-GITHUB-ORG and OPEN-SDG-DATA-STARTER as needed.
-    json: 'https://MY-GITHUB-ORG.github.io/OPEN-SDG-DATA-STARTER/headline/all.json'
+    # Replace my-github-org and open-sdg-data-starter as needed.
+    json: 'https://my-github-org.github.io/open-sdg-data-starter/headline/all.json'
   - data: schema
-    # Replace MY-GITHUB-ORG and OPEN-SDG-DATA-STARTER as needed.
-    json: 'https://MY-GITHUB-ORG.github.io/OPEN-SDG-DATA-STARTER/meta/schema.json'
+    # Replace my-github-org and open-sdg-data-starter as needed.
+    json: 'https://my-github-org.github.io/open-sdg-data-starter/meta/schema.json'
   - data: translations
     json: 'https://open-sdg.github.io/sdg-translations/translations.json'
 
@@ -46,10 +46,10 @@ email_contacts:
 
 # Github Repo for Data
 # Replace this value as needed.
-repo_name: OPEN-SDG-DATA-STARTER
+repo_name: open-sdg-data-starter
 branch: develop
 # Replace this value as needed.
-org_name: MY-GITHUB-ORG
+org_name: my-github-org
 
 # Build settings
 markdown: kramdown
