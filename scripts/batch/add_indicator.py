@@ -17,13 +17,9 @@ What this script does NOT do:
    similar script specifically for the data repository.
 1. This script does not do any translation.
 """
-import shutil
-import fileinput
-import glob
 import sys
 import os
 import yaml
-from string import Template
 
 def get_indicator_content(id, language):
     lines = [
