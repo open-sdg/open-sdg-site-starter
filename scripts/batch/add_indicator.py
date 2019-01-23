@@ -36,6 +36,13 @@ def get_indicator_content(id, language):
     ]
     return "\n".join(lines)
 
+def get_translation_entry(id, name):
+    lines = [
+        id + ':',
+        '  title: ' + name,
+    ]
+    return "\n".join(lines)
+
 def add_indicator(id, name):
     # First get all the languages for this site.
     languages = []
@@ -52,8 +59,20 @@ def add_indicator(id, name):
         # Special case for default language.
         if language == default_language:
             filepath = os.path.join('_indicators', filename)
-        with open(filepath, "w") as text_file:
-            text_file.write(content)
+        f = open(filepath, 'w')
+        f.write(content)
+        f.close()
+
+    # Now create the translation files if necessary.
+    for language in languages:
+        filename = 'global_indicators.yml'
+        folder = os.path.join('data', 'translations', language)
+        os.makedirs(folder, exist_ok=True)
+        filepath = os.path.join(folder, filename)
+        content = get_translation_entry(id, name)
+        f = open(filepath, 'a')
+        f.write("\n" + content)
+        f.close()
 
 def main():
 
