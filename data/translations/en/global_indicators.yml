@@ -1,0 +1,146 @@
+1.3.1.a:
+  title: Proportion of registered disabled people to the total number of population at the end of the year
+1.3.1.b:
+  title: Children with disabilities from diseases (aged 0-17 years)
+1.3.1.c:
+  title: Proportion of pensioners to the total number of population at the end of the year
+1.3.1.d:
+  title: Ratio of elderly pensioners.               Ratio of age pensioners and the retirement age stipulated by law and aged population
+1.3.1.e:
+  title: Proportion of families receiving family benefits to households
+1.3.1.f:
+  title: Proportion of families receiving social benefits to households
+1.3.1.g:
+  title: Proportion of beneficiaries of old age, disability and in case of losing a breadwinner to the total number of population at the end of the year
+1.3.1.h:
+  title: Children of orphans (aged 0-17 years) at the end of the year
+1.3.1.i:
+  title: Children who return to relatives from orphanages (aged 0-17 years)
+1.3.1.j:
+  title: Children with disabilities living in orphanages (aged 0-17 years) at the end of the year
+1.3.1.ja:
+  title: Adopted children (aged 0-17 years)
+1.3.1.jb:
+  title: Adopted children by social groups (aged 0-17 years)
+1.3.1.jc:
+  title: Number of beneficiaries receiving maternity benefits granted to non-employed person at the end of the year
+1.4.1.a:
+  title: Centralized water supply
+1.4.1.b:
+  title: Centralized sewerage system
+1.5.1.a:
+  title: Number of deaths,  temporarily evacuated and directly affected persons attributed to disasters per 100,000 population  by types of disasters
+3.1.1.a:
+  title: Maternal mortality ratio (average three-year indicator)
+3.2.2.a:
+  title: Infant mortality rate
+3.3.1.a:
+  title: HIV infection transmission from HIV-infected mothers with non-breastfeeding to child
+3.3.1.b:
+  title: Percentage of people living with HIV, who know their  status
+3.3.1.c:
+  title: Percentage of people living with HIV, who know their  status, who receive ARV treatment
+3.3.1.d:
+  title: Percentage of HIV patients, who receive ARV   treatment, who have unrecognized level of viral load (VL)
+3.3.2.a:
+  title: Multi-drug resistant tuberculosis morbidity indicator (per 100,000 population)
+3.3.3.a:
+  title: Number of local cases in malaria per year
+3.3.4.a:
+  title: 0-18 years old  patients with acute hepatitis B  ( per 100,000 population)
+3.3.4.b:
+  title: Coverage of 3 doses of vaccine with hepatitis B alone or combined ingredient with 95 and more ingredients
+3.3.5.a:
+  title: Number of patients with leishmaniasis
+3.3.5.b:
+  title: Case of death from leishmaniosis
+3.5.1.a:
+  title: The number of patients suffering from drug addiction
+3.7.2.a:
+  title: Adolescent birth rate (aged 15-17 years) per 1,000 women in that age group
+3.8.1.a:
+  title: Providing antenatal care and care by qualified specialis
+3.8.1.b:
+  title: At least one ultrasound examination during pregnancy
+3.8.1.c:
+  title: During the first two days after birth, the mother's postnatal check
+3.8.1.d:
+  title: During the first two days after birth, the newborn testing
+3.9.1.a:
+  title: Number of deaths caused by registered social-domestic toxication cases
+3.b.1.a:
+  title: Indicator of coverage  in vaccines among targeted quantities, 1 year of age
+3.b.1.b:
+  title: Indicator of coverage  in vaccines among targeted quantities, 2 years of age
+3.b.1.c:
+  title: Indicator of coverage  in vaccines among targeted quantities, 7 years of age
+3.c.1.a:
+  title: Number of physicians conducting professional activities per 10,000 population
+4.1.1b:
+  title: Proportion of children at the end of primary achieving at least a minimum proficiency level in  (i) reading and (ii) mathematics
+4.1.1c:
+  title: Proportion of children at the end of lower secondary achieving at least a minimum proficiency level in (i) reading and (ii) mathematics
+4.2.2.a:
+  title: Gross enrolment  of children 3 -5 years of age in pre-primary education
+4.3.1.a:
+  title: Gross Enrollment Ration in general educatioin
+4.4.1.a:
+  title: Number of pupils per computer in general education schools
+4.5.1.a:
+  title: Gender parity index
+4.6.1.a:
+  title: Literacy rate among population aged from 10-24  years old
+4.c.1.a:
+  title: Proportion of trained teachers
+5.6.1.a:
+  title: Women currently married or in union that are using any type of contraception, only Condition 3 "She can make a decision about healthcare either by herself or jointly" fulfilled
+5.a.1.a.a:
+  title: Proportion of households with ownership over agricultural land
+5.a.1.b.a.1:
+  title: Proportion of women age 15-49 with ownership (alone, jointly with someone else or both alone and jointly with someone else) over agricultural or non-agricultural land, who have a title deed and their name is listed on the title deed
+5.a.1.b.a.2:
+  title: Proportion of men age 15-49 with ownership (alone, jointly with someone else or both alone and jointly with someone else) over agricultural or non-agricultural land, who have a title deed and their name is listed on the title deed
+5.b.1.a:
+  title: Proportion of households who own a mobile telephone
+6.1.1.a:
+  title: Proportion of  households with centralized water supply
+6.2.1.a:
+  title: Proportion of population using safely managed sanitation facility
+6.2.1.b:
+  title: Proportion of population using hand-washing facility with soap and water
+6.2.1.c:
+  title: Proportion of population using sanitary-hygienic services defined by sanitation norms
+6.3.1.a:
+  title: Proportion of insufficiently treated wastewater
+7.1.2.a:
+  title: Proportion of households with primary reliance on clean fuels and technology
+8.5.1.a:
+  title: Average Monthly Nominal Wages / Salaries
+10.7.2.a:
+  title: Percentage of returned migrants who undertook paid work during the last 7 days
+10.7.2.b:
+  title: Proportion of individual asylum applications granted
+11.5.1.a:
+  title: Number of deaths,  temporarily evacuated and directly affected persons attributed to disasters per 100,000 population  by types of disasters
+12.3.1.a:
+  title: Food loss
+13.1.1.a:
+  title: Number of deaths,  temporarily evacuated and directly affected persons attributed to disasters per 100,000 population  by types of disasters
+14.3.1.a:
+  title: Average Lake Sevan acidity (pH) measured at agreed suite of representative sampling stations
+14.5.1.a:
+  title: Coverage of protected water areas in relation to lakes and reservoirs
+14.a.1.a:
+  title: Budget allocated to research and complex protection related to lake Sevan
+15.5.1.a.1:
+  title: Registered vertebrate and invertebrate species, of which
+15.5.1.a.2:
+  title: Registered high and low plant species, of which
+16.1.1.a:
+  title: Number of homicide cases per 100,000 population
+17.1.1.a:
+  title: Total central government revenue as a proportion of GDP, by source, including
+17.3.1.a:
+  title: Foreign direct investments (FDI)
+17.4.1.a:
+  title: External debt service as percentage of exports goods and services
