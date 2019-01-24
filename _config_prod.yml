@@ -11,32 +11,32 @@
 
 # Replace this title as needed.
 title: Indicators For The Sustainable Development Goals
+# Replace the baseurl with the name of this repository.
 baseurl: ""
 url: ""
 data_dir: data
 environment: production
 # Replace my-github-org and open-sdg-data-starter as needed.
-remotedatabaseurl: "https://my-github-org.github.io/open-sdg-data-starter"
+remotedatabaseurl: "https://armstat.github.io/sdg-data-armenia/prod"
 
 jekyll_get_data:
   - data: meta
     # Replace my-github-org and open-sdg-data-starter as needed.
-    json: 'https://my-github-org.github.io/open-sdg-data-starter/meta/all.json'
+    json: 'https://armstat.github.io/sdg-data-armenia/prod/meta/all.json'
   - data: headlines
     # Replace my-github-org and open-sdg-data-starter as needed.
-    json: 'https://my-github-org.github.io/open-sdg-data-starter/headline/all.json'
+    json: 'https://armstat.github.io/sdg-data-armenia/prod/headline/all.json'
   - data: schema
     # Replace my-github-org and open-sdg-data-starter as needed.
-    json: 'https://my-github-org.github.io/open-sdg-data-starter/meta/schema.json'
+    json: 'https://armstat.github.io/sdg-data-armenia/prod/meta/schema.json'
   - data: translations
     json: 'https://open-sdg.github.io/sdg-translations/translations.json'
 
 analytics:
-  # For production, you likely want to enter a Google Analytics code below.
   ga_prod: ''
 
 # Social media accounts.
-twitter: 'MyTwitterAccount'
+#twitter: 'MyTwitterAccount'
 
 # Replace the email addresses below.
 email_contacts:
@@ -46,10 +46,10 @@ email_contacts:
 
 # Github Repo for Data
 # Replace this value as needed.
-repo_name: open-sdg-data-starter
+repo_name: sdg-data-armenia
 branch: develop
 # Replace this value as needed.
-org_name: my-github-org
+org_name: armstat
 
 # Build settings
 markdown: kramdown
@@ -60,9 +60,8 @@ exclude: [vendor, scripts, remotedata]
 # International Support
 # Eg name: Australia and adjective: Australian
 country:
-  name: Australia
-  adjective: Australian
-
+  name: Armenia
+  adjective: Armenian
 # Pages
 collections:
   pages:
@@ -92,6 +91,7 @@ menu:
 # The list of languages that are translated. The first one is the default.
 languages:
   - en
+  - ru
 
 # This makes sure that all pages have a language.
 defaults:
