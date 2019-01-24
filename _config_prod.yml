@@ -33,7 +33,7 @@ jekyll_get_data:
     json: 'https://open-sdg.github.io/sdg-translations/translations.json'
 
 analytics:
-  ga_prod: ''
+  ga_prod: 'UA-4464980-1'
 
 # Social media accounts.
 #twitter: 'MyTwitterAccount'
