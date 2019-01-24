@@ -42,9 +42,14 @@ def get_translation_entry(id, name):
 def add_indicator(id, name):
     # First get all the languages for this site.
     languages = []
-    with open('_config.yml', 'r') as stream:
-        config = yaml.load(stream)
-        languages = config['languages']
+    try:
+        with open('_config.yml', 'r') as stream:
+            config = yaml.load(stream)
+            languages = config['languages']
+    except FileNotFoundError:
+        print('[FAILED] - Please run this script from the root of the repository.')
+        return False
+
     default_language = languages[0]
 
     # Now write the indicator files.
@@ -70,6 +75,8 @@ def add_indicator(id, name):
         f.write("\n" + content)
         f.close()
 
+    return True
+
 def main():
 
     # Abort if there is no parameter provided.
@@ -77,8 +84,8 @@ def main():
         sys.exit('Provide the id number and name of this indicator.')
     id = sys.argv[1]
     name = sys.argv[2]
-    add_indicator(id, name)
-    print("Remember to update and deploy the data repository first, before deploying this change.")
+    if add_indicator(id, name):
+        print("[SUCCESS] - Please commit and push the changes.")
 
 # Boilerplace syntax for running the main function.
 if __name__ == '__main__':
