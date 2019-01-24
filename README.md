@@ -16,8 +16,7 @@ This will create a new "1.2.z" indicator called "Title of indicator".
 >
 > `py -m pip install pyyaml`
 
-Note that this only creates template files. You will still need to customize
-these files as needed, and then add/commit/push them with Git.
+Note that you will still need to add/commit/push these files with Git.
 
 Finally, the next step is to perform the same steps in the other repository (if
 you have not already).
