@@ -20,3 +20,17 @@ Note that you will still need to add/commit/push these files with Git.
 
 Finally, the next step is to perform the same steps in the other repository (if
 you have not already).
+
+## Google Analytics
+
+The UA code for Google Analytics can be set, for the production site, in the
+`_config_prod.yml` file.
+
+## Production deployments
+
+To start a production deployment, merge the `develop` branch into `master`. You
+can do this in Github.com by creating a new pull-request. The steps are:
+
+1. Click "New pull request"
+2. Set "base: master" and "compare: develop"
+3. Click "Create pull request"
