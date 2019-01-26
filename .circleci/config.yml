@@ -72,7 +72,7 @@ jobs:
           command: bash scripts/test/html_proofer_prod.sh
       - add_ssh_keys:
           fingerprints:
-            - "81:8e:09:df:01:76:e1:0f:e6:d6:88:43:cf:69:f5:68"
+            - "6b:a9:5c:8e:32:74:2f:d0:f7:e4:e2:75:ea:dc:09:ac"
       - run:
           name: Deploy to server
           command: bash scripts/deploy/circleci/deploy_prod_server.sh
