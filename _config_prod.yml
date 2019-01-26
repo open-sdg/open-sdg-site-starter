@@ -40,9 +40,9 @@ analytics:
 
 # Replace the email addresses below.
 email_contacts:
-  questions: test@example.com
-  suggestions: test@example.com
-  functional: test@example.com
+  questions: sdg@armstat.am
+  suggestions: sdg@armstat.am
+  functional: sdg@armstat.am
 
 # Github Repo for Data
 # Replace this value as needed.
