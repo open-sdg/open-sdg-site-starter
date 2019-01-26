@@ -49,6 +49,33 @@ jobs:
       - run:
           name: Deploy to Github
           command: bash scripts/deploy/circleci/deploy_prod.sh
+  deploy_prod_server:
+    docker:
+      - image: circleci/ruby:2.5.1
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - restore_cache:
+          key: test-dependencies-{{ checksum "Gemfile" }}
+      - run:
+          name: Install Ruby dependencies
+          command: bundle check --path=vendor/bundle || bundle install --path=vendor/bundle
+      - save_cache:
+          key: test-dependencies-{{ checksum "Gemfile" }}
+          paths:
+            - vendor/bundle
+      - run:
+          name: Build the Jekyll site
+          command: bundle exec jekyll build --config _config_prod.yml
+      - run:
+          name: Test the HTML
+          command: bash scripts/test/html_proofer_prod.sh
+      - add_ssh_keys:
+          fingerprints:
+            - "81:8e:09:df:01:76:e1:0f:e6:d6:88:43:cf:69:f5:68"
+      - run:
+          name: Deploy to server
+          command: bash scripts/deploy/circleci/deploy_prod_server.sh
   deploy_staging:
     docker:
       - image: circleci/ruby:2.5.1
@@ -90,7 +117,11 @@ workflows:
                 - prod-pages
   deploy:
     jobs:
-      - deploy_prod:
+      #- deploy_prod:
+      #    filters:
+      #      branches:
+      #        only: master
+      - deploy_prod_server:
           filters:
             branches:
               only: master
