@@ -7,4 +7,5 @@ FOLDER="/var/www/html/"
 
 # The fully built site is already available at ~/repo/_site. Transfer it using
 # rsync.
+sudo apt install rsync
 rsync -avh ~/repo/_site/ $USERNAME@$SERVER:$FOLDER --delete
