@@ -8,4 +8,4 @@ FOLDER="/var/www/html/"
 # The fully built site is already available at ~/repo/_site. Transfer it using
 # rsync.
 sudo apt install rsync
-rsync -avh -e "ssh -o StrictHostKeyChecking=no" ~/repo/_site/ $USERNAME@$SERVER:$FOLDER --delete
+rsync -Oavh ~/repo/_site/ $USERNAME@$SERVER:$FOLDER --delete
