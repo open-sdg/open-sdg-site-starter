@@ -107,7 +107,7 @@ plugins:
   - jekyll-remote-theme
 
 # Tell the Remote Theme plugin to use the Open SDG platform (Jekyll theme).
-remote_theme: open-sdg/open-sdg
+remote_theme: open-sdg/open-sdg@0.3.0
 
 # Apply any custom CSS.
 custom_css:
