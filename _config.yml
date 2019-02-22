@@ -19,7 +19,7 @@ environment: staging
 # Replace my-github-org and open-sdg-data-starter as needed.
 remotedatabaseurl: "https://my-github-org.github.io/open-sdg-data-starter"
 
-jekyll_get_data:
+jekyll_get_json:
   - data: meta
     # Replace my-github-org and open-sdg-data-starter as needed.
     json: 'https://my-github-org.github.io/open-sdg-data-starter/meta/all.json'
@@ -104,6 +104,8 @@ defaults:
 # Tell Jekyll to use the Remote Theme plugin.
 plugins:
   - jekyll-remote-theme
+  - jekyll-get-json
+  - jekyll-open-sdg-plugins
 
 # Tell the Remote Theme plugin to use the Open SDG platform (Jekyll theme).
 remote_theme: open-sdg/open-sdg
