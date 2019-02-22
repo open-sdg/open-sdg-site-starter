@@ -39,7 +39,7 @@ jobs:
             - vendor/bundle
       - run:
           name: Build the Jekyll site
-          command: bundle exec jekyll build --config _config_prod.yml
+          command: bundle exec jekyll build --config _config.yml,_config_prod.yml
       - run:
           name: Test the HTML
           command: bash scripts/test/html_proofer_prod.sh
