@@ -101,6 +101,10 @@ defaults:
     values:
       language: "en"
 
+# Set a base for all goal image URLs. Note that the full goal image path will be
+# the base below, completed with: /[language]/[number].png (eg, /fr/6.png).
+goal_image_base: https://open-sdg.github.io/sdg-translations/assets/img/goals
+
 # Tell Jekyll to use the Remote Theme plugin.
 plugins:
   - jekyll-remote-theme
