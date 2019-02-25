@@ -19,7 +19,7 @@ environment: staging
 # Replace my-github-org and open-sdg-data-starter as needed.
 remotedatabaseurl: "https://armstat.github.io/sdg-data-armenia/staging"
 
-jekyll_get_data:
+jekyll_get_json:
   - data: meta
     # Replace my-github-org and open-sdg-data-starter as needed.
     json: 'https://armstat.github.io/sdg-data-armenia/staging/meta/all.json'
@@ -105,6 +105,8 @@ defaults:
 # Tell Jekyll to use the Remote Theme plugin.
 plugins:
   - jekyll-remote-theme
+  - jekyll-open-sdg-plugins
+  - jekyll-get-json
 
 # Tell the Remote Theme plugin to use the Open SDG platform (Jekyll theme).
 remote_theme: open-sdg/open-sdg@0.3.0
