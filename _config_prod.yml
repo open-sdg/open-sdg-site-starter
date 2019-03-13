@@ -94,6 +94,9 @@ languages:
   - am
   - ru
 
+# Point to remote location for goal images.
+goal_image_base: https://open-sdg.github.io/sdg-translations/assets/img/goals
+
 # This makes sure that all pages have a language.
 defaults:
   -
@@ -109,7 +112,7 @@ plugins:
   - jekyll-get-json
 
 # Tell the Remote Theme plugin to use the Open SDG platform (Jekyll theme).
-remote_theme: open-sdg/open-sdg@0.3.0
+remote_theme: open-sdg/open-sdg@0.4.0
 
 # Apply any custom CSS.
 custom_css:

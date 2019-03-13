@@ -1,3 +1,4 @@
+{% include multilingual.html %}
 {% include head.html %}
 {% include header.html %}
 {% assign goal_number = page.sdg_goal %}
@@ -7,7 +8,7 @@
   <div class="container">
     <div class="row">
       <div class="col-xs-4 col-md-3 col-lg-2">
-        <img src="{{ site.baseurl }}/assets/img/goals/{{ current_language }}/{{ goal_number }}.png" alt="{{ translated_goal.short }} - {{ t.general.goal }} {{ goal_number }}" />
+        <img src="{{ site.goal_image_base }}/{{ current_language }}/{{ goal_number }}.png" alt="{{ translated_goal.short }} - {{ t.general.goal }} {{ goal_number }}" />
       </div>
       <div class="col-xs-8 col-md-9 col-lg-10">
         <h1>
@@ -58,16 +59,32 @@
         {% assign status_desc = t.status.reported_online %}
         {% assign status_css = 'success' %}
       {% endif %}
+      {% assign tag_classes = "" | split: "," %}
+      {% if indicator.tags %}
+        {% for tag in indicator.tags %}
+          {% assign tag_slug = "indicator-" | append: tag | slugify %}
+          {% assign tag_classes = tag_classes | push: tag_slug %}
+        {% endfor %}
+      {% endif %}
+      {% assign tag_classes = tag_classes | join: " " %}
 
       {% assign translated_indicator = t.global_indicators[indicator.indicator] %}
 
-      <div class="col-md-12">
+      <div class="col-md-12 {{ tag_classes }}">
         <a href="{{ site.baseurl }}{{ baseurl_folder }}/{{ indicator.indicator | slugify }}">
           <span>
             <label class="hidden-md hidden-lg">{{ t.general.indicator }}</label>
             {{ indicator.indicator }}
             <span class="status {{ status_css }}">{{ status_desc }}</span>
           </span> {{ translated_indicator.title }}
+          {% if indicator.tags %}
+            <ul class="tags">
+            {% for tag in indicator.tags %}
+              {% assign tag_class = tag | slugify %}
+              <li class="tag-{{ tag_class }} warning">{{ tag | t }}</li>
+            {% endfor %}
+            </ul>
+          {% endif %}
         </a>
       </div>
     {% endfor %}
