@@ -30,13 +30,13 @@ jekyll_get_json:
     # Replace my-github-org and open-sdg-data-starter as needed.
     json: 'https://lilicica.github.io/open-sdg-data-starter/meta/schema.json'
   - data: translations
-    json: 'https://lilicica.github.io/sdg-translations/translations.json'
+    json: 'https://open-sdg.github.io/sdg-translations/translations.json'
 
 analytics:
   ga_prod: ''
 
 # Social media accounts.
-twitter: 'statisticamd'
+twitter: 'MyTwitterAccount'
 
 # Replace the email addresses below.
 email_contacts:
@@ -60,8 +60,8 @@ exclude: [vendor, scripts, remotedata]
 # International Support
 # Eg name: Australia and adjective: Australian
 country:
-  name: Moldova
-  adjective: Moldovan
+  name: Australia
+  adjective: Australian
 
 # Pages
 collections:
@@ -96,7 +96,6 @@ non_global_metadata: indicator.national_metadata
 # The list of languages that are translated. The first one is the default.
 languages:
   - en
-  - ro
 
 # This makes sure that all pages have a language.
 defaults:
