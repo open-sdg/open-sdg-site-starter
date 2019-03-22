@@ -60,8 +60,8 @@ exclude: [vendor, scripts, remotedata]
 # International Support
 # Eg name: Australia and adjective: Australian
 country:
-  name: Australia
-  adjective: Australian
+  name: Republic of Moldova
+  adjective: Moldovan
 
 # Pages
 collections:
