@@ -17,26 +17,26 @@ url: ""
 data_dir: data
 environment: staging
 # Replace my-github-org and open-sdg-data-starter as needed.
-remotedatabaseurl: "https://my-github-org.github.io/open-sdg-data-starter"
+remotedatabaseurl: "https://lilicica.github.io/open-sdg-data-starter"
 
 jekyll_get_json:
   - data: meta
     # Replace my-github-org and open-sdg-data-starter as needed.
-    json: 'https://my-github-org.github.io/open-sdg-data-starter/meta/all.json'
+    json: 'https://lilicica.github.io/open-sdg-data-starter/meta/all.json'
   - data: headlines
     # Replace my-github-org and open-sdg-data-starter as needed.
-    json: 'https://my-github-org.github.io/open-sdg-data-starter/headline/all.json'
+    json: 'https://lilicica.github.io/open-sdg-data-starter/headline/all.json'
   - data: schema
     # Replace my-github-org and open-sdg-data-starter as needed.
-    json: 'https://my-github-org.github.io/open-sdg-data-starter/meta/schema.json'
+    json: 'https://lilicica.github.io/open-sdg-data-starter/meta/schema.json'
   - data: translations
-    json: 'https://open-sdg.github.io/sdg-translations/translations.json'
+    json: 'https://lilicica.github.io/sdg-translations/translations.json'
 
 analytics:
   ga_prod: ''
 
 # Social media accounts.
-twitter: 'MyTwitterAccount'
+twitter: 'statisticamd'
 
 # Replace the email addresses below.
 email_contacts:
@@ -49,7 +49,7 @@ email_contacts:
 repo_name: open-sdg-data-starter
 branch: develop
 # Replace this value as needed.
-org_name: my-github-org
+org_name: lilicica
 
 # Build settings
 markdown: kramdown
