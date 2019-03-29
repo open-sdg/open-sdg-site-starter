@@ -96,6 +96,7 @@ non_global_metadata: indicator.national_metadata
 # The list of languages that are translated. The first one is the default.
 languages:
   - en
+  - ro
 
 # This makes sure that all pages have a language.
 defaults:
