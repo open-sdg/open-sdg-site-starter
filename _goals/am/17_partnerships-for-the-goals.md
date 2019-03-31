@@ -1,8 +1,8 @@
 ---
-permalink: /am/partnerships-for-the-goals/
+permalink: /am/17/
 language: am
 sdg_goal: '17'
 color: '#19486a'
-layout: goal
+layout: goal-by-target
 ---
 

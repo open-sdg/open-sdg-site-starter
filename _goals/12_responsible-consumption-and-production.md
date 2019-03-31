@@ -1,7 +1,7 @@
 ---
-permalink: /responsible-consumption-and-production/
+permalink: /12/
 sdg_goal: '12'
 color: '#c9992d'
-layout: goal
+layout: goal-by-target
 ---
 

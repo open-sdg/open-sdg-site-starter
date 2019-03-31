@@ -1,8 +1,8 @@
 ---
-permalink: /ru/good-health-and-well-being/
+permalink: /ru/3/
 language: ru
 sdg_goal: '3'
 color: '#4c9f38'
-layout: goal
+layout: goal-by-target
 ---
 

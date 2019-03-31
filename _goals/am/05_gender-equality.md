@@ -1,8 +1,8 @@
 ---
-permalink: /am/gender-equality/
+permalink: /am/5/
 language: am
 sdg_goal: '5'
 color: '#ff3a21'
-layout: goal
+layout: goal-by-target
 ---
 
