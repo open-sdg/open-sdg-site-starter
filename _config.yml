@@ -98,6 +98,7 @@ non_global_metadata: indicator.national_metadata
 
 # The list of languages that are translated. The first one is the default.
 languages:
+  - ru
   - en
 
 # This makes sure that all pages have a language.
@@ -106,7 +107,7 @@ defaults:
     scope:
       path: ""
     values:
-      language: "en"
+      language: "ru"
 
 # Set a base for all goal image URLs. Note that the full goal image path will be
 # the base below, completed with: /[language]/[number].png (eg, /fr/6.png).
