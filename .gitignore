@@ -14,3 +14,4 @@ deploy_key*.pub
 vendor/
 .bundle
 .idea
+_test
