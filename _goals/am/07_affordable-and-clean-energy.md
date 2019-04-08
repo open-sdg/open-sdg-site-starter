@@ -1,8 +1,8 @@
 ---
-permalink: /am/affordable-and-clean-energy/
+permalink: /am/7/
 language: am
 sdg_goal: '7'
 color: '#fcc30b'
-layout: goal
+layout: goal-by-target
 ---
 

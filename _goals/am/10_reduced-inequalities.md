@@ -1,8 +1,8 @@
 ---
-permalink: /am/reduced-inequalities/
+permalink: /am/10/
 language: am
 sdg_goal: '10'
 color: '#dd1367'
-layout: goal
+layout: goal-by-target
 ---
 
