@@ -5,8 +5,8 @@ language: am
 layout: page
 ---
 
-This website is for disseminating SDG indicator data. We are at an Alpha stage in development, so the site is still 'work in progress'.
+Այս վեբկայքը ԿԶՆ ցուցանիշների տվյալների տարածման համար է։ Այն մշակման շատ վաղ փուլում է, այսինքն՝ կայքն ամբողջացնելու աշխատանքները դեռևս ընթացքի մեջ են։
 
-Other countries wishing to reuse this site's underlying platform are welcome to do so for free. Our [Guidance page]({{ site.baseurl }}/guidance/) highlights key information on how to do this, linking to detailed technical instructions available in the platform's [documentation](https://open-sdg.readthedocs.io). The [Center for Open Data Enterprise (CODE)](http://www.opendataenterprise.org/) can also provide guidance and support through their [SDG National Reporting Initiative](https://www.sdgreporting.org/).
+Այլ երկրներ, որոնք կցանկանան օգտագործել այս կայքի հիմքում դրված հարթակը, կարող են անվճար օգտվել դրանից: Մեր [Ուղեցույց էջում]({{ site.baseurl }}/guidance/) տրված են հիմնական տեղեկություններ հարթակից օգտվելու վերաբերյալ, հղումներ կատարելով հարթակի  [փաստաթղթերում](https://open-sdg.readthedocs.io) ամփոփված մանրամասն տեխնիկական ցուցումների: Դրա հետ մեկտեղ [Բաց տվյալների ձեռնարկության կենտրոնը (CODE)](http://www.opendataenterprise.org/) կարող է ուղենիշներ տրամադրել եւ աջակցել իր [ԿԶՆ ազգային հաշվետվողականության](https://www.sdgreporting.org/) նախաձեռնության միջոցով:
 
-If you have any feedback on this website or SDG data, then please contact us at <a href="mailto:{{site.email_contacts.questions}}">{{site.email_contacts.questions}}</a>. The answers to some frequently asked questions are also available in our [FAQ]({{ site.baseurl }}/faq/).
+Եթե ունեք դիտողություններ այս վեբկայքի կամ ԿԶՆ տվյալների վերաբերյալ, խնդրում ենք դիմել մեզ հետևյալ հասցեով՝ <a href="mailto:{{site.email_contacts.questions}}">{{site.email_contacts.questions}}</a>. Հաճախակի տրվող որոշ հարցերի պատասխանները կարող եք տեսնել մեր [ՀՏՀ-ում]({{ site.baseurl }}/faq/).
