@@ -37,17 +37,6 @@ jekyll_get_json:
 
 analytics:
   ga_prod: ''
-
-# Mapping
-map_options:
-  tileURL: https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}
-  tileOptions:
-    id: mapbox.light
-    accessToken: pk.eyJ1IjoiYnJvY2tmYW5uaW5nMSIsImEiOiJjaXplbmgzczgyMmRtMnZxbzlmbGJmdW9pIn0.LU-BYMX69uu3eGgk0Imibg
-    attribution: <a href="https://www.mapbox.com">Mapbox</a> | <a href="http://geoportal.statistics.gov.uk/">ONS</a>
-  noValueColor: #7c7c7c
-  minZoom: 8
- 
  
 # Social media accounts.
 twitter: 'MyTwitterAccount'
@@ -135,3 +124,22 @@ remote_theme: open-sdg/open-sdg@0.5.0
 # Apply any custom CSS.
 custom_css:
   - /assets/css/custom.css
+  
+# Mapping
+map_options:
+  tileURL: https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}
+  tileOptions:
+    id: mapbox.light
+    accessToken: pk.eyJ1IjoiYnJvY2tmYW5uaW5nMSIsImEiOiJjaXplbmgzczgyMmRtMnZxbzlmbGJmdW9pIn0.LU-BYMX69uu3eGgk0Imibg
+    attribution: <a href="https://www.mapbox.com">Mapbox</a> | <a href="http://geoportal.statistics.gov.uk/">ONS</a>
+  noValueColor: #7c7c7c
+  minZoom: 8
+  
+  map_layers:
+  # Country
+  - min_zoom: 8
+    max_zoom: 10
+    serviceUrl: https://opendata.arcgis.com/datasets/493025a10e2f41eda90f57a5a38d5af8_1.geojson
+    nameProperty: ADM0_NAME
+    idProperty: ADM0_CODE
+    staticBorders: true
