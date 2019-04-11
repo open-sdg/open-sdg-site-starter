@@ -52,7 +52,7 @@ email_contacts:
 repo_name: open-sdg-data-starter
 branch: develop
 # Replace this value as needed.
-org_name: my-github-org
+org_name: sustainabledevelopment-kyrgyzstan
 
 # Build settings
 markdown: kramdown
@@ -63,8 +63,8 @@ exclude: [vendor, scripts, remotedata]
 # International Support
 # Eg name: Australia and adjective: Australian
 country:
-  name: Australia
-  adjective: Australian
+  name: Kyrgyzstan
+  adjective: Kyrgyz
 
 # Pages
 collections:
