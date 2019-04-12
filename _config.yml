@@ -133,11 +133,11 @@ map_options:
     accessToken: pk.eyJ1IjoiYnJvY2tmYW5uaW5nMSIsImEiOiJjaXplbmgzczgyMmRtMnZxbzlmbGJmdW9pIn0.LU-BYMX69uu3eGgk0Imibg
     attribution: <a href="https://www.mapbox.com">Mapbox</a> | <a href="http://geoportal.statistics.gov.uk/">ONS</a>
   noValueColor: #7c7c7c
-  minZoom: 8
+  minZoom: 6
   
 map_layers:
 # Country
-- min_zoom: 8
+- min_zoom: 6
   max_zoom: 10
   serviceUrl: https://opendata.arcgis.com/datasets/493025a10e2f41eda90f57a5a38d5af8_1.geojson
   nameProperty: ADM0_NAME
