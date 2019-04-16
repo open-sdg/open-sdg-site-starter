@@ -137,7 +137,7 @@ map_layers:
   # Country
   - min_zoom: 6
     max_zoom: 8
-    serviceUrl: https://opendata.arcgis.com/datasets/493025a10e2f41eda90f57a5a38d5af8_1.geojson
-    nameProperty: ADM0_NAME
-    idProperty: ADM0_CODE
+    serviceUrl: https://github.com/AshKyd/geojson-regions/blob/master/countries/50m/KGZ.geojson
+    nameProperty: sovereignt
+    idProperty: sov_a3
     staticBorders: true
