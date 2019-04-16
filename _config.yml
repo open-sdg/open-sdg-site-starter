@@ -137,7 +137,7 @@ map_layers:
   # Country
   - min_zoom: 6
     max_zoom: 8
-    serviceUrl: https://github.com/AshKyd/geojson-regions/blob/master/countries/50m/KGZ.geojson
+    serviceUrl: https://github.com/sustainabledevelopment-kyrgyzstan/open-sdg-site-starter/blob/maptest/boundaries/Country.geojson
     nameProperty: sovereignt
     idProperty: sov_a3
     staticBorders: true
