@@ -37,6 +37,7 @@ jekyll_get_json:
 
 analytics:
   ga_prod: ''
+  
  
 # Social media accounts.
 twitter: 'MyTwitterAccount'
