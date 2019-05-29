@@ -17,21 +17,21 @@ url: ""
 data_dir: data
 environment: staging
 # Replace my-github-org and open-sdg-data-starter as needed.
-remotedatabaseurl: "https://my-github-org.github.io/open-sdg-data-starter"
+remotedatabaseurl: "https://statisticamd.github.io/open-sdg-data-starter"
 
 jekyll_get_json:
   - data: meta
     # Replace my-github-org and open-sdg-data-starter as needed.
-    json: 'https://my-github-org.github.io/open-sdg-data-starter/meta/all.json'
+    json: 'https://statisticamd.github.io/open-sdg-data-starter/meta/all.json'
   - data: headlines
     # Replace my-github-org and open-sdg-data-starter as needed.
-    json: 'https://my-github-org.github.io/open-sdg-data-starter/headline/all.json'
+    json: 'https://statisticamd.github.io/open-sdg-data-starter/headline/all.json'
   - data: schema
     # Replace my-github-org and open-sdg-data-starter as needed.
-    json: 'https://my-github-org.github.io/open-sdg-data-starter/meta/schema.json'
+    json: 'https://statisticamd.github.io/open-sdg-data-starter/meta/schema.json'
   - data: reporting
     # Replace my-github-org and open-sdg-data-starter as needed.
-    json: 'https://my-github-org.github.io/open-sdg-data-starter/stats/reporting.json'
+    json: 'https://statisticamd.github.io/open-sdg-data-starter/stats/reporting.json'
   - data: translations
     json: 'https://open-sdg.github.io/sdg-translations/translations-0.5.0.json'
 
@@ -52,7 +52,7 @@ email_contacts:
 repo_name: open-sdg-data-starter
 branch: develop
 # Replace this value as needed.
-org_name: my-github-org
+org_name: statisticamd
 
 # Build settings
 markdown: kramdown
@@ -63,8 +63,8 @@ exclude: [vendor, scripts, remotedata]
 # International Support
 # Eg name: Australia and adjective: Australian
 country:
-  name: Australia
-  adjective: Australian
+  name: Moldova
+  adjective: Moldovan
 
 # Pages
 collections:
