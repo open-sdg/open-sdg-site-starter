@@ -1,5 +1,5 @@
 ---
-title: About
+title: O NAS
 permalink: /ru/about/
 language: ru
 layout: page
