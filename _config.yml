@@ -116,8 +116,8 @@ goal_image_base: https://open-sdg.github.io/sdg-translations/assets/img/goals
 # Tell Jekyll to use the Remote Theme plugin.
 plugins:
   - jekyll-remote-theme
-  - jekyll-get-json
   - jekyll-open-sdg-plugins
+  - jekyll-get-json
 
 # Tell the Remote Theme plugin to use the Open SDG platform (Jekyll theme).
 remote_theme: open-sdg/open-sdg@0.5.0
