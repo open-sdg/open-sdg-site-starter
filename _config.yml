@@ -66,6 +66,10 @@ country:
   name: Australia
   adjective: Australian
 
+# Optionally uncomment and update the settings below to control the frontpage heading and instructions.
+#frontpage_heading: Australian data for Sustainable Development Goal indicators
+#frontpage_instructions: Click on each goal, or <span id="jump-to-search"><a>search</a></span>, for Australian statistics for Sustainable Development Goal global indicators.
+
 # Pages
 collections:
   pages:
