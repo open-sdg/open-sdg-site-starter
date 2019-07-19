@@ -41,6 +41,9 @@ analytics:
 # Social media accounts.
 twitter: 'MyTwitterAccount'
 
+# Sticky share buttons (facebook, twitter and email)
+#sharethis_property: '5d279253faeee40012f195e1'
+
 # Replace the email addresses below.
 email_contacts:
   questions: test@example.com
