@@ -14,23 +14,9 @@
 baseurl: ""
 environment: production
 # Replace my-github-org and open-sdg-data-starter as needed.
-remotedatabaseurl: "https://my-github-org.github.io/open-sdg-data-starter"
-
-jekyll_get_json:
-  - data: meta
-    # Replace my-github-org and open-sdg-data-starter as needed.
-    json: 'https://my-github-org.github.io/open-sdg-data-starter/meta/all.json'
-  - data: headlines
-    # Replace my-github-org and open-sdg-data-starter as needed.
-    json: 'https://my-github-org.github.io/open-sdg-data-starter/headline/all.json'
-  - data: schema
-    # Replace my-github-org and open-sdg-data-starter as needed.
-    json: 'https://my-github-org.github.io/open-sdg-data-starter/meta/schema.json'
-  - data: reporting
-    # Replace my-github-org and open-sdg-data-starter as needed.
-    json: 'https://my-github-org.github.io/open-sdg-data-starter/stats/reporting.json'
-  - data: translations
-    json: 'https://open-sdg.github.io/sdg-translations/translations-0.5.0.json'
+remote_data_prefix: "https://my-github-org.github.io/open-sdg-data-starter"
+remote_translations:
+  - 'https://open-sdg.github.io/sdg-translations/translations-0.7.0.json'
 
 analytics:
   # For production, you likely want to enter a Google Analytics code below.

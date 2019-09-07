@@ -9,6 +9,9 @@
 # -- replace "open-sdg-site-starter" with "my-awesome-site-repo"
 # -- replace "open-sdg-data-starter" with "my-awesome-data-repo"
 
+# Tell the Remote Theme plugin to use the Open SDG platform (Jekyll theme).
+remote_theme: open-sdg/open-sdg@0.8.1
+
 # Replace this title as needed.
 title: Indicators For The Sustainable Development Goals
 # Replace the baseurl with the name of this repository.
@@ -17,23 +20,17 @@ url: ""
 data_dir: data
 environment: staging
 # Replace my-github-org and open-sdg-data-starter as needed.
-remotedatabaseurl: "https://my-github-org.github.io/open-sdg-data-starter"
+remote_data_prefix: "https://my-github-org.github.io/open-sdg-data-starter"
+remote_translations:
+  - https://open-sdg.github.io/sdg-translations/translations-0.7.0.json
 
-jekyll_get_json:
-  - data: meta
-    # Replace my-github-org and open-sdg-data-starter as needed.
-    json: 'https://my-github-org.github.io/open-sdg-data-starter/meta/all.json'
-  - data: headlines
-    # Replace my-github-org and open-sdg-data-starter as needed.
-    json: 'https://my-github-org.github.io/open-sdg-data-starter/headline/all.json'
-  - data: schema
-    # Replace my-github-org and open-sdg-data-starter as needed.
-    json: 'https://my-github-org.github.io/open-sdg-data-starter/meta/schema.json'
-  - data: reporting
-    # Replace my-github-org and open-sdg-data-starter as needed.
-    json: 'https://my-github-org.github.io/open-sdg-data-starter/stats/reporting.json'
-  - data: translations
-    json: 'https://open-sdg.github.io/sdg-translations/translations-0.5.2.json'
+# Automatically create indicator pages, goal pages,
+# and some other required pages.
+create_indicators:
+  layout: indicator
+create_goals:
+  layout: goal
+create_pages: true
 
 analytics:
   ga_prod: ''
@@ -122,11 +119,7 @@ goal_image_base: https://open-sdg.github.io/sdg-translations/assets/img/goals
 # Tell Jekyll to use the Remote Theme plugin.
 plugins:
   - jekyll-remote-theme
-  - jekyll-get-json
   - jekyll-open-sdg-plugins
-
-# Tell the Remote Theme plugin to use the Open SDG platform (Jekyll theme).
-remote_theme: open-sdg/open-sdg@0.6.2
 
 # Apply any custom CSS.
 custom_css:
