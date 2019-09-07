@@ -20,8 +20,8 @@ import sys
 import os
 
 def add_language(new_language):
-    # We only care about these three folders.
-    folders = ['_indicators', '_goals', '_pages']
+    # We only care about one folder.
+    folders = ['_pages']
     for folder in folders:
         new_folder = os.path.join(folder, new_language)
         # Abort if folder already exists.
