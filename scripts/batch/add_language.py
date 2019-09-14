@@ -53,7 +53,7 @@ def main():
         sys.exit('Provide a 2-letter abbreviation for the new language. Optionally also provide a second alternative abbreviation to use in permalinks.')
     language = sys.argv[1]
     language_public = language
-    if len(sys.argv) == 2:
+    if len(sys.argv) == 3:
         language_public = sys.argv[2]
     add_language(language, language_public)
     print("Don't forget to update the 'languages' list in _config.yml!")
