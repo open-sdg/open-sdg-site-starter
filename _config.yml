@@ -10,7 +10,7 @@
 # -- replace "open-sdg-data-starter" with "my-awesome-data-repo"
 
 # Tell the Remote Theme plugin to use the Open SDG platform (Jekyll theme).
-remote_theme: open-sdg/open-sdg@0.8.1
+remote_theme: open-sdg/open-sdg@0.10.0
 
 # Replace this title as needed.
 title: Indicators For The Sustainable Development Goals
@@ -22,7 +22,7 @@ environment: staging
 # Replace my-github-org and open-sdg-data-starter as needed.
 remote_data_prefix: "https://my-github-org.github.io/open-sdg-data-starter"
 remote_translations:
-  - https://open-sdg.github.io/sdg-translations/translations-0.7.0.json
+  - https://open-sdg.github.io/sdg-translations/translations-0.8.1.json
 
 # Automatically create indicator pages, goal pages,
 # and some other required pages.
