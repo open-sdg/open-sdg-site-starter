@@ -19,8 +19,9 @@ baseurl: "/open-sdg-site-starter"
 url: ""
 data_dir: data
 environment: staging
-# Replace my-github-org and open-sdg-data-starter as needed.
-remote_data_prefix: "https://my-github-org.github.io/open-sdg-data-starter"
+# Replace "open-sdg" with the name of your GitHub organization, and
+# "open-sdg-data-starter" with the name of your data repository.
+remote_data_prefix: "https://open-sdg.github.io/open-sdg-data-starter"
 remote_translations:
   - https://open-sdg.github.io/sdg-translations/translations-0.8.1.json
 
