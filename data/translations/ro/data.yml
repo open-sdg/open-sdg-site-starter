@@ -1,20 +1,20 @@
 Sex: Sex
 Age: Age
-Location: Location
-Employment status: Employment status
-Disaster type: disaster type
+Location: Locația
+Employment status: Statutul ocupării forței de muncă
+Disaster type: tip de dezastru
 Education type: education type
 Transportation type: transportation type
 Category: Category
-Type: Type
-female: female
-male: male
-number: number
+Type: Tip
+female: femeie
+male: barbat
+number: numar
 rural: rural
 urban: urban
 total: total
-children: children
-Access to services: Access to services
+children: copil
+Access to services: Acces la servicii
 aged 0-17 years: aged 0-17 years
 aged 5-11 years: aged 5-11 years
 aged 12-15 years: aged 12-15 years
