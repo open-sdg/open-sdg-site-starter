@@ -15,12 +15,17 @@ urban: urban
 total: total
 children: copil
 Access to services: Acces la servicii
-aged 0-17 years: aged 0-17 years
-aged 5-11 years: aged 5-11 years
-aged 12-15 years: aged 12-15 years
-aged 16-17 years: aged 16-17 years
-aged 18-39 years: aged 18-39 years
-aged 40-62 years: aged 40-62 years
+farmers: fermieri
+employees in the agricultural sector: angajati în sectorul agrar
+employees in the non-agricultural sector: angajati în sectorul non-agrar
+retirees: pensionari
+other: alte
+aged 0-17 years: în vârstă de 0-17 ani
+aged 5-11 years: în vârstă de 5-11 ani
+aged 12-15 years: în vârstă de 12-15 ani
+aged 16-17 years: în vârstă de 16-17 ani
+aged 18-39 years: în vârstă de 18-39 ani
+aged 40-62 years: în vârstă de 40-62 ani
 aged 63 and older: aged 63 and older
 aged 65 and older: aged 65 and older
 aged 0-16 years: aged 0-16 years
