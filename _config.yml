@@ -10,7 +10,7 @@
 # -- replace "open-sdg-data-starter" with "my-awesome-data-repo"
 
 # Tell the Remote Theme plugin to use the Open SDG platform (Jekyll theme).
-remote_theme: open-sdg/open-sdg@0.10.0
+remote_theme: open-sdg/open-sdg@master
 
 # Replace this title as needed.
 title: Indicators For The Sustainable Development Goals
