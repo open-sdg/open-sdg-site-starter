@@ -38,7 +38,7 @@ GEM
       pathutil (~> 0.9)
       rouge (>= 1.7, < 4)
       safe_yaml (~> 1.0)
-    jekyll-open-sdg-plugins (1.0.0.rc12)
+    jekyll-open-sdg-plugins (1.0.0.rc13)
       deep_merge (~> 1.2)
       jekyll (~> 3.0)
     jekyll-remote-theme (0.4.1)
@@ -87,7 +87,7 @@ DEPENDENCIES
   deep_merge
   html-proofer
   jekyll (= 3.8.4)
-  jekyll-open-sdg-plugins (= 1.0.0.rc12)
+  jekyll-open-sdg-plugins (= 1.0.0.rc13)
   jekyll-remote-theme
 
 BUNDLED WITH
