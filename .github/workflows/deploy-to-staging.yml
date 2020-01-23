@@ -32,3 +32,4 @@ jobs:
         ACCESS_TOKEN: ${{ secrets.token }}
         BRANCH: gh-pages
         FOLDER: _site
+        CLEAN: true
