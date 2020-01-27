@@ -132,6 +132,3 @@ plugins:
   - jekyll-remote-theme
   - jekyll-open-sdg-plugins
 
-# Apply any custom CSS.
-custom_css:
-  - /assets/css/custom.css
