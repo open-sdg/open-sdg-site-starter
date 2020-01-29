@@ -102,7 +102,7 @@ footer_menu:
     translation_key: general.twitter
   - path: https://facebook.com/MyFacebookAccount
     translation_key: general.facebook
-  - path: /cookies
+  - path: /about/cookies-and-privacy/
     translation_key: menu.cookies
 
 # Configure the text (or "translation key") to be used on the
