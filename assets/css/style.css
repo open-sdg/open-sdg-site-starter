@@ -16,7 +16,6 @@ html {
   min-height: 100%; }
 
 body {
-  background: #eaeaea;
   margin: 0 0 50px 0; }
 
 ul {
@@ -59,14 +58,14 @@ ul {
     margin-top: 5px;
     margin-bottom: 5px;
     border-style: solid;
-    border-color: #E5E6E7;
+    border-color: #000000;
     border-width: 1px; }
   #page-content td, #page-content th {
     padding-right: 5px;
     padding-left: 5px; }
   #page-content thead {
     padding-bottom: 10px;
-    border-bottom: 1pt solid #E5E6E7; }
+    border-bottom: 1pt solid #000000; }
 
 h1,
 h2,
@@ -1025,8 +1024,7 @@ body.contrast-high .navbar li.active a {
 
 footer {
   clear: left;
-  background-color: #414042;
-  color: #E5E6E7;
+  color: #000000;
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -1042,10 +1040,10 @@ footer {
       footer .row {
         padding: 5px 0; } }
   footer a {
-    color: #E5E6E7;
+    color: #000000;
     text-decoration: underline; }
     footer a:hover, footer a:focus {
-      color: white; }
+      color: #333333; }
   footer #footerLinks ul li {
     display: inline-block !important;
     margin: 3px 9px !important; }
