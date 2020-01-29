@@ -22,8 +22,6 @@ environment: staging
 # Replace "open-sdg" with the name of your GitHub organization, and
 # "open-sdg-data-starter" with the name of your data repository.
 remote_data_prefix: "https://open-sdg.github.io/open-sdg-data-starter"
-remote_translations:
-  - https://open-sdg.github.io/sdg-translations/translations-0.8.1.json
 
 # Automatically create indicator pages, goal pages,
 # and some other required pages.
