@@ -864,6 +864,8 @@ header {
       background: black; }
       .navbar ul.navbar-nav li.contrast-high a {
         color: yellow; }
+    .navbar ul.navbar-nav li:not(.contrast) a:hover {
+      border-bottom: 2px solid #aaaaaa; }
   .navbar.navbar-default {
     background: transparent;
     border: none;
