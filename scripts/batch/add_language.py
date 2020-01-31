@@ -21,7 +21,7 @@ import os
 
 def add_language(new_language, language_public):
     # We only care about one folder.
-    folders = ['_pages']
+    folders = ['_pages', '_posts']
     for folder in folders:
         new_folder = os.path.join(folder, new_language)
         # Abort if folder already exists.
