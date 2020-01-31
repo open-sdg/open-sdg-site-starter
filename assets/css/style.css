@@ -829,7 +829,8 @@ header {
     text-transform: uppercase; }
   .navbar ul.navbar-nav {
     float: right;
-    margin-top: 12px; }
+    margin-top: 12px;
+    clear: both; }
     .navbar ul.navbar-nav li a {
       padding: 2px;
       margin: 2px 15px;
@@ -890,8 +891,6 @@ header {
       height: 34px;
       transition: width 0.4s;
       margin-top: 5px; }
-      .navbar #search input:focus {
-        width: 350px; }
 
 #search-btn {
   height: 34px; }
