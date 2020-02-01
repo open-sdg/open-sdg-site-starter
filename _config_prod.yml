@@ -15,8 +15,6 @@ baseurl: ""
 environment: production
 # Replace my-github-org and open-sdg-data-starter as needed.
 remote_data_prefix: "https://my-github-org.github.io/open-sdg-data-starter"
-remote_translations:
-  - 'https://open-sdg.github.io/sdg-translations/translations-0.7.0.json'
 
 analytics:
   # For production, you likely want to enter a Google Analytics code below.

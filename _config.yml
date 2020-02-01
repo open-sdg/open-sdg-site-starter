@@ -10,6 +10,8 @@
 # -- replace "open-sdg-data-starter" with "my-awesome-data-repo"
 
 # Tell the Remote Theme plugin to use the Open SDG platform (Jekyll theme).
+# Recommended: set this to a particular "release" of Open SDG. For example:
+#remote_theme: open-sdg/open-sdg@0.10.0
 remote_theme: open-sdg/open-sdg@master
 
 # Replace this title as needed.
@@ -34,9 +36,6 @@ create_pages: true
 analytics:
   ga_prod: ''
 
-# Social media accounts.
-twitter: 'MyTwitterAccount'
-
 # Sticky share buttons (facebook, twitter and email)
 #sharethis_property: '5d279253faeee40012f195e1'
 
@@ -45,19 +44,6 @@ email_contacts:
   questions: test@example.com
   suggestions: test@example.com
   functional: test@example.com
-
-# Github Repo for Data
-# Replace this value as needed.
-repo_name: open-sdg-data-starter
-branch: develop
-# Replace this value as needed.
-org_name: my-github-org
-
-# Build settings
-markdown: kramdown
-
-# Travis Support
-exclude: [vendor, scripts, remotedata]
 
 # International Support
 # Eg name: Australia and adjective: Australian
@@ -113,14 +99,6 @@ non_global_metadata: indicator.national_metadata
 languages:
   - en
 
-# This makes sure that all pages have a language.
-defaults:
-  -
-    scope:
-      path: ""
-    values:
-      language: "en"
-
 # Set a base for all goal image URLs. Note that the full goal image path will be
 # the base below, completed with: /[language]/[number].png (eg, /fr/6.png).
 goal_image_base: https://open-sdg.github.io/sdg-translations/assets/img/goals
@@ -129,4 +107,3 @@ goal_image_base: https://open-sdg.github.io/sdg-translations/assets/img/goals
 plugins:
   - jekyll-remote-theme
   - jekyll-open-sdg-plugins
-
