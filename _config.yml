@@ -1,13 +1,4 @@
 # Jekyll configuration for Open SDG platform
-#
-# You will need to change all of the capitalized variables below according
-# to your Github setup. For example, if your site and data repositories are:
-# -- https://github.com/my-awesome-github-org/my-awesome-site-repo
-# -- https://github.com/my-awesome-github-org/my-awesome-data-repo
-# Then you would want to make these replacements throughout this file:
-# -- replace "my-github-org" with "my-awesome-github-org"
-# -- replace "open-sdg-site-starter" with "my-awesome-site-repo"
-# -- replace "open-sdg-data-starter" with "my-awesome-data-repo"
 
 # Tell the Remote Theme plugin to use the Open SDG platform (Jekyll theme).
 # Recommended: set this to a particular "release" of Open SDG. For example:
@@ -21,9 +12,14 @@ baseurl: "/open-sdg-site-starter"
 url: ""
 data_dir: data
 environment: staging
-# Replace "open-sdg" with the name of your GitHub organization, and
-# "open-sdg-data-starter" with the name of your data repository.
+
+# In the next few items, replace "open-sdg" with the name of your GitHub
+# organization, and "open-sdg-data-starter" with the name of your data repository.
 remote_data_prefix: "https://open-sdg.github.io/open-sdg-data-starter"
+# URL for the "Edit Data" button on indicators.
+data_edit_url: http://prose.io/#open-sdg/open-sdg-data-starter/edit/develop/data/indicator_[id].csv
+# URL for the "Edit Metadata" button on indicators.
+metadata_edit_url: http://prose.io/#open-sdg/open-sdg-data-starter/edit/develop/meta/[id].md
 
 # Automatically create indicator pages, goal pages,
 # and some other required pages.
@@ -101,7 +97,7 @@ languages:
 
 # Set a base for all goal image URLs. Note that the full goal image path will be
 # the base below, completed with: /[language]/[number].png (eg, /fr/6.png).
-goal_image_base: https://open-sdg.github.io/sdg-translations/assets/img/goals
+goal_image_base: https://open-sdg.github.io/translations-un-sdg/assets/img/goals
 
 # Tell Jekyll to use the Remote Theme plugin.
 plugins:
