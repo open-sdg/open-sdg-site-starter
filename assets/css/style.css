@@ -825,8 +825,6 @@ header {
 
 .navbar {
   margin-bottom: 32px; }
-  .navbar li {
-    text-transform: uppercase; }
   .navbar ul.navbar-nav {
     float: right;
     margin-top: 12px;
@@ -955,7 +953,8 @@ header {
           display: block;
           background: #58595B;
           padding: 6px 0 6px;
-          color: #E5E6E7; }
+          color: #E5E6E7;
+          font-size: 15px; }
           .navbar ul.navbar-nav li a:hover {
             color: #E5E6E7; }
         .navbar ul.navbar-nav li.active a {
@@ -1453,7 +1452,16 @@ body.contrast-high .goal-indicators .indicator-cards span.status, body.contrast-
   color: black !important; }
 
 .post-categories {
-  margin: 3px 0; }
+  padding: 0;
+  margin: 6px 10px 0 0;
+  list-style-type: none; }
+  .post-categories li {
+    margin-right: 6px;
+    padding: 4px 6px;
+    display: inline;
+    border-radius: 10px; }
+  .post-categories li a {
+    color: black; }
 
 .post-title {
   margin-top: 0; }
