@@ -672,6 +672,11 @@ body.contrast-high .warning {
 body.contrast-high .success {
   background-color: green; }
 
+.spacer.small {
+  margin-top: 15px; }
+.spacer.medium {
+  margin-top: 30px; }
+
 body.contrast-high .nav-tabs {
   border-color: yellow; }
 body.contrast-high #main-content .nav-tabs .nav-item.active a {
