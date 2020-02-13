@@ -1356,23 +1356,30 @@ footer {
   content: "";
   display: table;
   clear: both; }
-#main-content .nav-tabs .nav-item {
-  background: none;
-  border: none; }
-  #main-content .nav-tabs .nav-item a {
-    border: none;
-    padding-left: 5px; }
-    #main-content .nav-tabs .nav-item a:hover {
-      background: none; }
-  #main-content .nav-tabs .nav-item.active a {
-    border: none;
-    border-bottom: 2px solid black; }
-#main-content .tab-content .tab-pane {
-  padding-top: 1.5rem; }
-  #main-content .tab-content .tab-pane #datatable {
-    overflow-x: auto; }
-#main-content .tab-content h4 {
-  margin-top: 2rem !important; }
+#main-content .nav-tabs {
+  border-bottom: 1px solid #888; }
+  #main-content .nav-tabs .nav-item {
+    background: none;
+    border: none; }
+    #main-content .nav-tabs .nav-item a {
+      border: none; }
+    #main-content .nav-tabs .nav-item.active a {
+      border: 1px solid #888;
+      border-bottom: 0; }
+    #main-content .nav-tabs .nav-item:not(.active) a {
+      background-color: #eeeeee; }
+      #main-content .nav-tabs .nav-item:not(.active) a:hover {
+        text-decoration: underline; }
+#main-content .tab-content {
+  border: 1px solid #888;
+  padding: 15px;
+  border-top: 0; }
+  #main-content .tab-content .tab-pane {
+    padding-top: 1.5rem; }
+    #main-content .tab-content .tab-pane #datatable {
+      overflow-x: auto; }
+  #main-content .tab-content h4 {
+    margin-top: 2rem !important; }
 #main-content #selectionsTable {
   padding-bottom: 20px; }
   #main-content #selectionsTable div.dataTables_wrapper {
