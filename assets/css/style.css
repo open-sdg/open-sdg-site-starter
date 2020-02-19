@@ -1362,7 +1362,8 @@ footer {
     background: none;
     border: none; }
     #main-content .nav-tabs .nav-item a {
-      border: none; }
+      border: none;
+      color: black; }
     #main-content .nav-tabs .nav-item.active a {
       border: 1px solid #888;
       border-bottom: 0; }
