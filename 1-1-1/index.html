@@ -124,7 +124,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20200218001618">
+        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20200220001657">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -296,17 +296,163 @@ var translations = {
   
   <div class="row" id="indicatorData" data-indicatorid='indicator_1-1-1' data-id="1-1-1" data-country=""
   data-charttitle="Proportion of population below the international poverty line, by sex, age, employment status and geographical location (urban/rural)" data-measurementunit="" data-datasource="" data-copyright=""
-  data-geographicalarea="" data-footnote="" data-showdata="false" data-graphtype="line"
+  data-geographicalarea="" data-footnote="" data-showdata="true" data-graphtype="line"
   data-geocoderegex="" data-showmap="" data-startvalues="">
 
     
-    <div id="indicator-main" class="col-md-12">
+    <div id="indicator-sidebar" class="col-md-3">
+      <div id="toolbar">
+        <span id="series-help">
+          <h4>Sub-categories</h4>
+          <p>Choose categories from the dropdowns below to see different breakdowns of the data. Some will not be available until a higher level is chosen.</p>
+        </span>
+        <p>Click on the legend to remove individual lines from the chart.</p>
+        <div id="fields">
+          <p class="async-loading" data-img="/open-sdg-site-starter/assets/img/loading-small.gif"></p>
+        </div>
+      </div>
+      <div id="units"></div>
+    </div>
+    <div id="indicator-main" class="col-md-9">
     
+
+      
+      
+
+
+<div id="headlineTable">
+
+  <div id="datatables">
+
+    <a href="https://open-sdg.github.io/open-sdg-data-starter/en/headline/1-1-1.csv" class="btn btn-primary btn-download" download="indicator_1-1-1.csv" tabindex="0" role="button">Download Headline CSV</a>
+
+    <a href="https://open-sdg.github.io/open-sdg-data-starter/en/data/1-1-1.csv" class="btn btn-primary btn-download" style='float:left;margin-right:1em' download='indicator_1-1-1.csv' tabindex='0' role='button'>Download Source CSV</a>
+
+    <h3>Headline data</h3>
+    <table class="table-responsive table table-hover dataTable no-footer" role="grid">
+      <caption>Proportion of population below the international poverty line, by sex, age, employment status and geographical location (urban/rural)</caption>
+      <thead>
+        
+        
+        <th scope="col">Year</th>
+        
+        
+        
+        <th scope="col" class="table-value">Value</th>
+        
+        
+      </thead>
+      <tbody>
+        
+        <tr>
+          
+          
+          <td>2015</td>
+          
+          
+          
+          <td class="table-value">2</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2016</td>
+          
+          
+          
+          <td class="table-value">2</td>
+          
+          
+        </tr>
+        
+      </tbody>
+    </table>
+  </div>
+
+  <div id="datatableFooter">
+    
+    
+    
+    
+  </div>
+
+</div>
 
       
 
       <section>
 
+        
+        <p class="async-loading" data-img="/open-sdg-site-starter/assets/img/loading-small.gif"></p>
+        
+        <div class="async-loaded spacer medium" style="display:none;">
+          <ul class="nav nav-tabs data-view" role="tablist">
+            <li role="presentation" class="nav-item active">
+              <a class="nav-link" data-toggle="tab" href="#chartview" aria-controls="chartview" role="tab" data-on="click"
+data-event-category="Tab change"
+data-event-action="Change data view"
+data-event-label="Change to Chart tab"
+>Chart</a>
+            </li>
+            <li role="presentation" class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#tableview" aria-controls="tableview" role="tab" data-on="click"
+data-event-category="Tab change"
+data-event-action="Change data view"
+data-event-label="Change to Table tab"
+>Table</a>
+            </li>
+            <li role="presentation" class="nav-item map" style="display:none">
+              <a data-no-disagg="true" class="nav-link" data-toggle="tab" href="#mapview" aria-controls="mapview" role="tab" data-on="click"
+data-event-category="Tab change"
+data-event-action="Change data view"
+data-event-label="Change to Map tab"
+>Map</a>
+            </li></ul>
+
+          <!-- Tab panes -->
+          <div class="tab-content data-view">
+            <div role="tabpanel" class="tab-pane active" id="chartview">
+              
+
+    <div id="dataset-size-warning" style="display:none">
+      <i class="fa fa-bolt"></i> There are too many datasets to show on the chart. Not all will be shown until you remove some selections.
+    </div>
+
+    
+    <div id="selectionsChart">
+      <div id="chart-canvas">
+        <h3 class="chart-title">Proportion of population below the international poverty line, by sex, age, employment status and geographical location (urban/rural)</h3>
+        <div id="chart" class="plot-container">
+          
+<canvas></canvas>
+
+
+        </div>
+        <div id="plotLegend"></div>
+      </div>
+      <button id="btnSave" title="Download chart as image" class='btn btn-primary btn-download'>
+        Download Chart Image
+      </button>
+    </div>
+    <div id="chartSelectionDownload"></div>
+
+
+
+            </div>
+            <div role="tabpanel" class="tab-pane" id="tableview">
+              <div id="selectionsTable"></div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="mapview" class="map">
+              <div id="map">
+                <img src="/open-sdg-site-starter/assets/img/loading.gif" alt="Loading map" />
+              </div>
+            </div>
+            
+          </div>
+        </div>
         
 
         <!-- Nav tabs -->
@@ -470,6 +616,62 @@ data-event-label="Change to Sources tab"
       
       
       <tr>
+        <th scope="row">Quality assurance </th>
+        <td>
+          
+            
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      <tr>
+        <th scope="row">Comparability with international data/standards </th>
+        <td>
+          
+            
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      <tr>
+        <th scope="row">Other information </th>
+        <td>
+          
+            
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      <tr>
+        <th scope="row">Rational and interpretation </th>
+        <td>
+          
+            
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      <tr>
         <th scope="row">Data last updated </th>
         <td>
           
@@ -506,8 +708,8 @@ data-event-label="Change to Sources tab"
             
 
             
-              <a href="https://github.com/open-sdg/open-sdg-data-starter/commit/fd0349c31457de541222d97e3f113d8443aad38d" target="_blank">
-                2019-11-15: see changes on GitHub <span class="visuallyhidden">opens in a new window</span>
+              <a href="https://github.com/open-sdg/open-sdg-data-starter/commit/49e40d614fe5754edd2107725c865d81435e10d9" target="_blank">
+                2020-02-19: see changes on GitHub <span class="visuallyhidden">opens in a new window</span>
               </a>
             
 
@@ -836,6 +1038,10 @@ data-event-label="Change to Sources tab"
   
   
   
+  
+  
+  
+  
 </table>
 
               </article>
@@ -935,7 +1141,7 @@ data-event-label="Change to Sources tab"
 <script src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.3/dist/html2canvas.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js"></script>
-<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20200218001618'></script><script>
+<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20200220001657'></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
