@@ -1538,6 +1538,19 @@ body.contrast-high .goal-indicators .indicator-cards span.status, body.contrast-
   border-bottom: 1px solid #ccc; }
   #main-content .goal h2 {
     font-size: 1.6em; }
+  #main-content .goal .total {
+    line-height: 24px;
+    vertical-align: middle;
+    font-size: 0.65em;
+    width: auto;
+    padding-left: 4px;
+    padding-right: 4px;
+    text-align: center;
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: -2px;
+    border-radius: 4px;
+    border: 1px solid #ccc; }
 #main-content .frame {
   width: 115px;
   float: left;
@@ -1554,19 +1567,6 @@ body.contrast-high .goal-indicators .indicator-cards span.status, body.contrast-
     @media only screen and (max-width: 520px) {
       #main-content .details h3 {
         margin-bottom: 3px; } }
-    #main-content .details h3 .total {
-      line-height: 24px;
-      vertical-align: middle;
-      font-size: 0.65em;
-      width: auto;
-      padding-left: 4px;
-      padding-right: 4px;
-      text-align: center;
-      display: inline-block;
-      margin-left: 10px;
-      margin-top: -2px;
-      border-radius: 4px;
-      border: 1px solid #ccc; }
 #main-content .goal-overall {
   margin-bottom: 20px; }
   #main-content .goal-overall .details {
