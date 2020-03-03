@@ -255,6 +255,8 @@ body.contrast-high .btn {
     background: yellow !important; }
   body.contrast-high .btn:focus {
     background: yellow !important; }
+body.contrast-high #zip-download-info {
+  color: white; }
 
 .goal-1 {
   padding-top: 30px;
@@ -1463,6 +1465,10 @@ body.contrast-high caption {
   color: white; }
 body.contrast-high div#units {
   color: white; }
+body.contrast-high #legend li {
+  color: white !important; }
+  body.contrast-high #legend li:first-child .swatch {
+    background-color: white !important; }
 
 body.contrast-high .goal-indicators div span {
   border-color: white !important;

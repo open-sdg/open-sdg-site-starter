@@ -13,12 +13,10 @@ var opensdg = {
   // A base URL for asynchronous calls to SDG data.
   remoteDataBaseUrl: 'https://open-sdg.github.io/open-sdg-data-starter/en',
 
-  // A hook which can be replaced to modify the configuration for Chart.js.
-  // To see where this is used, see indicatorView.js createPlot() and updatePlot().
-  // To see an example of replacing it, see binary.html.
-  chartConfigAlter: function(config) {
-    // Alterations go here.
-    return config;
+  chartConfigAlterations: [],
+  // A hook which can be used to modify the configuration for Chart.js.
+  chartConfigAlter: function(callback) {
+    this.chartConfigAlterations.push(callback);
   },
 
   // A hook which can be replaced to alter whether/how the values that are
@@ -124,7 +122,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20200301001837">
+        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20200303001747">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -214,6 +212,8 @@ var translations = {
               <span class="status inprogress">0</span><strong>Statistics in progress</strong><span class="value">0%</span>
             </div><div>
               <span class="status notstarted">243</span><strong>Exploring data sources</strong><span class="value">100%</span>
+            </div><div>
+              <span class="status notapplicable">0</span><strong>Not applicable</strong><span class="value">0%</span>
             </div><br style="clear:both;">
           </div>
         </div>
@@ -226,7 +226,10 @@ var translations = {
             <span class="inprogress" style="width:0.0%" title="Statistics in progress: 0%"></span>
             
             
-            <span class="notstarted" style="width:99.59016393442623%" title="Exploring data sources: 100%"></span></div>
+            <span class="notstarted" style="width:99.59016393442623%" title="Exploring data sources: 100%"></span>
+            
+            
+            <span class="notapplicable" style="width:0.0%" title="Not applicable: 0%"></span></div>
 
       </div>
     <br style="clear:both;">
@@ -254,6 +257,8 @@ var translations = {
                 <span class="status inprogress">0</span><strong>Statistics in progress</strong><span class="value">0%</span>
               </div><div>
                 <span class="status notstarted">13</span><strong>Exploring data sources</strong><span class="value">93%</span>
+              </div><div>
+                <span class="status notapplicable">0</span><strong>Not applicable</strong><span class="value">0%</span>
               </div><br style="clear:both;">
             </div>
           </div>
@@ -266,7 +271,10 @@ var translations = {
             <span class="inprogress" style="width:0.0%" title="Statistics in progress: 0%"></span>
           
           
-            <span class="notstarted" style="width:92.85714285714286%" title="Exploring data sources: 93%"></span></div>
+            <span class="notstarted" style="width:92.85714285714286%" title="Exploring data sources: 93%"></span>
+          
+          
+            <span class="notapplicable" style="width:0.0%" title="Not applicable: 0%"></span></div>
           <div class="divider">
           </div>
         </div>
@@ -289,6 +297,8 @@ var translations = {
                 <span class="status inprogress">0</span><strong>Statistics in progress</strong><span class="value">0%</span>
               </div><div>
                 <span class="status notstarted">13</span><strong>Exploring data sources</strong><span class="value">100%</span>
+              </div><div>
+                <span class="status notapplicable">0</span><strong>Not applicable</strong><span class="value">0%</span>
               </div><br style="clear:both;">
             </div>
           </div>
@@ -301,7 +311,10 @@ var translations = {
             <span class="inprogress" style="width:0.0%" title="Statistics in progress: 0%"></span>
           
           
-            <span class="notstarted" style="width:100.0%" title="Exploring data sources: 100%"></span></div>
+            <span class="notstarted" style="width:100.0%" title="Exploring data sources: 100%"></span>
+          
+          
+            <span class="notapplicable" style="width:0.0%" title="Not applicable: 0%"></span></div>
           <div class="divider">
           </div>
         </div>
@@ -324,6 +337,8 @@ var translations = {
                 <span class="status inprogress">0</span><strong>Statistics in progress</strong><span class="value">0%</span>
               </div><div>
                 <span class="status notstarted">27</span><strong>Exploring data sources</strong><span class="value">100%</span>
+              </div><div>
+                <span class="status notapplicable">0</span><strong>Not applicable</strong><span class="value">0%</span>
               </div><br style="clear:both;">
             </div>
           </div>
@@ -336,7 +351,10 @@ var translations = {
             <span class="inprogress" style="width:0.0%" title="Statistics in progress: 0%"></span>
           
           
-            <span class="notstarted" style="width:100.0%" title="Exploring data sources: 100%"></span></div>
+            <span class="notstarted" style="width:100.0%" title="Exploring data sources: 100%"></span>
+          
+          
+            <span class="notapplicable" style="width:0.0%" title="Not applicable: 0%"></span></div>
           <div class="divider">
           </div>
         </div>
@@ -359,6 +377,8 @@ var translations = {
                 <span class="status inprogress">0</span><strong>Statistics in progress</strong><span class="value">0%</span>
               </div><div>
                 <span class="status notstarted">11</span><strong>Exploring data sources</strong><span class="value">100%</span>
+              </div><div>
+                <span class="status notapplicable">0</span><strong>Not applicable</strong><span class="value">0%</span>
               </div><br style="clear:both;">
             </div>
           </div>
@@ -371,7 +391,10 @@ var translations = {
             <span class="inprogress" style="width:0.0%" title="Statistics in progress: 0%"></span>
           
           
-            <span class="notstarted" style="width:100.0%" title="Exploring data sources: 100%"></span></div>
+            <span class="notstarted" style="width:100.0%" title="Exploring data sources: 100%"></span>
+          
+          
+            <span class="notapplicable" style="width:0.0%" title="Not applicable: 0%"></span></div>
           <div class="divider">
           </div>
         </div>
@@ -394,6 +417,8 @@ var translations = {
                 <span class="status inprogress">0</span><strong>Statistics in progress</strong><span class="value">0%</span>
               </div><div>
                 <span class="status notstarted">14</span><strong>Exploring data sources</strong><span class="value">100%</span>
+              </div><div>
+                <span class="status notapplicable">0</span><strong>Not applicable</strong><span class="value">0%</span>
               </div><br style="clear:both;">
             </div>
           </div>
@@ -406,7 +431,10 @@ var translations = {
             <span class="inprogress" style="width:0.0%" title="Statistics in progress: 0%"></span>
           
           
-            <span class="notstarted" style="width:100.0%" title="Exploring data sources: 100%"></span></div>
+            <span class="notstarted" style="width:100.0%" title="Exploring data sources: 100%"></span>
+          
+          
+            <span class="notapplicable" style="width:0.0%" title="Not applicable: 0%"></span></div>
           <div class="divider">
           </div>
         </div>
@@ -429,6 +457,8 @@ var translations = {
                 <span class="status inprogress">0</span><strong>Statistics in progress</strong><span class="value">0%</span>
               </div><div>
                 <span class="status notstarted">11</span><strong>Exploring data sources</strong><span class="value">100%</span>
+              </div><div>
+                <span class="status notapplicable">0</span><strong>Not applicable</strong><span class="value">0%</span>
               </div><br style="clear:both;">
             </div>
           </div>
@@ -441,7 +471,10 @@ var translations = {
             <span class="inprogress" style="width:0.0%" title="Statistics in progress: 0%"></span>
           
           
-            <span class="notstarted" style="width:100.0%" title="Exploring data sources: 100%"></span></div>
+            <span class="notstarted" style="width:100.0%" title="Exploring data sources: 100%"></span>
+          
+          
+            <span class="notapplicable" style="width:0.0%" title="Not applicable: 0%"></span></div>
           <div class="divider">
           </div>
         </div>
@@ -464,6 +497,8 @@ var translations = {
                 <span class="status inprogress">0</span><strong>Statistics in progress</strong><span class="value">0%</span>
               </div><div>
                 <span class="status notstarted">6</span><strong>Exploring data sources</strong><span class="value">100%</span>
+              </div><div>
+                <span class="status notapplicable">0</span><strong>Not applicable</strong><span class="value">0%</span>
               </div><br style="clear:both;">
             </div>
           </div>
@@ -476,7 +511,10 @@ var translations = {
             <span class="inprogress" style="width:0.0%" title="Statistics in progress: 0%"></span>
           
           
-            <span class="notstarted" style="width:100.0%" title="Exploring data sources: 100%"></span></div>
+            <span class="notstarted" style="width:100.0%" title="Exploring data sources: 100%"></span>
+          
+          
+            <span class="notapplicable" style="width:0.0%" title="Not applicable: 0%"></span></div>
           <div class="divider">
           </div>
         </div>
@@ -499,6 +537,8 @@ var translations = {
                 <span class="status inprogress">0</span><strong>Statistics in progress</strong><span class="value">0%</span>
               </div><div>
                 <span class="status notstarted">17</span><strong>Exploring data sources</strong><span class="value">100%</span>
+              </div><div>
+                <span class="status notapplicable">0</span><strong>Not applicable</strong><span class="value">0%</span>
               </div><br style="clear:both;">
             </div>
           </div>
@@ -511,7 +551,10 @@ var translations = {
             <span class="inprogress" style="width:0.0%" title="Statistics in progress: 0%"></span>
           
           
-            <span class="notstarted" style="width:100.0%" title="Exploring data sources: 100%"></span></div>
+            <span class="notstarted" style="width:100.0%" title="Exploring data sources: 100%"></span>
+          
+          
+            <span class="notapplicable" style="width:0.0%" title="Not applicable: 0%"></span></div>
           <div class="divider">
           </div>
         </div>
@@ -534,6 +577,8 @@ var translations = {
                 <span class="status inprogress">0</span><strong>Statistics in progress</strong><span class="value">0%</span>
               </div><div>
                 <span class="status notstarted">12</span><strong>Exploring data sources</strong><span class="value">100%</span>
+              </div><div>
+                <span class="status notapplicable">0</span><strong>Not applicable</strong><span class="value">0%</span>
               </div><br style="clear:both;">
             </div>
           </div>
@@ -546,7 +591,10 @@ var translations = {
             <span class="inprogress" style="width:0.0%" title="Statistics in progress: 0%"></span>
           
           
-            <span class="notstarted" style="width:100.0%" title="Exploring data sources: 100%"></span></div>
+            <span class="notstarted" style="width:100.0%" title="Exploring data sources: 100%"></span>
+          
+          
+            <span class="notapplicable" style="width:0.0%" title="Not applicable: 0%"></span></div>
           <div class="divider">
           </div>
         </div>
@@ -569,6 +617,8 @@ var translations = {
                 <span class="status inprogress">0</span><strong>Statistics in progress</strong><span class="value">0%</span>
               </div><div>
                 <span class="status notstarted">11</span><strong>Exploring data sources</strong><span class="value">100%</span>
+              </div><div>
+                <span class="status notapplicable">0</span><strong>Not applicable</strong><span class="value">0%</span>
               </div><br style="clear:both;">
             </div>
           </div>
@@ -581,7 +631,10 @@ var translations = {
             <span class="inprogress" style="width:0.0%" title="Statistics in progress: 0%"></span>
           
           
-            <span class="notstarted" style="width:100.0%" title="Exploring data sources: 100%"></span></div>
+            <span class="notstarted" style="width:100.0%" title="Exploring data sources: 100%"></span>
+          
+          
+            <span class="notapplicable" style="width:0.0%" title="Not applicable: 0%"></span></div>
           <div class="divider">
           </div>
         </div>
@@ -604,6 +657,8 @@ var translations = {
                 <span class="status inprogress">0</span><strong>Statistics in progress</strong><span class="value">0%</span>
               </div><div>
                 <span class="status notstarted">15</span><strong>Exploring data sources</strong><span class="value">100%</span>
+              </div><div>
+                <span class="status notapplicable">0</span><strong>Not applicable</strong><span class="value">0%</span>
               </div><br style="clear:both;">
             </div>
           </div>
@@ -616,7 +671,10 @@ var translations = {
             <span class="inprogress" style="width:0.0%" title="Statistics in progress: 0%"></span>
           
           
-            <span class="notstarted" style="width:100.0%" title="Exploring data sources: 100%"></span></div>
+            <span class="notstarted" style="width:100.0%" title="Exploring data sources: 100%"></span>
+          
+          
+            <span class="notapplicable" style="width:0.0%" title="Not applicable: 0%"></span></div>
           <div class="divider">
           </div>
         </div>
@@ -639,6 +697,8 @@ var translations = {
                 <span class="status inprogress">0</span><strong>Statistics in progress</strong><span class="value">0%</span>
               </div><div>
                 <span class="status notstarted">13</span><strong>Exploring data sources</strong><span class="value">100%</span>
+              </div><div>
+                <span class="status notapplicable">0</span><strong>Not applicable</strong><span class="value">0%</span>
               </div><br style="clear:both;">
             </div>
           </div>
@@ -651,7 +711,10 @@ var translations = {
             <span class="inprogress" style="width:0.0%" title="Statistics in progress: 0%"></span>
           
           
-            <span class="notstarted" style="width:100.0%" title="Exploring data sources: 100%"></span></div>
+            <span class="notstarted" style="width:100.0%" title="Exploring data sources: 100%"></span>
+          
+          
+            <span class="notapplicable" style="width:0.0%" title="Not applicable: 0%"></span></div>
           <div class="divider">
           </div>
         </div>
@@ -674,6 +737,8 @@ var translations = {
                 <span class="status inprogress">0</span><strong>Statistics in progress</strong><span class="value">0%</span>
               </div><div>
                 <span class="status notstarted">8</span><strong>Exploring data sources</strong><span class="value">100%</span>
+              </div><div>
+                <span class="status notapplicable">0</span><strong>Not applicable</strong><span class="value">0%</span>
               </div><br style="clear:both;">
             </div>
           </div>
@@ -686,7 +751,10 @@ var translations = {
             <span class="inprogress" style="width:0.0%" title="Statistics in progress: 0%"></span>
           
           
-            <span class="notstarted" style="width:100.0%" title="Exploring data sources: 100%"></span></div>
+            <span class="notstarted" style="width:100.0%" title="Exploring data sources: 100%"></span>
+          
+          
+            <span class="notapplicable" style="width:0.0%" title="Not applicable: 0%"></span></div>
           <div class="divider">
           </div>
         </div>
@@ -709,6 +777,8 @@ var translations = {
                 <span class="status inprogress">0</span><strong>Statistics in progress</strong><span class="value">0%</span>
               </div><div>
                 <span class="status notstarted">10</span><strong>Exploring data sources</strong><span class="value">100%</span>
+              </div><div>
+                <span class="status notapplicable">0</span><strong>Not applicable</strong><span class="value">0%</span>
               </div><br style="clear:both;">
             </div>
           </div>
@@ -721,7 +791,10 @@ var translations = {
             <span class="inprogress" style="width:0.0%" title="Statistics in progress: 0%"></span>
           
           
-            <span class="notstarted" style="width:100.0%" title="Exploring data sources: 100%"></span></div>
+            <span class="notstarted" style="width:100.0%" title="Exploring data sources: 100%"></span>
+          
+          
+            <span class="notapplicable" style="width:0.0%" title="Not applicable: 0%"></span></div>
           <div class="divider">
           </div>
         </div>
@@ -744,6 +817,8 @@ var translations = {
                 <span class="status inprogress">0</span><strong>Statistics in progress</strong><span class="value">0%</span>
               </div><div>
                 <span class="status notstarted">14</span><strong>Exploring data sources</strong><span class="value">100%</span>
+              </div><div>
+                <span class="status notapplicable">0</span><strong>Not applicable</strong><span class="value">0%</span>
               </div><br style="clear:both;">
             </div>
           </div>
@@ -756,7 +831,10 @@ var translations = {
             <span class="inprogress" style="width:0.0%" title="Statistics in progress: 0%"></span>
           
           
-            <span class="notstarted" style="width:100.0%" title="Exploring data sources: 100%"></span></div>
+            <span class="notstarted" style="width:100.0%" title="Exploring data sources: 100%"></span>
+          
+          
+            <span class="notapplicable" style="width:0.0%" title="Not applicable: 0%"></span></div>
           <div class="divider">
           </div>
         </div>
@@ -779,6 +857,8 @@ var translations = {
                 <span class="status inprogress">0</span><strong>Statistics in progress</strong><span class="value">0%</span>
               </div><div>
                 <span class="status notstarted">23</span><strong>Exploring data sources</strong><span class="value">100%</span>
+              </div><div>
+                <span class="status notapplicable">0</span><strong>Not applicable</strong><span class="value">0%</span>
               </div><br style="clear:both;">
             </div>
           </div>
@@ -791,7 +871,10 @@ var translations = {
             <span class="inprogress" style="width:0.0%" title="Statistics in progress: 0%"></span>
           
           
-            <span class="notstarted" style="width:100.0%" title="Exploring data sources: 100%"></span></div>
+            <span class="notstarted" style="width:100.0%" title="Exploring data sources: 100%"></span>
+          
+          
+            <span class="notapplicable" style="width:0.0%" title="Not applicable: 0%"></span></div>
           <div class="divider">
           </div>
         </div>
@@ -814,6 +897,8 @@ var translations = {
                 <span class="status inprogress">0</span><strong>Statistics in progress</strong><span class="value">0%</span>
               </div><div>
                 <span class="status notstarted">25</span><strong>Exploring data sources</strong><span class="value">100%</span>
+              </div><div>
+                <span class="status notapplicable">0</span><strong>Not applicable</strong><span class="value">0%</span>
               </div><br style="clear:both;">
             </div>
           </div>
@@ -826,7 +911,10 @@ var translations = {
             <span class="inprogress" style="width:0.0%" title="Statistics in progress: 0%"></span>
           
           
-            <span class="notstarted" style="width:100.0%" title="Exploring data sources: 100%"></span></div>
+            <span class="notstarted" style="width:100.0%" title="Exploring data sources: 100%"></span>
+          
+          
+            <span class="notapplicable" style="width:0.0%" title="Not applicable: 0%"></span></div>
           <div class="divider">
           </div>
         </div>
@@ -888,7 +976,7 @@ var translations = {
 <script src="//cdn.datatables.net/1.10.16/js/dataTables.bootstrap.min.js"></script>
 <script src="//cdn.datatables.net/fixedcolumns/3.2.3/js/dataTables.fixedColumns.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.bundle.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/patternomaly@1.3.2/dist/patternomaly.js"></script>
 <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin=""></script>
 <script src="https://cdn.jsdelivr.net/npm/leaflet.zoomshowhide@0.1.0/dist/leaflet-zoom-show-hide.min.js"></script>
@@ -901,7 +989,7 @@ var translations = {
 <script src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.3/dist/html2canvas.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js"></script>
-<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20200301001837'></script><script>
+<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20200303001747'></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
@@ -938,7 +1026,10 @@ $(function() {
             showData: domData.showdata,
             footnote: domData.footnote,
             graphType: domData.graphtype,
-            startValues: domData.startvalues
+            startValues: domData.startvalues,
+            graphLimits: domData.graphlimits,
+            stackedDisaggregation: domData.stackeddisaggregation,
+            unitsWithoutHeadline: domData.unitswithoutheadline,
           }),
           view  = new indicatorView(model, {
             rootElement: '#indicatorData',

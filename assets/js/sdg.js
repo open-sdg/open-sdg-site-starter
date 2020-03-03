@@ -646,7 +646,7 @@ var indicatorModel = function (options) {
   this.onFieldsStatusUpdated = new event(this);
   this.onFieldsCleared = new event(this);
   this.onSelectionUpdate = new event(this);
-  this.onNoHeadlineData = new event(this);
+  this.onStartValuesNeeded = new event(this);
 
   // json conversion:
   var convertJsonFormat = function(data) {
@@ -687,6 +687,9 @@ var indicatorModel = function (options) {
   this.geoData = [];
   this.geoCodeRegEx = options.geoCodeRegEx;
   this.showMap = options.showMap;
+  this.graphLimits = options.graphLimits;
+  this.stackedDisaggregation = options.stackedDisaggregation;
+  this.unitsWithoutHeadline = options.unitsWithoutHeadline;
 
   // initialise the field information, unique fields and unique values for each field:
   (function initialise() {
@@ -1045,9 +1048,10 @@ var indicatorModel = function (options) {
         // the first dataset is the headline:
         return datasetIndex > colors.length ? [5, 5] : undefined;
       },
-      convertToDataset = function (data, combinationDescription) {
+      convertToDataset = function (data, combinationDescription, combination) {
         var ds = _.extend({
             label: combinationDescription ? combinationDescription : that.country,
+            disaggregation: combination,
             borderColor: '#' + getColor(datasetIndex),
             backgroundColor: getBackground(datasetIndex),
             pointBorderColor: '#' + getColor(datasetIndex),
@@ -1148,7 +1152,8 @@ var indicatorModel = function (options) {
         // but some combinations may not have any data:
         filteredDatasets.push({
           data: filtered,
-          combinationDescription: getCombinationDescription(combination)
+          combinationDescription: getCombinationDescription(combination),
+          combination: combination,
         });
       }
     });
@@ -1161,7 +1166,7 @@ var indicatorModel = function (options) {
 
     _.chain(filteredDatasets)
       .sortBy(function(ds) { return ds.combinationDescription; })
-      .each(function(ds) { datasets.push(convertToDataset(ds.data, ds.combinationDescription)); });
+      .each(function(ds) { datasets.push(convertToDataset(ds.data, ds.combinationDescription, ds.combination)); });
 
     // convert datasets to tables:
     var selectionsTable = {
@@ -1183,7 +1188,10 @@ var indicatorModel = function (options) {
       indicatorId: this.indicatorId,
       shortIndicatorId: this.shortIndicatorId,
       selectedUnit: this.selectedUnit,
-      footerFields: this.footerFields
+      footerFields: this.footerFields,
+      graphLimits: this.graphLimits,
+      stackedDisaggregation: this.stackedDisaggregation,
+      unitsWithoutHeadline: this.unitsWithoutHeadline,
     });
 
     if(options.initial || options.unitsChangeSeries) {
@@ -1231,27 +1239,12 @@ var indicatorModel = function (options) {
       });
     }
 
-    if((options.initial || options.unitsChangeSeries) && !this.hasHeadline) {
-      // if there is no initial data, select some:
+    if ((options.initial || options.unitsChangeSeries) && (this.startValues || !this.hasHeadline)) {
 
-      var minimumFieldSelections = {},
+      var startingFieldSelections = this.startValues,
           forceUnit = false;
-      // First, do we have some already pre-configured from data_start_values?
-      if (this.startValues) {
-        // We need to confirm that these values are valid, and pair them up
-        // with disaggregation categories. The value, at this point, is a string
-        // which we assume to be pipe-delimited.
-        var valuesToLookFor = this.startValues.split('|');
-        // Match up each field value with a field.
-        _.each(this.fieldItemStates, function(fieldItem) {
-          _.each(fieldItem.values, function(fieldValue) {
-            if (_.contains(valuesToLookFor, fieldValue.value)) {
-              minimumFieldSelections[fieldItem.field] = fieldValue.value;
-            }
-          });
-        });
-      }
-      if (_.size(minimumFieldSelections) == 0) {
+
+      if (!startingFieldSelections) {
         // If we did not have any pre-configured start values, we calculate them.
         // We have to decide what filters will be selected, and in some cases it
         // may need to be multiple filters. So we find the smallest row (meaning,
@@ -1272,13 +1265,23 @@ var indicatorModel = function (options) {
         // But actually we want the top-priority sort to be the "size" of the
         // rows. In other words we want the row with the fewest number of fields.
         fieldData = _.sortBy(fieldData, function(item) { return _.size(item); });
-        minimumFieldSelections = fieldData[0];
-        // If we ended up finding something with "Units", we need to remove it
-        // before continuing and then remember to force it later.
-        if ('Units' in minimumFieldSelections) {
-          forceUnit = minimumFieldSelections['Units'];
-          delete minimumFieldSelections['Units'];
-        }
+        // Convert to an array of objects with 'field' and 'value' keys.
+        startingFieldSelections = _.map(_.keys(fieldData[0]), function(key) {
+          return {
+            field: key,
+            value: fieldData[0][key]
+          };
+        });
+      }
+
+      var startingUnit = _.findWhere(startingFieldSelections, { field: 'Units' });
+      if (startingUnit) {
+        // If one of the starting field selections is a Unit, remember for later
+        // and remove it from the list.
+        forceUnit = startingUnit.value;
+        startingFieldSelections = _.filter(startingFieldSelections, function(item) {
+          return item.field !== 'Units';
+        });
       }
 
       // Ensure that we only force a unit on the initial load.
@@ -1286,10 +1289,10 @@ var indicatorModel = function (options) {
         forceUnit = false;
       }
 
-      // Now that we are all sorted, we notify the view that there is no headline,
-      // and pass along the first row as the minimum field selections.
-      this.onNoHeadlineData.notify({
-        minimumFieldSelections: minimumFieldSelections,
+      // Now that we are all sorted, we notify the view that there needs to be
+      // starting values, and pass along the info.
+      this.onStartValuesNeeded.notify({
+        startingFieldSelections: startingFieldSelections,
         forceUnit: forceUnit
       });
     }
@@ -1397,7 +1400,7 @@ var indicatorView = function (model, options) {
     view_obj.createSelectionsTable(args);
   });
 
-  this._model.onNoHeadlineData.attach(function(sender, args) {
+  this._model.onStartValuesNeeded.attach(function(sender, args) {
     // Force a unit if necessary.
     if (args && args.forceUnit) {
       $('#units input[type="radio"]')
@@ -1407,7 +1410,7 @@ var indicatorView = function (model, options) {
     }
     // Force particular minimum field selections if necessary. We have to delay
     // this slightly to make it work...
-    if (args && args.minimumFieldSelections && _.size(args.minimumFieldSelections)) {
+    if (args && args.startingFieldSelections && args.startingFieldSelections.length) {
       function getClickFunction(fieldToSelect, fieldValue) {
         return function() {
           $('#fields .variable-options input[type="checkbox"]')
@@ -1418,10 +1421,9 @@ var indicatorView = function (model, options) {
             .click();
         }
       }
-      for (var fieldToSelect in args.minimumFieldSelections) {
-        var fieldValue = args.minimumFieldSelections[fieldToSelect];
-        setTimeout(getClickFunction(fieldToSelect, fieldValue), 500);
-      }
+      args.startingFieldSelections.forEach(function(selection) {
+        setTimeout(getClickFunction(selection.field, selection.value), 500);
+      });
     }
     else {
       // Fallback behavior - just click on the first one, whatever it is.
@@ -1630,6 +1632,12 @@ var indicatorView = function (model, options) {
     }
   };
 
+  this.alterChartConfig = function(config, info) {
+    opensdg.chartConfigAlterations.forEach(function(callback) {
+      callback(config, info);
+    });
+  };
+
   this.updatePlot = function(chartInfo) {
     view_obj._chartInstance.data.datasets = chartInfo.datasets;
 
@@ -1640,11 +1648,12 @@ var indicatorView = function (model, options) {
     // Create a temp object to alter, and then apply. We go to all this trouble
     // to avoid completely replacing view_obj._chartInstance -- and instead we
     // just replace it's properties: "type", "data", and "options".
-    var updatedConfig = opensdg.chartConfigAlter({
+    var updatedConfig = {
       type: view_obj._chartInstance.type,
       data: view_obj._chartInstance.data,
       options: view_obj._chartInstance.options
-    });
+    }
+    this.alterChartConfig(updatedConfig, chartInfo);
     view_obj._chartInstance.type = updatedConfig.type;
     view_obj._chartInstance.data = updatedConfig.data;
     view_obj._chartInstance.options = updatedConfig.options;
@@ -1714,7 +1723,7 @@ var indicatorView = function (model, options) {
         }
       }
     };
-    chartConfig = opensdg.chartConfigAlter(chartConfig);
+    this.alterChartConfig(chartConfig, chartInfo);
 
     this._chartInstance = new Chart($(this._rootElement).find('canvas'), chartConfig);
 
