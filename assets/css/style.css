@@ -579,6 +579,13 @@ body.contrast-high #zip-download-info {
   #main-content #map .leaflet-control .download-geojson-button {
     display: block;
     cursor: pointer; }
+  #main-content #map .disaggregation-select-container {
+    background: white;
+    padding: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px; }
+    #main-content #map .disaggregation-select-container label {
+      margin-right: 4px; }
   #main-content #map .selection-legend {
     background-color: rgba(150, 150, 150, 0.6);
     padding: 0;
