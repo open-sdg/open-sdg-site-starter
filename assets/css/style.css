@@ -1350,6 +1350,8 @@ footer {
     top: -1px;
     right: 0;
     display: inline; }
+    #main-content.goal-indicators .indicator-cards span.status.complete {
+      color: white; }
 #main-content.goal-indicators .indicator-cards .tags {
   padding: 0;
   margin: 6px 10px 0 0;
@@ -1484,6 +1486,9 @@ body.contrast-high .goal-indicators .indicator-cards a, body.contrast-high .goal
   color: white !important; }
 body.contrast-high .goal-indicators .indicator-cards span.status, body.contrast-high .goal-indicators .indicator-cards .tags li {
   color: black !important; }
+body.contrast-high .goal-indicators .indicator-cards span.status.notstarted {
+  color: white !important;
+  border: 1px solid white !important; }
 
 .post-categories {
   padding: 0;
@@ -1513,16 +1518,14 @@ body.contrast-high .goal-indicators .indicator-cards span.status, body.contrast-
     margin: 0; }
 
 .notapplicable {
-  background-color: #B7B7B7; }
-
-.notstarted {
-  background-color: #E27874; }
+  background-color: #ccc;
+  background: repeating-linear-gradient(135deg, #ccc, white 10px, #ccc 10px, white 20px); }
 
 .inprogress {
-  background-color: #f0ad4e; }
+  background-color: #767676; }
 
 .complete {
-  background-color: #5cb85c; }
+  background-color: #000000; }
 
 #main-content .statuses strong {
   font-weight: normal; }
@@ -1534,16 +1537,21 @@ body.contrast-high .goal-indicators .indicator-cards span.status, body.contrast-
     margin-right: 3px;
     padding: 2px 5px;
     border-radius: 4px;
-    color: black;
     width: 40px;
-    text-align: center; }
+    text-align: center;
+    font-size: 16px; }
+    #main-content .statuses > div .status.notstarted {
+      border: 1px solid #000000;
+      color: black; }
+    #main-content .statuses > div .status.complete, #main-content .statuses > div .status.inprogress {
+      color: white; }
 #main-content .value {
   color: #333;
   font-weight: bold;
   margin-left: 3px; }
 #main-content .goal-stats {
+  border: 1px solid #000000;
   font-size: 0;
-  height: 10px;
   margin-top: 10px; }
   #main-content .goal-stats span {
     display: inline-block;
@@ -1561,7 +1569,7 @@ body.contrast-high .goal-indicators .indicator-cards span.status, body.contrast-
   #main-content .goal .total {
     line-height: 24px;
     vertical-align: middle;
-    font-size: 0.65em;
+    font-size: 16px;
     width: auto;
     padding-left: 4px;
     padding-right: 4px;
@@ -1592,10 +1600,23 @@ body.contrast-high .goal-indicators .indicator-cards span.status, body.contrast-
   #main-content .goal-overall .details {
     width: 100%; }
 
+body.contrast-high .goal-stats {
+  border: 1px solid white !important; }
 body.contrast-high .statuses strong {
   color: white; }
 body.contrast-high .statuses .value {
   color: white !important; }
+body.contrast-high .summary .statuses .notstarted {
+  border: 1px solid white !important; }
+body.contrast-high .complete {
+  background-color: white;
+  color: black !important; }
+body.contrast-high .inprogress {
+  background-color: #767676; }
+body.contrast-high .notstarted {
+  color: white !important; }
+body.contrast-high .notapplicable {
+  color: black !important; }
 
 #jump-to-search a {
   cursor: pointer; }
