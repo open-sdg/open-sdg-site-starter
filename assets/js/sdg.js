@@ -685,7 +685,8 @@ var indicatorModel = function (options) {
   this.country = options.country;
   this.indicatorId = options.indicatorId;
   this.shortIndicatorId = options.shortIndicatorId;
-  this.chartTitle = options.chartTitle;
+  this.chartTitle = options.chartTitle,
+  this.chartTitles = options.chartTitles;
   this.graphType = options.graphType;
   this.measurementUnit = options.measurementUnit;
   this.copyright = options.copyright;
@@ -933,8 +934,17 @@ var indicatorModel = function (options) {
     });
   };
 
+  this.updateChartTitle = function() {
+    // We only need to change anything if this indicator has multiple titles.
+    if (that.chartTitles && that.chartTitles.length > 0) {
+      var chartTitle = _.findWhere(that.chartTitles, { unit: that.selectedUnit });
+      that.chartTitle = (chartTitle) ? chartTitle.title : that.chartTitles[0].title;
+    }
+  }
+
   this.updateSelectedUnit = function(selectedUnit) {
     this.selectedUnit = selectedUnit;
+    this.updateChartTitle();
 
     // if fields are dependent on the unit, reset:
     this.getData({
@@ -1190,6 +1200,8 @@ var indicatorModel = function (options) {
       })));
     });
 
+    this.updateChartTitle();
+
     this.onDataComplete.notify({
       datasetCountExceedsMax: datasetCountExceedsMax,
       datasets: datasetCountExceedsMax ? datasets.slice(0, maxDatasetCount) : datasets,
@@ -1203,6 +1215,7 @@ var indicatorModel = function (options) {
       graphLimits: this.graphLimits,
       stackedDisaggregation: this.stackedDisaggregation,
       unitsWithoutHeadline: this.unitsWithoutHeadline,
+      chartTitle: this.chartTitle
     });
 
     if(options.initial || options.unitsChangeSeries) {
@@ -1407,6 +1420,8 @@ var indicatorView = function (model, options) {
     }
 
     view_obj.createSelectionsTable(args);
+
+    view_obj.updateChartTitle(args.chartTitle);
   });
 
   this._model.onStartValuesNeeded.attach(function(sender, args) {
@@ -1646,6 +1661,12 @@ var indicatorView = function (model, options) {
       callback(config, info);
     });
   };
+
+  this.updateChartTitle = function(chartTitle) {
+    if (typeof chartTitle !== 'undefined') {
+      $('.chart-title').text(chartTitle);
+    }
+  }
 
   this.updatePlot = function(chartInfo) {
     view_obj._chartInstance.data.datasets = chartInfo.datasets;
