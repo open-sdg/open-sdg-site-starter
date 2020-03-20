@@ -51,6 +51,12 @@ country:
 #frontpage_heading: Australian data for Sustainable Development Goal indicators
 #frontpage_instructions: Click on each goal, or <span id="jump-to-search"><a>search</a></span>, for Australian statistics for Sustainable Development Goal global indicators.
 
+# Optionally set a title/body for the frontpage banner. The defaults below point to a standard
+# translation, but feel free to change it as needed.
+frontpage_introduction_banner:
+  title: frontpage.intro_title
+  description: frontpage.intro_body
+
 # Pages
 collections:
   pages:
