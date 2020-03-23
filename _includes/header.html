@@ -1,0 +1,73 @@
+{% if current_language == "de" %}
+  {% assign language = "" %}
+{% else %}
+  {% assign language = "en" %}
+{% endif %}
+
+{% include multilingual-js.html key="header" %}
+<a class="sr-only sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">{{ t.header.skip_link }}</a>
+<div id="disclaimer">
+  {% include components/dev-disclaimer.html %}
+</div>
+
+<header role="banner">
+  <div class="container">
+
+    <a class="navbar-brand" href="{{ site.baseurl }}{{ baseurl_folder }}/" id="home">
+      <!--<img src="{{ site.baseurl }}/assets/img/{{current_language}}/SDG_logo.png" alt="{{ t.general.sdg }} - {{ t.header.tag_line }}" />-->
+      <img src="{{ site.baseurl }}/assets/img/SDG_logo.png" alt="{{ t.general.sdg }} - {{ t.header.tag_line }}" />
+    </a>
+
+  <div class='hidden visible-xs float-right'>
+    <ul id='accessibility-nav' class='contrast-switcher'></ul>
+    {%- if site.languages.size > 1 -%}
+    <div class="language-toggle-mobile">
+      {% include components/language-toggle.html %}
+    </div>
+    {%- endif -%}
+  </div>
+
+    <nav class="navbar navbar-default" id="main-nav">
+
+      <ul class="top-level">
+        <li id="menuToggle"
+            aria-label="Menu toggle. Click to expand or collapse the menu."
+            aria-haspopup="true"
+            aria-expanded="false">
+          <span data-target="menu" tabindex="0"
+          role="navigation">{{ t.menu.menu }}</span>
+        </li>
+        <li><span data-target="search">{{ t.search.search }}</span></li>
+      </ul>
+
+      <ul class="nav navbar-nav menu-target contrast-switcher" id="menu">
+        {%- if site.menu -%}
+          {%- assign current_path_no_slash = page.url | remove: '/' -%}
+          {%- for item in site.menu -%}
+          {%- assign item_path_no_slash = item.path | remove: '/' -%}
+          <li class="nav-link {% if current_path_no_slash == item_path_no_slash %}active{% endif %}">
+            <a href="{{ site.baseurl }}{{ baseurl_folder }}{{ item.path }}">{{ item.translation_key | t }}</a>
+          </li>
+          {%- endfor -%}
+        {%- endif -%}
+        {%- if site.languages.size > 1 -%}
+        <li>
+          {% include components/language-toggle.html %}
+        </li>
+        {%- endif -%}
+
+        <!--<li class="nav-link">
+          <a href="https://sustainabledevelopment-deutschland.github.io/{{ language }}/">
+            <img class="link_btn" src="https://g205sdgs.github.io/sdg-indicators/public/DNS Wheel.png" title="{{ t.general.link_dns }}" alt="Link DNS" style="width:24px;height:24px;"/>
+            <span class="hidden-sm hidden-md hidden-lg">DNS-{{ t.menu.platform }}</span>
+          </a>
+        </li>-->
+
+      </ul>
+
+      {% include search.html %}
+    </nav>
+  </div>
+
+
+</header>

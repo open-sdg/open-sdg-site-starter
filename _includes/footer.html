@@ -1,0 +1,25 @@
+<footer role="contentinfo">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-9">
+        <a href="https://statistica.gov.md/pageview.php?l=ro&idc=24&id=2552" target="_blank">{{ t.menu.contact_us }}</a> 
+		| <a class="twitter-follow-button" href="https://twitter.com/statisticamd?lang=ro" data-show-count="false"><i class="fa fa-twitter" aria-hidden="true"></i>@statisticamd</a>
+		| <a class="facebook-follow-button" href="https://www.facebook.com/statistica.md/" data-show-count="false"><i class="fa fa-facebook" aria-hidden="true"></i>@BNS</a>
+      </div>
+      <div class="col-xs-3 text-right">
+        <a href="{{ site.baseurl }}{{ baseurl_folder }}{% link _pages/faq.md %}">{{ t.menu.faq }}</a> | <a href="{{ site.baseurl }}{{ baseurl_folder }}{% link _pages/imprint.md %}">{{ t.menu.imprint }}</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+{% include scripts.html %}
+
+{% if site.analytics.ga_prod and site.analytics.ga_prod != '' %}
+<script>
+  initialiseGoogleAnalytics();
+</script>
+{% endif %}
+
+</body>
+</html>

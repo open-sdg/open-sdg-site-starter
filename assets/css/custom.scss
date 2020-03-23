@@ -1,3 +1,433 @@
 ---
 # Enter any custom Sass in this file.
 ---
+
+$vanilla: #fff;
+$main-background-color: #eaeaea;
+
+.danger {
+  background-color: #E27874;
+}
+.warning {
+  background-color: #f0ad4e;
+}
+.success {
+  background-color: #5cb85c;
+}
+.notapplicable {
+  background-color: #B7B7B7;
+}
+.notstarted {
+  background-color: #E27874;
+}
+.inprogress {
+  background-color: #f0ad4e;
+}
+.complete {
+  background-color: #5cb85c;
+}
+
+#main-content.goal-indicators .indicator-cards a {
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+#main-content.goal-indicators .indicator-cards.target {
+  margin-bottom: 1.5rem;
+  clear: left;
+  font-weight: bold;
+  span {
+    font-size: larger;
+    @media screen and (min-width: 992px) {
+      font-size: inherit;
+    }
+  }
+}
+
+#main-content .tab-content img {
+  max-height: 130px;
+  width: auto;
+}
+
+header {
+  background: $vanilla /* url('../img/sdgbg.png') bottom left repeat-x;*/;
+  border-bottom: $main-background-color 5px solid;
+}
+
+.navbar {
+  #search {
+    input {
+      width: 160px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  .navbar {
+    .top-level {
+      li {
+        button{
+          color: #E5E6E7;
+          display: block;
+          padding: 15px;
+          border: 0;
+          text-transform: uppercase;
+          background-color: inherit;
+          text-align: left;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+//---#2 TimeSeriesNameDisplayedInMaps---start--------------------------------------------------------------
+#mapHead {
+  display: block;
+  font-size: 1.0em;
+  margin-top: 1.0em;
+  margin-bottom: 1.0em;
+  padding-left: 10px;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+//---#2 TimeSeriesNameDisplayedInMaps---stop---------------------------------------------------------------
+
+
+//---#8 addNavigationButtons---start--------------------------------------
+.G1-background {
+  background-color: #E5243B;
+  border-color: transparent;
+  margin-bottom: 5px;}
+.G1-background:hover {
+  background-color: #B71D2F;
+  border-color: transparent;
+  margin-bottom: 5px;}
+.G2-background {
+  background-color: #E5B735;
+  border-color: transparent;
+  margin-bottom: 5px;}
+.G2-background:hover {
+  background-color: #CEA530;
+  border-color: transparent;
+  margin-bottom: 5px;}
+.G3-background {
+  background-color: #4C9F38;
+  border-color: transparent;
+  margin-bottom: 5px;}
+.G3-background:hover {
+  background-color: #3D7F2D;
+  border-color: transparent;
+  margin-bottom: 5px;}
+.G4-background {
+  background-color: #C5192D;
+  border-color: transparent;
+  margin-bottom: 5px;}
+.G4-background:hover {
+  background-color: #9E1424;
+  border-color: transparent;
+  margin-bottom: 5px;}
+.G5-background {
+  background-color: #FF3A21;
+  border-color: transparent;
+  margin-bottom: 5px;}
+.G5-background:hover {
+  background-color: #CC2E1A;
+  border-color: transparent;
+  margin-bottom: 5px;}
+.G6-background {
+  background-color: #26BDE2;
+  border-color: transparent;
+  margin-bottom: 5px;}
+.G6-background:hover {
+  background-color: #1E97B5;
+  border-color: transparent;
+  margin-bottom: 5px;}
+.G7-background {
+  background-color: #FCC30B;
+  border-color: transparent;
+  margin-bottom: 5px;}
+.G7-background:hover {
+  background-color: #CA9C09;
+  border-color: transparent;
+  margin-bottom: 5px;}
+.G8-background {
+  background-color: #A21942;
+  border-color: transparent;
+  margin-bottom: 5px;}
+.G8-background:hover {
+  background-color: #821435;
+  border-color: transparent;
+  margin-bottom: 5px;}
+.G9-background {
+  background-color: #FD6925;
+  border-color: transparent;
+  margin-bottom: 5px;}
+.G9-background:hover {
+  background-color: #CA541E;
+  border-color: transparent;
+  margin-bottom: 5px;}
+.G10-background {
+  background-color: #DD1367;
+  border-color: transparent;
+  margin-bottom: 5px;}
+.G10-background:hover {
+  background-color: #B10F52;
+  border-color: transparent;
+  margin-bottom: 5px;}
+.G11-background {
+  background-color: #FD9D00;
+  border-color: transparent;
+  margin-bottom: 5px;}
+.G11-background:hover {
+  background-color: #CA7E00;
+  border-color: transparent;
+  margin-bottom: 5px;}
+.G12-background {
+  background-color: #C9992D;
+  border-color: transparent;
+  margin-bottom: 5px;}
+.G12-background:hover {
+  background-color: #A17A24;
+  border-color: transparent;
+  margin-bottom: 5px;}
+.G13-background {
+  background-color: #3F7E44;
+  border-color: transparent;
+  margin-bottom: 5px;}
+.G13-background:hover {
+  background-color: #326536;
+  border-color: transparent;
+  margin-bottom: 5px;}
+.G14-background {
+  background-color: #0A97D9;
+  border-color: transparent;
+  margin-bottom: 5px;}
+.G14-background:hover {
+  background-color: #0879AE;
+  border-color: transparent;
+  margin-bottom: 5px;}
+.G15-background {
+  background-color: #56C02B;
+  border-color: transparent;
+  margin-bottom: 5px;}
+.G15-background:hover {
+  background-color: #459A22;
+  border-color: transparent;
+  margin-bottom: 5px;}
+.G16-background {
+  background-color: #00689D;
+  border-color: transparent;
+  margin-bottom: 5px;}
+.G16-background:hover {
+  background-color: #00537E;
+  border-color: transparent;
+  margin-bottom: 5px;}
+.G17-background {
+  background-color: #19486A;
+  border-color: transparent;
+  margin-bottom: 5px;}
+.G17-background:hover {
+  background-color: #143A55;
+  border-color: transparent;
+  margin-bottom: 5px;}
+//---#8 addNavigationButtons---stop---------------------------------------
+
+
+//edit disclaimer color
+#disclaimer {
+  background: #BF0C16;
+
+  .phase-tag {
+    background: #005ea5;
+    color: white;
+    text-transform: uppercase;
+    padding: 2px 5px 0;
+  }
+  .alert {
+    color: white;
+    margin-bottom: 0;
+    padding: 10px;
+    a {
+      color: white;
+    }
+  }
+  .alert-danger {
+    border: none;
+    margin-bottom: 0;
+    background: #BF0C16;
+    a {
+      text-decoration: underline;
+    }
+    @media only screen and (max-width: 680px) {
+      font-size: 0.75em;
+    }
+  }
+}
+
+
+//---#17 addLinkToOtherPage---start------------
+.link_btn{
+	padding-top: 0px;
+  padding-left: 0px;
+  margin-top: -7px;
+}
+//---#17 addLinkToOtherPage---stop---------------
+
+
+
+//---#10 fixReportingStatus---start---------------------------
+//reporting status
+.goal-stats{
+  font-size: 0;
+  margin-top:10px;
+}
+//---#10 fixReportingStatus---stop----------------------------
+
+
+// Map-related styles
+#main-content {
+  #map {
+    height: 500px;
+    width: 100%;
+
+    #loader-container {
+      position: relative;
+      height: 100%;
+      width: 100%;
+      background: white;
+      z-index: 99999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        height: auto;
+      }
+    }
+
+    .leaflet-control {
+      .timecontrol-date {
+        min-width: 80px;
+        padding: 0 10px;
+      }
+      @media only screen and (max-width: 680px) {
+        .timecontrol-slider {
+          display: none;
+        }
+
+      }
+      .download-geojson-button {
+        display: block;
+        cursor: pointer;
+      }
+    }
+    .selection-legend {
+      background-color: rgba(150, 150, 150, 0.6);
+      padding: 0;
+      width: 300px;
+      .legend-swatches {
+        height: 10px;
+        .legend-swatch {
+          display: block;
+          float: left;
+          height: 10px;
+        }
+      }
+      .legend-values {
+        position: absolute;
+        bottom: -10px;
+        width: 100%;
+        .arrow {
+          width: 0;
+          height: 0;
+          border-style: solid;
+          position: absolute;
+          top: -10px;
+          z-index: 1;
+          &.left {
+            border-width: 20px 0 0 20px;
+            border-color: transparent transparent transparent white;
+            left: 0;
+          }
+          &.right {
+            border-width: 0 0 20px 20px;
+            border-color: transparent transparent white transparent;
+            right: 1px;
+            box-shadow: 1px 1px 1px 0px #666;
+          }
+        }
+        .legend-value {
+          padding: 0 4px;
+          background: white;
+          position: absolute;
+          z-index: 2;
+          &.left {
+            min-width: 20px;
+            left: 0;
+          }
+          &.right {
+            min-width: 20px;
+            right: 1px;
+          }
+          box-shadow: 1px 1px 1px 0px #666;
+        }
+      }
+      #selection-list {
+        list-style: none;
+        margin-bottom: 0;
+        padding-left: 0;
+        li {
+          position: relative;
+          margin-top: 3px;
+          &:first-child {
+            margin-top: 0;
+          }
+          cursor: pointer;
+          height: 23px;
+          .selection-bar, .selection-name, .selection-value {
+            height: 23px;
+            position: absolute;
+          }
+          .selection-bar {
+            border-radius: 2px 0 0 2px;
+            background: white;
+            z-index: 1;
+          }
+          .selection-name {
+            z-index: 2;
+            padding: 3px 20px 3px 3px;
+          }
+          &.no-value {
+            .selection-name {
+              background: repeating-linear-gradient(45deg, #FFF, #FFF 2px, #CCC 2px, #CCC 4px);
+            }
+            .selection-bar, .selection-value {
+              display: none;
+            }
+          }
+          .selection-value {
+            z-index: 2;
+            margin-right: 5px;
+            background-color: #ddd;
+            padding: 3px;
+            border-radius: 2px;
+          }
+          .selection-close {
+            top: 6px;
+            right: 5px;
+            position: absolute;
+            z-index: 3;
+          }
+        }
+      }
+    }
+    // make selection legend responsive
+    @media only screen and (max-width: 680px) {
+      .selection-legend {
+        width: 200px;
+      }
+
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{% if include.graph_type %}
+
+    <div id="dataset-size-warning" style="display:none">
+      <i class="fa fa-bolt"></i> {{ t.indicator.dataset_size_warning }}
+    </div>
+
+    {% assign graph_template = 'components/charts/' | append: include.graph_type | append: '.html' %}
+    <div class="plot-container">
+        {% include {{graph_template}} %}
+    </div>
+    <div id="plotLegend"></div>
+
+    <div id="chartSelectionDownload"></div>
+
+{% endif %}
