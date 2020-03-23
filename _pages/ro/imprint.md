@@ -1,7 +1,7 @@
 ---
 title: Imprint
-permalink: /en/imprint/
-language: en
+permalink: /ro/imprint/
+language: ro
 layout: page
 ---
 
