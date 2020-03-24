@@ -815,6 +815,9 @@ body.long #accessibility-nav li.contrast {
     text-decoration: none;
     padding: 1px; }
 
+body.contrast-high .site-intro .description {
+  color: white; }
+
 #skiplink {
   position: absolute;
   top: 0;
