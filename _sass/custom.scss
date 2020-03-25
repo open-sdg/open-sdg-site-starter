@@ -1,1 +1,24 @@
 // Enter any custom Sass in this file.
+
+// // ####### CUSTOM REPORTING STATUS PROGRESS BARS #######
+// // Uncomment this code to customise the reporting status bar colours
+// // NOTE: This will not affect the high contrast version
+// $complete-backgroundColor: #000000;
+// $complete-textColor: #FFFFFF;
+// $inProgress-backgroundColor: #000000;
+// $inProgress-textColor: #FFFFFF;
+// $notStarted-backgroundColor: #000000;
+// $notStarted-textColor: #FFFFFF;
+// $notApplicable-backgroundColor: #000000;
+// $notApplicable-textColor: #FFFFFF;
+// body.contrast-default{
+//       .complete{      background-color: $complete-backgroundColor;}
+//       #main-content .statuses > div .status.complete{color:$complete-textColor;}
+//       .inprogress{    background-color: $inProgress-backgroundColor}
+//       #main-content .statuses > div .status.inprogress{color: $inProgress-textColor;}
+//       .notstarted{    background-color: $notStarted-backgroundColor;}
+//       #main-content .statuses > div .status.notstarted{color:$notStarted-textColor;}
+//       .notapplicable{ background-color:$notApplicable-backgroundColor;}
+//       #main-content .statuses > div .status.notapplicable{color:$notApplicable-textColor;}
+// }
+
