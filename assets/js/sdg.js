@@ -606,47 +606,56 @@ var accessibilitySwitcher = function() {
     }).html(getContrastToggleLabel(contrast).replace(" ", "<br/>")).click(function() {
       setActiveContrast($(this).data('contrast'));
       imageFix(contrast);
+      broadcastContrastChange(contrast, this);
     })));
   });
-  
-function getContrastToggleLabel(identifier){
-  var contrastType = ""
-  if(contrastType === "long") {
-    if(identifier === "default"){	
-      return translations.header.default_contrast; 	
-    }	
-    else if(identifier === "high"){	
-      return translations.header.high_contrast;	
+
+  function broadcastContrastChange(contrast, elem) {
+    var event = new CustomEvent('contrastChange', {
+      bubbles: true,
+      detail: contrast
+    });
+    elem.dispatchEvent(event);
+  }
+
+  function getContrastToggleLabel(identifier){
+    var contrastType = ""
+    if(contrastType === "long") {
+      if(identifier === "default"){
+        return translations.header.default_contrast;
+      }
+      else if(identifier === "high"){
+        return translations.header.high_contrast;
+      }
+    }
+    else {
+      return 'A'
     }
   }
-  else {
-    return 'A'
-  }
-}
 
-function getContrastToggleTitle(identifier){	
-  if(identifier === "default"){	
-    return translations.header.disable_high_contrast; 	
-  }	
-  else if(identifier === "high"){	
-    return translations.header.enable_high_contrast;	
-  }	
-}
-  
-  
-function imageFix(contrast) {
-  if (contrast == 'high')  {
-    _.each($('img:not([src*=high-contrast])'), function(goalImage){
-      if ($(goalImage).attr('src').slice(0, 35) != "https://platform-cdn.sharethis.com/") {
-      $(goalImage).attr('src', $(goalImage).attr('src').replace('img/', 'img/high-contrast/'));
-      }})
-  } else {
-    // Remove high-contrast
-    _.each($('img[src*=high-contrast]'), function(goalImage){
-      $(goalImage).attr('src', $(goalImage).attr('src').replace('high-contrast/', ''));
-    })
+  function getContrastToggleTitle(identifier){
+    if(identifier === "default"){
+      return translations.header.disable_high_contrast;
+    }
+    else if(identifier === "high"){
+      return translations.header.enable_high_contrast;
+    }
   }
-};
+
+
+  function imageFix(contrast) {
+    if (contrast == 'high')  {
+      _.each($('img:not([src*=high-contrast])'), function(goalImage){
+        if ($(goalImage).attr('src').slice(0, 35) != "https://platform-cdn.sharethis.com/") {
+        $(goalImage).attr('src', $(goalImage).attr('src').replace('img/', 'img/high-contrast/'));
+        }})
+    } else {
+      // Remove high-contrast
+      _.each($('img[src*=high-contrast]'), function(goalImage){
+        $(goalImage).attr('src', $(goalImage).attr('src').replace('high-contrast/', ''));
+      })
+    }
+  };
 
 };
 opensdg.chartColors = function(indicatorId) {
@@ -1736,6 +1745,8 @@ var indicatorView = function (model, options) {
   this.createPlot = function (chartInfo) {
 
     var that = this;
+    var gridColor = that.getGridColor();
+    var tickColor = that.getTickColor();
 
     var chartConfig = {
       type: this._model.graphType,
@@ -1751,12 +1762,19 @@ var indicatorView = function (model, options) {
           xAxes: [{
             maxBarThickness: 150,
             gridLines: {
-              color: '#ddd',
-            }
+              color: gridColor,
+            },
+            ticks: {
+              fontColor: tickColor,
+            },
           }],
           yAxes: [{
+            gridLines: {
+              color: gridColor,
+            },
             ticks: {
-              suggestedMin: 0
+              suggestedMin: 0,
+              fontColor: tickColor,
             },
             scaleLabel: {
               display: this._model.selectedUnit ? translations.t(this._model.selectedUnit) : this._model.measurementUnit,
@@ -1792,6 +1810,16 @@ var indicatorView = function (model, options) {
     this.alterChartConfig(chartConfig, chartInfo);
 
     this._chartInstance = new Chart($(this._rootElement).find('canvas'), chartConfig);
+
+    window.addEventListener('contrastChange', function(e) {
+      var gridColor = that.getGridColor(e.detail);
+      var tickColor = that.getTickColor(e.detail);
+      view_obj._chartInstance.options.scales.yAxes[0].gridLines.color = gridColor;
+      view_obj._chartInstance.options.scales.yAxes[0].ticks.fontColor = tickColor;
+      view_obj._chartInstance.options.scales.xAxes[0].gridLines.color = gridColor;
+      view_obj._chartInstance.options.scales.xAxes[0].ticks.fontColor = tickColor;
+      view_obj._chartInstance.update();
+    });
 
     Chart.pluginService.register({
       afterDraw: function(chart) {
@@ -1858,6 +1886,23 @@ var indicatorView = function (model, options) {
     });
 
     $(this._legendElement).html(view_obj._chartInstance.generateLegend());
+  };
+
+  this.getGridColor = function(contrast=null) {
+    return this.isHighContrast(contrast) ? '#222' : '#ddd';
+  };
+
+  this.getTickColor = function(contrast=null) {
+    return this.isHighContrast(contrast) ? '#fff' : '#000';
+  }
+
+  this.isHighContrast = function(contrast=null) {
+    if (contrast) {
+      return contrast === 'high';
+    }
+    else {
+      return $('body').hasClass('contrast-high');
+    }
   };
 
   this.toCsv = function (tableData) {

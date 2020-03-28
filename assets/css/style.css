@@ -1479,9 +1479,11 @@ body.contrast-high caption {
 body.contrast-high div#units {
   color: white; }
 body.contrast-high #legend li {
-  color: white !important; }
-  body.contrast-high #legend li:first-child .swatch {
-    background-color: white !important; }
+  color: white !important;
+  border: 1px solid transparent; }
+  body.contrast-high #legend li:hover {
+    background: transparent !important;
+    border: 1px solid white; }
 
 body.contrast-high .goal-indicators div span {
   border-color: white !important;
@@ -1526,10 +1528,10 @@ body.contrast-high .goal-indicators .indicator-cards span.status.notstarted {
   background: repeating-linear-gradient(135deg, #ccc, white 10px, #ccc 10px, white 20px); }
 
 .inprogress {
-  background-color: #767676; }
+  background-color: #757575; }
 
 .complete {
-  background-color: #000000; }
+  background-color: #2B2B2B; }
 
 #main-content .statuses strong {
   font-weight: normal; }
