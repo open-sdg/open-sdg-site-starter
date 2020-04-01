@@ -208,7 +208,7 @@ body.contrast-high .breadcrumb {
   #disclaimer .alert {
     color: #3D3D3D;
     margin-bottom: 0;
-    padding: 10px; }
+    padding: 10px 10px 10px 0; }
     #disclaimer .alert a {
       color: #3D3D3D; }
   #disclaimer .alert-danger {
@@ -244,6 +244,8 @@ h5 + .btn-download {
 
 .zip-download-container {
   margin-top: 20px; }
+  .zip-download-container a.btn {
+    margin-left: 10px; }
   .zip-download-container #zip-download-info {
     margin-top: 5px;
     margin-left: 10px; }
@@ -843,7 +845,11 @@ header {
 .navbar-brand {
   display: block;
   width: 75%;
-  max-width: 300px; }
+  max-width: 300px;
+  padding: 15px; }
+  @media screen and (min-width: 769px) {
+    .navbar-brand {
+      padding: 15px 15px 15px 0; } }
   .navbar-brand img {
     width: 100%; }
 
@@ -890,6 +896,9 @@ header {
         color: yellow; }
     .navbar ul.navbar-nav li:not(.contrast) a:hover {
       border-bottom: 2px solid #aaaaaa; }
+    @media screen and (min-width: 769px) {
+      .navbar ul.navbar-nav > li:first-child a {
+        margin-left: 0; } }
   .navbar.navbar-default {
     background: transparent;
     border: none;
@@ -1070,9 +1079,13 @@ footer {
     text-decoration: underline; }
     footer a:hover, footer a:focus {
       color: #333333; }
-  footer #footerLinks ul li {
-    display: inline-block !important;
-    margin: 3px 9px !important; }
+  footer #footerLinks ul {
+    padding-left: 0; }
+    footer #footerLinks ul li {
+      display: inline-block;
+      margin: 3px 9px; }
+      footer #footerLinks ul li:first-child {
+        margin-left: 0px; }
 
 #main-content #indicatorData.no-series #series-help {
   display: none; }
@@ -1321,7 +1334,7 @@ footer {
   width: calc(100% - 10px);
   border: 0;
   padding: 0;
-  margin: 5px; }
+  margin: 5px 10px 5px 0; }
   #main-content .no-gutters img:not(#goal-18) {
     box-shadow: 5px 5px 5px 0px rgba(5, 5, 5, 0.3); }
     #main-content .no-gutters img:not(#goal-18):hover {
@@ -1353,9 +1366,12 @@ footer {
     position: absolute;
     top: -1px;
     right: 0;
-    display: inline; }
+    display: inline;
+    font-size: 12px; }
     #main-content.goal-indicators .indicator-cards span.status.complete {
       color: white; }
+    #main-content.goal-indicators .indicator-cards span.status.notstarted {
+      border: 1px solid black; }
 #main-content.goal-indicators .indicator-cards .tags {
   padding: 0;
   margin: 6px 10px 0 0;
@@ -1371,9 +1387,9 @@ footer {
   border-bottom: none; }
 #main-content.goal-indicators.goal-by-target .indicator-cards a {
   padding: 0;
-  margin-bottom: 1.5rem; }
+  margin-bottom: 2.5rem; }
 #main-content.goal-indicators.goal-by-target .indicator-cards.target {
-  margin-bottom: 1.5rem;
+  margin-bottom: 2.5rem;
   clear: left; }
 #main-content .goal-indicators:after {
   content: "";
