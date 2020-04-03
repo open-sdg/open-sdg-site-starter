@@ -1242,6 +1242,7 @@ footer {
         #main-content #fields .variable-selector .variable-options label:hover {
           background: #f5f3f3; }
         #main-content #fields .variable-selector .variable-options label[data-has-data="false"] {
+          display: none;
           cursor: default; }
           #main-content #fields .variable-selector .variable-options label[data-has-data="false"]:hover {
             background: white; }
