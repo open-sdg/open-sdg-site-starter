@@ -7,7 +7,9 @@ remote_theme: open-sdg/open-sdg@master
 
 # Replace this title as needed.
 title: Indicators For The Sustainable Development Goals
-# Replace the baseurl with the name of this repository.
+# Replace the baseurl with the name of this repository. For example, if the repository is named
+# "my-site-repository", then update the baseurl like so:
+# baseurl: "/my-site-repository"
 baseurl: "/open-sdg-site-starter"
 url: ""
 data_dir: data
