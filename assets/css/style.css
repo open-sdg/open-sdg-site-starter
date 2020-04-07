@@ -1369,7 +1369,7 @@ footer {
     right: 0;
     display: inline;
     font-size: 12px; }
-    #main-content.goal-indicators .indicator-cards span.status.complete {
+    #main-content.goal-indicators .indicator-cards span.status.complete, #main-content.goal-indicators .indicator-cards span.status.inprogress {
       color: white; }
     #main-content.goal-indicators .indicator-cards span.status.notstarted {
       border: 1px solid black; }
