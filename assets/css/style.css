@@ -758,8 +758,10 @@ body.contrast-high {
     border-color: black; }
   body.contrast-high p, body.contrast-high h2, body.contrast-high h3, body.contrast-high h4, body.contrast-high span, body.contrast-high td, body.contrast-high th, body.contrast-high a#text {
     color: white; }
-  body.contrast-high h1, body.contrast-high li, body.contrast-high a {
+  body.contrast-high li, body.contrast-high a {
     color: yellow; }
+  body.contrast-high h1 {
+    color: white; }
   body.contrast-high li.contrast-default a {
     color: black !important; }
 
@@ -819,6 +821,9 @@ body.long #accessibility-nav li.contrast {
 
 body.contrast-high .site-intro .description {
   color: white; }
+
+body.contrast-high #main-content .no-gutters img:not(#goal-18):hover {
+  box-shadow: 0px 0px 0px 5px yellow; }
 
 #skiplink {
   position: absolute;
