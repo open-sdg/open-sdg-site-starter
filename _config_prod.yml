@@ -14,20 +14,20 @@
 baseurl: ""
 environment: production
 # Replace my-github-org and open-sdg-data-starter as needed.
-remotedatabaseurl: "https://my-github-org.github.io/open-sdg-data-starter"
+remotedatabaseurl: "https://github.com/statisticamd/open-sdg-data-starter"
 
 jekyll_get_json:
   - data: meta
     # Replace my-github-org and open-sdg-data-starter as needed.
     #json: 'https://my-github-org.github.io/open-sdg-data-starter/meta/all.json'
-    json: 'https://github.com/statisticamd/open-sdg-data-starter/tree/develop/meta/all.json'
+    json: 'https://github.com/statisticamd/open-sdg-data-starter/tree/gh-pages/meta/all.json'
   - data: headlines
     # Replace my-github-org and open-sdg-data-starter as needed.
     #json: 'https://my-github-org.github.io/open-sdg-data-starter/headline/all.json'
     json: 'https://github.com/statisticamd/open-sdg-data-starter/tree/gh-pages/headline/all.json'    
   - data: schema
     # Replace my-github-org and open-sdg-data-starter as needed.
-    json: 'https://github.com/statisticamd/open-sdg-data-starter/tree/develop/meta/schema.json'
+    json: 'https://github.com/statisticamd/open-sdg-data-starter/tree/gh-pages/meta/schema.json'
   - data: reporting
     # Replace my-github-org and open-sdg-data-starter as needed.
     json: 'https://github.com/statisticamd/open-sdg-data-starter/tree/gh-pages/stats/reporting.json'
