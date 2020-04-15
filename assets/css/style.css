@@ -198,27 +198,19 @@ body.contrast-high .breadcrumb {
     display: none;
     padding: 8px 12px; }
 
-#disclaimer {
-  background: #f2dede; }
-  #disclaimer .phase-tag {
-    background: #005ea5;
-    color: white;
-    text-transform: uppercase;
-    padding: 2px 5px 0; }
-  #disclaimer .alert {
-    color: #3D3D3D;
-    margin-bottom: 0;
-    padding: 10px 10px 10px 0; }
-    #disclaimer .alert a {
-      color: #3D3D3D; }
-  #disclaimer .alert-danger {
-    border: none;
-    margin-bottom: 0; }
-    #disclaimer .alert-danger a {
-      text-decoration: underline; }
-    @media only screen and (max-width: 680px) {
-      #disclaimer .alert-danger {
-        font-size: 0.75em; } }
+#disclaimer .phase-tag {
+  background: #005ea5;
+  color: white;
+  text-transform: uppercase;
+  padding: 2px 5px; }
+#disclaimer .disclaimer-alert {
+  color: #3D3D3D;
+  margin-bottom: 10px;
+  padding: 12px 10px 10px 0;
+  border-bottom: 1px solid #BBBBBB; }
+  @media only screen and (max-width: 680px) {
+    #disclaimer .disclaimer-alert {
+      font-size: 0.75em; } }
 
 .btn-download {
   margin-top: 1.5rem;
@@ -830,6 +822,12 @@ body.contrast-high footer a {
   color: white; }
   body.contrast-high footer a:hover, body.contrast-high footer a:focus {
     color: yellow; }
+
+body.contrast-high #disclaimer .phase-tag {
+  background: white;
+  color: black; }
+body.contrast-high #disclaimer .disclaimer-alert {
+  color: white; }
 
 #skiplink {
   position: absolute;
