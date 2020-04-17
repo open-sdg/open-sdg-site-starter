@@ -903,8 +903,10 @@ header {
       background: black; }
       .navbar ul.navbar-nav li.contrast-high a {
         color: yellow; }
-    .navbar ul.navbar-nav li:not(.contrast) a:hover {
-      border-bottom: 2px solid #aaaaaa; }
+    .navbar ul.navbar-nav li:not(.contrast) a {
+      border-bottom: 2px solid transparent; }
+      .navbar ul.navbar-nav li:not(.contrast) a:hover {
+        border-bottom: 2px solid #aaaaaa; }
     @media screen and (min-width: 769px) {
       .navbar ul.navbar-nav > li:first-child a {
         margin-left: 0; } }
