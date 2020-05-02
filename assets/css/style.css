@@ -1098,11 +1098,11 @@ footer {
       footer #footerLinks ul li:first-child {
         margin-left: 0px; }
 
-#main-content #indicatorData.no-series #series-help, #main-content #indicatorData.no-series #fields, #main-content #indicatorData.no-series #legend-help, #main-content #indicatorData.no-series #clear {
+#main-content #indicatorData.no-fields #series-help, #main-content #indicatorData.no-fields #fields, #main-content #indicatorData.no-fields #legend-help, #main-content #indicatorData.no-fields #clear {
   display: none; }
-#main-content #indicatorData.no-series.no-units > .col-md-3 {
+#main-content #indicatorData.no-fields.no-units > .col-md-3 {
   display: none; }
-#main-content #indicatorData.no-series.no-units > .col-md-9 {
+#main-content #indicatorData.no-fields.no-units > .col-md-9 {
   width: 100%; }
 #main-content .indicator-sidebar-hidden {
   padding: 0;
