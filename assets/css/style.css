@@ -829,6 +829,10 @@ body.contrast-high #disclaimer .phase-tag {
 body.contrast-high #disclaimer .disclaimer-alert {
   color: white; }
 
+body {
+  background: #fff url("../img/sdgbg.png") top left repeat-x;
+  padding-top: 15px; }
+
 #skiplink {
   position: absolute;
   top: 0;
@@ -844,12 +848,10 @@ body.contrast-high #disclaimer .disclaimer-alert {
   color: black;
   display: block; }
 
-header {
-  background: #fff url("../img/sdgbg.png") bottom left repeat-x; }
-  header .container {
-    min-height: 113px; }
-    header .container .navbar-default {
-      border: none; }
+header .container {
+  min-height: 113px; }
+  header .container .navbar-default {
+    border: none; }
 
 .navbar-brand {
   display: block;
