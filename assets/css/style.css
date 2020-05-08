@@ -67,13 +67,23 @@ ul {
     padding-bottom: 10px;
     border-bottom: 1pt solid #000000; }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Open Sans', sans-serif; }
+body {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif; }
+
+h1 {
+  font-size: 36px; }
+
+h2 {
+  font-size: 27px; }
+
+h3 {
+  font-size: 24px; }
+
+.normal-copy {
+  font-size: 16px; }
+
+.lead-copy {
+  font-size: 22px; }
 
 .heading a {
   background: transparent;
@@ -86,39 +96,14 @@ h6 {
 .heading h3 {
   color: black; }
 .heading h1 {
-  margin-top: 12px;
-  font-size: 2.2em; }
-  @media only screen and (max-width: 480px) {
-    .heading h1 {
-      font-size: 0.938em; } }
-.heading h2 {
-  font-size: 1.5em; }
-  @media only screen and (min-width: 768px) {
-    .heading h2 {
-      font-size: 1.8em; } }
-  @media only screen and (min-width: 992px) {
-    .heading h2 {
-      font-size: 2.2em; } }
-@media only screen and (max-width: 480px) {
-  .heading h3 {
-    font-size: 0.813em; } }
+  margin-top: 12px; }
 .heading.indicator h1 {
-  font-size: 24px;
   line-height: normal; }
-  @media only screen and (max-width: 480px) {
-    .heading.indicator h1 {
-      font-size: 0.813em; } }
-.heading.indicator h3 {
-  font-size: 30px; }
-  @media only screen and (max-width: 480px) {
-    .heading.indicator h3 {
-      font-size: 0.938em; } }
 .heading img {
   max-width: 100%;
   margin-top: 10px; }
 
 #main-content {
-  font-family: 'Roboto', sans-serif;
   background: white;
   padding-top: 15px;
   padding-bottom: 15px; }
@@ -181,7 +166,6 @@ body.contrast-high .breadcrumb {
   border-right: 1px solid #d4d4d4;
   margin-bottom: 10px; }
   #main-content .collapsible h3 {
-    font-size: 1.8rem;
     cursor: pointer;
     padding: 8px 12px;
     margin: 0;
@@ -509,7 +493,6 @@ body.contrast-high #zip-download-info {
   #main-content .tooltip.hidden {
     display: none; }
   #main-content .tooltip h2 {
-    font-size: 13px;
     margin: 4px 0; }
   #main-content .tooltip table {
     width: 100%; }
@@ -545,8 +528,7 @@ body.contrast-high #zip-download-info {
   padding: 10px;
   color: white; }
   #main-content #infoPanel h2 {
-    margin: 0 0 20px 0;
-    font-size: 20px; }
+    margin: 0 0 20px 0; }
   #main-content #infoPanel table {
     width: 100%; }
 
@@ -1123,7 +1105,6 @@ footer {
   text-align: left;
   padding: 10px 7px 14px 7px;
   font-size: 0.875em;
-  font-family: 'Open Sans', sans-serif;
   margin-right: 8px; }
   #main-content #toolbar button i {
     position: absolute;
@@ -1284,7 +1265,6 @@ footer {
   clear: left;
   margin-bottom: 20px; }
   #main-content #units label {
-    font-family: 'Open Sans', sans-serif;
     font-weight: normal;
     border: 1px solid #ccc;
     padding: 10px;
@@ -1520,6 +1500,12 @@ body.contrast-high #legend li {
     background: transparent !important;
     border: 1px solid white; }
 
+@media only screen and (max-width: 500px) {
+  body.layout-indicator .container .goal-icon {
+    float: none; }
+  body.layout-indicator .container .indicator-details {
+    float: none;
+    width: 100%; } }
 body.contrast-high .goal-indicators div span {
   border-color: white !important;
   color: white !important; }
@@ -1611,8 +1597,6 @@ body.contrast-high #main-content.goal-indicators.goal-by-target .indicator-cards
   margin-bottom: 4px;
   padding-bottom: 4px;
   border-bottom: 1px solid #ccc; }
-  #main-content .goal h2 {
-    font-size: 1.6em; }
   #main-content .goal .total {
     line-height: 24px;
     vertical-align: middle;
@@ -1667,9 +1651,6 @@ body.contrast-high .notapplicable {
 
 #jump-to-search a {
   cursor: pointer; }
-
-.layout-search h1 {
-  font-size: 24px; }
 
 #search-results {
   margin-top: 20px; }
