@@ -58,14 +58,14 @@ ul {
     margin-top: 5px;
     margin-bottom: 5px;
     border-style: solid;
-    border-color: #000000;
+    border-color: black;
     border-width: 1px; }
   #page-content td, #page-content th {
     padding-right: 5px;
     padding-left: 5px; }
   #page-content thead {
     padding-bottom: 10px;
-    border-bottom: 1pt solid #000000; }
+    border-bottom: 1pt solid black; }
 
 body {
   font-family: 'Open Sans', Helvetica, Arial, sans-serif; }
@@ -85,21 +85,20 @@ h3 {
 .lead-copy {
   font-size: 22px; }
 
-.heading a {
+.goal-banner a {
   background: transparent;
-  color: #888;
   display: block; }
-  .heading a:hover {
+  .goal-banner a:hover {
     text-decoration: none; }
-.heading h1,
-.heading h2,
-.heading h3 {
+.goal-banner h1,
+.goal-banner h2,
+.goal-banner h3 {
   color: black; }
-.heading h1 {
+.goal-banner h1 {
   margin-top: 12px; }
-.heading.indicator h1 {
+.goal-banner.indicator h1 {
   line-height: normal; }
-.heading img {
+.goal-banner img {
   max-width: 100%;
   margin-top: 10px; }
 
@@ -149,14 +148,15 @@ h3 {
 .breadcrumb {
   margin-bottom: 15px; }
   .breadcrumb a {
-    color: #285f8f; }
+    color: #285f8f;
+    text-decoration: underline; }
   .breadcrumb > .active {
     display: inline;
-    color: black; }
+    color: #333; }
 
 body.contrast-high .breadcrumb {
   background: white; }
-  body.contrast-high .breadcrumb a {
+  body.contrast-high .breadcrumb li, body.contrast-high .breadcrumb a {
     color: black !important; }
 
 #main-content .collapsible {
@@ -406,6 +406,60 @@ body.contrast-high #zip-download-info {
 .goal-tiles #goal-17:hover {
   background-color: #1F4A6A; }
 
+.goal-1.goal-banner {
+  background-color: white; }
+
+.goal-2.goal-banner {
+  background-color: white; }
+
+.goal-3.goal-banner {
+  background-color: white; }
+
+.goal-4.goal-banner {
+  background-color: white; }
+
+.goal-5.goal-banner {
+  background-color: white; }
+
+.goal-6.goal-banner {
+  background-color: white; }
+
+.goal-7.goal-banner {
+  background-color: white; }
+
+.goal-8.goal-banner {
+  background-color: white; }
+
+.goal-9.goal-banner {
+  background-color: white; }
+
+.goal-10.goal-banner {
+  background-color: white; }
+
+.goal-11.goal-banner {
+  background-color: white; }
+
+.goal-12.goal-banner {
+  background-color: white; }
+
+.goal-13.goal-banner {
+  background-color: white; }
+
+.goal-14.goal-banner {
+  background-color: white; }
+
+.goal-15.goal-banner {
+  background-color: white; }
+
+.goal-16.goal-banner {
+  background-color: white; }
+
+.goal-17.goal-banner {
+  background-color: white; }
+
+.goal-banner h1, .goal-banner p {
+  color: black; }
+
 .language-ar {
   direction: rtl; }
 
@@ -414,12 +468,10 @@ body.contrast-high #zip-download-info {
   position: absolute;
   z-index: 999;
   left: 12px;
-  color: #222;
-  background: #fff;
+  background: white;
   border-radius: 3px;
   box-shadow: 0px 0px 2px 0px #a6a6a6;
-  padding: .2em 1em .2em .2em;
-  text-shadow: #f5f5f5 0 1px 0; }
+  padding: .2em 1em .2em .2em; }
   .language-options li {
     padding: 5px;
     padding-left: 0; }
@@ -462,75 +514,6 @@ body.contrast-high #zip-download-info {
 
 .async-loading img {
   margin-right: 4px; }
-
-#main-content #map {
-  position: relative;
-  width: 590px; }
-#main-content g.tick line {
-  stroke: black; }
-#main-content g.tick text {
-  fill: black; }
-#main-content line.track {
-  stroke: black; }
-#main-content g.parameter-value path {
-  stroke: black; }
-#main-content .background {
-  fill: #e5f3ff;
-  pointer-events: all; }
-#main-content .map-layer {
-  fill: #fff;
-  stroke: #aaa; }
-#main-content .tooltip {
-  color: #222;
-  background: #fff;
-  border-radius: 3px;
-  box-shadow: 0px 0px 2px 0px #a6a6a6;
-  padding: .2em;
-  text-shadow: #f5f5f5 0 1px 0;
-  opacity: 0.9;
-  position: absolute;
-  min-width: 180px; }
-  #main-content .tooltip.hidden {
-    display: none; }
-  #main-content .tooltip h2 {
-    margin: 4px 0; }
-  #main-content .tooltip table {
-    width: 100%; }
-#main-content #resetButton {
-  position: absolute;
-  top: 13px;
-  right: 12px;
-  background: #444;
-  color: white;
-  border: none;
-  padding: 5px 10px;
-  display: none; }
-  #main-content #resetButton:hover {
-    background: #000; }
-  #main-content #resetButton i {
-    font-size: 12px;
-    margin-right: 4px; }
-#main-content #key {
-  display: block;
-  margin-top: -5px; }
-#main-content #slider {
-  position: absolute;
-  top: 0; }
-#main-content #infoPanel {
-  position: absolute;
-  bottom: 40px;
-  left: 0;
-  right: 0;
-  min-height: 100px;
-  background: rgba(0, 0, 0, 0.75);
-  width: 590px;
-  display: none;
-  padding: 10px;
-  color: white; }
-  #main-content #infoPanel h2 {
-    margin: 0 0 20px 0; }
-  #main-content #infoPanel table {
-    width: 100%; }
 
 #main-content #map {
   height: 500px;
@@ -712,6 +695,8 @@ body.contrast-high a.nav-link:focus {
 
 body.contrast-high {
   background-color: black; }
+  body.contrast-high li {
+    color: white; }
   body.contrast-high #accessibility-nav li.contrast-default {
     display: block; }
   body.contrast-high #accessibility-nav li.contrast-high {
@@ -725,14 +710,27 @@ body.contrast-high {
     body.contrast-high .table-hover tbody tr:hover th {
       color: black; }
     body.contrast-high .table-hover tbody tr:hover a {
-      color: blue;
+      color: #337ab7;
       text-decoration: underline; }
-  body.contrast-high .container, body.contrast-high #main-content, body.contrast-high header, body.contrast-high footer, body.contrast-high #disclaimer, body.contrast-high .heading {
+  body.contrast-high .container, body.contrast-high #main-content, body.contrast-high header, body.contrast-high #disclaimer {
     background: black;
     border-color: black; }
+  body.contrast-high footer {
+    color: white;
+    background: black;
+    border-color: black; }
+    body.contrast-high footer a {
+      color: white; }
+      body.contrast-high footer a:hover, body.contrast-high footer a:focus {
+        color: yellow; }
+  body.contrast-high .goal-banner {
+    background: black;
+    border-color: black; }
+    body.contrast-high .goal-banner h1, body.contrast-high .goal-banner p {
+      color: white; }
   body.contrast-high p, body.contrast-high h2, body.contrast-high h3, body.contrast-high h4, body.contrast-high span, body.contrast-high td, body.contrast-high th, body.contrast-high a#text {
     color: white; }
-  body.contrast-high li, body.contrast-high a {
+  body.contrast-high a {
     color: yellow; }
   body.contrast-high h1 {
     color: white; }
@@ -800,19 +798,24 @@ body.contrast-high .site-intro .description {
 body.contrast-high #main-content .no-gutters img:not(#goal-18):hover {
   box-shadow: 0px 0px 0px 5px yellow; }
 
-body.contrast-high footer a {
-  color: white; }
-  body.contrast-high footer a:hover, body.contrast-high footer a:focus {
-    color: yellow; }
-
 body.contrast-high #disclaimer .phase-tag {
   background: white;
   color: black; }
 body.contrast-high #disclaimer .disclaimer-alert {
   color: white; }
 
+body.contrast-high .goal-tiles img {
+  background-color: black !important; }
+  body.contrast-high .goal-tiles img:hover {
+    background-color: black !important; }
+
+body.contrast-high #map a {
+  color: black; }
+body.contrast-high #map .selection-legend .legend-values li, body.contrast-high #map .selection-legend .legend-values span, body.contrast-high #map .selection-legend #selection-list li, body.contrast-high #map .selection-legend #selection-list span {
+  color: black; }
+
 body {
-  background: #fff url("../img/sdgbg.png") top left repeat-x;
+  background: white url("../img/sdgbg.png") top left repeat-x;
   padding-top: 15px; }
 
 #skiplink {
@@ -831,6 +834,7 @@ body {
   display: block; }
 
 header .container {
+  padding-top: 20px;
   min-height: 113px; }
   header .container .navbar-default {
     border: none; }
@@ -842,7 +846,7 @@ header .container {
   padding: 15px; }
   @media screen and (min-width: 769px) {
     .navbar-brand {
-      padding: 15px 15px 15px 0; } }
+      padding: 5px 15px 15px 0; } }
   .navbar-brand img {
     width: 100%; }
 
@@ -890,7 +894,7 @@ header .container {
     .navbar ul.navbar-nav li:not(.contrast) a {
       border-bottom: 2px solid transparent; }
       .navbar ul.navbar-nav li:not(.contrast) a:hover {
-        border-bottom: 2px solid #aaaaaa; }
+        border-bottom: 2px solid #595959; }
     @media screen and (min-width: 769px) {
       .navbar ul.navbar-nav > li:first-child a {
         margin-left: 0; } }
@@ -903,7 +907,8 @@ header .container {
   .navbar #search {
     position: relative;
     clear: both;
-    float: right; }
+    float: right;
+    margin-bottom: 20px; }
     .navbar #search label {
       position: absolute;
       top: 5px;
@@ -989,10 +994,10 @@ header .container {
             color: #E5E6E7; }
         .navbar ul.navbar-nav li.active a {
           border: none;
-          color: #fff;
+          color: white;
           font-weight: bold; }
           .navbar ul.navbar-nav li.active a:hover {
-            color: #fff; }
+            color: white; }
         .navbar ul.navbar-nav li:last-child {
           padding-bottom: 10px; }
     .navbar #search {
@@ -1054,7 +1059,8 @@ body.contrast-high .navbar li.active a {
 
 footer {
   clear: left;
-  color: #000000;
+  color: black;
+  background-color: white;
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -1070,7 +1076,7 @@ footer {
       footer .row {
         padding: 5px 0; } }
   footer a {
-    color: #000000;
+    color: black;
     text-decoration: underline; }
     footer a:hover, footer a:focus {
       color: #333333; }
@@ -1099,7 +1105,7 @@ footer {
   transition: width 0.3s ease; }
 #main-content #toolbar button {
   width: 100%;
-  background-color: #fff;
+  background-color: white;
   position: relative;
   border: 1px solid #ccc;
   text-align: left;
@@ -1129,7 +1135,7 @@ footer {
   font-size: 0.75em;
   margin-top: 10px; }
   #main-content #fields label {
-    background-color: #fff;
+    background-color: white;
     padding: 7px;
     display: block;
     font-weight: normal;
@@ -1143,7 +1149,7 @@ footer {
     #main-content #fields label:hover {
       border-color: #acacac; }
     #main-content #fields label.disabled {
-      color: #888;
+      color: #777;
       cursor: not-allowed; }
       #main-content #fields label.disabled:hover {
         border-color: #ccc; }
@@ -1209,9 +1215,9 @@ footer {
         padding: 4px; }
       #main-content #fields .variable-selector .variable-options button {
         width: auto;
-        background-color: #fff;
+        background-color: white;
         border: 1px solid #555;
-        color: #000;
+        color: black;
         float: none;
         position: static;
         text-align: center;
@@ -1516,7 +1522,7 @@ body.contrast-high .goal-indicators .indicator-cards span.status, body.contrast-
 body.contrast-high .goal-indicators .indicator-cards span.status.complete, body.contrast-high .goal-indicators .indicator-cards span.status.notapplicable {
   color: black !important; }
 body.contrast-high .goal-indicators .indicator-cards span.status.notstarted, body.contrast-high .goal-indicators .indicator-cards span.status.inprogress {
-  color: white !important; }
+  color: black !important; }
 body.contrast-high .goal-indicators .indicator-cards span.status.notstarted {
   color: white !important;
   border: 1px solid white !important; }
@@ -1551,7 +1557,6 @@ body.contrast-high #main-content.goal-indicators.goal-by-target .indicator-cards
     margin: 0; }
 
 .notapplicable {
-  background-color: #ccc;
   background: repeating-linear-gradient(135deg, #ccc, white 10px, #ccc 10px, white 20px); }
 
 .inprogress {
@@ -1574,16 +1579,20 @@ body.contrast-high #main-content.goal-indicators.goal-by-target .indicator-cards
     text-align: center;
     font-size: 16px; }
     #main-content .statuses > div .status.notstarted {
-      border: 1px solid #000000;
-      color: black; }
-    #main-content .statuses > div .status.complete, #main-content .statuses > div .status.inprogress {
+      border: 1px solid black;
+      color: #333; }
+    #main-content .statuses > div .status.complete {
       color: white; }
+    #main-content .statuses > div .status.inprogress {
+      color: white; }
+    #main-content .statuses > div .status.notapplicable {
+      color: #333; }
 #main-content .value {
   color: #333;
   font-weight: bold;
   margin-left: 3px; }
 #main-content .goal-stats {
-  border: 1px solid #000000;
+  border: 1px solid black;
   font-size: 0;
   margin-top: 10px; }
   #main-content .goal-stats span {
@@ -1643,7 +1652,8 @@ body.contrast-high .complete {
   background-color: white;
   color: black !important; }
 body.contrast-high .inprogress {
-  background-color: #767676; }
+  background-color: #767676;
+  color: black; }
 body.contrast-high .notstarted {
   color: white !important; }
 body.contrast-high .notapplicable {

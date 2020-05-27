@@ -297,6 +297,7 @@ opensdg.autotrack = function(preset, category, action, label) {
           var downloadLabel = translations.t(plugin.mapLayers[i].label)
           var downloadButton = $('<a></a>')
             .attr('href', plugin.getGeoJsonUrl(plugin.mapLayers[i].subfolder))
+            .attr('download', '')
             .attr('class', 'btn btn-primary btn-download')
             .attr('title', translations.indicator.download_geojson_title + ' - ' + downloadLabel)
             .text(translations.indicator.download_geojson + ' - ' + downloadLabel);
@@ -701,7 +702,6 @@ var GEOCODE_COLUMN = 'GeoCode';
 var YEAR_COLUMN = 'Year';
 var VALUE_COLUMN = 'Value';
 var HEADLINE_COLOR = '#777777';
-var HEADLINE_BACKGROUND_COLOR = '#FFFFFF';
 
   /**
  * Model helper functions with general utility.
@@ -1099,10 +1099,17 @@ function selectFieldsFromStartValues(startValues, selectableFieldNames) {
 /**
  * @param {Array} rows
  * @param {Array} selectableFieldNames Field names
+ * @param {string} selectedUnit
  * @return {Array} Field items
  */
-function selectMinimumStartingFields(rows, selectableFieldNames) {
-  var filteredData = rows.filter(function(row) {
+function selectMinimumStartingFields(rows, selectableFieldNames, selectedUnit) {
+  var filteredData = rows;
+  if (selectedUnit) {
+    filteredData = filteredData.filter(function(row) {
+      return row[UNIT_COLUMN] === selectedUnit;
+    });
+  }
+  filteredData = filteredData.filter(function(row) {
     return selectableFieldNames.some(function(fieldName) {
       return row[fieldName];
     });
@@ -1268,8 +1275,6 @@ function getDatasets(headline, data, combinations, years, defaultLabel, colors, 
   }, this);
   datasets.sort(function(a, b) { return a.label > b.label; });
   if (headline.length > 0) {
-    color = getHeadlineColor();
-    background = getHeadlineBackground();
     dataset = makeHeadlineDataset(years, headline, defaultLabel);
     datasets.unshift(dataset);
   }
@@ -1358,7 +1363,7 @@ function makeDataset(years, rows, combination, labelFallback, color, background,
     backgroundColor: background,
     pointBorderColor: color,
     borderDash: border,
-    borderWidth: 4,
+    borderWidth: 2,
     data: prepareDataForDataset(years, rows),
   });
 }
@@ -1399,10 +1404,11 @@ function getCombinationDescription(combination, fallback) {
  */
 function prepareDataForDataset(years, rows) {
   return years.map(function(year) {
-    return rows
-      .filter(function(row) { return row[YEAR_COLUMN] === year; }, this)
-      .map(function(row) { return row[VALUE_COLUMN]; }, this)[0];
-  }, this);
+    var found = rows.find(function (row) {
+      return row[YEAR_COLUMN] === year;
+    });
+    return found ? found[VALUE_COLUMN] : null;
+  });
 }
 
 /**
@@ -1412,15 +1418,6 @@ function prepareDataForDataset(years, rows) {
  */
 function getHeadlineColor() {
   return HEADLINE_COLOR;
-}
-
-/**
- * @return {string} CSS value for headline background
- *
- * TODO: Make this dynamic to support high-contrast.
- */
-function getHeadlineBackground() {
-  return HEADLINE_BACKGROUND_COLOR;
 }
 
 /**
@@ -1434,8 +1431,9 @@ function makeHeadlineDataset(years, rows, label) {
   return Object.assign(dataset, {
     label: label,
     borderColor: getHeadlineColor(),
-    backgroundColor: getHeadlineBackground(),
+    backgroundColor: getHeadlineColor(),
     pointBorderColor: getHeadlineColor(),
+    borderWidth: 4,
     data: prepareDataForDataset(years, rows),
   });
 }
@@ -1742,7 +1740,7 @@ function sortData(rows, selectedUnit) {
       }
       else {
         if (headline.length === 0) {
-          startingFields = helpers.selectMinimumStartingFields(this.data, this.selectableFields);
+          startingFields = helpers.selectMinimumStartingFields(this.data, this.selectableFields, this.selectedUnit);
         }
       }
       if (startingFields.length > 0) {
@@ -1773,7 +1771,7 @@ function sortData(rows, selectedUnit) {
       });
     }
 
-    if (selectionUpdateNeeded) {
+    if (selectionUpdateNeeded || options.unitsChangeSeries) {
       this.updateFieldStates(this.selectedFields);
     }
 
@@ -2266,7 +2264,8 @@ var indicatorView = function (model, options) {
     $("#btnSave").click(function() {
       var filename = chartInfo.indicatorId + '.png',
           element = document.getElementById('chart-canvas'),
-          height = element.clientHeight + 25,
+          footer = document.getElementById('selectionChartFooter'),
+          height = element.clientHeight + 25 + ((footer) ? footer.clientHeight : 0),
           width = element.clientWidth + 25;
       var options = {
         // These options fix the height, width, and position.
@@ -2741,7 +2740,7 @@ var indicatorSearch = function() {
   function getSearchFieldOptions(field) {
     var opts = {}
     if (opensdg.searchIndexBoost[field]) {
-      opts['boost'] = intval(opensdg.searchIndexBoost[field])
+      opts['boost'] = parseInt(opensdg.searchIndexBoost[field])
     }
     return opts
   }
