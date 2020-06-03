@@ -53,7 +53,7 @@
       </span>
       {{ target_title.title }}
     </div>
-    <div class="indicator-cards col-md-6 row no-gutters">
+    <div class="indicator-cards col-md-6">
     {% for indicator in group.items %}
 
       {% assign status_css = indicator.reporting_status | slugify %}
@@ -81,7 +81,7 @@
       <div class="col-md-12 {{ tag_classes }}">
         <a href="{{ site.baseurl }}{{ baseurl_folder }}/{{ indicator.indicator | slugify }}">
           <span>
-            {{ indicator.indicator }}
+            {{ indicator.indicator }}&nbsp;&nbsp;
             <span class="status {{ status_css }}">
               {{ status_desc }}
             </span>
@@ -96,6 +96,7 @@
             </ul>
           {% endif %}
         </a>
+	  <br>&nbsp;
       </div>
     {% endfor %}
     </div>
