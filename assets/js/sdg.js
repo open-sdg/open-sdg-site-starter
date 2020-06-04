@@ -1661,6 +1661,7 @@ function sortData(rows, selectedUnit) {
   this.footerFields = helpers.footerFields(this);
   this.colors = opensdg.chartColors(this.indicatorId);
   this.maxDatasetCount = 2 * this.colors.length;
+  this.hasStartValues = Array.isArray(this.startValues) && this.startValues.length > 0;
 
   this.clearSelectedFields = function() {
     this.selectedFields = [];
@@ -1713,7 +1714,7 @@ function sortData(rows, selectedUnit) {
       // Decide on a starting unit.
       if (this.hasUnits) {
         var startingUnit = this.selectedUnit;
-        if (this.startValues) {
+        if (this.hasStartValues) {
           var unitInStartValues = helpers.getUnitFromStartValues(this.startValues);
           if (unitInStartValues) {
             startingUnit = unitInStartValues;
@@ -1735,7 +1736,7 @@ function sortData(rows, selectedUnit) {
 
       // Decide on starting field values.
       var startingFields = this.selectedFields;
-      if (this.startValues) {
+      if (this.hasStartValues) {
         startingFields = helpers.selectFieldsFromStartValues(this.startValues, this.selectableFields);
       }
       else {
