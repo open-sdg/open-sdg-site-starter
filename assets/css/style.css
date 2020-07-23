@@ -1710,6 +1710,8 @@ body.contrast-high .notapplicable {
   background-color: repeating-linear-gradient(135deg, #ccc, white 10px, #ccc 10px, white 20px);
   background: repeating-linear-gradient(135deg, #ccc, white 10px, #ccc 10px, white 20px);
   color: black !important; }
+body.contrast-high .reporting-status-description {
+  color: white; }
 
 #jump-to-search a {
   cursor: pointer; }
