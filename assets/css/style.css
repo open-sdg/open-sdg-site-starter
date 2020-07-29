@@ -705,6 +705,15 @@ body.contrast-high a.nav-link:focus {
   background: white;
   color: black; }
 
+.card .card-title {
+  border-top: 2px solid;
+  border-color: #ccc;
+  padding-top: 7px; }
+.card img {
+  max-width: 100%; }
+.card .btn {
+  white-space: normal; }
+
 #accessibility-nav {
   padding-top: 20px;
   padding-right: 10px;
@@ -1789,3 +1798,14 @@ body.contrast-high #search-results .search-result .content {
       right: 15px;
       margin-top: 0;
       margin-bottom: 0; } }
+
+.layout-frontpage-alt .frontpage-goals-grid {
+  margin: 40px 0 20px 0;
+  border-top: 2px solid #ccc; }
+@media only screen and (min-width: 992px) {
+  .layout-frontpage-alt .goal-tiles .goal-tile {
+    width: 11%; } }
+.layout-frontpage-alt .frontpage-cards {
+  margin-top: 40px; }
+  .layout-frontpage-alt .frontpage-cards .row {
+    margin-bottom: 20px; }
