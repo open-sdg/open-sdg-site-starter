@@ -48,7 +48,7 @@ $(function() {
             shortIndicatorId: domData.id,
             chartTitle: domData.charttitle,
             measurementUnit: domData.measurementunit,
-            dataSource: domData.datasource,
+            dataSource: domData.datasource.replace(/<br>/g, 'dog'),
             geographicalArea: domData.geographicalarea,
             showData: domData.showdata,
             footnote: domData.footnote,
