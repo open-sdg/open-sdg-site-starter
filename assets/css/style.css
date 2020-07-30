@@ -1415,10 +1415,18 @@ footer {
     right: 0;
     display: inline;
     font-size: 12px; }
-    #main-content.goal-indicators .indicator-cards span.status.complete, #main-content.goal-indicators .indicator-cards span.status.inprogress {
-      color: white; }
+    #main-content.goal-indicators .indicator-cards span.status.complete {
+      color: white;
+      border: none; }
+    #main-content.goal-indicators .indicator-cards span.status.inprogress {
+      color: white;
+      border: none; }
     #main-content.goal-indicators .indicator-cards span.status.notstarted {
+      color: #333;
       border: 1px solid black; }
+    #main-content.goal-indicators .indicator-cards span.status.notapplicable {
+      color: #333;
+      border: none; }
 #main-content.goal-indicators .indicator-cards .tags {
   padding: 0;
   margin: 6px 10px 0 0;
@@ -1631,16 +1639,17 @@ body.contrast-high #main-content.goal-indicators.goal-by-target .indicator-cards
     width: 40px;
     text-align: center;
     font-size: 16px; }
+    #main-content .statuses > div .status.complete {
+      border: none;
+      color: white; }
+    #main-content .statuses > div .status.inprogress {
+      border: none;
+      color: white; }
     #main-content .statuses > div .status.notstarted {
       border: 1px solid black;
       color: #333; }
-    #main-content .statuses > div .status.complete {
-      color: white; }
-    #main-content .statuses > div .status.inprogress {
-      color: white; }
-    #main-content .statuses > div .status.notstarted {
-      color: #333; }
     #main-content .statuses > div .status.notapplicable {
+      border: none;
       color: #333; }
 #main-content .value {
   color: #333;
