@@ -1818,3 +1818,9 @@ body.contrast-high #search-results .search-result .content {
   margin-top: 40px; }
   .layout-frontpage-alt .frontpage-cards .row {
     margin-bottom: 20px; }
+
+.layout-goals .goals-page-description {
+  margin-bottom: 20px; }
+
+.layout-goals.contrast-high .goals-page-description {
+  color: white; }
