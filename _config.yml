@@ -1,20 +1,11 @@
 # Jekyll configuration for Open SDG platform
 
-# Tell the Remote Theme plugin to use the Open SDG platform (Jekyll theme).
-# Recommended: set this to a particular "release" of Open SDG. For example:
-#remote_theme: open-sdg/open-sdg@0.10.0
-remote_theme: open-sdg/open-sdg@master
-
-# Replace this title as needed.
-title: Indicators For The Sustainable Development Goals
+# Doing the Quick start? Here are the settings to update during installation:
+#
 # Replace the baseurl with the name of this repository. For example, if the repository is named
 # "my-site-repository", then update the baseurl like so:
 # baseurl: "/my-site-repository"
 baseurl: "/open-sdg-site-starter"
-url: ""
-data_dir: data
-environment: staging
-
 # In the next few items, replace "open-sdg" with the name of your GitHub
 # organization, and "open-sdg-data-starter" with the name of your data repository.
 remote_data_prefix: "https://open-sdg.github.io/open-sdg-data-starter"
@@ -22,6 +13,19 @@ remote_data_prefix: "https://open-sdg.github.io/open-sdg-data-starter"
 data_edit_url: http://prose.io/#open-sdg/open-sdg-data-starter/edit/develop/data/indicator_[id].csv
 # URL for the "Edit Metadata" button on indicators.
 metadata_edit_url: http://prose.io/#open-sdg/open-sdg-data-starter/edit/develop/meta/[id].md
+#
+# That's enough for the Quick Start! The remaining settings can be configured later.
+
+# Tell the Remote Theme plugin to use the Open SDG platform (Jekyll theme).
+# Recommended: set this to a particular "release" of Open SDG. For example:
+#remote_theme: open-sdg/open-sdg@0.10.0
+remote_theme: open-sdg/open-sdg@master
+
+# Replace this title as needed.
+title: Indicators For The Sustainable Development Goals
+url: ""
+data_dir: data
+environment: staging
 
 # Automatically create indicator pages, goal pages,
 # and some other required pages.
