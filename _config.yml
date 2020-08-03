@@ -14,6 +14,10 @@ data_edit_url: http://prose.io/#open-sdg/open-sdg-data-starter/edit/develop/data
 # URL for the "Edit Metadata" button on indicators.
 metadata_edit_url: http://prose.io/#open-sdg/open-sdg-data-starter/edit/develop/meta/[id].md
 #
+# The list of languages that are translated. The first one is the default.
+languages:
+  - en
+#
 # That's enough for the Quick Start! The remaining settings can be configured later.
 
 # Tell the Remote Theme plugin to use the Open SDG platform (Jekyll theme).
@@ -104,10 +108,6 @@ footer_menu:
 # Configure the text (or "translation key") to be used on the
 # non-global metadata tab.
 non_global_metadata: indicator.national_metadata
-
-# The list of languages that are translated. The first one is the default.
-languages:
-  - en
 
 # Set a base for all goal image URLs. Note that the full goal image path will be
 # the base below, completed with: /[language]/[number].png (eg, /fr/6.png).
