@@ -8,7 +8,7 @@
 baseurl: "/open-sdg-site-starter"
 # In the next few items, replace "open-sdg" with the name of your GitHub
 # organization, and "open-sdg-data-starter" with the name of your data repository.
-remote_data_prefix: "https://open-sdg.github.io/open-sdg-data-starter"
+remote_data_prefix: "https://open-sdg.org/open-sdg-data-starter"
 # URL for the "Edit Data" button on indicators.
 data_edit_url: http://prose.io/#open-sdg/open-sdg-data-starter/edit/develop/data/indicator_[id].csv
 # URL for the "Edit Metadata" button on indicators.
@@ -111,7 +111,7 @@ non_global_metadata: indicator.national_metadata
 
 # Set a base for all goal image URLs. Note that the full goal image path will be
 # the base below, completed with: /[language]/[number].png (eg, /fr/6.png).
-goal_image_base: https://open-sdg.github.io/sdg-translations/assets/img/goals
+goal_image_base: https://open-sdg.org/sdg-translations/assets/img/goals
 
 # Tell Jekyll to use the Remote Theme plugin.
 plugins:
