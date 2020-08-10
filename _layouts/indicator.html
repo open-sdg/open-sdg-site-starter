@@ -242,8 +242,13 @@
           {% if site.environment == 'staging' %}
           <div role="tabpanel" class="tab-pane" id="edit">
             <div class="edit-container">
-              <a class="btn btn-primary" href="http://prose.io/#{{ site.org_name }}/{{ site.repo_name }}/edit/{{ site.branch }}/{{ site.data_dir_for_edits | default: 'data' }}/indicator_{{ meta.indicator | slugify }}.csv">{{ t.indicator.edit_data }}</a>
-              <a class="btn btn-primary" href="http://prose.io/#{{ site.org_name }}/{{ site.repo_name }}/edit/{{ site.branch }}/meta/{{ meta.indicator | slugify }}.md">{{ t.indicator.edit_metadata }}</a>
+			  {% if current_language == 'ro' %}
+              <a class="btn btn-primary" target="_blank" href="http://prose.io/#{{ site.org_name }}/{{ site.repo_name }}/edit/{{ site.branch }}/{{ site.data_dir_for_edits | default: 'data' }}/indicator_{{ meta.indicator | slugify }}.csv">{{ t.indicator.edit_data }}</a>
+              <a class="btn btn-primary" target="_blank" href="http://prose.io/#{{ site.org_name }}/{{ site.repo_name }}/edit/{{ site.branch }}/meta/{{ current_language }}/{{ meta.indicator | slugify }}.md">{{ t.indicator.edit_metadata }}</a>
+			  {% else %}
+			    <a class="btn btn-primary" target="_blank" href="http://prose.io/#{{ site.org_name }}/{{ site.repo_name }}/edit/{{ site.branch }}/{{ site.data_dir_for_edits | default: 'data' }}/indicator_{{ meta.indicator | slugify }}.csv">{{ t.indicator.edit_data }}</a>
+                <a class="btn btn-primary" target="_blank" href="http://prose.io/#{{ site.org_name }}/{{ site.repo_name }}/edit/{{ site.branch }}/meta/{{ meta.indicator | slugify }}.md">{{ t.indicator.edit_metadata }}</a>
+			  {% endif %}
             </div>
           </div>
           {% endif %}
