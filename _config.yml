@@ -6,9 +6,12 @@
 # "my-site-repository", then update the baseurl like so:
 # baseurl: "/my-site-repository"
 baseurl: "/open-sdg-site-starter"
+# The next line should be the URL of your data repository published site. To find this,
+# go to your data repository in Github, and click "Settings", then scroll down to the
+# "Github Pages" section. Copy/paste the link in the green section.
+remote_data_prefix: "https://open-sdg.org/open-sdg-data-starter"
 # In the next few items, replace "open-sdg" with the name of your GitHub
 # organization, and "open-sdg-data-starter" with the name of your data repository.
-remote_data_prefix: "https://open-sdg.org/open-sdg-data-starter"
 # URL for the "Edit Data" button on indicators.
 data_edit_url: http://prose.io/#open-sdg/open-sdg-data-starter/edit/develop/data/indicator_[id].csv
 # URL for the "Edit Metadata" button on indicators.
