@@ -1,83 +1,191 @@
 name-1-1-1-a: Test graph
-name-1-3-1-b: Children with disabilities from diseases (aged 0-17 years)
-name-1-3-1-c: Proportion of pensioners to the total number of population at the end of the year
-name-1-3-1-d: Ratio of elderly pensioners.               Ratio of age pensioners and the retirement age stipulated by law and aged population
-name-1-3-1-e: Proportion of families receiving family benefits to households
-name-1-3-1-f: Proportion of families receiving social benefits to households
-name-1-3-1-g: Proportion of beneficiaries of old age, disability and in case of losing a breadwinner to the total number of population at the end of the year
-name-1-3-1-h: Children of orphans (aged 0-17 years) at the end of the year
-name-1-3-1-i: Children who return to relatives from orphanages (aged 0-17 years)
-name-1-3-1-j: Children with disabilities living in orphanages (aged 0-17 years) at the end of the year
-name-1-3-1-ja: Adopted children (aged 0-17 years)
-name-1-3-1-jb: Adopted children by social groups (aged 0-17 years)
-name-1-3-1-jc: Number of beneficiaries receiving maternity benefits granted to non-employed person at the end of the year
-name-1-3-1-ka: Share of poor population who receive family benefit
-name-1-3-1-kb: Share of poor population who receive social assistance, including family benefit
-name-1-4-1-a: Centralized water supply
-name-1-4-1-b: Centralized sewerage system
-name-1-5-1-a: Number of deaths,  temporarily evacuated and directly affected persons attributed to disasters per 100,000 population  by types of disasters
-name-2-c-1-a: Food and non-alcoholic beverages
-name-3-1-1-a: Maternal mortality ratio (average three-year indicator)
-name-3-2-2-a: Infant mortality rate
-name-3-3-1-a: HIV infection transmission from HIV-infected mothers with non-breastfeeding to child
-name-3-3-1-b: Percentage of people living with HIV, who know their  status
-name-3-3-1-c: Percentage of people living with HIV, who know their  status, who receive ARV treatment
-name-3-3-1-d: Percentage of HIV patients, who receive ARV   treatment, who have unrecognized level of viral load (VL)
-name-3-3-2-a: Multi-drug resistant tuberculosis morbidity indicator (per 100,000 population)
-name-3-3-3-a: Number of local cases in malaria per year
-name-3-3-4-a: 0-18 years old  patients with acute hepatitis B  ( per 100,000 population)
-name-3-3-4-b: Coverage of 3 doses of vaccine with hepatitis B alone or combined ingredient with 95 and more ingredients
-name-3-3-5-a: Number of patients with leishmaniasis
-name-3-3-5-b: Case of death from leishmaniosis
-name-3-5-1-a: The number of patients suffering from drug addiction
-name-3-5-2-a: Volume of alcohol consumed by households
-name-3-7-2-a: Adolescent birth rate (aged 15-17 years) per 1,000 women in that age group
-name-3-8-1-a: Providing antenatal care and care by qualified specialis
-name-3-8-1-b: At least one ultrasound examination during pregnancy
-name-3-8-1-c: During the first two days after birth, the mother's postnatal check
-name-3-8-1-d: During the first two days after birth, the newborn testing
-name-3-9-1-a: Number of deaths caused by registered social-domestic toxication cases
-name-3-b-1-a: Indicator of coverage  in vaccines among targeted quantities, 1 year of age
-name-3-b-1-b: Indicator of coverage  in vaccines among targeted quantities, 2 years of age
-name-3-b-1-c: Indicator of coverage  in vaccines among targeted quantities, 7 years of age
-name-3-c-1-a: Number of physicians conducting professional activities per 10,000 population
-name-4-1-1b: Proportion of children at the end of primary achieving at least a minimum proficiency level in  (i) reading and (ii) mathematics
-name-4-1-1c: Proportion of children at the end of lower secondary achieving at least a minimum proficiency level in (i) reading and (ii) mathematics
-name-4-2-2-a: Gross enrolment  of children 3 -5 years of age in pre-primary education
-name-4-3-1-a: Gross Enrollment Ration in general educatioin
-name-4-4-1-a: Number of pupils per computer in general education schools
-name-4-5-1-a: Gender parity index
-name-4-6-1-a: Literacy rate among population aged from 10-24  years old
-name-4-c-1-a: Proportion of trained teachers
-name-5-6-1-a: Women currently married or in union that are using any type of contraception, only Condition 3 "She can make a decision about healthcare either by herself or jointly" fulfilled
-name-5-a-1-a-a: Proportion of households with ownership over agricultural land
-name-5-a-1-b-a-1: Proportion of women age 15-49 with ownership (alone, jointly with someone else or both alone and jointly with someone else) over agricultural or non-agricultural land, who have a title deed and their name is listed on the title deed
-name-5-a-1-b-a-2: Proportion of men age 15-49 with ownership (alone, jointly with someone else or both alone and jointly with someone else) over agricultural or non-agricultural land, who have a title deed and their name is listed on the title deed
-name-5-b-1-a: Proportion of households who own a mobile telephone
-name-6-1-1-a: Proportion of  households with centralized water supply
-name-6-2-1-a: Proportion of population using safely managed sanitation facility
-name-6-2-1-b: Proportion of population using hand-washing facility with soap and water
-name-6-2-1-c: Proportion of population using sanitary-hygienic services defined by sanitation norms
-name-6-3-1-a: Proportion of insufficiently treated wastewater
-name-7-1-1-a: Proportion of households with access to electricity 
-name-7-1-2-a: Proportion of households with primary reliance on clean fuels and technology
-name-8-5-1-a: Average Monthly Nominal Wages / Salaries
-name-10-7-2-a: Percentage of returned migrants who undertook paid work during the last 7 days
-name-10-7-2-b: Proportion of individual asylum applications granted
-name-11-5-1-a: Number of deaths,  temporarily evacuated and directly affected persons attributed to disasters per 100,000 population  by types of disasters
-name-12-3-1-a: Food loss
-name-13-1-1-a: Number of deaths,  temporarily evacuated and directly affected persons attributed to disasters per 100,000 population  by types of disasters
-name-14-3-1-a: Average Lake Sevan acidity (pH) measured at agreed suite of representative sampling stations
-name-14-5-1-a: Coverage of protected water areas in relation to lakes and reservoirs
-name-14-a-1-a: Budget allocated to research and complex protection related to lake Sevan
-name-15-3-1-a: Proportion of lands in need of improvement over total land area
-name-15-5-1-a-1: Registered vertebrate and invertebrate species, of which
-name-15-5-1-a-2: Registered high and low plant species, of which
-name-16-1-1-a: Number of homicide cases per 100,000 population
-name-17-1-1-a: Total central government revenue as a proportion of GDP, by source, including
-name-17-3-1-a: Foreign direct investments (FDI)
-name-17-4-1-a: External debt service as percentage of exports goods and services
-name-17-8-1-a: Proportion of individuals using the Internet by sex and age groups 
+name-1-2-2-1:	Multidimensional poverty index, by sex and children
+name-1-3-1-a:	Proportion of retirement-age persons who benefit from social insurance age-limit pension, by sex, age groups
+name-1-3-1-b:	Proportion of children covered by social benefits for children
+name-1-3-1-c:	Proportion of women who have delivered - beneficiaries of maternity allowances
+name-1-3-1-d:	Proportion of persons with disabilities who benefit from social benefits
+name-1-3-1-e:	Proportion of unemployed people benefiting from unemployment allowance, by sex, age groups
+name-1-3-1-f:	Proportion of employees covered with benefits for temporary worik incapacity, caused by work accidents and occupational diseases
+name-1-3-1-g:	Proportion of vulnerable persons benefiting from social assistance benefits
+name-1-3-1-h:	Coverage of the poorest population (I quintile) with social assistance benefits
+name-1-3-1-1:	Coverage of the poorest population (I quintile) with social allowance for the cold period of the year
+name-1-4-2-a:	Proportion of adult population with  secure and legally recognised tenure rights to land
+name-1-4-2-b:	Proportion of adult population who perceive their tenure rights to land as being secure
+name-1-5-1-a:	Number of people who died as a result of disasters, per 100.000 population
+name-1-5-1-b:	Number of persons who have disappeared as a result of disasters, per 100.000 population
+name-1-5-1-c:	Number of persons directly affected as a result of disasters, per 100.000 population
+name-1-5-3-1:	National strategic framework on disaster risk reduction, aligned to the Sendai Framework for Disaster Risk Reduction for 2015-2030, adopted and implemented
+name-1-5-3-2:	Implementation level of the National Strategic Framework on Disaster Risk Reduction, aligned to the Sendai Framework for Disaster Risk Reduction for 2015-2030
+name-1-a-2-a:	Proportion of expenditures from the national public budget for education out of the total expenditures of the national pubic budget
+name-1-a-2-b:	Proportion of expenditures from the national public budget for health out of the total expenditures of the national public budget
+name-1-a-2-c:	Proportion of expenditures from the national public budget for social protection out of the total expenditures of the national public budget
+name-1-a-3-1:	Expenditures for social protection as a share in the GDP
+name-2-2-2-a:	Prevalence of overweight among children aged under 5 years old
+name-2-2-2-b:	Prevalence of malnutrition among children under 5 years old
+name-2-3-1-1:	Proportion of used agricultural fields out of total agricultural fields
+name-2-b-1-1:	Volume of financial means allocated for fostering activities to promote local agricultural and agri-food products on foreign markets
+name-3-2-1-1:	Infant mortality rate per 1000 born alive
+name-3-3-1-1:	HIV associated deaths per 100 000 population
+name-3-5-2-1:	Prevalence of harmful use of alcohol, by sex, age, area
+name-3-8-1-1:	Proportion of population having had access to compensated essential medication
+name-3-8-2-a:	Proportion of population with household expenditures on health larger than 10% of total household expenditure
+name-3-8-2-b:	Proportion of population with household expenditures on health larger than 25% of total household expenditure
+name-3-8-2-1:	Proportion of private expenditures (of households) for health
+name-3-8-2-2:	Proportion of population with mandatory health insurance
+name-3-a-1-1:	Proportion of 15 years old and over smoking population, by sex and age
+name-4-1-1-c(i):	Proportion of children and youth at the end of lower secondary achieving at least a minimum proficiency level in reading
+name-4-1-1-c(ii):	Proportion of children and youth at the end of lower secondary achieving at least a minimum proficiency level in mathematics
+name-4-1-1-1:	Gross rate of admission in the last year of primary education, by sex
+name-4-1-1-2:	Lower secondary education graduation gross rate, by sex
+name-4-5-1-a:	Parity index in primary education calculated on the gross enrollment rate in primary education
+name-4-5-1-b:	Parity index in secondary education calculated based on the gross enrollment rate in secondary education
+name-4-5-1-b:	Parity index in secondary education calculated based on the gross enrollment rate in secondary education
+name-4-5-1-c:	Parity index in secondary education, stage II, based on the gross enrollment rate
+name-4-5-1-c:	Parity index in secondary education, stage II, based on the gross coverage rate
+name-4-5-1-d:	Parity index in tertiary education calculated based on the gross coverage rate
+name-4-5-1-d:	Parity index in tertiary education calculated based on the gross enrollment rate
+name-4-5-1-e:	Parity index of children with disabilities in compulsory education, based on the absolute number of students
+name-4-a-1-a:	Proportion of schools with access to electricity
+name-4-a-1-b:	Proportion of schools with access to Internet for pedagogical purposes
+name-4-a-1-c:	Proportion of schools with access to computers for pedagogical purposes
+name-4-a-1-d:	Proportion of schools adapted infrastructure and materials for students with disabilities
+name-4-a-1-e:	Proportion of schools supplied with drinking water
+name-4-a-1-f:	Proportion of schools with access to separate sanitation facilities for girls and boys
+name-4-a-1-g:	Proportion of schools with basic facilities for hand washing (according to WASH indicators' definition)
+name-4-c-1-a:	Proportion of teachers with pedagogical education in pre-primary education
+name-4-c-1-b:	Proportion of teachers with pedagogical education in primary education
+name-4-c-1-c:	Proportion of teachers with pedagogical education in general secondary education (5-12 grades)
+name-5-4-1-1:	Proportion of female personal assistants
+name-5-4-1-2:	Coverage of children under 3 years old with childcare services
+name-5-5-1-a:	Proportion of seats held by women in the national parliament
+name-5-5-1-b:	Proportion of seats held by women in Local Public Administration
+name-5-6-2-1:	Existence in the country of legislative-normative framework guaranteeing women and men aged 15-49 years old access to sexual and reproductive health, information and education
+name-5-6-2-2:	Implementation in the country of the legislative-normative framework, which guarantees women and men aged 15-49 years old access to sexual and reproductive health, information and education
+name-5-a-1-a:	Proportion of agricultural population with ownership or other property rights over agricultural land
+name-5-a-1-b:	Proportion of women with ownership or other property rights over agricultural land
+name-5-b-1-1:	Average number of mobile telephones by 100 households
+name-5-c-1-1:	Availability of public resources' monitoring and allocation systems for gender equality and women's empowerment
+name-6-1-1-1:	Proportion of population benefiting from water supply service
+name-6-2-1-1:	Proportion of population having a (a) sanitation service and (b) bath or shower within the dwelling
+name-6-2-1-a:	Proportion of population connected to the public sewerage system
+name-6-2-1-b:	Proportion of population using a hand-washing facility with soap and water, (resident population)
+name-6-3-2-a:	Proportion of surface water bodies which achieved the "good quality" class according to the microbiological parameters
+name-6-3-2-b:	Proportion of underground water bodies which achieved the "good quality" class according to the microbiological parameters
+name-6-3-2-1:	Proportion of drinking water supply sources not compliant with the sanitary norms for water quality
+name-6-4-1-1:	Water use for production and drinking needs
+name-7-1-2-1:	Distribution of energy sources used for domestic needs (space heating, space cooling, water heating, cooking)
+name-7-3-1-a:	Consumption of primary energy (gross consumption)
+name-7-3-1-b:	Consumption of final energy (final energy consumption)
+name-7-b-1-a:	Volume of investments in energy efficiency sector as a proportion of GDP
+name-7-b-1-b:	Volume of foreign direct investment in financial transfer for sustainable development of infrastructure and technology
+name-8-4-1-a:	Natural resources per person
+name-8-4-1-b:	Natural resources as related to GDP
+name-8-4-2-a:	Domestic material consumption per capita
+name-8-4-2-b:	Domestic material consumption per GDP
+name-8-7-1-a:	Proportion of children aged 5-17 years engaged in child labour, by sex and age groups
+name-8-7-1-b:	Number of children aged 5-17 years engaged in child labour, by sex and age groups
+name-8-8-2-1:	Number of collective agreements concluded at the institutional level in line with ILO documentary sources and national legislation
+name-8-9-1-1:	Share of toursim in GDP
+name-8-9-2-1:	Proportion of employees in tourism activities out of the total employees, by sex
+name-8-10-1-a:	Number of commercial bank branches and agencies per 100 000 population (18+)
+name-8-10-1-b:	Number of automated teller machines (ATMs) per 100 000 population (18+)
+name-8-10-2-1:	Bank accounts per 100 000 population, by types
+name-9-1-2-a:	Freight record by mode of transport (air, road, railroad, river)
+name-9-1-2-b:	Passenger record by mode of transport (air, road, railroad, river)
+name-9-2-1-a:	Manufacturing gross value added as a proportion of GDP
+name-9-2-1-b:	Manufacturing gross value added per employed person
+name-9-2-1-1:	Manufacturing gross value added as a proportion of GDP
+name-9-2-1-2:	Manufacturing gross value added per employed person
+name-9-3-1-1:	Contribution of gross value added  of SMEs in total gross value added
+name-9-3-2-1:	Proportion of value of credits and loans accessed by small enterprises (up to 49 employees) during the year out of the value of credits and loans accessed by enterprises,  including in the industry sector
+name-9-4-1-a:	Total CO2 emissions originating from fuel burning
+name-9-4-1-b:	Total CO2 emissions per 1 GDP unit
+name-9-4-1-c:	CO2 emissions generated by the industrial sector per gross value added in industry
+name-9-4-1-1:	Total CO2 emissions by sectors, equivalent thousand tons CO2
+name-10-1-1-a:	Growth rate of consumption expenditures per capita of the population per entire country (resident population)
+name-10-1-1-b:	Growth rate of the consumption expenditures among the bottom 40% of the population (resident population)
+name-10-3-1-1:	Number of cases of discrimination established per 100 000 inhabitants, depending on the sex of the petitioner
+name-10-6-1-a:	Proportion of citizens of the Republic of Moldova - members of international organizations
+name-10-6-1-b:	Proportion of voting rights of the country in international organizations
+name-10-7-2-1:	Existence of efficient national policies on migration
+name-10-7-2-2:	Number of bilateral agreements signed in the area of labour migration
+name-10-7-2-3:	Number of bilateral agreements signed in the area of social security
+name-11-1-1-a:	Proportion of population with monthly expenditures for dwelling maintenance that exceed 30% of the household monthly disposable income(accessibility - adequate dwelling)
+name-11-1-1-b:	Proportion of persons living in dwellings with more than 2 persons per room (overcrowded)
+name-11-2-1-1:	Rate of road traffic accidents per 100 000 population
+name-11-3-1-1:	Level of urbanization
+name-11-4-1-1:	Proportion of expenditures for maintenance and protection of cultural heritage in total expenditures of the National Public Budget
+name-11-5-1-a:	Number of deaths attributed to disasters per 100.000 population
+name-11-5-1-b:	Number of missing persons attributed to disasters per 100.000 population
+name-11-5-1-c:	Number of directly affected persons attributed to disasters, per 100.000 population
+name-11-5-2-a:	Value of direct economic loss in critical infrastructure attributed to disasters in relation to global GDP
+name-11-5-2-b:	Number of disruptions to basic services, attributed to disasters
+name-11-6-1-1:	Rate of population connected to municipal waste collection services
+name-11-6-2-1:	Quantity of emissions of polluting substances in the air from mobile sources (by sources)
+name-11-7-1-1:	Proportion of green spaces and streets (conventionally public areas) out of the built-in areas of urban localities
+name-11-b-1-1:	Adopted and implemented national disaster risk reduction framework in line with the Sendai Framework for Disaster Risk Reduction 2015–2030
+name-11-b-1-2:	Implementation level of the national disaster risk reduction framework in line with the Sendai Framework for Disaster Risk Reduction 2015–2030
+name-12-1-1-1:	Number of national policies integrating "green" economy aspects, sustainable production and consumption (SPC)
+name-12-2-1-a:	Natural resources per capita
+name-12-2-1-b:	Natural resources per GDP
+name-12-2-2-a:	Consumption of natural resources per capita
+name-12-2-2-b:	Consumption of natural resources per GDP
+name-12-3-1-a:	Global food loss index
+name-12-3-1-b:	Food waste index
+name-12-4-2-a:	Amount of hazardous waste generated per capita
+name-12-4-2-b:	Proportion of recycled, destroyed or stored waste in landfills out of total generated waste
+name-12-5-1-1:	Amount of waste (from production and consumption) generated
+name-12-7-1-1:	Green public procurement actions
+name-13-1-1-a:	Number of deaths attributed to disasters per 100 000 population
+name-13-1-1-b:	Number of missing persons attributed to disasters per 100 000 population
+name-13-1-1-c:	Number of directly affected persons attributed to disasters per 100 000 population
+name-13-1-2-1:	Adopted and implemented national strategic disaster risk reduction framework in line with the Sendai Framework for Disaster Risk Reduction 2015–2030
+name-13-1-2-2:	Implementation level of the national strategic disaster risk reduction framework in line with the Sendai Framework for Disaster Risk Reduction 2015–2030
+name-13-2-1-1:	Actions for establishment and operationalization of policies, strategies and action plans on climate change adaptation and resilience,  reduction of greenhouse gas emissions
+name-13-3-1-1:	Actions on integrating effects of  climate (mitigation, adaptation, reduction of impact and early warning) in primary, secondary and tertiary education curricula
+name-13-3-2-1:	Level of implementation of the national strategic framework on climate change
+name-14-1-1-1:	Chemical indices of surface water  eutrophication
+name-14-4-1-1:	Number of recorded incidents of illegal fishing
+name-14-7-1-1:	Fisheries as a proportion of GDP
+name-15-2-1-1:	Area of degraded land recovered through reforestation
+name-15-2-1-2:	Area of restored forest
+name-15-2-1-3:	Area of extended forest
+name-15-5-1-1:	Total number of species included in the Red Book of the country
+name-15-6-1-1:	Existence of normative framework to ensure fair and equitable sharing of genetic resources
+name-15-8-1-1:	Existence of regulatory documents and measures on prevention and decrease of invasive species' appearance to control and eradicate priority species
+name-15-9-1-1:	Level of implementation of actions in the Strategic Plan on biodiversity of Republic of Moldova for 2015-2020
+name-16-1-3-1:	Number of victims of violence per 100 000 population by sex, age, types of violence
+name-16-2-1-1:	Number of children victims of violence, negligence, exploitation and traffic
+name-16-3-2-1:	Number of persons that accessed state guaranteed legal aid
+name-16-3-2-2:	Proportion of Ombudsman's recommendations (including those of the Ombudsman for Children's Rights Protection) implemented by notified authorities and institutions (which results from court proceedings)
+name-16-3-2-3:	Proportion of court cases lost at ECHR out of the number of applications communicated every year
+name-16-3-2-4:	Population satisfaction regarding legal services
+name-16-4-2-1:	Number of legally owned arms, per 100 000 population
+name-16-4-2-2:	Number of confiscated illegally owned arms
+name-16-5-2-1:	„Corruption control” indicator  (between -2,5 - 2,5)
+name-16-5-2-2:	„Regulatory quality” indicator (between -2,5 - 2,5)
+name-16-6-2-1:	Level of citizens' satisfaction with quality of accessed public services
+name-16-7-1-a:	Ratio between the proportion of seat taken in the Parliament by persons from certain groups of population (by sex, age, persons with disabilities and other corresponding groups) and proportion of the respective group in total population
+name-16-7-1-b:	Ratio between the proportion of positions held in public institutions (central and local) by persons from certain groups of population (by sex, age, persons with disabilities, and other corresponding groups) and the proportion of the respective group out of total population
+name-16-7-1-1:	Proportion of women in the Government
+name-16-7-1-2:	Proportion of women in public service
+name-16-7-1-c:	Ratio between the proportion of positions held in the judiciary system by persons of certain groups of population (by sex, age, persons with disabilities and other corresponding groups) and the proportion of the respective group out of total population
+name-16-7-1-3:	Proportion of female judges
+name-16-8-1-a:	Proportion of Republic of Moldova citizens in international organizations
+name-16-8-1-b:	Proportion of country's voting rights in international organizations
+name-16-10-1-1:	World Press Freedom Index
+name-16-10-2-1:	Actions on observing the law on access to information
+name-16-10-2-2:	ICT sector development index (IDI)
+name-17-11-1-1:	Exports of goods from the Republic of Moldova as a proportion of  country's foreign trade
+name-17-14-1-1:	Mechanisms in place to enhance policy coherence of sustainable development
+name-17-16-1-1:	Reporting progress achieved in enforcing the framework for monitoring development efficiency with participation with more partners, providing support to the country to achieve the Sustainable Development Goals
+name-17-17-1-1:	Implementation of the Civil Society Development Strategy
+name-17-18-2-1:	Availability of national statistical legislation that complies with the Fundamental Principles of Official Statistics
+name-17-18-3-1:	Existence of annual Action Plan to implement the National Strategy for Development of the National Statistical System that is fully funded and under implementation
+name-17-18-3-2:	Level of implementation of the Annual Statistical Work Program
+name-17-19-2-a:	The population and housing Census conducted in the framework of the 2020 and 2030 round
+name-17-19-2-b:	Rate of births and deaths registration
+
 available-8-4-2: Household Final Consumption Expenditure, Goods
 description-8-4-2: Cost of goods purchased by households for final consumption
 unit-8-4-2: mln. drams, drams, %
