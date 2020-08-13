@@ -1,85 +1,189 @@
-name-1-1-1-a: Test grafic
-name-1-1-1: Ponderea populației aflate sub pragul internațional al sărăciei 2,15 $ pe zi, pe sexe, grupe de vârstă, statut ocupațional și mediu de reședință (urban/rural)
-name-1-2-1: Rata sărăciei absolute, pe sexe și vârste, (populația cu reședință obișnuită), %
-name-1-3-1-b: Children with disabilities from diseases (aged 0-17 years)
-name-1-3-1-c: Proportion of pensioners to the total number of population at the end of the year
-name-1-3-1-d: Ratio of elderly pensioners.               Ratio of age pensioners and the retirement age stipulated by law and aged population
-name-1-3-1-e: Proportion of families receiving family benefits to households
-name-1-3-1-f: Proportion of families receiving social benefits to households
-name-1-3-1-g: Proportion of beneficiaries of old age, disability and in case of losing a breadwinner to the total number of population at the end of the year
-name-1-3-1-h: Children of orphans (aged 0-17 years) at the end of the year
-name-1-3-1-i: Children who return to relatives from orphanages (aged 0-17 years)
-name-1-3-1-j: Children with disabilities living in orphanages (aged 0-17 years) at the end of the year
-name-1-3-1-ja: Adopted children (aged 0-17 years)
-name-1-3-1-jb: Adopted children by social groups (aged 0-17 years)
-name-1-3-1-jc: Number of beneficiaries receiving maternity benefits granted to non-employed person at the end of the year
-name-1-3-1-ka: Share of poor population who receive family benefit
-name-1-3-1-kb: Share of poor population who receive social assistance, including family benefit
-name-1-4-1-a: Centralized water supply
-name-1-4-1-b: Centralized sewerage system
-name-1-5-1-a: Number of deaths,  temporarily evacuated and directly affected persons attributed to disasters per 100,000 population  by types of disasters
-name-2-c-1-a: Food and non-alcoholic beverages
-name-3-1-1-a: Maternal mortality ratio (average three-year indicator)
-name-3-2-2-a: Infant mortality rate
-name-3-3-1-a: HIV infection transmission from HIV-infected mothers with non-breastfeeding to child
-name-3-3-1-b: Percentage of people living with HIV, who know their  status
-name-3-3-1-c: Percentage of people living with HIV, who know their  status, who receive ARV treatment
-name-3-3-1-d: Percentage of HIV patients, who receive ARV   treatment, who have unrecognized level of viral load (VL)
-name-3-3-2-a: Multi-drug resistant tuberculosis morbidity indicator (per 100,000 population)
-name-3-3-3-a: Number of local cases in malaria per year
-name-3-3-4-a: 0-18 years old  patients with acute hepatitis B  ( per 100,000 population)
-name-3-3-4-b: Coverage of 3 doses of vaccine with hepatitis B alone or combined ingredient with 95 and more ingredients
-name-3-3-5-a: Number of patients with leishmaniasis
-name-3-3-5-b: Case of death from leishmaniosis
-name-3-5-1-a: The number of patients suffering from drug addiction
-name-3-5-2-a: Volume of alcohol consumed by households
-name-3-7-2-a: Adolescent birth rate (aged 15-17 years) per 1,000 women in that age group
-name-3-8-1-a: Providing antenatal care and care by qualified specialis
-name-3-8-1-b: At least one ultrasound examination during pregnancy
-name-3-8-1-c: During the first two days after birth, the mother's postnatal check
-name-3-8-1-d: During the first two days after birth, the newborn testing
-name-3-9-1-a: Number of deaths caused by registered social-domestic toxication cases
-name-3-b-1-a: Indicator of coverage  in vaccines among targeted quantities, 1 year of age
-name-3-b-1-b: Indicator of coverage  in vaccines among targeted quantities, 2 years of age
-name-3-b-1-c: Indicator of coverage  in vaccines among targeted quantities, 7 years of age
-name-3-c-1-a: Number of physicians conducting professional activities per 10,000 population
-name-4-1-1b: Proportion of children at the end of primary achieving at least a minimum proficiency level in  (i) reading and (ii) mathematics
-name-4-1-1c: Proportion of children at the end of lower secondary achieving at least a minimum proficiency level in (i) reading and (ii) mathematics
-name-4-2-2-a: Gross enrolment  of children 3 -5 years of age in pre-primary education
-name-4-3-1-a: Gross Enrollment Ration in general educatioin
-name-4-4-1-a: Number of pupils per computer in general education schools
-name-4-5-1-a: Gender parity index
-name-4-6-1-a: Literacy rate among population aged from 10-24  years old
-name-4-c-1-a: Proportion of trained teachers
-name-5-6-1-a: Women currently married or in union that are using any type of contraception, only Condition 3 "She can make a decision about healthcare either by herself or jointly" fulfilled
-name-5-a-1-a-a: Proportion of households with ownership over agricultural land
-name-5-a-1-b-a-1: Proportion of women age 15-49 with ownership (alone, jointly with someone else or both alone and jointly with someone else) over agricultural or non-agricultural land, who have a title deed and their name is listed on the title deed
-name-5-a-1-b-a-2: Proportion of men age 15-49 with ownership (alone, jointly with someone else or both alone and jointly with someone else) over agricultural or non-agricultural land, who have a title deed and their name is listed on the title deed
-name-5-b-1-a: Proportion of households who own a mobile telephone
-name-6-1-1-a: Proportion of  households with centralized water supply
-name-6-2-1-a: Proportion of population using safely managed sanitation facility
-name-6-2-1-b: Proportion of population using hand-washing facility with soap and water
-name-6-2-1-c: Proportion of population using sanitary-hygienic services defined by sanitation norms
-name-6-3-1-a: Proportion of insufficiently treated wastewater
-name-7-1-1-a: Proportion of households with access to electricity 
-name-7-1-2-a: Proportion of households with primary reliance on clean fuels and technology
-name-8-5-1-a: Average Monthly Nominal Wages / Salaries
-name-10-7-2-a: Percentage of returned migrants who undertook paid work during the last 7 days
-name-10-7-2-b: Proportion of individual asylum applications granted
-name-11-5-1-a: Number of deaths,  temporarily evacuated and directly affected persons attributed to disasters per 100,000 population  by types of disasters
-name-12-3-1-a: Food loss
-name-13-1-1-a: Number of deaths,  temporarily evacuated and directly affected persons attributed to disasters per 100,000 population  by types of disasters
-name-14-3-1-a: Average Lake Sevan acidity (pH) measured at agreed suite of representative sampling stations
-name-14-5-1-a: Coverage of protected water areas in relation to lakes and reservoirs
-name-14-a-1-a: Budget allocated to research and complex protection related to lake Sevan
-name-15-3-1-a: Proportion of lands in need of improvement over total land area
-name-15-5-1-a-1: Registered vertebrate and invertebrate species, of which
-name-15-5-1-a-2: Registered high and low plant species, of which
-name-16-1-1-a: Number of homicide cases per 100,000 population
-name-17-1-1-a: Total central government revenue as a proportion of GDP, by source, including
-name-17-3-1-a: Foreign direct investments (FDI)
-name-17-4-1-a: External debt service as percentage of exports goods and services
-name-17-8-1-a: Proportion of individuals using the Internet by sex and age groups 
+name-1-2-2-1:	Indicele sărăciei multidimensionale, pe sexe şi copii
+name-1-3-1-a:	Ponderea persoanelor de vârstă pensionară care beneficiază de pensie de asigurări sociale  pentru limită de vârstă, pe sexe
+name-1-3-1-b:	Proporția copiilor acoperiți cu prestații sociale pentru copii
+name-1-3-1-c:	Proporția femeilor care au născut, beneficiare de indemnizații de maternitate
+name-1-3-1-d:	Proporția persoanelor cu dizabilități care beneficiază de prestații sociale
+name-1-3-1-e:	Proporția șomerilor care beneficiază de ajutor de șomaj,  pe sexe, grupe de vârstă
+name-1-3-1-f:	Proporția salariaților acoperiți cu prestații pentru incapacitate temporară de muncă cauzată de accidentele de muncă și bolile profesionale
+name-1-3-1-g:	Proporția persoanelor vulnerabile beneficiari de prestații de asistență socială
+name-1-3-1-h:	Acoperirea populației celei mai sărace (quintila 1) cu prestații de Ajutor social
+name-1-3-1-1:	Acoperirea populației celei mai sărace (quintila 1) cu prestații de Ajutor pentru perioada rece a anului
+name-1-4-2-a:	Ponderea populației adulte cu drepturi sigure, legal recunoscute, de proprietate asupra terenurilor
+name-1-4-2-b:	Ponderea populației adulte care își percepe drepturile sale asupra pământului ca fiind sigure
+name-1-5-1-a:	Numărul de persoane decedate în urma situațiilor excepționale, la 100 000 populație
+name-1-5-1-b:	Numărul de persoane dispărute în urma situațiilor excepționale, la 100 000 populație
+name-1-5-1-c:	Numărul de persoane direct afectate in urma situatiilor exceptionale, la 100 000 populație
+name-1-5-3-1:	Cadrul strategic național privind reducerea riscurilor de dezastre, aliniate la Cadrul de la Sendai privind reducerea riscurilor de dezastre pentru 2015-2030, adoptat și implementat
+name-1-5-3-2:	Gradul de implementare a Cadrului strategic național privind reducerea riscurilor de dezastre, aliniate la Cadrul de la Sendai privind reducerea riscurilor de dezastre pentru 2015-2030
+name-1-a-2-a:	Ponderea  cheltuielilor din bugetul public național pentru educație în totalul cheltuielilor bugetului public național
+name-1-a-2-b:	Ponderea  cheltuielilor din bugetul public național pentru sănătate în totalul cheltuielilor bugetului public național
+name-1-a-2-c:	Ponderea  cheltuielilor din bugetul public național pentru protecție socială  în totalul cheltuielilor bugetului public național
+name-1-a-3-1:	Cheltuielile pentru protecția socială ca proporție în PIB
+name-2-2-2-a:	Prevalența supraponderalilor printre copii în vârstă de până la 5 ani
+name-2-2-2-b:	Prevalența retardului ponderal printre copii în vârstă de până la 5 ani
+name-2-b-1-1:	Ponderea terenurilor agricole utilizate în total terenuri agricole
+name-2-b-1-1:	 Volumul mijloacelor financiare  alocate pentru stimularea activităților de promovare a produselor agricole și agroalimentare autohtone pe piața externă
+name-3-2-1-1:	Rata mortalității infantile, la 1000 născuţi-vii
+name-3-3-1-1:	Decese HIV asociate, la 100 000 populație
+name-3-5-2-1:	Prevalența consumului nociv de alcool, pe sexe, vârstă, mediu
+name-3-8-1-1:	Ponderea populației care a beneficiat de medicamente compensate esențiale
+name-3-8-2-a:	Ponderea populației cu cheltuielile gospodăriilor pentru sănătate mai mari de 10% în total cheltuielile gospodăriilor
+name-3-8-2-b:	Ponderea populației cu cheltuielile gospodăriilor pentru sănătate mai mari de 25% în total cheltuielile gospodăriilor
+name-3-8-2-1:	Ponderea cheltuielilor private (ale gospodăriilor casnice) pentru sănătate
+name-3-8-2-2:	Ponderea populației cu asigurare obligatorie de asistență medicală
+name-3-a-1-1:	Ponderea populației în vârstă 15 ani și peste care fumează, pe sexe și vârste
+name-4-1-1-c (i):	Ponderea elevilor din ultima clasă a învățământului gimnazial cu cunoștințe minime în domeniul cititi/lecturii
+name-4-1-1-c (ii):	Ponderea elevilor din ultima clasă a învățământului gimnazial cu cunoștințe minime în domeniul matematicii
+name-4-1-1-1:	Rata brută de admisie în ultimul an de studiu al învățământului primar, pe sexe
+name-4-1-1-2:	Rata brută de absolvire a învățământului gimnazial, pe sexe
+name-4-5-1-a:	Indicele parității în învătământul primar calculat în baza ratei brute de cuprindere în învățământul primar
+name-4-5-1-b:	Indicele parității în învățământul gimnazial calculat în baza ratei brute de cuprindere în învățământul gimnazial
+name-4-5-1-c:	Indicele parității  în învătământul secundar treapta II calculat în baza ratei brute de cuprindere
+name-4-5-1-d:	Indicele parității în învățământul terţiar calculat în baza ratei brute de cuprindere
+name-4-5-1-e:	Indicele parității al copiilor cu dizabilitati încadrati în învătământul obligatoriu, în baza numărului absolut de elevi
+name-4-a-1-a:	Ponderea instituțiilor de învățămînt cu acces la electricitate
+name-4-a-1-b:	Ponderea instituțiilor de învățămînt cu acces la internet în scopuri pedagogice
+name-4-a-1-c:	Ponderea instituțiilor de învățămînt cu acces la calculatoare în scopuri pedagogice
+name-4-a-1-d:	Ponderea instituțiilor de învățămînt general adaptate necesităților persoanelor cu dizabilități
+name-4-a-1-e:	Ponderea instituțiilor de învățământ asigurate cu apă potabilă
+name-4-a-1-f:	Ponderea instituțiilor de învățământ cu acces la grup sanitar separat pentru fete și băieți
+name-4-a-1-g:	Ponderea instituțiilor de învățământ cu facilități de bază pentru spălarea mâinilor (conform definițiilor indicatorilor WASH)
+name-4-c-1-a:	Ponderea personalului pedagogic cu studii în domeniul pedagogiei în nivelul preșcolar
+name-4-c-1-b:	Ponderea personalului pedagogic cu studii în domeniul pedagogiei în nivelul primar
+name-4-c-1-c:	Ponderea personalului pedagogic cu studii în domeniul pedagogiei în nivelul secundar general (clasele 5-12)
+name-5-4-1-1:	Ponderea asistenților personali femei (care îngrijesc de persoane cu dizabilități severe)
+name-5-4-1-2:	Rata de cuprindere a copiilor pînă la 3 ani cu servicii de îngrijire a copiilor de vârstă fragedă
+name-5-5-1-a:	Ponderea femeilor alese în parlament
+name-5-5-1-b:	Ponderea femeilor alese în Administrația Publică Locală
+name-5-6-2-1:	Existența în țară a cadrului legislativ-normativ  care garantează femeilor și bărbaților în vârstă de 15-49 ani accesul la sănătatea sexuală și reproductivă, informare și educare
+name-5-6-2-2:	Implementarea în țară a cadrului legislativ-normativ  care garantează femeilor și bărbaților în vârstă de 15-49 ani accesul la sănătatea sexuală și reproductivă, informare și educare
+name-5-a-1-a:	Ponderea populației agricole  cu drepturi  de proprietate sau alte drepturi patrimoniale asupra terenurilor agricole
+name-5-a-1-b:	Ponderea femeilor  cu drepturi  de proprietate sau alte drepturi patrimoniale asupra terenurilor agricole
+name-5-b-1-1:	Numarul mediu de telefoane mobile la 100 gospodării
+name-5-c-1-1:	Disponibilitatea sistemelor de monitorizare și alocare a resurselor publice pentru egalitatea de gen și abilitarea femeilor
+name-6-1-1-1:	Ponderea populației care beneficiază de serviciu de alimentare cu apă
+name-6-2-1-1:	Proporția populației care dispune în interiorul locuinței de (a) grup sanitar și (b) baie sau dus
+name-6-2-1-a:	Ponderea populației conectate la sistemul de canalizare
+name-6-2-1-b:	Ponderea populației care utilizează  o instalație de spălare a mâinilor cu săpun și apă (populația stabilă)
+name-6-3-2-a:	Proporția corpurilor de apă de suprafața care au atins clasa de „calitate bună” conform parametrilor microbiologici
+name-6-3-2-b:	Proporția corpurilor de apă subterane care au atins clasa de "calitate buna" conform parametrilor microbiologici
+name-6-3-2-1:	Ponderea surselor de alimentare cu apă potabilă neconforme la normele sanitare conform calității apei
+name-6-4-1-1:	Consumul apei pentru necesități de producție și  potabile
+name-7-1-2-1:	Distribuția resurselor energetice utilizate pentru necesitățile casnice (încălzirea spațiilor, răcirea spațiilor,  încălzirea apei, pregătire alimentelor)
+name-7-3-1-a:	Consum de energie primară  (consum intern brut)
+name-7-3-1-b:	Consum de energie finală (consum final energetic)
+name-7-b-1-a:	Volumul investițiilor în sectorul eficiență energetică raportat la PIB
+name-7-b-1-b:	Volumul investițiilor străine directe în dezvoltarea durabilă a infrastructurii și tehnologiilor
+name-8-4-1-a:	Resurse naturale pe o persoană
+name-8-4-1-b:	Resurse naturale raportate la PIB, kg în dolari SUA
+name-8-4-2-a:	Consumul de resurse naturale pe o persoană
+name-8-4-2-b:	Consumul de resurse naturale raportate la PIB
+name-8-7-1-a:	Procentul copiilor cu vârsta între 5-17 ani, care se află în situația de „munca copiilor”,  pe grupe de vârstă și sexe
+name-8-7-1-b:	Numărul copiilor cu vârsta între 5-17 ani, care se află în situația de „munca copiilor”,  pe grupe de vârstă și sexe
+name-8-8-2-1:	Numărul de convenții colective încheiate la nivel instituțional  în conformitate cu sursele documentare ale ILO și  legislația națională
+name-8-9-1-1:	Cota turismului in PIB
+name-8-9-2-1:	Ponderea salariaților în activități de turism în total salariați, pe sexe
+name-8-10-1-a:	Numărul de filiale și agenții ale băncilor comerciale la 100 000 populație cu reședină obișnuită  (18+)
+name-8-10-1-a:	Numărul de filiale și agenții ale băncilor comerciale la 100 000 populație stabila  (18+)
+name-8-10-1-b:	Numărul de bancomate la  100 mii populație (18+)
+name-8-10-2-1:	Conturi bancare la 100 000 populație (18+)
+name-9-1-2-a:	Parcursul mărfurilor transportate, după modul de transport (aerian, rutier, feroviar, fluvial)
+name-9-1-2-b:	Parcursul pasagerilor transportati, după modul de transport (aerian, rutier, feroviar, fluvial)
+name-9-2-1-a:	Valoarea adăugată brută în industria  prelucrătoare ca proporţie în PIB
+name-9-2-1-b:	Valoarea adăugată brută în industria prelucratoare pe persoană
+name-9-2-1-1:	Valoarea adăugată brută în industria  prelucrătoare, ca proporţie în PIB
+name-9-2-1-2:	Valoarea adăugată brută în industria prelucratoare per populație ocupată în industria prelucrătoare
+name-9-3-1-1:	Contribuția valorii adăugate brute a ÎMM în total valoarea adăugată brută
+name-9-3-2-1:	Ponderea valorii creditelor și împrumuturilor accesate de întreprinderile mici (până la 49 salariați) pe parcursul anului în total valoarea creditelor și împrumuturilor accesate de către întreprinderi,  inclusiv pe sectorul industrie
+name-9-4-1-a:	Emisiile totale de CO2 provenite de la arderea combustibilului
+name-9-4-1-b:	Emisiile totale de CO2 raportate la o unitate de PIB
+name-9-4-1-c:	Emisiile de CO2 generate de sectorul industrial raportat la valoarea adăugată brută în industrie
+name-9-4-1-1:	Emisiile totale de CO2, pe sectoare, mii tone CO2 echivalent
+name-10-1-1-a:	Ritmul de creștere a cheltuielilor pe o persoană a populației per total țară  (populația stabilă)
+name-10-1-1-b:	Ritmul de creștere a cheltuielilor de consum ale 40% din populația cel mai puțin asigurate  (populația stabilă)
+name-10-3-1-1:	Numărul de cazuri de discriminare constatate la 100 000 populație, în funcție de sexul petiționarului
+name-10-6-1-a:	Proporția cetățenilor Republicii Moldova  în cadrul organizațiilor internaționale
+name-10-6-1-b:	Proporția drepturilor de vot ale țării în cadrul organizațiilor internaționale
+name-10-7-2-1:	Existenta de politici naționale eficiente  privind migrația
+name-10-7-2-2:	Numărul acordurilor bilaterale în domeniul migrației de muncă semnate
+name-10-7-2-3:	Numărul acordurilor bilaterale în domeniul securității sociale semnate
+name-11-1-1-a:	Ponderea populației cu cheltuielile lunare pentru întreținerea locuinței care depășesc 30% din veniturile disponibile lunare ale gospodăriei(accesibilitate - locuință adecvată)
+name-11-1-1-b:	Ponderea persoanelor care trăiesc în locuințe cu mai mult de două persoane pe o cameră (supraaglomerarea)
+name-11-2-1-1:	Rata accidentelor rutiere la 100 000 populație
+name-11-3-1-1:	Gradul de urbanizare
+name-11-4-1-1:	Ponderea cheltuielilor pentru conservarea și protejarea patrimoniului cultural și natural în total cheltuieli ale Bugetului Public Național
+name-11-5-1-a:	Numărul de persoane decedate în urma situațiilor excepționale, la 100 000 populație
+name-11-5-1-b:	Numărul de persoane dispărute in urma situatiilor exceptionale, la 100 000 populație
+name-11-5-1-c:	 Numărul de persoane direct afectate in urma situatiilor exceptionale, la 100 000 populație
+name-11-5-2-a:	Pierderile economice directe la infrastructura critica in urma SE, raportat la PIB
+name-11-5-2-b:	Numărul de întreruperi ale serviciilor de bază in urma situatiilor exceptionale
+name-11-6-1-1:	Rata de conectare a populației la sevicii de colectare a deșeurilor municipale
+name-11-6-2-1:	Cantitatea de emisii de substanțe poluante în aer de la sursele mobile (pe surse) pe o persoană
+name-11-7-1-1:	Ponderea suprafeței spațiilor verzi și străzilor (convențional spații publice) în suprafața construită a localităților urbane
+name-11-b-1-1:	Cadrul strategic național privind reducerea riscurilor de dezastre, aliniate la Cadrul de la Sendai privind reducerea riscurilor de dezastre pentru 2015-2030, adoptat și implementat
+name-11-b-1-2:	Gradul de implementare a Cadrului strategic național privind reducerea riscurilor de dezastre, aliniate la Cadrul de la Sendai privind reducerea riscurilor de dezastre pentru 2015-2030
+name-12-1-1-1:	Număr de politici naționale care integrarează aspectele economiei „verzi”, producției și consumului durabil (PCD)
+name-12-2-1-a:	Resurse naturale pe o persoană
+name-12-2-1-b:	Resurse naturale raportate la PIB, kg per dolari SUA
+name-12-2-2-a:	Consumul de resurse naturale pe o persoană
+name-12-2-2-b:	Consumul de resurse naturale raportate la PIB, kg per dolari SUA
+name-12-3-1-a:	Indicele Global al risipei alimentare
+name-12-3-1-b:	Indicele Global de deșeuri alimentare
+name-12-4-2-a:	Volumul deșeurilor toxice formate
+name-12-4-2-b:	Proportia deșeurilor toxice reciclate, nimicite sau depozitate la gunoiște în total deșeuri toxice formate
+name-12-5-1-1:	Volumul deșeurilor (de producție și consum) formate
+name-12-7-1-1:	Acțiuni privind asigurarea de achiziții publice ecologice
+name-13-1-1-a:	Numărul de persoane decedate în urma situațiilor excepționale, la 100 000 populație
+name-13-1-1-b:	Numărul de persoane dispărute în urma situațiilor excepționale, la 100 000 populație
+name-13-1-1-c:	Numărul de persoane direct afectate in urma situatiilor exceptionale, la 100 000 populație
+name-13-1-2-1:	Cadrul strategic național privind reducerea riscurilor de dezastre, aliniate la Cadrul de la Sendai privind reducerea riscurilor de dezastre pentru 2015-2030, adoptat și implementat
+name-13-1-2-2:	Gradul de implementare a Cadrului strategic național privind reducerea riscurilor de dezastre, aliniate la Cadrul de la Sendai privind reducerea riscurilor de dezastre pentru 2015-2030
+name-13-2-1-1:	Acțiuni privind elaborarea și operaționalizarea de politici, strategii, planuri de acțiuni privind adaptarea și rezistența la schimbările climatice,  reducerea emisiilor cu efect de sera
+name-13-3-1-1:	Acțiuni privind  integrarea subiectelor vizind efectele schimbării de climă (atenuarea, adaptarea, reducerea impactului și avertizarea timpurie) în curricula învățământului primar, secundar și terțiar
+name-13-3-2-1:	Gradul de implementare a cadrului strategic național privind schimbările climatice
+name-14-1-1-1:	Indicii chimici privind eutrofizarea apelor de suprafață
+name-14-4-1-1:	Numărul contravențiilor înregistrate privind pescuitul ilegal
+name-14-7-1-1:	Ponderea pescuitului în PIB
+name-15-2-1-1:	Suprafața terenurilor degradate restabilite prin împădurire
+name-15-2-1-2:	Suprafața  pădurilor restabilite
+name-15-2-1-3:	Suprafața pădurilor extinse
+name-15-5-1-1:	Numărul total de specii în Cartea Roșie
+name-15-6-1-1:	Existența actelor normative întru asigurarea distribuirii corecte și echitabile a resurselor genetice
+name-15-8-1-1:	Existența actelor normative și măsurilor privind prevenirea și reducerea apariției speciilor invazive pentru a controla și eradica speciile prioritare
+name-15-9-1-1:	Gradul de implementare a acțiunilor din cadrul Planului Strategiei privind diversitatea biologică a Republicii Moldova pentru anii 2015-2020
+name-16-1-3-1:	Numărul victimelor infracțiunilor de violență la 100 000 populație, pe sexe, vârste, tipuri forme de violență
+name-16-2-1-1:	Numărul copiilor victime ale violenței și neglijării la sfârșitul anului
+name-16-3-2-1:	Numărul de persoane care au beneficiat de asistență juridică garantată de stat
+name-16-3-2-2:	Ponderea recomandărilor Avocatul Poporului (inclusiv Avocatul Poporului pentru drepturile copilului) implementate de către autoritățile și instituțiile sesizate (care rezultă din acțiunile procesuale)
+name-16-3-2-3:	Ponderea cazurilor pierdute la CEDO, din numărul cererilor comunicate în fiecare an
+name-16-3-2-4:	Gradul de satisfacție a populației privind serviciile juridice
+name-16-4-2-1:	Numărul armelor deținute conform legislației în vigoare, la 100 000 populație
+name-16-4-2-2:	Numărul armelor deținute ilegal confiscate
+name-16-5-2-1:	Indicatorul privind „Controlul asupra corupţiei”  (de la -2,5 la 2,5)
+name-16-5-2-2:	Indicatorul privind „Calitatea regulatorie” (de la -2,5 la 2,5)
+name-16-6-2-1:	Gradul de satisfacție a cetățenilor privind calitatea serviciilor publice accesate
+name-16-7-1-a:	Raportul dintre proporția pozițiilor ocupate în Parlament de către persoanele din anumite grupuri ale populației (pe sexe, vârstă, persoanele cu dizabilități și alte grupuri corespunzătoare) și proporția grupului respectiv în total populație
+name-16-7-1-b:	Raportul dintre proporția pozițiilor ocupate în instituțiile publice (centrale și locale) de către persoanele din anumite grupuri ale populației (pe sexe, vârstă, persoanele cu dizabilități și alte grupuri corespunzătoare) și proporția grupului respectiv în total populație
+name-16-7-1-1:	Ponderea femeilor în Guvern
+name-16-7-1-2:	Ponderea femeilor  în serviciul public
+name-16-7-1-c:	Raportul dintre proporția pozițiilor ocupate în sistemul judiciar de către persoanele din anumite grupuri ale populației (pe sexe, vârstă, persoanele cu dizabilități și alte grupuri corespunzătoare) și proporția grupului respectiv în total populație
+name-16-7-1-3:	Ponderea femeilor judecători
+name-16-8-1-a:	Proporția cetățenilor Republicii Moldova în cadrul organizațiilor internaționale
+name-16-8-1-b:	Proporția drepturilor de vot ale țării în cadrul organizațiilor internaționale
+name-16-10-1-1:	Indicele Libertății Presei
+name-16-10-2-1:	Acțiuni privind respectarea Legii privind accesul la informație
+name-16-10-2-2:	Inidicele Dezvoltării Sectorului TIC (IDI)
+name-17-11-1-1:	Ponderea exporturilor de mărfuri din Republica Moldova în  comerțul exterior al ţării
+name-17-14-1-1:	Existența mecanismelor pentru a consolidarea coerenței politicilor de dezvoltare durabilă
+name-17-16-1-1:	Raportarea progreselor asupra aplicării cadrului de monitorizare a eficienței dezvoltării cu participarea mai multor parteneri, care acordă suport în atingerea de către țară a Obiectivelor de Dezvoltare Durabilă
+name-17-17-1-1:	Gradul de implemetare a Strategiei de dezvoltare a societății civile
+name-17-18-2-1:	Disponibilitatea legislației naționale în domeniul statisticii conform Principiilor Fundamentale ale Statisticii Oficiale
+name-17-18-3-1:	Existența Planului anual de acțiuni pentru implementarea Strategiei Naționale de Dezvoltare a Sistemului Statistic Național, care este deplin finanțat și aflat în proces de implementare
+name-17-18-3-2:	Gradul de implementare a Programului Anual de Lucrări Statistice
+name-17-19-2-a:	Realizarea recensământului populației și locuințelor în cadrul rundelor 2020 și 2030
+name-17-19-2-b:	Rata înregistrării nașterilor și deceselor
+
+
 available-8-4-2: Household Final Consumption Expenditure, Goods
 description-8-4-2: Cost of goods purchased by households for final consumption
 unit-8-4-2: mln. drams, drams, %
