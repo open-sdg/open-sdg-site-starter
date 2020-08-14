@@ -1483,6 +1483,8 @@ footer {
     margin-top: 2rem !important; }
 #main-content #selectionsTable {
   padding-bottom: 20px; }
+  #main-content #selectionsTable.table-has-no-data #selectionTableFooter {
+    display: none; }
   #main-content #selectionsTable div.dataTables_wrapper {
     overflow-x: auto; }
     #main-content #selectionsTable div.dataTables_wrapper .row {
@@ -1513,6 +1515,8 @@ footer {
       margin: 0 0 5px; }
 #main-content #selectionsChart {
   padding-bottom: 20px; }
+  #main-content #selectionsChart.chart-has-no-data #selectionChartFooter {
+    display: none; }
 #main-content #selectionChartFooter {
   font-size: 12px;
   line-height: 1.2;
