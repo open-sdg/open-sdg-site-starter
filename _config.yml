@@ -45,6 +45,11 @@ analytics:
 # Social media accounts.
 twitter: 'MyTwitterAccount'
 
+# Automatically create indicator pages, goal pages,
+# and some other required pages.
+create_indicators:
+  layout: indicator
+  
 # Replace the email addresses below.
 email_contacts:
   questions: test@example.com
