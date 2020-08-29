@@ -1178,9 +1178,9 @@ footer {
 
 #main-content #indicatorData.no-fields #series-help, #main-content #indicatorData.no-fields #fields, #main-content #indicatorData.no-fields #legend-help, #main-content #indicatorData.no-fields #clear {
   display: none; }
-#main-content #indicatorData.no-fields.no-units > .col-md-3 {
+#main-content #indicatorData.no-fields.no-units.no-serieses > .col-md-3 {
   display: none; }
-#main-content #indicatorData.no-fields.no-units > .col-md-9 {
+#main-content #indicatorData.no-fields.no-units.no-serieses > .col-md-9 {
   width: 100%; }
 #main-content .indicator-sidebar-hidden {
   padding: 0;
@@ -1355,10 +1355,10 @@ footer {
       display: block; }
     #main-content #fields .variable-selector.disallowed .variable-hint {
       display: block; }
-#main-content #units {
+#main-content #units, #main-content #serieses {
   clear: left;
   margin-bottom: 20px; }
-  #main-content #units label {
+  #main-content #units label, #main-content #serieses label {
     font-weight: normal;
     border: 1px solid #ccc;
     padding: 10px;
@@ -1469,7 +1469,7 @@ footer {
       border: none; }
 #main-content.goal-indicators .indicator-cards .tags {
   padding: 0;
-  margin: 6px 10px 0 0;
+  margin: 15px 10px 0 0;
   list-style-type: none; }
   #main-content.goal-indicators .indicator-cards .tags li {
     margin-right: 6px;
@@ -1480,9 +1480,10 @@ footer {
   display: inline;
   font-weight: normal;
   border-bottom: none; }
-#main-content.goal-indicators.goal-by-target .indicator-cards a {
-  padding: 0;
+#main-content.goal-indicators.goal-by-target .goal-indicator {
   margin-bottom: 2.5rem; }
+#main-content.goal-indicators.goal-by-target .indicator-cards a {
+  padding: 0; }
   #main-content.goal-indicators.goal-by-target .indicator-cards a .tags li {
     color: black; }
 #main-content.goal-indicators.goal-by-target .indicator-cards.target {
@@ -1595,7 +1596,7 @@ body.contrast-high #main-content #fields .variable-selector .variable-hint {
   color: white; }
 body.contrast-high caption {
   color: white; }
-body.contrast-high div#units {
+body.contrast-high div#units, body.contrast-high div#serieses {
   color: white; }
 body.contrast-high #legend li {
   color: white !important;
@@ -1629,7 +1630,7 @@ body.contrast-high #main-content.goal-indicators.goal-by-target .indicator-cards
 
 .post-categories {
   padding: 0;
-  margin: 6px 10px 0 0;
+  margin: 15px 10px 0 0;
   list-style-type: none; }
   .post-categories li {
     margin-right: 6px;
@@ -1820,7 +1821,7 @@ body.contrast-high #search-results .search-result .content {
 
 .layout-goal-by-target-vertical .tags {
   padding: 0;
-  margin: 6px 10px 0 0;
+  margin: 15px 10px 0 0;
   list-style-type: none; }
   .layout-goal-by-target-vertical .tags li {
     margin-right: 6px;
