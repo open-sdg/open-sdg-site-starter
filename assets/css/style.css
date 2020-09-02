@@ -1749,6 +1749,9 @@ body.contrast-high #main-content.goal-indicators.goal-by-target .indicator-cards
   #main-content .goal-overall .details {
     width: 100%; }
 
+#main-content .reporting-status-item {
+  margin-bottom: 20px; }
+
 body.contrast-high .goal-stats {
   border: 1px solid white !important; }
 body.contrast-high .statuses strong {

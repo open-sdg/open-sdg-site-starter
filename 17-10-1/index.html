@@ -120,7 +120,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20200901005735">
+        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20200902005107">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -361,7 +361,7 @@ data-event-label="Change to Sources tab"
 
 <div class="tab-content">
   
-    <div role="tabpanel" class="tab-pane active" id="national">
+    <div role="tabpanel" class="tab-pane active" id="national" tabindex="0">
   <!-- National Metadata -->
   <div >
     <article>
@@ -680,7 +680,7 @@ data-event-label="Change to Sources tab"
     </article>
   </div>
 </div>
-<div role="tabpanel" class="tab-pane" id="global">
+<div role="tabpanel" class="tab-pane" id="global" tabindex="0">
   <!-- Global Metadata -->
   <div>
     <article>
@@ -918,7 +918,7 @@ data-event-label="Change to Sources tab"
     </article>
   </div>
 </div>
-<div role="tabpanel" class="tab-pane" id="sources">
+<div role="tabpanel" class="tab-pane" id="sources" tabindex="0">
   <!-- Count the non-empty sources (up to 5) -->
 
 
@@ -929,7 +929,7 @@ data-event-label="Change to Sources tab"
 
   
   
-  <div role="tabpanel" class="tab-pane" id="edit">
+  <div role="tabpanel" class="tab-pane" id="edit" tabindex="0">
     <div class="edit-container">
   
   <a class="btn btn-primary" href="http://prose.io/#open-sdg/open-sdg-data-starter/edit/develop/data/indicator_17-10-1.csv">Edit Data</a>
@@ -1014,7 +1014,7 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20200901005735'></script><script>
+<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20200902005107'></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
