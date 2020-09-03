@@ -120,7 +120,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20200902005107">
+        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20200903005600">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -151,12 +151,14 @@ var translations = {
 <header role="banner">
   <div class="container">
 
-    <a class="navbar-brand" href="/open-sdg-site-starter/" id="home">
-      <img src="/open-sdg-site-starter/assets/img/SDG_logo.png" alt="Sustainable Development Goals - 17 Goals to Transform our World" />
-    </a>
+    <div class="logo-and-mobile-widgets">
+      <a class="navbar-brand" href="/open-sdg-site-starter/" id="home">
+        <img src="/open-sdg-site-starter/assets/img/SDG_logo.png" alt="Sustainable Development Goals - 17 Goals to Transform our World" />
+      </a>
 
-  <div class='hidden visible-xs float-right'>
-    <ul id='accessibility-nav' class='contrast-switcher'></ul></div>
+      <div class="mobile-widgets">
+        <ul id='accessibility-nav' class='contrast-switcher'></ul></div>
+    </div>
 
     <nav class="navbar navbar-default" id="main-nav">
 
@@ -180,7 +182,7 @@ var translations = {
   </form>
 </div>
 
-      
+
       <ul class="nav navbar-nav menu-target contrast-switcher" id="menu"><li class="nav-link ">
             <a href="/open-sdg-site-starter/goals">Goals</a>
           </li><li class="nav-link ">
@@ -194,8 +196,6 @@ var translations = {
           </li><li class="nav-link ">
             <a href="/open-sdg-site-starter/news">Updates</a>
           </li></ul>
-
-      
 
     </nav>
   </div>
@@ -361,7 +361,7 @@ data-event-label="Change to Sources tab"
 
 <div class="tab-content">
   
-    <div role="tabpanel" class="tab-pane active" id="national" tabindex="0">
+    <div role="tabpanel" class="tab-pane active" id="national">
   <!-- National Metadata -->
   <div >
     <article>
@@ -680,7 +680,7 @@ data-event-label="Change to Sources tab"
     </article>
   </div>
 </div>
-<div role="tabpanel" class="tab-pane" id="global" tabindex="0">
+<div role="tabpanel" class="tab-pane" id="global">
   <!-- Global Metadata -->
   <div>
     <article>
@@ -918,7 +918,7 @@ data-event-label="Change to Sources tab"
     </article>
   </div>
 </div>
-<div role="tabpanel" class="tab-pane" id="sources" tabindex="0">
+<div role="tabpanel" class="tab-pane" id="sources">
   <!-- Count the non-empty sources (up to 5) -->
 
 
@@ -929,7 +929,7 @@ data-event-label="Change to Sources tab"
 
   
   
-  <div role="tabpanel" class="tab-pane" id="edit" tabindex="0">
+  <div role="tabpanel" class="tab-pane" id="edit">
     <div class="edit-container">
   
   <a class="btn btn-primary" href="http://prose.io/#open-sdg/open-sdg-data-starter/edit/develop/data/indicator_1-a-2.csv">Edit Data</a>
@@ -982,8 +982,7 @@ data-event-label="Change to Sources tab"
                 
                 </li>
               
-            
-          </ul>
+            </ul>
         </div>
       </div>
     </div>
@@ -1014,7 +1013,7 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20200902005107'></script><script>
+<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20200903005600'></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();

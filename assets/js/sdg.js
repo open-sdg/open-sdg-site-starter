@@ -785,14 +785,6 @@ var accessibilitySwitcher = function() {
   };
 
 };
-
-$(document).ready(function() {
-  // Focus on tab content when tab is selected.
-  $(".nav-tabs a").on("shown.bs.tab", function(event) {
-    var href = event.target.getAttribute('href');
-    $(href).focus();
-  });
-})
 opensdg.chartColors = function(indicatorId) {
   var colorSet = null;
   var numberOfColors = null;
