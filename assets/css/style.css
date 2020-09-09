@@ -1174,21 +1174,16 @@ header .container {
         cursor: pointer; }
         .navbar .top-level li.active {
           background: #58595B; }
-        .navbar .top-level li span {
-          color: #E5E6E7;
-          display: block;
-          padding: 15px; }
-          .navbar .top-level li span[data-target="search"] {
-            text-transform: capitalize; }
         .navbar .top-level li button {
           color: #E5E6E7;
           display: block;
           padding: 15px;
           border: 0;
-          text-transform: uppercase;
           background-color: inherit;
           text-align: left;
           width: 100%; }
+          .navbar .top-level li button[data-target="search"] {
+            text-transform: capitalize; }
     .navbar .menu-target {
       background: #58595B; }
     .navbar ul.navbar-nav {
