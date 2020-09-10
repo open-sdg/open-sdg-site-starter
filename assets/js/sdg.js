@@ -2515,6 +2515,7 @@ var indicatorView = function (model, options) {
 
     $(this._legendElement).html(view_obj._chartInstance.generateLegend());
     view_obj.updateIndicatorDataViewStatus(chartInfo);
+    view_obj.addLegendClickBehavior(this._legendElement, view_obj._chartInstance);
     view_obj.updateChartDownloadButton(chartInfo.selectionsTable);
   };
 
@@ -2562,16 +2563,18 @@ var indicatorView = function (model, options) {
           }]
         },
         legendCallback: function(chart) {
-            var text = ['<ul id="legend">'];
+            var text = ['<p id="legend-help" class="hide-during-image-download">' + translations.indicator.legend_help + '</p>'];
+            text.push('<ul id="legend" aria-labelledby="legend-help">');
 
             _.each(chart.data.datasets, function(dataset, datasetIndex) {
               text.push('<li data-datasetindex="' + datasetIndex + '">');
+              text.push('<button aria-pressed="false" aria-label="Press to hide the data set' + ' ' + dataset.label + '">')
               text.push('<span class="swatch' + (dataset.borderDash ? ' dashed' : '') + '" style="background-color: ' + dataset.borderColor + '">');
               text.push('</span>');
               text.push(translations.t(dataset.label));
+              text.push('</button>');
               text.push('</li>');
             });
-
             text.push('</ul>');
             return text.join('');
         },
@@ -2668,7 +2671,15 @@ var indicatorView = function (model, options) {
 
     $(this._legendElement).html(view_obj._chartInstance.generateLegend());
     view_obj.updateIndicatorDataViewStatus(chartInfo);
+    view_obj.addLegendClickBehavior(this._legendElement, view_obj._chartInstance);
   };
+
+  this.addLegendClickBehavior = function(legendElement, chartInstance) {
+    $(legendElement).find('li').click(function(e) {
+      var isBeingPressed = !($(this).hasClass('notshown'));
+      $(this).find('button').attr('aria-pressed', isBeingPressed);
+    })
+  }
 
   this.getGridColor = function(contrast) {
     return this.isHighContrast(contrast) ? '#222' : '#ddd';
@@ -2905,9 +2916,9 @@ var indicatorView = function (model, options) {
       var table_head = '<thead><tr>';
 
       var getHeading = function(heading, index) {
-        var span = '<span class="sort" />';
-        var span_heading = '<span>' + translations.t(heading) + '</span>';
-        return (!index || heading.toLowerCase() == 'units') ? span_heading + span : span + span_heading;
+        var arrows = '<span class="sort"><i class="fa fa-sort-down"></i><i class="fa fa-sort-up"></i></span>';
+        var button = '<span tabindex="0" role="button" aria-describedby="column-sort-info">' + translations.t(heading) + '</span>';
+        return (!index || heading.toLowerCase() == 'units') ? button + arrows : arrows + button;
       };
 
       table.headings.forEach(function (heading, index) {
@@ -2938,6 +2949,8 @@ var indicatorView = function (model, options) {
       initialiseDataTable(el);
 
       $(el).removeClass('table-has-no-data');
+
+      $(el).find('th').removeAttr('tabindex');
     } else {
       $(el).append($('<h3 />').text(translations.indicator.data_not_available));
       $(el).addClass('table-has-no-data');
