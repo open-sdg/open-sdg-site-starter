@@ -112,8 +112,7 @@ h3 {
 .goal-banner.indicator h1 {
   line-height: normal; }
 .goal-banner img {
-  max-width: 100%;
-  margin-top: 10px; }
+  max-width: 100%; }
 
 #main-content {
   background: white;
@@ -145,6 +144,39 @@ h3 {
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0; }
+
+[contentEditable="true"]:focus,
+[href]:focus,
+[tabindex]:focus,
+iframe:focus,
+input:focus,
+button:focus {
+  color: #0b0c0c !important;
+  outline: 3px solid transparent !important;
+  background-color: #ffdd00 !important;
+  outline-offset: 0 !important;
+  box-shadow: 0 -2px #ffdd00, 0 4px #0b0c0c !important;
+  text-decoration: none !important; }
+
+body.contrast-high [contentEditable="true"]:focus,
+body.contrast-high [href]:focus,
+body.contrast-high [tabindex]:focus,
+body.contrast-high iframe:focus,
+body.contrast-high input:focus,
+body.contrast-high button:focus {
+  color: #0b0c0c !important;
+  background-color: #ffdd00 !important;
+  box-shadow: 0 -2px #ffdd00, 0 4px #0b0c0c !important; }
+
+input[type="radio"]:focus, body.contrast-high input[type="radio"]:focus,
+input[type="checkbox"]:focus, body.contrast-high input[type="checkbox"]:focus {
+  box-shadow: 0px 0px 0px 4px #ffdd00 !important; }
+
+input[type="text"]:focus,
+body.contrast-high input[type="text"]:focus {
+  background-color: white !important;
+  box-shadow: none !important;
+  outline: 3px solid #ffdd00 !important; }
 
 a,
 a:hover {
@@ -184,6 +216,9 @@ footer a:hover {
 
 body.contrast-high footer a:visited {
   color: white; }
+
+*[disabled], *[aria-disabled="true"] {
+  cursor: default; }
 
 #main-content #back-to-top {
   cursor: pointer;
@@ -329,7 +364,7 @@ body.contrast-high .btn {
   body.contrast-high .btn:hover {
     background: yellow !important; }
   body.contrast-high .btn:focus {
-    background: yellow !important; }
+    background: #ffdd00 !important; }
 body.contrast-high #zip-download-info {
   color: white; }
 
@@ -503,6 +538,20 @@ body.contrast-high #zip-download-info {
 .goal-tiles #goal-17:hover {
   background-color: #1F4A6A; }
 
+#main-content .goal-tiles .goal-tile {
+  padding-bottom: 10px; }
+  #main-content .goal-tiles .goal-tile a:focus {
+    outline: 6px #ffdd00 solid !important; }
+#main-content .goal-tiles .no-gutters img {
+  width: calc(100% - 10px);
+  border: 0;
+  padding: 0;
+  margin: 0; }
+  #main-content .goal-tiles .no-gutters img:not(#goal-18) {
+    box-shadow: 5px 5px 5px 0px rgba(5, 5, 5, 0.3); }
+    #main-content .goal-tiles .no-gutters img:not(#goal-18):hover {
+      box-shadow: 5px 5px 5px 0px rgba(5, 5, 5, 0.6); }
+
 .goal-1.goal-banner {
   background-color: white; }
 
@@ -556,6 +605,8 @@ body.contrast-high #zip-download-info {
 
 .goal-banner h1, .goal-banner p {
   color: #0b0c0c; }
+.goal-banner .goal-icon a:focus {
+  outline: 6px #ffdd00 solid !important; }
 
 .language-ar {
   direction: rtl; }
@@ -698,18 +749,28 @@ footer #footerLinks .language-toggle-menu-footer {
   color: yellow; }
   .contrast-high .language-toggle-link span:hover, .contrast-high .language-toggle-link span:visited, .contrast-high .language-toggle-link:hover, .contrast-high .language-toggle-link:visited {
     color: yellow; }
-.contrast-high .language-toggle-dropdown .dropdown-toggle, .contrast-high .language-toggle-dropdown .dropdown-toggle:hover, .contrast-high .language-toggle-dropdown .dropdown-toggle:active, .contrast-high .language-toggle-dropdown .dropdown-toggle:focus {
+.contrast-high .language-toggle-link:focus, .contrast-high .language-toggle-link:focus span {
+  color: #0b0c0c !important; }
+.contrast-high .language-toggle-dropdown .dropdown-toggle, .contrast-high .language-toggle-dropdown .dropdown-toggle:hover, .contrast-high .language-toggle-dropdown .dropdown-toggle:active {
   background: black !important; }
 .contrast-high .language-toggle-dropdown .dropdown-toggle, .contrast-high .language-toggle-dropdown .dropdown-toggle span, .contrast-high .language-toggle-dropdown .dropdown-toggle .language-toggle-caret {
   color: white !important; }
+.contrast-high .language-toggle-dropdown .dropdown-toggle:focus, .contrast-high .language-toggle-dropdown .dropdown-toggle:focus span, .contrast-high .language-toggle-dropdown .dropdown-toggle:focus i {
+  background: #ffdd00 !important;
+  color: #0b0c0c !important; }
 .contrast-high .language-toggle-dropdown .dropdown-menu {
   border-color: white; }
-  .contrast-high .language-toggle-dropdown .dropdown-menu, .contrast-high .language-toggle-dropdown .dropdown-menu a:hover, .contrast-high .language-toggle-dropdown .dropdown-menu a:focus {
+  .contrast-high .language-toggle-dropdown .dropdown-menu, .contrast-high .language-toggle-dropdown .dropdown-menu a:hover {
     background: black; }
+  .contrast-high .language-toggle-dropdown .dropdown-menu a:focus {
+    background: #ffdd00;
+    color: #0b0c0c; }
 .contrast-high .language-toggle-mobile .language-toggle-dropdown .dropdown-menu a:visited {
   color: white; }
-.contrast-high .language-toggle-mobile .language-toggle-dropdown .dropdown-menu a:hover, .contrast-high .language-toggle-mobile .language-toggle-dropdown .dropdown-menu a:focus {
+.contrast-high .language-toggle-mobile .language-toggle-dropdown .dropdown-menu a:hover {
   color: yellow; }
+.contrast-high .language-toggle-mobile .language-toggle-dropdown .dropdown-menu a:focus {
+  color: #0b0c0c; }
 
 .loader svg path,
 .loader svg rect {
@@ -908,6 +969,15 @@ body.contrast-high a.nav-link:focus {
       #accessibility-nav li.contrast-high a {
         color: yellow; }
 
+.contrast-switcher .contrast-high a:focus {
+  background-color: #0b0c0c !important;
+  color: #ffdd00 !important;
+  box-shadow: 0 -2px #0b0c0c, 0 4px #ffdd00 !important; }
+
+body.contrast-high .contrast-switcher .contrast-high a:focus {
+  box-shadow: none !important;
+  outline: 2px solid #ffdd00 !important; }
+
 body.contrast-high {
   background-color: black; }
   body.contrast-high li {
@@ -1072,13 +1142,21 @@ header .container {
 .navbar-brand {
   display: block;
   width: 75%;
-  max-width: 300px;
-  padding: 15px; }
+  max-width: 350px;
+  padding: 15px;
+  height: auto; }
+  .navbar-brand:focus {
+    background-color: transparent !important;
+    outline: 7px solid #ffdd00 !important; }
   @media screen and (min-width: 769px) {
     .navbar-brand {
       padding: 5px 15px 15px 0; } }
   .navbar-brand img {
     width: 100%; }
+
+body.contrast-high .navbar-brand:focus {
+  background-color: transparent !important;
+  outline: 7px solid #ffdd00 !important; }
 
 .navbar {
   margin-bottom: 32px; }
@@ -1562,15 +1640,6 @@ footer {
   -khtml-user-select: none;
   -webkit-user-select: none;
   -o-user-select: none; }
-#main-content .no-gutters img {
-  width: calc(100% - 10px);
-  border: 0;
-  padding: 0;
-  margin: 5px 10px 5px 0; }
-  #main-content .no-gutters img:not(#goal-18) {
-    box-shadow: 5px 5px 5px 0px rgba(5, 5, 5, 0.3); }
-    #main-content .no-gutters img:not(#goal-18):hover {
-      box-shadow: 5px 5px 5px 0px rgba(5, 5, 5, 0.6); }
 #main-content.goal-indicators .indicator-cards a {
   padding: 1rem;
   display: inline-block;
@@ -1719,19 +1788,19 @@ body.contrast-high #main-content #fields label {
   body.contrast-high #main-content #fields label:focus {
     background: white;
     color: black; }
-body.contrast-high #toolbar button {
-  background-color: black !important;
+body.contrast-high #main-content #toolbar button {
+  background-color: black;
   border-color: white;
   color: white; }
-body.contrast-high .variable-options {
+body.contrast-high #main-content #fields .variable-selector .variable-options {
   background: black;
   color: white; }
-  body.contrast-high .variable-options div {
+  body.contrast-high #main-content #fields .variable-selector .variable-options div {
     background: black;
     color: white; }
-  body.contrast-high .variable-options button {
+  body.contrast-high #main-content #fields .variable-selector .variable-options button {
     background: black;
-    color: white !important;
+    color: white;
     border-color: white; }
 body.contrast-high #main-content #fields .bar .selected {
   background-color: white; }
@@ -1754,6 +1823,9 @@ body.contrast-high #legend li {
   body.layout-indicator .container .indicator-details {
     float: none;
     width: 100%; } }
+.goal-banner .goal-icon {
+  margin-top: 10px; }
+
 body.contrast-high .goal-indicators div span {
   border-color: white !important;
   color: white !important; }
@@ -1875,6 +1947,8 @@ body.contrast-high #main-content.goal-indicators.goal-by-target .indicator-cards
   width: 115px;
   float: left;
   min-height: 1px; }
+  #main-content .frame > a:focus {
+    outline: 6px #ffdd00 solid !important; }
 #main-content .details {
   width: calc(100% - 125px);
   float: left; }
