@@ -1217,13 +1217,6 @@ body.contrast-high .navbar-brand:focus {
     @media only screen and (max-width: 768px) {
       .navbar #search {
         margin-bottom: 0; } }
-    .navbar #search label {
-      position: absolute;
-      top: 5px;
-      right: 0px;
-      font-size: 1.40em; }
-      .navbar #search label span {
-        display: none; }
     .navbar #search input {
       padding: 5px;
       padding-left: 5px;
@@ -1233,10 +1226,14 @@ body.contrast-high .navbar-brand:focus {
       transition: width 0.4s;
       margin-top: 5px;
       font-size: 16px; }
-
-#search-btn {
-  line-height: 15px;
-  height: 34px; }
+    .navbar #search button {
+      height: 34px;
+      color: #0b0c0c;
+      position: absolute;
+      right: 0px;
+      bottom: 0px;
+      font-size: 1.40em;
+      line-height: 15px; }
 
 .table .table-value {
   text-align: right; }
@@ -1311,21 +1308,13 @@ body.contrast-high .navbar-brand:focus {
       display: none;
       width: 100%;
       padding: 20px; }
-      .navbar #search label {
-        top: 23px;
-        left: 25px;
-        color: #0b0c0c; }
-      .navbar #search button {
-        display: inline-flex;
-        position: absolute;
-        right: 20px;
-        top: -3px; }
       .navbar #search input {
         width: 100%;
         color: #0b0c0c;
         margin-top: 0; }
-        .navbar #search input:focus {
-          width: 100%; } }
+      .navbar #search button {
+        right: 20px;
+        bottom: 20px; } }
 @media only screen and (min-width: 769px) and (max-width: 991px) {
   .navbar {
     width: 100%; }
@@ -1351,7 +1340,7 @@ body.contrast-high .navbar li.active a {
     color: yellow; }
   body.contrast-high .navbar li.active a:focus {
     color: yellow; }
-body.contrast-high .navbar #search input, body.contrast-high .navbar #search label {
+body.contrast-high .navbar #search input, body.contrast-high .navbar #search button {
   color: black; }
 @media screen and (max-width: 768px) {
   body.contrast-high .navbar.navbar-default {
@@ -1764,6 +1753,10 @@ footer {
     #main-content #selectionsTable .table-footer-text p {
       font-size: 0.85em;
       margin: 0 0 5px; }
+    #main-content #selectionsTable .table-footer-text dl {
+      font-size: 0.85em; }
+      #main-content #selectionsTable .table-footer-text dl dd {
+        margin: 0 0 5px; }
 #main-content #selectionsChart {
   padding-bottom: 20px; }
   #main-content #selectionsChart.chart-has-no-data #selectionChartFooter {
@@ -1772,6 +1765,13 @@ footer {
   font-size: 12px;
   line-height: 1.2;
   padding-left: 20px; }
+
+.table-footer-text dl dt {
+  float: left;
+  margin-right: 5px;
+  font-weight: normal; }
+.table-footer-text dl dd {
+  margin-bottom: 10px; }
 
 .roleHeader {
   cursor: pointer; }
