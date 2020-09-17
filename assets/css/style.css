@@ -1465,7 +1465,7 @@ footer {
   #main-content #fields .bar {
     height: 7px;
     border: 1px solid #dedede;
-    margin: 2px;
+    margin: 8px 2px 2px 2px;
     padding: 0;
     position: relative; }
     #main-content #fields .bar > div {
@@ -1559,7 +1559,8 @@ footer {
     #main-content #fields .variable-selector[data-has-data="false"]:not(.disallowed) .no-data-hint {
       display: block; }
     #main-content #fields .variable-selector.disallowed .variable-hint {
-      display: block; }
+      display: block;
+      margin-top: 10px; }
 #main-content #units, #main-content #serieses {
   clear: left;
   margin-bottom: 20px; }

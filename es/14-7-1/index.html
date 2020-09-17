@@ -120,7 +120,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20200916005808">
+        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20200917005837">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -248,7 +248,13 @@ var translations = {
     <fieldset>
       <legend class="sr-only">Subcategorías - <%=translations.t(fieldItem.field)%></legend>
       <div class="variable-selector<% if(allowedFields.indexOf(fieldItem.field) == -1) { %> disallowed child<% }%>" data-field="<%=fieldItem.field%>">
-        <button class='accessBtn' tabindex='0' aria-expanded='false'><h5><%=translations.t(fieldItem.field)%><i class="fa fa-chevron-down"></i></h5></button>
+        <button class='accessBtn' tabindex='0' aria-expanded='false'
+          <% if(allowedFields.indexOf(fieldItem.field) == -1) { %>
+          aria-describedby='variable-hint-<%=fieldItem.field.replace(/ /g, '-')%>'
+          <% }%>
+        >
+          <h5><%=translations.t(fieldItem.field)%><i class="fa fa-chevron-down"></i></h5>
+        </button>
         <div class="bar">
           <div class="selected"></div>
         </div>
@@ -265,7 +271,7 @@ var translations = {
         </div>
 
         <% if(allowedFields.indexOf(fieldItem.field) == -1) { %>
-          <div class="variable-hint">Disponible cuando se selecciona '<%= translations.t(_.findWhere(edges, { To: fieldItem.field }).From) %>'
+          <div class="variable-hint" id="variable-hint-<%=fieldItem.field.replace(/ /g, '-')%>">Disponible cuando se selecciona '<%= translations.t(_.findWhere(edges, { To: fieldItem.field }).From) %>'
           </div>
           <div class="no-data-hint">
             No hay opciones disponibles debido a los filtros anteriores
@@ -1061,7 +1067,7 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Buscar';</script>
 
-<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20200916005808'></script><script>
+<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20200917005837'></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();

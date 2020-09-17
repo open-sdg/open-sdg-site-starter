@@ -1625,6 +1625,7 @@ function makeDataset(years, rows, combination, labelFallback, color, background,
     borderColor: color,
     backgroundColor: background,
     pointBorderColor: color,
+    pointBackgroundColor: background,
     borderDash: border,
     borderWidth: 2,
     data: prepareDataForDataset(years, rows),
@@ -1638,7 +1639,6 @@ function getBaseDataset() {
   return Object.assign({}, {
     fill: false,
     pointHoverRadius: 5,
-    pointBackgroundColor: '#FFFFFF',
     pointHoverBorderWidth: 1,
     tension: 0,
     spanGaps: true
@@ -1696,6 +1696,7 @@ function makeHeadlineDataset(years, rows, label) {
     borderColor: getHeadlineColor(),
     backgroundColor: getHeadlineColor(),
     pointBorderColor: getHeadlineColor(),
+    pointBackgroundColor: getHeadlineColor(),
     borderWidth: 4,
     data: prepareDataForDataset(years, rows),
   });
@@ -2316,7 +2317,14 @@ var indicatorView = function (model, options) {
       $(element).find('.bar .selected').css('width', width);
 
       // is this an allowed field:
-      $(element)[_.contains(args.allowedFields, currentField) ? 'removeClass' : 'addClass']('disallowed');
+      if (_.contains(args.allowedFields, currentField)) {
+        $(element).removeClass('disallowed');
+        $(element).find('> button').removeAttr('aria-describedby');
+      }
+      else {
+        $(element).addClass('disallowed');
+        $(element).find('> button').attr('aria-describedby', 'variable-hint-' + currentField);
+      }
     });
   });
 
@@ -2620,7 +2628,6 @@ var indicatorView = function (model, options) {
         var $canvas = $(that._rootElement).find('canvas'),
         font = '12px Arial',
         canvas = $canvas.get(0),
-        textRowHeight = 20,
         ctx = canvas.getContext("2d");
 
         ctx.font = font;
