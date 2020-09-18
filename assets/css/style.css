@@ -1604,7 +1604,7 @@ footer {
     #main-content #legend li:hover {
       background: #eee; }
     #main-content #legend li.notshown button {
-      text-decoration: line-through; }
+      text-decoration: line-through !important; }
   #main-content #legend .swatch {
     display: inline-block;
     width: 45px;
