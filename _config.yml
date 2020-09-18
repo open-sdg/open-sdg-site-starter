@@ -25,7 +25,7 @@ languages:
 
 # Tell the Remote Theme plugin to use the Open SDG platform (Jekyll theme).
 # Recommended: set this to a particular "release" of Open SDG. For example:
-#remote_theme: open-sdg/open-sdg@0.10.0
+#remote_theme: open-sdg/open-sdg@1.1.0
 remote_theme: open-sdg/open-sdg@master
 
 # Replace this title as needed.
