@@ -1767,6 +1767,9 @@ footer {
   line-height: 1.2;
   padding-left: 20px; }
 
+caption {
+  color: #0b0c0c; }
+
 .table-footer-text dl dt {
   float: left;
   margin-right: 5px;
