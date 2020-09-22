@@ -3021,7 +3021,6 @@ indicatorController.prototype = {
     this._model.initialise();
   }
 };
-
 var indicatorSearch = function() {
 
   var urlParams = new URLSearchParams(window.location.search);

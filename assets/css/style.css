@@ -1630,6 +1630,9 @@ footer {
   -khtml-user-select: none;
   -webkit-user-select: none;
   -o-user-select: none; }
+  #main-content canvas:focus {
+    background-color: transparent !important;
+    outline: 6px #ffdd00 solid !important; }
 #main-content.goal-indicators .indicator-cards a {
   padding: 1rem;
   display: inline-block;
@@ -1829,6 +1832,9 @@ body.contrast-high #legend li {
     width: 100%; } }
 .goal-banner .goal-icon {
   margin-top: 10px; }
+.goal-banner h1 .lead-copy {
+  display: block;
+  margin-top: 10px; }
 
 body.contrast-high .goal-indicators div span {
   border-color: white !important;
@@ -2015,16 +2021,28 @@ body.contrast-high .reporting-status-description {
       margin-top: 10px; }
       #search-results .search-result a .title {
         margin-bottom: 5px;
-        font-size: 18px; }
-      #search-results .search-result a .url {
-        color: green;
-        font-size: 16px; }
+        font-size: 18px;
+        display: inline-block; }
+      #search-results .search-result a:focus .title {
+        color: #0b0c0c !important;
+        outline: 3px solid transparent !important;
+        background-color: #ffdd00 !important;
+        outline-offset: 0 !important;
+        box-shadow: 0 -2px #ffdd00, 0 4px #0b0c0c !important;
+        text-decoration: none !important; }
+        #search-results .search-result a:focus .title span.match {
+          background-color: transparent; }
       #search-results .search-result a:hover .title {
         text-decoration: underline; }
+    #search-results .search-result .url {
+      color: green;
+      font-size: 16px; }
+    #search-results .search-result .content {
+      margin-top: 2px; }
 
 body.contrast-high #search-results span.match {
   color: black !important; }
-body.contrast-high #search-results .search-result a .url {
+body.contrast-high #search-results .search-result .url {
   color: yellow !important; }
 body.contrast-high #search-results .search-result .content {
   color: white !important; }
