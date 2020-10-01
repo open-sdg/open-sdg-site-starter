@@ -1388,14 +1388,9 @@ footer {
 #main-content #indicatorData.no-fields.no-units.no-serieses > .col-md-9 {
   width: 100%; }
 #main-content .indicator-sidebar-hidden {
-  padding: 0;
-  width: 0;
-  height: 0;
-  overflow: hidden; }
+  display: none; }
 #main-content .indicator-main-full {
   width: 100%; }
-#main-content #indicator-sidebar, #main-content #indicator-main {
-  transition: width 0.3s ease; }
 #main-content #toolbar button {
   width: 100%;
   background-color: white;
@@ -1453,11 +1448,12 @@ footer {
       color: white; }
       #main-content #fields label.excluded input {
         display: none; }
-  #main-content #fields h5 {
+  #main-content #fields h5, #main-content #fields h6 {
     padding-left: 7px;
     position: relative;
-    padding-right: 33px; }
-    #main-content #fields h5 i {
+    padding-right: 33px;
+    font-size: 14px; }
+    #main-content #fields h5 i, #main-content #fields h6 i {
       font-size: 0.875em;
       position: absolute;
       top: 0;
