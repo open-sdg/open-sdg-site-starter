@@ -1746,21 +1746,6 @@ function makeHeadlineDataset(years, rows, label) {
   });
 }
 
-/**
- * @param {Object} model
- * @return {Object} Translated footer fields keyed to values
- */
-function footerFields(model) {
-  var fields = {}
-  fields[translations.indicator.source] = model.dataSource;
-  fields[translations.indicator.geographical_area] = model.geographicalArea;
-  fields[translations.indicator.unit_of_measurement] = model.measurementUnit;
-  fields[translations.indicator.copyright] = model.copyright;
-  fields[translations.indicator.footnote] = model.footnote;
-  // Filter out the empty values.
-  return _.pick(fields, _.identity);
-}
-
   /**
  * Model helper functions related to tables.
  */
@@ -1899,7 +1884,6 @@ function sortData(rows, selectedUnit) {
     getFieldNames: getFieldNames,
     getInitialAllowedFields: getInitialAllowedFields,
     prepareData: prepareData,
-    footerFields: footerFields,
     getHeadline: getHeadline,
     sortData: sortData,
     getHeadlineTable: getHeadlineTable,
@@ -1938,10 +1922,6 @@ function sortData(rows, selectedUnit) {
   this.chartTitles = options.chartTitles;
   this.graphType = options.graphType;
   this.measurementUnit = options.measurementUnit;
-  this.copyright = options.copyright;
-  this.dataSource = options.dataSource;
-  this.geographicalArea = options.geographicalArea;
-  this.footnote = options.footnote;
   this.startValues = options.startValues;
   this.showData = options.showData;
   this.selectedFields = [];
@@ -1987,7 +1967,6 @@ function sortData(rows, selectedUnit) {
   this.selectableFields = helpers.getFieldNames(this.fieldItemStates);
   this.allowedFields = helpers.getInitialAllowedFields(this.selectableFields, this.edgesData);
   this.data = helpers.prepareData(this.data);
-  this.footerFields = helpers.footerFields(this);
   this.colors = opensdg.chartColors(this.indicatorId);
   this.maxDatasetCount = 2 * this.colors.length;
   this.hasStartValues = Array.isArray(this.startValues) && this.startValues.length > 0;
@@ -2196,7 +2175,6 @@ function sortData(rows, selectedUnit) {
       shortIndicatorId: this.shortIndicatorId,
       selectedUnit: this.selectedUnit,
       selectedSeries: this.selectedSeries,
-      footerFields: this.footerFields,
       graphLimits: this.graphLimits,
       stackedDisaggregation: this.stackedDisaggregation,
       chartTitle: this.chartTitle
@@ -2676,7 +2654,6 @@ var indicatorView = function (model, options) {
       }
     });
 
-    this.createTableFooter('selectionChartFooter', chartInfo.footerFields, '#chart-canvas');
     this.createDownloadButton(chartInfo.selectionsTable, 'Chart', chartInfo.indicatorId, '#chartSelectionDownload');
     this.createSourceButton(chartInfo.shortIndicatorId, '#chartSelectionDownload');
 
@@ -2823,8 +2800,7 @@ var indicatorView = function (model, options) {
 
   this.createSelectionsTable = function(chartInfo) {
     this.createTable(chartInfo.selectionsTable, chartInfo.indicatorId, '#selectionsTable', true);
-    this.createTableFooter('selectionTableFooter', chartInfo.footerFields, '#selectionsTable');
-    $('#selectionsTable').append('<div id="tableSelectionDownload" class="clearfix"></div>');
+    $('#tableSelectionDownload').empty();
     this.createDownloadButton(chartInfo.selectionsTable, 'Table', chartInfo.indicatorId, '#tableSelectionDownload');
     this.createSourceButton(chartInfo.shortIndicatorId, '#tableSelectionDownload');
   };
@@ -3020,6 +2996,7 @@ var indicatorView = function (model, options) {
       initialiseDataTable(el);
 
       $(el).removeClass('table-has-no-data');
+      $('#selectionTableFooter').show();
 
       $(el).find('th')
         .removeAttr('tabindex')
@@ -3030,25 +3007,9 @@ var indicatorView = function (model, options) {
     } else {
       $(el).append($('<h3 />').text(translations.indicator.data_not_available));
       $(el).addClass('table-has-no-data');
+      $('#selectionTableFooter').hide();
     }
   };
-
-  this.createTableFooter = function(divid, footerFields, el) {
-    var footdiv = $('<div />').attr({
-      'id': divid,
-      'class': 'table-footer-text'
-    });
-    var footList = $('<dl>');
-    footdiv.append(footList);
-
-    _.each(footerFields, function(val, key) {
-      footList.append($('<dt />').text(key + ': '));
-      footList.append($('<dd />').text(val));
-    });
-
-    $(el).append(footdiv);
-  };
-
 
   this.sortFieldGroup = function(fieldGroupElement) {
     var sortLabels = function(a, b) {

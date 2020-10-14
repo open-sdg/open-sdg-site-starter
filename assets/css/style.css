@@ -812,6 +812,10 @@ footer #footerLinks .language-toggle-menu-footer {
       border-color: #0b0c0c; }
     #main-content #map .leaflet-bar-timecontrol .timecontrol-slider .slider {
       border-color: #484f4f; }
+    #main-content #map .leaflet-bar-timecontrol.leaflet-control-attribution {
+      background: white; }
+      #main-content #map .leaflet-bar-timecontrol.leaflet-control-attribution a {
+        color: #1d70b8; }
   #main-content #map .disaggregation-select-container {
     background: white;
     padding: 5px;
@@ -1719,10 +1723,20 @@ footer {
       overflow-x: auto; }
   #main-content .tab-content h4 {
     margin-top: 2rem !important; }
+#main-content #selectionTableFooter, #main-content #mapFooter {
+  padding-left: 20px; }
+  #main-content #selectionTableFooter p, #main-content #mapFooter p {
+    font-size: 0.85em;
+    margin: 0 0 5px; }
+  #main-content #selectionTableFooter dl, #main-content #mapFooter dl {
+    font-size: 0.85em; }
+    #main-content #selectionTableFooter dl dd, #main-content #mapFooter dl dd {
+      margin: 0 0 5px; }
+#main-content #mapFooter {
+  margin-top: 30px;
+  padding-left: 0; }
 #main-content #selectionsTable {
   padding-bottom: 20px; }
-  #main-content #selectionsTable.table-has-no-data #selectionTableFooter {
-    display: none; }
   #main-content #selectionsTable div.dataTables_wrapper {
     overflow-x: auto; }
     #main-content #selectionsTable div.dataTables_wrapper .row {
@@ -1746,15 +1760,6 @@ footer {
       background-image: url(../img/sort_desc.png); }
   #main-content #selectionsTable table tbody th {
     font-weight: normal; }
-  #main-content #selectionsTable .table-footer-text {
-    padding-left: 20px; }
-    #main-content #selectionsTable .table-footer-text p {
-      font-size: 0.85em;
-      margin: 0 0 5px; }
-    #main-content #selectionsTable .table-footer-text dl {
-      font-size: 0.85em; }
-      #main-content #selectionsTable .table-footer-text dl dd {
-        margin: 0 0 5px; }
 #main-content #selectionsChart {
   padding-bottom: 20px; }
   #main-content #selectionsChart.chart-has-no-data #selectionChartFooter {
