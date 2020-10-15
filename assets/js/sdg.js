@@ -393,7 +393,7 @@ opensdg.autotrack = function(preset, category, action, label) {
         plugin.map.addControl(L.Control.zoomHome());
 
         // Add full-screen functionality.
-        plugin.map.addControl(new L.Control.Fullscreen());
+        plugin.map.addControl(new L.Control.FullscreenAccessible());
 
         // Add the year slider.
         plugin.map.addControl(L.Control.yearSlider({
@@ -3562,6 +3562,36 @@ $(function() {
     return new L.Control.YearSlider(options);
   };
 }());
+/*
+ * Leaflet fullscreenAccessible.
+ *
+ * This is an override of L.Control.Fullscreen for accessibility fixes.
+ * See here: https://github.com/Leaflet/Leaflet.fullscreen
+ */
+(function () {
+    "use strict";
+
+    if (typeof L === 'undefined') {
+        return;
+    }
+
+    L.Control.FullscreenAccessible = L.Control.Fullscreen.extend({
+        onAdd: function(map) {
+            var container = L.Control.Fullscreen.prototype.onAdd.call(this, map);
+            this.link.setAttribute('role', 'button');
+            this.link.setAttribute('aria-label', this.link.title);
+            this.link.innerHTML = '<i class="fa fa-expand" aria-hidden="true"></i>';
+            return container;
+        },
+        _toggleTitle: function() {
+            L.Control.Fullscreen.prototype._toggleTitle.call(this);
+            this.link.setAttribute('aria-label', this.link.title);
+            var faClass = this._map.isFullscreen() ? 'fa-compress' : 'fa-expand'
+            this.link.innerHTML = '<i class="fa ' + faClass + '" aria-hidden="true"></i>';
+        }
+    });
+
+  }());
 function initialiseGoogleAnalytics(){
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

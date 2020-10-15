@@ -816,6 +816,9 @@ footer #footerLinks .language-toggle-menu-footer {
       background: white; }
       #main-content #map .leaflet-bar-timecontrol.leaflet-control-attribution a {
         color: #1d70b8; }
+    #main-content #map .leaflet-bar-timecontrol .leaflet-control-fullscreen-button {
+      background-image: none;
+      font-size: 20px; }
   #main-content #map .disaggregation-select-container {
     background: white;
     padding: 5px;
