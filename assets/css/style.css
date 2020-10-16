@@ -794,9 +794,21 @@ footer #footerLinks .language-toggle-menu-footer {
     justify-content: center; }
     #main-content #map #loader-container img {
       height: auto; }
-  #main-content #map .leaflet-control .download-geojson-button {
-    display: block;
-    cursor: pointer; }
+  #main-content #map .leaflet-control-search .search-button {
+    background-image: none;
+    font-size: 20px;
+    padding-left: 6px;
+    color: #0b0c0c; }
+  #main-content #map .leaflet-control-search .search-cancel {
+    background-image: none;
+    color: #0b0c0c;
+    font-size: 16px;
+    line-height: 16px;
+    height: 22px;
+    padding: 5px;
+    margin: 3px 1px; }
+  #main-content #map .leaflet-control-search .search-input {
+    color: #0b0c0c; }
   #main-content #map .leaflet-bar-timecontrol {
     border-color: #0b0c0c; }
     #main-content #map .leaflet-bar-timecontrol .timecontrol-date {
@@ -816,9 +828,9 @@ footer #footerLinks .language-toggle-menu-footer {
       background: white; }
       #main-content #map .leaflet-bar-timecontrol.leaflet-control-attribution a {
         color: #1d70b8; }
-    #main-content #map .leaflet-bar-timecontrol .leaflet-control-fullscreen-button {
-      background-image: none;
-      font-size: 20px; }
+  #main-content #map .leaflet-control-fullscreen-button {
+    background-image: none;
+    font-size: 20px; }
   #main-content #map .disaggregation-select-container {
     background: white;
     padding: 5px;
@@ -835,6 +847,10 @@ footer #footerLinks .language-toggle-menu-footer {
         display: none; } }
     #main-content #map .selection-legend .legend-swatches {
       height: 10px; }
+      @media (-ms-high-contrast: active), (forced-colors: active) {
+        #main-content #map .selection-legend .legend-swatches {
+          -ms-high-contrast-adjust: none;
+          forced-color-adjust: none; } }
       #main-content #map .selection-legend .legend-swatches .legend-swatch {
         display: block;
         float: left;
@@ -843,6 +859,10 @@ footer #footerLinks .language-toggle-menu-footer {
       position: absolute;
       bottom: -10px;
       width: 100%; }
+      @media (-ms-high-contrast: active), (forced-colors: active) {
+        #main-content #map .selection-legend .legend-values {
+          -ms-high-contrast-adjust: none;
+          forced-color-adjust: none; } }
       #main-content #map .selection-legend .legend-values .arrow {
         width: 0;
         height: 0;
@@ -860,6 +880,7 @@ footer #footerLinks .language-toggle-menu-footer {
           right: 1px;
           box-shadow: 1px 1px 1px 0px #666; }
       #main-content #map .selection-legend .legend-values .legend-value {
+        color: #0b0c0c;
         padding: 0 4px;
         background: white;
         position: absolute;
@@ -1226,15 +1247,15 @@ body.contrast-high .navbar-brand:focus {
     float: right; }
   .navbar .top-level {
     display: none; }
-  .navbar #search {
+  .navbar #search, .navbar #search-mobile {
     position: relative;
     clear: both;
     float: right;
     margin-bottom: 20px; }
     @media only screen and (max-width: 768px) {
-      .navbar #search {
+      .navbar #search, .navbar #search-mobile {
         margin-bottom: 0; } }
-    .navbar #search input {
+    .navbar #search input, .navbar #search-mobile input {
       padding: 5px;
       padding-left: 5px;
       padding-right: 45px;
@@ -1243,7 +1264,7 @@ body.contrast-high .navbar-brand:focus {
       transition: width 0.4s;
       margin-top: 5px;
       font-size: 16px; }
-    .navbar #search button {
+    .navbar #search button, .navbar #search-mobile button {
       height: 34px;
       color: #0b0c0c;
       position: absolute;
@@ -1279,13 +1300,13 @@ body.contrast-high .navbar-brand:focus {
       -khtml-user-select: none;
       -webkit-user-select: none;
       -o-user-select: none; }
-      .navbar .top-level li {
+      .navbar .top-level > li {
         float: left;
         width: 50%;
         cursor: pointer; }
-        .navbar .top-level li.active {
+        .navbar .top-level > li.active {
           background: #58595B; }
-        .navbar .top-level li button {
+        .navbar .top-level > li > button {
           color: #E5E6E7;
           display: block;
           padding: 15px;
@@ -1293,43 +1314,46 @@ body.contrast-high .navbar-brand:focus {
           background-color: inherit;
           text-align: left;
           width: 100%; }
-          .navbar .top-level li button[data-target="search"] {
+          .navbar .top-level > li > button[data-target="search"] {
             text-transform: capitalize; }
     .navbar .menu-target {
       background: #58595B; }
-    .navbar ul.navbar-nav {
+    .navbar #menu-mobile {
       float: none;
       display: none;
       clear: left;
       margin: 0;
+      width: 200%;
       font-size: 0.938em; }
-      .navbar ul.navbar-nav li {
+      .navbar #menu-mobile li {
         cursor: pointer; }
-        .navbar ul.navbar-nav li a {
+        .navbar #menu-mobile li a {
           display: block;
           background: #58595B;
-          padding: 6px 0 6px;
+          padding: 6px 0 6px 15px;
+          margin-left: 0;
           color: #E5E6E7;
           font-size: 15px; }
-          .navbar ul.navbar-nav li a:hover, .navbar ul.navbar-nav li a:focus {
+          .navbar #menu-mobile li a:hover, .navbar #menu-mobile li a:focus {
             color: #E5E6E7; }
-        .navbar ul.navbar-nav li.nav-link.active a {
+        .navbar #menu-mobile li.nav-link.active a {
           color: white;
           background: #58595B;
           font-weight: bold; }
-          .navbar ul.navbar-nav li.nav-link.active a:hover {
+          .navbar #menu-mobile li.nav-link.active a:hover {
             color: white; }
-        .navbar ul.navbar-nav li:last-child {
+        .navbar #menu-mobile li:last-child {
           padding-bottom: 10px; }
-    .navbar #search {
+    .navbar #search-mobile {
       display: none;
-      width: 100%;
+      width: 200%;
+      margin-left: -100%;
       padding: 20px; }
-      .navbar #search input {
+      .navbar #search-mobile input {
         width: 100%;
         color: #0b0c0c;
         margin-top: 0; }
-      .navbar #search button {
+      .navbar #search-mobile button {
         right: 20px;
         bottom: 20px; } }
 @media only screen and (min-width: 769px) and (max-width: 991px) {
@@ -1346,18 +1370,22 @@ header ul {
   padding-left: 0;
   list-style-type: none; }
 
-body.contrast-high .navbar li a {
+body.contrast-high .navbar #menu li a, body.contrast-high .navbar #menu-mobile li a {
   color: white; }
-  body.contrast-high .navbar li a:hover, body.contrast-high .navbar li a:focus {
+  body.contrast-high .navbar #menu li a:hover, body.contrast-high .navbar #menu li a:focus, body.contrast-high .navbar #menu-mobile li a:hover, body.contrast-high .navbar #menu-mobile li a:focus {
     color: yellow; }
-body.contrast-high .navbar li.active a {
+body.contrast-high .navbar #menu li.active a, body.contrast-high .navbar #menu-mobile li.active a {
   color: yellow;
   border-color: yellow; }
-  body.contrast-high .navbar li.active a:hover {
+  body.contrast-high .navbar #menu li.active a:hover, body.contrast-high .navbar #menu-mobile li.active a:hover {
     color: yellow; }
-  body.contrast-high .navbar li.active a:focus {
+  body.contrast-high .navbar #menu li.active a:focus, body.contrast-high .navbar #menu-mobile li.active a:focus {
     color: yellow; }
-body.contrast-high .navbar #search input, body.contrast-high .navbar #search button {
+body.contrast-high .navbar #menu-mobile li a {
+  background-color: black; }
+body.contrast-high .navbar #search input, body.contrast-high .navbar #search button, body.contrast-high .navbar #search-mobile input, body.contrast-high .navbar #search-mobile button {
+  color: black; }
+body.contrast-high .navbar .top-level > li.active button {
   color: black; }
 @media screen and (max-width: 768px) {
   body.contrast-high .navbar.navbar-default {
@@ -1371,6 +1399,12 @@ body.contrast-high .navbar #search input, body.contrast-high .navbar #search but
     background: black; }
   body.contrast-high .navbar ul.navbar-nav li a {
     background: black; } }
+
+#search, #menu {
+  display: none; }
+  @media screen and (min-width: 769px) {
+    #search, #menu {
+      display: block; } }
 
 footer {
   clear: left;

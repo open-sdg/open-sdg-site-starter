@@ -121,7 +121,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20201015010903">
+        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20201016011049">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -182,38 +182,21 @@ var translations = {
         <li id="menuToggle"
             aria-label="Menu toggle. Click to expand or collapse the menu."
             aria-haspopup="true">
-          <button data-target="menu" aria-expanded="false">Menú</button>
-        </li>
-        <li id="searchToggle"
-            aria-label="Search toggle. Click to expand or collapse the search bar."
-            aria-haspopup="true">
-          <button data-target="search" aria-expanded="false">Buscar</button>
-        </li>
-      </ul>
-
-      <div id="search" class="menu-target">
-  <form action="/open-sdg-site-starter/es/search">
-    <input type="text" name="q" id="indicator_search" title="Buscar" />
-    <label class="sr-only" for="indicator_search">Buscar</label>
-    <button aria-label="Buscar" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
-  </form>
-</div>
-
-
-      <ul class="nav navbar-nav menu-target contrast-switcher" id="menu"><li class="nav-link ">
-            <a href="/open-sdg-site-starter/es/goals">Metas</a>
-          </li><li class="nav-link ">
-            <a href="/open-sdg-site-starter/es/reporting-status">Estado de informes</a>
-          </li><li class="nav-link ">
-            <a href="/open-sdg-site-starter/es/about">Acerca de</a>
-          </li><li class="nav-link ">
-            <a href="/open-sdg-site-starter/es/guidance">Dirección</a>
-          </li><li class="nav-link ">
-            <a href="/open-sdg-site-starter/es/faq">FAQ</a>
-          </li><li class="nav-link ">
-            <a href="/open-sdg-site-starter/es/news"></a>
-          </li><li class="language-toggle-menu-header">
-          
+          <button data-target="menu-mobile" aria-expanded="false">Menú</button>
+          <ul class="nav navbar-nav menu-target contrast-switcher" id="menu-mobile"><li class="nav-link ">
+    <a href="/open-sdg-site-starter/es/goals">Metas</a>
+    </li><li class="nav-link ">
+    <a href="/open-sdg-site-starter/es/reporting-status">Estado de informes</a>
+    </li><li class="nav-link ">
+    <a href="/open-sdg-site-starter/es/about">Acerca de</a>
+    </li><li class="nav-link ">
+    <a href="/open-sdg-site-starter/es/guidance">Dirección</a>
+    </li><li class="nav-link ">
+    <a href="/open-sdg-site-starter/es/faq">FAQ</a>
+    </li><li class="nav-link ">
+    <a href="/open-sdg-site-starter/es/news"></a>
+    </li><li class="language-toggle-menu-header">
+    
 
 
 
@@ -235,7 +218,70 @@ var translations = {
 
 
 
-        </li></ul>
+</li></ul>
+
+        </li>
+        <li id="searchToggle"
+            aria-label="Search toggle. Click to expand or collapse the search bar."
+            aria-haspopup="true">
+          <button data-target="search-mobile" aria-expanded="false">Buscar</button>
+          <div id="search-mobile" class="menu-target">
+  <form action="/open-sdg-site-starter/es/search">
+    <input type="text" name="q" id="indicator_search-mobile" title="Buscar" />
+    <label class="sr-only" for="indicator_search-mobile">Buscar</label>
+    <button aria-label="Buscar" id="search-mobile-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
+  </form>
+</div>
+
+        </li>
+      </ul>
+
+      <div id="search" class="menu-target">
+  <form action="/open-sdg-site-starter/es/search">
+    <input type="text" name="q" id="indicator_search" title="Buscar" />
+    <label class="sr-only" for="indicator_search">Buscar</label>
+    <button aria-label="Buscar" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
+  </form>
+</div>
+
+
+      <ul class="nav navbar-nav menu-target contrast-switcher" id="menu"><li class="nav-link ">
+    <a href="/open-sdg-site-starter/es/goals">Metas</a>
+    </li><li class="nav-link ">
+    <a href="/open-sdg-site-starter/es/reporting-status">Estado de informes</a>
+    </li><li class="nav-link ">
+    <a href="/open-sdg-site-starter/es/about">Acerca de</a>
+    </li><li class="nav-link ">
+    <a href="/open-sdg-site-starter/es/guidance">Dirección</a>
+    </li><li class="nav-link ">
+    <a href="/open-sdg-site-starter/es/faq">FAQ</a>
+    </li><li class="nav-link ">
+    <a href="/open-sdg-site-starter/es/news"></a>
+    </li><li class="language-toggle-menu-header">
+    
+
+
+
+
+
+  <div class="language-toggle-container">
+  
+  <div class="btn-group language-toggle-dropdown ">
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">Español</span>
+      <span class="language-abbreviation">es</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
+    <ul class="dropdown-menu"><li>
+            <a href="/open-sdg-site-starter/15-c-1/">
+              English
+            </a>
+          </li></ul>
+  </div>
+</div>
+
+
+
+</li></ul>
+
 
     </nav>
   </div>
@@ -1060,7 +1106,7 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Buscar';</script>
 
-<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20201015010903'></script><script>
+<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20201016011049'></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
