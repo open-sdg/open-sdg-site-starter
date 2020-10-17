@@ -2604,6 +2604,7 @@ var indicatorView = function (model, options) {
         },
         legendCallback: function(chart) {
             var text = [];
+            text.push('<h5 class="sr-only">Plot legend: list of lines included in chart</h5>');
             text.push('<ul id="legend">');
             _.each(chart.data.datasets, function(dataset) {
               text.push('<li>');
@@ -2795,7 +2796,7 @@ var indicatorView = function (model, options) {
 
     table.DataTable(datatables_options);
     table.removeAttr('role');
-    table.find('thead th').removeAttr('rowspan').removeAttr('colspan');
+    table.find('thead th').removeAttr('rowspan').removeAttr('colspan').removeAttr('aria-label');
     setDataTableWidth(table);
   };
 
