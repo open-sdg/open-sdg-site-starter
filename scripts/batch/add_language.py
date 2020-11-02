@@ -43,7 +43,7 @@ def add_language(new_language, language_public):
             if line.startswith('permalink: /'):
                 sys.stdout.write(line.replace('permalink: /', 'permalink: /' + language_public + '/'))
                 sys.stdout.write('language: ' + new_language + '\n')
-            else:
+            elif not line.startswith('language: '):
                 sys.stdout.write(line)
 
 def main():
