@@ -2608,7 +2608,7 @@ var indicatorView = function (model, options) {
         },
         legendCallback: function(chart) {
             var text = [];
-            text.push('<h5 class="sr-only">Plot legend: list of lines included in chart</h5>');
+            text.push('<h5 class="sr-only">' + translations.indicator.plot_legend_description + '</h5>');
             text.push('<ul id="legend">');
             _.each(chart.data.datasets, function(dataset) {
               text.push('<li>');
@@ -2917,10 +2917,10 @@ var indicatorView = function (model, options) {
         newLabels = newDatasets.map(getDatasetLabel);
 
     if (!hasData) {
-      status = 'Chart and table shows no data.';
+      status = translations.indicator.announce_data_not_available;
     }
     else if (dataAdded) {
-      status = 'Chart and table updated to include data.';
+      status = translations.indicator.announce_data_added;
       var addedLabels = [];
       newLabels.forEach(function(label) {
         if (!oldLabels.includes(label)) {
@@ -2930,7 +2930,7 @@ var indicatorView = function (model, options) {
       status += ' ' + addedLabels.join(', ');
     }
     else if (dataRemoved) {
-      status = 'Chart and table updated to exclude data.';
+      status = translations.indicator.announce_data_removed;
       var removedLabels = [];
       oldLabels.forEach(function(label) {
         if (!newLabels.includes(label)) {
@@ -3541,7 +3541,7 @@ $(function() {
 
       knobElement.setAttribute('tabindex', '0');
       knobElement.setAttribute('role', 'slider');
-      knobElement.setAttribute('aria-label', 'Year slider');
+      knobElement.setAttribute('aria-label', translations.indicator.map_year_slider);
       knobElement.setAttribute('aria-valuemin', minYear);
       knobElement.setAttribute('aria-valuemax', maxYear);
 
@@ -3669,11 +3669,11 @@ $(function() {
       return container;
     },
     _accessibleExpand: function() {
-      this._accessibleDescription('Hide search');
+      this._accessibleDescription(translations.indicator.map_search_hide);
       this._button.setAttribute('aria-expanded', 'true');
     },
     _accessibleCollapse: function() {
-      this._accessibleDescription('Show search');
+      this._accessibleDescription(translations.indicator.map_search_show);
       this._button.setAttribute('aria-expanded', 'false');
     },
     _accessibleDescription: function(description) {
@@ -3697,7 +3697,7 @@ $(function() {
     },
     showTooltip: function(records) {
       L.Control.Search.prototype.showTooltip.call(this, records);
-      this._accessibleDescription('Search');
+      this._accessibleDescription(translations.indicator.map_search);
       this._button.removeAttribute('aria-expanded');
       return this._countertips;
     },
