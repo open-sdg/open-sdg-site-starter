@@ -121,7 +121,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20201129010229">
+        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20201129184844">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -135,7 +135,7 @@ var translations = {
 <body class="language-en layout-goal-by-target-vertical">
 <!-- <div class="container"> -->
 
-<script>translations['header'] = {"alpha":"Alpha","default_contrast":"Default contrast","disable_high_contrast":"Disable high contrast","disclaimer":"This is a development website. We welcome your <a href=\"mailto:%email_address\">feedback</a>.","enable_high_contrast":"Enable high contrast","high_contrast":"High contrast","skip_link":"Skip to main content","tag_line":"17 Goals to Transform our World"};</script>
+<script>translations['header'] = {"alpha":"Alpha","default_contrast":"Default contrast","disable_high_contrast":"Disable high contrast","disclaimer":"This is a development website. We welcome your <a href=\"mailto:%email_address\">feedback</a>.","enable_high_contrast":"Enable high contrast","high_contrast":"High contrast","skip_link":"Skip to main content","tag_line":"17 Goals to Transform our World","toggle_menu":"Menu toggle. Click to expand or collapse the menu.","toggle_search":"Search toggle. Click to expand or collapse the search bar."};</script>
 
 <a class="sr-only sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Skip to main content</a>
 <div id="disclaimer">
@@ -180,7 +180,7 @@ var translations = {
 
       <ul class="top-level">
         <li id="menuToggle"
-            aria-label=""
+            aria-label="Menu toggle. Click to expand or collapse the menu."
             aria-haspopup="true">
           <button data-target="menu-mobile" aria-expanded="false">Menu</button>
           <ul class="nav navbar-nav menu-target contrast-switcher" id="menu-mobile"><li class="nav-link ">
@@ -222,7 +222,7 @@ var translations = {
 
         </li>
         <li id="searchToggle"
-            aria-label=""
+            aria-label="Search toggle. Click to expand or collapse the search bar."
             aria-haspopup="true">
           <button data-target="search-mobile" aria-expanded="false">Search</button>
           <div id="search-mobile" class="menu-target">
@@ -320,7 +320,7 @@ var translations = {
   
 
   <div class="container">
-    <h2></h2>
+    <h2>Targets and indicators</h2>
 
     
     
@@ -346,7 +346,7 @@ var translations = {
               <span class="indicator-number"><span class="sr-only">Indicator</span> 8.1.1</span>
             </h4>
             <span class="indicator-name"><a href="/open-sdg-site-starter/8-1-1">Annual growth rate of real GDP per capita</a></span>
-            <span class="sr-only"></span>
+            <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
               Exploring data sources
             </span>
@@ -377,7 +377,7 @@ var translations = {
               <span class="indicator-number"><span class="sr-only">Indicator</span> 8.2.1</span>
             </h4>
             <span class="indicator-name"><a href="/open-sdg-site-starter/8-2-1">Annual growth rate of real GDP per employed person</a></span>
-            <span class="sr-only"></span>
+            <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
               Exploring data sources
             </span>
@@ -408,7 +408,7 @@ var translations = {
               <span class="indicator-number"><span class="sr-only">Indicator</span> 8.3.1</span>
             </h4>
             <span class="indicator-name"><a href="/open-sdg-site-starter/8-3-1">Proportion of informal employment in non‐agriculture employment, by sex</a></span>
-            <span class="sr-only"></span>
+            <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
               Exploring data sources
             </span>
@@ -439,7 +439,7 @@ var translations = {
               <span class="indicator-number"><span class="sr-only">Indicator</span> 8.4.1</span>
             </h4>
             <span class="indicator-name"><a href="/open-sdg-site-starter/8-4-1">Material footprint, material footprint per capita, and material footprint per GDP</a></span>
-            <span class="sr-only"></span>
+            <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
               Exploring data sources
             </span>
@@ -461,7 +461,7 @@ var translations = {
               <span class="indicator-number"><span class="sr-only">Indicator</span> 8.4.2</span>
             </h4>
             <span class="indicator-name"><a href="/open-sdg-site-starter/8-4-2">Domestic material consumption, domestic material consumption per capita, and domestic material consumption per GDP</a></span>
-            <span class="sr-only"></span>
+            <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
               Exploring data sources
             </span>
@@ -492,7 +492,7 @@ var translations = {
               <span class="indicator-number"><span class="sr-only">Indicator</span> 8.5.1</span>
             </h4>
             <span class="indicator-name"><a href="/open-sdg-site-starter/8-5-1">Average hourly earnings of female and male employees, by occupation, age and persons with disabilities</a></span>
-            <span class="sr-only"></span>
+            <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
               Exploring data sources
             </span>
@@ -514,7 +514,7 @@ var translations = {
               <span class="indicator-number"><span class="sr-only">Indicator</span> 8.5.2</span>
             </h4>
             <span class="indicator-name"><a href="/open-sdg-site-starter/8-5-2">Unemployment rate, by sex, age and persons with disabilities</a></span>
-            <span class="sr-only"></span>
+            <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
               Exploring data sources
             </span>
@@ -545,7 +545,7 @@ var translations = {
               <span class="indicator-number"><span class="sr-only">Indicator</span> 8.6.1</span>
             </h4>
             <span class="indicator-name"><a href="/open-sdg-site-starter/8-6-1">Proportion of youth (aged 15–24 years) not in education, employment or training</a></span>
-            <span class="sr-only"></span>
+            <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
               Exploring data sources
             </span>
@@ -576,7 +576,7 @@ var translations = {
               <span class="indicator-number"><span class="sr-only">Indicator</span> 8.7.1</span>
             </h4>
             <span class="indicator-name"><a href="/open-sdg-site-starter/8-7-1">Proportion and number of children aged 5–17 years engaged in child labour, by sex and age</a></span>
-            <span class="sr-only"></span>
+            <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
               Exploring data sources
             </span>
@@ -607,7 +607,7 @@ var translations = {
               <span class="indicator-number"><span class="sr-only">Indicator</span> 8.8.1</span>
             </h4>
             <span class="indicator-name"><a href="/open-sdg-site-starter/8-8-1">Frequency rates of fatal and non-fatal occupational injuries, by sex and migrant status</a></span>
-            <span class="sr-only"></span>
+            <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
               Exploring data sources
             </span>
@@ -629,7 +629,7 @@ var translations = {
               <span class="indicator-number"><span class="sr-only">Indicator</span> 8.8.2</span>
             </h4>
             <span class="indicator-name"><a href="/open-sdg-site-starter/8-8-2">Level of national compliance with labour rights (freedom of association and collective bargaining) based on International Labour Organization (ILO) textual sources and national legislation, by sex and migrant status</a></span>
-            <span class="sr-only"></span>
+            <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
               Exploring data sources
             </span>
@@ -660,7 +660,7 @@ var translations = {
               <span class="indicator-number"><span class="sr-only">Indicator</span> 8.9.1</span>
             </h4>
             <span class="indicator-name"><a href="/open-sdg-site-starter/8-9-1">Tourism direct GDP as a proportion of total GDP and in growth rate</a></span>
-            <span class="sr-only"></span>
+            <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
               Exploring data sources
             </span>
@@ -682,7 +682,7 @@ var translations = {
               <span class="indicator-number"><span class="sr-only">Indicator</span> 8.9.2</span>
             </h4>
             <span class="indicator-name"><a href="/open-sdg-site-starter/8-9-2">Proportion of jobs in sustainable tourism industries out of total tourism jobs</a></span>
-            <span class="sr-only"></span>
+            <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
               Exploring data sources
             </span>
@@ -713,7 +713,7 @@ var translations = {
               <span class="indicator-number"><span class="sr-only">Indicator</span> 8.a.1</span>
             </h4>
             <span class="indicator-name"><a href="/open-sdg-site-starter/8-a-1">Aid for Trade commitments and disbursements</a></span>
-            <span class="sr-only"></span>
+            <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
               Exploring data sources
             </span>
@@ -744,7 +744,7 @@ var translations = {
               <span class="indicator-number"><span class="sr-only">Indicator</span> 8.b.1</span>
             </h4>
             <span class="indicator-name"><a href="/open-sdg-site-starter/8-b-1">Existence of a developed and operationalized national strategy for youth employment, as a distinct strategy or as part of a national employment strategy</a></span>
-            <span class="sr-only"></span>
+            <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
               Exploring data sources
             </span>
@@ -775,7 +775,7 @@ var translations = {
               <span class="indicator-number"><span class="sr-only">Indicator</span> 8.10.1</span>
             </h4>
             <span class="indicator-name"><a href="/open-sdg-site-starter/8-10-1">(a) Number of commercial bank branches per 100,000 adults and (b) number of automated teller machines (ATMs) per 100,000 adults</a></span>
-            <span class="sr-only"></span>
+            <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
               Exploring data sources
             </span>
@@ -797,7 +797,7 @@ var translations = {
               <span class="indicator-number"><span class="sr-only">Indicator</span> 8.10.2</span>
             </h4>
             <span class="indicator-name"><a href="/open-sdg-site-starter/8-10-2">Proportion of adults (15 years and older) with an account at a bank or other financial institution or with a mobile-money-service provider</a></span>
-            <span class="sr-only"></span>
+            <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
               Exploring data sources
             </span>
@@ -869,7 +869,7 @@ var translations = {
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20201129010229'></script>
+<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20201129184844'></script>
 
 <script>
 $(function() {
