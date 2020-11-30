@@ -9,7 +9,7 @@ baseurl: "/open-sdg-site-starter"
 # The next line should be the URL of your data repository published site. To find this,
 # go to your data repository in Github, and click "Settings", then scroll down to the
 # "Github Pages" section. Copy/paste the link in the green section.
-remote_data_prefix: "https://open-sdg.org/open-sdg-data-starter"
+remote_data_prefix: "https://open-sdg.github.io/open-sdg-data-starter"
 # In the next few items, replace "open-sdg" with the name of your GitHub
 # organization, and "open-sdg-data-starter" with the name of your data repository.
 # URL for the "Edit Data" button on indicators.
