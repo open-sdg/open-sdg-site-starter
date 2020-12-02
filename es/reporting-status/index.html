@@ -121,7 +121,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20201201034128">
+        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20201202010158">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -291,7 +291,13 @@ var translations = {
 
 
 
-<div id="main-content" class="container reportingstatus">
+
+
+
+
+
+
+<div id="main-content" class="container reportingstatus" role="main">
 
   <h1>
   
@@ -300,22 +306,27 @@ var translations = {
 </h1>
 
 
-<div class="goal goal-overall">
-      <div class="details">
+
+
+  
+
+  
+  <div class="goal goal-overall">
+    <div class="details">
         <h2 class="status-goal">
             Estado general de informes <span class="total"><span>244</span> indicadores</span>
         </h2>
         <div class="summary">
-          <div class="statuses"><div>
-              <span class="status complete">1</span><strong>Reportado en línea</strong><span class="value">0%</span>
+            <div class="statuses"><div>
+                <span class="status complete"><span class="status-inner">1</span></span><strong>Reportado en línea</strong><span class="value">0%</span>
             </div><div>
-              <span class="status inprogress">0</span><strong>Estadísticas en progreso</strong><span class="value">0%</span>
+                <span class="status inprogress"><span class="status-inner">0</span></span><strong>Estadísticas en progreso</strong><span class="value">0%</span>
             </div><div>
-              <span class="status notstarted">243</span><strong>Explorando fuentes de datos</strong><span class="value">100%</span>
+                <span class="status notstarted"><span class="status-inner">243</span></span><strong>Explorando fuentes de datos</strong><span class="value">100%</span>
             </div><div>
-              <span class="status notapplicable">0</span><strong>No aplicable</strong><span class="value">0%</span>
+                <span class="status notapplicable"><span class="status-inner">0</span></span><strong>No aplicable</strong><span class="value">0%</span>
             </div><br style="clear:both;">
-          </div>
+            </div>
         </div>
         <div class="goal-stats">
             
@@ -330,696 +341,680 @@ var translations = {
             
             
             <span class="notapplicable" style="width:0.0%" title="No aplicable: 0%"></span></div>
-
-      </div>
+    </div>
     <br style="clear:both;">
-  </div>
-
-  
-  <h2>Estados por objetivos</h2>
-  
-
-  <div class="goal reporting-status-item">
-        <div class="frame goal-tiles">
-          <a href="/open-sdg-site-starter/es/1">
-            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/1.png" alt="Fin de la Pobreza - Meta 1" width="100" height="100" id="goal-1"/>
-          </a>
-        </div>
-        <div class="details">
-          <h3 class="status-goal">
+</div>
+  <h2>Estados por objetivos</h2><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/open-sdg-site-starter/es/1">
+        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/1.png" alt="Fin de la Pobreza - Meta 1" width="100" height="100" class="goal-icon-1"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
             <a href="/open-sdg-site-starter/es/1">Fin de la Pobreza</a>
             <span class="total">14 indicadores</span>
-          </h3>
-          <div class="summary">
+        </h3>
+        <div class="summary">
             <div class="statuses"><div>
-                <span class="status complete">1</span><strong>Reportado en línea</strong><span class="value">7%</span>
-              </div><div>
-                <span class="status inprogress">0</span><strong>Estadísticas en progreso</strong><span class="value">0%</span>
-              </div><div>
-                <span class="status notstarted">13</span><strong>Explorando fuentes de datos</strong><span class="value">93%</span>
-              </div><div>
-                <span class="status notapplicable">0</span><strong>No aplicable</strong><span class="value">0%</span>
-              </div><br style="clear:both;">
+                    <span class="status complete"><span class="status-inner">1</span></span><strong>Reportado en línea</strong><span class="value">7%</span>
+                </div><div>
+                    <span class="status inprogress"><span class="status-inner">0</span></span><strong>Estadísticas en progreso</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status notstarted"><span class="status-inner">13</span></span><strong>Explorando fuentes de datos</strong><span class="value">93%</span>
+                </div><div>
+                    <span class="status notapplicable"><span class="status-inner">0</span></span><strong>No aplicable</strong><span class="value">0%</span>
+                </div><br style="clear:both;">
             </div>
-          </div>
-          <div class="goal-stats">
-          
-          
-            <span class="complete" style="width:7.142857142857142%" title="Reportado en línea: 7%"></span>
-          
-          
-            <span class="inprogress" style="width:0.0%" title="Estadísticas en progreso: 0%"></span>
-          
-          
-            <span class="notstarted" style="width:92.85714285714286%" title="Explorando fuentes de datos: 93%"></span>
-          
-          
-            <span class="notapplicable" style="width:0.0%" title="No aplicable: 0%"></span></div>
-          <div class="divider">
-          </div>
         </div>
-      <br style="clear:both;">
-    </div><div class="goal reporting-status-item">
-        <div class="frame goal-tiles">
-          <a href="/open-sdg-site-starter/es/2">
-            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/2.png" alt="Hambre Cero - Meta 2" width="100" height="100" id="goal-2"/>
-          </a>
-        </div>
-        <div class="details">
-          <h3 class="status-goal">
+        <div class="goal-stats">
+                
+                
+                <span class="complete" style="width:7.142857142857142%" title="Reportado en línea: 7%"></span>
+                
+                
+                <span class="inprogress" style="width:0.0%" title="Estadísticas en progreso: 0%"></span>
+                
+                
+                <span class="notstarted" style="width:92.85714285714286%" title="Explorando fuentes de datos: 93%"></span>
+                
+                
+                <span class="notapplicable" style="width:0.0%" title="No aplicable: 0%"></span></div>
+        <div class="divider"></div>
+    </div>
+    <br style="clear:both;">
+</div><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/open-sdg-site-starter/es/2">
+        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/2.png" alt="Hambre Cero - Meta 2" width="100" height="100" class="goal-icon-2"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
             <a href="/open-sdg-site-starter/es/2">Hambre Cero</a>
             <span class="total">13 indicadores</span>
-          </h3>
-          <div class="summary">
+        </h3>
+        <div class="summary">
             <div class="statuses"><div>
-                <span class="status complete">0</span><strong>Reportado en línea</strong><span class="value">0%</span>
-              </div><div>
-                <span class="status inprogress">0</span><strong>Estadísticas en progreso</strong><span class="value">0%</span>
-              </div><div>
-                <span class="status notstarted">13</span><strong>Explorando fuentes de datos</strong><span class="value">100%</span>
-              </div><div>
-                <span class="status notapplicable">0</span><strong>No aplicable</strong><span class="value">0%</span>
-              </div><br style="clear:both;">
+                    <span class="status complete"><span class="status-inner">0</span></span><strong>Reportado en línea</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status inprogress"><span class="status-inner">0</span></span><strong>Estadísticas en progreso</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status notstarted"><span class="status-inner">13</span></span><strong>Explorando fuentes de datos</strong><span class="value">100%</span>
+                </div><div>
+                    <span class="status notapplicable"><span class="status-inner">0</span></span><strong>No aplicable</strong><span class="value">0%</span>
+                </div><br style="clear:both;">
             </div>
-          </div>
-          <div class="goal-stats">
-          
-          
-            <span class="complete" style="width:0.0%" title="Reportado en línea: 0%"></span>
-          
-          
-            <span class="inprogress" style="width:0.0%" title="Estadísticas en progreso: 0%"></span>
-          
-          
-            <span class="notstarted" style="width:100.0%" title="Explorando fuentes de datos: 100%"></span>
-          
-          
-            <span class="notapplicable" style="width:0.0%" title="No aplicable: 0%"></span></div>
-          <div class="divider">
-          </div>
         </div>
-      <br style="clear:both;">
-    </div><div class="goal reporting-status-item">
-        <div class="frame goal-tiles">
-          <a href="/open-sdg-site-starter/es/3">
-            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/3.png" alt="Salud y Bienestar - Meta 3" width="100" height="100" id="goal-3"/>
-          </a>
-        </div>
-        <div class="details">
-          <h3 class="status-goal">
+        <div class="goal-stats">
+                
+                
+                <span class="complete" style="width:0.0%" title="Reportado en línea: 0%"></span>
+                
+                
+                <span class="inprogress" style="width:0.0%" title="Estadísticas en progreso: 0%"></span>
+                
+                
+                <span class="notstarted" style="width:100.0%" title="Explorando fuentes de datos: 100%"></span>
+                
+                
+                <span class="notapplicable" style="width:0.0%" title="No aplicable: 0%"></span></div>
+        <div class="divider"></div>
+    </div>
+    <br style="clear:both;">
+</div><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/open-sdg-site-starter/es/3">
+        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/3.png" alt="Salud y Bienestar - Meta 3" width="100" height="100" class="goal-icon-3"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
             <a href="/open-sdg-site-starter/es/3">Salud y Bienestar</a>
             <span class="total">27 indicadores</span>
-          </h3>
-          <div class="summary">
+        </h3>
+        <div class="summary">
             <div class="statuses"><div>
-                <span class="status complete">0</span><strong>Reportado en línea</strong><span class="value">0%</span>
-              </div><div>
-                <span class="status inprogress">0</span><strong>Estadísticas en progreso</strong><span class="value">0%</span>
-              </div><div>
-                <span class="status notstarted">27</span><strong>Explorando fuentes de datos</strong><span class="value">100%</span>
-              </div><div>
-                <span class="status notapplicable">0</span><strong>No aplicable</strong><span class="value">0%</span>
-              </div><br style="clear:both;">
+                    <span class="status complete"><span class="status-inner">0</span></span><strong>Reportado en línea</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status inprogress"><span class="status-inner">0</span></span><strong>Estadísticas en progreso</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status notstarted"><span class="status-inner">27</span></span><strong>Explorando fuentes de datos</strong><span class="value">100%</span>
+                </div><div>
+                    <span class="status notapplicable"><span class="status-inner">0</span></span><strong>No aplicable</strong><span class="value">0%</span>
+                </div><br style="clear:both;">
             </div>
-          </div>
-          <div class="goal-stats">
-          
-          
-            <span class="complete" style="width:0.0%" title="Reportado en línea: 0%"></span>
-          
-          
-            <span class="inprogress" style="width:0.0%" title="Estadísticas en progreso: 0%"></span>
-          
-          
-            <span class="notstarted" style="width:100.0%" title="Explorando fuentes de datos: 100%"></span>
-          
-          
-            <span class="notapplicable" style="width:0.0%" title="No aplicable: 0%"></span></div>
-          <div class="divider">
-          </div>
         </div>
-      <br style="clear:both;">
-    </div><div class="goal reporting-status-item">
-        <div class="frame goal-tiles">
-          <a href="/open-sdg-site-starter/es/4">
-            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/4.png" alt="Educación de Calidad - Meta 4" width="100" height="100" id="goal-4"/>
-          </a>
-        </div>
-        <div class="details">
-          <h3 class="status-goal">
+        <div class="goal-stats">
+                
+                
+                <span class="complete" style="width:0.0%" title="Reportado en línea: 0%"></span>
+                
+                
+                <span class="inprogress" style="width:0.0%" title="Estadísticas en progreso: 0%"></span>
+                
+                
+                <span class="notstarted" style="width:100.0%" title="Explorando fuentes de datos: 100%"></span>
+                
+                
+                <span class="notapplicable" style="width:0.0%" title="No aplicable: 0%"></span></div>
+        <div class="divider"></div>
+    </div>
+    <br style="clear:both;">
+</div><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/open-sdg-site-starter/es/4">
+        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/4.png" alt="Educación de Calidad - Meta 4" width="100" height="100" class="goal-icon-4"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
             <a href="/open-sdg-site-starter/es/4">Educación de Calidad</a>
             <span class="total">11 indicadores</span>
-          </h3>
-          <div class="summary">
+        </h3>
+        <div class="summary">
             <div class="statuses"><div>
-                <span class="status complete">0</span><strong>Reportado en línea</strong><span class="value">0%</span>
-              </div><div>
-                <span class="status inprogress">0</span><strong>Estadísticas en progreso</strong><span class="value">0%</span>
-              </div><div>
-                <span class="status notstarted">11</span><strong>Explorando fuentes de datos</strong><span class="value">100%</span>
-              </div><div>
-                <span class="status notapplicable">0</span><strong>No aplicable</strong><span class="value">0%</span>
-              </div><br style="clear:both;">
+                    <span class="status complete"><span class="status-inner">0</span></span><strong>Reportado en línea</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status inprogress"><span class="status-inner">0</span></span><strong>Estadísticas en progreso</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status notstarted"><span class="status-inner">11</span></span><strong>Explorando fuentes de datos</strong><span class="value">100%</span>
+                </div><div>
+                    <span class="status notapplicable"><span class="status-inner">0</span></span><strong>No aplicable</strong><span class="value">0%</span>
+                </div><br style="clear:both;">
             </div>
-          </div>
-          <div class="goal-stats">
-          
-          
-            <span class="complete" style="width:0.0%" title="Reportado en línea: 0%"></span>
-          
-          
-            <span class="inprogress" style="width:0.0%" title="Estadísticas en progreso: 0%"></span>
-          
-          
-            <span class="notstarted" style="width:100.0%" title="Explorando fuentes de datos: 100%"></span>
-          
-          
-            <span class="notapplicable" style="width:0.0%" title="No aplicable: 0%"></span></div>
-          <div class="divider">
-          </div>
         </div>
-      <br style="clear:both;">
-    </div><div class="goal reporting-status-item">
-        <div class="frame goal-tiles">
-          <a href="/open-sdg-site-starter/es/5">
-            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/5.png" alt="Igualdad de Género - Meta 5" width="100" height="100" id="goal-5"/>
-          </a>
-        </div>
-        <div class="details">
-          <h3 class="status-goal">
+        <div class="goal-stats">
+                
+                
+                <span class="complete" style="width:0.0%" title="Reportado en línea: 0%"></span>
+                
+                
+                <span class="inprogress" style="width:0.0%" title="Estadísticas en progreso: 0%"></span>
+                
+                
+                <span class="notstarted" style="width:100.0%" title="Explorando fuentes de datos: 100%"></span>
+                
+                
+                <span class="notapplicable" style="width:0.0%" title="No aplicable: 0%"></span></div>
+        <div class="divider"></div>
+    </div>
+    <br style="clear:both;">
+</div><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/open-sdg-site-starter/es/5">
+        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/5.png" alt="Igualdad de Género - Meta 5" width="100" height="100" class="goal-icon-5"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
             <a href="/open-sdg-site-starter/es/5">Igualdad de Género</a>
             <span class="total">14 indicadores</span>
-          </h3>
-          <div class="summary">
+        </h3>
+        <div class="summary">
             <div class="statuses"><div>
-                <span class="status complete">0</span><strong>Reportado en línea</strong><span class="value">0%</span>
-              </div><div>
-                <span class="status inprogress">0</span><strong>Estadísticas en progreso</strong><span class="value">0%</span>
-              </div><div>
-                <span class="status notstarted">14</span><strong>Explorando fuentes de datos</strong><span class="value">100%</span>
-              </div><div>
-                <span class="status notapplicable">0</span><strong>No aplicable</strong><span class="value">0%</span>
-              </div><br style="clear:both;">
+                    <span class="status complete"><span class="status-inner">0</span></span><strong>Reportado en línea</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status inprogress"><span class="status-inner">0</span></span><strong>Estadísticas en progreso</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status notstarted"><span class="status-inner">14</span></span><strong>Explorando fuentes de datos</strong><span class="value">100%</span>
+                </div><div>
+                    <span class="status notapplicable"><span class="status-inner">0</span></span><strong>No aplicable</strong><span class="value">0%</span>
+                </div><br style="clear:both;">
             </div>
-          </div>
-          <div class="goal-stats">
-          
-          
-            <span class="complete" style="width:0.0%" title="Reportado en línea: 0%"></span>
-          
-          
-            <span class="inprogress" style="width:0.0%" title="Estadísticas en progreso: 0%"></span>
-          
-          
-            <span class="notstarted" style="width:100.0%" title="Explorando fuentes de datos: 100%"></span>
-          
-          
-            <span class="notapplicable" style="width:0.0%" title="No aplicable: 0%"></span></div>
-          <div class="divider">
-          </div>
         </div>
-      <br style="clear:both;">
-    </div><div class="goal reporting-status-item">
-        <div class="frame goal-tiles">
-          <a href="/open-sdg-site-starter/es/6">
-            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/6.png" alt="Agua Limpia y Saneamiento - Meta 6" width="100" height="100" id="goal-6"/>
-          </a>
-        </div>
-        <div class="details">
-          <h3 class="status-goal">
+        <div class="goal-stats">
+                
+                
+                <span class="complete" style="width:0.0%" title="Reportado en línea: 0%"></span>
+                
+                
+                <span class="inprogress" style="width:0.0%" title="Estadísticas en progreso: 0%"></span>
+                
+                
+                <span class="notstarted" style="width:100.0%" title="Explorando fuentes de datos: 100%"></span>
+                
+                
+                <span class="notapplicable" style="width:0.0%" title="No aplicable: 0%"></span></div>
+        <div class="divider"></div>
+    </div>
+    <br style="clear:both;">
+</div><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/open-sdg-site-starter/es/6">
+        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/6.png" alt="Agua Limpia y Saneamiento - Meta 6" width="100" height="100" class="goal-icon-6"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
             <a href="/open-sdg-site-starter/es/6">Agua Limpia y Saneamiento</a>
             <span class="total">11 indicadores</span>
-          </h3>
-          <div class="summary">
+        </h3>
+        <div class="summary">
             <div class="statuses"><div>
-                <span class="status complete">0</span><strong>Reportado en línea</strong><span class="value">0%</span>
-              </div><div>
-                <span class="status inprogress">0</span><strong>Estadísticas en progreso</strong><span class="value">0%</span>
-              </div><div>
-                <span class="status notstarted">11</span><strong>Explorando fuentes de datos</strong><span class="value">100%</span>
-              </div><div>
-                <span class="status notapplicable">0</span><strong>No aplicable</strong><span class="value">0%</span>
-              </div><br style="clear:both;">
+                    <span class="status complete"><span class="status-inner">0</span></span><strong>Reportado en línea</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status inprogress"><span class="status-inner">0</span></span><strong>Estadísticas en progreso</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status notstarted"><span class="status-inner">11</span></span><strong>Explorando fuentes de datos</strong><span class="value">100%</span>
+                </div><div>
+                    <span class="status notapplicable"><span class="status-inner">0</span></span><strong>No aplicable</strong><span class="value">0%</span>
+                </div><br style="clear:both;">
             </div>
-          </div>
-          <div class="goal-stats">
-          
-          
-            <span class="complete" style="width:0.0%" title="Reportado en línea: 0%"></span>
-          
-          
-            <span class="inprogress" style="width:0.0%" title="Estadísticas en progreso: 0%"></span>
-          
-          
-            <span class="notstarted" style="width:100.0%" title="Explorando fuentes de datos: 100%"></span>
-          
-          
-            <span class="notapplicable" style="width:0.0%" title="No aplicable: 0%"></span></div>
-          <div class="divider">
-          </div>
         </div>
-      <br style="clear:both;">
-    </div><div class="goal reporting-status-item">
-        <div class="frame goal-tiles">
-          <a href="/open-sdg-site-starter/es/7">
-            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/7.png" alt="Energía Asequible y No Contaminante - Meta 7" width="100" height="100" id="goal-7"/>
-          </a>
-        </div>
-        <div class="details">
-          <h3 class="status-goal">
+        <div class="goal-stats">
+                
+                
+                <span class="complete" style="width:0.0%" title="Reportado en línea: 0%"></span>
+                
+                
+                <span class="inprogress" style="width:0.0%" title="Estadísticas en progreso: 0%"></span>
+                
+                
+                <span class="notstarted" style="width:100.0%" title="Explorando fuentes de datos: 100%"></span>
+                
+                
+                <span class="notapplicable" style="width:0.0%" title="No aplicable: 0%"></span></div>
+        <div class="divider"></div>
+    </div>
+    <br style="clear:both;">
+</div><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/open-sdg-site-starter/es/7">
+        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/7.png" alt="Energía Asequible y No Contaminante - Meta 7" width="100" height="100" class="goal-icon-7"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
             <a href="/open-sdg-site-starter/es/7">Energía Asequible y No Contaminante</a>
             <span class="total">6 indicadores</span>
-          </h3>
-          <div class="summary">
+        </h3>
+        <div class="summary">
             <div class="statuses"><div>
-                <span class="status complete">0</span><strong>Reportado en línea</strong><span class="value">0%</span>
-              </div><div>
-                <span class="status inprogress">0</span><strong>Estadísticas en progreso</strong><span class="value">0%</span>
-              </div><div>
-                <span class="status notstarted">6</span><strong>Explorando fuentes de datos</strong><span class="value">100%</span>
-              </div><div>
-                <span class="status notapplicable">0</span><strong>No aplicable</strong><span class="value">0%</span>
-              </div><br style="clear:both;">
+                    <span class="status complete"><span class="status-inner">0</span></span><strong>Reportado en línea</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status inprogress"><span class="status-inner">0</span></span><strong>Estadísticas en progreso</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status notstarted"><span class="status-inner">6</span></span><strong>Explorando fuentes de datos</strong><span class="value">100%</span>
+                </div><div>
+                    <span class="status notapplicable"><span class="status-inner">0</span></span><strong>No aplicable</strong><span class="value">0%</span>
+                </div><br style="clear:both;">
             </div>
-          </div>
-          <div class="goal-stats">
-          
-          
-            <span class="complete" style="width:0.0%" title="Reportado en línea: 0%"></span>
-          
-          
-            <span class="inprogress" style="width:0.0%" title="Estadísticas en progreso: 0%"></span>
-          
-          
-            <span class="notstarted" style="width:100.0%" title="Explorando fuentes de datos: 100%"></span>
-          
-          
-            <span class="notapplicable" style="width:0.0%" title="No aplicable: 0%"></span></div>
-          <div class="divider">
-          </div>
         </div>
-      <br style="clear:both;">
-    </div><div class="goal reporting-status-item">
-        <div class="frame goal-tiles">
-          <a href="/open-sdg-site-starter/es/8">
-            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/8.png" alt="Trabajo Decente y Crecimiento Económico - Meta 8" width="100" height="100" id="goal-8"/>
-          </a>
-        </div>
-        <div class="details">
-          <h3 class="status-goal">
+        <div class="goal-stats">
+                
+                
+                <span class="complete" style="width:0.0%" title="Reportado en línea: 0%"></span>
+                
+                
+                <span class="inprogress" style="width:0.0%" title="Estadísticas en progreso: 0%"></span>
+                
+                
+                <span class="notstarted" style="width:100.0%" title="Explorando fuentes de datos: 100%"></span>
+                
+                
+                <span class="notapplicable" style="width:0.0%" title="No aplicable: 0%"></span></div>
+        <div class="divider"></div>
+    </div>
+    <br style="clear:both;">
+</div><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/open-sdg-site-starter/es/8">
+        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/8.png" alt="Trabajo Decente y Crecimiento Económico - Meta 8" width="100" height="100" class="goal-icon-8"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
             <a href="/open-sdg-site-starter/es/8">Trabajo Decente y Crecimiento Económico</a>
             <span class="total">17 indicadores</span>
-          </h3>
-          <div class="summary">
+        </h3>
+        <div class="summary">
             <div class="statuses"><div>
-                <span class="status complete">0</span><strong>Reportado en línea</strong><span class="value">0%</span>
-              </div><div>
-                <span class="status inprogress">0</span><strong>Estadísticas en progreso</strong><span class="value">0%</span>
-              </div><div>
-                <span class="status notstarted">17</span><strong>Explorando fuentes de datos</strong><span class="value">100%</span>
-              </div><div>
-                <span class="status notapplicable">0</span><strong>No aplicable</strong><span class="value">0%</span>
-              </div><br style="clear:both;">
+                    <span class="status complete"><span class="status-inner">0</span></span><strong>Reportado en línea</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status inprogress"><span class="status-inner">0</span></span><strong>Estadísticas en progreso</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status notstarted"><span class="status-inner">17</span></span><strong>Explorando fuentes de datos</strong><span class="value">100%</span>
+                </div><div>
+                    <span class="status notapplicable"><span class="status-inner">0</span></span><strong>No aplicable</strong><span class="value">0%</span>
+                </div><br style="clear:both;">
             </div>
-          </div>
-          <div class="goal-stats">
-          
-          
-            <span class="complete" style="width:0.0%" title="Reportado en línea: 0%"></span>
-          
-          
-            <span class="inprogress" style="width:0.0%" title="Estadísticas en progreso: 0%"></span>
-          
-          
-            <span class="notstarted" style="width:100.0%" title="Explorando fuentes de datos: 100%"></span>
-          
-          
-            <span class="notapplicable" style="width:0.0%" title="No aplicable: 0%"></span></div>
-          <div class="divider">
-          </div>
         </div>
-      <br style="clear:both;">
-    </div><div class="goal reporting-status-item">
-        <div class="frame goal-tiles">
-          <a href="/open-sdg-site-starter/es/9">
-            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/9.png" alt="Industria, Innovación e Infraestructura - Meta 9" width="100" height="100" id="goal-9"/>
-          </a>
-        </div>
-        <div class="details">
-          <h3 class="status-goal">
+        <div class="goal-stats">
+                
+                
+                <span class="complete" style="width:0.0%" title="Reportado en línea: 0%"></span>
+                
+                
+                <span class="inprogress" style="width:0.0%" title="Estadísticas en progreso: 0%"></span>
+                
+                
+                <span class="notstarted" style="width:100.0%" title="Explorando fuentes de datos: 100%"></span>
+                
+                
+                <span class="notapplicable" style="width:0.0%" title="No aplicable: 0%"></span></div>
+        <div class="divider"></div>
+    </div>
+    <br style="clear:both;">
+</div><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/open-sdg-site-starter/es/9">
+        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/9.png" alt="Industria, Innovación e Infraestructura - Meta 9" width="100" height="100" class="goal-icon-9"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
             <a href="/open-sdg-site-starter/es/9">Industria, Innovación e Infraestructura</a>
             <span class="total">12 indicadores</span>
-          </h3>
-          <div class="summary">
+        </h3>
+        <div class="summary">
             <div class="statuses"><div>
-                <span class="status complete">0</span><strong>Reportado en línea</strong><span class="value">0%</span>
-              </div><div>
-                <span class="status inprogress">0</span><strong>Estadísticas en progreso</strong><span class="value">0%</span>
-              </div><div>
-                <span class="status notstarted">12</span><strong>Explorando fuentes de datos</strong><span class="value">100%</span>
-              </div><div>
-                <span class="status notapplicable">0</span><strong>No aplicable</strong><span class="value">0%</span>
-              </div><br style="clear:both;">
+                    <span class="status complete"><span class="status-inner">0</span></span><strong>Reportado en línea</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status inprogress"><span class="status-inner">0</span></span><strong>Estadísticas en progreso</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status notstarted"><span class="status-inner">12</span></span><strong>Explorando fuentes de datos</strong><span class="value">100%</span>
+                </div><div>
+                    <span class="status notapplicable"><span class="status-inner">0</span></span><strong>No aplicable</strong><span class="value">0%</span>
+                </div><br style="clear:both;">
             </div>
-          </div>
-          <div class="goal-stats">
-          
-          
-            <span class="complete" style="width:0.0%" title="Reportado en línea: 0%"></span>
-          
-          
-            <span class="inprogress" style="width:0.0%" title="Estadísticas en progreso: 0%"></span>
-          
-          
-            <span class="notstarted" style="width:100.0%" title="Explorando fuentes de datos: 100%"></span>
-          
-          
-            <span class="notapplicable" style="width:0.0%" title="No aplicable: 0%"></span></div>
-          <div class="divider">
-          </div>
         </div>
-      <br style="clear:both;">
-    </div><div class="goal reporting-status-item">
-        <div class="frame goal-tiles">
-          <a href="/open-sdg-site-starter/es/10">
-            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/10.png" alt="Reducción de las Desigualdades - Meta 10" width="100" height="100" id="goal-10"/>
-          </a>
-        </div>
-        <div class="details">
-          <h3 class="status-goal">
+        <div class="goal-stats">
+                
+                
+                <span class="complete" style="width:0.0%" title="Reportado en línea: 0%"></span>
+                
+                
+                <span class="inprogress" style="width:0.0%" title="Estadísticas en progreso: 0%"></span>
+                
+                
+                <span class="notstarted" style="width:100.0%" title="Explorando fuentes de datos: 100%"></span>
+                
+                
+                <span class="notapplicable" style="width:0.0%" title="No aplicable: 0%"></span></div>
+        <div class="divider"></div>
+    </div>
+    <br style="clear:both;">
+</div><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/open-sdg-site-starter/es/10">
+        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/10.png" alt="Reducción de las Desigualdades - Meta 10" width="100" height="100" class="goal-icon-10"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
             <a href="/open-sdg-site-starter/es/10">Reducción de las Desigualdades</a>
             <span class="total">11 indicadores</span>
-          </h3>
-          <div class="summary">
+        </h3>
+        <div class="summary">
             <div class="statuses"><div>
-                <span class="status complete">0</span><strong>Reportado en línea</strong><span class="value">0%</span>
-              </div><div>
-                <span class="status inprogress">0</span><strong>Estadísticas en progreso</strong><span class="value">0%</span>
-              </div><div>
-                <span class="status notstarted">11</span><strong>Explorando fuentes de datos</strong><span class="value">100%</span>
-              </div><div>
-                <span class="status notapplicable">0</span><strong>No aplicable</strong><span class="value">0%</span>
-              </div><br style="clear:both;">
+                    <span class="status complete"><span class="status-inner">0</span></span><strong>Reportado en línea</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status inprogress"><span class="status-inner">0</span></span><strong>Estadísticas en progreso</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status notstarted"><span class="status-inner">11</span></span><strong>Explorando fuentes de datos</strong><span class="value">100%</span>
+                </div><div>
+                    <span class="status notapplicable"><span class="status-inner">0</span></span><strong>No aplicable</strong><span class="value">0%</span>
+                </div><br style="clear:both;">
             </div>
-          </div>
-          <div class="goal-stats">
-          
-          
-            <span class="complete" style="width:0.0%" title="Reportado en línea: 0%"></span>
-          
-          
-            <span class="inprogress" style="width:0.0%" title="Estadísticas en progreso: 0%"></span>
-          
-          
-            <span class="notstarted" style="width:100.0%" title="Explorando fuentes de datos: 100%"></span>
-          
-          
-            <span class="notapplicable" style="width:0.0%" title="No aplicable: 0%"></span></div>
-          <div class="divider">
-          </div>
         </div>
-      <br style="clear:both;">
-    </div><div class="goal reporting-status-item">
-        <div class="frame goal-tiles">
-          <a href="/open-sdg-site-starter/es/11">
-            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/11.png" alt="Cuidades y Comunidades Sostenibles - Meta 11" width="100" height="100" id="goal-11"/>
-          </a>
-        </div>
-        <div class="details">
-          <h3 class="status-goal">
+        <div class="goal-stats">
+                
+                
+                <span class="complete" style="width:0.0%" title="Reportado en línea: 0%"></span>
+                
+                
+                <span class="inprogress" style="width:0.0%" title="Estadísticas en progreso: 0%"></span>
+                
+                
+                <span class="notstarted" style="width:100.0%" title="Explorando fuentes de datos: 100%"></span>
+                
+                
+                <span class="notapplicable" style="width:0.0%" title="No aplicable: 0%"></span></div>
+        <div class="divider"></div>
+    </div>
+    <br style="clear:both;">
+</div><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/open-sdg-site-starter/es/11">
+        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/11.png" alt="Cuidades y Comunidades Sostenibles - Meta 11" width="100" height="100" class="goal-icon-11"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
             <a href="/open-sdg-site-starter/es/11">Cuidades y Comunidades Sostenibles</a>
             <span class="total">15 indicadores</span>
-          </h3>
-          <div class="summary">
+        </h3>
+        <div class="summary">
             <div class="statuses"><div>
-                <span class="status complete">0</span><strong>Reportado en línea</strong><span class="value">0%</span>
-              </div><div>
-                <span class="status inprogress">0</span><strong>Estadísticas en progreso</strong><span class="value">0%</span>
-              </div><div>
-                <span class="status notstarted">15</span><strong>Explorando fuentes de datos</strong><span class="value">100%</span>
-              </div><div>
-                <span class="status notapplicable">0</span><strong>No aplicable</strong><span class="value">0%</span>
-              </div><br style="clear:both;">
+                    <span class="status complete"><span class="status-inner">0</span></span><strong>Reportado en línea</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status inprogress"><span class="status-inner">0</span></span><strong>Estadísticas en progreso</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status notstarted"><span class="status-inner">15</span></span><strong>Explorando fuentes de datos</strong><span class="value">100%</span>
+                </div><div>
+                    <span class="status notapplicable"><span class="status-inner">0</span></span><strong>No aplicable</strong><span class="value">0%</span>
+                </div><br style="clear:both;">
             </div>
-          </div>
-          <div class="goal-stats">
-          
-          
-            <span class="complete" style="width:0.0%" title="Reportado en línea: 0%"></span>
-          
-          
-            <span class="inprogress" style="width:0.0%" title="Estadísticas en progreso: 0%"></span>
-          
-          
-            <span class="notstarted" style="width:100.0%" title="Explorando fuentes de datos: 100%"></span>
-          
-          
-            <span class="notapplicable" style="width:0.0%" title="No aplicable: 0%"></span></div>
-          <div class="divider">
-          </div>
         </div>
-      <br style="clear:both;">
-    </div><div class="goal reporting-status-item">
-        <div class="frame goal-tiles">
-          <a href="/open-sdg-site-starter/es/12">
-            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/12.png" alt="Producción y Consumo Responsables - Meta 12" width="100" height="100" id="goal-12"/>
-          </a>
-        </div>
-        <div class="details">
-          <h3 class="status-goal">
+        <div class="goal-stats">
+                
+                
+                <span class="complete" style="width:0.0%" title="Reportado en línea: 0%"></span>
+                
+                
+                <span class="inprogress" style="width:0.0%" title="Estadísticas en progreso: 0%"></span>
+                
+                
+                <span class="notstarted" style="width:100.0%" title="Explorando fuentes de datos: 100%"></span>
+                
+                
+                <span class="notapplicable" style="width:0.0%" title="No aplicable: 0%"></span></div>
+        <div class="divider"></div>
+    </div>
+    <br style="clear:both;">
+</div><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/open-sdg-site-starter/es/12">
+        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/12.png" alt="Producción y Consumo Responsables - Meta 12" width="100" height="100" class="goal-icon-12"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
             <a href="/open-sdg-site-starter/es/12">Producción y Consumo Responsables</a>
             <span class="total">13 indicadores</span>
-          </h3>
-          <div class="summary">
+        </h3>
+        <div class="summary">
             <div class="statuses"><div>
-                <span class="status complete">0</span><strong>Reportado en línea</strong><span class="value">0%</span>
-              </div><div>
-                <span class="status inprogress">0</span><strong>Estadísticas en progreso</strong><span class="value">0%</span>
-              </div><div>
-                <span class="status notstarted">13</span><strong>Explorando fuentes de datos</strong><span class="value">100%</span>
-              </div><div>
-                <span class="status notapplicable">0</span><strong>No aplicable</strong><span class="value">0%</span>
-              </div><br style="clear:both;">
+                    <span class="status complete"><span class="status-inner">0</span></span><strong>Reportado en línea</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status inprogress"><span class="status-inner">0</span></span><strong>Estadísticas en progreso</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status notstarted"><span class="status-inner">13</span></span><strong>Explorando fuentes de datos</strong><span class="value">100%</span>
+                </div><div>
+                    <span class="status notapplicable"><span class="status-inner">0</span></span><strong>No aplicable</strong><span class="value">0%</span>
+                </div><br style="clear:both;">
             </div>
-          </div>
-          <div class="goal-stats">
-          
-          
-            <span class="complete" style="width:0.0%" title="Reportado en línea: 0%"></span>
-          
-          
-            <span class="inprogress" style="width:0.0%" title="Estadísticas en progreso: 0%"></span>
-          
-          
-            <span class="notstarted" style="width:100.0%" title="Explorando fuentes de datos: 100%"></span>
-          
-          
-            <span class="notapplicable" style="width:0.0%" title="No aplicable: 0%"></span></div>
-          <div class="divider">
-          </div>
         </div>
-      <br style="clear:both;">
-    </div><div class="goal reporting-status-item">
-        <div class="frame goal-tiles">
-          <a href="/open-sdg-site-starter/es/13">
-            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/13.png" alt="Acción por el Clima - Meta 13" width="100" height="100" id="goal-13"/>
-          </a>
-        </div>
-        <div class="details">
-          <h3 class="status-goal">
+        <div class="goal-stats">
+                
+                
+                <span class="complete" style="width:0.0%" title="Reportado en línea: 0%"></span>
+                
+                
+                <span class="inprogress" style="width:0.0%" title="Estadísticas en progreso: 0%"></span>
+                
+                
+                <span class="notstarted" style="width:100.0%" title="Explorando fuentes de datos: 100%"></span>
+                
+                
+                <span class="notapplicable" style="width:0.0%" title="No aplicable: 0%"></span></div>
+        <div class="divider"></div>
+    </div>
+    <br style="clear:both;">
+</div><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/open-sdg-site-starter/es/13">
+        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/13.png" alt="Acción por el Clima - Meta 13" width="100" height="100" class="goal-icon-13"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
             <a href="/open-sdg-site-starter/es/13">Acción por el Clima</a>
             <span class="total">8 indicadores</span>
-          </h3>
-          <div class="summary">
+        </h3>
+        <div class="summary">
             <div class="statuses"><div>
-                <span class="status complete">0</span><strong>Reportado en línea</strong><span class="value">0%</span>
-              </div><div>
-                <span class="status inprogress">0</span><strong>Estadísticas en progreso</strong><span class="value">0%</span>
-              </div><div>
-                <span class="status notstarted">8</span><strong>Explorando fuentes de datos</strong><span class="value">100%</span>
-              </div><div>
-                <span class="status notapplicable">0</span><strong>No aplicable</strong><span class="value">0%</span>
-              </div><br style="clear:both;">
+                    <span class="status complete"><span class="status-inner">0</span></span><strong>Reportado en línea</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status inprogress"><span class="status-inner">0</span></span><strong>Estadísticas en progreso</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status notstarted"><span class="status-inner">8</span></span><strong>Explorando fuentes de datos</strong><span class="value">100%</span>
+                </div><div>
+                    <span class="status notapplicable"><span class="status-inner">0</span></span><strong>No aplicable</strong><span class="value">0%</span>
+                </div><br style="clear:both;">
             </div>
-          </div>
-          <div class="goal-stats">
-          
-          
-            <span class="complete" style="width:0.0%" title="Reportado en línea: 0%"></span>
-          
-          
-            <span class="inprogress" style="width:0.0%" title="Estadísticas en progreso: 0%"></span>
-          
-          
-            <span class="notstarted" style="width:100.0%" title="Explorando fuentes de datos: 100%"></span>
-          
-          
-            <span class="notapplicable" style="width:0.0%" title="No aplicable: 0%"></span></div>
-          <div class="divider">
-          </div>
         </div>
-      <br style="clear:both;">
-    </div><div class="goal reporting-status-item">
-        <div class="frame goal-tiles">
-          <a href="/open-sdg-site-starter/es/14">
-            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/14.png" alt="Vida Submarina - Meta 14" width="100" height="100" id="goal-14"/>
-          </a>
-        </div>
-        <div class="details">
-          <h3 class="status-goal">
+        <div class="goal-stats">
+                
+                
+                <span class="complete" style="width:0.0%" title="Reportado en línea: 0%"></span>
+                
+                
+                <span class="inprogress" style="width:0.0%" title="Estadísticas en progreso: 0%"></span>
+                
+                
+                <span class="notstarted" style="width:100.0%" title="Explorando fuentes de datos: 100%"></span>
+                
+                
+                <span class="notapplicable" style="width:0.0%" title="No aplicable: 0%"></span></div>
+        <div class="divider"></div>
+    </div>
+    <br style="clear:both;">
+</div><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/open-sdg-site-starter/es/14">
+        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/14.png" alt="Vida Submarina - Meta 14" width="100" height="100" class="goal-icon-14"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
             <a href="/open-sdg-site-starter/es/14">Vida Submarina</a>
             <span class="total">10 indicadores</span>
-          </h3>
-          <div class="summary">
+        </h3>
+        <div class="summary">
             <div class="statuses"><div>
-                <span class="status complete">0</span><strong>Reportado en línea</strong><span class="value">0%</span>
-              </div><div>
-                <span class="status inprogress">0</span><strong>Estadísticas en progreso</strong><span class="value">0%</span>
-              </div><div>
-                <span class="status notstarted">10</span><strong>Explorando fuentes de datos</strong><span class="value">100%</span>
-              </div><div>
-                <span class="status notapplicable">0</span><strong>No aplicable</strong><span class="value">0%</span>
-              </div><br style="clear:both;">
+                    <span class="status complete"><span class="status-inner">0</span></span><strong>Reportado en línea</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status inprogress"><span class="status-inner">0</span></span><strong>Estadísticas en progreso</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status notstarted"><span class="status-inner">10</span></span><strong>Explorando fuentes de datos</strong><span class="value">100%</span>
+                </div><div>
+                    <span class="status notapplicable"><span class="status-inner">0</span></span><strong>No aplicable</strong><span class="value">0%</span>
+                </div><br style="clear:both;">
             </div>
-          </div>
-          <div class="goal-stats">
-          
-          
-            <span class="complete" style="width:0.0%" title="Reportado en línea: 0%"></span>
-          
-          
-            <span class="inprogress" style="width:0.0%" title="Estadísticas en progreso: 0%"></span>
-          
-          
-            <span class="notstarted" style="width:100.0%" title="Explorando fuentes de datos: 100%"></span>
-          
-          
-            <span class="notapplicable" style="width:0.0%" title="No aplicable: 0%"></span></div>
-          <div class="divider">
-          </div>
         </div>
-      <br style="clear:both;">
-    </div><div class="goal reporting-status-item">
-        <div class="frame goal-tiles">
-          <a href="/open-sdg-site-starter/es/15">
-            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/15.png" alt="Vida de Ecosistemas Terrestres - Meta 15" width="100" height="100" id="goal-15"/>
-          </a>
-        </div>
-        <div class="details">
-          <h3 class="status-goal">
+        <div class="goal-stats">
+                
+                
+                <span class="complete" style="width:0.0%" title="Reportado en línea: 0%"></span>
+                
+                
+                <span class="inprogress" style="width:0.0%" title="Estadísticas en progreso: 0%"></span>
+                
+                
+                <span class="notstarted" style="width:100.0%" title="Explorando fuentes de datos: 100%"></span>
+                
+                
+                <span class="notapplicable" style="width:0.0%" title="No aplicable: 0%"></span></div>
+        <div class="divider"></div>
+    </div>
+    <br style="clear:both;">
+</div><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/open-sdg-site-starter/es/15">
+        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/15.png" alt="Vida de Ecosistemas Terrestres - Meta 15" width="100" height="100" class="goal-icon-15"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
             <a href="/open-sdg-site-starter/es/15">Vida de Ecosistemas Terrestres</a>
             <span class="total">14 indicadores</span>
-          </h3>
-          <div class="summary">
+        </h3>
+        <div class="summary">
             <div class="statuses"><div>
-                <span class="status complete">0</span><strong>Reportado en línea</strong><span class="value">0%</span>
-              </div><div>
-                <span class="status inprogress">0</span><strong>Estadísticas en progreso</strong><span class="value">0%</span>
-              </div><div>
-                <span class="status notstarted">14</span><strong>Explorando fuentes de datos</strong><span class="value">100%</span>
-              </div><div>
-                <span class="status notapplicable">0</span><strong>No aplicable</strong><span class="value">0%</span>
-              </div><br style="clear:both;">
+                    <span class="status complete"><span class="status-inner">0</span></span><strong>Reportado en línea</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status inprogress"><span class="status-inner">0</span></span><strong>Estadísticas en progreso</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status notstarted"><span class="status-inner">14</span></span><strong>Explorando fuentes de datos</strong><span class="value">100%</span>
+                </div><div>
+                    <span class="status notapplicable"><span class="status-inner">0</span></span><strong>No aplicable</strong><span class="value">0%</span>
+                </div><br style="clear:both;">
             </div>
-          </div>
-          <div class="goal-stats">
-          
-          
-            <span class="complete" style="width:0.0%" title="Reportado en línea: 0%"></span>
-          
-          
-            <span class="inprogress" style="width:0.0%" title="Estadísticas en progreso: 0%"></span>
-          
-          
-            <span class="notstarted" style="width:100.0%" title="Explorando fuentes de datos: 100%"></span>
-          
-          
-            <span class="notapplicable" style="width:0.0%" title="No aplicable: 0%"></span></div>
-          <div class="divider">
-          </div>
         </div>
-      <br style="clear:both;">
-    </div><div class="goal reporting-status-item">
-        <div class="frame goal-tiles">
-          <a href="/open-sdg-site-starter/es/16">
-            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/16.png" alt="Paz, Justicia e Instituciones Sólidas - Meta 16" width="100" height="100" id="goal-16"/>
-          </a>
-        </div>
-        <div class="details">
-          <h3 class="status-goal">
+        <div class="goal-stats">
+                
+                
+                <span class="complete" style="width:0.0%" title="Reportado en línea: 0%"></span>
+                
+                
+                <span class="inprogress" style="width:0.0%" title="Estadísticas en progreso: 0%"></span>
+                
+                
+                <span class="notstarted" style="width:100.0%" title="Explorando fuentes de datos: 100%"></span>
+                
+                
+                <span class="notapplicable" style="width:0.0%" title="No aplicable: 0%"></span></div>
+        <div class="divider"></div>
+    </div>
+    <br style="clear:both;">
+</div><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/open-sdg-site-starter/es/16">
+        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/16.png" alt="Paz, Justicia e Instituciones Sólidas - Meta 16" width="100" height="100" class="goal-icon-16"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
             <a href="/open-sdg-site-starter/es/16">Paz, Justicia e Instituciones Sólidas</a>
             <span class="total">23 indicadores</span>
-          </h3>
-          <div class="summary">
+        </h3>
+        <div class="summary">
             <div class="statuses"><div>
-                <span class="status complete">0</span><strong>Reportado en línea</strong><span class="value">0%</span>
-              </div><div>
-                <span class="status inprogress">0</span><strong>Estadísticas en progreso</strong><span class="value">0%</span>
-              </div><div>
-                <span class="status notstarted">23</span><strong>Explorando fuentes de datos</strong><span class="value">100%</span>
-              </div><div>
-                <span class="status notapplicable">0</span><strong>No aplicable</strong><span class="value">0%</span>
-              </div><br style="clear:both;">
+                    <span class="status complete"><span class="status-inner">0</span></span><strong>Reportado en línea</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status inprogress"><span class="status-inner">0</span></span><strong>Estadísticas en progreso</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status notstarted"><span class="status-inner">23</span></span><strong>Explorando fuentes de datos</strong><span class="value">100%</span>
+                </div><div>
+                    <span class="status notapplicable"><span class="status-inner">0</span></span><strong>No aplicable</strong><span class="value">0%</span>
+                </div><br style="clear:both;">
             </div>
-          </div>
-          <div class="goal-stats">
-          
-          
-            <span class="complete" style="width:0.0%" title="Reportado en línea: 0%"></span>
-          
-          
-            <span class="inprogress" style="width:0.0%" title="Estadísticas en progreso: 0%"></span>
-          
-          
-            <span class="notstarted" style="width:100.0%" title="Explorando fuentes de datos: 100%"></span>
-          
-          
-            <span class="notapplicable" style="width:0.0%" title="No aplicable: 0%"></span></div>
-          <div class="divider">
-          </div>
         </div>
-      <br style="clear:both;">
-    </div><div class="goal reporting-status-item">
-        <div class="frame goal-tiles">
-          <a href="/open-sdg-site-starter/es/17">
-            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/17.png" alt="Alianzas para Lograr los Objetivos - Meta 17" width="100" height="100" id="goal-17"/>
-          </a>
-        </div>
-        <div class="details">
-          <h3 class="status-goal">
+        <div class="goal-stats">
+                
+                
+                <span class="complete" style="width:0.0%" title="Reportado en línea: 0%"></span>
+                
+                
+                <span class="inprogress" style="width:0.0%" title="Estadísticas en progreso: 0%"></span>
+                
+                
+                <span class="notstarted" style="width:100.0%" title="Explorando fuentes de datos: 100%"></span>
+                
+                
+                <span class="notapplicable" style="width:0.0%" title="No aplicable: 0%"></span></div>
+        <div class="divider"></div>
+    </div>
+    <br style="clear:both;">
+</div><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/open-sdg-site-starter/es/17">
+        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/17.png" alt="Alianzas para Lograr los Objetivos - Meta 17" width="100" height="100" class="goal-icon-17"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
             <a href="/open-sdg-site-starter/es/17">Alianzas para Lograr los Objetivos</a>
             <span class="total">25 indicadores</span>
-          </h3>
-          <div class="summary">
+        </h3>
+        <div class="summary">
             <div class="statuses"><div>
-                <span class="status complete">0</span><strong>Reportado en línea</strong><span class="value">0%</span>
-              </div><div>
-                <span class="status inprogress">0</span><strong>Estadísticas en progreso</strong><span class="value">0%</span>
-              </div><div>
-                <span class="status notstarted">25</span><strong>Explorando fuentes de datos</strong><span class="value">100%</span>
-              </div><div>
-                <span class="status notapplicable">0</span><strong>No aplicable</strong><span class="value">0%</span>
-              </div><br style="clear:both;">
+                    <span class="status complete"><span class="status-inner">0</span></span><strong>Reportado en línea</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status inprogress"><span class="status-inner">0</span></span><strong>Estadísticas en progreso</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status notstarted"><span class="status-inner">25</span></span><strong>Explorando fuentes de datos</strong><span class="value">100%</span>
+                </div><div>
+                    <span class="status notapplicable"><span class="status-inner">0</span></span><strong>No aplicable</strong><span class="value">0%</span>
+                </div><br style="clear:both;">
             </div>
-          </div>
-          <div class="goal-stats">
-          
-          
-            <span class="complete" style="width:0.0%" title="Reportado en línea: 0%"></span>
-          
-          
-            <span class="inprogress" style="width:0.0%" title="Estadísticas en progreso: 0%"></span>
-          
-          
-            <span class="notstarted" style="width:100.0%" title="Explorando fuentes de datos: 100%"></span>
-          
-          
-            <span class="notapplicable" style="width:0.0%" title="No aplicable: 0%"></span></div>
-          <div class="divider">
-          </div>
         </div>
-      <br style="clear:both;">
+        <div class="goal-stats">
+                
+                
+                <span class="complete" style="width:0.0%" title="Reportado en línea: 0%"></span>
+                
+                
+                <span class="inprogress" style="width:0.0%" title="Estadísticas en progreso: 0%"></span>
+                
+                
+                <span class="notstarted" style="width:100.0%" title="Explorando fuentes de datos: 100%"></span>
+                
+                
+                <span class="notapplicable" style="width:0.0%" title="No aplicable: 0%"></span></div>
+        <div class="divider"></div>
     </div>
+    <br style="clear:both;">
+</div>
+  
+
+  
+
+  
+
+  
 
   <!---->
 
@@ -1084,7 +1079,7 @@ var translations = {
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Buscar';</script>
 
-<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20201201034128'></script>
+<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20201202010158'></script>
 
 <script>
 $(function() {
