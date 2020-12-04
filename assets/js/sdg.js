@@ -58,13 +58,13 @@ opensdg.autotrack = function(preset, category, action, label) {
     styleNormal: {
       weight: 1,
       opacity: 1,
-      color: '#888',
+      color: '#888888',
       fillOpacity: 0.7
     },
     styleHighlighted: {
       weight: 1,
       opacity: 1,
-      color: '#111',
+      color: '#111111',
       fillOpacity: 0.7
     },
     styleStatic: {
@@ -88,6 +88,24 @@ opensdg.autotrack = function(preset, category, action, label) {
   function Plugin(element, options) {
 
     this.element = element;
+
+    // Support colorRange map option in string format.
+    if (typeof options.mapOptions.colorRange === 'string') {
+      var colorRangeParts = options.mapOptions.colorRange.split('.'),
+          colorRange = window,
+          overrideColorRange = true;
+      for (var colorRangePart of colorRangeParts) {
+        if (typeof colorRange[colorRangePart] !== 'undefined') {
+          colorRange = colorRange[colorRangePart];
+        }
+        else {
+          overrideColorRange = false;
+          break;
+        }
+      }
+      options.mapOptions.colorRange = (overrideColorRange) ? colorRange : defaults.colorRange;
+    }
+
     this.options = $.extend(true, {}, defaults, options.mapOptions);
     this.mapLayers = [];
     this.indicatorId = options.indicatorId;
@@ -269,7 +287,9 @@ opensdg.autotrack = function(preset, category, action, label) {
       this.map.addControl(L.control.scale({position: 'bottomright'}));
 
       // Add tile imagery.
-      L.tileLayer(this.options.tileURL, this.options.tileOptions).addTo(this.map);
+      if (this.options.tileURL && this.options.tileURL !== 'undefined' && this.options.tileURL != '') {
+        L.tileLayer(this.options.tileURL, this.options.tileOptions).addTo(this.map);
+      }
 
       // Because after this point, "this" rarely works.
       var plugin = this;
@@ -797,7 +817,7 @@ opensdg.chartColors = function(indicatorId) {
   var colorSet = null;
   var numberOfColors = null;
   var customColorList = null;
-  
+
   this.goalNumber = parseInt(indicatorId.slice(indicatorId.indexOf('_')+1,indicatorId.indexOf('-')));
   this.goalColors = [['e5243b', '891523', 'ef7b89', '2d070b', 'f4a7b0', 'b71c2f', 'ea4f62', '5b0e17', 'fce9eb'],
                 ['e5b735', '896d1f', 'efd385', '2d240a', 'f4e2ae', 'b7922a', 'eac55d', '5b4915', 'f9f0d6'],
@@ -823,7 +843,7 @@ opensdg.chartColors = function(indicatorId) {
   if(Object.keys(this.colorSets).indexOf(colorSet) == -1 || (colorSet=='custom' && customColorList == null)){
     return this.colorSets['default'];
   }
-  this.numberOfColors = (numberOfColors>this.colorSets[colorSet].length || numberOfColors == null) ? this.colorSets[colorSet].length : numberOfColors;
+  this.numberOfColors = (numberOfColors>this.colorSets[colorSet].length || numberOfColors == null || numberOfColors == 0) ? this.colorSets[colorSet].length : numberOfColors;
   this.colors = this.colorSets[colorSet].slice(0,this.numberOfColors);
 
   return this.colors;
@@ -2076,7 +2096,7 @@ function sortData(rows, selectedUnit) {
       // Decide on a starting series.
       if (this.hasSerieses) {
         var startingSeries = this.selectedSeries;
-        if (this.startValues) {
+        if (this.hasStartValues) {
           var seriesInStartValues = helpers.getSeriesFromStartValues(this.startValues);
           if (seriesInStartValues) {
             startingSeries = seriesInStartValues;
