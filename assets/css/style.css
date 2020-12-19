@@ -1985,6 +1985,9 @@ body.contrast-high #main-content.goal-indicators.goal-by-target .indicator-cards
   .newslist article time {
     margin: 0; }
 
+.layout-reportingstatus .reporting-status-description {
+  margin-bottom: 25px; }
+
 .notapplicable {
   background-color: repeating-linear-gradient(135deg, #757575, white 10px, #757575 10px, white 20px);
   background: repeating-linear-gradient(135deg, #757575, white 10px, #757575 10px, white 20px); }
@@ -2307,7 +2310,7 @@ body.contrast-high.layout-search form input, body.contrast-high.layout-search fo
     margin-bottom: 20px; }
 
 .layout-goals .goals-page-description {
-  margin-bottom: 20px; }
+  margin-bottom: 25px; }
 
 .layout-goals.contrast-high .goals-page-description {
   color: white; }
