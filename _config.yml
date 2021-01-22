@@ -25,14 +25,11 @@ languages:
 # That's enough for the Quick Start! The remaining settings can be configured later.
 
 # Tell the Remote Theme plugin to use the Open SDG platform (Jekyll theme).
-# Recommended: set this to a particular "release" of Open SDG. For example:
-#remote_theme: open-sdg/open-sdg@1.1.0
-remote_theme: open-sdg/open-sdg@master
+remote_theme: open-sdg/open-sdg@1.2.0
 
 # Replace this title as needed.
 title: Indicators For The Sustainable Development Goals
 url: ""
-data_dir: data
 environment: staging
 
 # Automatically create indicator pages, goal pages,
@@ -176,3 +173,37 @@ exclude:
 #    max_zoom: 10
 #    subfolder: my-geojson-subfolder
 #    label: My map layer label (can be a translation key)
+
+# Recommend accessibility improvements.
+accessible_tabs: true
+accessible_charts: true
+
+# Specify any custom javascript files.
+custom_js:
+  - /assets/js/custom.js
+
+# Specify the format of the language toggles. Choices are:
+# "dropdown", "links", or "none"
+header_language_toggle: dropdown
+footer_language_toggle: none
+
+# Specify whether the Series disaggregation should be a toggle (like units).
+series_toggle: true
+
+# Control the behavior of breadcrumbs for certain types of content.
+breadcrumbs:
+  post:
+    - label: general.home
+      path: /
+    - label: menu.updates
+      path: /news
+  goal:
+    - label: general.home
+      path: /
+    - label: general.goals
+      path: /goals
+  indicator:
+    - label: general.home
+      path: /
+    - label: general.goals
+      path: /goals
