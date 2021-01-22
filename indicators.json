@@ -934,22 +934,6 @@
           "status": "notstarted"
         },
         {
-          "id": "8-a-1",
-          "title": "Aid for Trade commitments and disbursements",
-          "description": "",
-          "keywords": "",
-          "href": "/open-sdg-site-starter/8-a-1",
-          "status": "notstarted"
-        },
-        {
-          "id": "8-b-1",
-          "title": "Existence of a developed and operationalized national strategy for youth employment, as a distinct strategy or as part of a national employment strategy",
-          "description": "",
-          "keywords": "",
-          "href": "/open-sdg-site-starter/8-b-1",
-          "status": "notstarted"
-        },
-        {
           "id": "8-10-1",
           "title": "(a) Number of commercial bank branches per 100,000 adults and (b) number of automated teller machines (ATMs) per 100,000 adults",
           "description": "",
@@ -963,6 +947,22 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/8-10-2",
+          "status": "notstarted"
+        },
+        {
+          "id": "8-a-1",
+          "title": "Aid for Trade commitments and disbursements",
+          "description": "",
+          "keywords": "",
+          "href": "/open-sdg-site-starter/8-a-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "8-b-1",
+          "title": "Existence of a developed and operationalized national strategy for youth employment, as a distinct strategy or as part of a national employment strategy",
+          "description": "",
+          "keywords": "",
+          "href": "/open-sdg-site-starter/8-b-1",
           "status": "notstarted"
         }]
     }
@@ -1846,22 +1846,6 @@
           "status": "notstarted"
         },
         {
-          "id": "16-a-1",
-          "title": "Existence of independent national human rights institutions in compliance with the Paris Principles",
-          "description": "",
-          "keywords": "",
-          "href": "/open-sdg-site-starter/16-a-1",
-          "status": "notstarted"
-        },
-        {
-          "id": "16-b-1",
-          "title": "Proportion of population reporting having personally felt discriminated against or harassed in the previous 12 months on the basis of a ground of discrimination prohibited under international human rights law",
-          "description": "",
-          "keywords": "",
-          "href": "/open-sdg-site-starter/16-b-1",
-          "status": "notstarted"
-        },
-        {
           "id": "16-10-1",
           "title": "Number of verified cases of killing, kidnapping, enforced disappearance, arbitrary detention and torture of journalists, associated media personnel, trade unionists and human rights advocates in the previous 12 months",
           "description": "",
@@ -1875,6 +1859,22 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/16-10-2",
+          "status": "notstarted"
+        },
+        {
+          "id": "16-a-1",
+          "title": "Existence of independent national human rights institutions in compliance with the Paris Principles",
+          "description": "",
+          "keywords": "",
+          "href": "/open-sdg-site-starter/16-a-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "16-b-1",
+          "title": "Proportion of population reporting having personally felt discriminated against or harassed in the previous 12 months on the basis of a ground of discrimination prohibited under international human rights law",
+          "description": "",
+          "keywords": "",
+          "href": "/open-sdg-site-starter/16-b-1",
           "status": "notstarted"
         }]
     }

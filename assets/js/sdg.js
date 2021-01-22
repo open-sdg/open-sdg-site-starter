@@ -94,7 +94,8 @@ opensdg.autotrack = function(preset, category, action, label) {
       var colorRangeParts = options.mapOptions.colorRange.split('.'),
           colorRange = window,
           overrideColorRange = true;
-      for (var colorRangePart of colorRangeParts) {
+      for (var i = 0; i < colorRangeParts.length; i++) {
+        var colorRangePart = colorRangeParts[i];
         if (typeof colorRange[colorRangePart] !== 'undefined') {
           colorRange = colorRange[colorRangePart];
         }
@@ -673,6 +674,158 @@ Chart.plugins.register({
     }
   }
 });
+// This plugin allows users to cycle through tooltips by keyboard.
+Chart.plugins.register({
+    afterInit: function(chart) {
+        var plugin = this;
+        plugin.chart = chart;
+        plugin.currentTooltip = null;
+        plugin.initElements();
+        $(chart.canvas).keydown(function(e) {
+            switch (e.which) {
+                case 37:
+                    plugin.previousTooltip();
+                    e.preventDefault();
+                    break;
+                case 39:
+                    plugin.nextTooltip();
+                    e.preventDefault();
+                    break;
+            }
+        });
+    },
+    initElements: function() {
+        $('<span/>')
+            .addClass('sr-only')
+            .attr('id', 'chart-tooltip-status')
+            .attr('role', 'status')
+            .appendTo('#chart');
+        if (window.innerWidth <= 768) {
+            $(this.chart.canvas).text(translations.indicator.chart + '. ' + translations.indicator.data_tabular_alternative);
+        }
+        else {
+            var keyboardInstructions = translations.indicator.data_keyboard_navigation;
+            $('<span/>')
+                .css('display', 'none')
+                .attr('id', 'chart-keyboard')
+                .text(', ' + keyboardInstructions)
+                .appendTo('#chart');
+            var describedBy = $('#chart canvas').attr('aria-describedby');
+            $(this.chart.canvas)
+                .attr('role', 'application')
+                .attr('aria-describedby', 'chart-keyboard ' + describedBy)
+                .text('Chart. ' + keyboardInstructions)
+        }
+    },
+    afterDatasetsDraw: function() {
+        var plugin = this;
+        if (plugin.allTooltips == null) {
+            plugin.allTooltips = plugin.getAllTooltips();
+        }
+    },
+    afterUpdate: function() {
+        var plugin = this;
+        plugin.allTooltips = null;
+        plugin.currentTooltip = null;
+    },
+    getAllTooltips: function() {
+        var datasets = this.chart.data.datasets;
+        var allTooltips = [];
+        if (datasets.length == 0) {
+            return allTooltips;
+        }
+        // For line charts, we group points into vertical tooltips.
+        if (this.chart.config.type == 'line') {
+            for (var pointIndex = 0; pointIndex < datasets[0].data.length; pointIndex++) {
+                var verticalTooltips = [];
+                for (var datasetIndex = 0; datasetIndex < datasets.length; datasetIndex++) {
+                    var meta = this.chart.getDatasetMeta(datasetIndex);
+                    if (meta.hidden) {
+                        continue;
+                    }
+                    if (datasets[datasetIndex].data[pointIndex] !== null) {
+                        verticalTooltips.push(meta.data[pointIndex]);
+                    }
+                }
+                if (verticalTooltips.length > 0) {
+                    allTooltips.push(verticalTooltips);
+                }
+            }
+        }
+        // For other charts, each point gets its own tooltip.
+        else {
+            for (var datasetIndex = 0; datasetIndex < datasets.length; datasetIndex++) {
+                var meta = this.chart.getDatasetMeta(datasetIndex);
+                if (meta.hidden) {
+                    continue;
+                }
+                for (var pointIndex = 0; pointIndex < datasets[datasetIndex].data.length; pointIndex++) {
+                    var singleTooltip = meta.data[pointIndex];
+                    allTooltips.push([singleTooltip]);
+                }
+            }
+        }
+        return allTooltips;
+    },
+    previousTooltip: function() {
+        var plugin = this,
+            newTooltip = 0;
+        if (plugin.currentTooltip !== null) {
+            newTooltip = plugin.currentTooltip - 1;
+        }
+        if (newTooltip < 0) {
+            newTooltip = plugin.allTooltips.length - 1;
+        }
+        plugin.activateTooltips(plugin.allTooltips[newTooltip]);
+        plugin.currentTooltip = newTooltip;
+    },
+    nextTooltip: function() {
+        var plugin = this,
+            newTooltip = 0;
+        if (plugin.currentTooltip !== null) {
+            newTooltip = plugin.currentTooltip + 1;
+        }
+        if (newTooltip >= plugin.allTooltips.length) {
+            newTooltip = 0;
+        }
+        plugin.activateTooltips(plugin.allTooltips[newTooltip]);
+        plugin.currentTooltip = newTooltip;
+    },
+    activateTooltips: function(tooltips) {
+        this.chart.tooltip._active = tooltips
+        this.chart.tooltip.update(true);
+        this.chart.draw();
+        this.announceTooltips(tooltips);
+    },
+    announceTooltips: function(tooltips) {
+        if (tooltips.length > 0) {
+            var labels = {};
+            for (var i = 0; i < tooltips.length; i++) {
+                var datasetIndex = tooltips[i]._datasetIndex,
+                    pointIndex = tooltips[i]._index,
+                    year = this.chart.data.labels[pointIndex],
+                    dataset = this.chart.data.datasets[datasetIndex],
+                    label = dataset.label,
+                    value = dataset.data[pointIndex];
+                if (typeof labels[year] === 'undefined') {
+                    labels[year] = [];
+                }
+                labels[year].push(label + ': ' + value);
+            }
+            var announcement = '';
+            Object.keys(labels).forEach(function(year) {
+                announcement += year + ' ';
+                labels[year].forEach(function(label) {
+                    announcement += label + ', ';
+                });
+            });
+            var currentAnnouncement = $('#chart-tooltip-status').text();
+            if (currentAnnouncement != announcement) {
+                $('#chart-tooltip-status').text(announcement);
+            }
+        }
+    }
+});
 function event(sender) {
   this._sender = sender;
   this._listeners = [];
@@ -863,7 +1016,7 @@ var GEOCODE_COLUMN = 'GeoCode';
 var YEAR_COLUMN = 'Year';
 var VALUE_COLUMN = 'Value';
 var HEADLINE_COLOR = '#777777';
-var SERIES_TOGGLE = false;
+var SERIES_TOGGLE = true;
 
   /**
  * Model helper functions with general utility.
@@ -2997,7 +3150,9 @@ var indicatorView = function (model, options) {
 
   this.createIndicatorDownloadButtons = function(indicatorDownloads, indicatorId, el) {
     if (indicatorDownloads) {
-      for (var buttonLabel of Object.keys(indicatorDownloads)) {
+      var buttonLabels = Object.keys(indicatorDownloads);
+      for (var i = 0; i < buttonLabels.length; i++) {
+        var buttonLabel = buttonLabels[i];
         var href = indicatorDownloads[buttonLabel].href;
         var buttonLabelTranslated = translations.t(buttonLabel);
         var gaLabel = buttonLabel + ': ' + indicatorId;
@@ -3123,6 +3278,103 @@ $(document).ready(function() {
         tabsList.find('li').click(function(event) {
             if (event.target.tagName === 'LI') {
                 $(event.target).find('> a').click();
+            }
+        });
+    });
+});
+$(document).ready(function() {
+    $('.nav-tabs').each(function() {
+        var tabsList = $(this);
+        var tabs = tabsList.find('li > a');
+        var panes = tabsList.parent().find('.tab-pane');
+
+        panes.attr({
+            'class': 'tabPanel',
+            'role': 'tabpanel',
+            'aria-hidden': 'true',
+            'tabindex': '0',
+        }).hide();
+
+        tabsList.attr({
+            'role': 'tablist',
+        });
+
+        tabs.each(function(idx) {
+            var tab = $(this);
+            var tabId = 'tab-' + tab.attr('href').slice(1);
+            var pane = tabsList.parent().find(tab.attr('href'));
+
+            tab.attr({
+                'id': tabId,
+                'role': 'tab',
+                'aria-selected': 'false',
+                'tabindex': '-1',
+            }).parent().attr('role', 'presentation');
+
+            tab.removeAttr('href');
+
+            pane.attr('aria-labelledby', tabId);
+
+            tab.click(function(e) {
+                e.preventDefault();
+
+                tabsList.find('> li.active')
+                    .removeClass('active')
+                    .find('> a')
+                    .attr({
+                        'aria-selected': 'false',
+                        'tabindex': '-1',
+                    });
+
+                panes.filter(':visible').attr({
+                    'aria-hidden': 'true',
+                }).hide();
+
+                pane.attr({
+                    'aria-hidden': 'false',
+                }).show();
+
+                tab.attr({
+                    'aria-selected': 'true',
+                    'tabindex': '0',
+                }).parent().addClass('active');
+                tab.focus();
+            });
+        });
+
+        // Show the first tabPanel
+        panes.first().attr('aria-hidden', 'false').show();
+
+        // Set state for the first tabsList li
+        tabsList.find('li:first').addClass('active').find(' > a').attr({
+            'aria-selected': 'true',
+            'tabindex': '0',
+        });
+
+        // Set keydown events on tabList item for navigating tabs
+        tabsList.delegate('a', 'keydown', function(e) {
+            var tab = $(this);
+            switch (e.which) {
+                case 37:
+                    if (tab.parent().prev().length != 0) {
+                        tab.parent().prev().find('> a').click();
+                        e.preventDefault();
+                    }
+                    else {
+                        tabsList.find('li:last > a').click();
+                        e.preventDefault();
+                    }
+                    break;
+                case 39:
+                    if (tab.parent().next().length != 0) {
+                        tab.parent().next().find('> a').click();
+                        e.preventDefault();
+                    }
+                    else {
+                        tabsList.find('li:first > a').click();
+                        e.preventDefault();
+                    }
+                    break;
             }
         });
     });

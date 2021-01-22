@@ -50,22 +50,18 @@ ul {
 .table-hover tbody tr:hover {
   background: #e0e0e0; }
 
-#page-content {
-  border-top: 1px solid #faebcc;
-  border-bottom: 1px solid #faebcc;
-  padding-top: 10px; }
-  #page-content table {
-    margin-top: 5px;
-    margin-bottom: 5px;
-    border-style: solid;
-    border-color: #0b0c0c;
-    border-width: 1px; }
-  #page-content td, #page-content th {
-    padding-right: 5px;
-    padding-left: 5px; }
-  #page-content thead {
-    padding-bottom: 10px;
-    border-bottom: 1pt solid #0b0c0c; }
+#page-content table {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-style: solid;
+  border-color: #0b0c0c;
+  border-width: 1px; }
+#page-content td, #page-content th {
+  padding-right: 5px;
+  padding-left: 5px; }
+#page-content thead {
+  padding-bottom: 10px;
+  border-bottom: 1pt solid #0b0c0c; }
 
 table thead th .sort {
   background-image: none !important; }
@@ -1929,6 +1925,11 @@ body.contrast-high #legend li {
     background: transparent !important;
     border: 1px solid white; }
 
+.layout-indicator #page-content {
+  border-top: 1px solid #faebcc;
+  border-bottom: 1px solid #faebcc;
+  padding-top: 10px; }
+
 @media only screen and (max-width: 500px) {
   body.layout-indicator .container .goal-icon {
     float: none; }
@@ -1940,6 +1941,10 @@ body.contrast-high #legend li {
 .goal-banner h1 .lead-copy {
   display: block;
   margin-top: 10px; }
+
+.layout-goal #page-content, .layout-goal-by-target #page-content, .layout-goal-by-target-vertical #page-content {
+  margin-top: -20px;
+  margin-bottom: 10px; }
 
 body.contrast-high .goal-indicators div span {
   border-color: white !important;
@@ -2339,7 +2344,7 @@ body.contrast-high.layout-search form input, body.contrast-high.layout-search fo
 .layout-config-builder div[data-schemapath="root"] > .well > div > div > .row > div[data-schematype] > div a {
   margin-top: 15px;
   display: inline-block; }
-.layout-config-builder div[data-schemapath="root"] > h3 {
+.layout-config-builder div[data-schemapath="root"] > .je-header {
   display: none !important; }
 .layout-config-builder .help-block {
   color: #0b0c0c; }

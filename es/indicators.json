@@ -934,22 +934,6 @@
           "status": "notstarted"
         },
         {
-          "id": "8-a-1",
-          "title": "Compromisos y desembolsos en relación con la iniciativa Ayuda para el Comercio",
-          "description": "",
-          "keywords": "",
-          "href": "/open-sdg-site-starter/es/8-a-1",
-          "status": "notstarted"
-        },
-        {
-          "id": "8-b-1",
-          "title": "Existencia de una estrategia nacional organizada y en marcha para el empleo de los jóvenes, como estrategia independiente o como parte de una estrategia nacional de empleo",
-          "description": "",
-          "keywords": "",
-          "href": "/open-sdg-site-starter/es/8-b-1",
-          "status": "notstarted"
-        },
-        {
           "id": "8-10-1",
           "title": "a) Número de sucursales de bancos comerciales por cada 100.000 adultos y b) número de cajeros automáticos por cada 100.000 adultos",
           "description": "",
@@ -963,6 +947,22 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/es/8-10-2",
+          "status": "notstarted"
+        },
+        {
+          "id": "8-a-1",
+          "title": "Compromisos y desembolsos en relación con la iniciativa Ayuda para el Comercio",
+          "description": "",
+          "keywords": "",
+          "href": "/open-sdg-site-starter/es/8-a-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "8-b-1",
+          "title": "Existencia de una estrategia nacional organizada y en marcha para el empleo de los jóvenes, como estrategia independiente o como parte de una estrategia nacional de empleo",
+          "description": "",
+          "keywords": "",
+          "href": "/open-sdg-site-starter/es/8-b-1",
           "status": "notstarted"
         }]
     }
@@ -1846,22 +1846,6 @@
           "status": "notstarted"
         },
         {
-          "id": "16-a-1",
-          "title": "Existencia de instituciones nacionales independientes de derechos humanos, en cumplimiento de los Principios de París",
-          "description": "",
-          "keywords": "",
-          "href": "/open-sdg-site-starter/es/16-a-1",
-          "status": "notstarted"
-        },
-        {
-          "id": "16-b-1",
-          "title": "Proporción de la población que declara haberse sentido personalmente discriminada o acosada en los últimos 12 meses por motivos de discriminación prohibidos por el derecho internacional de los derechos humanos",
-          "description": "",
-          "keywords": "",
-          "href": "/open-sdg-site-starter/es/16-b-1",
-          "status": "notstarted"
-        },
-        {
           "id": "16-10-1",
           "title": "Número de casos verificados de asesinato, secuestro, desaparición forzada, detención arbitraria y tortura de periodistas, miembros asociados de los medios de comunicación, sindicalistas y defensores de los derechos humanos, en los últimos 12 meses",
           "description": "",
@@ -1875,6 +1859,22 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/es/16-10-2",
+          "status": "notstarted"
+        },
+        {
+          "id": "16-a-1",
+          "title": "Existencia de instituciones nacionales independientes de derechos humanos, en cumplimiento de los Principios de París",
+          "description": "",
+          "keywords": "",
+          "href": "/open-sdg-site-starter/es/16-a-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "16-b-1",
+          "title": "Proporción de la población que declara haberse sentido personalmente discriminada o acosada en los últimos 12 meses por motivos de discriminación prohibidos por el derecho internacional de los derechos humanos",
+          "description": "",
+          "keywords": "",
+          "href": "/open-sdg-site-starter/es/16-b-1",
           "status": "notstarted"
         }]
     }
