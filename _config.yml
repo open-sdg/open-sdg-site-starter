@@ -28,7 +28,7 @@ languages:
 remote_theme: open-sdg/open-sdg@1.2.0
 
 # Replace this title as needed.
-title: Indicators For The Sustainable Development Goals
+title: general.site_title
 url: ""
 environment: staging
 
