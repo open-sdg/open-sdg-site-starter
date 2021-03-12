@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="es" class="no-js">
     <head>
         <meta charset="utf-8">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-        <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=Promise%2CArray.prototype.forEach%2CString.prototype.includes%2CURLSearchParams%2CCustomEvent%2CArray.prototype.includes%2CArray.prototype.filter%2CArray.prototype.some%2CArray.prototype.find%2CObject.assign%2CArray.isArray%2CObject.values%2CArray.from%2CSet"></script>
+        <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=Promise%2CArray.prototype.forEach%2CString.prototype.includes%2CURLSearchParams%2CCustomEvent%2CArray.prototype.includes%2CArray.prototype.filter%2CArray.prototype.some%2CArray.prototype.find%2CArray.prototype.reduce%2CObject.assign%2CArray.isArray%2CObject.values%2CArray.from%2CSet%2CArray.prototype.findIndex"></script>
 <script crossorigin="anonymous" src="https://cdnjs.cloudflare.com/ajax/libs/javascript-canvas-to-blob/3.15.0/js/canvas-to-blob.min.js"></script>
 
         <script>
@@ -19,11 +19,23 @@ var opensdg = {
     this.chartConfigAlterations.push(callback);
   },
 
+  tableConfigAlterations: [],
+  // A hook which can be used to modify the configuration for Datatables.
+  tableConfigAlter: function(callback) {
+    this.tableConfigAlterations.push(callback);
+  },
+
   // A hook which can be replaced to alter whether/how the values that are
   // displayed on indicator tables/graphs get rounded.
   dataRounding: function(value) {
     // Alterations go here.
     return value;
+  },
+
+  // A hook which can be used to alter the data before it is displayed on charts/tables.
+  dataDisplayAlterations: [],
+  dataDisplayAlter: function(callback) {
+    this.dataDisplayAlterations.push(callback);
   },
 
   language: 'es',
@@ -91,7 +103,12 @@ var translations = {
         ================================================== -->
 
         
-    <title>Indicador 16.7.2 - Proporción de la población que considera que la adopción de decisiones es inclusiva y responde a sus necesidades, desglosada por sexo, edad, discapacidad y grupo de población - Indicators For The Sustainable Development Goals</title>
+    <title>
+        
+        Indicador 16.7.2 -
+        
+        Proporción de la población que considera que la adopción de decisiones es inclusiva y responde a sus necesidades, desglosada por sexo, edad, discapacidad y grupo de población - Indicators For The Sustainable Development Goals
+    </title>
 
 
 
@@ -121,7 +138,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20210312010646">
+        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20210312202554">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -134,6 +151,7 @@ var translations = {
     </head>
 <body class="language-es layout-indicator">
 <!-- <div class="container"> -->
+
 
 <script>translations['header'] = {"alpha":"Alfa","default_contrast":"estándar contraste","disable_high_contrast":"Desactivar alto contraste","disclaimer":"Este es un sitio web de desarrollo. Agradecemos sus <a href=\"mailto:%email_address\">comentarios</a>.","enable_high_contrast":"Habilitar alto contraste","high_contrast":"alto contraste","skip_link":"Saltar al contenido principal","tag_line":"17 Metas para transformar nuestro mundo"};</script>
 
@@ -149,17 +167,16 @@ var translations = {
 
 </div>
 
-<header role="banner">
+<header role="banner" class="header-menu-left-aligned">
   <div class="container">
 
     <div class="logo-and-mobile-widgets">
       <a class="navbar-brand" href="/open-sdg-site-starter/es/" id="home">
-        <img src="/open-sdg-site-starter/assets/img/SDG_logo.png" alt="Objetivos de Desarrollo Sostenible - 17 Metas para transformar nuestro mundo" />
-      </a>
-
+    <img src="/open-sdg-site-starter/assets/img/SDG_logo.png" alt="Objetivos de Desarrollo Sostenible - 17 Metas para transformar nuestro mundo" />
+</a>
       <div class="mobile-widgets">
-        <ul id='accessibility-nav' class='contrast-switcher'></ul><div class="language-toggle-mobile">
-          <div class="language-toggle-container">
+    <ul id='accessibility-nav' class='contrast-switcher'></ul><div class="language-toggle-mobile">
+        <div class="language-toggle-container">
   
   <div class="btn-group language-toggle-dropdown ">
     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -173,91 +190,65 @@ var translations = {
   </div>
 </div>
 
-        </div></div>
+    </div></div>
     </div>
 
-    <nav class="navbar navbar-default" id="main-nav">
-
-      <ul class="top-level">
-        <li id="menuToggle"
-            aria-label=""
-            aria-haspopup="true">
-          <button data-target="menu-mobile" aria-expanded="false">Menú</button>
-          <ul class="nav navbar-nav menu-target contrast-switcher" id="menu-mobile"><li class="nav-link ">
-    <a href="/open-sdg-site-starter/es/goals">Metas</a>
-    </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/es/reporting-status">Estado de informes</a>
-    </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/es/about">Acerca de</a>
-    </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/es/guidance">Dirección</a>
-    </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/es/faq">FAQ</a>
-    </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/es/news">Actualizaciones</a>
-    </li><li class="language-toggle-menu-header">
-    
-
-
-
-
-
-  <div class="language-toggle-container">
-  
-  <div class="btn-group language-toggle-dropdown ">
-    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">Español</span>
-      <span class="language-abbreviation">es</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
-    <ul class="dropdown-menu"><li>
-            <a href="/open-sdg-site-starter/16-7-2/">
-              English
-            </a>
-          </li></ul>
-  </div>
-</div>
-
-
-
-</li></ul>
-
-        </li>
-        <li id="searchToggle"
-            aria-label=""
-            aria-haspopup="true">
-          <button data-target="search-mobile" aria-expanded="false">Buscar</button>
-          <div id="search-mobile" class="menu-target">
-  <form action="/open-sdg-site-starter/es/search">
-    <input type="text" name="q" id="indicator_search-mobile" title="Buscar" />
-    <label class="sr-only" for="indicator_search-mobile">Buscar</label>
-    <button aria-label="Buscar" id="search-mobile-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
-  </form>
-</div>
-
-        </li>
-      </ul>
-
+    <div class="search-and-desktop-widgets">
       <div id="search" class="menu-target">
   <form action="/open-sdg-site-starter/es/search">
-    <input type="text" name="q" id="indicator_search" title="Buscar" />
     <label class="sr-only" for="indicator_search">Buscar</label>
-    <button aria-label="Buscar" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
+    <input type="text" name="q" id="indicator_search" title="Buscar" /><!--
+    --><button aria-label="Buscar" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
   </form>
 </div>
 
+      <div class="navbar navbar-default widgets-without-menu">
+        <ul class="nav navbar-nav contrast-switcher"><li class="language-toggle-menu-header">
+            
 
-      <ul class="nav navbar-nav menu-target contrast-switcher" id="menu"><li class="nav-link ">
+
+
+
+
+  <div class="language-toggle-container">
+  
+  <div class="btn-group language-toggle-dropdown ">
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">Español</span>
+      <span class="language-abbreviation">es</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
+    <ul class="dropdown-menu"><li>
+            <a href="/open-sdg-site-starter/16-7-2/">
+              English
+            </a>
+          </li></ul>
+  </div>
+</div>
+
+
+
+        </li></ul>
+      </div>
+    </div>
+
+    <div class="navbar navbar-default menu-without-widgets" id="main-nav">
+      <ul class="top-level">
+    <li id="menuToggle"
+        aria-label=""
+        aria-haspopup="true">
+        <button data-target="menu-mobile" aria-expanded="false">Menú</button>
+        <ul class="nav navbar-nav menu-target contrast-switcher" id="menu-mobile"><li class="nav-link ">
     <a href="/open-sdg-site-starter/es/goals">Metas</a>
-    </li><li class="nav-link ">
+</li><li class="nav-link ">
     <a href="/open-sdg-site-starter/es/reporting-status">Estado de informes</a>
-    </li><li class="nav-link ">
+</li><li class="nav-link ">
     <a href="/open-sdg-site-starter/es/about">Acerca de</a>
-    </li><li class="nav-link ">
+</li><li class="nav-link ">
     <a href="/open-sdg-site-starter/es/guidance">Dirección</a>
-    </li><li class="nav-link ">
+</li><li class="nav-link ">
     <a href="/open-sdg-site-starter/es/faq">FAQ</a>
-    </li><li class="nav-link ">
+</li><li class="nav-link ">
     <a href="/open-sdg-site-starter/es/news">Actualizaciones</a>
-    </li><li class="language-toggle-menu-header">
+</li><li class="language-toggle-menu-header">
     
 
 
@@ -280,14 +271,47 @@ var translations = {
 
 
 
-</li></ul>
+</li>
+</ul>
 
+    </li>
+    <li id="searchToggle"
+        aria-label=""
+        aria-haspopup="true">
+        <button data-target="search-mobile" aria-expanded="false">Buscar</button>
+        <div id="search-mobile" class="menu-target">
+  <form action="/open-sdg-site-starter/es/search">
+    <label class="sr-only" for="indicator_search-mobile">Buscar</label>
+    <input type="text" name="q" id="indicator_search-mobile" title="Buscar" /><!--
+    --><button aria-label="Buscar" id="search-mobile-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
+  </form>
+</div>
 
-    </nav>
+    </li>
+</ul>
+      <ul class="nav navbar-nav menu-target " id="menu"><li class="nav-link ">
+    <a href="/open-sdg-site-starter/es/goals">Metas</a>
+</li><li class="nav-link ">
+    <a href="/open-sdg-site-starter/es/reporting-status">Estado de informes</a>
+</li><li class="nav-link ">
+    <a href="/open-sdg-site-starter/es/about">Acerca de</a>
+</li><li class="nav-link ">
+    <a href="/open-sdg-site-starter/es/guidance">Dirección</a>
+</li><li class="nav-link ">
+    <a href="/open-sdg-site-starter/es/faq">FAQ</a>
+</li><li class="nav-link ">
+    <a href="/open-sdg-site-starter/es/news">Actualizaciones</a>
+</li>
+</ul>
+
+    </div>
+
   </div>
 
 </header>
 <div id="top" tabindex=-1></div>
+
+
 
 
 <script type="text/template" id="item_template">
@@ -299,8 +323,8 @@ var translations = {
         <% }%>
       >
         <% if(allowedFields.indexOf(fieldItem.field) == -1) { %><h6><% } else { %><h5><% } %>
-          <span aria-hidden="true"><%=translations.t(fieldItem.field)%><i class="fa fa-chevron-down"></i></span>
-          <span class="sr-only"> <%=translations.t(fieldItem.field)%></span>
+          <span aria-hidden="true"><%=translations.t(fieldItem.label)%><i class="fa fa-chevron-down"></i></span>
+          <span class="sr-only"> <%=translations.t(fieldItem.label)%></span>
         <% if(allowedFields.indexOf(fieldItem.field) == -1) { %></h6><% } else { %></h5><% } %>
       </button>
       <div class="bar">
@@ -322,7 +346,7 @@ var translations = {
       </div>
 
       <% if(allowedFields.indexOf(fieldItem.field) == -1) { %>
-        <div class="variable-hint" id="variable-hint-<%=fieldItem.field.replace(/ /g, '-')%>">Disponible cuando se selecciona «<%= translations.t(_.findWhere(edges, { To: fieldItem.field }).From) %>»
+        <div class="variable-hint" id="variable-hint-<%=fieldItem.field.replace(/ /g, '-')%>">Disponible cuando se selecciona «<%= translations.t(_.find(edges, { To: fieldItem.field }).From) %>»
         </div>
         <div class="no-data-hint" id="no-data-hint-<%=fieldItem.field.replace(/ /g, '-')%>">
           No hay opciones disponibles debido a los filtros anteriores
@@ -335,9 +359,9 @@ var translations = {
 
 <script type="text/template" id="units_template">
   <% if(units.length) { %>
-    <h4>Tipo de unidades</h4>
+    <h4>Unidad de medida</h4>
     <fieldset>
-      <legend class="sr-only">Tipo de unidades</legend>
+      <legend class="sr-only">Unidad de medida</legend>
       <% _.each(units, function(unitsItem, index) { %>
         <% var checked = (selectedUnit) ? (selectedUnit==unitsItem) : (index==0); %>
         <label><input type="radio" name="unit" value="<%=unitsItem%>" tabindex=0 <%=checked ? 'checked' : ''%> /> <%=translations.t(unitsItem)%></label>
@@ -365,7 +389,8 @@ var translations = {
 
 
 <div class="container">
-  <ol class="breadcrumb">
+  
+<ol class="breadcrumb">
   
   <li><a href="/open-sdg-site-starter/es/">Inicio</a></li>
   <li><a href="/open-sdg-site-starter/es/goals">Metas</a></li>
@@ -374,19 +399,25 @@ var translations = {
   
 </ol>
 
+
+  
 </div>
 <div class="heading goal-banner indicator goal-16">
   <div class="container">
     <div class="row">
+      
       <div class="col-xs-4 col-md-3 col-lg-2 goal-icon goal-tiles">
         <a href="/open-sdg-site-starter/es/16" title="Ver la lista de indicadores de este objetivo">
-          <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/16.png" alt="Paz, Justicia e Instituciones Sólidas - Meta 16" id="goal-16"/>
+          <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/16.png" alt="Paz, Justicia e Instituciones Sólidas - Meta 16" id="goal-16" class="goal-icon-image goal-icon-image-"/>
         </a>
       </div>
       <div class="col-xs-8 col-md-9 col-lg-10 indicator-details">
+      
         <div>
           <h1>
+            
             Indicador 16.7.2
+            
             <span class="lead-copy">Proporción de la población que considera que la adopción de decisiones es inclusiva y responde a sus necesidades, desglosada por sexo, edad, discapacidad y grupo de población</span>
           </h1>
         </div>
@@ -423,6 +454,8 @@ var translations = {
   data-stackeddisaggregation=""
   data-graphannotations="null"
   data-indicatordownloads="null"
+  data-compositebreakdownlabel=""
+  data-precision="null"
 >
   
   <div id="indicator-main" class="indicator-main col-md-12">
@@ -436,6 +469,7 @@ data-event-action="Change metadata view"
 data-event-label="Change to National Metadata tab"
 >Metadatos nacionales</a>
 </li>
+
 <li role="presentation" class="nav-item">
   <a class="nav-link" data-toggle="tab" id="tab-global" href="#global" aria-controls="global" role="tab" data-on="click"
 data-event-category="Tab change"
@@ -443,6 +477,7 @@ data-event-action="Change metadata view"
 data-event-label="Change to Global Metadata tab"
 >Metadatos globales</a>
 </li>
+
 <li role="presentation" class="nav-item">
   <a class="nav-link" data-toggle="tab" id="tab-sources" href="#sources" aria-controls="sources" role="tab" data-on="click"
 data-event-category="Tab change"
@@ -628,7 +663,7 @@ data-event-label="Change to Sources tab"
       
       
       <tr>
-        <th scope="row">metadata_fields.rationale_interpretation </th>
+        <th scope="row">Racionalidad e interpretación </th>
         <td>
           
             
@@ -1032,6 +1067,12 @@ data-event-label="Change to Sources tab"
   <div role="tabpanel" class="tab-pane" id="edit">
     <div class="edit-container">
   
+  
+
+  
+  
+
+
   <a class="btn btn-primary" href="http://prose.io/#open-sdg/open-sdg-data-starter/edit/develop/data/indicator_16-7-2.csv">Editar datos</a>
   
 
@@ -1099,7 +1140,7 @@ data-event-label="Change to Sources tab"
 <script src="//cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
 <script src="//cdn.datatables.net/1.10.16/js/dataTables.bootstrap.min.js"></script>
 <script src="//cdn.datatables.net/fixedcolumns/3.2.3/js/dataTables.fixedColumns.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js" integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww==" crossorigin="anonymous"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/patternomaly@1.3.2/dist/patternomaly.js"></script>
 
@@ -1113,12 +1154,12 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Buscar';</script>
 
-<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20210312010646'></script>
+<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20210312202554'></script>
 
 
     
     
-    <script src="/open-sdg-site-starter/assets/js/custom.js?v=20210312010646"></script><script>
+    <script src="/open-sdg-site-starter/assets/js/custom.js?v=20210312202554"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
@@ -1158,10 +1199,13 @@ $(function() {
               stackedDisaggregation: domData.stackeddisaggregation,
               graphAnnotations: domData.graphannotations,
               indicatorDownloads: domData.indicatordownloads,
+              compositeBreakdownLabel: domData.compositebreakdownlabel,
+              precision: domData.precision,
             }),
             view  = new indicatorView(model, {
               rootElement: '#indicatorData',
               legendElement: '#plotLegend',
+              decimalSeparator: '',
               maxChartHeight: 420,
               tableColumnDefs: [
                 { maxCharCount: 25 }, // nowrap

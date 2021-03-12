@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-        <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=Promise%2CArray.prototype.forEach%2CString.prototype.includes%2CURLSearchParams%2CCustomEvent%2CArray.prototype.includes%2CArray.prototype.filter%2CArray.prototype.some%2CArray.prototype.find%2CObject.assign%2CArray.isArray%2CObject.values%2CArray.from%2CSet"></script>
+        <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=Promise%2CArray.prototype.forEach%2CString.prototype.includes%2CURLSearchParams%2CCustomEvent%2CArray.prototype.includes%2CArray.prototype.filter%2CArray.prototype.some%2CArray.prototype.find%2CArray.prototype.reduce%2CObject.assign%2CArray.isArray%2CObject.values%2CArray.from%2CSet%2CArray.prototype.findIndex"></script>
 <script crossorigin="anonymous" src="https://cdnjs.cloudflare.com/ajax/libs/javascript-canvas-to-blob/3.15.0/js/canvas-to-blob.min.js"></script>
 
         <script>
@@ -19,11 +19,23 @@ var opensdg = {
     this.chartConfigAlterations.push(callback);
   },
 
+  tableConfigAlterations: [],
+  // A hook which can be used to modify the configuration for Datatables.
+  tableConfigAlter: function(callback) {
+    this.tableConfigAlterations.push(callback);
+  },
+
   // A hook which can be replaced to alter whether/how the values that are
   // displayed on indicator tables/graphs get rounded.
   dataRounding: function(value) {
     // Alterations go here.
     return value;
+  },
+
+  // A hook which can be used to alter the data before it is displayed on charts/tables.
+  dataDisplayAlterations: [],
+  dataDisplayAlter: function(callback) {
+    this.dataDisplayAlterations.push(callback);
   },
 
   language: 'en',
@@ -121,7 +133,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20210312010646">
+        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20210312202554">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -134,6 +146,7 @@ var translations = {
     </head>
 <body class="language-en layout-goal-by-target-vertical">
 <!-- <div class="container"> -->
+
 
 <script>translations['header'] = {"alpha":"Alpha","default_contrast":"Default contrast","disable_high_contrast":"Disable high contrast","disclaimer":"This is a development website. We welcome your <a href=\"mailto:%email_address\">feedback</a>.","enable_high_contrast":"Enable high contrast","high_contrast":"High contrast","skip_link":"Skip to main content","tag_line":"17 Goals to Transform our World","toggle_menu":"Menu toggle. Click to expand or collapse the menu.","toggle_search":"Search toggle. Click to expand or collapse the search bar."};</script>
 
@@ -149,17 +162,16 @@ var translations = {
 
 </div>
 
-<header role="banner">
+<header role="banner" class="header-menu-left-aligned">
   <div class="container">
 
     <div class="logo-and-mobile-widgets">
       <a class="navbar-brand" href="/open-sdg-site-starter/" id="home">
-        <img src="/open-sdg-site-starter/assets/img/SDG_logo.png" alt="Sustainable Development Goals - 17 Goals to Transform our World" />
-      </a>
-
+    <img src="/open-sdg-site-starter/assets/img/SDG_logo.png" alt="Sustainable Development Goals - 17 Goals to Transform our World" />
+</a>
       <div class="mobile-widgets">
-        <ul id='accessibility-nav' class='contrast-switcher'></ul><div class="language-toggle-mobile">
-          <div class="language-toggle-container">
+    <ul id='accessibility-nav' class='contrast-switcher'></ul><div class="language-toggle-mobile">
+        <div class="language-toggle-container">
   
   <div class="btn-group language-toggle-dropdown ">
     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -173,91 +185,65 @@ var translations = {
   </div>
 </div>
 
-        </div></div>
+    </div></div>
     </div>
 
-    <nav class="navbar navbar-default" id="main-nav">
-
-      <ul class="top-level">
-        <li id="menuToggle"
-            aria-label="Menu toggle. Click to expand or collapse the menu."
-            aria-haspopup="true">
-          <button data-target="menu-mobile" aria-expanded="false">Menu</button>
-          <ul class="nav navbar-nav menu-target contrast-switcher" id="menu-mobile"><li class="nav-link ">
-    <a href="/open-sdg-site-starter/goals">Goals</a>
-    </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/reporting-status">Reporting Status</a>
-    </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/about">About</a>
-    </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/guidance">Guidance</a>
-    </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/faq">FAQ</a>
-    </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/news">Updates</a>
-    </li><li class="language-toggle-menu-header">
-    
-
-
-
-
-
-  <div class="language-toggle-container">
-  
-  <div class="btn-group language-toggle-dropdown ">
-    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">English</span>
-      <span class="language-abbreviation">en</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
-    <ul class="dropdown-menu"><li>
-            <a href="/open-sdg-site-starter/es/3/">
-              Español
-            </a>
-          </li></ul>
-  </div>
-</div>
-
-
-
-</li></ul>
-
-        </li>
-        <li id="searchToggle"
-            aria-label="Search toggle. Click to expand or collapse the search bar."
-            aria-haspopup="true">
-          <button data-target="search-mobile" aria-expanded="false">Search</button>
-          <div id="search-mobile" class="menu-target">
-  <form action="/open-sdg-site-starter/search">
-    <input type="text" name="q" id="indicator_search-mobile" title="Search" />
-    <label class="sr-only" for="indicator_search-mobile">Search</label>
-    <button aria-label="Search" id="search-mobile-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
-  </form>
-</div>
-
-        </li>
-      </ul>
-
+    <div class="search-and-desktop-widgets">
       <div id="search" class="menu-target">
   <form action="/open-sdg-site-starter/search">
-    <input type="text" name="q" id="indicator_search" title="Search" />
     <label class="sr-only" for="indicator_search">Search</label>
-    <button aria-label="Search" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
+    <input type="text" name="q" id="indicator_search" title="Search" /><!--
+    --><button aria-label="Search" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
   </form>
 </div>
 
+      <div class="navbar navbar-default widgets-without-menu">
+        <ul class="nav navbar-nav contrast-switcher"><li class="language-toggle-menu-header">
+            
 
-      <ul class="nav navbar-nav menu-target contrast-switcher" id="menu"><li class="nav-link ">
+
+
+
+
+  <div class="language-toggle-container">
+  
+  <div class="btn-group language-toggle-dropdown ">
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">English</span>
+      <span class="language-abbreviation">en</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
+    <ul class="dropdown-menu"><li>
+            <a href="/open-sdg-site-starter/es/3/">
+              Español
+            </a>
+          </li></ul>
+  </div>
+</div>
+
+
+
+        </li></ul>
+      </div>
+    </div>
+
+    <div class="navbar navbar-default menu-without-widgets" id="main-nav">
+      <ul class="top-level">
+    <li id="menuToggle"
+        aria-label="Menu toggle. Click to expand or collapse the menu."
+        aria-haspopup="true">
+        <button data-target="menu-mobile" aria-expanded="false">Menu</button>
+        <ul class="nav navbar-nav menu-target contrast-switcher" id="menu-mobile"><li class="nav-link ">
     <a href="/open-sdg-site-starter/goals">Goals</a>
-    </li><li class="nav-link ">
+</li><li class="nav-link ">
     <a href="/open-sdg-site-starter/reporting-status">Reporting Status</a>
-    </li><li class="nav-link ">
+</li><li class="nav-link ">
     <a href="/open-sdg-site-starter/about">About</a>
-    </li><li class="nav-link ">
+</li><li class="nav-link ">
     <a href="/open-sdg-site-starter/guidance">Guidance</a>
-    </li><li class="nav-link ">
+</li><li class="nav-link ">
     <a href="/open-sdg-site-starter/faq">FAQ</a>
-    </li><li class="nav-link ">
+</li><li class="nav-link ">
     <a href="/open-sdg-site-starter/news">Updates</a>
-    </li><li class="language-toggle-menu-header">
+</li><li class="language-toggle-menu-header">
     
 
 
@@ -280,14 +266,47 @@ var translations = {
 
 
 
-</li></ul>
+</li>
+</ul>
 
+    </li>
+    <li id="searchToggle"
+        aria-label="Search toggle. Click to expand or collapse the search bar."
+        aria-haspopup="true">
+        <button data-target="search-mobile" aria-expanded="false">Search</button>
+        <div id="search-mobile" class="menu-target">
+  <form action="/open-sdg-site-starter/search">
+    <label class="sr-only" for="indicator_search-mobile">Search</label>
+    <input type="text" name="q" id="indicator_search-mobile" title="Search" /><!--
+    --><button aria-label="Search" id="search-mobile-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
+  </form>
+</div>
 
-    </nav>
+    </li>
+</ul>
+      <ul class="nav navbar-nav menu-target " id="menu"><li class="nav-link ">
+    <a href="/open-sdg-site-starter/goals">Goals</a>
+</li><li class="nav-link ">
+    <a href="/open-sdg-site-starter/reporting-status">Reporting Status</a>
+</li><li class="nav-link ">
+    <a href="/open-sdg-site-starter/about">About</a>
+</li><li class="nav-link ">
+    <a href="/open-sdg-site-starter/guidance">Guidance</a>
+</li><li class="nav-link ">
+    <a href="/open-sdg-site-starter/faq">FAQ</a>
+</li><li class="nav-link ">
+    <a href="/open-sdg-site-starter/news">Updates</a>
+</li>
+</ul>
+
+    </div>
+
   </div>
 
 </header>
 <div id="top" tabindex=-1></div>
+
+
 
 
 <div class="container">
@@ -299,13 +318,14 @@ var translations = {
   
 </ol>
 
+  
 </div>
 
 <div class="heading goal-banner goal-3">
   <div class="container">
     <div class="row">
       <div class="col-xs-4 col-md-3 col-lg-2 goal-tiles">
-        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/3.png" alt="Good health and well-being - Goal 3" id="goal-3"/>
+        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/3.png" alt="Good health and well-being - Goal 3" id="goal-3" class="goal-icon-image goal-icon-image-" />
       </div>
       <div class="col-xs-8 col-md-9 col-lg-10">
         <h1>
@@ -354,6 +374,7 @@ var translations = {
               Exploring data sources
             </span>
             
+
           </div>
         
 
@@ -376,6 +397,7 @@ var translations = {
               Exploring data sources
             </span>
             
+
           </div>
         
       </div>
@@ -407,6 +429,7 @@ var translations = {
               Exploring data sources
             </span>
             
+
           </div>
         
 
@@ -429,6 +452,7 @@ var translations = {
               Exploring data sources
             </span>
             
+
           </div>
         
       </div>
@@ -460,6 +484,7 @@ var translations = {
               Exploring data sources
             </span>
             
+
           </div>
         
 
@@ -482,6 +507,7 @@ var translations = {
               Exploring data sources
             </span>
             
+
           </div>
         
 
@@ -504,6 +530,7 @@ var translations = {
               Exploring data sources
             </span>
             
+
           </div>
         
 
@@ -526,6 +553,7 @@ var translations = {
               Exploring data sources
             </span>
             
+
           </div>
         
 
@@ -548,6 +576,7 @@ var translations = {
               Exploring data sources
             </span>
             
+
           </div>
         
       </div>
@@ -579,6 +608,7 @@ var translations = {
               Exploring data sources
             </span>
             
+
           </div>
         
 
@@ -601,6 +631,7 @@ var translations = {
               Exploring data sources
             </span>
             
+
           </div>
         
       </div>
@@ -632,6 +663,7 @@ var translations = {
               Exploring data sources
             </span>
             
+
           </div>
         
 
@@ -654,6 +686,7 @@ var translations = {
               Exploring data sources
             </span>
             
+
           </div>
         
       </div>
@@ -685,6 +718,7 @@ var translations = {
               Exploring data sources
             </span>
             
+
           </div>
         
       </div>
@@ -716,6 +750,7 @@ var translations = {
               Exploring data sources
             </span>
             
+
           </div>
         
 
@@ -738,6 +773,7 @@ var translations = {
               Exploring data sources
             </span>
             
+
           </div>
         
       </div>
@@ -769,6 +805,7 @@ var translations = {
               Exploring data sources
             </span>
             
+
           </div>
         
 
@@ -791,6 +828,7 @@ var translations = {
               Exploring data sources
             </span>
             
+
           </div>
         
       </div>
@@ -822,6 +860,7 @@ var translations = {
               Exploring data sources
             </span>
             
+
           </div>
         
 
@@ -844,6 +883,7 @@ var translations = {
               Exploring data sources
             </span>
             
+
           </div>
         
 
@@ -866,6 +906,7 @@ var translations = {
               Exploring data sources
             </span>
             
+
           </div>
         
       </div>
@@ -897,6 +938,7 @@ var translations = {
               Exploring data sources
             </span>
             
+
           </div>
         
       </div>
@@ -928,6 +970,7 @@ var translations = {
               Exploring data sources
             </span>
             
+
           </div>
         
 
@@ -950,6 +993,7 @@ var translations = {
               Exploring data sources
             </span>
             
+
           </div>
         
 
@@ -972,6 +1016,7 @@ var translations = {
               Exploring data sources
             </span>
             
+
           </div>
         
       </div>
@@ -1003,6 +1048,7 @@ var translations = {
               Exploring data sources
             </span>
             
+
           </div>
         
       </div>
@@ -1034,6 +1080,7 @@ var translations = {
               Exploring data sources
             </span>
             
+
           </div>
         
       </div>
@@ -1088,7 +1135,7 @@ var translations = {
 <script src="//cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
 <script src="//cdn.datatables.net/1.10.16/js/dataTables.bootstrap.min.js"></script>
 <script src="//cdn.datatables.net/fixedcolumns/3.2.3/js/dataTables.fixedColumns.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js" integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww==" crossorigin="anonymous"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/patternomaly@1.3.2/dist/patternomaly.js"></script>
 
@@ -1102,12 +1149,12 @@ var translations = {
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20210312010646'></script>
+<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20210312202554'></script>
 
 
     
     
-    <script src="/open-sdg-site-starter/assets/js/custom.js?v=20210312010646"></script><script>
+    <script src="/open-sdg-site-starter/assets/js/custom.js?v=20210312202554"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
@@ -1147,10 +1194,13 @@ $(function() {
               stackedDisaggregation: domData.stackeddisaggregation,
               graphAnnotations: domData.graphannotations,
               indicatorDownloads: domData.indicatordownloads,
+              compositeBreakdownLabel: domData.compositebreakdownlabel,
+              precision: domData.precision,
             }),
             view  = new indicatorView(model, {
               rootElement: '#indicatorData',
               legendElement: '#plotLegend',
+              decimalSeparator: '',
               maxChartHeight: 420,
               tableColumnDefs: [
                 { maxCharCount: 25 }, // nowrap
