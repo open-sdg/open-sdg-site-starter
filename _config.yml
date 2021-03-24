@@ -177,6 +177,7 @@ exclude:
 # Recommend accessibility improvements.
 accessible_tabs: true
 accessible_charts: true
+graph_color_set: accessible
 
 # Specify any custom javascript files.
 custom_js:
@@ -186,6 +187,10 @@ custom_js:
 # "dropdown", "links", or "none"
 header_language_toggle: dropdown
 footer_language_toggle: none
+
+# Configure the header style.
+header:
+  include: header-menu-left-aligned.html
 
 # Specify whether the Series disaggregation should be a toggle (like units).
 series_toggle: true
