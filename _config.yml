@@ -219,3 +219,5 @@ header:
 
 # Use an accessible color-set for charts.
 graph_color_set: accessible
+
+hide_empty_metadata: true
