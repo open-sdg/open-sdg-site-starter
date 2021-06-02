@@ -212,10 +212,3 @@ breadcrumbs:
       path: /
     - label: general.goals
       path: /goals
-
-# Specify the style of header to use.
-header:
-  include: header-menu-left-aligned.html
-
-# Use an accessible color-set for charts.
-graph_color_set: accessible
