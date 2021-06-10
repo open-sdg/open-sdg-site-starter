@@ -207,7 +207,7 @@ reporting_status:
   description: ''
   disaggregation_tabs: false
 repository_url_data: 'https://github.com/open-sdg/open-sdg-data-starter'
-repository_url_site: 'https://github.com/open-sdg/open-sdg-site-starter'
+repository_url_site: ''
 search_index_boost: []
 search_index_extra_fields: []
 series_toggle: true
