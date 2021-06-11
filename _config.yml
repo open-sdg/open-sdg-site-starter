@@ -1,100 +1,12 @@
 # Jekyll configuration for Open SDG platform
 
-# Doing the Quick start? Here are the settings to update during installation:
-#
-# Replace the baseurl with the name of this repository. For example, if the repository is named
-# "my-site-repository", then update the baseurl like so:
-# baseurl: "/my-site-repository"
-baseurl: "/open-sdg-site-starter"
-# The next line should be the URL of your data repository published site. To find this,
-# go to your data repository in Github, and click "Settings", then scroll down to the
-# "Github Pages" section. Copy/paste the link in the green section.
-remote_data_prefix: "https://open-sdg.org/open-sdg-data-starter"
-# In the next few items, replace "open-sdg" with the name of your GitHub
-# organization, and "open-sdg-data-starter" with the name of your data repository.
-# URL for the "Edit Data" button on indicators.
-data_edit_url: http://prose.io/#open-sdg/open-sdg-data-starter/edit/develop/data/indicator_[id].csv
-# URL for the "Edit Metadata" button on indicators.
-metadata_edit_url: http://prose.io/#open-sdg/open-sdg-data-starter/edit/develop/meta/[id].md
-#
-# The list of languages that are translated. The first one is the default.
-languages:
-  - en
-  - es
-#
-# That's enough for the Quick Start! The remaining settings can be configured later.
-
 # Tell the Remote Theme plugin to use the Open SDG platform (Jekyll theme).
-remote_theme: open-sdg/open-sdg@1.3.1
+remote_theme: open-sdg/open-sdg@1.4.0-dev
 
 # Replace this title as needed.
 title: general.site_title
 url: ""
 environment: staging
-
-# Automatically create indicator pages, goal pages,
-# and some other required pages.
-create_indicators:
-  layout: indicator
-create_goals:
-  layout: goal-by-target-vertical
-create_pages:
-  pages:
-    - folder: /
-      layout: frontpage-alt
-    - folder: /goals
-      layout: goals
-    - folder: /reporting-status
-      layout: reportingstatus
-    - filename: indicators.json
-      folder: /
-      layout: indicator-json
-    - folder: /search
-      layout: search
-
-analytics:
-  ga_prod: ''
-
-# Sticky share buttons (facebook, twitter and email)
-#sharethis_property: '5d279253faeee40012f195e1'
-
-# Replace the email addresses below.
-email_contacts:
-  questions: test@example.com
-  suggestions: test@example.com
-  functional: test@example.com
-
-# International Support
-# Eg name: Australia and adjective: Australian
-country:
-  name: Australia
-  adjective: Australian
-
-# Optionally set a title/body for the frontpage banner. The defaults below point to a standard
-# translation, but feel free to change it as needed.
-frontpage_introduction_banner:
-  title: frontpage.intro_title
-  description: frontpage.intro_body
-
-frontpage_goals_grid:
-  title: Our data for Sustainable Development Goal indicators
-  description: Click on each goal for our Sustainable Development Goal global indicator data.
-
-frontpage_cards:
-  - title: frontpage.download_all
-    include: components/download-all-data.html
-  - title: Lorem ipsum
-    content: |
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mollis
-      cursus est sed dapibus.
-    button_label: Read more
-    button_link: https://example.com
-  - title: Nam vestibulum
-    content: |
-      Nam vestibulum, purus quis porttitor imperdiet, nisl sem mollis nisl, a
-      interdum risus enim vitae tortor. Donec feugiat accumsan rutrum.
-    button_label: Read more
-    button_link: https://example.com
 
 # Pages
 collections:
@@ -108,41 +20,6 @@ collections:
     output: true
   goals:
     output: true
-
-# Menu
-menu:
-  # Use these to customise the main navigation.
-  - path: /goals
-    # The "translation_key" refers to the key in the SDG Translations repository.
-    translation_key: general.goals
-  - path: /reporting-status
-    translation_key: menu.reporting_status
-  - path: /about
-    translation_key: menu.about
-  - path: /guidance
-    translation_key: menu.guidance
-  - path: /faq
-    translation_key: menu.faq
-  - path: /news
-    translation_key: menu.updates
-
-footer_menu:
-  - path: mailto:my-email-address@example.com
-    translation_key: menu.contact_us
-  - path: https://twitter.com/MyTwitterAccount
-    translation_key: general.twitter
-  - path: https://facebook.com/MyFacebookAccount
-    translation_key: general.facebook
-  - path: /about/cookies-and-privacy/
-    translation_key: menu.cookies
-
-# Configure the text (or "translation key") to be used on the
-# non-global metadata tab.
-non_global_metadata: indicator.national_metadata
-
-# Set a base for all goal image URLs. Note that the full goal image path will be
-# the base below, completed with: /[language]/[number].png (eg, /fr/6.png).
-goal_image_base: https://open-sdg.org/sdg-translations/assets/img/goals
 
 # Tell Jekyll to use the Remote Theme plugin.
 plugins:
@@ -159,65 +36,3 @@ exclude:
   - README
   - README.md
   - LICENSE
-
-# Optionally uncomment and update the settings below to control the mapping functionality.
-# These are only a few of the possible settings. For more details, see:
-# https://open-sdg.readthedocs.io/en/latest/maps/
-#map_options:
-#  minZoom: 5
-#  tileURL: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
-#  tileOptions:
-#    attribution: 'My map attribution'
-#map_layers:
-#  - min_zoom: 5
-#    max_zoom: 10
-#    subfolder: my-geojson-subfolder
-#    label: My map layer label (can be a translation key)
-
-# Recommend accessibility improvements.
-accessible_tabs: true
-accessible_charts: true
-graph_color_set: accessible
-
-# Specify any custom javascript files.
-custom_js:
-  - /assets/js/custom.js
-
-# Specify the format of the language toggles. Choices are:
-# "dropdown", "links", or "none"
-header_language_toggle: dropdown
-footer_language_toggle: none
-
-# Configure the header style.
-header:
-  include: header-menu-left-aligned.html
-
-# Specify whether the Series disaggregation should be a toggle (like units).
-series_toggle: true
-
-# Control the behavior of breadcrumbs for certain types of content.
-breadcrumbs:
-  post:
-    - label: general.home
-      path: /
-    - label: menu.updates
-      path: /news
-  goal:
-    - label: general.home
-      path: /
-    - label: general.goals
-      path: /goals
-  indicator:
-    - label: general.home
-      path: /
-    - label: general.goals
-      path: /goals
-
-# Specify the style of header to use.
-header:
-  include: header-menu-left-aligned.html
-
-# Use an accessible color-set for charts.
-graph_color_set: accessible
-
-hide_empty_metadata: true
