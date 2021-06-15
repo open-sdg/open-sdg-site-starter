@@ -1,0 +1,221 @@
+accessible_charts: true
+accessible_tabs: true
+analytics:
+  ga_prod: ''
+breadcrumbs:
+  goal:
+    - path: /
+      label: general.home
+    - path: /goals
+      label: general.goals
+  indicator:
+    - path: /
+      label: general.home
+    - path: /goals
+      label: general.goals
+  post:
+    - path: /
+      label: general.home
+    - path: /news
+      label: menu.updates
+contrast_type: default
+country:
+  name: Australia
+  adjective: Australian
+create_goals:
+  layout: goal-by-target-vertical
+  previous_next_links: false
+  goals: []
+create_indicators:
+  layout: indicator
+  previous_next_links: false
+create_pages:
+  - filename: ''
+    folder: /
+    layout: frontpage-alt
+    title: ''
+  - filename: ''
+    folder: /goals
+    layout: goals
+    title: ''
+  - filename: ''
+    folder: /reporting-status
+    layout: reportingstatus
+    title: ''
+  - filename: indicators.json
+    folder: /
+    layout: indicator-json
+    title: ''
+  - filename: ''
+    folder: /search
+    layout: search
+    title: ''
+custom_css: []
+custom_js:
+  - /assets/js/custom.js
+data_edit_url: ''
+data_fields:
+  units: ''
+  series: ''
+date_formats: []
+disclaimer:
+  phase: ''
+  message: ''
+email_contacts:
+  questions: test@example.com
+  suggestions: test@example.com
+  functional: test@example.com
+environment: staging
+footer_language_toggle: none
+footer_menu:
+  - path: 'mailto:my-email-address@example.com'
+    translation_key: menu.contact_us
+  - path: 'https://twitter.com/MyTwitterAccount'
+    translation_key: general.twitter
+  - path: 'https://facebook.com/MyFacebookAccount'
+    translation_key: general.facebook
+  - path: /about/cookies-and-privacy/
+    translation_key: menu.cookies
+frontpage_cards:
+  - title: frontpage.download_all
+    content: ''
+    include: components/download-all-data.html
+    button_label: ''
+    button_link: ''
+    rule_color: ''
+  - title: Lorem ipsum
+    content: |
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mollis
+      cursus est sed dapibus.
+    include: ''
+    button_label: Read more
+    button_link: 'https://example.com'
+    rule_color: ''
+  - title: Nam vestibulum
+    content: |
+      Nam vestibulum, purus quis porttitor imperdiet, nisl sem mollis nisl, a
+      interdum risus enim vitae tortor. Donec feugiat accumsan rutrum.
+    include: ''
+    button_label: Read more
+    button_link: 'https://example.com'
+    rule_color: ''
+frontpage_goals_grid:
+  title: Our data for Sustainable Development Goal indicators
+  description: >-
+    Click on each goal for our Sustainable Development Goal global indicator
+    data.
+frontpage_heading: ''
+frontpage_instructions: ''
+frontpage_introduction_banner:
+  title: frontpage.intro_title
+  description: frontpage.intro_body
+goal_image_base: 'https://open-sdg.org/sdg-translations/assets/img/goals'
+goal_image_extension: ''
+goals_page:
+  title: ''
+  description: ''
+graph_color_headline: '#004466'
+graph_color_headline_high_contrast: '#55a6e5'
+graph_color_set: accessible
+graph_color_list: []
+graph_color_number: 0
+graph_title_from_series: false
+header:
+  include: header-menu-left-aligned.html
+header_language_toggle: dropdown
+hide_empty_metadata: true
+indicator_config_form:
+  enabled: true
+  dropdowns: []
+  repository_link: '/tree/develop/indicator-config'
+  translation_link: ''
+indicator_data_form:
+  enabled: true
+  repository_link: '/tree/develop/data'
+indicator_metadata_form:
+  enabled: true
+  dropdowns: []
+  repository_link: '/tree/develop/meta'
+  translation_link: ''
+  language: ''
+  scopes:
+    - national
+    - global
+  exclude_fields: []
+  translated: false
+languages:
+  - en
+  - es
+languages_public: []
+logos: []
+map_layers: []
+map_options:
+  minZoom: 5
+  maxZoom: 10
+  tileURL: ''
+  tileOptions:
+    id: ''
+    accessToken: ''
+    attribution: ''
+  colorRange: chroma.brewer.BuGn
+  noValueColor: '#f0f0f0'
+  styleNormal:
+    weight: 1
+    opacity: 1
+    fillOpacity: 0.7
+    color: '#888888'
+    dashArray: ''
+  styleHighlighted:
+    weight: 1
+    opacity: 1
+    fillOpacity: 0.7
+    color: '#111111'
+    dashArray: ''
+  styleStatic:
+    weight: 2
+    opacity: 1
+    fillOpacity: 0
+    color: '#172d44'
+    dashArray: '5,5'
+menu:
+  - path: /goals
+    translation_key: general.goals
+    dropdown: []
+  - path: /reporting-status
+    translation_key: menu.reporting_status
+    dropdown: []
+  - path: /about
+    translation_key: menu.about
+    dropdown: []
+  - path: /guidance
+    translation_key: menu.guidance
+    dropdown: []
+  - path: /faq
+    translation_key: menu.faq
+    dropdown: []
+  - path: /news
+    translation_key: menu.updates
+    dropdown: []
+metadata_edit_url: ''
+metadata_tabs: []
+news:
+  category_links: false
+non_global_metadata: indicator.national_metadata
+remote_data_prefix: 'https://open-sdg.org/open-sdg-data-starter'
+reporting_status:
+  title: ''
+  description: ''
+  disaggregation_tabs: false
+repository_url_data: 'https://github.com/open-sdg/open-sdg-data-starter'
+repository_url_site: ''
+search_index_boost: []
+search_index_extra_fields: []
+series_toggle: true
+sharethis_property: ''
+site_config_form:
+  enabled: true
+  dropdowns: []
+  repository_link: '/tree/develop/_data'
+  translation_link: ''
+validate_indicator_config: false
+validate_site_config: false
