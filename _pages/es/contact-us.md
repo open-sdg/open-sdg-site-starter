@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Contact
-permalink: /es/contact/
+title: Contact us
+permalink: /es/contact-us/
 language: es
 ---
 
