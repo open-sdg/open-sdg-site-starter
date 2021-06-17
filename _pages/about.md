@@ -16,13 +16,7 @@ The [Sustainable Development Goals](http://www.un.org/sustainabledevelopment/sus
 The 17 Goals were adopted by all UN Member States in 2015, as part of the [2030 Agenda for Sustainable Development](https://sustainabledevelopment.un.org/post2015/transformingourworld).
 
 ## About this site
-This site is based on the open source [Open SDG](https://open-sdg.org/) platform. The Open SDG platform is the result of collaboration between the:
-
-  * UK [Office For National Statistics](https://www.ons.gov.uk/) (ONS)
-  
-  * US government
-  
-  * [Center For Open Data Enterprise](http://opendataenterprise.org/) (CODE)
+This site is based on the open source [Open SDG](https://open-sdg.org/) platform.
     
 Other countries or organisations wishing to reuse the Open SDG reporting platform are welcome to do so for free. The [Open SDG Quick Start Guide](https://open-sdg.readthedocs.io/en/latest/quick-start/) gives technical instructions on the quickest way to get a copy of the Open SDG platform up and running.
 
