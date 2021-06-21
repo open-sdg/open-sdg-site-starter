@@ -5,8 +5,26 @@ permalink: /about/
 layout: page
 ---
 
-This website is for disseminating SDG indicator data. We are at an Alpha stage in development, so the site is still 'work in progress'.
+The [Sustainable Development Goals](http://www.un.org/sustainabledevelopment/sustainable-development-goals/) (SDGs) are a universal call to action to:
 
-Other countries wishing to reuse this site's underlying platform are welcome to do so for free. Our [Guidance page]({{ site.baseurl }}/guidance/) highlights key information on how to do this, linking to detailed technical instructions available in the platform's [documentation](https://open-sdg.readthedocs.io). The [Center for Open Data Enterprise (CODE)](http://www.opendataenterprise.org/) can also provide guidance and support through their [SDG National Reporting Initiative](https://www.sdgreporting.org/).
+  * end poverty
+  
+  * protect the planet
+  
+  * improve the lives and prospects of everyone, everywhere
 
-If you have any feedback on this website or SDG data then please contact us at <a href="mailto:{{site.email_contacts.questions}}">{{site.email_contacts.questions}}</a>. The answers to some frequently asked questions are also available in our [FAQ]({{ site.baseurl }}/faq/).
+The 17 Goals were adopted by all UN Member States in 2015, as part of the [2030 Agenda for Sustainable Development](https://sustainabledevelopment.un.org/post2015/transformingourworld).
+
+## About this site
+This site is based on the open source [Open SDG](https://open-sdg.org/) platform.
+    
+Other countries or organisations wishing to reuse the Open SDG reporting platform are welcome to do so for free. The [Open SDG Quick Start Guide](https://open-sdg.readthedocs.io/en/latest/quick-start/) gives technical instructions on the quickest way to get a copy of the Open SDG platform up and running.
+
+If you have comments, feedback, or want to get involved with the Open SDG community please email <opensdg@googlegroups.com> or contact the [Open SDG GitHub](https://github.com/open-sdg/open-sdg).
+
+## Need more info?
+Answers to some specific questions about this website are included on our [frequently asked questions]({{ site.baseurl }}{% link _pages/faq.md %}) page.
+
+## Feedback
+To provide feedback on our SDG data please [contact us]({{ site.baseurl }}/contact-us)
+
