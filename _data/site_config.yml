@@ -187,9 +187,6 @@ menu:
   - path: /about
     translation_key: menu.about
     dropdown: []
-  - path: /guidance
-    translation_key: menu.guidance
-    dropdown: []
   - path: /faq
     translation_key: menu.faq
     dropdown: []
