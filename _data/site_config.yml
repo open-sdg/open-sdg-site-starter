@@ -112,8 +112,8 @@ frontpage_introduction_banner:
 goal_image_base: 'https://open-sdg.org/sdg-translations/assets/img/goals'
 goal_image_extension: ''
 goals_page:
-  title: ''
-  description: ''
+  title: general.goals
+  description: goal.description
 graph_color_headline: '#004466'
 graph_color_headline_high_contrast: '#55a6e5'
 graph_color_set: accessible
@@ -200,8 +200,8 @@ news:
 non_global_metadata: indicator.national_metadata
 remote_data_prefix: 'https://open-sdg.org/open-sdg-data-starter'
 reporting_status:
-  title: ''
-  description: ''
+  title: status.reporting_status
+  description: status.description
   disaggregation_tabs: false
 repository_url_data: 'https://github.com/open-sdg/open-sdg-data-starter'
 repository_url_site: ''
