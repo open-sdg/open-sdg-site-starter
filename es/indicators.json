@@ -11,7 +11,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/es/1-1-1",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "1-2-1",
@@ -102,14 +102,6 @@
           "status": "notstarted"
         },
         {
-          "id": "1-a-3",
-          "title": "Suma del total de las subvenciones y asignaciones no generadoras de deuda dedicadas directamente a programas de reducción de la pobreza en proporción al PIB",
-          "description": "",
-          "keywords": "",
-          "href": "/open-sdg-site-starter/es/1-a-3",
-          "status": "notstarted"
-        },
-        {
           "id": "1-b-1",
           "title": "Proporción de los gastos públicos periódicos y de capital que se dedica a sectores que benefician de forma desproporcionada a las mujeres, los pobres y los grupos vulnerables",
           "description": "",
@@ -155,6 +147,14 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/es/2-2-2",
+          "status": "notstarted"
+        },
+        {
+          "id": "2-2-3",
+          "title": "global_indicators.2-2-3-title",
+          "description": "",
+          "keywords": "",
+          "href": "/open-sdg-site-starter/es/2-2-3",
           "status": "notstarted"
         },
         {
@@ -452,6 +452,14 @@
           "keywords": "",
           "href": "/open-sdg-site-starter/es/3-d-1",
           "status": "notstarted"
+        },
+        {
+          "id": "3-d-2",
+          "title": "global_indicators.3-d-2-title",
+          "description": "",
+          "keywords": "",
+          "href": "/open-sdg-site-starter/es/3-d-2",
+          "status": "notstarted"
         }]
     }
   },
@@ -467,6 +475,14 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/es/4-1-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "4-1-2",
+          "title": "global_indicators.4-1-2-title",
+          "description": "",
+          "keywords": "",
+          "href": "/open-sdg-site-starter/es/4-1-2",
           "status": "notstarted"
         },
         {
@@ -926,14 +942,6 @@
           "status": "notstarted"
         },
         {
-          "id": "8-9-2",
-          "title": "Proporción de empleos en el sector del turismo sostenible respecto del total de empleos del turismo",
-          "description": "",
-          "keywords": "",
-          "href": "/open-sdg-site-starter/es/8-9-2",
-          "status": "notstarted"
-        },
-        {
           "id": "8-10-1",
           "title": "a) Número de sucursales de bancos comerciales por cada 100.000 adultos y b) número de cajeros automáticos por cada 100.000 adultos",
           "description": "",
@@ -1110,6 +1118,14 @@
           "status": "notstarted"
         },
         {
+          "id": "10-4-2",
+          "title": "global_indicators.10-4-2-title",
+          "description": "",
+          "keywords": "",
+          "href": "/open-sdg-site-starter/es/10-4-2",
+          "status": "notstarted"
+        },
+        {
           "id": "10-5-1",
           "title": "Indicadores de solidez financiera",
           "description": "",
@@ -1139,6 +1155,22 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/es/10-7-2",
+          "status": "notstarted"
+        },
+        {
+          "id": "10-7-3",
+          "title": "global_indicators.10-7-3-title",
+          "description": "",
+          "keywords": "",
+          "href": "/open-sdg-site-starter/es/10-7-3",
+          "status": "notstarted"
+        },
+        {
+          "id": "10-7-4",
+          "title": "global_indicators.10-7-4-title",
+          "description": "",
+          "keywords": "",
+          "href": "/open-sdg-site-starter/es/10-7-4",
           "status": "notstarted"
         },
         {
@@ -1283,14 +1315,6 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/es/11-b-2",
-          "status": "notstarted"
-        },
-        {
-          "id": "11-c-1",
-          "title": "Proporción del apoyo financiero a los países menos adelantados que se asigna a la construcción y el reacondicionamiento con materiales locales de edificios sostenibles, resilientes y eficientes en el uso de recursos",
-          "description": "",
-          "keywords": "",
-          "href": "/open-sdg-site-starter/es/11-c-1",
           "status": "notstarted"
         }]
     }
@@ -1446,19 +1470,19 @@
           "status": "notstarted"
         },
         {
+          "id": "13-2-2",
+          "title": "global_indicators.13-2-2-title",
+          "description": "",
+          "keywords": "",
+          "href": "/open-sdg-site-starter/es/13-2-2",
+          "status": "notstarted"
+        },
+        {
           "id": "13-3-1",
           "title": "Número de países que han incorporado la mitigación del cambio climático, la adaptación a él, la reducción de sus efectos y la alerta temprana en los planes de estudios de la enseñanza primaria, secundaria y terciaria",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/es/13-3-1",
-          "status": "notstarted"
-        },
-        {
-          "id": "13-3-2",
-          "title": "Número de países que han comunicado una mayor creación de capacidad institucional, sistémica e individual para implementar actividades de adaptación, mitigación y transferencia de tecnología, y medidas de desarrollo",
-          "description": "",
-          "keywords": "",
-          "href": "/open-sdg-site-starter/es/13-3-2",
           "status": "notstarted"
         },
         {
@@ -1766,6 +1790,14 @@
           "status": "notstarted"
         },
         {
+          "id": "16-3-3",
+          "title": "global_indicators.16-3-3-title",
+          "description": "",
+          "keywords": "",
+          "href": "/open-sdg-site-starter/es/16-3-3",
+          "status": "notstarted"
+        },
+        {
           "id": "16-4-1",
           "title": "Valor total de las corrientes financieras ilícitas entrantes y salientes (en dólares corrientes de los Estados Unidos)",
           "description": "",
@@ -1947,14 +1979,6 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/es/17-6-1",
-          "status": "notstarted"
-        },
-        {
-          "id": "17-6-2",
-          "title": "Número de abonados a Internet de banda ancha fija por cada 100 habitantes, desglosado por velocidad",
-          "description": "",
-          "keywords": "",
-          "href": "/open-sdg-site-starter/es/17-6-2",
           "status": "notstarted"
         },
         {
