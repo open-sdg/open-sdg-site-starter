@@ -66,6 +66,7 @@ email_contacts:
   suggestions: test@example.com
   functional: test@example.com
 environment: staging
+favicons: favicon.io
 footer_language_toggle: none
 footer_menu:
   - path: '/contact-us'
