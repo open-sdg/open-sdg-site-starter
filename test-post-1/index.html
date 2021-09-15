@@ -118,26 +118,29 @@ var translations = {
         <script src="/open-sdg-site-starter/assets/js/lib/classList.js"></script>
         <![endif]-->
 
-        <!-- Favicons ================================================== -->
-        <!-- 128x128 -->
-        <link rel="shortcut icon" type="image/ico" href="/open-sdg-site-starter/assets/img/favicons/favicon.ico">
-        <link rel="icon" type="image/png" href="/open-sdg-site-starter/assets/img/favicons/favicon.png"><!-- 192x192, as recommended for Android
-        http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android
-        -->
+        
+
+
+
+
+<link rel="shortcut icon" type="image/ico" href="/open-sdg-site-starter/assets/img/favicons/favicon.ico">
+<link rel="icon" type="image/png" href="/open-sdg-site-starter/assets/img/favicons/favicon.png">
+
 
         
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20210715170958">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
+        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20210915195947">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
         <link rel="stylesheet" href="https://cdn.rawgit.com/socib/Leaflet.TimeDimension/master/dist/leaflet.timedimension.control.min.css"  crossorigin=""/>
         <link rel="stylesheet" href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css'  crossorigin=""/>
         <link rel="stylesheet" href="https://bowercdn.net/c/leaflet.zoomhome-latest/dist/leaflet.zoomhome.css"  crossorigin=""/>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin=""><!-- ShareThis BEGIN --><!-- ShareThis END -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin="">
+        <link rel="stylesheet" href="https://cdn.kiprotect.com/klaro/v0.7/klaro.min.css" crossorigin=""/>
+        
 
         
 
@@ -206,7 +209,7 @@ data-event-label="high"
     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">English</span>
       <span class="language-abbreviation">en</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
-    <ul class="dropdown-menu"><li>
+    <ul class="dropdown-menu"><li class="language-option-es">
             <a href="/open-sdg-site-starter/es/test-post-1/">
               Español
             </a>
@@ -240,7 +243,7 @@ data-event-label="high"
     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">English</span>
       <span class="language-abbreviation">en</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
-    <ul class="dropdown-menu"><li>
+    <ul class="dropdown-menu"><li class="language-option-es">
             <a href="/open-sdg-site-starter/es/test-post-1/">
               Español
             </a>
@@ -311,7 +314,7 @@ data-event-label="high"
     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">English</span>
       <span class="language-abbreviation">en</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
-    <ul class="dropdown-menu"><li>
+    <ul class="dropdown-menu"><li class="language-option-es">
             <a href="/open-sdg-site-starter/es/test-post-1/">
               Español
             </a>
@@ -409,7 +412,8 @@ data-event-label="high"
     <div class="col-md-12">
       <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
         <h1 class="post-title" itemprop="name headline">Test Post 1</h1>
-        <p><time datetime="2020-01-10T00:00:00+00:00" itemprop="datePublished">Jan 10, 2020</time> • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">SDG Team</span></span></p>
+        <div class="post-header">
+          <time class="post-date" datetime="2020-01-10T00:00:00+00:00" itemprop="datePublished">Jan 10, 2020</time><ul class="post-categories"><li>International</li></ul><span class="post-author" itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">SDG Team</span></span></div>
 
         <div class="post-content" itemprop="articleBody">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra erat facilisis massa blandit, ac faucibus risus ornare. Integer convallis eu lectus et vestibulum. Quisque aliquet ante vitae consectetur tincidunt. Pellentesque ligula orci, hendrerit vel laoreet in, lacinia et justo. Proin scelerisque feugiat vestibulum. Morbi enim tortor, dignissim ac augue in, hendrerit placerat leo. Quisque turpis sapien, vestibulum at nisi nec, luctus cursus metus. Quisque imperdiet sapien eget sollicitudin maximus. Vestibulum scelerisque arcu nec leo egestas euismod. Mauris varius eget lectus nec tempor. Sed accumsan aliquam sagittis. Nunc porta ante tellus.</p>
@@ -421,18 +425,6 @@ data-event-label="high"
 <p>In quis sapien nec massa ornare cursus ac tempus magna. Curabitur ut tortor tincidunt ligula molestie efficitur. Proin condimentum leo a nulla consequat, vel maximus risus ultrices. Suspendisse ullamcorper euismod nibh sed porttitor. Pellentesque ante nulla, tempus sed ultricies blandit, sodales sed ante. Vestibulum finibus mauris et erat malesuada, placerat tristique elit sodales. Integer dapibus tempus sem elementum porttitor. Sed mauris erat, posuere eu urna quis, bibendum pharetra lectus. Fusce eleifend, leo eget sollicitudin volutpat, turpis augue blandit enim, ac ultrices neque neque in massa. Suspendisse pretium quam quis tellus sollicitudin euismod. Aenean ut augue nisi. Vivamus faucibus congue lacus ut volutpat. Curabitur nunc nisl, molestie et faucibus sed, imperdiet eget neque. Aliquam tempor nulla velit, vitae tincidunt enim mattis in. Cras at mi scelerisque, feugiat ipsum accumsan, sodales nibh.</p>
 
         </div>
-
-        
-        <ul class="post-categories">
-          
-          <li class="warning">
-            
-            International
-            
-          </li>
-          
-        </ul>
-        
       </article>
     </div>
     
@@ -492,18 +484,25 @@ data-event-label="high"
 <script src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.3/dist/html2canvas.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js"></script>
+
+
+
+
+
+
+
 <script>translations['general'] = translations['general'] || {};
     translations['general']['hide'] = 'hide';</script>
 
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20210715170958'></script>
+<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20210915195947'></script>
 
 
     
     
-    <script src="/open-sdg-site-starter/assets/js/custom.js?v=20210715170958"></script><script>
+    <script src="/open-sdg-site-starter/assets/js/custom.js?v=20210915195947"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
@@ -536,12 +535,15 @@ $(function() {
               chartTitle: domData.charttitle,
               chartTitles: domData.charttitles,
               measurementUnit: domData.measurementunit,
+              xAxisLabel: domData.xaxislabel,
               showData: domData.showdata,
               graphType: domData.graphtype,
               startValues: domData.startvalues,
               graphLimits: domData.graphlimits,
               stackedDisaggregation: domData.stackeddisaggregation,
               graphAnnotations: domData.graphannotations,
+              graphTargetLines: domData.graphtargetlines,
+              graphSeriesBreaks: domData.graphseriesbreaks,
               indicatorDownloads: domData.indicatordownloads,
               dataSchema: domData.dataschema,
               compositeBreakdownLabel: domData.compositebreakdownlabel,
@@ -570,8 +572,6 @@ $(function() {
 
 });
 </script>
-
-
 
 
 </body>

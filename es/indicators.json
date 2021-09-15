@@ -87,7 +87,7 @@
         },
         {
           "id": "1-a-1",
-          "title": "Proporción de los recursos generados a nivel interno que el gobierno asigna directamente a programas de reducción de la pobreza",
+          "title": "Total de las subvenciones de asistencia oficial para el desarrollo de todos los donantes que se centran en la reducción de la pobreza como porcentaje del ingreso nacional bruto del país receptor",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/es/1-a-1",
@@ -103,7 +103,7 @@
         },
         {
           "id": "1-b-1",
-          "title": "Proporción de los gastos públicos periódicos y de capital que se dedica a sectores que benefician de forma desproporcionada a las mujeres, los pobres y los grupos vulnerables",
+          "title": "Gasto público social en favor de los pobres",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/es/1-b-1",
@@ -151,7 +151,7 @@
         },
         {
           "id": "2-2-3",
-          "title": "global_indicators.2-2-3-title",
+          "title": "Prevalencia de la anemia en las mujeres de entre 15 y 49 años, desglosada por embarazo (porcentaje)",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/es/2-2-3",
@@ -191,7 +191,7 @@
         },
         {
           "id": "2-5-2",
-          "title": "Proporción de razas y variedades locales consideradas en riesgo de extinción, sin riesgo o con un nivel de riesgo desconocido",
+          "title": "Proporción de razas y variedades locales consideradas en riesgo de extinción",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/es/2-5-2",
@@ -335,7 +335,7 @@
         },
         {
           "id": "3-5-2",
-          "title": "Consumo nocivo de alcohol, definido según el contexto nacional como el consumo de alcohol per cápita (a partir de los 15 años de edad) durante un año civil en litros de alcohol puro",
+          "title": "Consumo de alcohol per cápita (a partir de los 15 años de edad) durante un año civil en litros de alcohol puro",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/es/3-5-2",
@@ -367,7 +367,7 @@
         },
         {
           "id": "3-8-1",
-          "title": "Cobertura de los servicios de salud esenciales (definida como la cobertura media de los servicios esenciales entre la población general y los más desfavorecidos, calculada a partir de intervenciones trazadoras como las relacionadas con la salud reproductiva, materna, neonatal e infantil, las enfermedades infecciosas, las enfermedades no transmisibles y la capacidad de los servicios y el acceso a ellos)",
+          "title": "Cobertura de los servicios de salud esenciales",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/es/3-8-1",
@@ -455,7 +455,7 @@
         },
         {
           "id": "3-d-2",
-          "title": "global_indicators.3-d-2-title",
+          "title": "Porcentaje de infecciones del torrente sanguíneo debidas a determinados organismos resistentes a los antimicrobianos seleccionados",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/es/3-d-2",
@@ -479,7 +479,7 @@
         },
         {
           "id": "4-1-2",
-          "title": "global_indicators.4-1-2-title",
+          "title": "Índice de finalización (enseñanza primaria, primer ciclo de enseñanza secundaria y segundo ciclo de enseñanza secundaria)",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/es/4-1-2",
@@ -487,7 +487,7 @@
         },
         {
           "id": "4-2-1",
-          "title": "Proporción de niños menores de 5 años cuyo desarrollo es adecuado en cuanto a la salud, el aprendizaje y el bienestar psicosocial, desglosada por sexo",
+          "title": "Proporción de niños de 24 a 59 meses cuyo desarrollo es adecuado en cuanto a la salud, el aprendizaje y el bienestar psicosocial, desglosada por sexo",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/es/4-2-1",
@@ -535,7 +535,7 @@
         },
         {
           "id": "4-7-1",
-          "title": "Grado en que i) la educación para la ciudadanía mundial y ii) la educación para el desarrollo sostenible, incluida la igualdad de género y los derechos humanos, se incorporan en todos los niveles de a) las políticas nacionales de educación, b) los planes de estudio, c) la formación del profesorado y d) la evaluación de los estudiantes",
+          "title": "Grado en que i) la educación para la ciudadanía mundial y ii) la educación para el desarrollo sostenible se incorporan en a) las políticas nacionales de educación, b) los planes de estudio, c) la formación del profesorado y d) la evaluación de los estudiantes",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/es/4-7-1",
@@ -543,7 +543,7 @@
         },
         {
           "id": "4-a-1",
-          "title": "Proporción de escuelas con acceso a a) electricidad, b) Internet con fines pedagógicos, c) computadoras con fines pedagógicos, d) infraestructura y materiales adaptados a los estudiantes con discapacidad, e) suministro básico de agua potable, f) instalaciones de saneamiento básicas separadas por sexo y g) instalaciones básicas para el lavado de manos (según las definiciones de los indicadores WASH)",
+          "title": "Proporción de escuelas que ofrecen servicios básicos, desglosada por tipo de servicio",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/es/4-a-1",
@@ -559,7 +559,7 @@
         },
         {
           "id": "4-c-1",
-          "title": "Proporción del profesorado de educación a) preescolar, b) primaria, c) secundaria inferior y d) secundaria superior que ha recibido al menos la mínima formación docente organizada previa al empleo o en el empleo (por ejemplo, formación pedagógica) exigida para impartir enseñanza a cada nivel en un país determinado",
+          "title": "Proporción de docentes con las calificaciones mínimas requeridas, por nivel educativo",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/es/4-c-1",
@@ -711,7 +711,7 @@
         },
         {
           "id": "6-3-1",
-          "title": "Proporción de aguas residuales tratadas de manera adecuada",
+          "title": "Proporción de los flujos de aguas residuales domésticas e industriales tratados de manera adecuada",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/es/6-3-1",
@@ -743,7 +743,7 @@
         },
         {
           "id": "6-5-1",
-          "title": "Grado de implementación de la gestión integrada de los recursos hídricos (0‐100)",
+          "title": "Grado de gestión integrada de los recursos hídricos",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/es/6-5-1",
@@ -831,7 +831,7 @@
         },
         {
           "id": "7-b-1",
-          "title": "Inversiones en eficiencia energética en proporción al PIB y a la cuantía de la inversión extranjera directa en transferencias financieras destinadas a infraestructura y tecnología para servicios de desarrollo sostenible",
+          "title": "Capacidad instalada de generación de energía renovable en los países en desarrollo (expresada en vatios per cápita)",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/es/7-b-1",
@@ -863,7 +863,7 @@
         },
         {
           "id": "8-3-1",
-          "title": "Proporción de empleo informal en el sector no agrícola, desglosada por sexo",
+          "title": "Proporción de empleo informal con respecto al empleo total, desglosada por sector y sexo",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/es/8-3-1",
@@ -887,7 +887,7 @@
         },
         {
           "id": "8-5-1",
-          "title": "Ingreso medio por hora de empleadas y empleados, desglosado por ocupación, edad y personas con discapacidad",
+          "title": "Ingreso medio por hora de las personas empleadas, desglosado por sexo, edad, ocupación y personas con discapacidad",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/es/8-5-1",
@@ -919,7 +919,7 @@
         },
         {
           "id": "8-8-1",
-          "title": "Tasas de frecuencia de las lesiones ocupacionales mortales y no mortales, desglosadas por sexo y estatus migratorio",
+          "title": "Lesiones ocupacionales mortales y no mortales por cada 100.000 trabajadores, desglosadas por sexo y estatus migratorio",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/es/8-8-1",
@@ -1111,7 +1111,7 @@
         },
         {
           "id": "10-4-1",
-          "title": "Proporción del PIB generada por el trabajo, que comprende los salarios y las transferencias de protección social",
+          "title": "Proporción del PIB generada por el trabajo",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/es/10-4-1",
@@ -1119,7 +1119,7 @@
         },
         {
           "id": "10-4-2",
-          "title": "global_indicators.10-4-2-title",
+          "title": "Efecto redistributivo de la política fiscal",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/es/10-4-2",
@@ -1143,7 +1143,7 @@
         },
         {
           "id": "10-7-1",
-          "title": "Costo de la contratación sufragado por el empleado en proporción a los ingresos anuales percibidos en el país de destino",
+          "title": "Costo de la contratación sufragado por el empleado en proporción a los ingresos mensuales percibidos en el país de destino",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/es/10-7-1",
@@ -1151,7 +1151,7 @@
         },
         {
           "id": "10-7-2",
-          "title": "Número de países que han aplicado políticas migratorias bien gestionadas",
+          "title": "Número de países que han aplicado políticas migratorias bien gestionadas que facilitan la migración y la movilidad ordenadas, seguras, regulares y responsables de las personas",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/es/10-7-2",
@@ -1159,7 +1159,7 @@
         },
         {
           "id": "10-7-3",
-          "title": "global_indicators.10-7-3-title",
+          "title": "Número de personas que murieron o desaparecieron en el proceso de migración hacia un destino internacional",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/es/10-7-3",
@@ -1167,7 +1167,7 @@
         },
         {
           "id": "10-7-4",
-          "title": "global_indicators.10-7-4-title",
+          "title": "Proporción de la población integrada por refugiados, desglosada por país de origen",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/es/10-7-4",
@@ -1239,7 +1239,7 @@
         },
         {
           "id": "11-4-1",
-          "title": "Total de gastos (públicos y privados) per cápita destinados a la preservación, protección y conservación de todo el patrimonio cultural y natural, desglosado por tipo de patrimonio (cultural, natural, mixto y reconocido por el Centro del Patrimonio Mundial), nivel de gobierno (nacional, regional y local o municipal), tipo de gastos (gastos de funcionamiento o inversiones) y tipo de financiación privada (donaciones en especie, financiación procedente del sector privado sin fines de lucro y patrocinio)",
+          "title": "Total de gastos per cápita destinados a la preservación, protección y conservación de todo el patrimonio cultural y natural, desglosado por fuente de financiación (pública y privada), tipo de patrimonio (cultural y natural) y nivel de gobierno (nacional, regional y local/municipal)",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/es/11-4-1",
@@ -1263,7 +1263,7 @@
         },
         {
           "id": "11-6-1",
-          "title": "Proporción de desechos sólidos urbanos recogidos periódicamente y con una descarga final adecuada respecto del total de desechos sólidos urbanos generados, desglosada por ciudad",
+          "title": "Proporción de residuos sólidos municipales recogidos y administrados en instalaciones controladas con respecto al total de residuos municipales generados, desglosada por ciudad",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/es/11-6-1",
@@ -1295,7 +1295,7 @@
         },
         {
           "id": "11-a-1",
-          "title": "Proporción de la población residente en ciudades que aplican planes de desarrollo urbano y regional que tienen en cuenta las previsiones demográficas y las necesidades de recursos, desglosada por tamaño de ciudad",
+          "title": "Número de países que cuentan con políticas urbanas nacionales o planes de desarrollo regionales que a) responden a la dinámica de la población, b) garantizan un desarrollo territorial equilibrado y c) aumentan el margen fiscal local",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/es/11-a-1",
@@ -1327,7 +1327,7 @@
         
         {
           "id": "12-1-1",
-          "title": "Número de países que incluyen como prioridad o meta en las políticas nacionales planes de acción nacionales sobre el consumo y la producción sostenibles",
+          "title": "Número de países que elaboran, adoptan o aplican instrumentos de política destinados a apoyar la transición hacia modalidades de consumo y producción sostenibles",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/es/12-1-1",
@@ -1351,7 +1351,7 @@
         },
         {
           "id": "12-3-1",
-          "title": "Índice mundial de pérdidas de alimentos",
+          "title": "a) Índice de pérdidas de alimentos y b) índice de desperdicio de alimentos",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/es/12-3-1",
@@ -1367,7 +1367,7 @@
         },
         {
           "id": "12-4-2",
-          "title": "Desechos peligrosos generados per cápita y proporción de desechos peligrosos tratados, desglosados por tipo de tratamiento",
+          "title": "a) Desechos peligrosos generados per cápita y b) proporción de desechos peligrosos tratados, desglosados por tipo de tratamiento",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/es/12-4-2",
@@ -1391,7 +1391,7 @@
         },
         {
           "id": "12-7-1",
-          "title": "Número de países que aplican políticas y planes de acción sostenibles en materia de adquisiciones públicas",
+          "title": "Grado de aplicación de políticas y planes de acción sostenibles en materia de adquisiciones públicas",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/es/12-7-1",
@@ -1399,7 +1399,7 @@
         },
         {
           "id": "12-8-1",
-          "title": "Grado en que i) la educación para la ciudadanía mundial y ii) la educación para el desarrollo sostenible (incluida la educación sobre el cambio climático) se incorporan en a) las políticas nacionales de educación, b) los planes de estudio, c) la formación del profesorado y d) la evaluación de los estudiantes",
+          "title": "Grado en que i) la educación para la ciudadanía mundial y ii) la educación para el desarrollo sostenible se incorporan en a) las políticas nacionales de educación, b) los planes de estudio, c) la formación del profesorado y d) la evaluación de los estudiantes",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/es/12-8-1",
@@ -1407,7 +1407,7 @@
         },
         {
           "id": "12-a-1",
-          "title": "Cantidad de apoyo en materia de investigación y desarrollo prestado a los países en desarrollo para el consumo y la producción sostenibles y las tecnologías ecológicamente racionales",
+          "title": "Capacidad instalada de generación de energía renovable en los países en desarrollo (expresada en vatios per cápita)",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/es/12-a-1",
@@ -1415,7 +1415,7 @@
         },
         {
           "id": "12-b-1",
-          "title": "Número de estrategias o políticas de turismo sostenible y de planes de acción aplicados que incluyen instrumentos de seguimiento y evaluación convenidos",
+          "title": "Aplicación de instrumentos normalizados de contabilidad para hacer un seguimiento de los aspectos económicos y ambientales de la sostenibilidad del turismo",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/es/12-b-1",
@@ -1423,7 +1423,7 @@
         },
         {
           "id": "12-c-1",
-          "title": "Cuantía de los subsidios a los combustibles fósiles por unidad de PIB (producción y consumo) y en proporción al total de los gastos nacionales en combustibles fósiles",
+          "title": "Cantidad de subsidios a los combustibles fósiles por unidad de PIB (producción y consumo)",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/es/12-c-1",
@@ -1463,7 +1463,7 @@
         },
         {
           "id": "13-2-1",
-          "title": "Número de países que han comunicado el establecimiento o la puesta en marcha de una política, estrategia o plan integrado que aumente su capacidad para adaptarse a los efectos adversos del cambio climático y que promueven la resiliencia al clima y un desarrollo con bajas emisiones de gases de efecto invernadero sin comprometer por ello la producción de alimentos (por ejemplo, un plan nacional de adaptación, una contribución determinada a nivel nacional, una comunicación nacional o un informe bienal de actualización)",
+          "title": "Número de países con contribuciones determinadas a nivel nacional, estrategias a largo plazo y planes y estrategias nacionales de adaptación y estrategias indicadas en comunicaciones sobre la adaptación y comunicaciones nacionales",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/es/13-2-1",
@@ -1471,7 +1471,7 @@
         },
         {
           "id": "13-2-2",
-          "title": "global_indicators.13-2-2-title",
+          "title": "Emisiones totales de gases de efecto invernadero por año",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/es/13-2-2",
@@ -1479,7 +1479,7 @@
         },
         {
           "id": "13-3-1",
-          "title": "Número de países que han incorporado la mitigación del cambio climático, la adaptación a él, la reducción de sus efectos y la alerta temprana en los planes de estudios de la enseñanza primaria, secundaria y terciaria",
+          "title": "Grado en que i) la educación para la ciudadanía mundial y ii) la educación para el desarrollo sostenible se incorporan en a) las políticas nacionales de educación, b) los planes de estudio, c) la formación del profesorado y d) la evaluación de los estudiantes",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/es/13-3-1",
@@ -1487,7 +1487,7 @@
         },
         {
           "id": "13-a-1",
-          "title": "Suma anual, en dólares de los Estados Unidos, movilizada entre 2020 y 2025 como parte del compromiso de llegar a 100.000 millones de dólares",
+          "title": "Cantidades proporcionadas y movilizadas en dólares de los Estados Unidos al año en relación con el objetivo actual mantenido de movilización colectiva de 100.000 millones de dólares de aquí a 2025",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/es/13-a-1",
@@ -1495,7 +1495,7 @@
         },
         {
           "id": "13-b-1",
-          "title": "Número de países menos adelantados y pequeños Estados insulares en desarrollo que reciben apoyo especializado, y cantidad de apoyo, en particular financiero, tecnológico y de creación de capacidad, para los mecanismos de desarrollo de la capacidad de planificación y gestión eficaces en relación con el cambio climático, incluidos los centrados en las mujeres, los jóvenes y las comunidades locales y marginadas",
+          "title": "Número de países menos adelantados y pequeños Estados insulares en desarrollo con contribuciones determinadas a nivel nacional, estrategias a largo plazo y planes, estrategias nacionales de adaptación y estrategias indicadas en comunicaciones sobre la adaptación y comunicaciones nacionales",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/es/13-b-1",
@@ -1511,7 +1511,7 @@
         
         {
           "id": "14-1-1",
-          "title": "Índice de eutrofización costera y densidad de detritos plásticos flotantes",
+          "title": "a) Índice de eutrofización costera; y b) densidad de detritos plásticos",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/es/14-1-1",
@@ -1519,7 +1519,7 @@
         },
         {
           "id": "14-2-1",
-          "title": "Proporción de zonas económicas exclusivas nacionales gestionadas mediante enfoques basados en los ecosistemas",
+          "title": "Número de países que aplican enfoques basados en los ecosistemas para gestionar las zonas marinas",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/es/14-2-1",
@@ -1551,7 +1551,7 @@
         },
         {
           "id": "14-6-1",
-          "title": "Progresos realizados por los países en el grado de aplicación de los instrumentos internacionales cuyo objetivo es combatir la pesca ilegal, no declarada y no reglamentada",
+          "title": "Grado de aplicación de instrumentos internacionales cuyo objetivo es combatir la pesca ilegal, no declarada y no reglamentada",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/es/14-6-1",
@@ -1575,7 +1575,7 @@
         },
         {
           "id": "14-b-1",
-          "title": "Progresos realizados por los países en el grado de aplicación de un marco jurídico, reglamentario, normativo o institucional que reconozca y proteja los derechos de acceso para la pesca en pequeña escala",
+          "title": "Grado de aplicación de un marco jurídico, reglamentario, normativo o institucional que reconozca y proteja los derechos de acceso para la pesca en pequeña escala",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/es/14-b-1",
@@ -1679,7 +1679,7 @@
         },
         {
           "id": "15-9-1",
-          "title": "Avances en el logro de las metas nacionales establecidas de conformidad con la segunda Meta de Aichi para la Diversidad Biológica del Plan Estratégico para la Diversidad Biológica 2011‐2020",
+          "title": "a) Número de países que han establecido metas nacionales de conformidad con la segunda Meta de Aichi del Plan Estratégico para la Diversidad Biológica 2011-2020 o metas similares en sus estrategias y planes de acción nacionales en materia de diversidad biológica y han informado de sus progresos en el logro de estas metas; y b) integración de la biodiversidad en los sistemas nacionales de contabilidad y presentación de informes, definidos como implementación del Sistema de Contabilidad Ambiental y Económica",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/es/15-9-1",
@@ -1687,7 +1687,7 @@
         },
         {
           "id": "15-a-1",
-          "title": "Asistencia oficial para el desarrollo y gasto público destinados a la conservación y el uso sostenible de la biodiversidad y los ecosistemas",
+          "title": "a) Asistencia oficial para el desarrollo destinada concretamente a la conservación y el uso sostenible de la biodiversidad y b) ingresos generados y financiación movilizada mediante instrumentos económicos pertinentes para la biodiversidad",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/es/15-a-1",
@@ -1695,7 +1695,7 @@
         },
         {
           "id": "15-b-1",
-          "title": "Asistencia oficial para el desarrollo y gasto público destinados a la conservación y el uso sostenible de la biodiversidad y los ecosistemas",
+          "title": "a) Asistencia oficial para el desarrollo destinada concretamente a la conservación y el uso sostenible de la biodiversidad y b) ingresos generados y financiación movilizada mediante instrumentos económicos pertinentes para la biodiversidad",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/es/15-b-1",
@@ -1791,7 +1791,7 @@
         },
         {
           "id": "16-3-3",
-          "title": "global_indicators.16-3-3-title",
+          "title": "Proporción de la población que se ha visto implicada en alguna controversia en los dos últimos años y ha accedido a algún mecanismo oficial u oficioso de solución de controversias, desglosada por tipo de mecanismo",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/es/16-3-3",
@@ -1847,7 +1847,7 @@
         },
         {
           "id": "16-7-1",
-          "title": "Proporciones de plazas (desglosadas por sexo, edad, personas con discapacidad y grupos de población) en las instituciones públicas (asambleas legislativas nacionales y locales, administración pública, poder judicial), en comparación con la distribución nacional",
+          "title": "Proporciones de plazas en las instituciones nacionales y locales, entre ellas: a) las asambleas legislativas, b) la administración pública y c) el poder judicial, en comparación con la distribución nacional, desglosadas por sexo, edad, personas con discapacidad y grupos de población",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/es/16-7-1",
@@ -1943,7 +1943,7 @@
         },
         {
           "id": "17-3-1",
-          "title": "Inversión extranjera directa, asistencia oficial para el desarrollo y cooperación Sur-Sur en proporción al presupuesto nacional total",
+          "title": "Inversión extranjera directa, asistencia oficial para el desarrollo y cooperación Sur-Sur como proporción del ingreso nacional bruto",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/es/17-3-1",
@@ -1967,7 +1967,7 @@
         },
         {
           "id": "17-5-1",
-          "title": "Número de países que adoptan y aplican sistemas de promoción de las inversiones en favor de los países menos adelantados",
+          "title": "Número de países que adoptan y aplican sistemas de promoción de las inversiones en favor de los países en desarrollo, entre ellos los países menos adelantados",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/es/17-5-1",
@@ -1975,7 +1975,7 @@
         },
         {
           "id": "17-6-1",
-          "title": "Número de acuerdos y programas de cooperación en materia de ciencia o tecnología suscritos por los países, desglosado por tipo de cooperación",
+          "title": "Número de abonados a Internet de banda ancha fija por cada 100 habitantes, desglosado por velocidad",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/es/17-6-1",
@@ -1983,7 +1983,7 @@
         },
         {
           "id": "17-7-1",
-          "title": "Total de los fondos aprobados para los países en desarrollo a fin de promover el desarrollo, la transferencia y la difusión de tecnologías ecológicamente racionales",
+          "title": "Total de los fondos destinados a los países en desarrollo a fin de promover el desarrollo, la transferencia y la difusión de tecnologías ecológicamente racionales",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/es/17-7-1",
@@ -2023,7 +2023,7 @@
         },
         {
           "id": "17-12-1",
-          "title": "Promedio de los aranceles que enfrentan los países en desarrollo, los países menos adelantados y los pequeños Estados insulares en desarrollo",
+          "title": "Promedio ponderado de los aranceles que enfrentan los países en desarrollo, los países menos adelantados y los pequeños Estados insulares en desarrolloPromedio de los aranceles que enfrentan los países en desarrollo, los países menos adelantados y los pequeños Estados insulares en desarrollo",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/es/17-12-1",
@@ -2063,7 +2063,7 @@
         },
         {
           "id": "17-17-1",
-          "title": "Suma en dólares de los Estados Unidos prometida a las: a) alianzas público-privadas y b) alianzas con la sociedad civil",
+          "title": "Suma en dólares de los Estados Unidos prometida a las alianzas público-privadas centradas en la infraestructura",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/es/17-17-1",
@@ -2071,7 +2071,7 @@
         },
         {
           "id": "17-18-1",
-          "title": "Proporción de indicadores de desarrollo sostenible producidos a nivel nacional, con pleno desglose cuando sea pertinente para la meta, de conformidad con los Principios Fundamentales de las Estadísticas Oficiales",
+          "title": "Indicador de capacidad estadística para el seguimiento de los Objetivos de Desarrollo Sostenible",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/es/17-18-1",

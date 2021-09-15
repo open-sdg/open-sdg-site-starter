@@ -118,26 +118,29 @@ var translations = {
         <script src="/open-sdg-site-starter/assets/js/lib/classList.js"></script>
         <![endif]-->
 
-        <!-- Favicons ================================================== -->
-        <!-- 128x128 -->
-        <link rel="shortcut icon" type="image/ico" href="/open-sdg-site-starter/assets/img/favicons/favicon.ico">
-        <link rel="icon" type="image/png" href="/open-sdg-site-starter/assets/img/favicons/favicon.png"><!-- 192x192, as recommended for Android
-        http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android
-        -->
+        
+
+
+
+
+<link rel="shortcut icon" type="image/ico" href="/open-sdg-site-starter/assets/img/favicons/favicon.ico">
+<link rel="icon" type="image/png" href="/open-sdg-site-starter/assets/img/favicons/favicon.png">
+
 
         
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20210715170958">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
+        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20210915195947">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
         <link rel="stylesheet" href="https://cdn.rawgit.com/socib/Leaflet.TimeDimension/master/dist/leaflet.timedimension.control.min.css"  crossorigin=""/>
         <link rel="stylesheet" href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css'  crossorigin=""/>
         <link rel="stylesheet" href="https://bowercdn.net/c/leaflet.zoomhome-latest/dist/leaflet.zoomhome.css"  crossorigin=""/>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin=""><!-- ShareThis BEGIN --><!-- ShareThis END -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin="">
+        <link rel="stylesheet" href="https://cdn.kiprotect.com/klaro/v0.7/klaro.min.css" crossorigin=""/>
+        
 
         
 
@@ -206,7 +209,7 @@ data-event-label="high"
     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">English</span>
       <span class="language-abbreviation">en</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
-    <ul class="dropdown-menu"><li>
+    <ul class="dropdown-menu"><li class="language-option-es">
             <a href="/open-sdg-site-starter/es/6/">
               Español
             </a>
@@ -240,7 +243,7 @@ data-event-label="high"
     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">English</span>
       <span class="language-abbreviation">en</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
-    <ul class="dropdown-menu"><li>
+    <ul class="dropdown-menu"><li class="language-option-es">
             <a href="/open-sdg-site-starter/es/6/">
               Español
             </a>
@@ -311,7 +314,7 @@ data-event-label="high"
     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">English</span>
       <span class="language-abbreviation">en</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
-    <ul class="dropdown-menu"><li>
+    <ul class="dropdown-menu"><li class="language-option-es">
             <a href="/open-sdg-site-starter/es/6/">
               Español
             </a>
@@ -448,13 +451,14 @@ data-event-label="high"
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicator</span> 6.1.1</span>
             </h4>
+            
             <span class="indicator-name"><a href="/open-sdg-site-starter/6-1-1">Proportion of population using safely managed drinking water services</a></span>
             <span class="sr-only">Indicator status</span>
             
 
 
 <span class="status notstarted">
-    Exploring data sources
+    <span class="status-inner">Exploring data sources</span>
 </span>
 
             
@@ -464,6 +468,7 @@ data-event-label="high"
     </span>
 
 
+            
           </div>
         
       </div>
@@ -484,13 +489,14 @@ data-event-label="high"
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicator</span> 6.2.1</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/6-2-1">Proportion of population using safely managed sanitation services, including a handwashing facility with soap and water</a></span>
+            
+            <span class="indicator-name"><a href="/open-sdg-site-starter/6-2-1">Proportion of population using (a) safely managed sanitation services and (b) a hand-washing facility with soap and water</a></span>
             <span class="sr-only">Indicator status</span>
             
 
 
 <span class="status notstarted">
-    Exploring data sources
+    <span class="status-inner">Exploring data sources</span>
 </span>
 
             
@@ -500,6 +506,7 @@ data-event-label="high"
     </span>
 
 
+            
           </div>
         
       </div>
@@ -520,13 +527,14 @@ data-event-label="high"
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicator</span> 6.3.1</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/6-3-1">Proportion of wastewater safely treated</a></span>
+            
+            <span class="indicator-name"><a href="/open-sdg-site-starter/6-3-1">Proportion of domestic and industrial wastewater flows safely treated</a></span>
             <span class="sr-only">Indicator status</span>
             
 
 
 <span class="status notstarted">
-    Exploring data sources
+    <span class="status-inner">Exploring data sources</span>
 </span>
 
             
@@ -536,6 +544,7 @@ data-event-label="high"
     </span>
 
 
+            
           </div>
         
 
@@ -547,13 +556,14 @@ data-event-label="high"
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicator</span> 6.3.2</span>
             </h4>
+            
             <span class="indicator-name"><a href="/open-sdg-site-starter/6-3-2">Proportion of bodies of water with good ambient water quality</a></span>
             <span class="sr-only">Indicator status</span>
             
 
 
 <span class="status notstarted">
-    Exploring data sources
+    <span class="status-inner">Exploring data sources</span>
 </span>
 
             
@@ -563,6 +573,7 @@ data-event-label="high"
     </span>
 
 
+            
           </div>
         
       </div>
@@ -583,13 +594,14 @@ data-event-label="high"
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicator</span> 6.4.1</span>
             </h4>
+            
             <span class="indicator-name"><a href="/open-sdg-site-starter/6-4-1">Change in water-use efficiency over time</a></span>
             <span class="sr-only">Indicator status</span>
             
 
 
 <span class="status notstarted">
-    Exploring data sources
+    <span class="status-inner">Exploring data sources</span>
 </span>
 
             
@@ -599,6 +611,7 @@ data-event-label="high"
     </span>
 
 
+            
           </div>
         
 
@@ -610,13 +623,14 @@ data-event-label="high"
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicator</span> 6.4.2</span>
             </h4>
+            
             <span class="indicator-name"><a href="/open-sdg-site-starter/6-4-2">Level of water stress: freshwater withdrawal as a proportion of available freshwater resources</a></span>
             <span class="sr-only">Indicator status</span>
             
 
 
 <span class="status notstarted">
-    Exploring data sources
+    <span class="status-inner">Exploring data sources</span>
 </span>
 
             
@@ -626,6 +640,7 @@ data-event-label="high"
     </span>
 
 
+            
           </div>
         
       </div>
@@ -646,13 +661,14 @@ data-event-label="high"
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicator</span> 6.5.1</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/6-5-1">Degree of integrated water resources management implementation (0 to 100)</a></span>
+            
+            <span class="indicator-name"><a href="/open-sdg-site-starter/6-5-1">Degree of integrated water resources management</a></span>
             <span class="sr-only">Indicator status</span>
             
 
 
 <span class="status notstarted">
-    Exploring data sources
+    <span class="status-inner">Exploring data sources</span>
 </span>
 
             
@@ -662,6 +678,7 @@ data-event-label="high"
     </span>
 
 
+            
           </div>
         
 
@@ -673,13 +690,14 @@ data-event-label="high"
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicator</span> 6.5.2</span>
             </h4>
+            
             <span class="indicator-name"><a href="/open-sdg-site-starter/6-5-2">Proportion of transboundary basin area with an operational arrangement for water cooperation</a></span>
             <span class="sr-only">Indicator status</span>
             
 
 
 <span class="status notstarted">
-    Exploring data sources
+    <span class="status-inner">Exploring data sources</span>
 </span>
 
             
@@ -689,6 +707,7 @@ data-event-label="high"
     </span>
 
 
+            
           </div>
         
       </div>
@@ -709,13 +728,14 @@ data-event-label="high"
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicator</span> 6.6.1</span>
             </h4>
+            
             <span class="indicator-name"><a href="/open-sdg-site-starter/6-6-1">Change in the extent of water-related ecosystems over time</a></span>
             <span class="sr-only">Indicator status</span>
             
 
 
 <span class="status notstarted">
-    Exploring data sources
+    <span class="status-inner">Exploring data sources</span>
 </span>
 
             
@@ -725,6 +745,7 @@ data-event-label="high"
     </span>
 
 
+            
           </div>
         
       </div>
@@ -745,13 +766,14 @@ data-event-label="high"
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicator</span> 6.a.1</span>
             </h4>
+            
             <span class="indicator-name"><a href="/open-sdg-site-starter/6-a-1">Amount of water- and sanitation-related official development assistance that is part of a government-coordinated spending plan</a></span>
             <span class="sr-only">Indicator status</span>
             
 
 
 <span class="status notstarted">
-    Exploring data sources
+    <span class="status-inner">Exploring data sources</span>
 </span>
 
             
@@ -761,6 +783,7 @@ data-event-label="high"
     </span>
 
 
+            
           </div>
         
       </div>
@@ -781,13 +804,14 @@ data-event-label="high"
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicator</span> 6.b.1</span>
             </h4>
+            
             <span class="indicator-name"><a href="/open-sdg-site-starter/6-b-1">Proportion of local administrative units with established and operational policies and procedures for participation of local communities in water and sanitation management</a></span>
             <span class="sr-only">Indicator status</span>
             
 
 
 <span class="status notstarted">
-    Exploring data sources
+    <span class="status-inner">Exploring data sources</span>
 </span>
 
             
@@ -797,6 +821,7 @@ data-event-label="high"
     </span>
 
 
+            
           </div>
         
       </div>
@@ -854,18 +879,25 @@ data-event-label="high"
 <script src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.3/dist/html2canvas.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js"></script>
+
+
+
+
+
+
+
 <script>translations['general'] = translations['general'] || {};
     translations['general']['hide'] = 'hide';</script>
 
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20210715170958'></script>
+<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20210915195947'></script>
 
 
     
     
-    <script src="/open-sdg-site-starter/assets/js/custom.js?v=20210715170958"></script><script>
+    <script src="/open-sdg-site-starter/assets/js/custom.js?v=20210915195947"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
@@ -898,12 +930,15 @@ $(function() {
               chartTitle: domData.charttitle,
               chartTitles: domData.charttitles,
               measurementUnit: domData.measurementunit,
+              xAxisLabel: domData.xaxislabel,
               showData: domData.showdata,
               graphType: domData.graphtype,
               startValues: domData.startvalues,
               graphLimits: domData.graphlimits,
               stackedDisaggregation: domData.stackeddisaggregation,
               graphAnnotations: domData.graphannotations,
+              graphTargetLines: domData.graphtargetlines,
+              graphSeriesBreaks: domData.graphseriesbreaks,
               indicatorDownloads: domData.indicatordownloads,
               dataSchema: domData.dataschema,
               compositeBreakdownLabel: domData.compositebreakdownlabel,
@@ -932,8 +967,6 @@ $(function() {
 
 });
 </script>
-
-
 
 
 </body>

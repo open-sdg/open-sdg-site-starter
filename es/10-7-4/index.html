@@ -107,7 +107,7 @@ var translations = {
         
         Indicador 10.7.4 -
         
-        global_indicators.10-7-4-title - Indicadores para los Objetivos de Desarrollo Sostenible
+        Proporción de la población integrada por refugiados, desglosada por país de origen - Indicadores para los Objetivos de Desarrollo Sostenible
     </title>
 
 
@@ -123,26 +123,29 @@ var translations = {
         <script src="/open-sdg-site-starter/assets/js/lib/classList.js"></script>
         <![endif]-->
 
-        <!-- Favicons ================================================== -->
-        <!-- 128x128 -->
-        <link rel="shortcut icon" type="image/ico" href="/open-sdg-site-starter/assets/img/favicons/favicon.ico">
-        <link rel="icon" type="image/png" href="/open-sdg-site-starter/assets/img/favicons/favicon.png"><!-- 192x192, as recommended for Android
-        http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android
-        -->
+        
+
+
+
+
+<link rel="shortcut icon" type="image/ico" href="/open-sdg-site-starter/assets/img/favicons/favicon.ico">
+<link rel="icon" type="image/png" href="/open-sdg-site-starter/assets/img/favicons/favicon.png">
+
 
         
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20210715170958">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
+        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20210915195947">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
         <link rel="stylesheet" href="https://cdn.rawgit.com/socib/Leaflet.TimeDimension/master/dist/leaflet.timedimension.control.min.css"  crossorigin=""/>
         <link rel="stylesheet" href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css'  crossorigin=""/>
         <link rel="stylesheet" href="https://bowercdn.net/c/leaflet.zoomhome-latest/dist/leaflet.zoomhome.css"  crossorigin=""/>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin=""><!-- ShareThis BEGIN --><!-- ShareThis END -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin="">
+        <link rel="stylesheet" href="https://cdn.kiprotect.com/klaro/v0.7/klaro.min.css" crossorigin=""/>
+        
 
         
 
@@ -153,7 +156,7 @@ layout-indicator
 <!-- <div class="container"> -->
 
 
-<script>translations['header'] = {"alpha":"Alfa","default_contrast":"estándar contraste","disable_high_contrast":"Desactivar alto contraste","disclaimer":"Este es un sitio web de desarrollo. Agradecemos sus <a href=\"mailto:%email_address\">comentarios</a>.","enable_high_contrast":"Habilitar alto contraste","high_contrast":"alto contraste","skip_link":"Saltar al contenido principal","tag_line":"17 Metas para transformar nuestro mundo","toggle_menu":"Menú de alternancia. Haga clic para ampliar o reducir el menú.","toggle_search":"Barra de búsqueda. Haga clic para ampliar o reducir la barra de búsqueda."};</script>
+<script>translations['header'] = {"alpha":"Alfa","default_contrast":"Contraste estándar","disable_high_contrast":"Desactivar alto contraste","disclaimer":"Este es un sitio web de desarrollo. Agradecemos sus <a href=\"mailto:%email_address\">comentarios</a>.","enable_high_contrast":"Habilitar alto contraste","high_contrast":"Alto contraste","skip_link":"Saltar al contenido principal","tag_line":"17 Objetivos para transformar nuestro mundo","toggle_menu":"Menú de alternancia. Haga clic para ampliar o reducir el menú.","toggle_search":"Barra de búsqueda. Haga clic para ampliar o reducir la barra de búsqueda."};</script>
 
 <a class="sr-only sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Saltar al contenido principal</a>
 <div id="disclaimer">
@@ -172,7 +175,7 @@ layout-indicator
 
     <div class="logo-and-mobile-widgets">
       <a class="navbar-brand" href="/open-sdg-site-starter/es/" id="home">
-    <img src="/open-sdg-site-starter/assets/img/SDG_logo.png" alt="Objetivos de Desarrollo Sostenible - 17 Metas para transformar nuestro mundo" />
+    <img src="/open-sdg-site-starter/assets/img/SDG_logo.png" alt="Objetivos de Desarrollo Sostenible - 17 Objetivos para transformar nuestro mundo" />
 </a>
       <div class="mobile-widgets">
     <ul id='accessibility-nav' class='contrast-switcher'>
@@ -211,7 +214,7 @@ data-event-label="high"
     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">Español</span>
       <span class="language-abbreviation">es</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
-    <ul class="dropdown-menu"><li>
+    <ul class="dropdown-menu"><li class="language-option-en">
             <a href="/open-sdg-site-starter/10-7-4/">
               English
             </a>
@@ -245,7 +248,7 @@ data-event-label="high"
     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">Español</span>
       <span class="language-abbreviation">es</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
-    <ul class="dropdown-menu"><li>
+    <ul class="dropdown-menu"><li class="language-option-en">
             <a href="/open-sdg-site-starter/10-7-4/">
               English
             </a>
@@ -294,7 +297,7 @@ data-event-label="high"
         aria-haspopup="true">
         <button data-target="menu-mobile" aria-expanded="false">Menú</button>
         <ul class="nav navbar-nav menu-target contrast-switcher" id="menu-mobile"><li class="nav-link ">
-    <a href="/open-sdg-site-starter/es/goals">Metas</a>
+    <a href="/open-sdg-site-starter/es/goals">Objetivos</a>
 </li><li class="nav-link ">
     <a href="/open-sdg-site-starter/es/reporting-status">Estado de informes</a>
 </li><li class="nav-link ">
@@ -316,7 +319,7 @@ data-event-label="high"
     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">Español</span>
       <span class="language-abbreviation">es</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
-    <ul class="dropdown-menu"><li>
+    <ul class="dropdown-menu"><li class="language-option-en">
             <a href="/open-sdg-site-starter/10-7-4/">
               English
             </a>
@@ -375,7 +378,7 @@ data-event-label="high"
     </li>
 </ul>
       <ul class="nav navbar-nav menu-target " id="menu"><li class="nav-link ">
-    <a href="/open-sdg-site-starter/es/goals">Metas</a>
+    <a href="/open-sdg-site-starter/es/goals">Objetivos</a>
 </li><li class="nav-link ">
     <a href="/open-sdg-site-starter/es/reporting-status">Estado de informes</a>
 </li><li class="nav-link ">
@@ -439,7 +442,7 @@ data-event-label="high"
 </script>
 
 <script type="text/template" id="units_template">
-  <% if(units.length) { %>
+  
     <h4>Unidad de medida</h4>
     <fieldset>
       <legend class="sr-only">Unidad de medida</legend>
@@ -448,11 +451,11 @@ data-event-label="high"
         <label><input type="radio" name="unit" value="<%=unitsItem%>" tabindex=0 <%=checked ? 'checked' : ''%> /> <%=translations.t(unitsItem)%></label>
       <% }); %>
     </fieldset>
-  <% } %>
+  
 </script>
 
 <script type="text/template" id="series_template">
-  <% if(serieses.length) { %>
+  
     <h4>Serie</h4>
     <fieldset>
       <legend class="sr-only">Serie</legend>
@@ -461,10 +464,10 @@ data-event-label="high"
         <label><input type="radio" name="series" value="<%=seriesItem%>" tabindex=0 <%=checked ? 'checked' : ''%> /> <%=translations.t(seriesItem)%></label>
       <% }); %>
     </fieldset>
-  <% } %>
+  
 </script>
 
-<script>translations['indicator'] = {"annotation_2030_target":"Objetivo 2030","announce_data_added":"Gráfico y tabla actualizados para incluir los datos.","announce_data_not_available":"El gráfico y la tabla no muestran datos.","announce_data_removed":"Gráfico y tabla actualizados para excluir los datos.","chart":"Gráfico","chart_annotation":"Anotación en el gráfico","clear_all":"Limpiar todo","clear_selections":"Borrar selecciones","data_keyboard_navigation":"Pulse Enter para navegar por los puntos de datos con las teclas de flecha izquierda y derecha.","data_not_available":"Esta información no está disponible. Elija datos alternativos para mostrar.","data_tabular_alternative":"Para la alternativa de datos tabulares, véase la pestaña Tabla.","dataset_size_warning":"Hay demasiados conjuntos de datos para mostrar en el gráfico. No todo se mostrará hasta que elimine algunas selecciones.","download_chart":"Descargar CSV de gráfico","download_chart_image":"Descargar imagen del gráfico","download_chart_image_title":"Descargar gráfico como imagen","download_csv":"Descargar CSV","download_csv_title":"Descargar como CSV","download_geojson":"Descargar GeoJSON","download_geojson_title":"Descargar como GeoJSON","download_headline":"Descargar CSV global","download_headline_title":"Descargar datos globales como CSV","download_source":"Descargar CSV fuente","download_source_sdmx":"Descargar SDMX fuente","download_source_sdmx_title":"Descargar los datos fuente como SDMX","download_source_title":"Descargar los datos fuente como CSV","download_table":"Descargar la tabla CSV","edit":"Editar","edit_configuration":"Editar la configuración","edit_data":"Editar datos","edit_metadata":"Editar metadatos","footnote":"Nota","geographical_area":"Área geográfica","global_metadata":"Metadatos globales","global_metadata_blurb":"Esta tabla proporciona información sobre los metadatos para los indicadores de los ODS tal como los define la Comisión de Estadística de la ONU. La <a href=\"https://unstats.un.org/sdgs/metadata/\">División de Estadística de las Naciones Unidas proporciona</a> los metadatos globales completos .","legend_help":"Haga clic en la leyenda para eliminar líneas individuales del gráfico.","loading":"Cargando","loading_map":"Cargando mapa","map":"Mapa","map_search":"Buscar","map_search_hide":"ocultar búsqueda","map_search_show":"Mostrar búsqueda","map_year_slider":"Deslizador del año","national_metadata":"Metadatos nacionales","national_metadata_blurb":"Esta tabla proporciona metadatos para el indicador real disponible a partir de las estadísticas de %country_name más cercanas al correspondiente indicador global de SDG. Tenga en cuenta que incluso cuando el indicador global de ODS esté totalmente disponible a partir de las estadísticas de %country_adjective, se debe consultar esta tabla para obtener información sobre la metodología nacional y otra información de metadatos específicos de %country_adjective.","next":"Siguiente indicador","no_data_hint":"No hay opciones disponibles debido a los filtros anteriores","plot_legend_description":"Leyenda del gráfico: lista de líneas incluidas en el gráfico","previous":"Indicador anterior","select_all":"Seleccionar todo","series":"Serie","series_help":"Elija categorías de las listas desplegables a continuación para ver diferentes desgloses de los datos. Algunos no estarán disponibles hasta que se elija un nivel superior.","source":"Fuente","sources":"Fuentes","status":"Estado del indicador","sub_categories":"Subcategorías","sub_categories_show":"Mostrar subcategorías:","table":"Tabla","table_column_sort":"Haga clic para ordenar por esta columna","tags":"Etiquetas","unit":"Unidad","unit_of_measurement":"Unidad de medida","units_type":"Tipo de unidades","variable_hint":"Disponible cuando se selecciona «%field»","view_indicator_list":"Ver la lista de indicadores de este objetivo"};</script>
+<script>translations['indicator'] = {"annotation_2030_target":"Meta 2030","announce_data_added":"Gráfico y tabla actualizados para incluir los datos.","announce_data_not_available":"El gráfico y la tabla no muestran datos.","announce_data_removed":"Gráfico y tabla actualizados para excluir los datos.","chart":"Gráfico","chart_annotation":"Anotación en el gráfico","clear_all":"Limpiar todo","clear_selections":"Borrar selecciones","data_keyboard_navigation":"Pulse Enter para navegar por los puntos de datos con las teclas de flecha izquierda y derecha.","data_not_available":"Esta información no está disponible. Elija datos alternativos para mostrar.","data_tabular_alternative":"Para la alternativa de datos tabulares, véase la pestaña Tabla.","dataset_size_warning":"Hay demasiados conjuntos de datos para mostrar en el gráfico. No todo se mostrará hasta que elimine algunas selecciones.","download_chart":"Descargar CSV de gráfico","download_chart_image":"Descargar imagen del gráfico","download_chart_image_title":"Descargar gráfico como imagen","download_csv":"Descargar CSV","download_csv_title":"Descargar como CSV","download_geojson":"Descargar GeoJSON","download_geojson_title":"Descargar como GeoJSON","download_headline":"Descargar CSV global","download_headline_title":"Descargar datos globales como CSV","download_source":"Descargar CSV fuente","download_source_sdmx":"Descargar SDMX fuente","download_source_sdmx_title":"Descargar los datos fuente como SDMX","download_source_title":"Descargar los datos fuente como CSV","download_table":"Descargar la tabla CSV","edit":"Editar","edit_configuration":"Editar la configuración","edit_data":"Editar datos","edit_metadata":"Editar metadatos","footnote":"Nota","geographical_area":"Área geográfica","global_metadata":"Metadatos globales","global_metadata_blurb":"Esta tabla proporciona información sobre los metadatos para los indicadores de los ODS tal como los define la Comisión de Estadística de la ONU. La <a href=\"https://unstats.un.org/sdgs/metadata/\">División de Estadística de las Naciones Unidas proporciona</a> los metadatos globales completos .","legend_help":"Haga clic en la leyenda para eliminar líneas individuales del gráfico.","loading":"Cargando","loading_map":"Cargando mapa","map":"Mapa","map_search":"Buscar","map_search_hide":"ocultar búsqueda","map_search_show":"Mostrar búsqueda","map_year_slider":"Deslizador del año","national_metadata":"Metadatos nacionales","national_metadata_blurb":"Esta tabla proporciona metadatos para el indicador real disponible a partir de las estadísticas de %country_name más cercanas al correspondiente indicador global de SDG. Tenga en cuenta que incluso cuando el indicador global de ODS esté totalmente disponible a partir de las estadísticas de %country_adjective, se debe consultar esta tabla para obtener información sobre la metodología nacional y otra información de metadatos específicos de %country_adjective.","next":"Siguiente indicador","no_data_hint":"No hay opciones disponibles debido a los filtros anteriores","plot_legend_description":"Leyenda del gráfico: lista de líneas incluidas en el gráfico","previous":"Indicador anterior","select_all":"Seleccionar todo","series":"Serie","series_help":"Elija categorías de las listas desplegables a continuación para ver diferentes desgloses de los datos. Algunos no estarán disponibles hasta que se elija un nivel superior.","source":"Fuente","sources":"Fuentes","status":"Estado del indicador","sub_categories":"Subcategorías","sub_categories_show":"Mostrar subcategorías:","table":"Tabla","table_column_sort":"Haga clic para ordenar por esta columna","tags":"Etiquetas","unit":"Unidad","unit_of_measurement":"Unidad de medida","units_type":"Tipo de unidades","variable_hint":"Disponible cuando se selecciona «%field»","view_indicator_list":"Ver la lista de indicadores de este objetivo"};</script>
 
 <script>translations['data'] = null;</script>
 
@@ -474,9 +477,9 @@ data-event-label="high"
 <ol class="breadcrumb">
   
   <li><a href="/open-sdg-site-starter/es/">Inicio</a></li>
-  <li><a href="/open-sdg-site-starter/es/goals">Metas</a></li>
+  <li><a href="/open-sdg-site-starter/es/goals">Objetivos</a></li>
   
-  <li><a href="/open-sdg-site-starter/es/10" title="Reducir la desigualdad en los países y entre ellos">Meta 10</a></li>
+  <li><a href="/open-sdg-site-starter/es/10" title="Reducir la desigualdad en los países y entre ellos">Objetivo 10</a></li>
   
 </ol>
 
@@ -489,7 +492,7 @@ data-event-label="high"
       
       <div class="col-xs-4 col-md-3 col-lg-2 goal-icon goal-tiles">
         <a href="/open-sdg-site-starter/es/10" title="Ver la lista de indicadores de este objetivo">
-          <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/10.png" alt="Reducción de las Desigualdades - Meta 10" id="goal-10" class="goal-icon-image goal-icon-image-"/>
+          <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/10.png" alt="Reducción de las Desigualdades - Objetivo 10" id="goal-10" class="goal-icon-image goal-icon-image-"/>
         </a>
       </div>
       <div class="col-xs-8 col-md-9 col-lg-10 indicator-details">
@@ -499,7 +502,7 @@ data-event-label="high"
             
             Indicador 10.7.4
             
-            <span class="lead-copy">global_indicators.10-7-4-title</span>
+            <span class="lead-copy">Proporción de la población integrada por refugiados, desglosada por país de origen</span>
           </h1>
         </div>
       </div>
@@ -524,9 +527,10 @@ data-event-label="high"
   data-indicatorid='indicator_10-7-4'
   data-id="10-7-4"
   data-country="Australia"
-  data-charttitle="global_indicators.10-7-4-title"
+  data-charttitle="Proporción de la población integrada por refugiados, desglosada por país de origen"
   data-charttitles="[]"
   data-measurementunit=""
+  data-xaxislabel=""
   data-showdata="false"
   data-graphtype="line"
   data-geocoderegex=""
@@ -535,8 +539,10 @@ data-event-label="high"
   data-graphlimits="[]"
   data-stackeddisaggregation=""
   data-graphannotations="[]"
+  data-graphtargetlines="null"
+  data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="null"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
 >
@@ -1192,18 +1198,25 @@ data-event-label="Change to Sources tab"
 <script src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.3/dist/html2canvas.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js"></script>
+
+
+
+
+
+
+
 <script>translations['general'] = translations['general'] || {};
-    translations['general']['hide'] = 'ocultar';</script>
+    translations['general']['hide'] = 'Ocultar';</script>
 
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Buscar';</script>
 
-<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20210715170958'></script>
+<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20210915195947'></script>
 
 
     
     
-    <script src="/open-sdg-site-starter/assets/js/custom.js?v=20210715170958"></script><script>
+    <script src="/open-sdg-site-starter/assets/js/custom.js?v=20210915195947"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
@@ -1236,12 +1249,15 @@ $(function() {
               chartTitle: domData.charttitle,
               chartTitles: domData.charttitles,
               measurementUnit: domData.measurementunit,
+              xAxisLabel: domData.xaxislabel,
               showData: domData.showdata,
               graphType: domData.graphtype,
               startValues: domData.startvalues,
               graphLimits: domData.graphlimits,
               stackedDisaggregation: domData.stackeddisaggregation,
               graphAnnotations: domData.graphannotations,
+              graphTargetLines: domData.graphtargetlines,
+              graphSeriesBreaks: domData.graphseriesbreaks,
               indicatorDownloads: domData.indicatordownloads,
               dataSchema: domData.dataschema,
               compositeBreakdownLabel: domData.compositebreakdownlabel,
@@ -1270,8 +1286,6 @@ $(function() {
 
 });
 </script>
-
-
 
 
 </body>
