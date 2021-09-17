@@ -1,6 +1,9 @@
 accessible_charts: true
 accessible_tabs: true
 analytics:
+  ua: ''
+  gtag: ''
+  gtm: ''
   ga_prod: ''
 breadcrumbs:
   goal:
@@ -19,6 +22,8 @@ breadcrumbs:
     - path: /news
       label: menu.updates
 contrast_type: default
+cookie_consent_form:
+  enabled: false
 country:
   name: Australia
   adjective: Australian
@@ -69,7 +74,7 @@ environment: staging
 favicons: favicon.io
 footer_language_toggle: none
 footer_menu:
-  - path: '/contact-us'
+  - path: /contact-us
     translation_key: menu.contact_us
   - path: 'https://twitter.com/MyTwitterAccount'
     translation_key: general.twitter
@@ -125,6 +130,8 @@ header:
   include: header-menu-left-aligned.html
 header_language_toggle: dropdown
 hide_empty_metadata: true
+hide_single_series: true
+hide_single_unit: true
 indicator_config_form:
   enabled: true
   dropdowns: []
@@ -217,3 +224,4 @@ site_config_form:
   translation_link: ''
 validate_indicator_config: false
 validate_site_config: false
+x_axis_label: ''
