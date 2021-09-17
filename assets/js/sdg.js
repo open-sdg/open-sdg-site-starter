@@ -3136,7 +3136,7 @@ var indicatorView = function (model, options) {
     }));
 
     
-    if (units.length < 1) {
+    if (units.length <= 1) {
     
       $(this._rootElement).addClass('no-units');
     }
@@ -3155,7 +3155,7 @@ var indicatorView = function (model, options) {
       }));
 
       
-      if (serieses.length < 1) {
+      if (serieses.length <= 1) {
       
         $(this._rootElement).addClass('no-serieses');
       }

@@ -133,7 +133,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20210915204430">
+        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20210917153214">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -674,7 +674,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('analytics', {"ga_prod":""});
+        var currentValue = normalizeCurrentValue('analytics', {"ua":"","gtag":"","gtm":"","ga_prod":""});
         var propertyEditor = editor.getEditor('root.analytics');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -714,6 +714,18 @@ data-event-label="high"
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.contrast_type'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('cookie_consent_form', {"enabled":false});
+        var propertyEditor = editor.getEditor('root.cookie_consent_form');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: cookie_consent_form');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.cookie_consent_form'));
 
     
@@ -1188,8 +1200,32 @@ data-event-label="high"
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.hide_empty_metadata'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('hide_single_series', true);
+        var propertyEditor = editor.getEditor('root.hide_single_series');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: hide_single_series');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.hide_single_series'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('hide_single_unit', true);
+        var propertyEditor = editor.getEditor('root.hide_single_unit');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: hide_single_unit');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.hide_single_unit'));
 
     
@@ -1552,6 +1588,18 @@ data-event-label="high"
 
     propertyEditorAccessibilityFixes(editor.getEditor('root.validate_site_config'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('x_axis_label', "");
+        var propertyEditor = editor.getEditor('root.x_axis_label');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: x_axis_label');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.x_axis_label'));
 
     
@@ -1686,12 +1734,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Buscar';</script>
 
-<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20210915204430'></script>
+<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20210917153214'></script>
 
 
     
     
-    <script src="/open-sdg-site-starter/assets/js/custom.js?v=20210915204430"></script><script>
+    <script src="/open-sdg-site-starter/assets/js/custom.js?v=20210917153214"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
