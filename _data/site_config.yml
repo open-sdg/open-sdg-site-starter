@@ -1,10 +1,11 @@
-accessible_charts: true
+﻿accessible_charts: true
 accessible_tabs: true
 analytics:
   ua: ''
   gtag: ''
   gtm: ''
   ga_prod: ''
+bootstrap_5: true
 breadcrumbs:
   goal:
     - path: /
@@ -21,14 +22,15 @@ breadcrumbs:
       label: general.home
     - path: /news
       label: menu.updates
-contrast_type: default
+chartjs_3: true
+contrast_type: single
 cookie_consent_form:
   enabled: false
 country:
   name: Australia
   adjective: Australian
 create_goals:
-  layout: goal-by-target-vertical
+  layout: goal-with-progress
   previous_next_links: false
   goals: []
 create_indicators:
@@ -66,6 +68,7 @@ date_formats: []
 disclaimer:
   phase: ''
   message: ''
+  hidden: false
 email_contacts:
   questions: test@example.com
   suggestions: test@example.com
@@ -135,15 +138,15 @@ hide_single_unit: true
 indicator_config_form:
   enabled: true
   dropdowns: []
-  repository_link: '/tree/develop/indicator-config'
+  repository_link: /tree/develop/indicator-config
   translation_link: ''
 indicator_data_form:
   enabled: true
-  repository_link: '/tree/develop/data'
+  repository_link: /tree/develop/data
 indicator_metadata_form:
   enabled: true
   dropdowns: []
-  repository_link: '/tree/develop/meta'
+  repository_link: /tree/develop/meta
   translation_link: ''
   language: ''
   scopes:
@@ -151,6 +154,11 @@ indicator_metadata_form:
     - global
   exclude_fields: []
   translated: false
+indicator_tabs:
+  tab_1: ''
+  tab_2: ''
+  tab_3: ''
+  tab_4: ''
 languages:
   - en
   - es
@@ -202,26 +210,52 @@ menu:
     translation_key: menu.updates
     dropdown: []
 metadata_edit_url: metadata
-metadata_tabs: []
+metadata_tabs:
+  - scope: national
+    title: indicator.national_metadata
+    description: indicator.national_metadata_blurb
+  - scope: global
+    title: indicator.global_metadata
+    description: indicator.global_metadata_blurb
+  - scope: sources
+    title: indicator.sources
+    description: ''
 news:
   category_links: false
-non_global_metadata: indicator.national_metadata
+non_global_metadata: ''
+progress_status:
+  status_heading: ''
+  status_types: []
 remote_data_prefix: 'https://open-sdg.org/open-sdg-data-starter'
 reporting_status:
   title: status.reporting_status
   description: status.description
   disaggregation_tabs: false
+  status_types:
+    - value: notstarted
+      label: status.exploring_data_sources
+      hide_on_goal_pages: false
+    - value: complete
+      label: status.reported_online
+      hide_on_goal_pages: false
+    - value: notapplicable
+      label: status.not_applicable
+      hide_on_goal_pages: false
 repository_url_data: 'https://github.com/open-sdg/open-sdg-data-starter'
 repository_url_site: ''
 search_index_boost: []
 search_index_extra_fields: []
 series_toggle: true
-sharethis_property: ''
 site_config_form:
   enabled: true
   dropdowns: []
-  repository_link: '/tree/develop/_data'
+  repository_link: /tree/develop/_data
   translation_link: ''
+time_series_attributes:
+  - field: COMMENT_TS
+    label: indicator.footnote
+  - field: DATA_LAST_UPDATE
+    label: metadata_fields.national_data_update_url
 validate_indicator_config: false
 validate_site_config: false
 x_axis_label: ''
