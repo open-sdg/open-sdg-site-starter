@@ -44,11 +44,11 @@ create_pages:
   - filename: ''
     folder: /goals
     layout: goals
-    title: ''
+    title: general.goals
   - filename: ''
     folder: /reporting-status
     layout: reportingstatus
-    title: ''
+    title: status.reporting_status
   - filename: indicators.json
     folder: /
     layout: indicator-json
@@ -56,7 +56,7 @@ create_pages:
   - filename: ''
     folder: /search
     layout: search
-    title: ''
+    title: search.search
 custom_css: []
 custom_js:
   - /assets/js/custom.js
@@ -109,10 +109,8 @@ frontpage_cards:
     button_link: 'https://example.com'
     rule_color: ''
 frontpage_goals_grid:
-  title: Our data for Sustainable Development Goal indicators
-  description: >-
-    Click on each goal for our Sustainable Development Goal global indicator
-    data.
+  title: frontpage.heading_short
+  description: frontpage.instructions_short
 frontpage_heading: ''
 frontpage_instructions: ''
 frontpage_introduction_banner:
