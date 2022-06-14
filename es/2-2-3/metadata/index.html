@@ -136,7 +136,7 @@ var translations = {
         
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20220331165529">
+        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20220614002253">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -532,7 +532,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('META_LAST_UPDATE__GLOBAL', "<p>2021-03-01</p>");
+        var currentValue = normalizeCurrentValue('META_LAST_UPDATE__GLOBAL', "2022-03-31");
         var propertyEditor = editor.getEditor('root.META_LAST_UPDATE__GLOBAL');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -560,7 +560,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('SDG_RELATED_INDICATORS__GLOBAL', "<p>Goal 1. No poverty</p>\n<p>The capacity for physical work is hampered when people are anaemic. Anaemia is estimated to contribute to 17% lower productivity in heavy manual labour and 5% lower productivity in other manual labour. A modelling exercise in India estimated that a birth cohort of individuals with iron-deficiency anaemia (IDA) in 2013 will lose more than US$ 24 million over their lifetimes as a result of productivity loss due to IDA.</p>\n<p>Additionally, the mental capacity that is undeveloped when children are iron deficient affects their academic performance and future earnings potential. Consequently, childhood anaemia is associated with a 2.5% drop in wages in adulthood, affecting both productivity and economic growth.</p>\n<p>Nutrient deficiencies that can contribute to anaemia include iron, riboflavin, folic acid, zinc, vitamin B12, and vitamin A. Currently, more than 80 countries have legislation to add one or more of these nutrients to wheat flour, maize flour, and/or rice. Adding these nutrients to commonly consumed grains is one step toward improving productivity and thereby reducing poverty.</p>\n<p>Goal 3. Good health and well-being</p>\n<p>Maternal and Newborn Health</p>\n<p>Anaemia during pregnancy increases the risk of maternal and perinatal mortality. Anaemia during pregnancy also contributes to low birth-weight infants, which the World Health Organization (WHO) defines as weighing less than less than 2500 grams or 5.5 pounds. Newborns that are born small are prone to death and diseases while they are young. If they survive, they are at an increased risk for poor mental development in childhood and chronic health problems such as diabetes and heart disease later in life.</p>\n<p>Non-Communicable Diseases</p>\n<p>Anaemia is a non-communicable disease. As noted above, nutritional anaemia is caused by vitamin and mineral deficiencies.</p>\n<p>Goal 4. Quality education</p>\n<p>Poor health in childhood can lead to reductions in educational achievement. While iron deficiency limits cognitive development, children who have adequate iron have more energy to participate in classroom exercises, and they are more mentally prepared to master the material.</p>\n<p>A large body of literature documents the positive impact of iron interventions on tests of cognitive and motor development. This review found, &#x201C;the available evidence satisfies all of the conditions needed to conclude that iron deficiency causes cognitive deficits and developmental delays and that these can be at least partially reversed by iron therapy, though the effect may diminish among older children.&#x201D;</p>\n<p>Goal 5. Gender equality</p>\n<p>Anaemia rates in females are much higher than males. While anaemia rates decrease for males by the end of puberty, they remain high for females through reproductive years due to menstruation.</p>\n<p>Therefore, reducing anaemia contributes to boosting females&#x2019; relative academic performance and worker productivity and helps achieve gender equality.</p>\n<p>For more details, see Food Fortification Initiative - Fortify to Address Sustainable Development Goals (http://www.ffinetwork.org/why_fortify/SDGs.html).</p>");
+        var currentValue = normalizeCurrentValue('SDG_RELATED_INDICATORS__GLOBAL', "<p>Anaemia is estimated to contribute to 17% lower productivity in heavy manual labour and 5% lower productivity in other manual labour (Goal 1 End poverty in all its forms everywhere); during pregnancy, it increases the risk of maternal and perinatal mortality and contributes to low birth-weight infants (Goal 3. Good health and well-being); it also limits cognitive development, children who have adequate iron have more energy to participate in classroom exercises, and they are more mentally prepared to master the material (Goal 4. Quality education); anaemia rates in females are much higher than males &#x2014; while anaemia rates decrease for males by the end of puberty, they remain high for females through reproductive years due to menstruation, thus reducing anaemia contributes to boosting females&#x2019; relative academic performance and worker productivity and helps achieve gender equality (Goal 5. Gender equality).</p>");
         var propertyEditor = editor.getEditor('root.SDG_RELATED_INDICATORS__GLOBAL');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -802,12 +802,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Buscar';</script>
 
-<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20220331165529'></script>
+<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20220614002253'></script>
 
 
     
     
-    <script src="/open-sdg-site-starter/assets/js/custom.js?v=20220331165529"></script><script>
+    <script src="/open-sdg-site-starter/assets/js/custom.js?v=20220614002253"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
