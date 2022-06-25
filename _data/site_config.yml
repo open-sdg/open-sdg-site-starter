@@ -1,11 +1,8 @@
-﻿accessible_charts: true
-accessible_tabs: true
-analytics:
+﻿analytics:
   ua: ''
   gtag: ''
   gtm: ''
   ga_prod: ''
-bootstrap_5: true
 breadcrumbs:
   goal:
     - path: /
@@ -22,25 +19,17 @@ breadcrumbs:
       label: general.home
     - path: /news
       label: menu.updates
-chartjs_3: true
-contrast_type: single
 cookie_consent_form:
   enabled: false
 country:
   name: Australia
   adjective: Australian
 create_goals:
-  layout: goal-with-progress
   previous_next_links: false
   goals: []
 create_indicators:
-  layout: indicator
   previous_next_links: false
 create_pages:
-  - filename: ''
-    folder: /
-    layout: frontpage-alt
-    title: ''
   - filename: ''
     folder: /goals
     layout: goals
@@ -49,10 +38,6 @@ create_pages:
     folder: /reporting-status
     layout: reportingstatus
     title: status.reporting_status
-  - filename: indicators.json
-    folder: /
-    layout: indicator-json
-    title: ''
   - filename: ''
     folder: /search
     layout: search
@@ -74,7 +59,6 @@ email_contacts:
   suggestions: test@example.com
   functional: test@example.com
 environment: staging
-favicons: favicon.io
 footer_language_toggle: none
 footer_menu:
   - path: /contact-us
@@ -111,8 +95,6 @@ frontpage_cards:
 frontpage_goals_grid:
   title: frontpage.heading_short
   description: frontpage.instructions_short
-frontpage_heading: ''
-frontpage_instructions: ''
 frontpage_introduction_banner:
   title: frontpage.intro_title
   description: frontpage.intro_body
@@ -127,8 +109,6 @@ graph_color_set: accessible
 graph_color_list: []
 graph_color_number: 0
 graph_title_from_series: false
-header:
-  include: header-menu-left-aligned.html
 header_language_toggle: dropdown
 hide_empty_metadata: true
 hide_single_series: true
@@ -164,6 +144,7 @@ languages_public: []
 logos: []
 map_layers: []
 map_options:
+  disaggregation_controls: false
   minZoom: 5
   maxZoom: 10
   tileURL: ''
@@ -220,7 +201,6 @@ metadata_tabs:
     description: ''
 news:
   category_links: false
-non_global_metadata: ''
 progress_status:
   status_heading: ''
   status_types: []
@@ -243,7 +223,6 @@ repository_url_data: 'https://github.com/open-sdg/open-sdg-data-starter'
 repository_url_site: ''
 search_index_boost: []
 search_index_extra_fields: []
-series_toggle: true
 site_config_form:
   enabled: true
   dropdowns: []
