@@ -41,10 +41,6 @@ var opensdg = {
   language: 'en',
 };
 
-// For backwards compatibility, some of these might need to be global.
-// @TODO: Remove these eventually.
-var remoteDataBaseUrl = opensdg.remoteDataBaseUrl;
-
 </script>
 
         <script>
@@ -118,25 +114,18 @@ var translations = {
         <script src="/open-sdg-site-starter/assets/js/lib/classList.js"></script>
         <![endif]-->
 
-        
-
-
-
-
-<link rel="apple-touch-icon" sizes="180x180" href="/open-sdg-site-starter/assets/img/favicons/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/open-sdg-site-starter/assets/img/favicons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/open-sdg-site-starter/assets/img/favicons/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/open-sdg-site-starter/assets/img/favicons/favicon-16x16.png">
 <link rel="icon" type="image/x-icon" href="/open-sdg-site-starter/assets/img/favicons/favicon.ico" />
 
 
         
-        
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
-        
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20220623221710">
+        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20220625001851">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -147,6 +136,10 @@ var translations = {
         <link rel="stylesheet" href="https://cdn.kiprotect.com/klaro/v0.7/klaro.min.css" crossorigin=""/>
         
 
+        <!--[if IE]>
+        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/ie.css">
+        <![endif]-->
+
         
 
     </head>
@@ -155,18 +148,20 @@ layout-config-builder
 ">
 <!-- <div class="container"> -->
 
-
-
 <script>translations['header'] = {"alpha":"Alpha","default_contrast":"Default contrast","disable_high_contrast":"Disable high contrast","disclaimer":"This is a development website. We welcome your <a href=\"mailto:%email_address\">feedback</a>.","enable_high_contrast":"Enable high contrast","high_contrast":"High contrast","skip_link":"Skip to main content","tag_line":"17 Goals to Transform our World","toggle_menu":"Menu toggle. Click to expand or collapse the menu.","toggle_search":"Search toggle. Click to expand or collapse the search bar."};</script>
 
 <a class="sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Skip to main content</a>
+<div class="container internet-explorer-message">
+    <h2 class="internet-explorer-message-title"></h2>
+    <p class="internet-explorer-message-body"></p>
+</div>
 <div id="disclaimer">
     
 <div class="container">
   <div class="disclaimer-alert">
     <strong class="phase-tag">Alpha</strong>
     
-    This is a development website. We welcome your <a href="mailto:test@example.com">feedback</a>.
+    This is a development website. We welcome your <a href="mailto:%email_address">feedback</a>.
     
   </div>
 </div>
@@ -233,7 +228,15 @@ layout-config-builder
 </div>
 
 
-<a title="Enable high contrast" aria-label="Enable high contrast"
+
+                    <span class="no-js-language-toggle"><div class="language-toggle-container d-flex">
+    <i class="fa fa-globe language-toggle-globe-links"></i>
+    <ul class="language-toggle-links list-unstyled list-inline"><li class="language-option-es list-inline-item">
+            <a class="language-toggle-link" href="/open-sdg-site-starter/es/9-3-2/metadata/">
+                Español
+            </a>
+        </li></ul>
+</div></span><a title="Enable high contrast" aria-label="Enable high contrast"
     data-contrast-switch-to="" href="javascript:void(0)" data-on="click"
 data-event-category="Accessibility"
 data-event-action="Change contrast setting"
@@ -245,8 +248,6 @@ data-event-label="high"
     </div>
 </header>
 <div id="top" tabindex=-1></div>
-
-
 
 
 <div id="main-content" class="container" role="main">
@@ -342,34 +343,7 @@ data-event-label="high"
     
 
     function normalizeCurrentValue(key, value) {
-      // @deprecated start
-      if (key == 'create_pages' && value && value.pages) {
-        return value.pages;
-      }
-      if (key == 'date_formats' && value && !Array.isArray(value)) {
-        var date_formats = [];
-        Object.keys(value).forEach(function(type) {
-          Object.keys(value[type]).forEach(function(language) {
-            date_formats.push({
-              type: type,
-              language: language,
-              format: value[type][language],
-            });
-          })
-        });
-        return date_formats;
-      }
-      if (key == 'languages_public' && value && !Array.isArray(value)) {
-        var languages_public = [];
-        Object.keys(value).forEach(function(language) {
-          languages_public.push({
-            language: language,
-            language_public: value[language],
-          });
-        });
-        return languages_public;
-      }
-      // @deprecated end
+      // This space for backwards-compat fixes.
       return value;
     }
 
@@ -725,7 +699,6 @@ data-event-label="high"
     });
   </script>
 </div>
-
 <footer role="contentinfo">
     <div class="container">
         <div class="row">
@@ -769,16 +742,12 @@ data-event-label="high"
 </footer>
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
 <script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
-
 <script src="//cdn.datatables.net/fixedcolumns/3.2.3/js/dataTables.fixedColumns.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js" integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww==" crossorigin="anonymous"></script>
-
 <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js" integrity="sha256-Y26AMvaIfrZ1EQU49pf6H4QzVTrOI8m9wQYKkftBt4s=" crossorigin="anonymous"></script>
-
 <script src="https://cdn.jsdelivr.net/npm/patternomaly@1.3.2/dist/patternomaly.js"></script>
 
 
@@ -798,12 +767,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20220623221710'></script>
+<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20220625001851'></script>
 
 
     
     
-    <script src="/open-sdg-site-starter/assets/js/custom.js?v=20220623221710"></script><script>
+    <script src="/open-sdg-site-starter/assets/js/custom.js?v=20220625001851"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
