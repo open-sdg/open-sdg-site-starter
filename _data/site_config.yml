@@ -94,7 +94,7 @@ frontpage_cards:
     rule_color: ''
 frontpage_goals_grid:
   title: frontpage.heading_short
-  description: frontpage.instructions_short
+  description: frontpage.instructions_shorter
 frontpage_introduction_banner:
   title: frontpage.intro_title
   description: frontpage.intro_body
@@ -102,7 +102,7 @@ goal_image_base: 'https://open-sdg.org/sdg-translations/assets/img/goals'
 goal_image_extension: ''
 goals_page:
   title: general.goals
-  description: goal.description
+  description: frontpage.instructions_shorter
 graph_color_headline: '#004466'
 graph_color_headline_high_contrast: '#55a6e5'
 graph_color_set: accessible
@@ -211,7 +211,7 @@ reporting_status:
   disaggregation_tabs: false
   status_types:
     - value: notstarted
-      label: status.exploring_data_sources
+      label: status.no_data_available
       hide_on_goal_pages: false
     - value: complete
       label: status.reported_online
