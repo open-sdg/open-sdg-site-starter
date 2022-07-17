@@ -40,7 +40,7 @@ We have used three different types of reporting status for an indicator, which a
 
 - **Statistics in progress (grey):** We have found a suitable source of data for this indicator or relevant proxy at national level. We are currently quality assuring the data and preparing it for publication.
 
-- **Exploring data sources (white):** We are still looking for a suitable data source for this indicator.
+- **No data available (white):** We are still looking for a suitable data source for this indicator.
 
 - **Not applicable (striped):** This indicator is not applicable in the national context.
 
