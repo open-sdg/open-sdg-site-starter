@@ -125,7 +125,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20220923160848">
+        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20221103131714">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -506,7 +506,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('META_LAST_UPDATE__GLOBAL', "<p>2021-02-02</p>");
+        var currentValue = normalizeCurrentValue('META_LAST_UPDATE__GLOBAL', "2022-07-07");
         var propertyEditor = editor.getEditor('root.META_LAST_UPDATE__GLOBAL');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -534,7 +534,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('SDG_RELATED_INDICATORS__GLOBAL', "<p>As it measures the degree of implementation of an enabling environment for better water resources management, it directly supports the other outcome targets under SDG 6 (6.1 &#x2013; 6.6). It does this by providing further information to countries on the context and possible explanation for the progress on other targets, and points to barriers and enablers to obtaining the other targets. It also directly supports the means of implementation targets 6.a and 6.b, as disaggregation is possible to provide data on financing (6.a) and stakeholder participation (6.b). Beyond SDG 6, indicator 6.5.1 has linkages with a number of other targets across the SDGs, as integrated water resources management is concerned with integrating the demands and impacts on water resources and water-related ecosystems from a number of different SDGs and their targets, including: poverty (1.4); agriculture (2.3); education (4.7); gender (5.5); energy (7.1); work (8.5); equality (10.2); urban areas (11.3); climate change (13.2); ecosystems (15.9); governance (16.3, 16.5 &#x2013; 16.7) (UN-Water 2016).</p>");
+        var currentValue = normalizeCurrentValue('SDG_RELATED_INDICATORS__GLOBAL', "<p>1.4.1, 1.4.2, 2.3.1, 2.3.2, 4.7.1, 5.5.1, 5.5.2, 6.6.1, 6.a.1, 6.b.1, 7.1.1, 7.1.2, 8.5.1, 8.5.2, 10.2.1, 11.3.1, 11.3.2, 13.2.1, 13.2.2, 15.9.1, 16.3.1, 16.3.2, 16.5.1, 16.5.2, 16.7.1, 16.7.2</p>");
         var propertyEditor = editor.getEditor('root.SDG_RELATED_INDICATORS__GLOBAL');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -767,12 +767,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20220923160848'></script>
+<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20221103131714'></script>
 
 
     
     
-    <script src="/open-sdg-site-starter/assets/js/custom.js?v=20220923160848"></script><script>
+    <script src="/open-sdg-site-starter/assets/js/custom.js?v=20221103131714"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
