@@ -26,8 +26,9 @@ var opensdg = {
   },
 
   // A hook which can be replaced to alter whether/how the values that are
-  // displayed on indicator tables/graphs get rounded.
-  dataRounding: function(value) {
+  // displayed on indicator tables/graphs get rounded. A "context" parameter
+  // is also passed which contains additional information.
+  dataRounding: function(value, context) {
     // Alterations go here.
     return value;
   },
@@ -37,6 +38,9 @@ var opensdg = {
   dataDisplayAlter: function(callback) {
     this.dataDisplayAlterations.push(callback);
   },
+
+  // Disaggregations which should be ignored on indicator pages.
+  ignoredDisaggregations: null,
 
   language: 'es',
 };
@@ -125,7 +129,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20221103134909">
+        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20221107164613">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -171,10 +175,10 @@ layout-frontpage
 <header role="banner" class="">
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light flex-wrap align-items-start">
-            <a class="navbar-brand" href="/open-sdg-site-starter/es/" id="home">
+            <a class="navbar-brand" href="/open-sdg-site-starter/es/" id="home" aria-label="" title="">
     <img src="/open-sdg-site-starter/assets/img/SDG_logo.png" alt="Objetivos de Desarrollo Sostenible - 17 Objetivos para transformar nuestro mundo" />
 </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="d-flex flex-wrap w-100 justify-content-between">
@@ -198,7 +202,7 @@ layout-frontpage
         <label class="visually-hidden" for="indicator_search">Buscar</label>
         <input class="form-control" type="search" name="q" id="indicator_search" title="Buscar">
         <span class="input-group-append">
-            <button class="btn btn-outline-secondary ms-n5" aria-label="Buscar" id="search-btn" type="submit">
+            <button class="btn btn-outline-secondary ms-n5" aria-label="" id="search-btn" type="submit">
                 <i class="fa fa-search"></i>
             </button>
         </span>
@@ -277,103 +281,103 @@ data-event-label="high"
         
         <div class="col-4 col-md-2 col-lg-1 goal-tile">
             <a href="/open-sdg-site-starter/es/1">
-                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/1.png" id="goal-1" alt="Fin de la Pobreza - Objetivo 1" class="goal-icon-image goal-icon-image-"/>
+                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/1.png" id="goal-1" alt="Objetivo 1 - Fin de la Pobreza" class="goal-icon-image goal-icon-image-"/>
             </a>
         </div>
         
         <div class="col-4 col-md-2 col-lg-1 goal-tile">
             <a href="/open-sdg-site-starter/es/2">
-                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/2.png" id="goal-2" alt="Hambre Cero - Objetivo 2" class="goal-icon-image goal-icon-image-"/>
+                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/2.png" id="goal-2" alt="Objetivo 2 - Hambre Cero" class="goal-icon-image goal-icon-image-"/>
             </a>
         </div>
         
         <div class="col-4 col-md-2 col-lg-1 goal-tile">
             <a href="/open-sdg-site-starter/es/3">
-                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/3.png" id="goal-3" alt="Salud y Bienestar - Objetivo 3" class="goal-icon-image goal-icon-image-"/>
+                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/3.png" id="goal-3" alt="Objetivo 3 - Salud y Bienestar" class="goal-icon-image goal-icon-image-"/>
             </a>
         </div>
         
         <div class="col-4 col-md-2 col-lg-1 goal-tile">
             <a href="/open-sdg-site-starter/es/4">
-                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/4.png" id="goal-4" alt="Educación de Calidad - Objetivo 4" class="goal-icon-image goal-icon-image-"/>
+                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/4.png" id="goal-4" alt="Objetivo 4 - Educación de Calidad" class="goal-icon-image goal-icon-image-"/>
             </a>
         </div>
         
         <div class="col-4 col-md-2 col-lg-1 goal-tile">
             <a href="/open-sdg-site-starter/es/5">
-                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/5.png" id="goal-5" alt="Igualdad de Género - Objetivo 5" class="goal-icon-image goal-icon-image-"/>
+                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/5.png" id="goal-5" alt="Objetivo 5 - Igualdad de Género" class="goal-icon-image goal-icon-image-"/>
             </a>
         </div>
         
         <div class="col-4 col-md-2 col-lg-1 goal-tile">
             <a href="/open-sdg-site-starter/es/6">
-                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/6.png" id="goal-6" alt="Agua Limpia y Saneamiento - Objetivo 6" class="goal-icon-image goal-icon-image-"/>
+                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/6.png" id="goal-6" alt="Objetivo 6 - Agua Limpia y Saneamiento" class="goal-icon-image goal-icon-image-"/>
             </a>
         </div>
         
         <div class="col-4 col-md-2 col-lg-1 goal-tile">
             <a href="/open-sdg-site-starter/es/7">
-                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/7.png" id="goal-7" alt="Energía Asequible y No Contaminante - Objetivo 7" class="goal-icon-image goal-icon-image-"/>
+                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/7.png" id="goal-7" alt="Objetivo 7 - Energía Asequible y No Contaminante" class="goal-icon-image goal-icon-image-"/>
             </a>
         </div>
         
         <div class="col-4 col-md-2 col-lg-1 goal-tile">
             <a href="/open-sdg-site-starter/es/8">
-                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/8.png" id="goal-8" alt="Trabajo Decente y Crecimiento Económico - Objetivo 8" class="goal-icon-image goal-icon-image-"/>
+                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/8.png" id="goal-8" alt="Objetivo 8 - Trabajo Decente y Crecimiento Económico" class="goal-icon-image goal-icon-image-"/>
             </a>
         </div>
         
         <div class="col-4 col-md-2 col-lg-1 goal-tile">
             <a href="/open-sdg-site-starter/es/9">
-                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/9.png" id="goal-9" alt="Industria, Innovación e Infraestructura - Objetivo 9" class="goal-icon-image goal-icon-image-"/>
+                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/9.png" id="goal-9" alt="Objetivo 9 - Industria, Innovación e Infraestructura" class="goal-icon-image goal-icon-image-"/>
             </a>
         </div>
         
         <div class="col-4 col-md-2 col-lg-1 goal-tile">
             <a href="/open-sdg-site-starter/es/10">
-                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/10.png" id="goal-10" alt="Reducción de las Desigualdades - Objetivo 10" class="goal-icon-image goal-icon-image-"/>
+                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/10.png" id="goal-10" alt="Objetivo 10 - Reducción de las Desigualdades" class="goal-icon-image goal-icon-image-"/>
             </a>
         </div>
         
         <div class="col-4 col-md-2 col-lg-1 goal-tile">
             <a href="/open-sdg-site-starter/es/11">
-                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/11.png" id="goal-11" alt="Cuidades y Comunidades Sostenibles - Objetivo 11" class="goal-icon-image goal-icon-image-"/>
+                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/11.png" id="goal-11" alt="Objetivo 11 - Cuidades y Comunidades Sostenibles" class="goal-icon-image goal-icon-image-"/>
             </a>
         </div>
         
         <div class="col-4 col-md-2 col-lg-1 goal-tile">
             <a href="/open-sdg-site-starter/es/12">
-                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/12.png" id="goal-12" alt="Producción y Consumo Responsables - Objetivo 12" class="goal-icon-image goal-icon-image-"/>
+                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/12.png" id="goal-12" alt="Objetivo 12 - Producción y Consumo Responsables" class="goal-icon-image goal-icon-image-"/>
             </a>
         </div>
         
         <div class="col-4 col-md-2 col-lg-1 goal-tile">
             <a href="/open-sdg-site-starter/es/13">
-                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/13.png" id="goal-13" alt="Acción por el Clima - Objetivo 13" class="goal-icon-image goal-icon-image-"/>
+                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/13.png" id="goal-13" alt="Objetivo 13 - Acción por el Clima" class="goal-icon-image goal-icon-image-"/>
             </a>
         </div>
         
         <div class="col-4 col-md-2 col-lg-1 goal-tile">
             <a href="/open-sdg-site-starter/es/14">
-                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/14.png" id="goal-14" alt="Vida Submarina - Objetivo 14" class="goal-icon-image goal-icon-image-"/>
+                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/14.png" id="goal-14" alt="Objetivo 14 - Vida Submarina" class="goal-icon-image goal-icon-image-"/>
             </a>
         </div>
         
         <div class="col-4 col-md-2 col-lg-1 goal-tile">
             <a href="/open-sdg-site-starter/es/15">
-                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/15.png" id="goal-15" alt="Vida de Ecosistemas Terrestres - Objetivo 15" class="goal-icon-image goal-icon-image-"/>
+                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/15.png" id="goal-15" alt="Objetivo 15 - Vida de Ecosistemas Terrestres" class="goal-icon-image goal-icon-image-"/>
             </a>
         </div>
         
         <div class="col-4 col-md-2 col-lg-1 goal-tile">
             <a href="/open-sdg-site-starter/es/16">
-                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/16.png" id="goal-16" alt="Paz, Justicia e Instituciones Sólidas - Objetivo 16" class="goal-icon-image goal-icon-image-"/>
+                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/16.png" id="goal-16" alt="Objetivo 16 - Paz, Justicia e Instituciones Sólidas" class="goal-icon-image goal-icon-image-"/>
             </a>
         </div>
         
         <div class="col-4 col-md-2 col-lg-1 goal-tile">
             <a href="/open-sdg-site-starter/es/17">
-                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/17.png" id="goal-17" alt="Alianzas para Lograr los Objetivos - Objetivo 17" class="goal-icon-image goal-icon-image-"/>
+                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/17.png" id="goal-17" alt="Objetivo 17 - Alianzas para Lograr los Objetivos" class="goal-icon-image goal-icon-image-"/>
             </a>
         </div>
         
@@ -412,7 +416,7 @@ data-event-label="high"
         Descargar todos los datos
     </a>
     <div id="zip-download-info">
-        archivo zip - 22 Bytes
+        : 22 Bytes
         
             <br>
             Datos actualizados por última vez - Oct 28, 2022
@@ -565,12 +569,12 @@ interdum risus enim vitae tortor. Donec feugiat accumsan rutrum.</p>
     </div>
 </footer>
 
-<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
 <script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
 <script src="//cdn.datatables.net/fixedcolumns/3.2.3/js/dataTables.fixedColumns.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js" integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js" integrity="sha256-Y26AMvaIfrZ1EQU49pf6H4QzVTrOI8m9wQYKkftBt4s=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/patternomaly@1.3.2/dist/patternomaly.js"></script>
 
@@ -591,12 +595,12 @@ interdum risus enim vitae tortor. Donec feugiat accumsan rutrum.</p>
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Buscar';</script>
 
-<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20221103134909'></script>
+<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20221107164613'></script>
 
 
     
     
-    <script src="/open-sdg-site-starter/assets/js/custom.js?v=20221103134909"></script><script>
+    <script src="/open-sdg-site-starter/assets/js/custom.js?v=20221107164613"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

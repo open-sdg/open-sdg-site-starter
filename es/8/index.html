@@ -26,8 +26,9 @@ var opensdg = {
   },
 
   // A hook which can be replaced to alter whether/how the values that are
-  // displayed on indicator tables/graphs get rounded.
-  dataRounding: function(value) {
+  // displayed on indicator tables/graphs get rounded. A "context" parameter
+  // is also passed which contains additional information.
+  dataRounding: function(value, context) {
     // Alterations go here.
     return value;
   },
@@ -37,6 +38,9 @@ var opensdg = {
   dataDisplayAlter: function(callback) {
     this.dataDisplayAlterations.push(callback);
   },
+
+  // Disaggregations which should be ignored on indicator pages.
+  ignoredDisaggregations: null,
 
   language: 'es',
 };
@@ -125,7 +129,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20221103134909">
+        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20221107164613">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -171,10 +175,10 @@ layout-goal
 <header role="banner" class="">
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light flex-wrap align-items-start">
-            <a class="navbar-brand" href="/open-sdg-site-starter/es/" id="home">
+            <a class="navbar-brand" href="/open-sdg-site-starter/es/" id="home" aria-label="" title="">
     <img src="/open-sdg-site-starter/assets/img/SDG_logo.png" alt="Objetivos de Desarrollo Sostenible - 17 Objetivos para transformar nuestro mundo" />
 </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="d-flex flex-wrap w-100 justify-content-between">
@@ -198,7 +202,7 @@ layout-goal
         <label class="visually-hidden" for="indicator_search">Buscar</label>
         <input class="form-control" type="search" name="q" id="indicator_search" title="Buscar">
         <span class="input-group-append">
-            <button class="btn btn-outline-secondary ms-n5" aria-label="Buscar" id="search-btn" type="submit">
+            <button class="btn btn-outline-secondary ms-n5" aria-label="" id="search-btn" type="submit">
                 <i class="fa fa-search"></i>
             </button>
         </span>
@@ -282,16 +286,24 @@ data-event-label="high"
 </div>
 
 
+
+
+
+
 <div id="main-content" class="container" role="main">
 
   
 
 
 
-  <div class="container g-0">
-    <h2 class="goal-page-heading">Metas e indicadores</h2>
-
-    
+  <div class="container g-0 ">
+    <div class="row align-items-end">
+      <div class="col">
+        <h2 class="goal-page-heading">Metas e indicadores</h2>
+      </div>
+      
+    </div>
+    <hr class="goal-page-column-header-rule">
     
       
       <div class="row align-items-start goal-target">
@@ -303,6 +315,7 @@ data-event-label="high"
           <div class="col goal-page-target-name">
             <span class="target-name">Mantener el crecimiento económico per cápita de conformidad con las circunstancias nacionales y, en particular, un crecimiento del producto interno bruto de al menos el 7% anual en los países menos adelantados</span>
           </div>
+          
       </div>
         
 
@@ -357,6 +370,7 @@ data-event-label="high"
           <div class="col goal-page-target-name">
             <span class="target-name">Lograr niveles más elevados de productividad económica mediante la diversificación, la modernización tecnológica y la innovación, entre otras cosas centrándose en los sectores con gran valor añadido y un uso intensivo de la mano de obra</span>
           </div>
+          
       </div>
         
 
@@ -411,6 +425,7 @@ data-event-label="high"
           <div class="col goal-page-target-name">
             <span class="target-name">Promover políticas orientadas al desarrollo que apoyen las actividades productivas, la creación de puestos de trabajo decentes, el emprendimiento, la creatividad y la innovación, y fomentar la formalización y el crecimiento de las microempresas y las pequeñas y medianas empresas, incluso mediante el acceso a servicios financieros</span>
           </div>
+          
       </div>
         
 
@@ -465,6 +480,7 @@ data-event-label="high"
           <div class="col goal-page-target-name">
             <span class="target-name">Mejorar progresivamente, de aquí a 2030, la producción y el consumo eficientes de los recursos mundiales y procurar desvincular el crecimiento económico de la degradación del medio ambiente, conforme al Marco Decenal de Programas sobre Modalidades de Consumo y Producción Sostenibles, empezando por los países desarrollados</span>
           </div>
+          
       </div>
         
 
@@ -559,6 +575,7 @@ data-event-label="high"
           <div class="col goal-page-target-name">
             <span class="target-name">De aquí a 2030, lograr el empleo pleno y productivo y el trabajo decente para todas las mujeres y los hombres, incluidos los jóvenes y las personas con discapacidad, así como la igualdad de remuneración por trabajo de igual valor</span>
           </div>
+          
       </div>
         
 
@@ -653,6 +670,7 @@ data-event-label="high"
           <div class="col goal-page-target-name">
             <span class="target-name">De aquí a 2020, reducir considerablemente la proporción de jóvenes que no están empleados y no cursan estudios ni reciben capacitación</span>
           </div>
+          
       </div>
         
 
@@ -707,6 +725,7 @@ data-event-label="high"
           <div class="col goal-page-target-name">
             <span class="target-name">Adoptar medidas inmediatas y eficaces para erradicar el trabajo forzoso, poner fin a las formas contemporáneas de esclavitud y la trata de personas y asegurar la prohibición y eliminación de las peores formas de trabajo infantil, incluidos el reclutamiento y la utilización de niños soldados, y, de aquí a 2025, poner fin al trabajo infantil en todas sus formas</span>
           </div>
+          
       </div>
         
 
@@ -761,6 +780,7 @@ data-event-label="high"
           <div class="col goal-page-target-name">
             <span class="target-name">Proteger los derechos laborales y promover un entorno de trabajo seguro y sin riesgos para todos los trabajadores, incluidos los trabajadores migrantes, en particular las mujeres migrantes y las personas con empleos precarios</span>
           </div>
+          
       </div>
         
 
@@ -855,6 +875,7 @@ data-event-label="high"
           <div class="col goal-page-target-name">
             <span class="target-name">De aquí a 2030, elaborar y poner en práctica políticas encaminadas a promover un turismo sostenible que cree puestos de trabajo y promueva la cultura y los productos locales</span>
           </div>
+          
       </div>
         
 
@@ -909,6 +930,7 @@ data-event-label="high"
           <div class="col goal-page-target-name">
             <span class="target-name">Fortalecer la capacidad de las instituciones financieras nacionales para fomentar y ampliar el acceso a los servicios bancarios, financieros y de seguros para todos</span>
           </div>
+          
       </div>
         
 
@@ -1003,6 +1025,7 @@ data-event-label="high"
           <div class="col goal-page-target-name">
             <span class="target-name">Aumentar el apoyo a la iniciativa de ayuda para el comercio en los países en desarrollo, en particular los países menos adelantados, incluso mediante el Marco Integrado Mejorado para la Asistencia Técnica a los Países Menos Adelantados en Materia de Comercio</span>
           </div>
+          
       </div>
         
 
@@ -1057,6 +1080,7 @@ data-event-label="high"
           <div class="col goal-page-target-name">
             <span class="target-name">De aquí a 2020, desarrollar y poner en marcha una estrategia mundial para el empleo de los jóvenes y aplicar el Pacto Mundial para el Empleo de la Organización Internacional del Trabajo</span>
           </div>
+          
       </div>
         
 
@@ -1148,12 +1172,12 @@ data-event-label="high"
     </div>
 </footer>
 
-<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
 <script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
 <script src="//cdn.datatables.net/fixedcolumns/3.2.3/js/dataTables.fixedColumns.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js" integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js" integrity="sha256-Y26AMvaIfrZ1EQU49pf6H4QzVTrOI8m9wQYKkftBt4s=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/patternomaly@1.3.2/dist/patternomaly.js"></script>
 
@@ -1174,12 +1198,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Buscar';</script>
 
-<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20221103134909'></script>
+<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20221107164613'></script>
 
 
     
     
-    <script src="/open-sdg-site-starter/assets/js/custom.js?v=20221103134909"></script><script>
+    <script src="/open-sdg-site-starter/assets/js/custom.js?v=20221107164613"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

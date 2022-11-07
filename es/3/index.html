@@ -26,8 +26,9 @@ var opensdg = {
   },
 
   // A hook which can be replaced to alter whether/how the values that are
-  // displayed on indicator tables/graphs get rounded.
-  dataRounding: function(value) {
+  // displayed on indicator tables/graphs get rounded. A "context" parameter
+  // is also passed which contains additional information.
+  dataRounding: function(value, context) {
     // Alterations go here.
     return value;
   },
@@ -37,6 +38,9 @@ var opensdg = {
   dataDisplayAlter: function(callback) {
     this.dataDisplayAlterations.push(callback);
   },
+
+  // Disaggregations which should be ignored on indicator pages.
+  ignoredDisaggregations: null,
 
   language: 'es',
 };
@@ -125,7 +129,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20221103134909">
+        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20221107164613">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -171,10 +175,10 @@ layout-goal
 <header role="banner" class="">
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light flex-wrap align-items-start">
-            <a class="navbar-brand" href="/open-sdg-site-starter/es/" id="home">
+            <a class="navbar-brand" href="/open-sdg-site-starter/es/" id="home" aria-label="" title="">
     <img src="/open-sdg-site-starter/assets/img/SDG_logo.png" alt="Objetivos de Desarrollo Sostenible - 17 Objetivos para transformar nuestro mundo" />
 </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="d-flex flex-wrap w-100 justify-content-between">
@@ -198,7 +202,7 @@ layout-goal
         <label class="visually-hidden" for="indicator_search">Buscar</label>
         <input class="form-control" type="search" name="q" id="indicator_search" title="Buscar">
         <span class="input-group-append">
-            <button class="btn btn-outline-secondary ms-n5" aria-label="Buscar" id="search-btn" type="submit">
+            <button class="btn btn-outline-secondary ms-n5" aria-label="" id="search-btn" type="submit">
                 <i class="fa fa-search"></i>
             </button>
         </span>
@@ -282,16 +286,24 @@ data-event-label="high"
 </div>
 
 
+
+
+
+
 <div id="main-content" class="container" role="main">
 
   
 
 
 
-  <div class="container g-0">
-    <h2 class="goal-page-heading">Metas e indicadores</h2>
-
-    
+  <div class="container g-0 ">
+    <div class="row align-items-end">
+      <div class="col">
+        <h2 class="goal-page-heading">Metas e indicadores</h2>
+      </div>
+      
+    </div>
+    <hr class="goal-page-column-header-rule">
     
       
       <div class="row align-items-start goal-target">
@@ -303,6 +315,7 @@ data-event-label="high"
           <div class="col goal-page-target-name">
             <span class="target-name">De aquí a 2030, reducir la tasa mundial de mortalidad materna a menos de 70 por cada 100.000 nacidos vivos</span>
           </div>
+          
       </div>
         
 
@@ -397,6 +410,7 @@ data-event-label="high"
           <div class="col goal-page-target-name">
             <span class="target-name">De aquí a 2030, poner fin a las muertes evitables de recién nacidos y de niños menores de 5 años, logrando que todos los países intenten reducir la mortalidad neonatal al menos a 12 por cada 1.000 nacidos vivos y la mortalidad de los niños menores de 5 años al menos a 25 por cada 1.000 nacidos vivos</span>
           </div>
+          
       </div>
         
 
@@ -491,6 +505,7 @@ data-event-label="high"
           <div class="col goal-page-target-name">
             <span class="target-name">De aquí a 2030, poner fin a las epidemias del SIDA, la tuberculosis, la malaria y las enfermedades tropicales desatendidas y combatir la hepatitis, las enfermedades transmitidas por el agua y otras enfermedades transmisibles</span>
           </div>
+          
       </div>
         
 
@@ -705,6 +720,7 @@ data-event-label="high"
           <div class="col goal-page-target-name">
             <span class="target-name">De aquí a 2030, reducir en un tercio la mortalidad prematura por enfermedades no transmisibles mediante su prevención y tratamiento, y promover la salud mental y el bienestar</span>
           </div>
+          
       </div>
         
 
@@ -799,6 +815,7 @@ data-event-label="high"
           <div class="col goal-page-target-name">
             <span class="target-name">Fortalecer la prevención y el tratamiento del abuso de sustancias adictivas, incluido el uso indebido de estupefacientes y el consumo nocivo de alcohol</span>
           </div>
+          
       </div>
         
 
@@ -893,6 +910,7 @@ data-event-label="high"
           <div class="col goal-page-target-name">
             <span class="target-name">De aquí a 2020, reducir a la mitad el número de muertes y lesiones causadas por accidentes de tráfico en el mundo</span>
           </div>
+          
       </div>
         
 
@@ -947,6 +965,7 @@ data-event-label="high"
           <div class="col goal-page-target-name">
             <span class="target-name">De aquí a 2030, garantizar el acceso universal a los servicios de salud sexual y reproductiva, incluidos los de planificación familiar, información y educación, y la integración de la salud reproductiva en las estrategias y los programas nacionales</span>
           </div>
+          
       </div>
         
 
@@ -1041,6 +1060,7 @@ data-event-label="high"
           <div class="col goal-page-target-name">
             <span class="target-name">Lograr la cobertura sanitaria universal, incluida la protección contra los riesgos financieros, el acceso a servicios de salud esenciales de calidad y el acceso a medicamentos y vacunas inocuos, eficaces, asequibles y de calidad para todos</span>
           </div>
+          
       </div>
         
 
@@ -1135,6 +1155,7 @@ data-event-label="high"
           <div class="col goal-page-target-name">
             <span class="target-name">De aquí a 2030, reducir considerablemente el número de muertes y enfermedades causadas por productos químicos peligrosos y por la polución y contaminación del aire, el agua y el suelo</span>
           </div>
+          
       </div>
         
 
@@ -1269,6 +1290,7 @@ data-event-label="high"
           <div class="col goal-page-target-name">
             <span class="target-name">Fortalecer la aplicación del Convenio Marco de la Organización Mundial de la Salud para el Control del Tabaco en todos los países, según proceda</span>
           </div>
+          
       </div>
         
 
@@ -1323,6 +1345,7 @@ data-event-label="high"
           <div class="col goal-page-target-name">
             <span class="target-name">Apoyar las actividades de investigación y desarrollo de vacunas y medicamentos contra las enfermedades transmisibles y no transmisibles que afectan primordialmente a los países en desarrollo y facilitar el acceso a medicamentos y vacunas esenciales asequibles de conformidad con la Declaración relativa al Acuerdo sobre los Aspectos de los Derechos de Propiedad Intelectual Relacionados con el Comercio y la Salud Pública, en la que se afirma el derecho de los países en desarrollo a utilizar al máximo las disposiciones del Acuerdo sobre los Aspectos de los Derechos de Propiedad Intelectual Relacionados con el Comercio respecto a la flexibilidad para proteger la salud pública y, en particular, proporcionar acceso a los medicamentos para todos</span>
           </div>
+          
       </div>
         
 
@@ -1457,6 +1480,7 @@ data-event-label="high"
           <div class="col goal-page-target-name">
             <span class="target-name">Aumentar considerablemente la financiación de la salud y la contratación, el perfeccionamiento, la capacitación y la retención del personal sanitario en los países en desarrollo, especialmente en los países menos adelantados y los pequeños Estados insulares en desarrollo</span>
           </div>
+          
       </div>
         
 
@@ -1511,6 +1535,7 @@ data-event-label="high"
           <div class="col goal-page-target-name">
             <span class="target-name">Reforzar la capacidad de todos los países, en particular los países en desarrollo, en materia de alerta temprana, reducción de riesgos y gestión de los riesgos para la salud nacional y mundial</span>
           </div>
+          
       </div>
         
 
@@ -1642,12 +1667,12 @@ data-event-label="high"
     </div>
 </footer>
 
-<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
 <script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
 <script src="//cdn.datatables.net/fixedcolumns/3.2.3/js/dataTables.fixedColumns.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js" integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js" integrity="sha256-Y26AMvaIfrZ1EQU49pf6H4QzVTrOI8m9wQYKkftBt4s=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/patternomaly@1.3.2/dist/patternomaly.js"></script>
 
@@ -1668,12 +1693,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Buscar';</script>
 
-<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20221103134909'></script>
+<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20221107164613'></script>
 
 
     
     
-    <script src="/open-sdg-site-starter/assets/js/custom.js?v=20221103134909"></script><script>
+    <script src="/open-sdg-site-starter/assets/js/custom.js?v=20221107164613"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
