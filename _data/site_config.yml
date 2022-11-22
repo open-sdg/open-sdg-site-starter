@@ -94,7 +94,7 @@ frontpage_cards:
     rule_color: ''
 frontpage_goals_grid:
   title: frontpage.heading_short
-  description: frontpage.instructions_short
+  description: frontpage.instructions_shorter
 frontpage_introduction_banner:
   title: frontpage.intro_title
   description: frontpage.intro_body
