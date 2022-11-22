@@ -105,9 +105,9 @@ var translations = {
         
     <title>
         
-        Indicator 11.5.3 -
+        Indicator 17.6.2 -
         
-        (a) Damage to critical infrastructure and (b) number of disruptions to basic services, attributed to disasters - Indicators For The Sustainable Development Goals
+        Fixed Internet broadband subscriptions per 100 inhabitants, by speed - Indicators For The Sustainable Development Goals
     </title>
 
 
@@ -134,7 +134,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20221107164613">
+        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20221122153033">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -157,7 +157,7 @@ layout-indicator
 ">
 <!-- <div class="container"> -->
 
-<script>translations['header'] = {"alpha":"Alpha","default_contrast":"Default contrast","disable_high_contrast":"Disable high contrast","disclaimer":"This is a development website. We welcome your <a href=\"mailto:%email_contacts.suggestions\">feedback</a>.","enable_high_contrast":"Enable high contrast","high_contrast":"High contrast","internet_explorer_message":"We have detected that you are using Internet Explorer to visit this website. Internet Explorer is now being phased out by Microsoft. As a result, this website no longer supports any version of Internet Explorer. Some features on this site will not work. You should use a modern browser such as Edge, Chrome, Firefox, or Safari. If you have difficulty installing or accessing a different browser, please contact your IT support team.","internet_explorer_message_title":"This internet browser is no longer supported","skip_link":"Skip to main content","tag_line":"17 Goals to Transform our World","toggle_menu":"Menu toggle. Click to expand or collapse the menu.","toggle_search":"Search toggle. Click to expand or collapse the search bar."};</script>
+<script>translations['header'] = {"alpha":"Alpha","default_contrast":"Default contrast","disable_high_contrast":"Disable high contrast","disclaimer":"This is a development website. We welcome your <a href=\"mailto:%email_contacts.suggestions\">feedback</a>.","enable_high_contrast":"Enable high contrast","hide_menu":"Hide navigation menu","high_contrast":"High contrast","internet_explorer_message":"We have detected that you are using Internet Explorer to visit this website. Internet Explorer is now being phased out by Microsoft. As a result, this website no longer supports any version of Internet Explorer. Some features on this site will not work. You should use a modern browser such as Edge, Chrome, Firefox, or Safari. If you have difficulty installing or accessing a different browser, please contact your IT support team.","internet_explorer_message_title":"This internet browser is no longer supported","logo_title":"Go to homepage","show_menu":"Show navigation menu","skip_link":"Skip to main content","tag_line":"17 Goals to Transform our World","toggle_menu":"Menu toggle. Click to expand or collapse the menu.","toggle_search":"Search toggle. Click to expand or collapse the search bar."};</script>
 
 <a class="sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Skip to main content</a>
 <div class="container internet-explorer-message">
@@ -180,10 +180,10 @@ layout-indicator
 <header role="banner" class="">
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light flex-wrap align-items-start">
-            <a class="navbar-brand" href="/open-sdg-site-starter/" id="home" aria-label="" title="">
+            <a class="navbar-brand" href="/open-sdg-site-starter/" id="home" aria-label="Go to homepage" title="Go to homepage">
     <img src="/open-sdg-site-starter/assets/img/SDG_logo.png" alt="Sustainable Development Goals - 17 Goals to Transform our World" />
 </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Show navigation menu">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="d-flex flex-wrap w-100 justify-content-between">
@@ -207,7 +207,7 @@ layout-indicator
         <label class="visually-hidden" for="indicator_search">Search</label>
         <input class="form-control" type="search" name="q" id="indicator_search" title="Search">
         <span class="input-group-append">
-            <button class="btn btn-outline-secondary ms-n5" aria-label="" id="search-btn" type="submit">
+            <button class="btn btn-outline-secondary ms-n5" aria-label="Site search" id="search-btn" type="submit">
                 <i class="fa fa-search"></i>
             </button>
         </span>
@@ -229,7 +229,7 @@ layout-indicator
       English
     </button>
     <ul class="dropdown-menu"><li>
-            <a class="dropdown-item" href="/open-sdg-site-starter/es/11-5-3/">
+            <a class="dropdown-item" href="/open-sdg-site-starter/es/17-6-2/">
               Español
             </a>
           </li></ul>
@@ -241,7 +241,7 @@ layout-indicator
                     <span class="no-js-language-toggle"><div class="language-toggle-container d-flex">
     <i class="fa fa-globe language-toggle-globe-links"></i>
     <ul class="language-toggle-links list-unstyled list-inline"><li class="language-option-es list-inline-item">
-            <a class="language-toggle-link" href="/open-sdg-site-starter/es/11-5-3/">
+            <a class="language-toggle-link" href="/open-sdg-site-starter/es/17-6-2/">
                 Español
             </a>
         </li></ul>
@@ -339,7 +339,7 @@ data-event-label="high"
   
 </script>
 
-<script>translations['indicator'] = {"annotation_2030_target":"2030 indicator target","annotation_series_break":"Series break","announce_data_added":"Chart and table updated to include data.","announce_data_not_available":"Chart and table shows no data.","announce_data_removed":"Chart and table updated to exclude data.","apply":"Apply","cancel":"Cancel","change_breakdowns":"Change breakdowns","chart":"Chart","chart_annotation":"Chart annotation","clear_all":"Clear all","clear_selections":"Clear selections","data_keyboard_navigation":"Press enter to browse data points with left and right arrow keys.","data_not_available":"This data is not available. Please choose alternative data to display.","data_tabular_alternative":"For tabular data alternative see Table tab.","dataset_size_warning":"There are too many datasets to show on the chart. Not all will be shown until you remove some selections.","download_chart":"Download Chart CSV","download_chart_image":"Download Chart Image","download_chart_image_title":"Download chart as image","download_csv":"Download CSV","download_csv_title":"Download as CSV","download_geojson":"Download GeoJSON","download_geojson_title":"Download as GeoJSON","download_headline":"Download Headline CSV","download_headline_title":"Download headline data as CSV","download_source":"Download Source CSV","download_source_for_disaggregations":"Download source CSV for disaggregations","download_source_sdmx":"Download Source SDMX","download_source_sdmx_title":"Download source data as SDMX","download_source_title":"Download source data as CSV","download_table":"Download Table CSV","edit":"Edit","edit_configuration":"Edit Configuration","edit_data":"Edit Data","edit_metadata":"Edit Metadata","footnote":"Footnote","geographical_area":"Geographical Area","global_metadata":"Global Metadata","global_metadata_blurb":"This table provides information on metadata for SDG indicators as defined by the UN Statistical Commission. <a href=\"https://unstats.un.org/sdgs/metadata/\">Complete global metadata</a> is provided by the UN Statistics Division.","headline_data":"Headline data","legend_help":"Click on the legend to remove individual lines from the chart.","loading":"Loading","loading_map":"Loading map","map":"Map","map_search":"Search","map_search_hide":"Hide search","map_search_show":"Show search","map_year_slider":"Year slider","national_metadata":"National Metadata","national_metadata_blurb":"This table provides metadata for the actual indicator available from %country.name statistics closest to the corresponding global SDG indicator. Please note that even when the global SDG indicator is fully available from %country.adjective statistics, this table should be consulted for information on national methodology and other %country.adjective-specific metadata information.","next":"Next indicator","no_data_hint":"No options available because of filters above","no_headline_data":"No headline data available","plot_legend_description":"Plot legend: list of lines included in chart","previous":"Previous indicator","select_all":"Select all","series":"Series","series_help":"Choose categories from the dropdowns below to see different breakdowns of the data. Some will not be available until a higher level is chosen.","source":"Source","sources":"Sources","status":"Indicator status","sub_categories":"Sub-categories","sub_categories_show":"Show sub-categories:","table":"Table","table_column_sort":"Click to sort by this column","tags":"Tags","unit":"Unit","unit_of_measurement":"Unit of Measurement","units_type":"Units type","variable_hint":"Available when '%field' is selected","view_indicator_list":"View this goal's indicator list"};</script>
+<script>translations['indicator'] = {"annotation_2030_target":"2030 indicator target","annotation_series_break":"Series break","announce_data_added":"Chart and table updated to include data.","announce_data_not_available":"Chart and table shows no data.","announce_data_removed":"Chart and table updated to exclude data.","apply":"Apply","cancel":"Cancel","change_breakdowns":"Change breakdowns","chart":"Chart","chart_annotation":"Chart annotation","clear_all":"Clear all","clear_selections":"Clear selections","data_keyboard_navigation":"Press enter to browse data points with left and right arrow keys.","data_not_available":"This data is not available. Please choose alternative data to display.","data_tabular_alternative":"For tabular data alternative see Table tab.","dataset_size_warning":"There are too many datasets to show on the chart. Not all will be shown until you remove some selections.","download_chart":"Download chart data (.csv)","download_chart_image":"Download chart image (.png)","download_chart_image_title":"Download chart image as PNG","download_csv":"Download data (.csv)","download_csv_title":"Download data as CSV","download_geojson":"Download map data (.geojson)","download_geojson_title":"Download map data as GeoJSON","download_headline":"Download headline data (.csv)","download_headline_title":"Download headline data as CSV","download_source":"Download source data (.csv)","download_source_for_disaggregations":"Download source data for disaggregations (.csv)","download_source_sdmx":"Download source SDMX (.xml)","download_source_sdmx_title":"Download source data as SDMX","download_source_title":"Download source data as CSV","download_table":"Download table data (.csv)","edit":"Edit Indicator","edit_configuration":"Edit Configuration","edit_data":"Edit Data","edit_metadata":"Edit Metadata","empty_metadata_placeholder":"Not available for this indicator","empty_metadata_placeholder_sources":"Not available for this source","footnote":"Footnote","geographical_area":"Geographical Area","global_metadata":"Global Metadata","global_metadata_blurb":"This table provides information on metadata for SDG indicators as defined by the UN Statistical Commission. <a href=\"https://unstats.un.org/sdgs/metadata/\">Complete global metadata</a> is provided by the UN Statistics Division.","headline_data":"Headline data","legend_help":"Click on the legend to remove individual lines from the chart.","loading":"Loading","loading_map":"Loading map","map":"Map","map_fullscreen":"View map fullscreen","map_fullscreen_exit":"Exit fullscreen map","map_search":"Map search","map_search_cancel":"Clear map search","map_search_hide":"Hide map search","map_search_show":"Show map search","map_slider_back":"View map data for previous time period","map_slider_forward":"View map data for next time period","map_slider_keyboard":"View map data throughout time period by using left and right arrow keys","map_slider_mouse":"Navigate map data by time period","map_year_slider":"Year slider","map_zoom_home":"Reset to default map zoom","map_zoom_in":"Zoom in on map","map_zoom_out":"Zoom out on map","national_metadata":"National Metadata","national_metadata_blurb":"This table provides metadata for the actual indicator available from %country.name statistics closest to the corresponding global SDG indicator. Please note that even when the global SDG indicator is fully available from %country.adjective statistics, this table should be consulted for information on national methodology and other %country.adjective-specific metadata information.","next":"Next indicator","no_data_hint":"No options available because of filters above","no_headline_data":"No headline data available","plot_legend_description":"Plot legend: list of lines included in chart","previous":"Previous indicator","select_all":"Select all","series":"Series","series_help":"Choose categories from the dropdowns below to see different breakdowns of the data. Some will not be available until a higher level is chosen.","source":"Source","sources":"Sources","status":"Indicator status","sub_categories":"Sub-categories","sub_categories_show":"Show sub-categories:","table":"Table","table_column_sort":"Click to sort by this column","tags":"Tags","total":"Total","unit":"Unit","unit_of_measurement":"Unit of Measurement","units_type":"Units type","variable_hint":"Available when '%field' is selected","view_indicator_list":"View this goal's indicator list"};</script>
 
 <script>translations['data'] = {"Year":"Year"};</script>
 
@@ -357,10 +357,10 @@ data-event-label="high"
         </li>
         
         <li class="breadcrumb-item">
-            <a href="/open-sdg-site-starter/11"
-               title="Goal 11 - Sustainable cities and communities"
+            <a href="/open-sdg-site-starter/17"
+               title="Goal 17 - Partnerships for the goals"
                aria-label="Goal  - ">
-               Goal 11
+               Goal 17
             </a>
         </li>
         
@@ -370,15 +370,15 @@ data-event-label="high"
 
   
 </div>
-<div class="heading goal-banner indicator goal-11">
+<div class="heading goal-banner indicator goal-17">
     <div class="container">
         <div class="row">
             
             <div class="col-4 col-md-3 col-lg-2 goal-icon goal-tiles">
-                <a href="/open-sdg-site-starter/11" aria-label=" 11" title=" 11">
-                    <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/11.png"
-                        alt="Sustainable cities and communities - Goal 11"
-                        id="goal-11"
+                <a href="/open-sdg-site-starter/17" aria-label="View targets and indicators for Goal 17" title="View targets and indicators for Goal 17">
+                    <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/17.png"
+                        alt="Partnerships for the goals - Goal 17"
+                        id="goal-17"
                         class="goal-icon-image goal-icon-image-" />
                 </a>
             </div>
@@ -387,16 +387,16 @@ data-event-label="high"
                 <div>
                     <h1>
                         
-                        Indicator 11.5.3
+                        Indicator 17.6.2
                         
-                        <span class="lead-copy">(a) Damage to critical infrastructure and (b) number of disruptions to basic services, attributed to disasters</span>
+                        <span class="lead-copy">Fixed Internet broadband subscriptions per 100 inhabitants, by speed</span>
                     </h1>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<div id="main-content" class="container goal-11" role="main">
+<div id="main-content" class="container goal-17" role="main">
   
 
   
@@ -412,10 +412,10 @@ data-event-label="high"
 
 <div class="row"
   id="indicatorData"
-  data-indicatorid='indicator_11-5-3'
-  data-id="11-5-3"
+  data-indicatorid='indicator_17-6-2'
+  data-id="17-6-2"
   data-country="Australia"
-  data-charttitle="(a) Damage to critical infrastructure and (b) number of disruptions to basic services, attributed to disasters"
+  data-charttitle="Fixed Internet broadband subscriptions per 100 inhabitants, by speed"
   data-charttitles="null"
   data-measurementunit=""
   data-xaxislabel=""
@@ -508,7 +508,7 @@ data-event-label="Change to indicator.sources tab"
     
     
         <li role="presentation" class="nav-item">
-            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#edit" aria-controls="edit" role="tab">Edit</a>
+            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#edit" aria-controls="edit" role="tab">Edit Indicator</a>
         </li>
     
 </ul>
@@ -843,7 +843,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Indicator </th>
         <td>
           
-            <p>Indicator 11.5.2: Direct economic loss in relation to global GDP, damage to critical infrastructure and number of disruptions to basic services, attributed to disasters</p>
+            <p>Indicator 17.6.1: Fixed Internet broadband subscriptions per 100 inhabitants, by speed</p>
 
           
         </td>
@@ -859,7 +859,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Target </th>
         <td>
           
-            <p>Target 11.5: By 2030, significantly reduce the number of deaths and the number of people affected and substantially decrease the direct economic losses relative to global gross domestic product caused by disasters, including water-related disasters, with a focus on protecting the poor and people in vulnerable situations</p>
+            <p>Target 17.6: Enhance North-South, South-South and triangular regional and international cooperation on and access to science, technology and innovation and enhance knowledge-sharing on mutually agreed terms, including through improved coordination among existing mechanisms, in particular at the United Nations level, and through a global technology facilitation mechanism</p>
 
           
         </td>
@@ -875,7 +875,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Metadata update </th>
         <td>
           
-            <p>2017-07-07</p>
+            <p>2021-08-20</p>
 
           
         </td>
@@ -891,7 +891,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">International organisations(s) responsible for global monitoring </th>
         <td>
           
-            <p>United Nations Office for Disaster Reduction (UNISDR)</p>
+            <p>International Telecommunication Union (ITU)</p>
 
           
         </td>
@@ -907,7 +907,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Related indicators </th>
         <td>
           
-            <p>1.5; 11.5; 11.b; 13.1; 2.4; 3.6; 3.9; 3.d; 4.a; 6.6; 9.1; 9.a; 11.1; 11.3; 11.c; 13.2; 13.3; 13.a; 13.b; 14.2; 15.1; 15.2; 15.3; 15.9.</p>
+            <p>8.2, 9.1, 9.c, 17.8</p>
 
           
         </td>
@@ -1162,12 +1162,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20221107164613'></script>
+<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20221122153033'></script>
 
 
     
     
-    <script src="/open-sdg-site-starter/assets/js/custom.js?v=20221107164613"></script><script>
+    <script src="/open-sdg-site-starter/assets/js/custom.js?v=20221122153033"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

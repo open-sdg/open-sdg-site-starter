@@ -129,7 +129,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20221107164613">
+        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20221122153033">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -152,12 +152,12 @@ layout-reportingstatus
 ">
 <!-- <div class="container"> -->
 
-<script>translations['header'] = {"alpha":"Alfa","default_contrast":"Contraste estándar","disable_high_contrast":"Desactivar alto contraste","disclaimer":"Este es un sitio web de desarrollo. Agradecemos sus <a href=\"mailto:%email_contacts.suggestions\">comentarios</a>.","enable_high_contrast":"Habilitar alto contraste","high_contrast":"Alto contraste","internet_explorer_message":"Hemos detectado que está utilizando Internet Explorer para visitar este sitio web. Microsoft está eliminando Internet Explorer. Por lo tanto, este sitio web ya no es compatible con ninguna versión de Internet Explorer. Algunas características de este sitio no funcionarán. Debe utilizar un navegador moderno como Edge, Chrome, Firefox o Safari. Si tiene dificultades para instalar o acceder a un navegador diferente, póngase en contacto con su equipo de asistencia informática.","internet_explorer_message_title":"Este navegador de Internet ya no es compatible","skip_link":"Saltar al contenido principal","tag_line":"17 Objetivos para transformar nuestro mundo","toggle_menu":"Menú de alternancia. Haga clic para ampliar o reducir el menú.","toggle_search":"Barra de búsqueda. Haga clic para ampliar o reducir la barra de búsqueda."};</script>
+<script>translations['header'] = {"alpha":"Alfa","default_contrast":"Contraste estándar","disable_high_contrast":"Desactivar alto contraste","disclaimer":"Este es un sitio web de desarrollo. Agradecemos sus <a href=\"mailto:%email_contacts.suggestions\">comentarios</a>.","enable_high_contrast":"Habilitar alto contraste","hide_menu":"Ocultar el menú de navegación","high_contrast":"Alto contraste","internet_explorer_message":"Hemos detectado que está utilizando Internet Explorer para visitar este sitio web. Internet Explorer ahora está siendo eliminado por Microsoft. Como resultado, este sitio web ya no es compatible con ninguna versión de Internet Explorer. Algunas características de este sitio no funcionarán. Debe usar un navegador moderno como Edge, Chrome, Firefox o Safari. Si tiene dificultades para instalar o acceder a un navegador diferente, comuníquese con su equipo de soporte de TI.","internet_explorer_message_title":"Este navegador de Internet ya no es compatible","logo_title":"Ir a la página de inicio","show_menu":"Mostrar el menú de navegación","skip_link":"Saltar al contenido principal","tag_line":"17 Objetivos para transformar nuestro mundo","toggle_menu":"Alternar menú. Haga clic para expandir o contraer el menú.","toggle_search":"Barra de búsqueda. Haga clic para ampliar o reducir la barra de búsqueda."};</script>
 
 <a class="sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Saltar al contenido principal</a>
 <div class="container internet-explorer-message">
     <h2 class="internet-explorer-message-title">Este navegador de Internet ya no es compatible</h2>
-    <p class="internet-explorer-message-body">Hemos detectado que está utilizando Internet Explorer para visitar este sitio web. Microsoft está eliminando Internet Explorer. Por lo tanto, este sitio web ya no es compatible con ninguna versión de Internet Explorer. Algunas características de este sitio no funcionarán. Debe utilizar un navegador moderno como Edge, Chrome, Firefox o Safari. Si tiene dificultades para instalar o acceder a un navegador diferente, póngase en contacto con su equipo de asistencia informática.</p>
+    <p class="internet-explorer-message-body">Hemos detectado que está utilizando Internet Explorer para visitar este sitio web. Internet Explorer ahora está siendo eliminado por Microsoft. Como resultado, este sitio web ya no es compatible con ninguna versión de Internet Explorer. Algunas características de este sitio no funcionarán. Debe usar un navegador moderno como Edge, Chrome, Firefox o Safari. Si tiene dificultades para instalar o acceder a un navegador diferente, comuníquese con su equipo de soporte de TI.</p>
 </div>
 <div id="disclaimer">
     
@@ -175,10 +175,10 @@ layout-reportingstatus
 <header role="banner" class="">
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light flex-wrap align-items-start">
-            <a class="navbar-brand" href="/open-sdg-site-starter/es/" id="home" aria-label="" title="">
+            <a class="navbar-brand" href="/open-sdg-site-starter/es/" id="home" aria-label="Ir a la página de inicio" title="Ir a la página de inicio">
     <img src="/open-sdg-site-starter/assets/img/SDG_logo.png" alt="Objetivos de Desarrollo Sostenible - 17 Objetivos para transformar nuestro mundo" />
 </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Mostrar el menú de navegación">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="d-flex flex-wrap w-100 justify-content-between">
@@ -202,7 +202,7 @@ layout-reportingstatus
         <label class="visually-hidden" for="indicator_search">Buscar</label>
         <input class="form-control" type="search" name="q" id="indicator_search" title="Buscar">
         <span class="input-group-append">
-            <button class="btn btn-outline-secondary ms-n5" aria-label="" id="search-btn" type="submit">
+            <button class="btn btn-outline-secondary ms-n5" aria-label="Buscar en el sitio" id="search-btn" type="submit">
                 <i class="fa fa-search"></i>
             </button>
         </span>
@@ -281,7 +281,7 @@ data-event-label="high"
 
 
 <div class="reporting-status-description">
-  <p>El estado de los informes proporciona una visión general de la cantidad de datos de los Objetivos de Desarrollo Sostenible (ODS) que Australia reporta.</p>
+  <p>El estado de los informes proporciona una descripción general de la cantidad de datos de los Objetivos de Desarrollo Sostenible (ODS) que informa Australia.</p>
 
 </div>
 
@@ -322,7 +322,7 @@ data-event-label="high"
 </div>
   <h2>Estados por objetivos</h2><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
-        <a href="/open-sdg-site-starter/es/1" title=" 1" aria-label=" 1">
+        <a href="/open-sdg-site-starter/es/1" title="Ver las metas e indicadores del Objetivo 1" aria-label="Ver las metas e indicadores del Objetivo 1">
         <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/1.png" alt="Fin de la Pobreza - Objetivo 1" width="100" height="100" class="goal-icon-1 goal-icon-image goal-icon-image-"/>
         </a>
     </div>
@@ -356,7 +356,7 @@ data-event-label="high"
     <br style="clear:both;">
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
-        <a href="/open-sdg-site-starter/es/2" title=" 2" aria-label=" 2">
+        <a href="/open-sdg-site-starter/es/2" title="Ver las metas e indicadores del Objetivo 2" aria-label="Ver las metas e indicadores del Objetivo 2">
         <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/2.png" alt="Hambre Cero - Objetivo 2" width="100" height="100" class="goal-icon-2 goal-icon-image goal-icon-image-"/>
         </a>
     </div>
@@ -390,7 +390,7 @@ data-event-label="high"
     <br style="clear:both;">
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
-        <a href="/open-sdg-site-starter/es/3" title=" 3" aria-label=" 3">
+        <a href="/open-sdg-site-starter/es/3" title="Ver las metas e indicadores del Objetivo 3" aria-label="Ver las metas e indicadores del Objetivo 3">
         <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/3.png" alt="Salud y Bienestar - Objetivo 3" width="100" height="100" class="goal-icon-3 goal-icon-image goal-icon-image-"/>
         </a>
     </div>
@@ -424,7 +424,7 @@ data-event-label="high"
     <br style="clear:both;">
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
-        <a href="/open-sdg-site-starter/es/4" title=" 4" aria-label=" 4">
+        <a href="/open-sdg-site-starter/es/4" title="Ver las metas e indicadores del Objetivo 4" aria-label="Ver las metas e indicadores del Objetivo 4">
         <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/4.png" alt="Educación de Calidad - Objetivo 4" width="100" height="100" class="goal-icon-4 goal-icon-image goal-icon-image-"/>
         </a>
     </div>
@@ -458,7 +458,7 @@ data-event-label="high"
     <br style="clear:both;">
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
-        <a href="/open-sdg-site-starter/es/5" title=" 5" aria-label=" 5">
+        <a href="/open-sdg-site-starter/es/5" title="Ver las metas e indicadores del Objetivo 5" aria-label="Ver las metas e indicadores del Objetivo 5">
         <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/5.png" alt="Igualdad de Género - Objetivo 5" width="100" height="100" class="goal-icon-5 goal-icon-image goal-icon-image-"/>
         </a>
     </div>
@@ -492,7 +492,7 @@ data-event-label="high"
     <br style="clear:both;">
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
-        <a href="/open-sdg-site-starter/es/6" title=" 6" aria-label=" 6">
+        <a href="/open-sdg-site-starter/es/6" title="Ver las metas e indicadores del Objetivo 6" aria-label="Ver las metas e indicadores del Objetivo 6">
         <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/6.png" alt="Agua Limpia y Saneamiento - Objetivo 6" width="100" height="100" class="goal-icon-6 goal-icon-image goal-icon-image-"/>
         </a>
     </div>
@@ -526,7 +526,7 @@ data-event-label="high"
     <br style="clear:both;">
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
-        <a href="/open-sdg-site-starter/es/7" title=" 7" aria-label=" 7">
+        <a href="/open-sdg-site-starter/es/7" title="Ver las metas e indicadores del Objetivo 7" aria-label="Ver las metas e indicadores del Objetivo 7">
         <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/7.png" alt="Energía Asequible y No Contaminante - Objetivo 7" width="100" height="100" class="goal-icon-7 goal-icon-image goal-icon-image-"/>
         </a>
     </div>
@@ -560,13 +560,13 @@ data-event-label="high"
     <br style="clear:both;">
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
-        <a href="/open-sdg-site-starter/es/8" title=" 8" aria-label=" 8">
-        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/8.png" alt="Trabajo Decente y Crecimiento Económico - Objetivo 8" width="100" height="100" class="goal-icon-8 goal-icon-image goal-icon-image-"/>
+        <a href="/open-sdg-site-starter/es/8" title="Ver las metas e indicadores del Objetivo 8" aria-label="Ver las metas e indicadores del Objetivo 8">
+        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/8.png" alt="Trabajo decente y crecimiento económico - Objetivo 8" width="100" height="100" class="goal-icon-8 goal-icon-image goal-icon-image-"/>
         </a>
     </div>
     <div class="details">
         <h3 class="status-goal">
-            <a href="/open-sdg-site-starter/es/8">Trabajo Decente y Crecimiento Económico</a>
+            <a href="/open-sdg-site-starter/es/8">Trabajo decente y crecimiento económico</a>
         </h3>
         <span class="total">16 indicadores</span>
         <div class="summary">
@@ -594,7 +594,7 @@ data-event-label="high"
     <br style="clear:both;">
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
-        <a href="/open-sdg-site-starter/es/9" title=" 9" aria-label=" 9">
+        <a href="/open-sdg-site-starter/es/9" title="Ver las metas e indicadores del Objetivo 9" aria-label="Ver las metas e indicadores del Objetivo 9">
         <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/9.png" alt="Industria, Innovación e Infraestructura - Objetivo 9" width="100" height="100" class="goal-icon-9 goal-icon-image goal-icon-image-"/>
         </a>
     </div>
@@ -628,7 +628,7 @@ data-event-label="high"
     <br style="clear:both;">
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
-        <a href="/open-sdg-site-starter/es/10" title=" 10" aria-label=" 10">
+        <a href="/open-sdg-site-starter/es/10" title="Ver las metas e indicadores del Objetivo 10" aria-label="Ver las metas e indicadores del Objetivo 10">
         <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/10.png" alt="Reducción de las Desigualdades - Objetivo 10" width="100" height="100" class="goal-icon-10 goal-icon-image goal-icon-image-"/>
         </a>
     </div>
@@ -662,20 +662,20 @@ data-event-label="high"
     <br style="clear:both;">
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
-        <a href="/open-sdg-site-starter/es/11" title=" 11" aria-label=" 11">
-        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/11.png" alt="Cuidades y Comunidades Sostenibles - Objetivo 11" width="100" height="100" class="goal-icon-11 goal-icon-image goal-icon-image-"/>
+        <a href="/open-sdg-site-starter/es/11" title="Ver las metas e indicadores del Objetivo 11" aria-label="Ver las metas e indicadores del Objetivo 11">
+        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/11.png" alt="Ciudades y comunidades sostenibles - Objetivo 11" width="100" height="100" class="goal-icon-11 goal-icon-image goal-icon-image-"/>
         </a>
     </div>
     <div class="details">
         <h3 class="status-goal">
-            <a href="/open-sdg-site-starter/es/11">Cuidades y Comunidades Sostenibles</a>
+            <a href="/open-sdg-site-starter/es/11">Ciudades y comunidades sostenibles</a>
         </h3>
-        <span class="total">15 indicadores</span>
+        <span class="total">14 indicadores</span>
         <div class="summary">
             <div class="statuses">
                 
                 <div>
-                    <span class="status notstarted"><span class="status-inner">15</span></span><strong>Explorando fuentes de datos</strong><span class="value">100%</span>
+                    <span class="status notstarted"><span class="status-inner">14</span></span><strong>Explorando fuentes de datos</strong><span class="value">100%</span>
                 </div>
                 
                 
@@ -696,7 +696,7 @@ data-event-label="high"
     <br style="clear:both;">
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
-        <a href="/open-sdg-site-starter/es/12" title=" 12" aria-label=" 12">
+        <a href="/open-sdg-site-starter/es/12" title="Ver las metas e indicadores del Objetivo 12" aria-label="Ver las metas e indicadores del Objetivo 12">
         <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/12.png" alt="Producción y Consumo Responsables - Objetivo 12" width="100" height="100" class="goal-icon-12 goal-icon-image goal-icon-image-"/>
         </a>
     </div>
@@ -730,7 +730,7 @@ data-event-label="high"
     <br style="clear:both;">
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
-        <a href="/open-sdg-site-starter/es/13" title=" 13" aria-label=" 13">
+        <a href="/open-sdg-site-starter/es/13" title="Ver las metas e indicadores del Objetivo 13" aria-label="Ver las metas e indicadores del Objetivo 13">
         <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/13.png" alt="Acción por el Clima - Objetivo 13" width="100" height="100" class="goal-icon-13 goal-icon-image goal-icon-image-"/>
         </a>
     </div>
@@ -764,7 +764,7 @@ data-event-label="high"
     <br style="clear:both;">
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
-        <a href="/open-sdg-site-starter/es/14" title=" 14" aria-label=" 14">
+        <a href="/open-sdg-site-starter/es/14" title="Ver las metas e indicadores del Objetivo 14" aria-label="Ver las metas e indicadores del Objetivo 14">
         <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/14.png" alt="Vida Submarina - Objetivo 14" width="100" height="100" class="goal-icon-14 goal-icon-image goal-icon-image-"/>
         </a>
     </div>
@@ -798,7 +798,7 @@ data-event-label="high"
     <br style="clear:both;">
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
-        <a href="/open-sdg-site-starter/es/15" title=" 15" aria-label=" 15">
+        <a href="/open-sdg-site-starter/es/15" title="Ver las metas e indicadores del Objetivo 15" aria-label="Ver las metas e indicadores del Objetivo 15">
         <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/15.png" alt="Vida de Ecosistemas Terrestres - Objetivo 15" width="100" height="100" class="goal-icon-15 goal-icon-image goal-icon-image-"/>
         </a>
     </div>
@@ -832,13 +832,13 @@ data-event-label="high"
     <br style="clear:both;">
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
-        <a href="/open-sdg-site-starter/es/16" title=" 16" aria-label=" 16">
-        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/16.png" alt="Paz, Justicia e Instituciones Sólidas - Objetivo 16" width="100" height="100" class="goal-icon-16 goal-icon-image goal-icon-image-"/>
+        <a href="/open-sdg-site-starter/es/16" title="Ver las metas e indicadores del Objetivo 16" aria-label="Ver las metas e indicadores del Objetivo 16">
+        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/16.png" alt="Paz, justicia e instituciones fuertes - Objetivo 16" width="100" height="100" class="goal-icon-16 goal-icon-image goal-icon-image-"/>
         </a>
     </div>
     <div class="details">
         <h3 class="status-goal">
-            <a href="/open-sdg-site-starter/es/16">Paz, Justicia e Instituciones Sólidas</a>
+            <a href="/open-sdg-site-starter/es/16">Paz, justicia e instituciones fuertes</a>
         </h3>
         <span class="total">24 indicadores</span>
         <div class="summary">
@@ -866,7 +866,7 @@ data-event-label="high"
     <br style="clear:both;">
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
-        <a href="/open-sdg-site-starter/es/17" title=" 17" aria-label=" 17">
+        <a href="/open-sdg-site-starter/es/17" title="Ver las metas e indicadores del Objetivo 17" aria-label="Ver las metas e indicadores del Objetivo 17">
         <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/17.png" alt="Alianzas para Lograr los Objetivos - Objetivo 17" width="100" height="100" class="goal-icon-17 goal-icon-image goal-icon-image-"/>
         </a>
     </div>
@@ -874,12 +874,12 @@ data-event-label="high"
         <h3 class="status-goal">
             <a href="/open-sdg-site-starter/es/17">Alianzas para Lograr los Objetivos</a>
         </h3>
-        <span class="total">24 indicadores</span>
+        <span class="total">25 indicadores</span>
         <div class="summary">
             <div class="statuses">
                 
                 <div>
-                    <span class="status notstarted"><span class="status-inner">24</span></span><strong>Explorando fuentes de datos</strong><span class="value">100%</span>
+                    <span class="status notstarted"><span class="status-inner">25</span></span><strong>Explorando fuentes de datos</strong><span class="value">100%</span>
                 </div>
                 
                 
@@ -908,7 +908,7 @@ data-event-label="high"
   
 
   </div>
-  <a href="#top">Volver al principio</a>
+  <a href="#top">Volver arriba</a>
 </div>
 <footer role="contentinfo">
     <div class="container">
@@ -978,12 +978,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Buscar';</script>
 
-<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20221107164613'></script>
+<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20221122153033'></script>
 
 
     
     
-    <script src="/open-sdg-site-starter/assets/js/custom.js?v=20221107164613"></script><script>
+    <script src="/open-sdg-site-starter/assets/js/custom.js?v=20221122153033"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
