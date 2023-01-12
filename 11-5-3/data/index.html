@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" class="no-js">
+<html lang="en" class="no-js">
     <head>
         <meta charset="utf-8">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
@@ -11,7 +11,7 @@
 var opensdg = {
 
   // A base URL for asynchronous calls to SDG data.
-  remoteDataBaseUrl: 'https://open-sdg.org/open-sdg-data-starter/es',
+  remoteDataBaseUrl: 'https://open-sdg.org/open-sdg-data-starter/en',
 
   chartConfigAlterations: [],
   // A hook which can be used to modify the configuration for Chart.js.
@@ -42,7 +42,7 @@ var opensdg = {
   // Disaggregations which should be ignored on indicator pages.
   ignoredDisaggregations: null,
 
-  language: 'es',
+  language: 'en',
 };
 
 </script>
@@ -103,7 +103,7 @@ var translations = {
         ================================================== -->
 
         
-    <title>Editar datos: 17.6.2 - Indicadores para los Objetivos de Desarrollo Sostenible</title>
+    <title>Edit Data: 11.5.3 - Indicators For The Sustainable Development Goals</title>
 
 
 
@@ -129,7 +129,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20221122153033">
+        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20230112042324">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -147,25 +147,25 @@ var translations = {
         
 
     </head>
-<body class="language-es
+<body class="language-en
 layout-data-editor
 ">
 <!-- <div class="container"> -->
 
-<script>translations['header'] = {"alpha":"Alfa","default_contrast":"Contraste estándar","disable_high_contrast":"Desactivar alto contraste","disclaimer":"Este es un sitio web de desarrollo. Agradecemos sus <a href=\"mailto:%email_contacts.suggestions\">comentarios</a>.","enable_high_contrast":"Habilitar alto contraste","hide_menu":"Ocultar el menú de navegación","high_contrast":"Alto contraste","internet_explorer_message":"Hemos detectado que está utilizando Internet Explorer para visitar este sitio web. Internet Explorer ahora está siendo eliminado por Microsoft. Como resultado, este sitio web ya no es compatible con ninguna versión de Internet Explorer. Algunas características de este sitio no funcionarán. Debe usar un navegador moderno como Edge, Chrome, Firefox o Safari. Si tiene dificultades para instalar o acceder a un navegador diferente, comuníquese con su equipo de soporte de TI.","internet_explorer_message_title":"Este navegador de Internet ya no es compatible","logo_title":"Ir a la página de inicio","show_menu":"Mostrar el menú de navegación","skip_link":"Saltar al contenido principal","tag_line":"17 Objetivos para transformar nuestro mundo","toggle_menu":"Alternar menú. Haga clic para expandir o contraer el menú.","toggle_search":"Barra de búsqueda. Haga clic para ampliar o reducir la barra de búsqueda."};</script>
+<script>translations['header'] = {"alpha":"Alpha","default_contrast":"Default contrast","disable_high_contrast":"Disable high contrast","disclaimer":"This is a development website. We welcome your <a href=\"mailto:%email_contacts.suggestions\">feedback</a>.","enable_high_contrast":"Enable high contrast","hide_menu":"Hide navigation menu","high_contrast":"High contrast","internet_explorer_message":"We have detected that you are using Internet Explorer to visit this website. Internet Explorer is now being phased out by Microsoft. As a result, this website no longer supports any version of Internet Explorer. Some features on this site will not work. You should use a modern browser such as Edge, Chrome, Firefox, or Safari. If you have difficulty installing or accessing a different browser, please contact your IT support team.","internet_explorer_message_title":"This internet browser is no longer supported","logo_title":"Go to homepage","show_menu":"Show navigation menu","skip_link":"Skip to main content","tag_line":"17 Goals to Transform our World","toggle_menu":"Menu toggle. Click to expand or collapse the menu.","toggle_search":"Search toggle. Click to expand or collapse the search bar."};</script>
 
-<a class="sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Saltar al contenido principal</a>
+<a class="sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Skip to main content</a>
 <div class="container internet-explorer-message">
-    <h2 class="internet-explorer-message-title">Este navegador de Internet ya no es compatible</h2>
-    <p class="internet-explorer-message-body">Hemos detectado que está utilizando Internet Explorer para visitar este sitio web. Internet Explorer ahora está siendo eliminado por Microsoft. Como resultado, este sitio web ya no es compatible con ninguna versión de Internet Explorer. Algunas características de este sitio no funcionarán. Debe usar un navegador moderno como Edge, Chrome, Firefox o Safari. Si tiene dificultades para instalar o acceder a un navegador diferente, comuníquese con su equipo de soporte de TI.</p>
+    <h2 class="internet-explorer-message-title">This internet browser is no longer supported</h2>
+    <p class="internet-explorer-message-body">We have detected that you are using Internet Explorer to visit this website. Internet Explorer is now being phased out by Microsoft. As a result, this website no longer supports any version of Internet Explorer. Some features on this site will not work. You should use a modern browser such as Edge, Chrome, Firefox, or Safari. If you have difficulty installing or accessing a different browser, please contact your IT support team.</p>
 </div>
 <div id="disclaimer">
     
 <div class="container">
   <div class="disclaimer-alert">
-    <strong class="phase-tag">Alfa</strong>
+    <strong class="phase-tag">Alpha</strong>
     
-    Este es un sitio web de desarrollo. Agradecemos sus <a href="mailto:test@example.com">comentarios</a>.
+    This is a development website. We welcome your <a href="mailto:test@example.com">feedback</a>.
     
   </div>
 </div>
@@ -175,34 +175,34 @@ layout-data-editor
 <header role="banner" class="">
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light flex-wrap align-items-start">
-            <a class="navbar-brand" href="/open-sdg-site-starter/es/" id="home" aria-label="Ir a la página de inicio" title="Ir a la página de inicio">
-    <img src="/open-sdg-site-starter/assets/img/SDG_logo.png" alt="Objetivos de Desarrollo Sostenible - 17 Objetivos para transformar nuestro mundo" />
+            <a class="navbar-brand" href="/open-sdg-site-starter/" id="home" aria-label="Go to homepage" title="Go to homepage">
+    <img src="/open-sdg-site-starter/assets/img/SDG_logo.png" alt="Sustainable Development Goals - 17 Goals to Transform our World" />
 </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Mostrar el menú de navegación">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Show navigation menu">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="d-flex flex-wrap w-100 justify-content-between">
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav" id="menu"><li class="nav-item ">
-    <a class="nav-link" href="/open-sdg-site-starter/es/goals">Objetivos</a>
+    <a class="nav-link" href="/open-sdg-site-starter/goals">Goals</a>
 </li><li class="nav-item ">
-    <a class="nav-link" href="/open-sdg-site-starter/es/reporting-status">Estado de informes</a>
+    <a class="nav-link" href="/open-sdg-site-starter/reporting-status">Reporting Status</a>
 </li><li class="nav-item ">
-    <a class="nav-link" href="/open-sdg-site-starter/es/about">Acerca de</a>
+    <a class="nav-link" href="/open-sdg-site-starter/about">About</a>
 </li><li class="nav-item ">
-    <a class="nav-link" href="/open-sdg-site-starter/es/faq">FAQ</a>
+    <a class="nav-link" href="/open-sdg-site-starter/faq">FAQ</a>
 </li><li class="nav-item ">
-    <a class="nav-link" href="/open-sdg-site-starter/es/news">Actualizaciones</a>
+    <a class="nav-link" href="/open-sdg-site-starter/news">Updates</a>
 </li></ul>
     
                 </div>
                 <div class="header-search-bar">
-                    <form class="align-self-lg-end" id="search" action="/open-sdg-site-starter/es/search/">
+                    <form class="align-self-lg-end" id="search" action="/open-sdg-site-starter/search/">
     <div class="input-group">
-        <label class="visually-hidden" for="indicator_search">Buscar</label>
-        <input class="form-control" type="search" name="q" id="indicator_search" title="Buscar">
+        <label class="visually-hidden" for="indicator_search">Search</label>
+        <input class="form-control" type="search" name="q" id="indicator_search" title="Search">
         <span class="input-group-append">
-            <button class="btn btn-outline-secondary ms-n5" aria-label="Buscar en el sitio" id="search-btn" type="submit">
+            <button class="btn btn-outline-secondary ms-n5" aria-label="Site search" id="search-btn" type="submit">
                 <i class="fa fa-search"></i>
             </button>
         </span>
@@ -221,11 +221,11 @@ layout-data-editor
   <div class="btn-group language-toggle-dropdown  dropdown">
     <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
       <i class="fa fa-globe"></i>
-      Español
+      English
     </button>
     <ul class="dropdown-menu"><li>
-            <a class="dropdown-item" href="/open-sdg-site-starter/17-6-2/data/">
-              English
+            <a class="dropdown-item" href="/open-sdg-site-starter/es/11-5-3/data/">
+              Español
             </a>
           </li></ul>
   </div>
@@ -235,12 +235,12 @@ layout-data-editor
 
                     <span class="no-js-language-toggle"><div class="language-toggle-container d-flex">
     <i class="fa fa-globe language-toggle-globe-links"></i>
-    <ul class="language-toggle-links list-unstyled list-inline"><li class="language-option-en list-inline-item">
-            <a class="language-toggle-link" href="/open-sdg-site-starter/17-6-2/data/">
-                English
+    <ul class="language-toggle-links list-unstyled list-inline"><li class="language-option-es list-inline-item">
+            <a class="language-toggle-link" href="/open-sdg-site-starter/es/11-5-3/data/">
+                Español
             </a>
         </li></ul>
-</div></span><a title="Habilitar alto contraste" aria-label="Habilitar alto contraste"
+</div></span><a title="Enable high contrast" aria-label="Enable high contrast"
     data-contrast-switch-to="" href="javascript:void(0)" data-on="click"
 data-event-category="Accessibility"
 data-event-action="Change contrast setting"
@@ -256,7 +256,7 @@ data-event-label="high"
 
 <div id="main-content" class="container" role="main">
   <div class="row no-gutters">
-    <div class="col-md-12"><h1>Editar datos: 17.6.2</h1></div>
+    <div class="col-md-12"><h1>Edit Data: 11.5.3</h1></div>
   </div>
   <div class="row config-widgets">
     <div class="col-md-6 data-grid-buttons">
@@ -298,7 +298,7 @@ data-event-label="high"
       return false;
     }
     httpRequest.onreadystatechange = displaySpreadsheet;
-    httpRequest.open('GET', 'https://open-sdg.org/open-sdg-data-starter/untranslated/data/17-6-2.csv');
+    httpRequest.open('GET', 'https://open-sdg.org/open-sdg-data-starter/untranslated/data/11-5-3.csv');
     httpRequest.send();
   }
 
@@ -358,7 +358,7 @@ data-event-label="high"
   document.getElementById('export').onclick = function() {
     gridOptions.api.stopEditing();
     gridOptions.api.exportDataAsCsv({
-      fileName: 'indicator_17-6-2',
+      fileName: 'indicator_11-5-3',
     });
   }
 
@@ -390,11 +390,11 @@ data-event-label="high"
                 <div id="footerLinks">
                     <ul>
                         <li>
-                            <a href="https://open-sdg.org">Construido usando Open SDG</a>
+                            <a href="https://open-sdg.org">Built using Open SDG</a>
                         </li>
                         
                         <li>
-                            <a href="/open-sdg-site-starter/es/contact-us">Contáctenos</a>
+                            <a href="/open-sdg-site-starter/contact-us">Contact us</a>
                             
                         </li>
                         <li>
@@ -408,14 +408,14 @@ data-event-label="high"
                             
                         </li>
                         <li>
-                            <a href="/open-sdg-site-starter/es/about/cookies-and-privacy/">Galletas</a>
+                            <a href="/open-sdg-site-starter/about/cookies-and-privacy/">Cookies</a>
                             
                         </li>
                         
                         
                         
                         <li>
-                            <a href="/open-sdg-site-starter/es/config">Configuration</a>
+                            <a href="/open-sdg-site-starter/config">Configuration</a>
                         </li>
                         </ul>
                 </div>
@@ -446,17 +446,17 @@ data-event-label="high"
 
 
 <script>translations['general'] = translations['general'] || {};
-    translations['general']['hide'] = 'Ocultar';</script>
+    translations['general']['hide'] = 'hide';</script>
 
 <script>translations['search'] = translations['search'] || {};
-    translations['search']['search'] = 'Buscar';</script>
+    translations['search']['search'] = 'Search';</script>
 
-<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20221122153033'></script>
+<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20230112042324'></script>
 
 
     
     
-    <script src="/open-sdg-site-starter/assets/js/custom.js?v=20221122153033"></script><script>
+    <script src="/open-sdg-site-starter/assets/js/custom.js?v=20230112042324"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

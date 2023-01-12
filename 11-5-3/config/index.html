@@ -103,7 +103,7 @@ var translations = {
         ================================================== -->
 
         
-    <title>Edit Metadata: 17.6.2 - Indicators For The Sustainable Development Goals</title>
+    <title>Edit Configuration: 11.5.3 - Indicators For The Sustainable Development Goals</title>
 
 
 
@@ -129,7 +129,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20221122153033">
+        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20230112042324">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -224,7 +224,7 @@ layout-config-builder
       English
     </button>
     <ul class="dropdown-menu"><li>
-            <a class="dropdown-item" href="/open-sdg-site-starter/es/17-6-2/metadata/">
+            <a class="dropdown-item" href="/open-sdg-site-starter/es/11-5-3/config/">
               Español
             </a>
           </li></ul>
@@ -236,7 +236,7 @@ layout-config-builder
                     <span class="no-js-language-toggle"><div class="language-toggle-container d-flex">
     <i class="fa fa-globe language-toggle-globe-links"></i>
     <ul class="language-toggle-links list-unstyled list-inline"><li class="language-option-es list-inline-item">
-            <a class="language-toggle-link" href="/open-sdg-site-starter/es/17-6-2/metadata/">
+            <a class="language-toggle-link" href="/open-sdg-site-starter/es/11-5-3/config/">
                 Español
             </a>
         </li></ul>
@@ -256,7 +256,7 @@ data-event-label="high"
 
 <div id="main-content" class="container" role="main">
   <div class="row">
-    <div class="col-md-12"><h1>Edit Metadata: 17.6.2</h1></div>
+    <div class="col-md-12"><h1>Edit Configuration: 11.5.3</h1></div>
   </div>
   <div class="config-widgets row">
     <div class="col-md-6" id="search_holder">
@@ -272,7 +272,7 @@ data-event-label="high"
       
       
       
-      <a class="config-repository-button btn btn-primary btn-download" target="_blank" href="https://github.com/open-sdg/open-sdg-data-starter/tree/develop/meta">
+      <a class="config-repository-button btn btn-primary btn-download" target="_blank" href="https://github.com/open-sdg/open-sdg-data-starter/tree/develop/indicator-config">
         Go to repository
       </a>
       
@@ -337,7 +337,7 @@ data-event-label="high"
 
     
     
-    var schema = {"type":"object","title":"Edit Metadata","properties":{"SDG_INDICATOR__GLOBAL":{"type":"string","format":"markdown","title":"Indicator","description":"Scope: global, Field: SDG_INDICATOR__GLOBAL"},"SDG_TARGET__GLOBAL":{"type":"string","format":"markdown","title":"Target","description":"Scope: global, Field: SDG_TARGET__GLOBAL"},"META_LAST_UPDATE__GLOBAL":{"type":"string","format":"markdown","title":"Metadata update","description":"Scope: global, Field: META_LAST_UPDATE__GLOBAL"},"SDG_CUSTODIAN_AGENCIES__GLOBAL":{"type":"string","format":"markdown","title":"International organisations(s) responsible for global monitoring","description":"Scope: global, Field: SDG_CUSTODIAN_AGENCIES__GLOBAL"},"SDG_RELATED_INDICATORS__GLOBAL":{"type":"string","format":"markdown","title":"Related indicators","description":"Scope: global, Field: SDG_RELATED_INDICATORS__GLOBAL"},"SDG_INDICATOR_INFO":{"type":"string","format":"markdown","title":"Indicator information","description":"Scope: national, Field: SDG_INDICATOR_INFO"},"SDG_GOAL":{"type":"string","format":"markdown","title":"Goal","description":"Scope: national, Field: SDG_GOAL"},"SDG_TARGET":{"type":"string","format":"markdown","title":"Target","description":"Scope: national, Field: SDG_TARGET"},"SDG_INDICATOR":{"type":"string","format":"markdown","title":"Indicator","description":"Scope: national, Field: SDG_INDICATOR"},"SDG_SERIES_DESCR":{"type":"string","format":"markdown","title":"Series","description":"Scope: national, Field: SDG_SERIES_DESCR"},"META_LAST_UPDATE":{"type":"string","format":"markdown","title":"Metadata update","description":"Scope: national, Field: META_LAST_UPDATE"},"SDG_RELATED_INDICATORS":{"type":"string","format":"markdown","title":"Related indicators","description":"Scope: national, Field: SDG_RELATED_INDICATORS"},"CONTACT":{"type":"string","format":"markdown","title":"Data reporter","description":"Scope: national, Field: CONTACT"},"CONTACT_ORGANISATION":{"type":"string","format":"markdown","title":"Organisation","description":"Scope: national, Field: CONTACT_ORGANISATION"},"CONTACT_NAME":{"type":"string","format":"markdown","title":"Contact person(s)","description":"Scope: national, Field: CONTACT_NAME"},"ORGANISATION_UNIT":{"type":"string","format":"markdown","title":"Contact organisation unit","description":"Scope: national, Field: ORGANISATION_UNIT"},"CONTACT_FUNCT":{"type":"string","format":"markdown","title":"Contact person function","description":"Scope: national, Field: CONTACT_FUNCT"},"CONTACT_PHONE":{"type":"string","format":"markdown","title":"Contact phone","description":"Scope: national, Field: CONTACT_PHONE"},"CONTACT_MAIL":{"type":"string","format":"markdown","title":"Contact mail","description":"Scope: national, Field: CONTACT_MAIL"},"CONTACT_EMAIL":{"type":"string","format":"markdown","title":"Contact email","description":"Scope: national, Field: CONTACT_EMAIL"},"IND_DEF_CON_CLASS":{"type":"string","format":"markdown","title":"Definition, concepts, and classifications","description":"Scope: national, Field: IND_DEF_CON_CLASS"},"STAT_CONC_DEF":{"type":"string","format":"markdown","title":"Definition and concepts","description":"Scope: national, Field: STAT_CONC_DEF"},"UNIT_MEASURE":{"type":"string","format":"markdown","title":"Unit of measure","description":"Scope: national, Field: UNIT_MEASURE"},"CLASS_SYSTEM":{"type":"string","format":"markdown","title":"Classifications","description":"Scope: national, Field: CLASS_SYSTEM"},"SRC_TYPE_COLL_METHOD":{"type":"string","format":"markdown","title":"Data source type and collection method","description":"Scope: national, Field: SRC_TYPE_COLL_METHOD"},"SOURCE_TYPE":{"type":"string","format":"markdown","title":"Data sources","description":"Scope: national, Field: SOURCE_TYPE"},"COLL_METHOD":{"type":"string","format":"markdown","title":"Data collection method","description":"Scope: national, Field: COLL_METHOD"},"FREQ_COLL":{"type":"string","format":"markdown","title":"Data collection calendar","description":"Scope: national, Field: FREQ_COLL"},"REL_CAL_POLICY":{"type":"string","format":"markdown","title":"Data release calendar","description":"Scope: national, Field: REL_CAL_POLICY"},"DATA_SOURCE":{"type":"string","format":"markdown","title":"Data providers","description":"Scope: national, Field: DATA_SOURCE"},"COMPILING_ORG":{"type":"string","format":"markdown","title":"Data compilers","description":"Scope: national, Field: COMPILING_ORG"},"INST_MANDATE":{"type":"string","format":"markdown","title":"Institutional mandate","description":"Scope: national, Field: INST_MANDATE"},"OTHER_METHOD":{"type":"string","format":"markdown","title":"Other methodological considerations","description":"Scope: national, Field: OTHER_METHOD"},"RATIONALE":{"type":"string","format":"markdown","title":"Rationale","description":"Scope: national, Field: RATIONALE"},"REC_USE_LIM":{"type":"string","format":"markdown","title":"Comment and limitations","description":"Scope: national, Field: REC_USE_LIM"},"DATA_COMP":{"type":"string","format":"markdown","title":"Method of computation","description":"Scope: national, Field: DATA_COMP"},"DATA_VALIDATION":{"type":"string","format":"markdown","title":"Validation","description":"Scope: national, Field: DATA_VALIDATION"},"DOC_METHOD":{"type":"string","format":"markdown","title":"Methods and guidance available to countries for the compilation of the data at the national level","description":"Scope: national, Field: DOC_METHOD"},"QUALITY_MGMNT":{"type":"string","format":"markdown","title":"Quality management","description":"Scope: national, Field: QUALITY_MGMNT"},"QUALITY_ASSURE":{"type":"string","format":"markdown","title":"Quality assurance","description":"Scope: national, Field: QUALITY_ASSURE"},"QUALITY_ASSMNT":{"type":"string","format":"markdown","title":"Quality assessment","description":"Scope: national, Field: QUALITY_ASSMNT"},"COVERAGE":{"type":"string","format":"markdown","title":"Data availability and disaggregation","description":"Scope: national, Field: COVERAGE"},"COMPARABILITY":{"type":"string","format":"markdown","title":"Comparability/deviation from international standards","description":"Scope: national, Field: COMPARABILITY"},"OTHER_DOC":{"type":"string","format":"markdown","title":"References and Documentation","description":"Scope: national, Field: OTHER_DOC"},"national_data_updated_date":{"type":"string","format":"markdown","title":"Data last updated","description":"Scope: national, Field: national_data_updated_date"},"national_metadata_updated_date":{"type":"string","format":"markdown","title":"Metadata last updated","description":"Scope: national, Field: national_metadata_updated_date"},"un_designated_tier":{"type":"string","format":"markdown","title":"UN designated tier","description":"Scope: global, Field: un_designated_tier"}},"additionalProperties":true};
+    var schema = {"type":"object","title":"Open SDG indicator configuration","description":"This form will produce an indicator's configuration for your Open SDG implementation.","properties":{"composite_breakdown_label":{"type":"string","title":"Composite breakdown label","description":"Used as a label for the COMPOSITE_BREAKDOWN column, if it appears in the indicator data.","links":[{"rel":"More information on the composite breakdown label setting","href":"https://open-sdg.readthedocs.io/en/latest/metadata-format/#composite-breakdown-label"}]},"computation_units":{"type":"string","title":"Unit of measurement","description":"Unit of measurement which displays below the indicator chart.","links":[{"rel":"More information on the units of measurement setting","href":"https://open-sdg.readthedocs.io/en/latest/metadata-format/#recommended-special-fields"}]},"copyright":{"type":"string","title":"Copyright","description":"Copyright which displays below the indicator chart.","links":[{"rel":"More information on the copyright setting","href":"https://open-sdg.readthedocs.io/en/latest/metadata-format/#footer"}]},"data_footnote":{"type":"string","format":"markdown","title":"Footnote","description":"Footnote which displays below the indicator chart.","links":[{"rel":"More information on the footnote setting","href":"https://open-sdg.readthedocs.io/en/latest/metadata-format/#footer"}]},"data_non_statistical":{"title":"Non-statistical data","type":"boolean","description":"Whether the indicator is statistical (can be charted/graphed) or not.","format":"checkbox","links":[{"rel":"More information the non-statistical setting","href":"https://open-sdg.readthedocs.io/en/latest/metadata-format/#mandatory-fields"}]},"data_notice_class":{"title":"Data notice - class","type":"string","description":"A CSS class to apply to the data notice for this indicator.","links":[{"rel":"More information on the data notice setting","href":"https://open-sdg.readthedocs.io/en/latest/metadata-format/#data-notice"}]},"data_notice_heading":{"title":"Data notice - heading","type":"string","description":"A title to display above the data notice for this indicator.","links":[{"rel":"More information on the data notice heading setting","href":"https://open-sdg.readthedocs.io/en/latest/metadata-format/#data-notice"}]},"data_notice_text":{"title":"Data notice - text","type":"string","format":"markdown","description":"Text to display as a data notice for this indicator, intended to contain very important information which site viewers must keep in mind when using the data provided.","links":[{"rel":"More information on the data notice text setting","href":"https://open-sdg.readthedocs.io/en/latest/metadata-format/#data-notice"}]},"data_show_map":{"title":"Show map","type":"boolean","description":"Whether the indicator should display a Map tab.","format":"checkbox","links":[{"rel":"More information on the map setting","href":"https://open-sdg.readthedocs.io/en/latest/maps/#metadata-field-data_show_map"}]},"data_start_values":{"options":{"collapsed":true},"type":"array","title":"Starting values","description":"Disaggregation values for a an indicator to start with already selected","items":{"type":"object","title":"Starting value","properties":{"field":{"type":"string","minLength":1,"title":"Field","description":"The field (column) name."},"value":{"type":"string","minLength":1,"title":"Value","description":"The value in that field to pre-select."}}},"links":[{"rel":"More information on the starting values setting","href":"https://open-sdg.readthedocs.io/en/latest/metadata-format/#starting-values"}]},"embedded_feature_footer":{"type":"string","format":"markdown","title":"Embedded feature - Footer","description":"A footer that displays below the embedded feature. Only used with either embedded_feature_url or embedded_feature_html.","links":[{"rel":"More information on the embed footer setting","href":"https://open-sdg.readthedocs.io/en/latest/metadata-format/#embedded-feature-metadata"}]},"embedded_feature_html":{"type":"string","format":"textarea","title":"Embedded feature - HTML","description":"Any HTML to display in another tab, after Chart/Table/etc.","links":[{"rel":"More information on the embed HTML setting","href":"https://open-sdg.readthedocs.io/en/latest/metadata-format/#embedded-feature-metadata"}]},"embedded_feature_tab_title":{"type":"string","title":"Embedded feature - Tab Title","description":"A title for the embedded feature tab (ie, Chart/Table/[this]). Only used with either embedded_feature_url or embedded_feature_html.","links":[{"rel":"More information on the embed tab title setting","href":"https://open-sdg.readthedocs.io/en/latest/metadata-format/#embedded-feature-metadata"}]},"embedded_feature_title":{"type":"string","title":"Embedded feature - Title","description":"A title that displays above the embedded feature. Only used with either embedded_feature_url or embedded_feature_html.","links":[{"rel":"More information on the embed title setting","href":"https://open-sdg.readthedocs.io/en/latest/metadata-format/#embedded-feature-metadata"}]},"embedded_feature_url":{"type":"string","format":"url","title":"Embedded feature - URL","description":"Any URL to display as an iframe in another tab, after Chart/Table/etc.","links":[{"rel":"More information on the embed URL setting","href":"https://open-sdg.readthedocs.io/en/latest/metadata-format/#embedded-feature-metadata"}]},"expected_disaggregations":{"options":{"collapsed":true},"type":"array","title":"Expected disaggregations","description":"An optional list of disaggregations (ie, data column names) to use when calculating the disaggregation status statistics.","items":{"type":"string","title":"Expected disaggregation"},"links":[{"rel":"More information on the expected disaggregation setting","href":"https://open-sdg.readthedocs.io/en/latest/metadata-format/#recommended-special-fields"}]},"footer_fields":{"options":{"collapsed":true},"type":"array","title":"Footer fields","description":"Additional arbitrary information to display beneath the graph/table.","items":{"type":"object","title":"Footer field","allOf":[{"$ref":"#/definitions/series_unit_constraint"},{"properties":{"label":{"type":"string","title":"Label","description":"The label for the field"},"value":{"type":"string","title":"Value","description":"The value/content for the field"}}}]}},"graph_annotations":{"options":{"collapsed":true},"type":"array","title":"Graph annotations","description":"This can be used to add line annotations to the graph, such as target lines to show the progress towards the 2030 goal for an indicator.","items":{"type":"object","title":"Graph annotation","allOf":[{"$ref":"#/definitions/series_unit_constraint"},{"properties":{"value":{"type":"number","minimum":0,"title":"Value","description":"The value at which to draw the line. For horizontal lines, this number corresponds to your actual data. For vertical lines, this number should be between 0 (the left side of the chart) and the number of years minus 1 (the right side of the chart)."},"endValue":{"type":"number","title":"End value","description":"Optionally add a different ending value for the line."},"description":{"type":"string","title":"Description","description":"A description of the annotation to be read by screenreaders."},"mode":{"type":"string","title":"Mode","description":"Whether the line will be vertical or horizontal.","enum":["horizontal","vertical"]},"borderColor":{"type":"string","format":"color","title":"Line color","default":"#949494","description":"The color of the line.","links":[{"rel":"More information on the border color setting","href":"https://github.com/chartjs/chartjs-plugin-annotation/blob/master/README.md"}]},"borderDash":{"type":"array","title":"Line dash type","description":"The type of line dash.","default":[10,5],"items":{"type":"number"},"minItems":2,"links":[{"rel":"More information on the line dash setting","href":"https://github.com/chartjs/chartjs-plugin-annotation/blob/master/README.md"}]},"label":{"type":"object","title":"Label","description":"A text label for the annotation.","properties":{"position":{"type":"string","title":"Position","description":"Placement of the label along the line.","enum":["top","bottom","left","right","center"]},"content":{"type":"string","minLength":1,"title":"Content","description":"Text of the line label."},"fontColor":{"type":"string","format":"color","title":"Label color","description":"Color for the label text.","default":"#000000"},"backgroundColor":{"type":"string","format":"color","default":"#ffffff","title":"Background color","description":"Background color for the label text."}}},"highContrast":{"type":"object","title":"High contrast options","description":"High-contrast overrides of certain color.","properties":{"borderColor":{"type":"string","format":"color","default":"#ffffff","title":"High-contrast line color","description":"The color of the line in high-contrast mode."},"label":{"type":"object","title":"High contrast label","description":"High-contrast version of the label.","properties":{"fontColor":{"type":"string","format":"color","default":"#ffffff","title":"High-contrast label color","description":"Color for the label text in high-contrast mode."},"backgroundColor":{"type":"string","format":"color","default":"#000000","title":"High-contrast background color","description":"Background color for the label text in high-contrast mode."}}}}}}}]},"links":[{"rel":"More information on the graph annotations setting","href":"https://open-sdg.readthedocs.io/en/latest/metadata-format/#graph-metadata"}]},"graph_limits":{"options":{"collapsed":true},"type":"array","title":"Graph limits","description":"A list of min/max limits controlling the lowest/highest values to be shown on the y-axis.","items":{"type":"object","title":"Graph limit","allOf":[{"$ref":"#/definitions/series_unit_constraint"},{"properties":{"minimum":{"type":"number","minimum":0,"title":"Minimum","description":"Minimum value for the y axis."},"maximum":{"type":"number","minimum":0,"title":"Maximum","description":"Maximum value for the y axis."}}}]},"links":[{"rel":"More information on the graph limits setting","href":"https://open-sdg.readthedocs.io/en/latest/metadata-format/#graph-metadata"}]},"graph_series_breaks":{"options":{"collapsed":true},"type":"array","title":"Graph series breaks","description":"A list of series break (ie, a gap among the years) lines to display on the graph.","items":{"type":"object","title":"Series break","allOf":[{"$ref":"#/definitions/series_unit_constraint"},{"properties":{"label_content":{"type":"string","title":"Label content","default":"indicator.annotation_series_break","description":"The text to display for this series break."},"value":{"type":"number","title":"Value","description":"The numeric value at which to place the series break. This number should be between 0 (the left side of the chart) and the number of years minus 1 (the right side of the chart)."}}}]},"links":[{"rel":"More information on the graph target lines setting","href":"https://open-sdg.readthedocs.io/en/latest/indicator-configuration/#graph_series_breaks"}]},"graph_stacked_disaggregation":{"type":"string","title":"Stacked disaggregation","description":"This can be used with the bar graph type to place a certain disaggregation into the same stacked bars.","links":[{"rel":"More information on the stacked disaggregation setting","href":"https://open-sdg.readthedocs.io/en/latest/metadata-format/#recommended-special-fields"}]},"graph_target_lines":{"options":{"collapsed":true},"type":"array","title":"Graph target lines","description":"A list of target lines to display on the graph.","items":{"type":"object","title":"Target line","allOf":[{"$ref":"#/definitions/series_unit_constraint"},{"properties":{"label_content":{"type":"string","title":"Label content","default":"indicator.annotation_2030_target","description":"The text to display for this target line."},"value":{"type":"number","title":"Value","description":"The numeric value at which to place the target line."}}}]},"links":[{"rel":"More information on the graph target lines setting","href":"https://open-sdg.readthedocs.io/en/latest/indicator-configuration/#graph_target_lines"}]},"graph_title":{"type":"string","title":"Graph title","description":"The title that displays above the graph/chart.","links":[{"rel":"More information on the graph title setting","href":"https://open-sdg.readthedocs.io/en/latest/metadata-format/#mandatory-for-statistical-indicators"}]},"graph_titles":{"options":{"collapsed":true},"type":"array","title":"Graph titles","description":"As an alternative to `graph_title`, this can be used to set specific titles for particular units and/or series.","items":{"type":"object","title":"Graph title","allOf":[{"$ref":"#/definitions/series_unit_constraint"},{"properties":{"title":{"type":"string","minLength":1,"title":"Title","description":"The graph title."}}}]}},"graph_type":{"type":"string","title":"Graph type","description":"What type of graph to use for the indicator.","enum":["line","bar","binary"],"links":[{"rel":"More information on the graph titles setting","href":"https://open-sdg.readthedocs.io/en/latest/metadata-format/#mandatory-for-statistical-indicators"}]},"indicator_available":{"type":"string","title":"Indicator available","description":"An optional sub-title for the indicator, which displays below the indicator name. Intended for cases where the available data is slightly different than the indicator name.","links":[{"rel":"More information on the indicator available setting","href":"https://open-sdg.readthedocs.io/en/latest/metadata-format/#recommended-special-fields"}]},"indicator_name":{"type":"string","title":"Indicator name","description":"The name for the indicator, which displays at the top of the indicator page.","links":[{"rel":"More information on the indicator name setting","href":"https://open-sdg.readthedocs.io/en/latest/metadata-format/#mandatory-fields"}]},"indicator_number":{"type":"string","title":"Indicator number","description":"The number (or 'id') for the indicator.","links":[{"rel":"More information on the indicator number setting","href":"https://open-sdg.readthedocs.io/en/latest/metadata-format/#mandatory-fields"}]},"indicator_tabs":{"options":{"collapsed":true},"type":"object","title":"Indicator tabs","description":"Assign content for the indicator tabs, if the override box is checked. Otherwise this indicator will use the assignments set in your site configuration.","properties":{"override":{"type":"boolean","title":"Override site configuration","description":"If checked, the site-wide indicator tab configuration will be ignored for this indicator.","format":"checkbox"},"tab_1":{"type":"string","title":"Tab 1","description":"What to display in the first tab","$ref":"#/definitions/indicator_tabs_options"},"tab_2":{"type":"string","title":"Tab 2","description":"What to display in the second tab","$ref":"#/definitions/indicator_tabs_options"},"tab_3":{"type":"string","title":"Tab 3","description":"What to display in the third tab","$ref":"#/definitions/indicator_tabs_options"},"tab_4":{"type":"string","title":"Tab 4","description":"What to display in the fourth tab","$ref":"#/definitions/indicator_tabs_options"}}},"national_geographical_coverage":{"type":"string","title":"National geographical coverage","description":"A label used in the absence of any disaggregation.","links":[{"rel":"More information on the geographical coverage setting","href":"https://open-sdg.readthedocs.io/en/latest/metadata-format/#mandatory-for-statistical-indicators"}]},"page_content":{"type":"string","format":"markdown","title":"Page content","description":"Content which displays in the main content area of the indicator page."},"permalink":{"type":"string","title":"Permalink","description":"Overrides the normal path of the indicator page. Not recommended, execpt for 'standalone' indicators.","links":[{"rel":"More information the permalink setting","href":"https://open-sdg.readthedocs.io/en/latest/metadata-format/#standalone-indicators"}]},"placeholder":{"title":"Placeholder indicator","type":"string","description":"Entering text here identifies this as a 'placeholder' indicator. The text will be displayed on the goal page, in place of a link to the indicator page.","format":"textarea","links":[{"rel":"More information the placeholder setting","href":"https://open-sdg.readthedocs.io/en/latest/indicator-configuration/#placeholder"}]},"precision":{"options":{"collapsed":true},"type":"array","title":"Precision rules","description":"Control the number of decimal places for data in this indicator.","items":{"type":"object","title":"Precision rule","allOf":[{"$ref":"#/definitions/series_unit_constraint"},{"properties":{"decimals":{"type":"number","title":"Decimals","description":"The number of decimal places"}}}]}},"progress_status":{"type":"string","title":"Progress status","enum":["not_available","challenges_remain","approaching_target","target_achieved"],"description":"The progress status of the indicator.","links":[{"rel":"More information on the progress status setting","href":"https://open-sdg.readthedocs.io/en/latest/indicator-configuration/#progress-status"}]},"publications":{"options":{"collapsed":true},"type":"array","title":"Publications","description":"This setting controls the content of the 'Related publications' tab. It can contain any number of publications. You may have much of this information in the indicator metadata, but this configuration is available to supplement the metadata with a more structured way to list multiple publications.","items":{"type":"object","title":"Publication","properties":{"title":{"type":"string","title":"Title"},"link":{"type":"string","title":"Link"},"description":{"type":"string","title":"description","format":"markdown"},"date":{"type":"string","title":"Date"}}},"links":[{"rel":"More information on the publications setting","href":"https://open-sdg.readthedocs.io/en/latest/indicator-configuration/#publications"}]},"related_indicators":{"options":{"collapsed":true},"type":"array","title":"Related indicators","description":"This setting controls the 'Related indicators' tab. Specify indicators by using their indicator numbers, such as: 1.1.1","items":{"type":"string","title":"Related indicator"},"links":[{"rel":"More information on the related_indicators setting","href":"https://open-sdg.readthedocs.io/en/latest/indicator-configuration/#related_indicators"}]},"reporting_status":{"type":"string","title":"Reporting status","enum":["complete","inprogress","notstarted","notapplicable"],"description":"The reporting status of the indicator.","links":[{"rel":"More information on the reporting status setting","href":"https://open-sdg.readthedocs.io/en/latest/metadata-format/#mandatory-fields"}]},"sort":{"type":"string","title":"Sort order","description":"Override the default order in which this indicator is displayed in lists. This can be left blank, and it will be automatically determined.","links":[{"rel":"More information on the sort setting","href":"https://open-sdg.readthedocs.io/en/latest/metadata-format/#sorting-in-lists"}]},"sources":{"options":{"collapsed":true},"type":"array","title":"Sources","description":"This setting controls the content of the 'Sources' tab. It can contain any number sources. You may have much of this information in the metadata, but this configuration is available to supplement the metadata with a more structured way to list multiple sources.","items":{"type":"object","title":"Source","properties":{"organisation":{"type":"string","title":"Organisation"},"periodicity":{"type":"string","title":"Periodicity"},"earliest_available":{"type":"string","title":"Earliest available data"},"geographical_coverage":{"type":"string","title":"Geographical coverage"},"url":{"type":"string","title":"URL"},"url_text":{"type":"string","title":"URL text"},"release_date":{"type":"string","title":"Release date"},"next_release":{"type":"string","title":"Next release"},"statistical_classification":{"type":"string","title":"Statistical classification"},"contact":{"type":"string","title":"Contact"},"other_info":{"type":"string","title":"Other information","format":"markdown"},"logo":{"type":"string","title":"Path to logo image"}}},"links":[{"rel":"More information on the sources setting","href":"https://open-sdg.readthedocs.io/en/latest/indicator-configuration/#sources"}]},"standalone":{"title":"Standalone indicator","type":"boolean","description":"Whether the indicator is standalone (separate from the SDGs) or not.","format":"checkbox","links":[{"rel":"More information the standalone setting","href":"https://open-sdg.readthedocs.io/en/latest/metadata-format/#standalone-indicators"}]},"tags":{"options":{"collapsed":true},"type":"array","title":"Tags","description":"An optional list of 'tags' to display under an indicator when it is listed on its goal page.","items":{"type":"string","title":"Tag"},"links":[{"rel":"More information on the tags setting","href":"https://open-sdg.readthedocs.io/en/latest/metadata-format/#recommended-special-fields"}]},"x_axis_label":{"type":"string","title":"X axis label","description":"A label beneath the X axis on charts. This overrides the same site configuration setting.","links":[{"rel":"More information on the X axis label setting","href":"https://open-sdg.readthedocs.io/en/latest/indicator-configuration/#x_axis_label"}]}},"additionalProperties":true,"definitions":{"series_unit_constraint":{"type":"object","properties":{"series":{"type":"string","title":"Series","description":"Limit to this particular series"},"unit":{"type":"string","title":"Unit","description":"Limit to this particular unit"}}},"indicator_tabs_options":{"enum":["","chart","table","map","embed","hide"],"options":{"enum_titles":["","Chart","Table","Map","Embed","Hide this tab"]}}}};
     
       
         
@@ -478,159 +478,163 @@ data-event-label="high"
     }
 
     // Set values according to this site's configuration.
+    propertyEditorAccessibilityFixes(editor.getEditor('root.composite_breakdown_label'));
+
+    propertyEditorAccessibilityFixes(editor.getEditor('root.computation_units'));
+
+    propertyEditorAccessibilityFixes(editor.getEditor('root.copyright'));
+
+    propertyEditorAccessibilityFixes(editor.getEditor('root.data_footnote'));
+
     
       try {
-        var currentValue = normalizeCurrentValue('SDG_INDICATOR__GLOBAL', "<p>Indicator 17.6.1: Fixed Internet broadband subscriptions per 100 inhabitants, by speed</p>");
-        var propertyEditor = editor.getEditor('root.SDG_INDICATOR__GLOBAL');
+        var currentValue = normalizeCurrentValue('data_non_statistical', true);
+        var propertyEditor = editor.getEditor('root.data_non_statistical');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
         
       }
       catch (e) {
         console.log(e.message);
-        console.log('Unable to set config key: SDG_INDICATOR__GLOBAL');
+        console.log('Unable to set config key: data_non_statistical');
       }
-    propertyEditorAccessibilityFixes(editor.getEditor('root.SDG_INDICATOR__GLOBAL'));
+    propertyEditorAccessibilityFixes(editor.getEditor('root.data_non_statistical'));
+
+    propertyEditorAccessibilityFixes(editor.getEditor('root.data_notice_class'));
+
+    propertyEditorAccessibilityFixes(editor.getEditor('root.data_notice_heading'));
+
+    propertyEditorAccessibilityFixes(editor.getEditor('root.data_notice_text'));
+
+    propertyEditorAccessibilityFixes(editor.getEditor('root.data_show_map'));
+
+    propertyEditorAccessibilityFixes(editor.getEditor('root.data_start_values'));
+
+    propertyEditorAccessibilityFixes(editor.getEditor('root.embedded_feature_footer'));
+
+    propertyEditorAccessibilityFixes(editor.getEditor('root.embedded_feature_html'));
+
+    propertyEditorAccessibilityFixes(editor.getEditor('root.embedded_feature_tab_title'));
+
+    propertyEditorAccessibilityFixes(editor.getEditor('root.embedded_feature_title'));
+
+    propertyEditorAccessibilityFixes(editor.getEditor('root.embedded_feature_url'));
+
+    propertyEditorAccessibilityFixes(editor.getEditor('root.expected_disaggregations'));
+
+    propertyEditorAccessibilityFixes(editor.getEditor('root.footer_fields'));
+
+    propertyEditorAccessibilityFixes(editor.getEditor('root.graph_annotations'));
+
+    propertyEditorAccessibilityFixes(editor.getEditor('root.graph_limits'));
+
+    propertyEditorAccessibilityFixes(editor.getEditor('root.graph_series_breaks'));
+
+    propertyEditorAccessibilityFixes(editor.getEditor('root.graph_stacked_disaggregation'));
+
+    propertyEditorAccessibilityFixes(editor.getEditor('root.graph_target_lines'));
 
     
       try {
-        var currentValue = normalizeCurrentValue('SDG_TARGET__GLOBAL', "<p>Target 17.6: Enhance North-South, South-South and triangular regional and international cooperation on and access to science, technology and innovation and enhance knowledge-sharing on mutually agreed terms, including through improved coordination among existing mechanisms, in particular at the United Nations level, and through a global technology facilitation mechanism</p>");
-        var propertyEditor = editor.getEditor('root.SDG_TARGET__GLOBAL');
+        var currentValue = normalizeCurrentValue('graph_title', "(a) Damage to critical infrastructure and (b) number of disruptions to basic services, attributed to disasters");
+        var propertyEditor = editor.getEditor('root.graph_title');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
         
       }
       catch (e) {
         console.log(e.message);
-        console.log('Unable to set config key: SDG_TARGET__GLOBAL');
+        console.log('Unable to set config key: graph_title');
       }
-    propertyEditorAccessibilityFixes(editor.getEditor('root.SDG_TARGET__GLOBAL'));
+    propertyEditorAccessibilityFixes(editor.getEditor('root.graph_title'));
+
+    propertyEditorAccessibilityFixes(editor.getEditor('root.graph_titles'));
 
     
       try {
-        var currentValue = normalizeCurrentValue('META_LAST_UPDATE__GLOBAL', "<p>2021-08-20</p>");
-        var propertyEditor = editor.getEditor('root.META_LAST_UPDATE__GLOBAL');
+        var currentValue = normalizeCurrentValue('graph_type', "line");
+        var propertyEditor = editor.getEditor('root.graph_type');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
         
       }
       catch (e) {
         console.log(e.message);
-        console.log('Unable to set config key: META_LAST_UPDATE__GLOBAL');
+        console.log('Unable to set config key: graph_type');
       }
-    propertyEditorAccessibilityFixes(editor.getEditor('root.META_LAST_UPDATE__GLOBAL'));
+    propertyEditorAccessibilityFixes(editor.getEditor('root.graph_type'));
+
+    propertyEditorAccessibilityFixes(editor.getEditor('root.indicator_available'));
 
     
       try {
-        var currentValue = normalizeCurrentValue('SDG_CUSTODIAN_AGENCIES__GLOBAL', "<p>International Telecommunication Union (ITU)</p>");
-        var propertyEditor = editor.getEditor('root.SDG_CUSTODIAN_AGENCIES__GLOBAL');
+        var currentValue = normalizeCurrentValue('indicator_name', "(a) Damage to critical infrastructure and (b) number of disruptions to basic services, attributed to disasters");
+        var propertyEditor = editor.getEditor('root.indicator_name');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
         
       }
       catch (e) {
         console.log(e.message);
-        console.log('Unable to set config key: SDG_CUSTODIAN_AGENCIES__GLOBAL');
+        console.log('Unable to set config key: indicator_name');
       }
-    propertyEditorAccessibilityFixes(editor.getEditor('root.SDG_CUSTODIAN_AGENCIES__GLOBAL'));
+    propertyEditorAccessibilityFixes(editor.getEditor('root.indicator_name'));
 
     
       try {
-        var currentValue = normalizeCurrentValue('SDG_RELATED_INDICATORS__GLOBAL', "<p>8.2, 9.1, 9.c, 17.8</p>");
-        var propertyEditor = editor.getEditor('root.SDG_RELATED_INDICATORS__GLOBAL');
+        var currentValue = normalizeCurrentValue('indicator_number', "11.5.3");
+        var propertyEditor = editor.getEditor('root.indicator_number');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
         
       }
       catch (e) {
         console.log(e.message);
-        console.log('Unable to set config key: SDG_RELATED_INDICATORS__GLOBAL');
+        console.log('Unable to set config key: indicator_number');
       }
-    propertyEditorAccessibilityFixes(editor.getEditor('root.SDG_RELATED_INDICATORS__GLOBAL'));
+    propertyEditorAccessibilityFixes(editor.getEditor('root.indicator_number'));
 
-    propertyEditorAccessibilityFixes(editor.getEditor('root.SDG_INDICATOR_INFO'));
+    propertyEditorAccessibilityFixes(editor.getEditor('root.indicator_tabs'));
 
-    propertyEditorAccessibilityFixes(editor.getEditor('root.SDG_GOAL'));
+    propertyEditorAccessibilityFixes(editor.getEditor('root.national_geographical_coverage'));
 
-    propertyEditorAccessibilityFixes(editor.getEditor('root.SDG_TARGET'));
+    propertyEditorAccessibilityFixes(editor.getEditor('root.page_content'));
 
-    propertyEditorAccessibilityFixes(editor.getEditor('root.SDG_INDICATOR'));
+    propertyEditorAccessibilityFixes(editor.getEditor('root.permalink'));
 
-    propertyEditorAccessibilityFixes(editor.getEditor('root.SDG_SERIES_DESCR'));
+    propertyEditorAccessibilityFixes(editor.getEditor('root.placeholder'));
 
-    propertyEditorAccessibilityFixes(editor.getEditor('root.META_LAST_UPDATE'));
+    propertyEditorAccessibilityFixes(editor.getEditor('root.precision'));
 
-    propertyEditorAccessibilityFixes(editor.getEditor('root.SDG_RELATED_INDICATORS'));
+    propertyEditorAccessibilityFixes(editor.getEditor('root.progress_status'));
 
-    propertyEditorAccessibilityFixes(editor.getEditor('root.CONTACT'));
+    propertyEditorAccessibilityFixes(editor.getEditor('root.publications'));
 
-    propertyEditorAccessibilityFixes(editor.getEditor('root.CONTACT_ORGANISATION'));
+    propertyEditorAccessibilityFixes(editor.getEditor('root.related_indicators'));
 
-    propertyEditorAccessibilityFixes(editor.getEditor('root.CONTACT_NAME'));
+    
+      try {
+        var currentValue = normalizeCurrentValue('reporting_status', "notstarted");
+        var propertyEditor = editor.getEditor('root.reporting_status');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: reporting_status');
+      }
+    propertyEditorAccessibilityFixes(editor.getEditor('root.reporting_status'));
 
-    propertyEditorAccessibilityFixes(editor.getEditor('root.ORGANISATION_UNIT'));
+    propertyEditorAccessibilityFixes(editor.getEditor('root.sort'));
 
-    propertyEditorAccessibilityFixes(editor.getEditor('root.CONTACT_FUNCT'));
+    propertyEditorAccessibilityFixes(editor.getEditor('root.sources'));
 
-    propertyEditorAccessibilityFixes(editor.getEditor('root.CONTACT_PHONE'));
+    propertyEditorAccessibilityFixes(editor.getEditor('root.standalone'));
 
-    propertyEditorAccessibilityFixes(editor.getEditor('root.CONTACT_MAIL'));
+    propertyEditorAccessibilityFixes(editor.getEditor('root.tags'));
 
-    propertyEditorAccessibilityFixes(editor.getEditor('root.CONTACT_EMAIL'));
-
-    propertyEditorAccessibilityFixes(editor.getEditor('root.IND_DEF_CON_CLASS'));
-
-    propertyEditorAccessibilityFixes(editor.getEditor('root.STAT_CONC_DEF'));
-
-    propertyEditorAccessibilityFixes(editor.getEditor('root.UNIT_MEASURE'));
-
-    propertyEditorAccessibilityFixes(editor.getEditor('root.CLASS_SYSTEM'));
-
-    propertyEditorAccessibilityFixes(editor.getEditor('root.SRC_TYPE_COLL_METHOD'));
-
-    propertyEditorAccessibilityFixes(editor.getEditor('root.SOURCE_TYPE'));
-
-    propertyEditorAccessibilityFixes(editor.getEditor('root.COLL_METHOD'));
-
-    propertyEditorAccessibilityFixes(editor.getEditor('root.FREQ_COLL'));
-
-    propertyEditorAccessibilityFixes(editor.getEditor('root.REL_CAL_POLICY'));
-
-    propertyEditorAccessibilityFixes(editor.getEditor('root.DATA_SOURCE'));
-
-    propertyEditorAccessibilityFixes(editor.getEditor('root.COMPILING_ORG'));
-
-    propertyEditorAccessibilityFixes(editor.getEditor('root.INST_MANDATE'));
-
-    propertyEditorAccessibilityFixes(editor.getEditor('root.OTHER_METHOD'));
-
-    propertyEditorAccessibilityFixes(editor.getEditor('root.RATIONALE'));
-
-    propertyEditorAccessibilityFixes(editor.getEditor('root.REC_USE_LIM'));
-
-    propertyEditorAccessibilityFixes(editor.getEditor('root.DATA_COMP'));
-
-    propertyEditorAccessibilityFixes(editor.getEditor('root.DATA_VALIDATION'));
-
-    propertyEditorAccessibilityFixes(editor.getEditor('root.DOC_METHOD'));
-
-    propertyEditorAccessibilityFixes(editor.getEditor('root.QUALITY_MGMNT'));
-
-    propertyEditorAccessibilityFixes(editor.getEditor('root.QUALITY_ASSURE'));
-
-    propertyEditorAccessibilityFixes(editor.getEditor('root.QUALITY_ASSMNT'));
-
-    propertyEditorAccessibilityFixes(editor.getEditor('root.COVERAGE'));
-
-    propertyEditorAccessibilityFixes(editor.getEditor('root.COMPARABILITY'));
-
-    propertyEditorAccessibilityFixes(editor.getEditor('root.OTHER_DOC'));
-
-    propertyEditorAccessibilityFixes(editor.getEditor('root.national_data_updated_date'));
-
-    propertyEditorAccessibilityFixes(editor.getEditor('root.national_metadata_updated_date'));
-
-    propertyEditorAccessibilityFixes(editor.getEditor('root.un_designated_tier'));
+    propertyEditorAccessibilityFixes(editor.getEditor('root.x_axis_label'));
 
     
 
@@ -651,7 +655,7 @@ data-event-label="high"
     function addTranslationLink(propertyEditor) {
       var parts = propertyEditor.value.split('.');
       var translationLink = '';
-      translationLink = translationLink.replace('[id]', '17-6-2');
+      translationLink = translationLink.replace('[id]', '11-5-3');
       translationLink = translationLink.replace('[group]', parts[0]);
       translationLink = translationLink.replace('[key]', parts[1]);
       translationLink = translationLink.replace('[language]', 'en');
@@ -686,7 +690,7 @@ data-event-label="high"
       else {
         var config = editor.getValue();
         var yaml = jsyaml.safeDump(config);
-        SaveAsFile(yaml, '17-6-2.yml', 'text/plain;charset=utf-8');
+        SaveAsFile(yaml, '11-5-3.yml', 'text/plain;charset=utf-8');
       }
     });
 
@@ -769,12 +773,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20221122153033'></script>
+<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20230112042324'></script>
 
 
     
     
-    <script src="/open-sdg-site-starter/assets/js/custom.js?v=20221122153033"></script><script>
+    <script src="/open-sdg-site-starter/assets/js/custom.js?v=20230112042324"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

@@ -1262,6 +1262,14 @@
           "status": "notstarted"
         },
         {
+          "id": "11-5-3",
+          "title": "(a) Damage to critical infrastructure and (b) number of disruptions to basic services, attributed to disasters",
+          "description": "",
+          "keywords": "",
+          "href": "/open-sdg-site-starter/11-5-3",
+          "status": "notstarted"
+        },
+        {
           "id": "11-6-1",
           "title": "Proportion of municipal solid waste collected and managed in controlled facilities out of total municipal waste generated, by cities",
           "description": "",
@@ -1979,14 +1987,6 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/17-6-1",
-          "status": "notstarted"
-        },
-        {
-          "id": "17-6-2",
-          "title": "Fixed Internet broadband subscriptions per 100 inhabitants, by speed",
-          "description": "",
-          "keywords": "",
-          "href": "/open-sdg-site-starter/17-6-2",
           "status": "notstarted"
         },
         {

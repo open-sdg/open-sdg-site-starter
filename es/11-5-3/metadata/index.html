@@ -103,7 +103,7 @@ var translations = {
         ================================================== -->
 
         
-    <title>Editar metadatos: 17.6.2 - Indicadores para los Objetivos de Desarrollo Sostenible</title>
+    <title>Editar metadatos: 11.5.3 - Indicadores para los Objetivos de Desarrollo Sostenible</title>
 
 
 
@@ -129,7 +129,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20221122153033">
+        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20230112042324">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -224,7 +224,7 @@ layout-config-builder
       Español
     </button>
     <ul class="dropdown-menu"><li>
-            <a class="dropdown-item" href="/open-sdg-site-starter/17-6-2/metadata/">
+            <a class="dropdown-item" href="/open-sdg-site-starter/11-5-3/metadata/">
               English
             </a>
           </li></ul>
@@ -236,7 +236,7 @@ layout-config-builder
                     <span class="no-js-language-toggle"><div class="language-toggle-container d-flex">
     <i class="fa fa-globe language-toggle-globe-links"></i>
     <ul class="language-toggle-links list-unstyled list-inline"><li class="language-option-en list-inline-item">
-            <a class="language-toggle-link" href="/open-sdg-site-starter/17-6-2/metadata/">
+            <a class="language-toggle-link" href="/open-sdg-site-starter/11-5-3/metadata/">
                 English
             </a>
         </li></ul>
@@ -256,7 +256,7 @@ data-event-label="high"
 
 <div id="main-content" class="container" role="main">
   <div class="row">
-    <div class="col-md-12"><h1>Editar metadatos: 17.6.2</h1></div>
+    <div class="col-md-12"><h1>Editar metadatos: 11.5.3</h1></div>
   </div>
   <div class="config-widgets row">
     <div class="col-md-6" id="search_holder">
@@ -480,7 +480,7 @@ data-event-label="high"
     // Set values according to this site's configuration.
     
       try {
-        var currentValue = normalizeCurrentValue('SDG_INDICATOR__GLOBAL', "<p>Indicator 17.6.1: Fixed Internet broadband subscriptions per 100 inhabitants, by speed</p>");
+        var currentValue = normalizeCurrentValue('SDG_INDICATOR__GLOBAL', "<p>Indicator 11.5.2: Direct economic loss in relation to global GDP, damage to critical infrastructure and number of disruptions to basic services, attributed to disasters</p>");
         var propertyEditor = editor.getEditor('root.SDG_INDICATOR__GLOBAL');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -494,7 +494,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('SDG_TARGET__GLOBAL', "<p>Target 17.6: Enhance North-South, South-South and triangular regional and international cooperation on and access to science, technology and innovation and enhance knowledge-sharing on mutually agreed terms, including through improved coordination among existing mechanisms, in particular at the United Nations level, and through a global technology facilitation mechanism</p>");
+        var currentValue = normalizeCurrentValue('SDG_TARGET__GLOBAL', "<p>Target 11.5: By 2030, significantly reduce the number of deaths and the number of people affected and substantially decrease the direct economic losses relative to global gross domestic product caused by disasters, including water-related disasters, with a focus on protecting the poor and people in vulnerable situations</p>");
         var propertyEditor = editor.getEditor('root.SDG_TARGET__GLOBAL');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -508,7 +508,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('META_LAST_UPDATE__GLOBAL', "<p>2021-08-20</p>");
+        var currentValue = normalizeCurrentValue('META_LAST_UPDATE__GLOBAL', "<p>2017-07-07</p>");
         var propertyEditor = editor.getEditor('root.META_LAST_UPDATE__GLOBAL');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -522,7 +522,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('SDG_CUSTODIAN_AGENCIES__GLOBAL', "<p>International Telecommunication Union (ITU)</p>");
+        var currentValue = normalizeCurrentValue('SDG_CUSTODIAN_AGENCIES__GLOBAL', "<p>United Nations Office for Disaster Reduction (UNISDR)</p>");
         var propertyEditor = editor.getEditor('root.SDG_CUSTODIAN_AGENCIES__GLOBAL');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -536,7 +536,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('SDG_RELATED_INDICATORS__GLOBAL', "<p>8.2, 9.1, 9.c, 17.8</p>");
+        var currentValue = normalizeCurrentValue('SDG_RELATED_INDICATORS__GLOBAL', "<p>1.5; 11.5; 11.b; 13.1; 2.4; 3.6; 3.9; 3.d; 4.a; 6.6; 9.1; 9.a; 11.1; 11.3; 11.c; 13.2; 13.3; 13.a; 13.b; 14.2; 15.1; 15.2; 15.3; 15.9.</p>");
         var propertyEditor = editor.getEditor('root.SDG_RELATED_INDICATORS__GLOBAL');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -651,7 +651,7 @@ data-event-label="high"
     function addTranslationLink(propertyEditor) {
       var parts = propertyEditor.value.split('.');
       var translationLink = '';
-      translationLink = translationLink.replace('[id]', '17-6-2');
+      translationLink = translationLink.replace('[id]', '11-5-3');
       translationLink = translationLink.replace('[group]', parts[0]);
       translationLink = translationLink.replace('[key]', parts[1]);
       translationLink = translationLink.replace('[language]', 'es');
@@ -686,7 +686,7 @@ data-event-label="high"
       else {
         var config = editor.getValue();
         var yaml = jsyaml.safeDump(config);
-        SaveAsFile(yaml, '17-6-2.yml', 'text/plain;charset=utf-8');
+        SaveAsFile(yaml, '11-5-3.yml', 'text/plain;charset=utf-8');
       }
     });
 
@@ -769,12 +769,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Buscar';</script>
 
-<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20221122153033'></script>
+<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20230112042324'></script>
 
 
     
     
-    <script src="/open-sdg-site-starter/assets/js/custom.js?v=20221122153033"></script><script>
+    <script src="/open-sdg-site-starter/assets/js/custom.js?v=20230112042324"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
