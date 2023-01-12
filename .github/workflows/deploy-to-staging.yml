@@ -9,6 +9,9 @@ on:
   #schedule:
   #  - cron: '10 0 * * *'
 
+permissions:
+  contents: write
+
 jobs:
   build:
 
