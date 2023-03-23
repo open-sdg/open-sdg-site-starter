@@ -8,7 +8,7 @@ layout: page
 - [About this site](#About-this-site)
 - [Need more info?](#Need-more-info?)
 - [Feedback](#Feedback)
-- 
+
 The [Sustainable Development Goals](http://www.un.org/sustainabledevelopment/sustainable-development-goals/) (SDGs) are a universal call to action to:
 
   * end poverty
