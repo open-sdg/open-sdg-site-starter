@@ -6,7 +6,7 @@ layout: page
 ---
 ## Table of contents
 - [About this site](#About-this-site)
-- [Need more info?](#Need-more-info?)
+- [Need more info?](#Need-more-info)
 - [Feedback](#Feedback)
 
 
