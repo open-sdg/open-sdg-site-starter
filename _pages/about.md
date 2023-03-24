@@ -3,8 +3,12 @@ title: About
 language: en
 permalink: /about/
 layout: page
-toc: true
 ---
+## Table of contents
+- [About this site](#about-this-site)
+- [Need more info?](#need-more-info)
+- [Feedback](#feedback)
+
 
 The [Sustainable Development Goals](http://www.un.org/sustainabledevelopment/sustainable-development-goals/) (SDGs) are a universal call to action to:
 
