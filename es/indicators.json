@@ -10,7 +10,7 @@
           "title": "Proporción de la población que vive por debajo del umbral internacional de pobreza, desglosada por sexo, edad, situación laboral y ubicación geográfica (urbana o rural)",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/1-1-1",
+          "href": "/open-sdg-site-starter/es/1-1-1/",
           "status": "notstarted"
         },
         {
@@ -18,7 +18,7 @@
           "title": "Proporción de la población que vive por debajo del umbral nacional de pobreza, desglosada por sexo y edad",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/1-2-1",
+          "href": "/open-sdg-site-starter/es/1-2-1/",
           "status": "notstarted"
         },
         {
@@ -26,7 +26,7 @@
           "title": "Proporción de hombres, mujeres y niños de todas las edades que viven en la pobreza, en todas sus dimensiones, con arreglo a las definiciones nacionales",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/1-2-2",
+          "href": "/open-sdg-site-starter/es/1-2-2/",
           "status": "notstarted"
         },
         {
@@ -34,7 +34,7 @@
           "title": "Proporción de la población cubierta por sistemas o niveles mínimos de protección social, desglosada por sexo, distinguiendo entre los niños, los desempleados, los ancianos, las personas con discapacidad, las mujeres embarazadas, los recién nacidos, las víctimas de accidentes de trabajo, los pobres y los vulnerables",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/1-3-1",
+          "href": "/open-sdg-site-starter/es/1-3-1/",
           "status": "notstarted"
         },
         {
@@ -42,7 +42,7 @@
           "title": "Proporción de la población que vive en hogares con acceso a los servicios básicos",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/1-4-1",
+          "href": "/open-sdg-site-starter/es/1-4-1/",
           "status": "notstarted"
         },
         {
@@ -50,7 +50,7 @@
           "title": "Proporción del total de la población adulta con derechos seguros de tenencia de la tierra: a) que posee documentación reconocida legalmente al respecto y b) considera seguros sus derechos, desglosada por sexo y tipo de tenencia",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/1-4-2",
+          "href": "/open-sdg-site-starter/es/1-4-2/",
           "status": "notstarted"
         },
         {
@@ -58,7 +58,7 @@
           "title": "Número de personas muertas, desaparecidas y afectadas directamente atribuido a desastres por cada 100.000 habitantes",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/1-5-1",
+          "href": "/open-sdg-site-starter/es/1-5-1/",
           "status": "notstarted"
         },
         {
@@ -66,7 +66,7 @@
           "title": "Pérdidas económicas directas atribuidas a los desastres en relación con el producto interno bruto (PIB) mundial",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/1-5-2",
+          "href": "/open-sdg-site-starter/es/1-5-2/",
           "status": "notstarted"
         },
         {
@@ -74,7 +74,7 @@
           "title": "Número de países que adoptan y aplican estrategias nacionales de reducción del riesgo de desastres en consonancia con el Marco de Sendái para la Reducción del Riesgo de Desastres 2015‐2030",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/1-5-3",
+          "href": "/open-sdg-site-starter/es/1-5-3/",
           "status": "notstarted"
         },
         {
@@ -82,7 +82,7 @@
           "title": "Proporción de gobiernos locales que adoptan y aplican estrategias locales de reducción del riesgo de desastres en consonancia con las estrategias nacionales de reducción del riesgo de desastres",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/1-5-4",
+          "href": "/open-sdg-site-starter/es/1-5-4/",
           "status": "notstarted"
         },
         {
@@ -90,7 +90,7 @@
           "title": "Total de las subvenciones de asistencia oficial para el desarrollo de todos los donantes que se centran en la reducción de la pobreza como porcentaje del ingreso nacional bruto del país receptor",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/1-a-1",
+          "href": "/open-sdg-site-starter/es/1-a-1/",
           "status": "notstarted"
         },
         {
@@ -98,7 +98,7 @@
           "title": "Proporción del gasto público total que se dedica a servicios esenciales (educación, salud y protección social)",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/1-a-2",
+          "href": "/open-sdg-site-starter/es/1-a-2/",
           "status": "notstarted"
         },
         {
@@ -106,7 +106,7 @@
           "title": "Gasto público social en favor de los pobres",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/1-b-1",
+          "href": "/open-sdg-site-starter/es/1-b-1/",
           "status": "notstarted"
         }]
     }
@@ -122,7 +122,7 @@
           "title": "Prevalencia de la subalimentación",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/2-1-1",
+          "href": "/open-sdg-site-starter/es/2-1-1/",
           "status": "notstarted"
         },
         {
@@ -130,7 +130,7 @@
           "title": "Prevalencia de la inseguridad alimentaria moderada o grave entre la población, según la escala de experiencia de inseguridad alimentaria",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/2-1-2",
+          "href": "/open-sdg-site-starter/es/2-1-2/",
           "status": "notstarted"
         },
         {
@@ -138,7 +138,7 @@
           "title": "Prevalencia del retraso del crecimiento (estatura para la edad, desviación típica < -2 de la mediana de los patrones de crecimiento infantil de la Organización Mundial de la Salud (OMS)) entre los niños menores de 5 años",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/2-2-1",
+          "href": "/open-sdg-site-starter/es/2-2-1/",
           "status": "notstarted"
         },
         {
@@ -146,7 +146,7 @@
           "title": "Prevalencia de la malnutrición (peso para la estatura, desviación típica > +2 o < -2 de la mediana de los patrones de crecimiento infantil de la OMS) entre los niños menores de 5 años, desglosada por tipo (emaciación y sobrepeso)",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/2-2-2",
+          "href": "/open-sdg-site-starter/es/2-2-2/",
           "status": "notstarted"
         },
         {
@@ -154,7 +154,7 @@
           "title": "Prevalencia de la anemia en las mujeres de entre 15 y 49 años, desglosada por embarazo (porcentaje)",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/2-2-3",
+          "href": "/open-sdg-site-starter/es/2-2-3/",
           "status": "notstarted"
         },
         {
@@ -162,7 +162,7 @@
           "title": "Volumen de producción por unidad de trabajo desglosado por tamaño y tipo de explotación (agropecuaria/ganadera/forestal)",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/2-3-1",
+          "href": "/open-sdg-site-starter/es/2-3-1/",
           "status": "notstarted"
         },
         {
@@ -170,7 +170,7 @@
           "title": "Media de ingresos de los productores de alimentos en pequeña escala, desglosada por sexo y condición indígena",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/2-3-2",
+          "href": "/open-sdg-site-starter/es/2-3-2/",
           "status": "notstarted"
         },
         {
@@ -178,7 +178,7 @@
           "title": "Proporción de la superficie agrícola en que se practica una agricultura productiva y sostenible",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/2-4-1",
+          "href": "/open-sdg-site-starter/es/2-4-1/",
           "status": "notstarted"
         },
         {
@@ -186,7 +186,7 @@
           "title": "Número de recursos genéticos vegetales y animales para la alimentación y la agricultura preservados en instalaciones de conservación a medio y largo plazo",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/2-5-1",
+          "href": "/open-sdg-site-starter/es/2-5-1/",
           "status": "notstarted"
         },
         {
@@ -194,7 +194,7 @@
           "title": "Proporción de razas y variedades locales consideradas en riesgo de extinción",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/2-5-2",
+          "href": "/open-sdg-site-starter/es/2-5-2/",
           "status": "notstarted"
         },
         {
@@ -202,7 +202,7 @@
           "title": "Índice de orientación agrícola para el gasto público",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/2-a-1",
+          "href": "/open-sdg-site-starter/es/2-a-1/",
           "status": "notstarted"
         },
         {
@@ -210,7 +210,7 @@
           "title": "Total de corrientes oficiales de recursos (asistencia oficial para el desarrollo más otras corrientes oficiales) destinado al sector agrícola",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/2-a-2",
+          "href": "/open-sdg-site-starter/es/2-a-2/",
           "status": "notstarted"
         },
         {
@@ -218,7 +218,7 @@
           "title": "Subsidios a la exportación de productos agropecuarios",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/2-b-1",
+          "href": "/open-sdg-site-starter/es/2-b-1/",
           "status": "notstarted"
         },
         {
@@ -226,7 +226,7 @@
           "title": "Indicador de anomalías en los precios de los alimentos",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/2-c-1",
+          "href": "/open-sdg-site-starter/es/2-c-1/",
           "status": "notstarted"
         }]
     }
@@ -242,7 +242,7 @@
           "title": "Tasa de mortalidad materna",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/3-1-1",
+          "href": "/open-sdg-site-starter/es/3-1-1/",
           "status": "notstarted"
         },
         {
@@ -250,7 +250,7 @@
           "title": "Proporción de partos atendidos por personal sanitario especializado",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/3-1-2",
+          "href": "/open-sdg-site-starter/es/3-1-2/",
           "status": "notstarted"
         },
         {
@@ -258,7 +258,7 @@
           "title": "Tasa de mortalidad de niños menores de 5 años",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/3-2-1",
+          "href": "/open-sdg-site-starter/es/3-2-1/",
           "status": "notstarted"
         },
         {
@@ -266,7 +266,7 @@
           "title": "Tasa de mortalidad neonatal",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/3-2-2",
+          "href": "/open-sdg-site-starter/es/3-2-2/",
           "status": "notstarted"
         },
         {
@@ -274,7 +274,7 @@
           "title": "Número de nuevas infecciones por el VIH por cada 1.000 habitantes no infectados, desglosado por sexo, edad y poblaciones clave",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/3-3-1",
+          "href": "/open-sdg-site-starter/es/3-3-1/",
           "status": "notstarted"
         },
         {
@@ -282,7 +282,7 @@
           "title": "Incidencia de la tuberculosis por cada 100.000 habitantes",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/3-3-2",
+          "href": "/open-sdg-site-starter/es/3-3-2/",
           "status": "notstarted"
         },
         {
@@ -290,7 +290,7 @@
           "title": "Incidencia de la malaria por cada 1.000 habitantes",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/3-3-3",
+          "href": "/open-sdg-site-starter/es/3-3-3/",
           "status": "notstarted"
         },
         {
@@ -298,7 +298,7 @@
           "title": "Incidencia de la hepatitis B por cada 100.000 habitantes",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/3-3-4",
+          "href": "/open-sdg-site-starter/es/3-3-4/",
           "status": "notstarted"
         },
         {
@@ -306,7 +306,7 @@
           "title": "Número de personas que requieren intervenciones contra enfermedades tropicales desatendidas",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/3-3-5",
+          "href": "/open-sdg-site-starter/es/3-3-5/",
           "status": "notstarted"
         },
         {
@@ -314,7 +314,7 @@
           "title": "Tasa de mortalidad atribuida a las enfermedades cardiovasculares, el cáncer, la diabetes o las enfermedades respiratorias crónicas",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/3-4-1",
+          "href": "/open-sdg-site-starter/es/3-4-1/",
           "status": "notstarted"
         },
         {
@@ -322,7 +322,7 @@
           "title": "Tasa de mortalidad por suicidio",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/3-4-2",
+          "href": "/open-sdg-site-starter/es/3-4-2/",
           "status": "notstarted"
         },
         {
@@ -330,7 +330,7 @@
           "title": "Cobertura de los tratamientos(farmacológicos y psicosociales y servicios de rehabilitación y postratamiento) de trastornos por abuso de sustancias adictivas",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/3-5-1",
+          "href": "/open-sdg-site-starter/es/3-5-1/",
           "status": "notstarted"
         },
         {
@@ -338,7 +338,7 @@
           "title": "Consumo de alcohol per cápita (a partir de los 15 años de edad) durante un año civil en litros de alcohol puro",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/3-5-2",
+          "href": "/open-sdg-site-starter/es/3-5-2/",
           "status": "notstarted"
         },
         {
@@ -346,7 +346,7 @@
           "title": "Tasa de mortalidad por lesiones debidas a accidentes de tráfico",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/3-6-1",
+          "href": "/open-sdg-site-starter/es/3-6-1/",
           "status": "notstarted"
         },
         {
@@ -354,7 +354,7 @@
           "title": "Proporción de mujeres en edad de procrear (entre 15 y 49 años) que cubren sus necesidades de planificación familiar con métodos modernos",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/3-7-1",
+          "href": "/open-sdg-site-starter/es/3-7-1/",
           "status": "notstarted"
         },
         {
@@ -362,7 +362,7 @@
           "title": "Tasa de fecundidad de las adolescentes (entre 10 y 14 años y entre 15 y 19 años) por cada 1.000 mujeres de ese grupo de edad",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/3-7-2",
+          "href": "/open-sdg-site-starter/es/3-7-2/",
           "status": "notstarted"
         },
         {
@@ -370,7 +370,7 @@
           "title": "Cobertura de los servicios de salud esenciales",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/3-8-1",
+          "href": "/open-sdg-site-starter/es/3-8-1/",
           "status": "notstarted"
         },
         {
@@ -378,7 +378,7 @@
           "title": "Proporción de la población con grandes gastos sanitarios por hogar como porcentaje del total de gastos o ingresos de los hogares",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/3-8-2",
+          "href": "/open-sdg-site-starter/es/3-8-2/",
           "status": "notstarted"
         },
         {
@@ -386,7 +386,7 @@
           "title": "Tasa de mortalidad atribuida a la contaminación de los hogares y del aire ambiente",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/3-9-1",
+          "href": "/open-sdg-site-starter/es/3-9-1/",
           "status": "notstarted"
         },
         {
@@ -394,7 +394,7 @@
           "title": "Tasa de mortalidad atribuida al agua insalubre, el saneamiento deficiente y la falta de higiene (exposición a servicios insalubres de agua, saneamiento e higiene para todos (WASH))",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/3-9-2",
+          "href": "/open-sdg-site-starter/es/3-9-2/",
           "status": "notstarted"
         },
         {
@@ -402,7 +402,7 @@
           "title": "Tasa de mortalidad atribuida a intoxicaciones involuntarias",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/3-9-3",
+          "href": "/open-sdg-site-starter/es/3-9-3/",
           "status": "notstarted"
         },
         {
@@ -410,7 +410,7 @@
           "title": "Prevalencia del consumo actual de tabaco a partir de los 15 años de edad (edades ajustadas)",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/3-a-1",
+          "href": "/open-sdg-site-starter/es/3-a-1/",
           "status": "notstarted"
         },
         {
@@ -418,7 +418,7 @@
           "title": "Proporción de la población inmunizada con todas las vacunas incluidas en cada programa nacional",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/3-b-1",
+          "href": "/open-sdg-site-starter/es/3-b-1/",
           "status": "notstarted"
         },
         {
@@ -426,7 +426,7 @@
           "title": "Total neto de asistencia oficial para el desarrollo destinado a los sectores de la investigación médica y la atención sanitaria básica",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/3-b-2",
+          "href": "/open-sdg-site-starter/es/3-b-2/",
           "status": "notstarted"
         },
         {
@@ -434,7 +434,7 @@
           "title": "Proporción de centros de salud que disponen de un conjunto básico de medicamentos esenciales asequibles de manera sostenible",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/3-b-3",
+          "href": "/open-sdg-site-starter/es/3-b-3/",
           "status": "notstarted"
         },
         {
@@ -442,7 +442,7 @@
           "title": "Densidad y distribución del personal sanitario",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/3-c-1",
+          "href": "/open-sdg-site-starter/es/3-c-1/",
           "status": "notstarted"
         },
         {
@@ -450,7 +450,7 @@
           "title": "Capacidad prevista en el Reglamento Sanitario Internacional (RSI) y preparación para emergencias de salud",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/3-d-1",
+          "href": "/open-sdg-site-starter/es/3-d-1/",
           "status": "notstarted"
         },
         {
@@ -458,7 +458,7 @@
           "title": "Porcentaje de infecciones del torrente sanguíneo debidas a determinados organismos resistentes a los antimicrobianos seleccionados",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/3-d-2",
+          "href": "/open-sdg-site-starter/es/3-d-2/",
           "status": "notstarted"
         }]
     }
@@ -474,7 +474,7 @@
           "title": "Proporción de niños, niñas y adolescentes que, a) en los cursos segundo y tercero, b) al final de la enseñanza primaria y c) al final de la enseñanza secundaria inferior, han alcanzado al menos un nivel mínimo de competencia en i) lectura y ii) matemáticas, desglosada por sexo",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/4-1-1",
+          "href": "/open-sdg-site-starter/es/4-1-1/",
           "status": "notstarted"
         },
         {
@@ -482,7 +482,7 @@
           "title": "Índice de finalización (enseñanza primaria, primer ciclo de enseñanza secundaria y segundo ciclo de enseñanza secundaria)",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/4-1-2",
+          "href": "/open-sdg-site-starter/es/4-1-2/",
           "status": "notstarted"
         },
         {
@@ -490,7 +490,7 @@
           "title": "Proporción de niños de 24 a 59 meses cuyo desarrollo es adecuado en cuanto a la salud, el aprendizaje y el bienestar psicosocial, desglosada por sexo",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/4-2-1",
+          "href": "/open-sdg-site-starter/es/4-2-1/",
           "status": "notstarted"
         },
         {
@@ -498,7 +498,7 @@
           "title": "Tasa de participación en el aprendizaje organizado (un año antes de la edad oficial de ingreso en la enseñanza primaria), desglosada por sexo",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/4-2-2",
+          "href": "/open-sdg-site-starter/es/4-2-2/",
           "status": "notstarted"
         },
         {
@@ -506,7 +506,7 @@
           "title": "Tasa de participación de los jóvenes y adultos en la enseñanza y formación académica y no académica en los últimos 12 meses, desglosada por sexo",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/4-3-1",
+          "href": "/open-sdg-site-starter/es/4-3-1/",
           "status": "notstarted"
         },
         {
@@ -514,7 +514,7 @@
           "title": "Proporción de jóvenes y adultos con competencias en tecnología de la información y las comunicaciones (TIC), desglosada por tipo de competencia técnica",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/4-4-1",
+          "href": "/open-sdg-site-starter/es/4-4-1/",
           "status": "notstarted"
         },
         {
@@ -522,7 +522,7 @@
           "title": "Índices de paridad (entre mujeres y hombres, zonas rurales y urbanas, quintiles de riqueza superior e inferior y grupos como los discapacitados, los pueblos indígenas y los afectados por los conflictos, a medida que se disponga de datos) para todos los indicadores educativos de esta lista que puedan desglosarse",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/4-5-1",
+          "href": "/open-sdg-site-starter/es/4-5-1/",
           "status": "notstarted"
         },
         {
@@ -530,7 +530,7 @@
           "title": "Proporción de la población en un grupo de edad determinado que ha alcanzado al menos un nivel fijo de competencia funcional en a) alfabetización y b) nociones elementales de aritmética, desglosada por sexo",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/4-6-1",
+          "href": "/open-sdg-site-starter/es/4-6-1/",
           "status": "notstarted"
         },
         {
@@ -538,7 +538,7 @@
           "title": "Grado en que i) la educación para la ciudadanía mundial y ii) la educación para el desarrollo sostenible se incorporan en a) las políticas nacionales de educación, b) los planes de estudio, c) la formación del profesorado y d) la evaluación de los estudiantes",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/4-7-1",
+          "href": "/open-sdg-site-starter/es/4-7-1/",
           "status": "notstarted"
         },
         {
@@ -546,7 +546,7 @@
           "title": "Proporción de escuelas que ofrecen servicios básicos, desglosada por tipo de servicio",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/4-a-1",
+          "href": "/open-sdg-site-starter/es/4-a-1/",
           "status": "notstarted"
         },
         {
@@ -554,7 +554,7 @@
           "title": "Volumen de la asistencia oficial para el desarrollo destinada a becas, desglosado por sector y tipo de estudio",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/4-b-1",
+          "href": "/open-sdg-site-starter/es/4-b-1/",
           "status": "notstarted"
         },
         {
@@ -562,7 +562,7 @@
           "title": "Proporción de docentes con las calificaciones mínimas requeridas, por nivel educativo",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/4-c-1",
+          "href": "/open-sdg-site-starter/es/4-c-1/",
           "status": "notstarted"
         }]
     }
@@ -578,7 +578,7 @@
           "title": "Determinar si existen o no marcos jurídicos para promover, hacer cumplir y supervisar la igualdad y la no discriminación por razón de sexo",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/5-1-1",
+          "href": "/open-sdg-site-starter/es/5-1-1/",
           "status": "notstarted"
         },
         {
@@ -586,7 +586,7 @@
           "title": "Proporción de mujeres y niñas a partir de 15 años de edad que han sufrido violencia física, sexual o psicológica a manos de su actual o anterior pareja en los últimos 12 meses, desglosada por forma de violencia y edad",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/5-2-1",
+          "href": "/open-sdg-site-starter/es/5-2-1/",
           "status": "notstarted"
         },
         {
@@ -594,7 +594,7 @@
           "title": "Proporción de mujeres y niñas a partir de 15 años de edad que han sufrido violencia sexual a manos de personas que no eran su pareja en los últimos12 meses, desglosada por edad y lugar del hecho",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/5-2-2",
+          "href": "/open-sdg-site-starter/es/5-2-2/",
           "status": "notstarted"
         },
         {
@@ -602,7 +602,7 @@
           "title": "Proporción de mujeres de entre 20 y 24 años que estaban casadas o mantenían una unión estable antes de cumplir los 15 años y antes de cumplir los 18 años",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/5-3-1",
+          "href": "/open-sdg-site-starter/es/5-3-1/",
           "status": "notstarted"
         },
         {
@@ -610,7 +610,7 @@
           "title": "Proporción de niñas y mujeres de entre 15 y 49 años que han sufrido mutilación o ablación genital femenina, desglosada por edad",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/5-3-2",
+          "href": "/open-sdg-site-starter/es/5-3-2/",
           "status": "notstarted"
         },
         {
@@ -618,7 +618,7 @@
           "title": "Proporción de tiempo dedicado al trabajo doméstico y asistencial no remunerado, desglosada por sexo, edad y ubicación",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/5-4-1",
+          "href": "/open-sdg-site-starter/es/5-4-1/",
           "status": "notstarted"
         },
         {
@@ -626,7 +626,7 @@
           "title": "Proporción de escaños ocupados por mujeres en a) los parlamentos nacionales y b) los gobiernos locales",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/5-5-1",
+          "href": "/open-sdg-site-starter/es/5-5-1/",
           "status": "notstarted"
         },
         {
@@ -634,7 +634,7 @@
           "title": "Proporción de mujeres en cargos directivos",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/5-5-2",
+          "href": "/open-sdg-site-starter/es/5-5-2/",
           "status": "notstarted"
         },
         {
@@ -642,7 +642,7 @@
           "title": "Proporción de mujeres de entre 15 y 49 años que toman sus propias decisiones informadas sobre las relaciones sexuales, el uso de anticonceptivos y la atención de la salud reproductiva",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/5-6-1",
+          "href": "/open-sdg-site-starter/es/5-6-1/",
           "status": "notstarted"
         },
         {
@@ -650,7 +650,7 @@
           "title": "Número de países con leyes y reglamentos que garantizan a los hombres y las mujeres a partir de los 15 años de edad un acceso pleno e igualitario a los servicios de salud sexual y reproductiva y a la información y educación al respecto",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/5-6-2",
+          "href": "/open-sdg-site-starter/es/5-6-2/",
           "status": "notstarted"
         },
         {
@@ -658,7 +658,7 @@
           "title": "a) Proporción del total de la población agrícola con derechos de propiedad o derechos seguros sobre tierras agrícolas, desglosada por sexo; y b) proporción de mujeres entre los propietarios o los titulares de derechos sobre tierras agrícolas, desglosada por tipo de tenencia",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/5-a-1",
+          "href": "/open-sdg-site-starter/es/5-a-1/",
           "status": "notstarted"
         },
         {
@@ -666,7 +666,7 @@
           "title": "Proporción de países cuyo ordenamiento jurídico (incluido el derecho consuetudinario) garantiza la igualdad de derechos de la mujer a la propiedad o el control de las tierras",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/5-a-2",
+          "href": "/open-sdg-site-starter/es/5-a-2/",
           "status": "notstarted"
         },
         {
@@ -674,7 +674,7 @@
           "title": "Proporción de personas que poseen un teléfono móvil, desglosada por sexo",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/5-b-1",
+          "href": "/open-sdg-site-starter/es/5-b-1/",
           "status": "notstarted"
         },
         {
@@ -682,7 +682,7 @@
           "title": "Proporción de países con sistemas para el seguimiento de la igualdad de género y el empoderamiento de las mujeres y la asignación de fondos públicos para ese fin",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/5-c-1",
+          "href": "/open-sdg-site-starter/es/5-c-1/",
           "status": "notstarted"
         }]
     }
@@ -698,7 +698,7 @@
           "title": "Proporción de la población que utiliza servicios de suministro de agua potable gestionados sin riesgos",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/6-1-1",
+          "href": "/open-sdg-site-starter/es/6-1-1/",
           "status": "notstarted"
         },
         {
@@ -706,7 +706,7 @@
           "title": "Proporción de la población que utiliza: a) servicios de saneamiento gestionados sin riesgos y b) instalaciones para el lavado de manos con agua y jabón",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/6-2-1",
+          "href": "/open-sdg-site-starter/es/6-2-1/",
           "status": "notstarted"
         },
         {
@@ -714,7 +714,7 @@
           "title": "Proporción de los flujos de aguas residuales domésticas e industriales tratados de manera adecuada",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/6-3-1",
+          "href": "/open-sdg-site-starter/es/6-3-1/",
           "status": "notstarted"
         },
         {
@@ -722,7 +722,7 @@
           "title": "Proporción de masas de agua de buena calidad",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/6-3-2",
+          "href": "/open-sdg-site-starter/es/6-3-2/",
           "status": "notstarted"
         },
         {
@@ -730,7 +730,7 @@
           "title": "Cambio en el uso eficiente de los recursos hídricos con el paso del tiempo",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/6-4-1",
+          "href": "/open-sdg-site-starter/es/6-4-1/",
           "status": "notstarted"
         },
         {
@@ -738,7 +738,7 @@
           "title": "Nivel de estrés hídrico: extracción de agua dulce en proporción a los recursos de agua dulce disponibles",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/6-4-2",
+          "href": "/open-sdg-site-starter/es/6-4-2/",
           "status": "notstarted"
         },
         {
@@ -746,7 +746,7 @@
           "title": "Grado de gestión integrada de los recursos hídricos",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/6-5-1",
+          "href": "/open-sdg-site-starter/es/6-5-1/",
           "status": "notstarted"
         },
         {
@@ -754,7 +754,7 @@
           "title": "Proporción de la superficie de cuencas transfronterizas sujetas a arreglos operacionales para la cooperación en materia de aguas",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/6-5-2",
+          "href": "/open-sdg-site-starter/es/6-5-2/",
           "status": "notstarted"
         },
         {
@@ -762,7 +762,7 @@
           "title": "Cambio en la extensión de los ecosistemas relacionados con el agua con el paso del tiempo",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/6-6-1",
+          "href": "/open-sdg-site-starter/es/6-6-1/",
           "status": "notstarted"
         },
         {
@@ -770,7 +770,7 @@
           "title": "Volumen de la asistencia oficial para el desarrollo destinada al agua y el saneamiento que forma parte de un plan de gastos coordinados por el gobierno",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/6-a-1",
+          "href": "/open-sdg-site-starter/es/6-a-1/",
           "status": "notstarted"
         },
         {
@@ -778,7 +778,7 @@
           "title": "Proporción de dependencias administrativas locales que han establecido políticas y procedimientos operacionales para la participación de las comunidades locales en la gestión del agua y el saneamiento",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/6-b-1",
+          "href": "/open-sdg-site-starter/es/6-b-1/",
           "status": "notstarted"
         }]
     }
@@ -794,7 +794,7 @@
           "title": "Proporción de la población que tiene acceso a la electricidad",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/7-1-1",
+          "href": "/open-sdg-site-starter/es/7-1-1/",
           "status": "notstarted"
         },
         {
@@ -802,7 +802,7 @@
           "title": "Proporción de la población cuya fuente primaria de energía son los combustibles y tecnologías limpios",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/7-1-2",
+          "href": "/open-sdg-site-starter/es/7-1-2/",
           "status": "notstarted"
         },
         {
@@ -810,7 +810,7 @@
           "title": "Proporción de energía renovable en el consumo final total de energía",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/7-2-1",
+          "href": "/open-sdg-site-starter/es/7-2-1/",
           "status": "notstarted"
         },
         {
@@ -818,7 +818,7 @@
           "title": "Intensidad energética medida en función de la energía primaria y el PIB",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/7-3-1",
+          "href": "/open-sdg-site-starter/es/7-3-1/",
           "status": "notstarted"
         },
         {
@@ -826,7 +826,7 @@
           "title": "Corrientes financieras internacionales hacia los países en desarrollo para apoyar la investigación y el desarrollo de energías limpias y la producción de energía renovable, incluidos los sistemas híbridos",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/7-a-1",
+          "href": "/open-sdg-site-starter/es/7-a-1/",
           "status": "notstarted"
         },
         {
@@ -834,7 +834,7 @@
           "title": "Capacidad instalada de generación de energía renovable en los países en desarrollo (expresada en vatios per cápita)",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/7-b-1",
+          "href": "/open-sdg-site-starter/es/7-b-1/",
           "status": "notstarted"
         }]
     }
@@ -850,7 +850,7 @@
           "title": "Tasa de crecimiento anual del PIB real per cápita",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/8-1-1",
+          "href": "/open-sdg-site-starter/es/8-1-1/",
           "status": "notstarted"
         },
         {
@@ -858,7 +858,7 @@
           "title": "Tasa de crecimiento anual del PIB real por persona empleada",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/8-2-1",
+          "href": "/open-sdg-site-starter/es/8-2-1/",
           "status": "notstarted"
         },
         {
@@ -866,7 +866,7 @@
           "title": "Proporción de empleo informal con respecto al empleo total, desglosada por sector y sexo",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/8-3-1",
+          "href": "/open-sdg-site-starter/es/8-3-1/",
           "status": "notstarted"
         },
         {
@@ -874,7 +874,7 @@
           "title": "Huella material en términos absolutos, huella material per cápita y huella material por PIB",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/8-4-1",
+          "href": "/open-sdg-site-starter/es/8-4-1/",
           "status": "notstarted"
         },
         {
@@ -882,7 +882,7 @@
           "title": "Consumo material interno en términos absolutos, consumo material interno per cápita y consumo material interno por PIB",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/8-4-2",
+          "href": "/open-sdg-site-starter/es/8-4-2/",
           "status": "notstarted"
         },
         {
@@ -890,7 +890,7 @@
           "title": "Ingreso medio por hora de las personas empleadas, desglosado por sexo, edad, ocupación y personas con discapacidad",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/8-5-1",
+          "href": "/open-sdg-site-starter/es/8-5-1/",
           "status": "notstarted"
         },
         {
@@ -898,7 +898,7 @@
           "title": "Tasa de desempleo, desglosada por sexo, edad y personas con discapacidad",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/8-5-2",
+          "href": "/open-sdg-site-starter/es/8-5-2/",
           "status": "notstarted"
         },
         {
@@ -906,7 +906,7 @@
           "title": "Proporción de jóvenes (entre 15 y 24 años) que no cursan estudios, no están empleados ni reciben capacitación",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/8-6-1",
+          "href": "/open-sdg-site-starter/es/8-6-1/",
           "status": "notstarted"
         },
         {
@@ -914,7 +914,7 @@
           "title": "Proporción y número de niños de entre 5 y 17 años que realizan trabajo infantil, desglosados por sexo y edad",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/8-7-1",
+          "href": "/open-sdg-site-starter/es/8-7-1/",
           "status": "notstarted"
         },
         {
@@ -922,7 +922,7 @@
           "title": "Lesiones ocupacionales mortales y no mortales por cada 100.000 trabajadores, desglosadas por sexo y estatus migratorio",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/8-8-1",
+          "href": "/open-sdg-site-starter/es/8-8-1/",
           "status": "notstarted"
         },
         {
@@ -930,7 +930,7 @@
           "title": "Nivel de cumplimiento nacional de los derechos laborales (libertad de asociación y negociación colectiva) con arreglo a las fuentes textuales de la Organización Internacional del Trabajo (OIT) y la legislación interna, desglosado por sexo y estatus migratorio",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/8-8-2",
+          "href": "/open-sdg-site-starter/es/8-8-2/",
           "status": "notstarted"
         },
         {
@@ -938,7 +938,7 @@
           "title": "PIB generado directamente por el turismo en proporción al PIB total y a la tasa de crecimiento",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/8-9-1",
+          "href": "/open-sdg-site-starter/es/8-9-1/",
           "status": "notstarted"
         },
         {
@@ -946,7 +946,7 @@
           "title": "a) Número de sucursales de bancos comerciales por cada 100.000 adultos y b) número de cajeros automáticos por cada 100.000 adultos",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/8-10-1",
+          "href": "/open-sdg-site-starter/es/8-10-1/",
           "status": "notstarted"
         },
         {
@@ -954,7 +954,7 @@
           "title": "Proporción de adultos (a partir de 15 años de edad) que tienen una cuenta en un banco u otra institución financiera o un proveedor de servicios de dinero móvil",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/8-10-2",
+          "href": "/open-sdg-site-starter/es/8-10-2/",
           "status": "notstarted"
         },
         {
@@ -962,7 +962,7 @@
           "title": "Compromisos y desembolsos en relación con la iniciativa Ayuda para el Comercio",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/8-a-1",
+          "href": "/open-sdg-site-starter/es/8-a-1/",
           "status": "notstarted"
         },
         {
@@ -970,7 +970,7 @@
           "title": "Existencia de una estrategia nacional organizada y en marcha para el empleo de los jóvenes, como estrategia independiente o como parte de una estrategia nacional de empleo",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/8-b-1",
+          "href": "/open-sdg-site-starter/es/8-b-1/",
           "status": "notstarted"
         }]
     }
@@ -986,7 +986,7 @@
           "title": "Proporción de la población rural que vive a menos de 2 km de una carretera transitable todo el año",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/9-1-1",
+          "href": "/open-sdg-site-starter/es/9-1-1/",
           "status": "notstarted"
         },
         {
@@ -994,7 +994,7 @@
           "title": "Volumen de transporte de pasajeros y carga, desglosado por medio de transporte",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/9-1-2",
+          "href": "/open-sdg-site-starter/es/9-1-2/",
           "status": "notstarted"
         },
         {
@@ -1002,7 +1002,7 @@
           "title": "Valor añadido del sector manufacturo en proporción al PIB y per cápita",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/9-2-1",
+          "href": "/open-sdg-site-starter/es/9-2-1/",
           "status": "notstarted"
         },
         {
@@ -1010,7 +1010,7 @@
           "title": "Empleo del sector manufacturero en proporción al empleo total",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/9-2-2",
+          "href": "/open-sdg-site-starter/es/9-2-2/",
           "status": "notstarted"
         },
         {
@@ -1018,7 +1018,7 @@
           "title": "Proporción del valor añadido total del sector industrial correspondiente a las pequeñas industrias",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/9-3-1",
+          "href": "/open-sdg-site-starter/es/9-3-1/",
           "status": "notstarted"
         },
         {
@@ -1026,7 +1026,7 @@
           "title": "Proporción de las pequeñas industrias que han obtenido un préstamo o una línea de crédito",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/9-3-2",
+          "href": "/open-sdg-site-starter/es/9-3-2/",
           "status": "notstarted"
         },
         {
@@ -1034,7 +1034,7 @@
           "title": "Emisiones de CO2 por unidad de valor añadido",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/9-4-1",
+          "href": "/open-sdg-site-starter/es/9-4-1/",
           "status": "notstarted"
         },
         {
@@ -1042,7 +1042,7 @@
           "title": "Gastos en investigación y desarrollo en proporción al PIB",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/9-5-1",
+          "href": "/open-sdg-site-starter/es/9-5-1/",
           "status": "notstarted"
         },
         {
@@ -1050,7 +1050,7 @@
           "title": "Número de investigadores (en equivalente a tiempo completo) por cada millón de habitantes",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/9-5-2",
+          "href": "/open-sdg-site-starter/es/9-5-2/",
           "status": "notstarted"
         },
         {
@@ -1058,7 +1058,7 @@
           "title": "Total de apoyo internacional oficial (asistencia oficial para el desarrollo más otras corrientes oficiales de recursos) destinado a la infraestructura",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/9-a-1",
+          "href": "/open-sdg-site-starter/es/9-a-1/",
           "status": "notstarted"
         },
         {
@@ -1066,7 +1066,7 @@
           "title": "Proporción del valor añadido por la industria de tecnología mediana y alta en el valor añadido total",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/9-b-1",
+          "href": "/open-sdg-site-starter/es/9-b-1/",
           "status": "notstarted"
         },
         {
@@ -1074,7 +1074,7 @@
           "title": "Proporción de la población con cobertura de red móvil, desglosada por tecnología",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/9-c-1",
+          "href": "/open-sdg-site-starter/es/9-c-1/",
           "status": "notstarted"
         }]
     }
@@ -1090,7 +1090,7 @@
           "title": "Tasas de crecimiento per cápita de los gastos o ingresos de los hogares del 40% más pobre de la población y la población total",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/10-1-1",
+          "href": "/open-sdg-site-starter/es/10-1-1/",
           "status": "notstarted"
         },
         {
@@ -1098,7 +1098,7 @@
           "title": "Proporción de personas que viven por debajo del 50% de la mediana de los ingresos, desglosada por sexo, edad y personas con discapacidad",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/10-2-1",
+          "href": "/open-sdg-site-starter/es/10-2-1/",
           "status": "notstarted"
         },
         {
@@ -1106,7 +1106,7 @@
           "title": "Proporción de la población que declara haberse sentido personalmente discriminada o acosada en los últimos 12 meses por motivos de discriminación prohibidos por el derecho internacional de los derechos humanos",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/10-3-1",
+          "href": "/open-sdg-site-starter/es/10-3-1/",
           "status": "notstarted"
         },
         {
@@ -1114,7 +1114,7 @@
           "title": "Proporción del PIB generada por el trabajo",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/10-4-1",
+          "href": "/open-sdg-site-starter/es/10-4-1/",
           "status": "notstarted"
         },
         {
@@ -1122,7 +1122,7 @@
           "title": "Efecto redistributivo de la política fiscal",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/10-4-2",
+          "href": "/open-sdg-site-starter/es/10-4-2/",
           "status": "notstarted"
         },
         {
@@ -1130,7 +1130,7 @@
           "title": "Indicadores de solidez financiera",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/10-5-1",
+          "href": "/open-sdg-site-starter/es/10-5-1/",
           "status": "notstarted"
         },
         {
@@ -1138,7 +1138,7 @@
           "title": "Proporción de miembros y derechos de voto de los países en desarrollo en organizaciones internacionales",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/10-6-1",
+          "href": "/open-sdg-site-starter/es/10-6-1/",
           "status": "notstarted"
         },
         {
@@ -1146,7 +1146,7 @@
           "title": "Costo de la contratación sufragado por el empleado en proporción a los ingresos mensuales percibidos en el país de destino",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/10-7-1",
+          "href": "/open-sdg-site-starter/es/10-7-1/",
           "status": "notstarted"
         },
         {
@@ -1154,7 +1154,7 @@
           "title": "Número de países que han aplicado políticas migratorias bien gestionadas que facilitan la migración y la movilidad ordenadas, seguras, regulares y responsables de las personas",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/10-7-2",
+          "href": "/open-sdg-site-starter/es/10-7-2/",
           "status": "notstarted"
         },
         {
@@ -1162,7 +1162,7 @@
           "title": "Número de personas que murieron o desaparecieron en el proceso de migración hacia un destino internacional",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/10-7-3",
+          "href": "/open-sdg-site-starter/es/10-7-3/",
           "status": "notstarted"
         },
         {
@@ -1170,7 +1170,7 @@
           "title": "Proporción de la población integrada por refugiados, desglosada por país de origen",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/10-7-4",
+          "href": "/open-sdg-site-starter/es/10-7-4/",
           "status": "notstarted"
         },
         {
@@ -1178,7 +1178,7 @@
           "title": "Proporción de líneas arancelarias que se aplican a las importaciones de los países menos adelantados y los países en desarrollo con arancel cero",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/10-a-1",
+          "href": "/open-sdg-site-starter/es/10-a-1/",
           "status": "notstarted"
         },
         {
@@ -1186,7 +1186,7 @@
           "title": "Corrientes totales de recursos para el desarrollo, desglosadas por país receptor y país donante y por tipo de corriente (por ejemplo, asistencia oficial para el desarrollo, inversión extranjera directa y otras corrientes)",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/10-b-1",
+          "href": "/open-sdg-site-starter/es/10-b-1/",
           "status": "notstarted"
         },
         {
@@ -1194,7 +1194,7 @@
           "title": "Costo de las remesas en proporción a las sumas remitidas",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/10-c-1",
+          "href": "/open-sdg-site-starter/es/10-c-1/",
           "status": "notstarted"
         }]
     }
@@ -1210,7 +1210,7 @@
           "title": "Proporción de la población urbana que vive en barrios marginales, asentamientos informales o viviendas inadecuadas",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/11-1-1",
+          "href": "/open-sdg-site-starter/es/11-1-1/",
           "status": "notstarted"
         },
         {
@@ -1218,7 +1218,7 @@
           "title": "Proporción de la población que tiene fácil acceso al transporte público, desglosada por sexo, edad y personas con discapacidad",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/11-2-1",
+          "href": "/open-sdg-site-starter/es/11-2-1/",
           "status": "notstarted"
         },
         {
@@ -1226,7 +1226,7 @@
           "title": "Relación entre la tasa de consumo de tierras y la tasa de crecimiento de la población",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/11-3-1",
+          "href": "/open-sdg-site-starter/es/11-3-1/",
           "status": "notstarted"
         },
         {
@@ -1234,7 +1234,7 @@
           "title": "Proporción de ciudades que cuentan con una estructura de participación directa de la sociedad civil en la planificación y la gestión urbanas y funcionan con regularidad y democráticamente",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/11-3-2",
+          "href": "/open-sdg-site-starter/es/11-3-2/",
           "status": "notstarted"
         },
         {
@@ -1242,7 +1242,7 @@
           "title": "Total de gastos per cápita destinados a la preservación, protección y conservación de todo el patrimonio cultural y natural, desglosado por fuente de financiación (pública y privada), tipo de patrimonio (cultural y natural) y nivel de gobierno (nacional, regional y local/municipal)",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/11-4-1",
+          "href": "/open-sdg-site-starter/es/11-4-1/",
           "status": "notstarted"
         },
         {
@@ -1250,7 +1250,7 @@
           "title": "Número de personas muertas, desaparecidas y afectadas directamente atribuido a desastres por cada 100.000 personas",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/11-5-1",
+          "href": "/open-sdg-site-starter/es/11-5-1/",
           "status": "notstarted"
         },
         {
@@ -1258,7 +1258,7 @@
           "title": "Pérdidas económicas directas en relación con el PIB mundial, daños en la infraestructura esencial y número de interrupciones de los servicios básicos atribuidos a desastres",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/11-5-2",
+          "href": "/open-sdg-site-starter/es/11-5-2/",
           "status": "notstarted"
         },
         {
@@ -1266,7 +1266,7 @@
           "title": "(a) Damage to critical infrastructure and (b) number of disruptions to basic services, attributed to disasters",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/11-5-3",
+          "href": "/open-sdg-site-starter/es/11-5-3/",
           "status": "notstarted"
         },
         {
@@ -1274,7 +1274,7 @@
           "title": "Proporción de residuos sólidos municipales recogidos y administrados en instalaciones controladas con respecto al total de residuos municipales generados, desglosada por ciudad",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/11-6-1",
+          "href": "/open-sdg-site-starter/es/11-6-1/",
           "status": "notstarted"
         },
         {
@@ -1282,7 +1282,7 @@
           "title": "Niveles medios anuales de partículas finas en suspensión (por ejemplo, PM2.5 y PM10) en las ciudades (ponderados según la población)",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/11-6-2",
+          "href": "/open-sdg-site-starter/es/11-6-2/",
           "status": "notstarted"
         },
         {
@@ -1290,7 +1290,7 @@
           "title": "Proporción media de la superficie edificada de las ciudades que se dedica a espacios abiertos para uso público de todos, desglosada por sexo, edad y personas con discapacidad",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/11-7-1",
+          "href": "/open-sdg-site-starter/es/11-7-1/",
           "status": "notstarted"
         },
         {
@@ -1298,7 +1298,7 @@
           "title": "Proporción de personas que han sido víctimas de acoso físico o sexual en los últimos 12 meses, desglosada por sexo, edad, grado de discapacidad y lugar del hecho",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/11-7-2",
+          "href": "/open-sdg-site-starter/es/11-7-2/",
           "status": "notstarted"
         },
         {
@@ -1306,7 +1306,7 @@
           "title": "Número de países que cuentan con políticas urbanas nacionales o planes de desarrollo regionales que a) responden a la dinámica de la población, b) garantizan un desarrollo territorial equilibrado y c) aumentan el margen fiscal local",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/11-a-1",
+          "href": "/open-sdg-site-starter/es/11-a-1/",
           "status": "notstarted"
         },
         {
@@ -1314,7 +1314,7 @@
           "title": "Número de países que adoptan y aplican estrategias nacionales de reducción del riesgo de desastres en consonancia con el Marco de Sendái para la Reducción del Riesgo de Desastres 2015‐2030",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/11-b-1",
+          "href": "/open-sdg-site-starter/es/11-b-1/",
           "status": "notstarted"
         },
         {
@@ -1322,7 +1322,7 @@
           "title": "Proporción de gobiernos locales que adoptan y aplican estrategias locales de reducción del riesgo de desastres en consonancia con las estrategias nacionales de reducción del riesgo de desastres",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/11-b-2",
+          "href": "/open-sdg-site-starter/es/11-b-2/",
           "status": "notstarted"
         }]
     }
@@ -1338,7 +1338,7 @@
           "title": "Número de países que elaboran, adoptan o aplican instrumentos de política destinados a apoyar la transición hacia modalidades de consumo y producción sostenibles",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/12-1-1",
+          "href": "/open-sdg-site-starter/es/12-1-1/",
           "status": "notstarted"
         },
         {
@@ -1346,7 +1346,7 @@
           "title": "Huella material en términos absolutos, huella material per cápita y huella material por PIB",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/12-2-1",
+          "href": "/open-sdg-site-starter/es/12-2-1/",
           "status": "notstarted"
         },
         {
@@ -1354,7 +1354,7 @@
           "title": "Consumo material interno en términos absolutos, consumo material interno per cápita y consumo material interno por PIB",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/12-2-2",
+          "href": "/open-sdg-site-starter/es/12-2-2/",
           "status": "notstarted"
         },
         {
@@ -1362,7 +1362,7 @@
           "title": "a) Índice de pérdidas de alimentos y b) índice de desperdicio de alimentos",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/12-3-1",
+          "href": "/open-sdg-site-starter/es/12-3-1/",
           "status": "notstarted"
         },
         {
@@ -1370,7 +1370,7 @@
           "title": "Número de partes en los acuerdos ambientales multilaterales internacionales sobre desechos peligrosos y otros productos químicos que cumplen sus compromisos y obligaciones de transmitir información como se exige en cada uno de esos acuerdos",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/12-4-1",
+          "href": "/open-sdg-site-starter/es/12-4-1/",
           "status": "notstarted"
         },
         {
@@ -1378,7 +1378,7 @@
           "title": "a) Desechos peligrosos generados per cápita y b) proporción de desechos peligrosos tratados, desglosados por tipo de tratamiento",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/12-4-2",
+          "href": "/open-sdg-site-starter/es/12-4-2/",
           "status": "notstarted"
         },
         {
@@ -1386,7 +1386,7 @@
           "title": "Tasa nacional de reciclado, en toneladas de material reciclado",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/12-5-1",
+          "href": "/open-sdg-site-starter/es/12-5-1/",
           "status": "notstarted"
         },
         {
@@ -1394,7 +1394,7 @@
           "title": "Número de empresas que publican informes sobre sostenibilidad",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/12-6-1",
+          "href": "/open-sdg-site-starter/es/12-6-1/",
           "status": "notstarted"
         },
         {
@@ -1402,7 +1402,7 @@
           "title": "Grado de aplicación de políticas y planes de acción sostenibles en materia de adquisiciones públicas",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/12-7-1",
+          "href": "/open-sdg-site-starter/es/12-7-1/",
           "status": "notstarted"
         },
         {
@@ -1410,7 +1410,7 @@
           "title": "Grado en que i) la educación para la ciudadanía mundial y ii) la educación para el desarrollo sostenible se incorporan en a) las políticas nacionales de educación, b) los planes de estudio, c) la formación del profesorado y d) la evaluación de los estudiantes",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/12-8-1",
+          "href": "/open-sdg-site-starter/es/12-8-1/",
           "status": "notstarted"
         },
         {
@@ -1418,7 +1418,7 @@
           "title": "Capacidad instalada de generación de energía renovable en los países en desarrollo (expresada en vatios per cápita)",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/12-a-1",
+          "href": "/open-sdg-site-starter/es/12-a-1/",
           "status": "notstarted"
         },
         {
@@ -1426,7 +1426,7 @@
           "title": "Aplicación de instrumentos normalizados de contabilidad para hacer un seguimiento de los aspectos económicos y ambientales de la sostenibilidad del turismo",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/12-b-1",
+          "href": "/open-sdg-site-starter/es/12-b-1/",
           "status": "notstarted"
         },
         {
@@ -1434,7 +1434,7 @@
           "title": "Cantidad de subsidios a los combustibles fósiles por unidad de PIB (producción y consumo)",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/12-c-1",
+          "href": "/open-sdg-site-starter/es/12-c-1/",
           "status": "notstarted"
         }]
     }
@@ -1450,7 +1450,7 @@
           "title": "Número de personas muertas, desaparecidas y afectadas directamente atribuido a desastres por cada 100.000 personas",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/13-1-1",
+          "href": "/open-sdg-site-starter/es/13-1-1/",
           "status": "notstarted"
         },
         {
@@ -1458,7 +1458,7 @@
           "title": "Número de países que adoptan y aplican estrategias nacionales de reducción del riesgo de desastres en consonancia con el Marco de Sendái para la Reducción del Riesgo de Desastres 2015‐2030",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/13-1-2",
+          "href": "/open-sdg-site-starter/es/13-1-2/",
           "status": "notstarted"
         },
         {
@@ -1466,7 +1466,7 @@
           "title": "Proporción de gobiernos locales que adoptan y aplican estrategias locales de reducción del riesgo de desastres en consonancia con las estrategias nacionales de reducción del riesgo de desastres",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/13-1-3",
+          "href": "/open-sdg-site-starter/es/13-1-3/",
           "status": "notstarted"
         },
         {
@@ -1474,7 +1474,7 @@
           "title": "Número de países con contribuciones determinadas a nivel nacional, estrategias a largo plazo y planes y estrategias nacionales de adaptación y estrategias indicadas en comunicaciones sobre la adaptación y comunicaciones nacionales",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/13-2-1",
+          "href": "/open-sdg-site-starter/es/13-2-1/",
           "status": "notstarted"
         },
         {
@@ -1482,7 +1482,7 @@
           "title": "Emisiones totales de gases de efecto invernadero por año",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/13-2-2",
+          "href": "/open-sdg-site-starter/es/13-2-2/",
           "status": "notstarted"
         },
         {
@@ -1490,7 +1490,7 @@
           "title": "Grado en que i) la educación para la ciudadanía mundial y ii) la educación para el desarrollo sostenible se incorporan en a) las políticas nacionales de educación, b) los planes de estudio, c) la formación del profesorado y d) la evaluación de los estudiantes",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/13-3-1",
+          "href": "/open-sdg-site-starter/es/13-3-1/",
           "status": "notstarted"
         },
         {
@@ -1498,7 +1498,7 @@
           "title": "Cantidades proporcionadas y movilizadas en dólares de los Estados Unidos al año en relación con el objetivo actual mantenido de movilización colectiva de 100.000 millones de dólares de aquí a 2025",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/13-a-1",
+          "href": "/open-sdg-site-starter/es/13-a-1/",
           "status": "notstarted"
         },
         {
@@ -1506,7 +1506,7 @@
           "title": "Número de países menos adelantados y pequeños Estados insulares en desarrollo con contribuciones determinadas a nivel nacional, estrategias a largo plazo y planes, estrategias nacionales de adaptación y estrategias indicadas en comunicaciones sobre la adaptación y comunicaciones nacionales",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/13-b-1",
+          "href": "/open-sdg-site-starter/es/13-b-1/",
           "status": "notstarted"
         }]
     }
@@ -1522,7 +1522,7 @@
           "title": "a) Índice de eutrofización costera; y b) densidad de detritos plásticos",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/14-1-1",
+          "href": "/open-sdg-site-starter/es/14-1-1/",
           "status": "notstarted"
         },
         {
@@ -1530,7 +1530,7 @@
           "title": "Número de países que aplican enfoques basados en los ecosistemas para gestionar las zonas marinas",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/14-2-1",
+          "href": "/open-sdg-site-starter/es/14-2-1/",
           "status": "notstarted"
         },
         {
@@ -1538,7 +1538,7 @@
           "title": "Acidez media del mar (pH) medida en un conjunto convenido de estaciones de muestreo representativas",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/14-3-1",
+          "href": "/open-sdg-site-starter/es/14-3-1/",
           "status": "notstarted"
         },
         {
@@ -1546,7 +1546,7 @@
           "title": "Proporción de poblaciones de peces cuyos niveles son biológicamente sostenibles",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/14-4-1",
+          "href": "/open-sdg-site-starter/es/14-4-1/",
           "status": "notstarted"
         },
         {
@@ -1554,7 +1554,7 @@
           "title": "Cobertura de las zonas protegidas en relación con las zonas marinas",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/14-5-1",
+          "href": "/open-sdg-site-starter/es/14-5-1/",
           "status": "notstarted"
         },
         {
@@ -1562,7 +1562,7 @@
           "title": "Grado de aplicación de instrumentos internacionales cuyo objetivo es combatir la pesca ilegal, no declarada y no reglamentada",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/14-6-1",
+          "href": "/open-sdg-site-starter/es/14-6-1/",
           "status": "notstarted"
         },
         {
@@ -1570,7 +1570,7 @@
           "title": "Proporción del PIB correspondiente a la pesca sostenible en los pequeños Estados insulares en desarrollo, en los países menos adelantados y en todos los países",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/14-7-1",
+          "href": "/open-sdg-site-starter/es/14-7-1/",
           "status": "notstarted"
         },
         {
@@ -1578,7 +1578,7 @@
           "title": "Proporción del presupuesto total de investigación asignada a la investigación en el campo de la tecnología marina",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/14-a-1",
+          "href": "/open-sdg-site-starter/es/14-a-1/",
           "status": "notstarted"
         },
         {
@@ -1586,7 +1586,7 @@
           "title": "Grado de aplicación de un marco jurídico, reglamentario, normativo o institucional que reconozca y proteja los derechos de acceso para la pesca en pequeña escala",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/14-b-1",
+          "href": "/open-sdg-site-starter/es/14-b-1/",
           "status": "notstarted"
         },
         {
@@ -1594,7 +1594,7 @@
           "title": "Número de países que, mediante marcos jurídicos, normativos e institucionales, avanzan en la ratificación, la aceptación y la implementación de los instrumentos relacionados con los océanos que aplican el derecho internacional reflejado en la Convención de las Naciones Unidas sobre el Derecho del Mar para la conservación y el uso sostenible de los océanos y sus recursos",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/14-c-1",
+          "href": "/open-sdg-site-starter/es/14-c-1/",
           "status": "notstarted"
         }]
     }
@@ -1610,7 +1610,7 @@
           "title": "Superficie forestal en proporción a la superficie total",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/15-1-1",
+          "href": "/open-sdg-site-starter/es/15-1-1/",
           "status": "notstarted"
         },
         {
@@ -1618,7 +1618,7 @@
           "title": "Proporción de lugares importantes para la biodiversidad terrestre y del agua dulce incluidos en zonas protegidas, desglosada por tipo de ecosistema",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/15-1-2",
+          "href": "/open-sdg-site-starter/es/15-1-2/",
           "status": "notstarted"
         },
         {
@@ -1626,7 +1626,7 @@
           "title": "Avances hacia la gestión forestal sostenible",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/15-2-1",
+          "href": "/open-sdg-site-starter/es/15-2-1/",
           "status": "notstarted"
         },
         {
@@ -1634,7 +1634,7 @@
           "title": "Proporción de tierras degradadas en comparación con la superficie total",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/15-3-1",
+          "href": "/open-sdg-site-starter/es/15-3-1/",
           "status": "notstarted"
         },
         {
@@ -1642,7 +1642,7 @@
           "title": "Lugares importantes para la biodiversidad de las montañas incluidos en zonas protegidas",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/15-4-1",
+          "href": "/open-sdg-site-starter/es/15-4-1/",
           "status": "notstarted"
         },
         {
@@ -1650,7 +1650,7 @@
           "title": "Índice de cobertura verde de las montañas",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/15-4-2",
+          "href": "/open-sdg-site-starter/es/15-4-2/",
           "status": "notstarted"
         },
         {
@@ -1658,7 +1658,7 @@
           "title": "Índice de la Lista Roja",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/15-5-1",
+          "href": "/open-sdg-site-starter/es/15-5-1/",
           "status": "notstarted"
         },
         {
@@ -1666,7 +1666,7 @@
           "title": "Número de países que han adoptado marcos legislativos, administrativos y normativos para asegurar una distribución justa y equitativa de los beneficios",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/15-6-1",
+          "href": "/open-sdg-site-starter/es/15-6-1/",
           "status": "notstarted"
         },
         {
@@ -1674,7 +1674,7 @@
           "title": "Proporción de especímenes de flora y fauna silvestre comercializados procedentes de la caza furtiva o el tráfico ilícito",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/15-7-1",
+          "href": "/open-sdg-site-starter/es/15-7-1/",
           "status": "notstarted"
         },
         {
@@ -1682,7 +1682,7 @@
           "title": "Proporción de países que han aprobado la legislación nacional pertinente y han destinado recursos suficientes para la prevención o el control de las especies exóticas invasoras",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/15-8-1",
+          "href": "/open-sdg-site-starter/es/15-8-1/",
           "status": "notstarted"
         },
         {
@@ -1690,7 +1690,7 @@
           "title": "a) Número de países que han establecido metas nacionales de conformidad con la segunda Meta de Aichi del Plan Estratégico para la Diversidad Biológica 2011-2020 o metas similares en sus estrategias y planes de acción nacionales en materia de diversidad biológica y han informado de sus progresos en el logro de estas metas; y b) integración de la biodiversidad en los sistemas nacionales de contabilidad y presentación de informes, definidos como implementación del Sistema de Contabilidad Ambiental y Económica",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/15-9-1",
+          "href": "/open-sdg-site-starter/es/15-9-1/",
           "status": "notstarted"
         },
         {
@@ -1698,7 +1698,7 @@
           "title": "a) Asistencia oficial para el desarrollo destinada concretamente a la conservación y el uso sostenible de la biodiversidad y b) ingresos generados y financiación movilizada mediante instrumentos económicos pertinentes para la biodiversidad",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/15-a-1",
+          "href": "/open-sdg-site-starter/es/15-a-1/",
           "status": "notstarted"
         },
         {
@@ -1706,7 +1706,7 @@
           "title": "a) Asistencia oficial para el desarrollo destinada concretamente a la conservación y el uso sostenible de la biodiversidad y b) ingresos generados y financiación movilizada mediante instrumentos económicos pertinentes para la biodiversidad",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/15-b-1",
+          "href": "/open-sdg-site-starter/es/15-b-1/",
           "status": "notstarted"
         },
         {
@@ -1714,7 +1714,7 @@
           "title": "Proporción de especímenes de flora y fauna silvestre comercializados procedentes de la caza furtiva o el tráfico ilícito",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/15-c-1",
+          "href": "/open-sdg-site-starter/es/15-c-1/",
           "status": "notstarted"
         }]
     }
@@ -1730,7 +1730,7 @@
           "title": "Número de víctimas de homicidios intencionales por cada 100.000 habitantes, desglosado por sexo y edad",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/16-1-1",
+          "href": "/open-sdg-site-starter/es/16-1-1/",
           "status": "notstarted"
         },
         {
@@ -1738,7 +1738,7 @@
           "title": "Muertes relacionadas con conflictos por cada 100.000 habitantes, desglosadas por sexo, edad y causa",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/16-1-2",
+          "href": "/open-sdg-site-starter/es/16-1-2/",
           "status": "notstarted"
         },
         {
@@ -1746,7 +1746,7 @@
           "title": "Proporción de la población que ha sufrido a) violencia física, b) violencia psicológica y c) violencia sexual en los últimos 12 meses",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/16-1-3",
+          "href": "/open-sdg-site-starter/es/16-1-3/",
           "status": "notstarted"
         },
         {
@@ -1754,7 +1754,7 @@
           "title": "Proporción de la población que se siente segura al caminar sola en su zona de residencia",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/16-1-4",
+          "href": "/open-sdg-site-starter/es/16-1-4/",
           "status": "notstarted"
         },
         {
@@ -1762,7 +1762,7 @@
           "title": "Proporción de niños de entre 1 y 17 años que han sufrido algún castigo físico o agresión psicológica a manos de sus cuidadores en el último mes",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/16-2-1",
+          "href": "/open-sdg-site-starter/es/16-2-1/",
           "status": "notstarted"
         },
         {
@@ -1770,7 +1770,7 @@
           "title": "Número de víctimas de la trata de personas por cada 100.000 habitantes, desglosado por sexo, edad y tipo de explotación",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/16-2-2",
+          "href": "/open-sdg-site-starter/es/16-2-2/",
           "status": "notstarted"
         },
         {
@@ -1778,7 +1778,7 @@
           "title": "Proporción de mujeres y hombres jóvenes de entre 18 y 29 años que sufrieron violencia sexual antes de cumplir los 18 años",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/16-2-3",
+          "href": "/open-sdg-site-starter/es/16-2-3/",
           "status": "notstarted"
         },
         {
@@ -1786,7 +1786,7 @@
           "title": "Proporción de víctimas de violencia en los últimos 12 meses que han notificado su victimización a las autoridades competentes u otros mecanismos de resolución de conflictos reconocidos oficialmente",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/16-3-1",
+          "href": "/open-sdg-site-starter/es/16-3-1/",
           "status": "notstarted"
         },
         {
@@ -1794,7 +1794,7 @@
           "title": "Proporción de detenidos que no han sido condenados en el conjunto de la población reclusa total",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/16-3-2",
+          "href": "/open-sdg-site-starter/es/16-3-2/",
           "status": "notstarted"
         },
         {
@@ -1802,7 +1802,7 @@
           "title": "Proporción de la población que se ha visto implicada en alguna controversia en los dos últimos años y ha accedido a algún mecanismo oficial u oficioso de solución de controversias, desglosada por tipo de mecanismo",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/16-3-3",
+          "href": "/open-sdg-site-starter/es/16-3-3/",
           "status": "notstarted"
         },
         {
@@ -1810,7 +1810,7 @@
           "title": "Valor total de las corrientes financieras ilícitas entrantes y salientes (en dólares corrientes de los Estados Unidos)",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/16-4-1",
+          "href": "/open-sdg-site-starter/es/16-4-1/",
           "status": "notstarted"
         },
         {
@@ -1818,7 +1818,7 @@
           "title": "Proporción de armas incautadas, encontradas o entregadas cuyo origen o contexto ilícitos han sido determinados o establecidos por una autoridad competente, de conformidad con los instrumentos internacionales",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/16-4-2",
+          "href": "/open-sdg-site-starter/es/16-4-2/",
           "status": "notstarted"
         },
         {
@@ -1826,7 +1826,7 @@
           "title": "Proporción de personas que han tenido al menos un contacto con un funcionario público y que han pagado un soborno a un funcionario público, o a las que un funcionario público les ha pedido un soborno, durante los últimos 12 meses",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/16-5-1",
+          "href": "/open-sdg-site-starter/es/16-5-1/",
           "status": "notstarted"
         },
         {
@@ -1834,7 +1834,7 @@
           "title": "Proporción de negocios que han tenido al menos un contacto con un funcionario público y que han pagado un soborno a un funcionario público, o a los que un funcionario público les ha pedido un soborno, durante los últimos 12 meses",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/16-5-2",
+          "href": "/open-sdg-site-starter/es/16-5-2/",
           "status": "notstarted"
         },
         {
@@ -1842,7 +1842,7 @@
           "title": "Gastos primarios del gobierno en proporción al presupuesto aprobado originalmente, desglosados por sector (o por códigos presupuestarios o elementos similares)",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/16-6-1",
+          "href": "/open-sdg-site-starter/es/16-6-1/",
           "status": "notstarted"
         },
         {
@@ -1850,7 +1850,7 @@
           "title": "Proporción de la población que se siente satisfecha con su última experiencia de los servicios públicos",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/16-6-2",
+          "href": "/open-sdg-site-starter/es/16-6-2/",
           "status": "notstarted"
         },
         {
@@ -1858,7 +1858,7 @@
           "title": "Proporciones de plazas en las instituciones nacionales y locales, entre ellas: a) las asambleas legislativas, b) la administración pública y c) el poder judicial, en comparación con la distribución nacional, desglosadas por sexo, edad, personas con discapacidad y grupos de población",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/16-7-1",
+          "href": "/open-sdg-site-starter/es/16-7-1/",
           "status": "notstarted"
         },
         {
@@ -1866,7 +1866,7 @@
           "title": "Proporción de la población que considera que la adopción de decisiones es inclusiva y responde a sus necesidades, desglosada por sexo, edad, discapacidad y grupo de población",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/16-7-2",
+          "href": "/open-sdg-site-starter/es/16-7-2/",
           "status": "notstarted"
         },
         {
@@ -1874,7 +1874,7 @@
           "title": "Proporción de miembros y derechos de voto de los países en desarrollo en organizaciones internacionales",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/16-8-1",
+          "href": "/open-sdg-site-starter/es/16-8-1/",
           "status": "notstarted"
         },
         {
@@ -1882,7 +1882,7 @@
           "title": "Proporción de niños menores de 5 años cuyo nacimiento se ha registrado ante una autoridad civil, desglosada por edad",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/16-9-1",
+          "href": "/open-sdg-site-starter/es/16-9-1/",
           "status": "notstarted"
         },
         {
@@ -1890,7 +1890,7 @@
           "title": "Número de casos verificados de asesinato, secuestro, desaparición forzada, detención arbitraria y tortura de periodistas, miembros asociados de los medios de comunicación, sindicalistas y defensores de los derechos humanos, en los últimos 12 meses",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/16-10-1",
+          "href": "/open-sdg-site-starter/es/16-10-1/",
           "status": "notstarted"
         },
         {
@@ -1898,7 +1898,7 @@
           "title": "Número de países que adoptan y aplican garantías constitucionales, legales o normativas para el acceso público a la información",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/16-10-2",
+          "href": "/open-sdg-site-starter/es/16-10-2/",
           "status": "notstarted"
         },
         {
@@ -1906,7 +1906,7 @@
           "title": "Existencia de instituciones nacionales independientes de derechos humanos, en cumplimiento de los Principios de París",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/16-a-1",
+          "href": "/open-sdg-site-starter/es/16-a-1/",
           "status": "notstarted"
         },
         {
@@ -1914,7 +1914,7 @@
           "title": "Proporción de la población que declara haberse sentido personalmente discriminada o acosada en los últimos 12 meses por motivos de discriminación prohibidos por el derecho internacional de los derechos humanos",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/16-b-1",
+          "href": "/open-sdg-site-starter/es/16-b-1/",
           "status": "notstarted"
         }]
     }
@@ -1930,7 +1930,7 @@
           "title": "Total de ingresos del gobierno en proporción al PIB, desglosado por fuente",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/17-1-1",
+          "href": "/open-sdg-site-starter/es/17-1-1/",
           "status": "notstarted"
         },
         {
@@ -1938,7 +1938,7 @@
           "title": "Proporción del presupuesto nacional financiado por impuestos internos",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/17-1-2",
+          "href": "/open-sdg-site-starter/es/17-1-2/",
           "status": "notstarted"
         },
         {
@@ -1946,7 +1946,7 @@
           "title": "Asistencia oficial para el desarrollo neta, total y para los países menos adelantados en proporción al ingreso nacional bruto (INB) de los donantes del Comité de Asistencia para el Desarrollo de la Organización de Cooperación y Desarrollo Económicos (OCDE)",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/17-2-1",
+          "href": "/open-sdg-site-starter/es/17-2-1/",
           "status": "notstarted"
         },
         {
@@ -1954,7 +1954,7 @@
           "title": "Inversión extranjera directa, asistencia oficial para el desarrollo y cooperación Sur-Sur como proporción del ingreso nacional bruto",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/17-3-1",
+          "href": "/open-sdg-site-starter/es/17-3-1/",
           "status": "notstarted"
         },
         {
@@ -1962,7 +1962,7 @@
           "title": "Volumen de remesas (en dólares de los Estados Unidos) en proporción al PIB total",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/17-3-2",
+          "href": "/open-sdg-site-starter/es/17-3-2/",
           "status": "notstarted"
         },
         {
@@ -1970,7 +1970,7 @@
           "title": "Servicio de la deuda en proporción a las exportaciones de bienes y servicios",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/17-4-1",
+          "href": "/open-sdg-site-starter/es/17-4-1/",
           "status": "notstarted"
         },
         {
@@ -1978,7 +1978,7 @@
           "title": "Número de países que adoptan y aplican sistemas de promoción de las inversiones en favor de los países en desarrollo, entre ellos los países menos adelantados",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/17-5-1",
+          "href": "/open-sdg-site-starter/es/17-5-1/",
           "status": "notstarted"
         },
         {
@@ -1986,7 +1986,7 @@
           "title": "Número de abonados a Internet de banda ancha fija por cada 100 habitantes, desglosado por velocidad",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/17-6-1",
+          "href": "/open-sdg-site-starter/es/17-6-1/",
           "status": "notstarted"
         },
         {
@@ -1994,7 +1994,7 @@
           "title": "Total de los fondos destinados a los países en desarrollo a fin de promover el desarrollo, la transferencia y la difusión de tecnologías ecológicamente racionales",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/17-7-1",
+          "href": "/open-sdg-site-starter/es/17-7-1/",
           "status": "notstarted"
         },
         {
@@ -2002,7 +2002,7 @@
           "title": "Proporción de personas que utilizan Internet",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/17-8-1",
+          "href": "/open-sdg-site-starter/es/17-8-1/",
           "status": "notstarted"
         },
         {
@@ -2010,7 +2010,7 @@
           "title": "Valor en dólares de la asistencia financiera y técnica (incluso mediante la cooperación Norte-Sur, Sur‐Sur y triangular) prometida a los países en desarrollo",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/17-9-1",
+          "href": "/open-sdg-site-starter/es/17-9-1/",
           "status": "notstarted"
         },
         {
@@ -2018,7 +2018,7 @@
           "title": "Promedio arancelario mundial ponderado",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/17-10-1",
+          "href": "/open-sdg-site-starter/es/17-10-1/",
           "status": "notstarted"
         },
         {
@@ -2026,7 +2026,7 @@
           "title": "Participación de los países en desarrollo y los países menos adelantados en las exportaciones mundiales",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/17-11-1",
+          "href": "/open-sdg-site-starter/es/17-11-1/",
           "status": "notstarted"
         },
         {
@@ -2034,7 +2034,7 @@
           "title": "Promedio ponderado de los aranceles que enfrentan los países en desarrollo, los países menos adelantados y los pequeños Estados insulares en desarrolloPromedio de los aranceles que enfrentan los países en desarrollo, los países menos adelantados y los pequeños Estados insulares en desarrollo",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/17-12-1",
+          "href": "/open-sdg-site-starter/es/17-12-1/",
           "status": "notstarted"
         },
         {
@@ -2042,7 +2042,7 @@
           "title": "Tablero macroeconómico",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/17-13-1",
+          "href": "/open-sdg-site-starter/es/17-13-1/",
           "status": "notstarted"
         },
         {
@@ -2050,7 +2050,7 @@
           "title": "Número de países que cuentan con mecanismos para mejorar la coherencia de las políticas de desarrollo sostenible",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/17-14-1",
+          "href": "/open-sdg-site-starter/es/17-14-1/",
           "status": "notstarted"
         },
         {
@@ -2058,7 +2058,7 @@
           "title": "Grado de utilización de los marcos de resultados y las herramientas de planificación de los propios países por los proveedores de cooperación para el desarrollo",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/17-15-1",
+          "href": "/open-sdg-site-starter/es/17-15-1/",
           "status": "notstarted"
         },
         {
@@ -2066,7 +2066,7 @@
           "title": "Número de países que informan de sus progresos en los marcos de múltiples interesados para el seguimiento de la eficacia de las actividades de desarrollo que apoyan el logro de los Objetivos de Desarrollo Sostenible",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/17-16-1",
+          "href": "/open-sdg-site-starter/es/17-16-1/",
           "status": "notstarted"
         },
         {
@@ -2074,7 +2074,7 @@
           "title": "Suma en dólares de los Estados Unidos prometida a las alianzas público-privadas centradas en la infraestructura",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/17-17-1",
+          "href": "/open-sdg-site-starter/es/17-17-1/",
           "status": "notstarted"
         },
         {
@@ -2082,7 +2082,7 @@
           "title": "Indicador de capacidad estadística para el seguimiento de los Objetivos de Desarrollo Sostenible",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/17-18-1",
+          "href": "/open-sdg-site-starter/es/17-18-1/",
           "status": "notstarted"
         },
         {
@@ -2090,7 +2090,7 @@
           "title": "Número de países cuya legislación nacional sobre estadísticas cumple los Principios Fundamentales de las Estadísticas Oficiales",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/17-18-2",
+          "href": "/open-sdg-site-starter/es/17-18-2/",
           "status": "notstarted"
         },
         {
@@ -2098,7 +2098,7 @@
           "title": "Número de países que cuentan con un plan estadístico nacional plenamente financiado y en proceso de aplicación, desglosado por fuente de financiación",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/17-18-3",
+          "href": "/open-sdg-site-starter/es/17-18-3/",
           "status": "notstarted"
         },
         {
@@ -2106,7 +2106,7 @@
           "title": "Valor en dólares de todos los recursos proporcionados para fortalecer la capacidad estadística de los países en desarrollo",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/17-19-1",
+          "href": "/open-sdg-site-starter/es/17-19-1/",
           "status": "notstarted"
         },
         {
@@ -2114,7 +2114,7 @@
           "title": "Proporción de países que a) han realizado al menos un censo de población y vivienda en los últimos diez años; y b) han registrado el 100% de los nacimientos y el 80% de las defunciones",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/es/17-19-2",
+          "href": "/open-sdg-site-starter/es/17-19-2/",
           "status": "notstarted"
         }]
     }

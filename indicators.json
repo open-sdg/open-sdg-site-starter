@@ -10,7 +10,7 @@
           "title": "Proportion of the population living below the international poverty line by sex, age, employment status and geographic location (urban/rural)",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/1-1-1",
+          "href": "/open-sdg-site-starter/1-1-1/",
           "status": "notstarted"
         },
         {
@@ -18,7 +18,7 @@
           "title": "Proportion of population living below the national poverty line, by sex and age",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/1-2-1",
+          "href": "/open-sdg-site-starter/1-2-1/",
           "status": "notstarted"
         },
         {
@@ -26,7 +26,7 @@
           "title": "Proportion of men, women and children of all ages living in poverty in all its dimensions according to national definitions",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/1-2-2",
+          "href": "/open-sdg-site-starter/1-2-2/",
           "status": "notstarted"
         },
         {
@@ -34,7 +34,7 @@
           "title": "Proportion of population covered by social protection floors/systems, by sex, distinguishing children, unemployed persons, older persons, persons with disabilities, pregnant women, newborns, work-injury victims and the poor and the vulnerable",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/1-3-1",
+          "href": "/open-sdg-site-starter/1-3-1/",
           "status": "notstarted"
         },
         {
@@ -42,7 +42,7 @@
           "title": "Proportion of population living in households with access to basic services",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/1-4-1",
+          "href": "/open-sdg-site-starter/1-4-1/",
           "status": "notstarted"
         },
         {
@@ -50,7 +50,7 @@
           "title": "Proportion of total adult population with secure tenure rights to land, (a) with legally recognized documentation, and (b) who perceive their rights to land as secure, by sex and type of tenure",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/1-4-2",
+          "href": "/open-sdg-site-starter/1-4-2/",
           "status": "notstarted"
         },
         {
@@ -58,7 +58,7 @@
           "title": "Number of deaths, missing persons and directly affected persons attributed to disasters per 100,000 population",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/1-5-1",
+          "href": "/open-sdg-site-starter/1-5-1/",
           "status": "notstarted"
         },
         {
@@ -66,7 +66,7 @@
           "title": "Direct economic loss attributed to disasters in relation to global gross domestic product (GDP)",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/1-5-2",
+          "href": "/open-sdg-site-starter/1-5-2/",
           "status": "notstarted"
         },
         {
@@ -74,7 +74,7 @@
           "title": "Number of countries that adopt and implement national disaster risk reduction strategies in line with the Sendai Framework for Disaster Risk Reduction 2015–2030",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/1-5-3",
+          "href": "/open-sdg-site-starter/1-5-3/",
           "status": "notstarted"
         },
         {
@@ -82,7 +82,7 @@
           "title": "Proportion of local governments that adopt and implement local disaster risk reduction strategies in line with national disaster risk reduction strategies",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/1-5-4",
+          "href": "/open-sdg-site-starter/1-5-4/",
           "status": "notstarted"
         },
         {
@@ -90,7 +90,7 @@
           "title": "Total official development assistance grants from all donors that focus on poverty reduction as a share of the recipient country’s gross national income",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/1-a-1",
+          "href": "/open-sdg-site-starter/1-a-1/",
           "status": "notstarted"
         },
         {
@@ -98,7 +98,7 @@
           "title": "Proportion of total government spending on essential services (education, health and social protection)",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/1-a-2",
+          "href": "/open-sdg-site-starter/1-a-2/",
           "status": "notstarted"
         },
         {
@@ -106,7 +106,7 @@
           "title": "Pro-poor public social spending",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/1-b-1",
+          "href": "/open-sdg-site-starter/1-b-1/",
           "status": "notstarted"
         }]
     }
@@ -122,7 +122,7 @@
           "title": "Prevalence of undernourishment",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/2-1-1",
+          "href": "/open-sdg-site-starter/2-1-1/",
           "status": "notstarted"
         },
         {
@@ -130,7 +130,7 @@
           "title": "Prevalence of moderate or severe food insecurity in the population, based on the Food Insecurity Experience Scale (FIES)",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/2-1-2",
+          "href": "/open-sdg-site-starter/2-1-2/",
           "status": "notstarted"
         },
         {
@@ -138,7 +138,7 @@
           "title": "Prevalence of stunting (height for age <-2 standard deviation from the median of the World Health Organization (WHO) Child Growth Standards) among children under 5 years of age",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/2-2-1",
+          "href": "/open-sdg-site-starter/2-2-1/",
           "status": "notstarted"
         },
         {
@@ -146,7 +146,7 @@
           "title": "Prevalence of malnutrition (weight for height >+2 or <-2 standard deviation from the median of the WHO Child Growth Standards) among children under 5 years of age, by type (wasting and overweight)",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/2-2-2",
+          "href": "/open-sdg-site-starter/2-2-2/",
           "status": "notstarted"
         },
         {
@@ -154,7 +154,7 @@
           "title": "Prevalence of anaemia in women aged 15 to 49 years, by pregnancy status (percentage)",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/2-2-3",
+          "href": "/open-sdg-site-starter/2-2-3/",
           "status": "notstarted"
         },
         {
@@ -162,7 +162,7 @@
           "title": "Volume of production per labour unit by classes of farming/pastoral/forestry enterprise size",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/2-3-1",
+          "href": "/open-sdg-site-starter/2-3-1/",
           "status": "notstarted"
         },
         {
@@ -170,7 +170,7 @@
           "title": "Average income of small-scale food producers, by sex and indigenous status",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/2-3-2",
+          "href": "/open-sdg-site-starter/2-3-2/",
           "status": "notstarted"
         },
         {
@@ -178,7 +178,7 @@
           "title": "Proportion of agricultural area under productive and sustainable agriculture",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/2-4-1",
+          "href": "/open-sdg-site-starter/2-4-1/",
           "status": "notstarted"
         },
         {
@@ -186,7 +186,7 @@
           "title": "Number of plant and animal genetic resources for food and agriculture secured in either medium- or long-term conservation facilities",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/2-5-1",
+          "href": "/open-sdg-site-starter/2-5-1/",
           "status": "notstarted"
         },
         {
@@ -194,7 +194,7 @@
           "title": "Proportion of local breeds classified as being at risk of extinction",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/2-5-2",
+          "href": "/open-sdg-site-starter/2-5-2/",
           "status": "notstarted"
         },
         {
@@ -202,7 +202,7 @@
           "title": "The agriculture orientation index for government expenditures",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/2-a-1",
+          "href": "/open-sdg-site-starter/2-a-1/",
           "status": "notstarted"
         },
         {
@@ -210,7 +210,7 @@
           "title": "Total official flows (official development assistance plus other official flows) to the agriculture sector",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/2-a-2",
+          "href": "/open-sdg-site-starter/2-a-2/",
           "status": "notstarted"
         },
         {
@@ -218,7 +218,7 @@
           "title": "Agricultural export subsidies",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/2-b-1",
+          "href": "/open-sdg-site-starter/2-b-1/",
           "status": "notstarted"
         },
         {
@@ -226,7 +226,7 @@
           "title": "Indicator of food price anomalies",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/2-c-1",
+          "href": "/open-sdg-site-starter/2-c-1/",
           "status": "notstarted"
         }]
     }
@@ -242,7 +242,7 @@
           "title": "Maternal mortality ratio",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/3-1-1",
+          "href": "/open-sdg-site-starter/3-1-1/",
           "status": "notstarted"
         },
         {
@@ -250,7 +250,7 @@
           "title": "Proportion of births attended by skilled health personnel",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/3-1-2",
+          "href": "/open-sdg-site-starter/3-1-2/",
           "status": "notstarted"
         },
         {
@@ -258,7 +258,7 @@
           "title": "Under‐5 mortality rate",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/3-2-1",
+          "href": "/open-sdg-site-starter/3-2-1/",
           "status": "notstarted"
         },
         {
@@ -266,7 +266,7 @@
           "title": "Neonatal mortality rate",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/3-2-2",
+          "href": "/open-sdg-site-starter/3-2-2/",
           "status": "notstarted"
         },
         {
@@ -274,7 +274,7 @@
           "title": "Number of new HIV infections per 1,000 uninfected population, by sex, age and key populations",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/3-3-1",
+          "href": "/open-sdg-site-starter/3-3-1/",
           "status": "notstarted"
         },
         {
@@ -282,7 +282,7 @@
           "title": "Tuberculosis incidence per 100,000 population",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/3-3-2",
+          "href": "/open-sdg-site-starter/3-3-2/",
           "status": "notstarted"
         },
         {
@@ -290,7 +290,7 @@
           "title": "Malaria incidence per 1,000 population",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/3-3-3",
+          "href": "/open-sdg-site-starter/3-3-3/",
           "status": "notstarted"
         },
         {
@@ -298,7 +298,7 @@
           "title": "Hepatitis B incidence per 100,000 population",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/3-3-4",
+          "href": "/open-sdg-site-starter/3-3-4/",
           "status": "notstarted"
         },
         {
@@ -306,7 +306,7 @@
           "title": "Number of people requiring interventions against neglected tropical diseases",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/3-3-5",
+          "href": "/open-sdg-site-starter/3-3-5/",
           "status": "notstarted"
         },
         {
@@ -314,7 +314,7 @@
           "title": "Mortality rate attributed to cardiovascular disease, cancer, diabetes or chronic respiratory disease",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/3-4-1",
+          "href": "/open-sdg-site-starter/3-4-1/",
           "status": "notstarted"
         },
         {
@@ -322,7 +322,7 @@
           "title": "Suicide mortality rate",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/3-4-2",
+          "href": "/open-sdg-site-starter/3-4-2/",
           "status": "notstarted"
         },
         {
@@ -330,7 +330,7 @@
           "title": "Coverage of treatment interventions (pharmacological, psychosocial and rehabilitation and aftercare services) for substance use disorders",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/3-5-1",
+          "href": "/open-sdg-site-starter/3-5-1/",
           "status": "notstarted"
         },
         {
@@ -338,7 +338,7 @@
           "title": "Alcohol per capita consumption (aged 15 years and older) within a calendar year in litres of pure alcohol",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/3-5-2",
+          "href": "/open-sdg-site-starter/3-5-2/",
           "status": "notstarted"
         },
         {
@@ -346,7 +346,7 @@
           "title": "Death rate due to road traffic injuries",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/3-6-1",
+          "href": "/open-sdg-site-starter/3-6-1/",
           "status": "notstarted"
         },
         {
@@ -354,7 +354,7 @@
           "title": "Proportion of women of reproductive age (aged 15–49 years) who have their need for family planning satisfied with modern methods",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/3-7-1",
+          "href": "/open-sdg-site-starter/3-7-1/",
           "status": "notstarted"
         },
         {
@@ -362,7 +362,7 @@
           "title": "Adolescent birth rate (aged 10–14 years; aged 15–19 years) per 1,000 women in that age group",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/3-7-2",
+          "href": "/open-sdg-site-starter/3-7-2/",
           "status": "notstarted"
         },
         {
@@ -370,7 +370,7 @@
           "title": "Coverage of essential health services",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/3-8-1",
+          "href": "/open-sdg-site-starter/3-8-1/",
           "status": "notstarted"
         },
         {
@@ -378,7 +378,7 @@
           "title": "Proportion of population with large household expenditures on health as a share of total household expenditure or income",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/3-8-2",
+          "href": "/open-sdg-site-starter/3-8-2/",
           "status": "notstarted"
         },
         {
@@ -386,7 +386,7 @@
           "title": "Mortality rate attributed to household and ambient air pollution",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/3-9-1",
+          "href": "/open-sdg-site-starter/3-9-1/",
           "status": "notstarted"
         },
         {
@@ -394,7 +394,7 @@
           "title": "Mortality rate attributed to unsafe water, unsafe sanitation and lack of hygiene (exposure to unsafe Water, Sanitation and Hygiene for All (WASH) services)",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/3-9-2",
+          "href": "/open-sdg-site-starter/3-9-2/",
           "status": "notstarted"
         },
         {
@@ -402,7 +402,7 @@
           "title": "Mortality rate attributed to unintentional poisoning",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/3-9-3",
+          "href": "/open-sdg-site-starter/3-9-3/",
           "status": "notstarted"
         },
         {
@@ -410,7 +410,7 @@
           "title": "Age-standardized prevalence of current tobacco use among persons aged 15 years and older",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/3-a-1",
+          "href": "/open-sdg-site-starter/3-a-1/",
           "status": "notstarted"
         },
         {
@@ -418,7 +418,7 @@
           "title": "Proportion of the target population covered by all vaccines included in their national programme",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/3-b-1",
+          "href": "/open-sdg-site-starter/3-b-1/",
           "status": "notstarted"
         },
         {
@@ -426,7 +426,7 @@
           "title": "Total net official development assistance to medical research and basic health sectors",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/3-b-2",
+          "href": "/open-sdg-site-starter/3-b-2/",
           "status": "notstarted"
         },
         {
@@ -434,7 +434,7 @@
           "title": "Proportion of health facilities that have a core set of relevant essential medicines available and affordable on a sustainable basis",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/3-b-3",
+          "href": "/open-sdg-site-starter/3-b-3/",
           "status": "notstarted"
         },
         {
@@ -442,7 +442,7 @@
           "title": "Health worker density and distribution",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/3-c-1",
+          "href": "/open-sdg-site-starter/3-c-1/",
           "status": "notstarted"
         },
         {
@@ -450,7 +450,7 @@
           "title": "International Health Regulations (IHR) capacity and health emergency preparedness",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/3-d-1",
+          "href": "/open-sdg-site-starter/3-d-1/",
           "status": "notstarted"
         },
         {
@@ -458,7 +458,7 @@
           "title": "Percentage of bloodstream infections due to selected antimicrobial-resistant organisms",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/3-d-2",
+          "href": "/open-sdg-site-starter/3-d-2/",
           "status": "notstarted"
         }]
     }
@@ -474,7 +474,7 @@
           "title": "Proportion of children and young people (a) in grades 2/3; (b) at the end of primary; and (c) at the end of lower secondary achieving at least a minimum proficiency level in (i) reading and (ii) mathematics, by sex",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/4-1-1",
+          "href": "/open-sdg-site-starter/4-1-1/",
           "status": "notstarted"
         },
         {
@@ -482,7 +482,7 @@
           "title": "Completion rate (primary education, lower secondary education, upper secondary education)",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/4-1-2",
+          "href": "/open-sdg-site-starter/4-1-2/",
           "status": "notstarted"
         },
         {
@@ -490,7 +490,7 @@
           "title": "Proportion of children aged 24-59 months who are developmentally on track in health, learning and psychosocial well-being, by sex",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/4-2-1",
+          "href": "/open-sdg-site-starter/4-2-1/",
           "status": "notstarted"
         },
         {
@@ -498,7 +498,7 @@
           "title": "Participation rate in organized learning (one year before the official primary entry age), by sex",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/4-2-2",
+          "href": "/open-sdg-site-starter/4-2-2/",
           "status": "notstarted"
         },
         {
@@ -506,7 +506,7 @@
           "title": "Participation rate of youth and adults in formal and non-formal education and training in the previous 12 months, by sex",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/4-3-1",
+          "href": "/open-sdg-site-starter/4-3-1/",
           "status": "notstarted"
         },
         {
@@ -514,7 +514,7 @@
           "title": "Proportion of youth and adults with information and communications technology (ICT) skills, by type of skill",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/4-4-1",
+          "href": "/open-sdg-site-starter/4-4-1/",
           "status": "notstarted"
         },
         {
@@ -522,7 +522,7 @@
           "title": "Parity indices (female/male, rural/urban, bottom/top wealth quintile and others such as disability status, indigenous peoples and conflict-affected, as data become available) for all education indicators on this list that can be disaggregated",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/4-5-1",
+          "href": "/open-sdg-site-starter/4-5-1/",
           "status": "notstarted"
         },
         {
@@ -530,7 +530,7 @@
           "title": "Proportion of population in a given age group achieving at least a fixed level of proficiency in functional (a) literacy and (b) numeracy skills, by sex",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/4-6-1",
+          "href": "/open-sdg-site-starter/4-6-1/",
           "status": "notstarted"
         },
         {
@@ -538,7 +538,7 @@
           "title": "Extent to which (i) global citizenship education and (ii) education for sustainable development are mainstreamed in (a) national education policies; (b) curricula; (c) teacher education; and (d) student assessment",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/4-7-1",
+          "href": "/open-sdg-site-starter/4-7-1/",
           "status": "notstarted"
         },
         {
@@ -546,7 +546,7 @@
           "title": "Proportion of schools offering basic services, by type of service",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/4-a-1",
+          "href": "/open-sdg-site-starter/4-a-1/",
           "status": "notstarted"
         },
         {
@@ -554,7 +554,7 @@
           "title": "Volume of official development assistance flows for scholarships by sector and type of study",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/4-b-1",
+          "href": "/open-sdg-site-starter/4-b-1/",
           "status": "notstarted"
         },
         {
@@ -562,7 +562,7 @@
           "title": "Proportion of teachers with the minimum required qualifications, by education level",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/4-c-1",
+          "href": "/open-sdg-site-starter/4-c-1/",
           "status": "notstarted"
         }]
     }
@@ -578,7 +578,7 @@
           "title": "Whether or not legal frameworks are in place to promote, enforce and monitor equality and non‐discrimination on the basis of sex",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/5-1-1",
+          "href": "/open-sdg-site-starter/5-1-1/",
           "status": "notstarted"
         },
         {
@@ -586,7 +586,7 @@
           "title": "Proportion of ever-partnered women and girls aged 15 years and older subjected to physical, sexual or psychological violence by a current or former intimate partner in the previous 12 months, by form of violence and by age",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/5-2-1",
+          "href": "/open-sdg-site-starter/5-2-1/",
           "status": "notstarted"
         },
         {
@@ -594,7 +594,7 @@
           "title": "Proportion of women and girls aged 15 years and older subjected to sexual violence by persons other than an intimate partner in the previous 12 months, by age and place of occurrence",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/5-2-2",
+          "href": "/open-sdg-site-starter/5-2-2/",
           "status": "notstarted"
         },
         {
@@ -602,7 +602,7 @@
           "title": "Proportion of women aged 20–24 years who were married or in a union before age 15 and before age 18",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/5-3-1",
+          "href": "/open-sdg-site-starter/5-3-1/",
           "status": "notstarted"
         },
         {
@@ -610,7 +610,7 @@
           "title": "Proportion of girls and women aged 15–49 years who have undergone female genital mutilation/cutting, by age",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/5-3-2",
+          "href": "/open-sdg-site-starter/5-3-2/",
           "status": "notstarted"
         },
         {
@@ -618,7 +618,7 @@
           "title": "Proportion of time spent on unpaid domestic and care work, by sex, age and location",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/5-4-1",
+          "href": "/open-sdg-site-starter/5-4-1/",
           "status": "notstarted"
         },
         {
@@ -626,7 +626,7 @@
           "title": "Proportion of seats held by women in (a) national parliaments and (b) local governments",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/5-5-1",
+          "href": "/open-sdg-site-starter/5-5-1/",
           "status": "notstarted"
         },
         {
@@ -634,7 +634,7 @@
           "title": "Proportion of women in managerial positions",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/5-5-2",
+          "href": "/open-sdg-site-starter/5-5-2/",
           "status": "notstarted"
         },
         {
@@ -642,7 +642,7 @@
           "title": "Proportion of women aged 15–49 years who make their own informed decisions regarding sexual relations, contraceptive use and reproductive health care",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/5-6-1",
+          "href": "/open-sdg-site-starter/5-6-1/",
           "status": "notstarted"
         },
         {
@@ -650,7 +650,7 @@
           "title": "Number of countries with laws and regulations that guarantee full and equal access to women and men aged 15 years and older to sexual and reproductive health care, information and education",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/5-6-2",
+          "href": "/open-sdg-site-starter/5-6-2/",
           "status": "notstarted"
         },
         {
@@ -658,7 +658,7 @@
           "title": "(a) Proportion of total agricultural population with ownership or secure rights over agricultural land, by sex; and (b) share of women among owners or rights-bearers of agricultural land, by type of tenure",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/5-a-1",
+          "href": "/open-sdg-site-starter/5-a-1/",
           "status": "notstarted"
         },
         {
@@ -666,7 +666,7 @@
           "title": "Proportion of countries where the legal framework (including customary law) guarantees women’s equal rights to land ownership and/or control",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/5-a-2",
+          "href": "/open-sdg-site-starter/5-a-2/",
           "status": "notstarted"
         },
         {
@@ -674,7 +674,7 @@
           "title": "Proportion of individuals who own a mobile telephone, by sex",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/5-b-1",
+          "href": "/open-sdg-site-starter/5-b-1/",
           "status": "notstarted"
         },
         {
@@ -682,7 +682,7 @@
           "title": "Proportion of countries with systems to track and make public allocations for gender equality and women’s empowerment",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/5-c-1",
+          "href": "/open-sdg-site-starter/5-c-1/",
           "status": "notstarted"
         }]
     }
@@ -698,7 +698,7 @@
           "title": "Proportion of population using safely managed drinking water services",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/6-1-1",
+          "href": "/open-sdg-site-starter/6-1-1/",
           "status": "notstarted"
         },
         {
@@ -706,7 +706,7 @@
           "title": "Proportion of population using (a) safely managed sanitation services and (b) a hand-washing facility with soap and water",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/6-2-1",
+          "href": "/open-sdg-site-starter/6-2-1/",
           "status": "notstarted"
         },
         {
@@ -714,7 +714,7 @@
           "title": "Proportion of domestic and industrial wastewater flows safely treated",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/6-3-1",
+          "href": "/open-sdg-site-starter/6-3-1/",
           "status": "notstarted"
         },
         {
@@ -722,7 +722,7 @@
           "title": "Proportion of bodies of water with good ambient water quality",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/6-3-2",
+          "href": "/open-sdg-site-starter/6-3-2/",
           "status": "notstarted"
         },
         {
@@ -730,7 +730,7 @@
           "title": "Change in water-use efficiency over time",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/6-4-1",
+          "href": "/open-sdg-site-starter/6-4-1/",
           "status": "notstarted"
         },
         {
@@ -738,7 +738,7 @@
           "title": "Level of water stress: freshwater withdrawal as a proportion of available freshwater resources",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/6-4-2",
+          "href": "/open-sdg-site-starter/6-4-2/",
           "status": "notstarted"
         },
         {
@@ -746,7 +746,7 @@
           "title": "Degree of integrated water resources management",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/6-5-1",
+          "href": "/open-sdg-site-starter/6-5-1/",
           "status": "notstarted"
         },
         {
@@ -754,7 +754,7 @@
           "title": "Proportion of transboundary basin area with an operational arrangement for water cooperation",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/6-5-2",
+          "href": "/open-sdg-site-starter/6-5-2/",
           "status": "notstarted"
         },
         {
@@ -762,7 +762,7 @@
           "title": "Change in the extent of water-related ecosystems over time",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/6-6-1",
+          "href": "/open-sdg-site-starter/6-6-1/",
           "status": "notstarted"
         },
         {
@@ -770,7 +770,7 @@
           "title": "Amount of water- and sanitation-related official development assistance that is part of a government-coordinated spending plan",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/6-a-1",
+          "href": "/open-sdg-site-starter/6-a-1/",
           "status": "notstarted"
         },
         {
@@ -778,7 +778,7 @@
           "title": "Proportion of local administrative units with established and operational policies and procedures for participation of local communities in water and sanitation management",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/6-b-1",
+          "href": "/open-sdg-site-starter/6-b-1/",
           "status": "notstarted"
         }]
     }
@@ -794,7 +794,7 @@
           "title": "Proportion of population with access to electricity",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/7-1-1",
+          "href": "/open-sdg-site-starter/7-1-1/",
           "status": "notstarted"
         },
         {
@@ -802,7 +802,7 @@
           "title": "Proportion of population with primary reliance on clean fuels and technology",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/7-1-2",
+          "href": "/open-sdg-site-starter/7-1-2/",
           "status": "notstarted"
         },
         {
@@ -810,7 +810,7 @@
           "title": "Renewable energy share in the total final energy consumption",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/7-2-1",
+          "href": "/open-sdg-site-starter/7-2-1/",
           "status": "notstarted"
         },
         {
@@ -818,7 +818,7 @@
           "title": "Energy intensity measured in terms of primary energy and GDP",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/7-3-1",
+          "href": "/open-sdg-site-starter/7-3-1/",
           "status": "notstarted"
         },
         {
@@ -826,7 +826,7 @@
           "title": "International financial flows to developing countries in support of clean energy research and development and renewable energy production, including in hybrid systems",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/7-a-1",
+          "href": "/open-sdg-site-starter/7-a-1/",
           "status": "notstarted"
         },
         {
@@ -834,7 +834,7 @@
           "title": "Installed renewable energy-generating capacity in developing countries (in watts per capita)",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/7-b-1",
+          "href": "/open-sdg-site-starter/7-b-1/",
           "status": "notstarted"
         }]
     }
@@ -850,7 +850,7 @@
           "title": "Annual growth rate of real GDP per capita",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/8-1-1",
+          "href": "/open-sdg-site-starter/8-1-1/",
           "status": "notstarted"
         },
         {
@@ -858,7 +858,7 @@
           "title": "Annual growth rate of real GDP per employed person",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/8-2-1",
+          "href": "/open-sdg-site-starter/8-2-1/",
           "status": "notstarted"
         },
         {
@@ -866,7 +866,7 @@
           "title": "Proportion of informal employment in total employment, by sector and sex",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/8-3-1",
+          "href": "/open-sdg-site-starter/8-3-1/",
           "status": "notstarted"
         },
         {
@@ -874,7 +874,7 @@
           "title": "Material footprint, material footprint per capita, and material footprint per GDP",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/8-4-1",
+          "href": "/open-sdg-site-starter/8-4-1/",
           "status": "notstarted"
         },
         {
@@ -882,7 +882,7 @@
           "title": "Domestic material consumption, domestic material consumption per capita, and domestic material consumption per GDP",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/8-4-2",
+          "href": "/open-sdg-site-starter/8-4-2/",
           "status": "notstarted"
         },
         {
@@ -890,7 +890,7 @@
           "title": "Average hourly earnings of employees, by sex, age, occupation and persons with disabilities",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/8-5-1",
+          "href": "/open-sdg-site-starter/8-5-1/",
           "status": "notstarted"
         },
         {
@@ -898,7 +898,7 @@
           "title": "Unemployment rate, by sex, age and persons with disabilities",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/8-5-2",
+          "href": "/open-sdg-site-starter/8-5-2/",
           "status": "notstarted"
         },
         {
@@ -906,7 +906,7 @@
           "title": "Proportion of youth (aged 15–24 years) not in education, employment or training",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/8-6-1",
+          "href": "/open-sdg-site-starter/8-6-1/",
           "status": "notstarted"
         },
         {
@@ -914,7 +914,7 @@
           "title": "Proportion and number of children aged 5–17 years engaged in child labour, by sex and age",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/8-7-1",
+          "href": "/open-sdg-site-starter/8-7-1/",
           "status": "notstarted"
         },
         {
@@ -922,7 +922,7 @@
           "title": "Fatal and non-fatal occupational injuries per 100,000 workers, by sex and migrant status",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/8-8-1",
+          "href": "/open-sdg-site-starter/8-8-1/",
           "status": "notstarted"
         },
         {
@@ -930,7 +930,7 @@
           "title": "Level of national compliance with labour rights (freedom of association and collective bargaining) based on International Labour Organization (ILO) textual sources and national legislation, by sex and migrant status",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/8-8-2",
+          "href": "/open-sdg-site-starter/8-8-2/",
           "status": "notstarted"
         },
         {
@@ -938,7 +938,7 @@
           "title": "Tourism direct GDP as a proportion of total GDP and in growth rate",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/8-9-1",
+          "href": "/open-sdg-site-starter/8-9-1/",
           "status": "notstarted"
         },
         {
@@ -946,7 +946,7 @@
           "title": "(a) Number of commercial bank branches per 100,000 adults and (b) number of automated teller machines (ATMs) per 100,000 adults",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/8-10-1",
+          "href": "/open-sdg-site-starter/8-10-1/",
           "status": "notstarted"
         },
         {
@@ -954,7 +954,7 @@
           "title": "Proportion of adults (15 years and older) with an account at a bank or other financial institution or with a mobile-money-service provider",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/8-10-2",
+          "href": "/open-sdg-site-starter/8-10-2/",
           "status": "notstarted"
         },
         {
@@ -962,7 +962,7 @@
           "title": "Aid for Trade commitments and disbursements",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/8-a-1",
+          "href": "/open-sdg-site-starter/8-a-1/",
           "status": "notstarted"
         },
         {
@@ -970,7 +970,7 @@
           "title": "Existence of a developed and operationalized national strategy for youth employment, as a distinct strategy or as part of a national employment strategy",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/8-b-1",
+          "href": "/open-sdg-site-starter/8-b-1/",
           "status": "notstarted"
         }]
     }
@@ -986,7 +986,7 @@
           "title": "Proportion of the rural population who live within 2 km of an all-season road",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/9-1-1",
+          "href": "/open-sdg-site-starter/9-1-1/",
           "status": "notstarted"
         },
         {
@@ -994,7 +994,7 @@
           "title": "Passenger and freight volumes, by mode of transport",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/9-1-2",
+          "href": "/open-sdg-site-starter/9-1-2/",
           "status": "notstarted"
         },
         {
@@ -1002,7 +1002,7 @@
           "title": "Manufacturing value added as a proportion of GDP and per capita",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/9-2-1",
+          "href": "/open-sdg-site-starter/9-2-1/",
           "status": "notstarted"
         },
         {
@@ -1010,7 +1010,7 @@
           "title": "Manufacturing employment as a proportion of total employment",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/9-2-2",
+          "href": "/open-sdg-site-starter/9-2-2/",
           "status": "notstarted"
         },
         {
@@ -1018,7 +1018,7 @@
           "title": "Proportion of small-scale industries in total industry value added",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/9-3-1",
+          "href": "/open-sdg-site-starter/9-3-1/",
           "status": "notstarted"
         },
         {
@@ -1026,7 +1026,7 @@
           "title": "Proportion of small-scale industries with a loan or line of credit",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/9-3-2",
+          "href": "/open-sdg-site-starter/9-3-2/",
           "status": "notstarted"
         },
         {
@@ -1034,7 +1034,7 @@
           "title": "CO2 emission per unit of value added",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/9-4-1",
+          "href": "/open-sdg-site-starter/9-4-1/",
           "status": "notstarted"
         },
         {
@@ -1042,7 +1042,7 @@
           "title": "Research and development expenditure as a proportion of GDP",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/9-5-1",
+          "href": "/open-sdg-site-starter/9-5-1/",
           "status": "notstarted"
         },
         {
@@ -1050,7 +1050,7 @@
           "title": "Researchers (in full-time equivalent) per million inhabitants",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/9-5-2",
+          "href": "/open-sdg-site-starter/9-5-2/",
           "status": "notstarted"
         },
         {
@@ -1058,7 +1058,7 @@
           "title": "Total official international support (official development assistance plus other official flows) to infrastructure",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/9-a-1",
+          "href": "/open-sdg-site-starter/9-a-1/",
           "status": "notstarted"
         },
         {
@@ -1066,7 +1066,7 @@
           "title": "Proportion of medium and high-tech industry value added in total value added",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/9-b-1",
+          "href": "/open-sdg-site-starter/9-b-1/",
           "status": "notstarted"
         },
         {
@@ -1074,7 +1074,7 @@
           "title": "Proportion of population covered by a mobile network, by technology",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/9-c-1",
+          "href": "/open-sdg-site-starter/9-c-1/",
           "status": "notstarted"
         }]
     }
@@ -1090,7 +1090,7 @@
           "title": "Growth rates of household expenditure or income per capita among the bottom 40 per cent of the population and the total population",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/10-1-1",
+          "href": "/open-sdg-site-starter/10-1-1/",
           "status": "notstarted"
         },
         {
@@ -1098,7 +1098,7 @@
           "title": "Proportion of people living below 50 per cent of median income, by sex, age and persons with disabilities",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/10-2-1",
+          "href": "/open-sdg-site-starter/10-2-1/",
           "status": "notstarted"
         },
         {
@@ -1106,7 +1106,7 @@
           "title": "Proportion of population reporting having personally felt discriminated against or harassed in the previous 12 months on the basis of a ground of discrimination prohibited under international human rights law",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/10-3-1",
+          "href": "/open-sdg-site-starter/10-3-1/",
           "status": "notstarted"
         },
         {
@@ -1114,7 +1114,7 @@
           "title": "Labour share of GDP",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/10-4-1",
+          "href": "/open-sdg-site-starter/10-4-1/",
           "status": "notstarted"
         },
         {
@@ -1122,7 +1122,7 @@
           "title": "Redistributive impact of fiscal policy",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/10-4-2",
+          "href": "/open-sdg-site-starter/10-4-2/",
           "status": "notstarted"
         },
         {
@@ -1130,7 +1130,7 @@
           "title": "Financial Soundness Indicators",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/10-5-1",
+          "href": "/open-sdg-site-starter/10-5-1/",
           "status": "notstarted"
         },
         {
@@ -1138,7 +1138,7 @@
           "title": "Proportion of members and voting rights of developing countries in international organizations",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/10-6-1",
+          "href": "/open-sdg-site-starter/10-6-1/",
           "status": "notstarted"
         },
         {
@@ -1146,7 +1146,7 @@
           "title": "Recruitment cost borne by employee as a proportion of monthly income earned in country of destination",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/10-7-1",
+          "href": "/open-sdg-site-starter/10-7-1/",
           "status": "notstarted"
         },
         {
@@ -1154,7 +1154,7 @@
           "title": "Number of countries with migration policies that facilitate orderly, safe, regular and responsible migration and mobility of people",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/10-7-2",
+          "href": "/open-sdg-site-starter/10-7-2/",
           "status": "notstarted"
         },
         {
@@ -1162,7 +1162,7 @@
           "title": "Number of people who died or disappeared in the process of migration towards an international destination",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/10-7-3",
+          "href": "/open-sdg-site-starter/10-7-3/",
           "status": "notstarted"
         },
         {
@@ -1170,7 +1170,7 @@
           "title": "Proportion of the population who are refugees, by country of origin",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/10-7-4",
+          "href": "/open-sdg-site-starter/10-7-4/",
           "status": "notstarted"
         },
         {
@@ -1178,7 +1178,7 @@
           "title": "Proportion of tariff lines applied to imports from least developed countries and developing countries with zero-tariff",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/10-a-1",
+          "href": "/open-sdg-site-starter/10-a-1/",
           "status": "notstarted"
         },
         {
@@ -1186,7 +1186,7 @@
           "title": "Total resource flows for development, by recipient and donor countries and type of flow (e.g. official development assistance, foreign direct investment and other flows)",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/10-b-1",
+          "href": "/open-sdg-site-starter/10-b-1/",
           "status": "notstarted"
         },
         {
@@ -1194,7 +1194,7 @@
           "title": "Remittance costs as a proportion of the amount remitted",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/10-c-1",
+          "href": "/open-sdg-site-starter/10-c-1/",
           "status": "notstarted"
         }]
     }
@@ -1210,7 +1210,7 @@
           "title": "Proportion of urban population living in slums, informal settlements or inadequate housing",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/11-1-1",
+          "href": "/open-sdg-site-starter/11-1-1/",
           "status": "notstarted"
         },
         {
@@ -1218,7 +1218,7 @@
           "title": "Proportion of population that has convenient access to public transport, by sex, age and persons with disabilities",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/11-2-1",
+          "href": "/open-sdg-site-starter/11-2-1/",
           "status": "notstarted"
         },
         {
@@ -1226,7 +1226,7 @@
           "title": "Ratio of land consumption rate to population growth rate",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/11-3-1",
+          "href": "/open-sdg-site-starter/11-3-1/",
           "status": "notstarted"
         },
         {
@@ -1234,7 +1234,7 @@
           "title": "Proportion of cities with a direct participation structure of civil society in urban planning and management that operate regularly and democratically",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/11-3-2",
+          "href": "/open-sdg-site-starter/11-3-2/",
           "status": "notstarted"
         },
         {
@@ -1242,7 +1242,7 @@
           "title": "Total per capita expenditure on the preservation, protection and conservation of all cultural and natural heritage, by source of funding (public, private), type of heritage (cultural, natural) and level of government (national, regional, and local/municipal)",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/11-4-1",
+          "href": "/open-sdg-site-starter/11-4-1/",
           "status": "notstarted"
         },
         {
@@ -1250,7 +1250,7 @@
           "title": "Number of deaths, missing persons and directly affected persons attributed to disasters per 100,000 population",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/11-5-1",
+          "href": "/open-sdg-site-starter/11-5-1/",
           "status": "notstarted"
         },
         {
@@ -1258,7 +1258,7 @@
           "title": "Direct economic loss in relation to global GDP, damage to critical infrastructure and number of disruptions to basic services, attributed to disasters",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/11-5-2",
+          "href": "/open-sdg-site-starter/11-5-2/",
           "status": "notstarted"
         },
         {
@@ -1266,7 +1266,7 @@
           "title": "(a) Damage to critical infrastructure and (b) number of disruptions to basic services, attributed to disasters",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/11-5-3",
+          "href": "/open-sdg-site-starter/11-5-3/",
           "status": "notstarted"
         },
         {
@@ -1274,7 +1274,7 @@
           "title": "Proportion of municipal solid waste collected and managed in controlled facilities out of total municipal waste generated, by cities",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/11-6-1",
+          "href": "/open-sdg-site-starter/11-6-1/",
           "status": "notstarted"
         },
         {
@@ -1282,7 +1282,7 @@
           "title": "Annual mean levels of fine particulate matter (e.g. PM2.5 and PM10) in cities (population weighted)",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/11-6-2",
+          "href": "/open-sdg-site-starter/11-6-2/",
           "status": "notstarted"
         },
         {
@@ -1290,7 +1290,7 @@
           "title": "Average share of the built-up area of cities that is open space for public use for all, by sex, age and persons with disabilities",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/11-7-1",
+          "href": "/open-sdg-site-starter/11-7-1/",
           "status": "notstarted"
         },
         {
@@ -1298,7 +1298,7 @@
           "title": "Proportion of persons victim of physical or sexual harassment, by sex, age, disability status and place of occurrence, in the previous 12 months",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/11-7-2",
+          "href": "/open-sdg-site-starter/11-7-2/",
           "status": "notstarted"
         },
         {
@@ -1306,7 +1306,7 @@
           "title": "Number of countries that have national urban policies or regional development plans that (a) respond to population dynamics; (b) ensure balanced territorial development; and (c) increase local fiscal space",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/11-a-1",
+          "href": "/open-sdg-site-starter/11-a-1/",
           "status": "notstarted"
         },
         {
@@ -1314,7 +1314,7 @@
           "title": "Number of countries that adopt and implement national disaster risk reduction strategies in line with the Sendai Framework for Disaster Risk Reduction 2015–2030",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/11-b-1",
+          "href": "/open-sdg-site-starter/11-b-1/",
           "status": "notstarted"
         },
         {
@@ -1322,7 +1322,7 @@
           "title": "Proportion of local governments that adopt and implement local disaster risk reduction strategies in line with national disaster risk reduction strategies",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/11-b-2",
+          "href": "/open-sdg-site-starter/11-b-2/",
           "status": "notstarted"
         }]
     }
@@ -1338,7 +1338,7 @@
           "title": "Number of countries developing, adopting or implementing policy instruments aimed at supporting the shift to sustainable consumption and production",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/12-1-1",
+          "href": "/open-sdg-site-starter/12-1-1/",
           "status": "notstarted"
         },
         {
@@ -1346,7 +1346,7 @@
           "title": "Material footprint, material footprint per capita, and material footprint per GDP",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/12-2-1",
+          "href": "/open-sdg-site-starter/12-2-1/",
           "status": "notstarted"
         },
         {
@@ -1354,7 +1354,7 @@
           "title": "Domestic material consumption, domestic material consumption per capita, and domestic material consumption per GDP",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/12-2-2",
+          "href": "/open-sdg-site-starter/12-2-2/",
           "status": "notstarted"
         },
         {
@@ -1362,7 +1362,7 @@
           "title": "(a) Food loss index and (b) food waste index",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/12-3-1",
+          "href": "/open-sdg-site-starter/12-3-1/",
           "status": "notstarted"
         },
         {
@@ -1370,7 +1370,7 @@
           "title": "Number of parties to international multilateral environmental agreements on hazardous waste, and other chemicals that meet their commitments and obligations in transmitting information as required by each relevant agreement",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/12-4-1",
+          "href": "/open-sdg-site-starter/12-4-1/",
           "status": "notstarted"
         },
         {
@@ -1378,7 +1378,7 @@
           "title": "(a) Hazardous waste generated per capita; and (b) proportion of hazardous waste treated, by type of treatment",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/12-4-2",
+          "href": "/open-sdg-site-starter/12-4-2/",
           "status": "notstarted"
         },
         {
@@ -1386,7 +1386,7 @@
           "title": "National recycling rate, tons of material recycled",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/12-5-1",
+          "href": "/open-sdg-site-starter/12-5-1/",
           "status": "notstarted"
         },
         {
@@ -1394,7 +1394,7 @@
           "title": "Number of companies publishing sustainability reports",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/12-6-1",
+          "href": "/open-sdg-site-starter/12-6-1/",
           "status": "notstarted"
         },
         {
@@ -1402,7 +1402,7 @@
           "title": "Degree of sustainable public procurement policies and action plan implementation",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/12-7-1",
+          "href": "/open-sdg-site-starter/12-7-1/",
           "status": "notstarted"
         },
         {
@@ -1410,7 +1410,7 @@
           "title": "Extent to which (i) global citizenship education and (ii) education for sustainable development are mainstreamed in (a) national education policies; (b) curricula; (c) teacher education; and (d) student assessment",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/12-8-1",
+          "href": "/open-sdg-site-starter/12-8-1/",
           "status": "notstarted"
         },
         {
@@ -1418,7 +1418,7 @@
           "title": "Installed renewable energy-generating capacity in developing countries (in watts per capita)",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/12-a-1",
+          "href": "/open-sdg-site-starter/12-a-1/",
           "status": "notstarted"
         },
         {
@@ -1426,7 +1426,7 @@
           "title": "Implementation of standard accounting tools to monitor the economic and environmental aspects of tourism sustainability",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/12-b-1",
+          "href": "/open-sdg-site-starter/12-b-1/",
           "status": "notstarted"
         },
         {
@@ -1434,7 +1434,7 @@
           "title": "Amount of fossil-fuel subsidies per unit of GDP (production and consumption)",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/12-c-1",
+          "href": "/open-sdg-site-starter/12-c-1/",
           "status": "notstarted"
         }]
     }
@@ -1450,7 +1450,7 @@
           "title": "Number of deaths, missing persons and directly affected persons attributed to disasters per 100,000 population",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/13-1-1",
+          "href": "/open-sdg-site-starter/13-1-1/",
           "status": "notstarted"
         },
         {
@@ -1458,7 +1458,7 @@
           "title": "Number of countries that adopt and implement national disaster risk reduction strategies in line with the Sendai Framework for Disaster Risk Reduction 2015–2030",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/13-1-2",
+          "href": "/open-sdg-site-starter/13-1-2/",
           "status": "notstarted"
         },
         {
@@ -1466,7 +1466,7 @@
           "title": "Proportion of local governments that adopt and implement local disaster risk reduction strategies in line with national disaster risk reduction strategies",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/13-1-3",
+          "href": "/open-sdg-site-starter/13-1-3/",
           "status": "notstarted"
         },
         {
@@ -1474,7 +1474,7 @@
           "title": "Number of countries with nationally determined contributions, long-term strategies, national adaptation plans, strategies as reported in adaptation communications and national communications",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/13-2-1",
+          "href": "/open-sdg-site-starter/13-2-1/",
           "status": "notstarted"
         },
         {
@@ -1482,7 +1482,7 @@
           "title": "Total greenhouse gas emissions per year",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/13-2-2",
+          "href": "/open-sdg-site-starter/13-2-2/",
           "status": "notstarted"
         },
         {
@@ -1490,7 +1490,7 @@
           "title": "Extent to which (i) global citizenship education and (ii) education for sustainable development are mainstreamed in (a) national education policies; (b) curricula; (c) teacher education; and (d) student assessment",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/13-3-1",
+          "href": "/open-sdg-site-starter/13-3-1/",
           "status": "notstarted"
         },
         {
@@ -1498,7 +1498,7 @@
           "title": "Amounts provided and mobilized in United States dollars per year in relation to the continued existing collective mobilization goal of the $100 billion commitment through to 2025",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/13-a-1",
+          "href": "/open-sdg-site-starter/13-a-1/",
           "status": "notstarted"
         },
         {
@@ -1506,7 +1506,7 @@
           "title": "Number of least developed countries and small island developing States with nationally determined contributions, long-term strategies, national adaptation plans, strategies as reported in adaptation communications and national communications",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/13-b-1",
+          "href": "/open-sdg-site-starter/13-b-1/",
           "status": "notstarted"
         }]
     }
@@ -1522,7 +1522,7 @@
           "title": "(a) Index of coastal eutrophication; and (b) plastic debris density",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/14-1-1",
+          "href": "/open-sdg-site-starter/14-1-1/",
           "status": "notstarted"
         },
         {
@@ -1530,7 +1530,7 @@
           "title": "Number of countries using ecosystem-based approaches to managing marine areas",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/14-2-1",
+          "href": "/open-sdg-site-starter/14-2-1/",
           "status": "notstarted"
         },
         {
@@ -1538,7 +1538,7 @@
           "title": "Average marine acidity (pH) measured at agreed suite of representative sampling stations",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/14-3-1",
+          "href": "/open-sdg-site-starter/14-3-1/",
           "status": "notstarted"
         },
         {
@@ -1546,7 +1546,7 @@
           "title": "Proportion of fish stocks within biologically sustainable levels",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/14-4-1",
+          "href": "/open-sdg-site-starter/14-4-1/",
           "status": "notstarted"
         },
         {
@@ -1554,7 +1554,7 @@
           "title": "Coverage of protected areas in relation to marine areas",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/14-5-1",
+          "href": "/open-sdg-site-starter/14-5-1/",
           "status": "notstarted"
         },
         {
@@ -1562,7 +1562,7 @@
           "title": "Degree of implementation of international instruments aiming to combat illegal, unreported and unregulated fishing",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/14-6-1",
+          "href": "/open-sdg-site-starter/14-6-1/",
           "status": "notstarted"
         },
         {
@@ -1570,7 +1570,7 @@
           "title": "Sustainable fisheries as a proportion of GDP in small island developing States, least developed countries and all countries",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/14-7-1",
+          "href": "/open-sdg-site-starter/14-7-1/",
           "status": "notstarted"
         },
         {
@@ -1578,7 +1578,7 @@
           "title": "Proportion of total research budget allocated to research in the field of marine technology",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/14-a-1",
+          "href": "/open-sdg-site-starter/14-a-1/",
           "status": "notstarted"
         },
         {
@@ -1586,7 +1586,7 @@
           "title": "Degree of application of a legal/regulatory/ policy/institutional framework which recognizes and protects access rights for small-scale fisheries",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/14-b-1",
+          "href": "/open-sdg-site-starter/14-b-1/",
           "status": "notstarted"
         },
         {
@@ -1594,7 +1594,7 @@
           "title": "Number of countries making progress in ratifying, accepting and implementing through legal, policy and institutional frameworks, ocean-related instruments that implement international law, as reflected in the United Nations Convention on the Law of the Sea, for the conservation and sustainable use of the oceans and their resources",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/14-c-1",
+          "href": "/open-sdg-site-starter/14-c-1/",
           "status": "notstarted"
         }]
     }
@@ -1610,7 +1610,7 @@
           "title": "Forest area as a proportion of total land area",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/15-1-1",
+          "href": "/open-sdg-site-starter/15-1-1/",
           "status": "notstarted"
         },
         {
@@ -1618,7 +1618,7 @@
           "title": "Proportion of important sites for terrestrial and freshwater biodiversity that are covered by protected areas, by ecosystem type",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/15-1-2",
+          "href": "/open-sdg-site-starter/15-1-2/",
           "status": "notstarted"
         },
         {
@@ -1626,7 +1626,7 @@
           "title": "Progress towards sustainable forest management",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/15-2-1",
+          "href": "/open-sdg-site-starter/15-2-1/",
           "status": "notstarted"
         },
         {
@@ -1634,7 +1634,7 @@
           "title": "Proportion of land that is degraded over total land area",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/15-3-1",
+          "href": "/open-sdg-site-starter/15-3-1/",
           "status": "notstarted"
         },
         {
@@ -1642,7 +1642,7 @@
           "title": "Coverage by protected areas of important sites for mountain biodiversity",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/15-4-1",
+          "href": "/open-sdg-site-starter/15-4-1/",
           "status": "notstarted"
         },
         {
@@ -1650,7 +1650,7 @@
           "title": "Mountain Green Cover Index",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/15-4-2",
+          "href": "/open-sdg-site-starter/15-4-2/",
           "status": "notstarted"
         },
         {
@@ -1658,7 +1658,7 @@
           "title": "Red List Index",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/15-5-1",
+          "href": "/open-sdg-site-starter/15-5-1/",
           "status": "notstarted"
         },
         {
@@ -1666,7 +1666,7 @@
           "title": "Number of countries that have adopted legislative, administrative and policy frameworks to ensure fair and equitable sharing of benefits",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/15-6-1",
+          "href": "/open-sdg-site-starter/15-6-1/",
           "status": "notstarted"
         },
         {
@@ -1674,7 +1674,7 @@
           "title": "Proportion of traded wildlife that was poached or illicitly trafficked",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/15-7-1",
+          "href": "/open-sdg-site-starter/15-7-1/",
           "status": "notstarted"
         },
         {
@@ -1682,7 +1682,7 @@
           "title": "Proportion of countries adopting relevant national legislation and adequately resourcing the prevention or control of invasive alien species",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/15-8-1",
+          "href": "/open-sdg-site-starter/15-8-1/",
           "status": "notstarted"
         },
         {
@@ -1690,7 +1690,7 @@
           "title": "(a) Number of countries that have established national targets in accordance with or similar to Aichi Biodiversity Target 2 of the Strategic Plan for Biodiversity 2011–2020 in their national biodiversity strategy and action plans and the progress reported towards these targets; and (b) integration of biodiversity into national accounting and reporting systems, defined as implementation of the System of Environmental-Economic Accounting",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/15-9-1",
+          "href": "/open-sdg-site-starter/15-9-1/",
           "status": "notstarted"
         },
         {
@@ -1698,7 +1698,7 @@
           "title": "(a) Official development assistance on conservation and sustainable use of biodiversity; and (b) revenue generated and finance mobilized from biodiversity-relevant economic instruments",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/15-a-1",
+          "href": "/open-sdg-site-starter/15-a-1/",
           "status": "notstarted"
         },
         {
@@ -1706,7 +1706,7 @@
           "title": "(a) Official development assistance on conservation and sustainable use of biodiversity; and (b) revenue generated and finance mobilized from biodiversity-relevant economic instruments",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/15-b-1",
+          "href": "/open-sdg-site-starter/15-b-1/",
           "status": "notstarted"
         },
         {
@@ -1714,7 +1714,7 @@
           "title": "Proportion of traded wildlife that was poached or illicitly trafficked",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/15-c-1",
+          "href": "/open-sdg-site-starter/15-c-1/",
           "status": "notstarted"
         }]
     }
@@ -1730,7 +1730,7 @@
           "title": "Number of victims of intentional homicide per 100,000 population, by sex and age",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/16-1-1",
+          "href": "/open-sdg-site-starter/16-1-1/",
           "status": "notstarted"
         },
         {
@@ -1738,7 +1738,7 @@
           "title": "Conflict-related deaths per 100,000 population, by sex, age and cause",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/16-1-2",
+          "href": "/open-sdg-site-starter/16-1-2/",
           "status": "notstarted"
         },
         {
@@ -1746,7 +1746,7 @@
           "title": "Proportion of population subjected to (a) physical violence, (b) psychological violence and (c) sexual violence in the previous 12 months",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/16-1-3",
+          "href": "/open-sdg-site-starter/16-1-3/",
           "status": "notstarted"
         },
         {
@@ -1754,7 +1754,7 @@
           "title": "Proportion of population that feel safe walking alone around the area they live",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/16-1-4",
+          "href": "/open-sdg-site-starter/16-1-4/",
           "status": "notstarted"
         },
         {
@@ -1762,7 +1762,7 @@
           "title": "Proportion of children aged 1–17 years who experienced any physical punishment and/or psychological aggression by caregivers in the past month",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/16-2-1",
+          "href": "/open-sdg-site-starter/16-2-1/",
           "status": "notstarted"
         },
         {
@@ -1770,7 +1770,7 @@
           "title": "Number of victims of human trafficking per 100,000 population, by sex, age and form of exploitation",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/16-2-2",
+          "href": "/open-sdg-site-starter/16-2-2/",
           "status": "notstarted"
         },
         {
@@ -1778,7 +1778,7 @@
           "title": "Proportion of young women and men aged 18–29 years who experienced sexual violence by age 18",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/16-2-3",
+          "href": "/open-sdg-site-starter/16-2-3/",
           "status": "notstarted"
         },
         {
@@ -1786,7 +1786,7 @@
           "title": "Proportion of victims of violence in the previous 12 months who reported their victimization to competent authorities or other officially recognized conflict resolution mechanisms",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/16-3-1",
+          "href": "/open-sdg-site-starter/16-3-1/",
           "status": "notstarted"
         },
         {
@@ -1794,7 +1794,7 @@
           "title": "Unsentenced detainees as a proportion of overall prison population",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/16-3-2",
+          "href": "/open-sdg-site-starter/16-3-2/",
           "status": "notstarted"
         },
         {
@@ -1802,7 +1802,7 @@
           "title": "Proportion of the population who have experienced a dispute in the past two years and who accessed a formal or informal dispute resolution mechanism, by type of mechanism",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/16-3-3",
+          "href": "/open-sdg-site-starter/16-3-3/",
           "status": "notstarted"
         },
         {
@@ -1810,7 +1810,7 @@
           "title": "Total value of inward and outward illicit financial flows (in current United States dollars)",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/16-4-1",
+          "href": "/open-sdg-site-starter/16-4-1/",
           "status": "notstarted"
         },
         {
@@ -1818,7 +1818,7 @@
           "title": "Proportion of seized, found or surrendered arms whose illicit origin or context has been traced or established by a competent authority in line with international instruments",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/16-4-2",
+          "href": "/open-sdg-site-starter/16-4-2/",
           "status": "notstarted"
         },
         {
@@ -1826,7 +1826,7 @@
           "title": "Proportion of persons who had at least one contact with a public official and who paid a bribe to a public official, or were asked for a bribe by those public officials, during the previous 12 months",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/16-5-1",
+          "href": "/open-sdg-site-starter/16-5-1/",
           "status": "notstarted"
         },
         {
@@ -1834,7 +1834,7 @@
           "title": "Proportion of businesses that had at least one contact with a public official and that paid a bribe to a public official, or were asked for a bribe by those public officials during the previous 12 months",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/16-5-2",
+          "href": "/open-sdg-site-starter/16-5-2/",
           "status": "notstarted"
         },
         {
@@ -1842,7 +1842,7 @@
           "title": "Primary government expenditures as a proportion of original approved budget, by sector (or by budget codes or similar)",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/16-6-1",
+          "href": "/open-sdg-site-starter/16-6-1/",
           "status": "notstarted"
         },
         {
@@ -1850,7 +1850,7 @@
           "title": "Proportion of population satisfied with their last experience of public services",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/16-6-2",
+          "href": "/open-sdg-site-starter/16-6-2/",
           "status": "notstarted"
         },
         {
@@ -1858,7 +1858,7 @@
           "title": "Proportions of positions in national and local institutions, including (a) the legislatures; (b) the public service; and (c) the judiciary, compared to national distributions, by sex, age, persons with disabilities and population groups",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/16-7-1",
+          "href": "/open-sdg-site-starter/16-7-1/",
           "status": "notstarted"
         },
         {
@@ -1866,7 +1866,7 @@
           "title": "Proportion of population who believe decision-making is inclusive and responsive, by sex, age, disability and population group",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/16-7-2",
+          "href": "/open-sdg-site-starter/16-7-2/",
           "status": "notstarted"
         },
         {
@@ -1874,7 +1874,7 @@
           "title": "Proportion of members and voting rights of developing countries in international organizations",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/16-8-1",
+          "href": "/open-sdg-site-starter/16-8-1/",
           "status": "notstarted"
         },
         {
@@ -1882,7 +1882,7 @@
           "title": "Proportion of children under 5 years of age whose births have been registered with a civil authority, by age",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/16-9-1",
+          "href": "/open-sdg-site-starter/16-9-1/",
           "status": "notstarted"
         },
         {
@@ -1890,7 +1890,7 @@
           "title": "Number of verified cases of killing, kidnapping, enforced disappearance, arbitrary detention and torture of journalists, associated media personnel, trade unionists and human rights advocates in the previous 12 months",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/16-10-1",
+          "href": "/open-sdg-site-starter/16-10-1/",
           "status": "notstarted"
         },
         {
@@ -1898,7 +1898,7 @@
           "title": "Number of countries that adopt and implement constitutional, statutory and/or policy guarantees for public access to information",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/16-10-2",
+          "href": "/open-sdg-site-starter/16-10-2/",
           "status": "notstarted"
         },
         {
@@ -1906,7 +1906,7 @@
           "title": "Existence of independent national human rights institutions in compliance with the Paris Principles",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/16-a-1",
+          "href": "/open-sdg-site-starter/16-a-1/",
           "status": "notstarted"
         },
         {
@@ -1914,7 +1914,7 @@
           "title": "Proportion of population reporting having personally felt discriminated against or harassed in the previous 12 months on the basis of a ground of discrimination prohibited under international human rights law",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/16-b-1",
+          "href": "/open-sdg-site-starter/16-b-1/",
           "status": "notstarted"
         }]
     }
@@ -1930,7 +1930,7 @@
           "title": "Total government revenue as a proportion of GDP, by source",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/17-1-1",
+          "href": "/open-sdg-site-starter/17-1-1/",
           "status": "notstarted"
         },
         {
@@ -1938,7 +1938,7 @@
           "title": "Proportion of domestic budget funded by domestic taxes",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/17-1-2",
+          "href": "/open-sdg-site-starter/17-1-2/",
           "status": "notstarted"
         },
         {
@@ -1946,7 +1946,7 @@
           "title": "Net official development assistance, total and to least developed countries, as a proportion of the Organization for Economic Cooperation and Development (OECD) Development Assistance Committee donors’ gross national income (GNI)",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/17-2-1",
+          "href": "/open-sdg-site-starter/17-2-1/",
           "status": "notstarted"
         },
         {
@@ -1954,7 +1954,7 @@
           "title": "Foreign direct investment, official development assistance and South-South cooperation as a proportion of gross national income",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/17-3-1",
+          "href": "/open-sdg-site-starter/17-3-1/",
           "status": "notstarted"
         },
         {
@@ -1962,7 +1962,7 @@
           "title": "Volume of remittances (in United States dollars) as a proportion of total GDP",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/17-3-2",
+          "href": "/open-sdg-site-starter/17-3-2/",
           "status": "notstarted"
         },
         {
@@ -1970,7 +1970,7 @@
           "title": "Debt service as a proportion of exports of goods and services",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/17-4-1",
+          "href": "/open-sdg-site-starter/17-4-1/",
           "status": "notstarted"
         },
         {
@@ -1978,7 +1978,7 @@
           "title": "Number of countries that adopt and implement investment promotion regimes for developing countries, including the least developed countries",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/17-5-1",
+          "href": "/open-sdg-site-starter/17-5-1/",
           "status": "notstarted"
         },
         {
@@ -1986,7 +1986,7 @@
           "title": "Fixed Internet broadband subscriptions per 100 inhabitants, by speed",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/17-6-1",
+          "href": "/open-sdg-site-starter/17-6-1/",
           "status": "notstarted"
         },
         {
@@ -1994,7 +1994,7 @@
           "title": "Total amount of funding for developing countries to promote the development, transfer, dissemination and diffusion of environmentally sound technologies",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/17-7-1",
+          "href": "/open-sdg-site-starter/17-7-1/",
           "status": "notstarted"
         },
         {
@@ -2002,7 +2002,7 @@
           "title": "Proportion of individuals using the Internet",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/17-8-1",
+          "href": "/open-sdg-site-starter/17-8-1/",
           "status": "notstarted"
         },
         {
@@ -2010,7 +2010,7 @@
           "title": "Dollar value of financial and technical assistance (including through North-South, South‐South and triangular cooperation) committed to developing countries",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/17-9-1",
+          "href": "/open-sdg-site-starter/17-9-1/",
           "status": "notstarted"
         },
         {
@@ -2018,7 +2018,7 @@
           "title": "Worldwide weighted tariff-average",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/17-10-1",
+          "href": "/open-sdg-site-starter/17-10-1/",
           "status": "notstarted"
         },
         {
@@ -2026,7 +2026,7 @@
           "title": "Developing countries’ and least developed countries’ share of global exports",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/17-11-1",
+          "href": "/open-sdg-site-starter/17-11-1/",
           "status": "notstarted"
         },
         {
@@ -2034,7 +2034,7 @@
           "title": "Weighted average tariffs faced by developing countries, least developed countries and small island developing States",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/17-12-1",
+          "href": "/open-sdg-site-starter/17-12-1/",
           "status": "notstarted"
         },
         {
@@ -2042,7 +2042,7 @@
           "title": "Macroeconomic Dashboard",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/17-13-1",
+          "href": "/open-sdg-site-starter/17-13-1/",
           "status": "notstarted"
         },
         {
@@ -2050,7 +2050,7 @@
           "title": "Number of countries with mechanisms in place to enhance policy coherence of sustainable development",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/17-14-1",
+          "href": "/open-sdg-site-starter/17-14-1/",
           "status": "notstarted"
         },
         {
@@ -2058,7 +2058,7 @@
           "title": "Extent of use of country-owned results frameworks and planning tools by providers of development cooperation",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/17-15-1",
+          "href": "/open-sdg-site-starter/17-15-1/",
           "status": "notstarted"
         },
         {
@@ -2066,7 +2066,7 @@
           "title": "Number of countries reporting progress in multi-stakeholder development effectiveness monitoring frameworks that support the achievement of the sustainable development goals",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/17-16-1",
+          "href": "/open-sdg-site-starter/17-16-1/",
           "status": "notstarted"
         },
         {
@@ -2074,7 +2074,7 @@
           "title": "Amount in United States dollars committed to public-private partnerships for infrastructure",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/17-17-1",
+          "href": "/open-sdg-site-starter/17-17-1/",
           "status": "notstarted"
         },
         {
@@ -2082,7 +2082,7 @@
           "title": "Statistical capacity indicator for Sustainable Development Goal monitoring",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/17-18-1",
+          "href": "/open-sdg-site-starter/17-18-1/",
           "status": "notstarted"
         },
         {
@@ -2090,7 +2090,7 @@
           "title": "Number of countries that have national statistical legislation that complies with the Fundamental Principles of Official Statistics",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/17-18-2",
+          "href": "/open-sdg-site-starter/17-18-2/",
           "status": "notstarted"
         },
         {
@@ -2098,7 +2098,7 @@
           "title": "Number of countries with a national statistical plan that is fully funded and under implementation, by source of funding",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/17-18-3",
+          "href": "/open-sdg-site-starter/17-18-3/",
           "status": "notstarted"
         },
         {
@@ -2106,7 +2106,7 @@
           "title": "Dollar value of all resources made available to strengthen statistical capacity in developing countries",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/17-19-1",
+          "href": "/open-sdg-site-starter/17-19-1/",
           "status": "notstarted"
         },
         {
@@ -2114,7 +2114,7 @@
           "title": "Proportion of countries that (a) have conducted at least one population and housing census in the last 10 years; and (b) have achieved 100 per cent birth registration and 80 per cent death registration",
           "description": "",
           "keywords": "",
-          "href": "/open-sdg-site-starter/17-19-2",
+          "href": "/open-sdg-site-starter/17-19-2/",
           "status": "notstarted"
         }]
     }
