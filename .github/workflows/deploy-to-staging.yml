@@ -28,7 +28,7 @@ jobs:
       run: echo "REPOSITORY_URL_SITE=https://github.com/$GITHUB_REPOSITORY" >> $GITHUB_ENV
     - name: Build the site
       run: |
-        gem install bundler
+        gem install bundler -v 2.4.22
         bundle config path vendor/bundle
         bundle install
         bundle exec jekyll build --baseurl=/${{ env.GITHUB_REPOSITORY_NAME_PART }}
