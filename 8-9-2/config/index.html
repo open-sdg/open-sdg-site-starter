@@ -1,0 +1,1983 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" integrity="sha384-bPV3mA2eo3edoq56VzcPBmG1N1QVUfjYMxVIJPPzyFJyFZ8GFfN7Npt06Zr23qts" crossorigin="anonymous"></script>
+        <script crossorigin="anonymous" src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?version=4.8.0&features=Promise%2CString.prototype.includes%2CCustomEvent%2CArray.prototype.includes%2CArray.prototype.find%2CObject.assign%2CObject.values%2CObject.entries%2CArray.from%2CSet%2CArray.prototype.findIndex%2Cfetch"></script>
+<script crossorigin="anonymous" src="https://cdnjs.cloudflare.com/ajax/libs/javascript-canvas-to-blob/3.15.0/js/canvas-to-blob.min.js"></script>
+
+        <script>
+// This is where we initialise any global variables, namespaced in "opensdg".
+var opensdg = {
+
+  // A base URL for asynchronous calls to SDG data.
+  remoteDataBaseUrl: 'https://open-sdg.org/open-sdg-data-starter/en',
+
+  chartConfigAlterations: [],
+  // A hook which can be used to modify the configuration for Chart.js.
+  chartConfigAlter: function(callback) {
+    this.chartConfigAlterations.push(callback);
+  },
+
+  tableConfigAlterations: [],
+  // A hook which can be used to modify the configuration for Datatables.
+  tableConfigAlter: function(callback) {
+    this.tableConfigAlterations.push(callback);
+  },
+
+  // A hook which can be replaced to alter whether/how the values that are
+  // displayed on indicator tables/graphs get rounded. A "context" parameter
+  // is also passed which contains additional information.
+  dataRounding: function(value, context) {
+    // Alterations go here.
+    return value;
+  },
+
+  // A hook which can be used to alter the data before it is displayed on charts/tables.
+  dataDisplayAlterations: [],
+  dataDisplayAlter: function(callback) {
+    this.dataDisplayAlterations.push(callback);
+  },
+
+  // Disaggregations which should be ignored on indicator pages.
+  ignoredDisaggregations: null,
+
+  language: 'en',
+
+  language_numbers: '',
+
+  mapColors: {
+    "default": [
+        "#c4e1c6",
+        "#b0d1b3",
+        "#9bc2a1",
+        "#87b28f",
+        "#74a37c",
+        "#60946b",
+        "#4d8559",
+        "#3a7747",
+        "#276836"
+    ]
+},
+};
+
+</script>
+
+        <script>
+// JavaScript container for translation data.
+var translations = {
+  //Javascript version of the "t" filter from jekyll-open-sdg-plugins.
+  t: function(key) {
+
+    if (!key || typeof key !== 'string') {
+      return '';
+    }
+
+    // The majority of uses of this function are to translate disaggregation
+    // data. To spare data providers of needing to enter "data." in front of
+    // their disaggregation data, we specifically look for that here.
+    if (typeof this.data === 'object' && this.data !== null && this.data[key]) {
+      return this.data[key];
+    }
+
+    var originalKey = key;
+    var drilled = this;
+    var levelsDrilled = 0;
+    var levels = key.split('.');
+
+    for (var level in levels) {
+      // If we have drilled down to soon, abort.
+      if (typeof drilled !== 'object') {
+        break;
+      }
+
+      if (levels[level] in drilled) {
+        drilled = drilled[levels[level]];
+        levelsDrilled += 1;
+      }
+    }
+
+    // If we didn't drill the right number of levels, return the original string.
+    if (levels.length != levelsDrilled) {
+      return originalKey;
+    }
+
+    // Otherwise we must have drilled all the way.
+    return drilled;
+  },
+};
+</script>
+
+        <!-- Basic Page Needs
+        ================================================== -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- Mobile Specific Metas
+        ================================================== -->
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Title and meta description
+        ================================================== -->
+
+        
+    <title>Edit Configuration: 8.9.2 - Indicators For The Sustainable Development Goals</title>
+
+
+
+        
+        <meta name="robots" content="noindex, nofollow">
+        
+
+        <!--[if IE 9]>
+        <script src="/open-sdg-site-starter/assets/js/lib/classList.js"></script>
+        <![endif]-->
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/open-sdg-site-starter/assets/img/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/open-sdg-site-starter/assets/img/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/open-sdg-site-starter/assets/img/favicons/favicon-16x16.png">
+<link rel="icon" type="image/x-icon" href="/open-sdg-site-starter/assets/img/favicons/favicon.ico" />
+
+        
+
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
+        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20250819114449">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+          integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+          crossorigin=""/>
+        <link rel="stylesheet" href="https://cdn.rawgit.com/socib/Leaflet.TimeDimension/master/dist/leaflet.timedimension.control.min.css"  crossorigin=""/>
+        <link rel="stylesheet" href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css'  crossorigin=""/>
+        <link rel="stylesheet" href="https://bowercdn.net/c/leaflet.zoomhome-latest/dist/leaflet.zoomhome.css"  crossorigin=""/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin="">
+        <link rel="stylesheet" href="https://cdn.kiprotect.com/klaro/v0.7/klaro.min.css" crossorigin=""/>
+        
+
+        
+
+
+        <!--[if IE]>
+        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/ie.css">
+        <![endif]-->
+
+        
+
+    </head>
+<body class="language-en
+layout-config-builder
+">
+<!-- <div class="container"> -->
+
+<script>translations['header'] = {"alpha":"Alpha","default_contrast":"Default contrast","disable_high_contrast":"Disable high contrast","disclaimer":"This is a development website. We welcome your <a href=\"mailto:%email_contacts.suggestions\">feedback</a>.","enable_high_contrast":"Enable high contrast","hide_menu":"Hide navigation menu","high_contrast":"High contrast","internet_explorer_message":"We have detected that you are using Internet Explorer to visit this website. Internet Explorer is now being phased out by Microsoft. As a result, this website no longer supports any version of Internet Explorer. Some features on this site will not work. You should use a modern browser such as Edge, Chrome, Firefox, or Safari. If you have difficulty installing or accessing a different browser, please contact your IT support team.","internet_explorer_message_title":"This internet browser is no longer supported","logo_title":"Go to homepage","show_menu":"Show navigation menu","skip_link":"Skip to main content","tag_line":"17 Goals to Transform our World","toggle_menu":"Menu toggle. Click to expand or collapse the menu.","toggle_search":"Search toggle. Click to expand or collapse the search bar."};</script>
+
+<a class="sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Skip to main content</a>
+<div class="container internet-explorer-message">
+    <h2 class="internet-explorer-message-title">This internet browser is no longer supported</h2>
+    <p class="internet-explorer-message-body">We have detected that you are using Internet Explorer to visit this website. Internet Explorer is now being phased out by Microsoft. As a result, this website no longer supports any version of Internet Explorer. Some features on this site will not work. You should use a modern browser such as Edge, Chrome, Firefox, or Safari. If you have difficulty installing or accessing a different browser, please contact your IT support team.</p>
+</div>
+<div id="disclaimer">
+    
+<div class="container">
+  <div class="disclaimer-alert">
+    <strong class="phase-tag">Alpha</strong>
+    
+    This is a development website. We welcome your <a href="mailto:test@example.com">feedback</a>.
+    
+  </div>
+</div>
+
+</div>
+
+<header role="banner" class="">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light flex-wrap align-items-start">
+            <a class="navbar-brand" href="/open-sdg-site-starter/" id="home" aria-label="Go to homepage" title="Go to homepage">
+    <img src="/open-sdg-site-starter/assets/img/SDG_logo.png" alt="Sustainable Development Goals - 17 Goals to Transform our World" />
+</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Show navigation menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="d-flex flex-wrap w-100 justify-content-between">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav" id="menu"><li class="nav-item ">
+    <a class="nav-link" href="/open-sdg-site-starter/">Home</a>
+</li><li class="nav-item ">
+    <a class="nav-link" href="/open-sdg-site-starter/goals">Goals</a>
+</li><li class="nav-item ">
+    <a class="nav-link" href="/open-sdg-site-starter/reporting-status">Reporting Status</a>
+</li><li class="nav-item ">
+    <a class="nav-link" href="/open-sdg-site-starter/news">Updates</a>
+</li><li class="nav-item ">
+    <a class="nav-link" href="/open-sdg-site-starter/faq">FAQ</a>
+</li><li class="nav-item ">
+    <a class="nav-link" href="/open-sdg-site-starter/about">About</a>
+</li></ul>
+    
+                </div>
+                <div class="header-search-bar">
+                    <form class="align-self-lg-end" id="search" action="/open-sdg-site-starter/search/">
+    <div class="input-group">
+        <label class="visually-hidden" for="indicator_search">Search</label>
+        <input class="form-control" type="search" name="q" id="indicator_search" title="Search">
+        <span class="input-group-append">
+            <button class="btn btn-outline-secondary ms-n5" aria-label="Site search" id="search-btn" type="submit">
+                <i class="fa fa-search"></i>
+            </button>
+        </span>
+    </div>
+</form>
+
+                </div>
+                <div class="header-toggles d-flex">
+
+
+
+
+
+  <div class="language-toggle-container">
+  
+  <div class="btn-group language-toggle-dropdown  dropdown">
+    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="fa fa-globe"></i>
+      English
+    </button>
+    <ul class="dropdown-menu"><li>
+            <a class="dropdown-item" href="/open-sdg-site-starter/es/8-9-2/config/">
+              Español
+            </a>
+          </li></ul>
+  </div>
+</div>
+
+
+
+                    <span class="no-js-language-toggle"><div class="language-toggle-container d-flex">
+    <i class="fa fa-globe language-toggle-globe-links"></i>
+    <ul class="language-toggle-links list-unstyled list-inline"><li class="language-option-es list-inline-item">
+            <a class="language-toggle-link" href="/open-sdg-site-starter/es/8-9-2/config/">
+                Español
+            </a>
+        </li></ul>
+</div></span><a title="Enable high contrast" aria-label="Enable high contrast"
+    data-contrast-switch-to="" role="button" href="javascript:void(0)" data-on="click"
+data-event-category="Accessibility"
+data-event-action="Change contrast setting"
+data-event-label="high"
+>A</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+<div id="top" tabindex=-1></div>
+
+
+<div id="main-content" class="container" role="main">
+  <div class="row">
+    <div class="col-md-12"><h1>Edit Configuration: 8.9.2</h1></div>
+  </div>
+  <div class="row">
+    <div id="root"></div>
+  </div>
+  <script>
+    opensdg.configForm = {
+      schema: null,
+      uiSchema: null,
+      initialData: null,
+      configFilename: "8-9-2.yml",
+      configFolder: null,
+      githubClientId: null,
+      githubProxyUrl: null,
+      githubRepo: null,
+      githubOwner: null,
+      repositoryLink: "/tree/develop/indicator-config",
+      configType: "indicator",
+    };
+    
+      opensdg.configForm.schema = {
+    "type": "object",
+    "title": "Open SDG indicator configuration",
+    "description": "This form will produce an indicator's configuration for your Open SDG implementation.",
+    "properties": {
+        "auto_progress_calculation": {
+            "title": "Automatic progress calculation",
+            "type": "boolean",
+            "description": "This setting can be toggled on to enable automatic progress calculation for the indicator."
+        },
+        "composite_breakdown_label": {
+            "type": "string",
+            "title": "Composite breakdown label",
+            "description": "Used as a label for the COMPOSITE_BREAKDOWN column, if it appears in the indicator data."
+        },
+        "computation_units": {
+            "type": "string",
+            "title": "Unit of measurement",
+            "description": "Unit of measurement which displays below the indicator chart."
+        },
+        "copyright": {
+            "type": "string",
+            "title": "Copyright",
+            "description": "Copyright which displays below the indicator chart."
+        },
+        "data_footnote": {
+            "type": "string",
+            "title": "Footnote",
+            "description": "Footnote which displays below the indicator chart."
+        },
+        "data_non_statistical": {
+            "title": "Non-statistical data",
+            "type": "boolean",
+            "description": "Whether the indicator is statistical (can be charted/graphed) or not."
+        },
+        "data_notice_class": {
+            "title": "Data notice - class",
+            "type": "string",
+            "description": "A CSS class to apply to the data notice for this indicator."
+        },
+        "data_notice_heading": {
+            "title": "Data notice - heading",
+            "type": "string",
+            "description": "A title to display above the data notice for this indicator."
+        },
+        "data_notice_text": {
+            "title": "Data notice - text",
+            "type": "string",
+            "description": "Text to display as a data notice for this indicator, intended to contain very important information which site viewers must keep in mind when using the data provided."
+        },
+        "data_show_map": {
+            "title": "Show map",
+            "type": "boolean",
+            "description": "Whether the indicator should display a Map tab."
+        },
+        "data_start_values": {
+            "type": "array",
+            "title": "Starting values",
+            "description": "Disaggregation values for a an indicator to start with already selected",
+            "items": {
+                "type": "object",
+                "title": "Starting value",
+                "properties": {
+                    "field": {
+                        "type": "string",
+                        "minLength": 1,
+                        "title": "Field",
+                        "description": "The field (column) name."
+                    },
+                    "value": {
+                        "type": "string",
+                        "minLength": 1,
+                        "title": "Value",
+                        "description": "The value in that field to pre-select."
+                    }
+                }
+            }
+        },
+        "embedded_feature_footer": {
+            "type": "string",
+            "title": "Embedded feature - Footer",
+            "description": "A footer that displays below the embedded feature. Only used with either embedded_feature_url or embedded_feature_html."
+        },
+        "embedded_feature_html": {
+            "type": "string",
+            "title": "Embedded feature - HTML",
+            "description": "Any HTML to display in another tab, after Chart/Table/etc."
+        },
+        "embedded_feature_tab_title": {
+            "type": "string",
+            "title": "Embedded feature - Tab Title",
+            "description": "A title for the embedded feature tab (ie, Chart/Table/[this]). Only used with either embedded_feature_url or embedded_feature_html."
+        },
+        "embedded_feature_title": {
+            "type": "string",
+            "title": "Embedded feature - Title",
+            "description": "A title that displays above the embedded feature. Only used with either embedded_feature_url or embedded_feature_html."
+        },
+        "embedded_feature_url": {
+            "type": "string",
+            "title": "Embedded feature - URL",
+            "description": "Any URL to display as an iframe in another tab, after Chart/Table/etc."
+        },
+        "expected_disaggregations": {
+            "type": "array",
+            "title": "Expected disaggregations",
+            "description": "An optional list of disaggregations (ie, data column names) to use when calculating the disaggregation status statistics.",
+            "items": {
+                "type": "string",
+                "title": "Expected disaggregation"
+            }
+        },
+        "footer_fields": {
+            "type": "array",
+            "title": "Footer fields",
+            "description": "Additional arbitrary information to display beneath the graph/table.",
+            "items": {
+                "type": "object",
+                "title": "Footer field",
+                "allOf": [
+                    { "$ref": "#/definitions/series_unit_constraint" },
+                    {
+                        "properties": {
+                            "label": {
+                                "type": "string",
+                                "title": "Label",
+                                "description": "The label for the field"
+                            },
+                            "value": {
+                                "type": "string",
+                                "title": "Value",
+                                "description": "The value/content for the field"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "graph_annotations": {
+            "type": "array",
+            "title": "Graph annotations",
+            "description": "This can be used to add line annotations to the graph, such as target lines to show the progress towards the 2030 goal for an indicator.",
+            "items": {
+                "type": "object",
+                "title": "Graph annotation",
+                "allOf": [
+                    { "$ref": "#/definitions/series_unit_constraint" },
+                    {
+                        "properties": {
+                            "value": {
+                                "type": "number",
+                                "minimum": 0,
+                                "title": "Value",
+                                "description": "The value at which to draw the line. For horizontal lines, this number corresponds to your actual data. For vertical lines, this number should be between 0 (the left side of the chart) and the number of years minus 1 (the right side of the chart)."
+                            },
+                            "endValue": {
+                                "type": "number",
+                                "title": "End value",
+                                "description": "Optionally add a different ending value for the line."
+                            },
+                            "description": {
+                                "type": "string",
+                                "title": "Description",
+                                "description": "A description of the annotation to be read by screenreaders."
+                            },
+                            "mode": {
+                                "type": "string",
+                                "title": "Mode",
+                                "description": "Whether the line will be vertical or horizontal.",
+                                "enum": ["horizontal", "vertical"]
+                            },
+                            "borderColor": {
+                                "type": "string",
+                                "title": "Line color",
+                                "default": "#949494",
+                                "description": "The color of the line."
+                            },
+                            "borderDash": {
+                                "type": "array",
+                                "title": "Line dash type",
+                                "description": "The type of line dash.",
+                                "default": [10, 5],
+                                "items": {
+                                    "type": "number"
+                                },
+                                "minItems": 2
+                            },
+                            "label": {
+                                "type": "object",
+                                "title": "Label",
+                                "description": "A text label for the annotation.",
+                                "properties": {
+                                    "position": {
+                                        "type": "string",
+                                        "title": "Position",
+                                        "description": "Placement of the label along the line.",
+                                        "enum": [
+                                            "top",
+                                            "bottom",
+                                            "left",
+                                            "right",
+                                            "center"
+                                        ]
+                                    },
+                                    "content": {
+                                        "type": "string",
+                                        "minLength": 1,
+                                        "title": "Content",
+                                        "description": "Text of the line label."
+                                    },
+                                    "fontColor": {
+                                        "type": "string",
+                                        "title": "Label color",
+                                        "description": "Color for the label text.",
+                                        "default": "#000000"
+                                    },
+                                    "backgroundColor": {
+                                        "type": "string",
+                                        "default": "#ffffff",
+                                        "title": "Background color",
+                                        "description": "Background color for the label text."
+                                    }
+                                }
+                            },
+                            "highContrast": {
+                                "type": "object",
+                                "title": "High contrast options",
+                                "description": "High-contrast overrides of certain color.",
+                                "properties": {
+                                    "borderColor": {
+                                        "type": "string",
+                                        "default": "#ffffff",
+                                        "title": "High-contrast line color",
+                                        "description": "The color of the line in high-contrast mode."
+                                    },
+                                    "label": {
+                                        "type": "object",
+                                        "title": "High contrast label",
+                                        "description": "High-contrast version of the label.",
+                                        "properties": {
+                                            "fontColor": {
+                                                "type": "string",
+                                                "default": "#ffffff",
+                                                "title": "High-contrast label color",
+                                                "description": "Color for the label text in high-contrast mode."
+                                            },
+                                            "backgroundColor": {
+                                                "type": "string",
+                                                "default": "#000000",
+                                                "title": "High-contrast background color",
+                                                "description": "Background color for the label text in high-contrast mode."
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "graph_limits": {
+            "type": "array",
+            "title": "Graph limits",
+            "description": "A list of min/max limits controlling the lowest/highest values to be shown on the y-axis.",
+            "items": {
+                "type": "object",
+                "title": "Graph limit",
+                "allOf": [
+                    { "$ref": "#/definitions/series_unit_constraint" },
+                    {
+                        "properties": {
+                            "minimum": {
+                                "type": "number",
+                                "minimum": 0,
+                                "title": "Minimum",
+                                "description": "Minimum value for the y axis."
+                            },
+                            "maximum": {
+                                "type": "number",
+                                "minimum": 0,
+                                "title": "Maximum",
+                                "description": "Maximum value for the y axis."
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "graph_series_breaks": {
+            "type": "array",
+            "title": "Graph series breaks",
+            "description": "A list of series break (ie, a gap among the years) lines to display on the graph.",
+            "items": {
+                "type": "object",
+                "title": "Series break",
+                "allOf": [
+                    { "$ref": "#/definitions/series_unit_constraint" },
+                    {
+                        "properties": {
+                            "label_content": {
+                                "type": "string",
+                                "title": "Label content",
+                                "default": "indicator.annotation_series_break",
+                                "description": "The text to display for this series break."
+                            },
+                            "value": {
+                                "type": "number",
+                                "title": "Value",
+                                "description": "The numeric value at which to place the series break. This number should be between 0 (the left side of the chart) and the number of years minus 1 (the right side of the chart)."
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "graph_stacked_disaggregation": {
+            "type": "string",
+            "title": "Stacked disaggregation",
+            "description": "This can be used with the bar graph type to place a certain disaggregation into the same stacked bars."
+        },
+        "graph_target_lines": {
+            "type": "array",
+            "title": "Graph target lines",
+            "description": "A list of target lines to display on the graph.",
+            "items": {
+                "type": "object",
+                "title": "Target line",
+                "allOf": [
+                    { "$ref": "#/definitions/series_unit_constraint" },
+                    {
+                        "properties": {
+                            "label_content": {
+                                "type": "string",
+                                "title": "Label content",
+                                "default": "indicator.annotation_2030_target",
+                                "description": "The text to display for this target line."
+                            },
+                            "value": {
+                                "type": "number",
+                                "title": "Value",
+                                "description": "The numeric value at which to place the target line."
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "graph_title": {
+            "type": "string",
+            "title": "Graph title",
+            "description": "The title that displays above the graph/chart."
+        },
+        "graph_titles": {
+            "type": "array",
+            "title": "Graph titles",
+            "description": "As an alternative to `graph_title`, this can be used to set specific titles for particular units and/or series.",
+            "items": {
+                "type": "object",
+                "title": "Graph title",
+                "allOf": [
+                    { "$ref": "#/definitions/series_unit_constraint" },
+                    {
+                        "properties": {
+                            "title": {
+                                "type": "string",
+                                "minLength": 1,
+                                "title": "Title",
+                                "description": "The graph title."
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "graph_type": {
+            "type": "string",
+            "title": "Graph type",
+            "description": "What type of graph to use for the indicator.",
+            "enum": ["line", "bar", "binary"]
+        },
+        "graph_types": {
+            "type": "array",
+            "title": "Graph types",
+            "description": "A more configurable version of 'graph_type' (singular), this setting is used if you would like the chart type to depend on the user-selected unit of measurement or series.",
+            "items": {
+                "type": "object",
+                "title": "Graph title",
+                "allOf": [
+                    { "$ref": "#/definitions/series_unit_constraint" },
+                    {
+                        "properties": {
+                            "title": {
+                                "type": "string",
+                                "minLength": 1,
+                                "title": "Type",
+                                "description": "The graph type."
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "indicator_available": {
+            "type": "string",
+            "title": "Indicator available",
+            "description": "An optional sub-title for the indicator, which displays below the indicator name. Intended for cases where the available data is slightly different than the indicator name."
+        },
+        "indicator_name": {
+            "type": "string",
+            "title": "Indicator name",
+            "description": "The name for the indicator, which displays at the top of the indicator page."
+        },
+        "indicator_number": {
+            "type": "string",
+            "title": "Indicator number",
+            "description": "The number (or 'id') for the indicator."
+        },
+        "indicator_tabs": {
+            "type": "object",
+            "title": "Indicator tabs",
+            "description": "Assign content for the indicator tabs, if the override box is checked. Otherwise this indicator will use the assignments set in your site configuration.",
+            "properties": {
+                "override": {
+                    "type": "boolean",
+                    "title": "Override site configuration",
+                    "description": "If checked, the site-wide indicator tab configuration will be ignored for this indicator."
+                },
+                "tab_1": {
+                    "type": "string",
+                    "title": "Tab 1",
+                    "description": "What to display in the first tab",
+                    "$ref": "#/definitions/indicator_tabs_options"
+                },
+                "tab_2": {
+                    "type": "string",
+                    "title": "Tab 2",
+                    "description": "What to display in the second tab",
+                    "$ref": "#/definitions/indicator_tabs_options"
+                },
+                "tab_3": {
+                    "type": "string",
+                    "title": "Tab 3",
+                    "description": "What to display in the third tab",
+                    "$ref": "#/definitions/indicator_tabs_options"
+                },
+                "tab_4": {
+                    "type": "string",
+                    "title": "Tab 4",
+                    "description": "What to display in the fourth tab",
+                    "$ref": "#/definitions/indicator_tabs_options"
+                }
+            }
+        },
+        "national_geographical_coverage": {
+            "type": "string",
+            "title": "National geographical coverage",
+            "description": "A label used in the absence of any disaggregation."
+        },
+        "page_content": {
+            "type": "string",
+            "title": "Page content",
+            "description": "Content which displays in the main content area of the indicator page."
+        },
+        "permalink": {
+            "type": "string",
+            "title": "Permalink",
+            "description": "Overrides the normal path of the indicator page. Not recommended, execpt for 'standalone' indicators."
+        },
+        "placeholder": {
+            "title": "Placeholder indicator",
+            "type": "string",
+            "description": "Entering text here identifies this as a 'placeholder' indicator. The text will be displayed on the goal page, in place of a link to the indicator page."
+        },
+        "precision": {
+            "type": "array",
+            "title": "Precision rules",
+            "description": "Control the number of decimal places for data in this indicator.",
+            "items": {
+                "type": "object",
+                "title": "Precision rule",
+                "properties": {
+                    "decimals": {
+                        "type": "number",
+                        "title": "Decimals",
+                        "description": "The number of decimal places"
+                    },
+                    "series": {
+                        "type": "string",
+                        "title": "Series",
+                        "description": "Limit to this particular series"
+                    },
+                    "unit": {
+                        "type": "string",
+                        "title": "Unit",
+                        "description": "Limit to this particular unit"
+                    }
+                }
+            }
+        },
+        "progress_calculation_options": {
+            "type": "array",
+            "title": "Progress calculation options",
+            "description": "These settings control the automatic selection of a progress status when auto_progress_calculation is toggle on.",
+            "items": {
+                "type": "object",
+                "title": "Progress calculation options",
+                "properties": {
+                    "base_year": {
+                        "type": ["integer", "string"],
+                        "title": "Base year",
+                        "description": "Default: 2015. Base year with which to compare current progress."
+                    },
+                    "direction": {
+                        "type": "string",
+                        "title": "Direction",
+                        "description": "The indicator's desired direction of progress -- towards more positive values or more negative values. Default: negative.",
+                        "enum": ["negative", "positive"]
+                    },
+                    "disaggregation": {
+                        "type": "array",
+                        "title": "Disaggregations",
+                        "description": "Disaggregation(s) to include in the progress calculation from the provided series and/or unit if there is no headline. If more than one disaggregation is specified, a progress value is calculated for each specified disaggregation and the median is taken as the final progress value for the indicator.",
+                        "items": {
+                            "type": "object",
+                            "title": "Disaggregation",
+                            "properties": {
+                                "field": {
+                                    "type": "string",
+                                    "title": "Field",
+                                    "description": "Disaggregation column name"
+                                },
+                                "value": {
+                                    "type": "string",
+                                    "title": "Value",
+                                    "description": "Name of sub-category within disaggregation column"
+                                }
+                            }
+                        }
+                    },
+                    "limit": {
+                        "type": "number",
+                        "title": "Limit",
+                        "description": "Default: None. Only applicable if the target is None. Cannot be zero. If direction is 'positive', this is the maximum possible ceiling for the indicator values. If direction is 'negative', this is the minimum possible floor for the indicator values."
+                    },
+                    "series": {
+                        "type": "string",
+                        "title": "Series",
+                        "description": "Series for the progress calculation"
+                    },
+                    "target": {
+                        "type": "number",
+                        "title": "Target",
+                        "description": "Default: None. Value required to achieve target. Cannot be zero -- a target of zero will be reset to 0.001."
+                    },
+                    "target_year": {
+                        "type": ["integer", "string"],
+                        "title": "Target year",
+                        "description": "Default: 2030. Year by which the target is expected to be achieved."
+                    },
+                    "unit": {
+                        "type": "string",
+                        "title": "Unit",
+                        "description": "Unit for the progress calculation"
+                    }
+                }
+            }
+        },
+        "progress_status": {
+            "type": "string",
+            "title": "Progress status",
+            "enum": ["", "not_available", "challenges_remain", "approaching_target", "target_achieved", "deterioration", "limited_progress", "moderate_progress", "substantial_progress"],
+            "description": "Progress status level that can be manually specified by the user if auto_progress_calculation is false."
+        },
+        "proxy": {
+            "type": "string",
+            "title": "Proxy",
+            "enum": ["", "proxy", "both"],
+            "description": "Flag this indicator as being a 'proxy' for one of the global SDG indicators. Use 'proxy' to flag the entire indicator, or use 'both' to flag particular serieses."
+        },
+        "proxy_series": {
+            "type": "array",
+            "title": "Proxy serieses",
+            "description": "If 'proxy' above is set to both, this is required in order to specify which serieses should be flagged as proxies.",
+            "items": {
+                "type": "string",
+                "title": "Series"
+            }
+        },
+        "publications": {
+            "type": "array",
+            "title": "Publications",
+            "description": "This setting controls the content of the 'Related publications' tab. It can contain any number of publications. You may have much of this information in the indicator metadata, but this configuration is available to supplement the metadata with a more structured way to list multiple publications.",
+            "items": {
+                "type": "object",
+                "title": "Publication",
+                "properties": {
+                    "title": {
+                        "type": "string",
+                        "title": "Title"
+                    },
+                    "link": {
+                        "type": "string",
+                        "title": "Link"
+                    },
+                    "description": {
+                        "type": "string",
+                        "title": "End value"
+                    },
+                    "date": {
+                        "type": "string",
+                        "title": "Date"
+                    }
+                }
+            }
+        },
+        "related_indicators": {
+            "type": "array",
+            "title": "Related indicators",
+            "description": "This setting controls the 'Related indicators' tab. Specify indicators by using their indicator numbers, such as: 1.1.1",
+            "items": {
+                "type": "string",
+                "title": "Related indicator"
+            }
+        },
+        "reporting_status": {
+            "type": "string",
+            "title": "Reporting status",
+            "enum": ["complete", "inprogress", "notstarted", "notapplicable"],
+            "description": "The reporting status of the indicator."
+        },
+        "sort": {
+            "type": "string",
+            "title": "Sort order",
+            "description": "Override the default order in which this indicator is displayed in lists. This can be left blank, and it will be automatically determined."
+        },
+        "sources": {
+            "type": "array",
+            "title": "Sources",
+            "description": "This setting controls the content of the 'Sources' tab. It can contain any number sources. You may have much of this information in the metadata, but this configuration is available to supplement the metadata with a more structured way to list multiple sources.",
+            "items": {
+                "type": "object",
+                "title": "Source",
+                "properties": {
+                    "organisation": {
+                        "type": "string",
+                        "title": "Organisation"
+                    },
+                    "periodicity": {
+                        "type": "string",
+                        "title": "Periodicity"
+                    },
+                    "earliest_available": {
+                        "type": "string",
+                        "title": "Earliest available data"
+                    },
+                    "geographical_coverage": {
+                        "type": "string",
+                        "title": "Geographical coverage"
+                    },
+                    "url": {
+                        "type": "string",
+                        "title": "URL"
+                    },
+                    "url_text": {
+                        "type": "string",
+                        "title": "URL text"
+                    },
+                    "release_date": {
+                        "type": "string",
+                        "title": "Release date"
+                    },
+                    "next_release": {
+                        "type": "string",
+                        "title": "Next release"
+                    },
+                    "statistical_classification": {
+                        "type": "string",
+                        "title": "Statistical classification"
+                    },
+                    "contact": {
+                        "type": "string",
+                        "title": "Contact"
+                    },
+                    "other_info": {
+                        "type": "string",
+                        "title": "Other information"
+                    },
+                    "logo": {
+                        "type": "string",
+                        "title": "Path to logo image"
+                    }
+                }
+            }
+        },
+        "standalone": {
+            "title": "Standalone indicator",
+            "type": "boolean",
+            "description": "Whether the indicator is standalone (separate from the SDGs) or not."
+        },
+        "tags": {
+            "type": "array",
+            "title": "Tags",
+            "description": "An optional list of 'tags' to display under an indicator when it is listed on its goal page.",
+            "items": {
+                "type": "string",
+                "title": "Tag"
+            }
+        },
+        "x_axis_label": {
+            "type": "string",
+            "title": "X axis label",
+            "description": "A label beneath the X axis on charts. This overrides the same site configuration setting."
+        }
+    },
+    "additionalProperties": true,
+    "definitions": {
+        "series_unit_constraint": {
+            "type": "object",
+            "properties": {
+                "series": {
+                    "type": "string",
+                    "title": "Series",
+                    "description": "Limit to this particular series"
+                },
+                "unit": {
+                    "type": "string",
+                    "title": "Unit",
+                    "description": "Limit to this particular unit"
+                }
+            }
+        },
+        "indicator_tabs_options": {
+            "enum": ["", "chart", "table", "map", "embed", "hide"]
+        }
+    }
+}
+;
+      opensdg.configForm.uiSchema = {
+    "type": "Categorization",
+    "elements": [
+        {
+            "type": "Category",
+            "label": "Data",
+            "elements": [
+                {
+                    "type": "GroupWithAccordion",
+                    "label": "Non-statistical data",
+                    "documentationKey": "data_non_statistical",
+                    "elements": [
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/data_non_statistical",
+                            "options": {
+                                "toggle": true
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "GroupWithAccordion",
+                    "label": "Computation units",
+                    "documentationKey": "computation_units",
+                    "elements": [
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/computation_units"
+                        }
+                    ],
+                    "rule": {
+                        "effect": "HIDE",
+                        "condition": {
+                            "scope": "#/properties/data_non_statistical",
+                            "schema": { "const": true }
+                        }
+                    }
+                },
+                {
+                    "type": "GroupWithAccordion",
+                    "label": "National Geographical Coverage",
+                    "documentationKey": "national_geographical_coverage",
+                    "elements": [
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/national_geographical_coverage"
+                        }
+                    ]
+                },
+                {
+                    "type": "GroupWithAccordion",
+                    "label": "Precision",
+                    "documentationKey": "precision",
+                    "elements": [
+                        {
+                            "type": "ListWithDetail",
+                            "scope": "#/properties/precision",
+                            "options": {
+                                "detail": {
+                                    "type": "VerticalLayout",
+                                    "elements": [
+                                        {
+                                            "type": "Control",
+                                            "scope": "#/properties/decimals"
+                                        },
+                                        {
+                                            "type": "Control",
+                                            "scope": "#/properties/series"
+                                        },
+                                        {
+                                            "type": "Control",
+                                            "scope": "#/properties/unit"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ],
+                    "rule": {
+                        "effect": "HIDE",
+                        "condition": {
+                            "scope": "#/properties/data_non_statistical",
+                            "schema": { "const": true }
+                        }
+                    }
+                },
+                {
+                    "type": "GroupWithAccordion",
+                    "label": "Show map",
+                    "documentationKey": "data_show_map",
+                    "elements": [
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/data_show_map",
+                            "options": {
+                                "toggle": true
+                            }
+                        }
+                    ],
+                    "rule": {
+                        "effect": "HIDE",
+                        "condition": {
+                            "scope": "#/properties/data_non_statistical",
+                            "schema": { "const": true }
+                        }
+                    }
+                },
+                {
+                    "type": "GroupWithAccordion",
+                    "label": "Standalone",
+                    "documentationKey": "standalone",
+                    "elements": [
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/standalone",
+                            "options": {
+                                "toggle": true
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Category",
+            "label": "Disaggregation",
+            "elements": [
+                {
+                    "type": "GroupWithAccordion",
+                    "label": "Start values",
+                    "documentationKey": "data_start_values",
+                    "elements": [
+                        {
+                            "type": "ListWithDetail",
+                            "scope": "#/properties/data_start_values",
+                            "options": {
+                                "detail": {
+                                    "type": "VerticalLayout",
+                                    "elements": [
+                                        {
+                                            "type": "Control",
+                                            "scope": "#/properties/field"
+                                        },
+                                        {
+                                            "type": "Control",
+                                            "scope": "#/properties/value"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "GroupWithAccordion",
+                    "label": "Expected disaggregations",
+                    "documentationKey": "expected_disaggregations",
+                    "elements": [
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/expected_disaggregations"
+                        }
+                    ]
+                },
+                {
+                    "type": "GroupWithAccordion",
+                    "label": "Composite Breakdown label",
+                    "documentationKey": "composite_breakdown_label",
+                    "elements": [
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/composite_breakdown_label"
+                        }
+                    ]
+                }
+            ],
+            "rule": {
+                "effect": "HIDE",
+                "condition": {
+                  "scope": "#/properties/data_non_statistical",
+                  "schema": { "const": true }
+                }
+            }
+        },
+        {
+            "type": "Category",
+            "label": "Graph",
+            "elements": [
+                {
+                    "type": "GroupWithAccordion",
+                    "label": "Graph type",
+                    "documentationKey": "graph_type",
+                    "elements": [
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/graph_type"
+                        }
+                    ]
+                },
+                {
+                    "type": "GroupWithAccordion",
+                    "label": "Graph types",
+                    "documentationKey": "graph_types",
+                    "elements": [
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/graph_types"
+                        }
+                    ]
+                },
+                {
+                    "type": "GroupWithAccordion",
+                    "label": "X Axis label",
+                    "documentationKey": "x_axis_label",
+                    "elements": [
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/x_axis_label"
+                        }
+                    ]
+                },
+                {
+                    "type": "GroupWithAccordion",
+                    "label": "Stacked disaggregation",
+                    "documentationKey": "graph_stacked_disaggregation",
+                    "elements": [
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/graph_stacked_disaggregation"
+                        }
+                    ]
+                },
+                {
+                    "type": "GroupWithAccordion",
+                    "label": "Graph limits",
+                    "documentationKey": "graph_limits",
+                    "elements": [
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/graph_limits"
+                        }
+                    ]
+                }
+            ],
+            "rule": {
+                "effect": "HIDE",
+                "condition": {
+                  "scope": "#/properties/data_non_statistical",
+                  "schema": { "const": true }
+                }
+            }
+        },
+        {
+            "type": "Category",
+            "label": "Graph Annotation",
+            "elements": [
+                {
+                    "type": "GroupWithAccordion",
+                    "label": "Graph annotations",
+                    "documentationKey": "graph_annotations",
+                    "elements": [
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/graph_annotations"
+                        }
+                    ]
+                },
+                {
+                    "type": "GroupWithAccordion",
+                    "label": "Series breaks",
+                    "documentationKey": "graph_series_breaks",
+                    "elements": [
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/graph_series_breaks"
+                        }
+                    ]
+                },
+                {
+                    "type": "GroupWithAccordion",
+                    "label": "Target lines",
+                    "documentationKey": "graph_target_lines",
+                    "elements": [
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/graph_target_lines"
+                        }
+                    ]
+                }
+            ],
+            "rule": {
+                "effect": "HIDE",
+                "condition": {
+                  "scope": "#/properties/data_non_statistical",
+                  "schema": { "const": true }
+                }
+            }
+        },
+        {
+            "type": "Category",
+            "label": "Header",
+            "elements": [
+                {
+                    "type": "GroupWithAccordion",
+                    "label": "Indicator number",
+                    "documentationKey": "indicator_number",
+                    "elements": [
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/indicator_number"
+                        }
+                    ]
+                },
+                {
+                    "type": "GroupWithAccordion",
+                    "label": "Indicator name",
+                    "documentationKey": "indicator_name",
+                    "elements": [
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/indicator_name"
+                        }
+                    ]
+                },
+                {
+                    "type": "GroupWithAccordion",
+                    "label": "Indicator available",
+                    "documentationKey": "indicator_available",
+                    "elements": [
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/indicator_available"
+                        }
+                    ]
+                },
+                {
+                    "type": "GroupWithAccordion",
+                    "label": "Graph title",
+                    "documentationKey": "graph_title",
+                    "elements": [
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/graph_title"
+                        }
+                    ],
+                    "rule": {
+                        "effect": "HIDE",
+                        "condition": {
+                            "scope": "#/properties/data_non_statistical",
+                            "schema": { "const": true }
+                        }
+                    }
+                },
+                {
+                    "type": "GroupWithAccordion",
+                    "label": "Graph titles",
+                    "documentationKey": "graph_titles",
+                    "elements": [
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/graph_titles"
+                        }
+                    ],
+                    "rule": {
+                        "effect": "HIDE",
+                        "condition": {
+                            "scope": "#/properties/data_non_statistical",
+                            "schema": { "const": true }
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "type": "Category",
+            "label": "Footer",
+            "elements": [
+                {
+                    "type": "GroupWithAccordion",
+                    "label": "Copyright",
+                    "documentationKey": "copyright",
+                    "elements": [
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/copyright"
+                        }
+                    ]
+                },
+                {
+                    "type": "GroupWithAccordion",
+                    "label": "Footnote",
+                    "documentationKey": "data_footnote",
+                    "elements": [
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/data_footnote",
+                            "options": {
+                                "multi": true
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "GroupWithAccordion",
+                    "label": "Footer fields",
+                    "documentationKey": "footer_fields",
+                    "elements": [
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/footer_fields"
+                        }
+                    ]
+                }
+            ],
+            "rule": {
+                "effect": "HIDE",
+                "condition": {
+                  "scope": "#/properties/data_non_statistical",
+                  "schema": { "const": true }
+                }
+            }
+        },
+        {
+            "type": "Category",
+            "label": "Info",
+            "elements": [
+                {
+                    "type": "GroupWithAccordion",
+                    "label": "Data notice - Text",
+                    "documentationKey": "data_notice_text",
+                    "elements": [
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/data_notice_text"
+                        }
+                    ]
+                },
+                {
+                    "type": "GroupWithAccordion",
+                    "label": "Data notice - Heading",
+                    "documentationKey": "data_notice_heading",
+                    "elements": [
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/data_notice_heading"
+                        }
+                    ]
+                },
+                {
+                    "type": "GroupWithAccordion",
+                    "label": "Data notice - Class",
+                    "documentationKey": "data_notice_class",
+                    "elements": [
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/data_notice_class"
+                        }
+                    ]
+                },
+                {
+                    "type": "GroupWithAccordion",
+                    "label": "Placeholder",
+                    "documentationKey": "placeholder",
+                    "elements": [
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/placeholder"
+                        }
+                    ]
+                },
+                {
+                    "type": "GroupWithAccordion",
+                    "label": "Page content",
+                    "documentationKey": "page_content",
+                    "elements": [
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/page_content",
+                            "options": {
+                                "multi": true
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Category",
+            "label": "Webmaster",
+            "elements": [
+                {
+                    "type": "GroupWithAccordion",
+                    "label": "Permalink",
+                    "documentationKey": "permalink",
+                    "elements": [
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/permalink"
+                        }
+                    ]
+                },
+                {
+                    "type": "GroupWithAccordion",
+                    "label": "Tags",
+                    "documentationKey": "tags",
+                    "elements": [
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/tags"
+                        }
+                    ]
+                },
+                {
+                    "type": "GroupWithAccordion",
+                    "label": "Sort",
+                    "documentationKey": "sort",
+                    "elements": [
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/sort"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Category",
+            "label": "Status",
+            "elements": [
+                {
+                    "type": "GroupWithAccordion",
+                    "label": "Reporting status",
+                    "documentationKey": "reporting_status",
+                    "elements": [
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/reporting_status"
+                        }
+                    ]
+                },
+                {
+                    "type": "GroupWithAccordion",
+                    "label": "Automatic progress calculation",
+                    "documentationKey": "auto_progress_calculation",
+                    "elements": [
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/auto_progress_calculation"
+                        }
+                    ]
+                },
+                {
+                    "type": "GroupWithAccordion",
+                    "label": "Progress status",
+                    "documentationKey": "progress_status",
+                    "elements": [
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/progress_status"
+                        }
+                    ],
+                    "rule": {
+                        "effect": "HIDE",
+                        "condition": {
+                          "scope": "#/properties/auto_progress_calculation",
+                          "schema": { "const": true }
+                        }
+                    }
+                },
+                {
+                    "type": "GroupWithAccordion",
+                    "label": "Progress calculation options",
+                    "documentationKey": "progress_calculation_options",
+                    "elements": [
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/progress_calculation_options"
+                        }
+                    ],
+                    "rule": {
+                        "effect": "SHOW",
+                        "condition": {
+                          "scope": "#/properties/auto_progress_calculation",
+                          "schema": { "const": true }
+                        }
+                    }
+                },
+                {
+                    "type": "GroupWithAccordion",
+                    "label": "Proxy",
+                    "documentationKey": "proxy",
+                    "elements": [
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/proxy"
+                        }
+                    ]
+                },
+                {
+                    "type": "GroupWithAccordion",
+                    "label": "Proxy series",
+                    "documentationKey": "proxy_series",
+                    "elements": [
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/proxy_series"
+                        }
+                    ],
+                    "rule": {
+                        "effect": "SHOW",
+                        "condition": {
+                            "scope": "#/properties/proxy",
+                            "schema": { "const": "both" }
+                        }
+                    }
+                }
+            ],
+            "rule": {
+                "effect": "HIDE",
+                "condition": {
+                  "scope": "#/properties/standalone",
+                  "schema": { "const": true }
+                }
+            }
+        },
+        {
+            "type": "Category",
+            "label": "Tabs",
+            "elements": [
+                {
+                    "type": "GroupWithAccordion",
+                    "label": "Indicator tabs",
+                    "documentationKey": "indicator_tabs",
+                    "elements": [
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/indicator_tabs/properties/override",
+                            "options": {
+                                "toggle": true
+                            }
+                        },
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/indicator_tabs/properties/tab_1"
+                        },
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/indicator_tabs/properties/tab_2"
+                        },
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/indicator_tabs/properties/tab_3"
+                        },
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/indicator_tabs/properties/tab_4"
+                        }
+                    ],
+                    "rule": {
+                        "effect": "HIDE",
+                        "condition": {
+                            "scope": "#/properties/data_non_statistical",
+                            "schema": { "const": true }
+                        }
+                    }
+                },
+                {
+                    "type": "GroupWithAccordion",
+                    "label": "Publications",
+                    "documentationKey": "publications",
+                    "elements": [
+                        {
+                            "type": "ListWithDetail",
+                            "scope": "#/properties/publications",
+                            "options": {
+                                "detail": {
+                                    "type": "VerticalLayout",
+                                    "elements": [
+                                        {
+                                            "type": "Control",
+                                            "scope": "#/properties/title"
+                                        },
+                                        {
+                                            "type": "Control",
+                                            "scope": "#/properties/link"
+                                        },
+                                        {
+                                            "type": "Control",
+                                            "scope": "#/properties/description",
+                                            "options": {
+                                                "multi": true
+                                            }
+                                        },
+                                        {
+                                            "type": "Control",
+                                            "scope": "#/properties/date"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "GroupWithAccordion",
+                    "label": "Related indicators",
+                    "documentationKey": "related_indicators",
+                    "elements": [
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/related_indicators"
+                        }
+                    ]
+                },
+                {
+                    "type": "GroupWithAccordion",
+                    "label": "Sources",
+                    "documentationKey": "sources",
+                    "elements": [
+                        {
+                            "type": "ListWithDetail",
+                            "scope": "#/properties/sources",
+                            "options": {
+                                "detail": {
+                                    "type": "VerticalLayout",
+                                    "elements": [
+                                        {
+                                            "type": "Control",
+                                            "scope": "#/properties/organisation"
+                                        },
+                                        {
+                                            "type": "Control",
+                                            "scope": "#/properties/periodicity"
+                                        },
+                                        {
+                                            "type": "Control",
+                                            "scope": "#/properties/earliest_available"
+                                        },
+                                        {
+                                            "type": "Control",
+                                            "scope": "#/properties/geographical_coverage"
+                                        },
+                                        {
+                                            "type": "Control",
+                                            "scope": "#/properties/url"
+                                        },
+                                        {
+                                            "type": "Control",
+                                            "scope": "#/properties/url_text"
+                                        },
+                                        {
+                                            "type": "Control",
+                                            "scope": "#/properties/release_date"
+                                        },
+                                        {
+                                            "type": "Control",
+                                            "scope": "#/properties/next_release"
+                                        },
+                                        {
+                                            "type": "Control",
+                                            "scope": "#/properties/statistical_classification"
+                                        },
+                                        {
+                                            "type": "Control",
+                                            "scope": "#/properties/contact"
+                                        },
+                                        {
+                                            "type": "Control",
+                                            "scope": "#/properties/other_info"
+                                        },
+                                        {
+                                            "type": "Control",
+                                            "scope": "#/properties/logo"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Category",
+            "label": "Embed",
+            "elements": [
+                {
+                    "type": "GroupWithAccordion",
+                    "label": "Embedded Feature - URL",
+                    "documentationKey": "embedded_feature_url",
+                    "elements": [
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/embedded_feature_url"
+                        }
+                    ]
+                },
+                {
+                    "type": "GroupWithAccordion",
+                    "label": "Embedded Feature - HTML",
+                    "documentationKey": "embedded_feature_html",
+                    "elements": [
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/embedded_feature_html",
+                            "options": {
+                                "multi": true
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "GroupWithAccordion",
+                    "label": "Embedded Feature - Title",
+                    "documentationKey": "embedded_feature_title",
+                    "elements": [
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/embedded_feature_title"
+                        }
+                    ]
+                },
+                {
+                    "type": "GroupWithAccordion",
+                    "label": "Embedded Feature - Tab Title",
+                    "documentationKey": "embedded_feature_tab_title",
+                    "elements": [
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/embedded_feature_tab_title"
+                        }
+                    ]
+                },
+                {
+                    "type": "GroupWithAccordion",
+                    "label": "Embedded Feature - Footer",
+                    "documentationKey": "embedded_feature_footer",
+                    "elements": [
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/embedded_feature_footer",
+                            "options": {
+                                "multi": true
+                            }
+                        }
+                    ]
+                }
+            ],
+            "rule": {
+                "effect": "HIDE",
+                "condition": {
+                  "scope": "#/properties/data_non_statistical",
+                  "schema": { "const": true }
+                }
+            }
+        }
+    ]
+}
+;
+      opensdg.configForm.initialData = {"SDG_GOAL__GLOBAL":"<p>Goal 8: Promote sustained, inclusive and sustainable economic growth, full and productive employment and decent work for all</p>","SDG_TARGET__GLOBAL":"<p>Target 8.9: By 2030, devise and implement policies to promote sustainable tourism that creates jobs and promotes local culture and products</p>","SDG_INDICATOR__GLOBAL":"<p>Indicator 8.9.2: Employed persons in the tourism industries</p>","SDG_SERIES_DESCR__GLOBAL":"<p>ST_EMP_TRSMN - Employed persons in the tourism industries (number) [8.9.2]</p>","META_LAST_UPDATE__GLOBAL":"2025-04-23","SDG_RELATED_INDICATORS__GLOBAL":"<p>Target 8.5: By 2030, achieve full and productive employment and decent work for all women and men, including for young people and persons with disabilities, and equal pay for work of equal value</p>\n<p>Target 8.9: By 2030, devise and implement policies to promote sustainable tourism that creates jobs and promotes local culture and products. </p>\n<p>Indicator 8.9.1: Tourism direct GDP as a proportion of total GDP and in growth rate. </p>\n<p>Target 12.b: Develop and implement tools to monitor sustainable development impacts for sustainable tourism that creates jobs and promotes local culture and products</p>\n<p>Indicator 12.b.1 Implementation of standard accounting tools to monitor the economic and environmental aspects of tourism sustainability.</p>\n<p>Target 14.7: By 2030, increase the economic benefits to small island developing States and least developed countries from the sustainable use of marine resources, including through sustainable management of fisheries, aquaculture and tourism</p>","SDG_CUSTODIAN_AGENCIES__GLOBAL":"<p>World Tourism Organization (UN Tourism) with the collaboration of the International Labour Organization (ILO).</p>","CONTACT_ORGANISATION__GLOBAL":"<p>UN Tourism</p>","STAT_CONC_DEF__GLOBAL":"<p><strong>Definition:</strong></p>\n<p>Number of employed persons in the tourism industries</p>\n<p><strong>Concepts:</strong></p>\n<p>The number of &#x201C;employed persons in the tourism industries&#x201D; is an indicator identified in the &#x201C;Statistical Framework for Measuring the Sustainability of Tourism&#x201D; endorsed by the UN Statistical Commission at its fifty-fifth session held from 27 February to 1 March 2024.</p>\n<p>The employed persons comprise &#x201C;all persons of working age who, during a short reference period, were engaged in any activity to produce goods or provide services for pay or profit&#x201D; (ILO, 2023). The indicator shows the number of persons employed in tourism industries in any of their jobs. The tourism industries comprise all establishments for which the principal activity is a tourism characteristic activity. This is an activity that typically produces tourism characteristic products, as defined in the International Recommendations for Tourism Statistics 2008 (IRTS 2008) (United Nations and World Tourism Organization, 2010). The internationally comparable tourism industries are grouped in ten main categories (IRTS 2008, para 5.29), as shown in table 1.</p>","UNIT_MEASURE__GLOBAL":"<p>Number of people</p>","CLASS_SYSTEM__GLOBAL":"<p>&#x201C;Employed persons in the tourism industries&#x201D; has been identified in the Statistical Framework for Measuring the Sustainability of Tourism (SF-MST), endorsed by the UN Statistical Commission at its fifty-fifth session held from 27 February to 1 March 2024 (United Nations Statistical Commission, 2024). SF-MST builds on and is coherent with other well-established statistical frameworks and international classifications such as the IRTS 2008, the Tourism Satellite Account: Recommended Methodological Framework 2008 (United Nations et al., 2010), ILO statistical manuals, and the International Standard Industrial Classification of All Economic Activities (ISIC), revision 4 (United Nations, 2008).</p>\n<p>The SF-MST adopts the tourism characteristic activities (i.e. tourism industries) defined in IRTS 2008, which provides a list of tourism industries for international comparability purposes based on ISIC (rev. 4), as follows:</p>\n<p><strong>Table 1. List of internationally comparable tourism characteristic activities (tourism industries) <br>and grouping by main categories according to ISIC Rev. 4</strong></p>\n<table>\n  <tbody>\n    <tr>\n      <td>\n        <p><strong>Tourism Industries</strong></p>\n      </td>\n      <td>\n        <p><strong>ISIC Rev. 4</strong></p>\n      </td>\n      <td>\n        <p><strong>Description</strong></p>\n      </td>\n    </tr>\n    <tr>\n      <td>\n        <p>1. Accommodation for visitors</p>\n      </td>\n      <td>\n        <p>5510</p>\n        <p>5520</p>\n        <p>5590</p>\n        <p>6810</p>\n        <p>6820</p>\n      </td>\n      <td>\n        <p>Short term accommodation activities</p>\n        <p>Camping grounds, recreational vehicle parks and trailer parks</p>\n        <p>Other accommodation</p>\n        <p>Real estate activities with own or leased property*</p>\n        <p>Real estate activities on a fee or contract basis*</p>\n      </td>\n    </tr>\n    <tr>\n      <td>\n        <p>2. Food and beverage serving activities</p>\n      </td>\n      <td>\n        <p>5610</p>\n        <p>5629</p>\n        <p>5630</p>\n      </td>\n      <td>\n        <p>Restaurants and mobile food service activities</p>\n        <p>Other food service activities</p>\n        <p>Beverage serving activities</p>\n      </td>\n    </tr>\n    <tr>\n      <td>\n        <p>3. Railway passenger transport</p>\n      </td>\n      <td>\n        <p>4911</p>\n      </td>\n      <td>\n        <p>Passenger rail transport, interurban</p>\n      </td>\n    </tr>\n    <tr>\n      <td>\n        <p>4. Road passenger transport</p>\n      </td>\n      <td>\n        <p>4922</p>\n      </td>\n      <td>\n        <p>Other passenger land transport</p>\n      </td>\n    </tr>\n    <tr>\n      <td>\n        <p>5. Water passenger transport</p>\n      </td>\n      <td>\n        <p>5011</p>\n        <p>5021</p>\n      </td>\n      <td>\n        <p>Sea and coastal passenger water transport</p>\n        <p>Inland passenger water transport</p>\n      </td>\n    </tr>\n    <tr>\n      <td>\n        <p>6. Air passenger transport</p>\n      </td>\n      <td>\n        <p>5110</p>\n      </td>\n      <td>\n        <p>Passenger air transport</p>\n      </td>\n    </tr>\n    <tr>\n      <td>\n        <p>7. Transport equipment rental</p>\n      </td>\n      <td>\n        <p>7710</p>\n      </td>\n      <td>\n        <p>Renting and leasing of motor vehicles</p>\n      </td>\n    </tr>\n    <tr>\n      <td>\n        <p>8. Travel agencies and other reservation service activities</p>\n      </td>\n      <td>\n        <p>7911</p>\n        <p>7912</p>\n        <p>7990</p>\n      </td>\n      <td>\n        <p>Travel agency activities</p>\n        <p>Tour operator activities</p>\n        <p>Other reservation service and related activities</p>\n      </td>\n    </tr>\n    <tr>\n      <td>\n        <p>9. Cultural activities</p>\n      </td>\n      <td>\n        <p>9000</p>\n        <p>9102</p>\n        <p>9103</p>\n      </td>\n      <td>\n        <p>Creative, arts and entertainment activities</p>\n        <p>Museums activities and operation of historical sites and buildings</p>\n        <p>Botanical and zoological gardens and nature reserves activities</p>\n      </td>\n    </tr>\n    <tr>\n      <td>\n        <p>10. Sports and Recreational activities</p>\n      </td>\n      <td>\n        <p>7721</p>\n        <p>9200</p>\n        <p>9311</p>\n        <p>9319</p>\n        <p>9321</p>\n        <p>9329</p>\n      </td>\n      <td>\n        <p>Renting and leasing of recreational and sports goods</p>\n        <p>Gambling and betting activities</p>\n        <p>Operation of sports facilities</p>\n        <p>Other sports activities</p>\n        <p>Activities of amusement parks and theme parks</p>\n        <p>Other amusement and recreation activities n.e.c.</p>\n      </td>\n    </tr>\n  </tbody>\n</table>\n<p><em>* Part related to second homes and timeshare properties</em></p>\n<p>Source: International Recommendations for Tourism Statistics 2008, Annex 3 (United Nations and World Tourism Organization, 2010).</p>","SOURCE_TYPE__GLOBAL":"<p>The indicator is sourced from countries&#x2019; household-based labour force surveys. In the absence of a labour force survey, a population census and/or another type of household survey or tourism survey with an appropriate employment module may also be used to obtain the required data. Where no household survey exists, establishment surveys or certain administrative records may be used to derive the required data. Proper account should be taken of the limitations of these sources in terms of their coverage, which may exclude, for instance, some types of establishments, establishments of certain sizes, some economic activities, or some geographical areas.</p>","COLL_METHOD__GLOBAL":"<p>UN Tourism manages an international database based on official statistical data reported through a rolling questionnaire distributed to official data providers in countries. UN Tourism pre-fills the questionnaire, to the extent possible, with data publicly available in countries&apos; official sources (publications and websites) and, in collaboration with ILO, with data from ILOSTAT obtained via its Labour Force Survey (LFS) Database, available at: <a href=\"https://ilostat.ilo.org/data/\">https://ilostat.ilo.org/data/</a>.</p>\n<p>The ILO Department of Statistics processes national household survey micro datasets in line with internationally agreed indicator concepts and definitions set forth by the International Conference of Labour Statisticians. For data that cannot be obtained through this processing or directly from government websites, ILO sends out an annual ILOSTAT questionnaire to all relevant agencies within each country (e.g., National Statistical Office, Labour Ministry, etc.) requesting the latest annual data and any revisions.</p>\n<p>The primary ILO dataset used to fill data gaps in this indicator on &#x201C;employed persons in the tourism industries&#x201D; is the dataset &#x201C;Tourism sector employment by economic activity&#x201D; dataset, comprising the number of employed persons in the following ISIC rev.4 classes (International Labour Organization, no date):</p>\n<ul>\n  <li><u>Accommodation for visitors</u>: 5510 Short term accommodation activities, 5520 Camping grounds, recreational vehicle parks and trailer parks, 5590 Other accommodation.</li>\n  <li><u>Food and beverage serving activities</u>: 5610 Restaurants and mobile food service activities, 5629 Other food service activities, 5630 Beverage serving activities.</li>\n  <li><u>Passenger transportation</u>: 4911 Passenger rail transport, interurban, 4921 Urban and suburban passenger land transport, 4922 Other passenger land transport, 5011 Sea and coastal passenger water transport, 5021 Inland passenger water transport, 5110 Passenger air transport, 5221 Service activities incidental to land transportation, 5222 Service activities incidental to water transportation, 5223 Service activities incidental to air transportation, 7710 Renting and leasing of motor vehicles.</li>\n  <li><u>Recreation and entertainment</u>: 7721 Renting and leasing of recreational and sports goods, 9000 Creative, arts and entertainment activities, 9102 Museums activities and operation of historical sites and buildings, 9103 Botanical and zoological gardens and nature reserves activities, 9200 Gambling and betting activities, 9311 Operation of sports facilities, 9319 Other sports activities, 9321 Activities of amusement parks and theme parks, 9329 Other amusement and recreation activities.</li>\n  <li><u>Travel services</u>: 7911 Travel agency activities, 7912 Tour operator activities, 7990 Other reservation service and related activities.</li>\n</ul>\n<p>Should country-specific data not be available in the ILO &quot;Tourism sector employment by economic activity&quot; dataset, UN Tourism adjusts the country data obtained from the ILO &quot;Employment by economic activity - ISIC level 2&#x201D; dataset, using the following ISIC groups: </p>\n<ul>\n  <li>49 Land transport and transport via pipelines</li>\n  <li>50 Water transport</li>\n  <li>51 Air transport</li>\n  <li>55 Accommodation</li>\n  <li>56 Food &amp; Beverages service activities</li>\n  <li>77 Rental and leasing activities</li>\n  <li>79 Travel agency, tour operator, reservation services and related activities</li>\n  <li>90 Creative, arts and entertainment activities</li>\n  <li>91 Libraries, archives, museums and other cultural activities</li>\n  <li>92 Gambling &amp; betting activities</li>\n  <li>93 Sports activities, amusement and recreation activities</li>\n</ul>\n<p>All data sourced from ILO and any adjustments to the country data obtained through ILO datasets are included in the pre-filled questionnaires sent by UN Tourism to countries, for their verification, confirmation and updating as necessary.</p>","FREQ_COLL__GLOBAL":"<p>UN Tourism dispatches its pre-filled statistical questionnaire on SDG-related data in September/October, to allow the most recent information to be included and ready for submission to the Global SDG Indicators Database in January/February, in line with the UN Statistics Division calendar. Since the 2024-2025 reporting cycle onwards, UN Tourism includes ILO data in its pre-filled questionnaires. </p>","REL_CAL_POLICY__GLOBAL":"<p>This indicator will be released every year as part of an update in the UN Tourism Statistics Database (<a href=\"https://www.unwto.org/tourism-statistics/tourism-statistics-database\">https://www.unwto.org/tourism-statistics/tourism-statistics-database</a>), in March at the latest, in line with UNSD reporting calendar.</p>","DATA_SOURCE__GLOBAL":"<p>Data providers are official country entities, mainly National Statistics Offices and, in some cases, ministries in charge of tourism or related official national entities. The data available in ILOSTAT, and incorporated in the UN Tourism questionnaire, are provided by National Statistical Offices and, in some cases, Ministries of Labour or other related agencies operating at the country-level.</p>","COMPILING_ORG__GLOBAL":"<p>UN Tourism and ILO.</p>","INST_MANDATE__GLOBAL":"<p>As per Article 13.3 of the agreement between the United Nations and the World Tourism Organization (UN Tourism), whereby UN Tourism became a specialized agency, &#x201C;the United Nations recognizes the World Tourism Organization as the appropriate organization to collect, to analyse, to publish, to standardize and to improve the statistics of tourism, and to promote the integration of these statistics within the sphere of the United Nations system&#x201D; (United Nations, 2003). The UN Tourism Department of Statistics, Standards and Data is charged with upholding this mandated and its work focuses on the development of international standards for measuring tourism, on capacity development, and on compiling and disseminating tourism statistics from all countries in the world.</p>\n<p>UN Tourism is the custodian agency for this SDG indicator 8.9.2.</p>\n<p>The data collection process is supported by the partnership between UN Tourism and the International Labour Organization (ILO), which is the UN focal point for labour statistics. ILO sets international standards for labour statistics through the International Conference of Labour Statisticians, and compiles and produces labour statistics, with the goal of disseminating internationally comparable datasets. It also provides technical assistance and training to ILO Member States, to support their efforts to produce high-quality labour market data.</p>","RATIONALE__GLOBAL":"<p>This indicator on &#x201C;employed persons in the tourism industries&#x201D; covers a crucial aspect currently not monitored of SDG target 8.9 (&#x201C;by 2030, devise and implement policies to promote sustainable tourism that creates jobs and promotes local culture and products&#x201D;). The proposed indicator directly addresses the target&#x2019;s aim of promoting tourism that creates jobs, and aligns well with overall intent of Goal 8 on economic growth and decent work.</p>\n<p>Also, &#x201C;Employed persons in the tourism industries&#x201D; addresses a critical policy issue that has become increasingly prominent since the COVID-19 pandemic. The pandemic increased the realization that tourism &#x2014;and especially its income (indicator 8.9.1) and employment (this indicator, 8.9.2) components &#x2014; sustains livelihoods, wellbeing and conservation efforts worldwide. It was acknowledged that tourism is be especially critical for sustainable development in remote, rural and natural places, and it offers employment opportunities for diverse groups of people. </p>\n<p>In addition, this indicator responds to requests made by the United Nations Statistical Commission (UNSC) over the years. In 2017 the Statistical Commission &#x201C;<em>supported the development of the statistical framework for measuring sustainable tourism</em> [...] <em>which will include the development of indicators for sustainable tourism</em> [...]&#x201D; (United Nations Statistical Commission, 2017), and in 2022 it &#x201C;<em>requested the Group </em>[IAEG-SDGs]<em> to work in close coordination with the custodian agency</em> [UN Tourism] <em>on a proposal for indicators on sustainable tourism to better monitor target 8.9 </em>[&#x2026;]&#x201D; (United Nations Statistical Commission, 2017). Therefore, this indicator builds on the work of the IAEG-SDG Task Team on sustainable tourism, and draws on three decades of tourism statistics expertise.</p>\n<p>Finally, the indicator reflects extensive research and development through intergovernmental processes and in collaboration with ILO, to define an indicator that optimizes the criteria of: (i) agreed methodology and conceptual rigour (it is based on the UN-endorsed Statistical Framework for Measuring the Sustainability of Tourism), (ii) high policy relevance, responding to issues with respect to the related Target and Goal that are currently unmet in the indicator framework, and (iii) data availability in countries (with existing reporting mechanisms by ILO and UN Tourism), thus avoiding additional reporting burden for countries. Consequently, this indicator classifies as a Tier I indicator. </p>","REC_USE_LIM__GLOBAL":"<p>The following points aim to describe some limitations to be considered:</p>\n<p>The characteristics of the data source may impact international comparability, especially when the coverage of the country source is not complete (notably in terms of the tourism industries included and the level of ISIC disaggregation available), as some countries do not measure employment in all the ten internationally-comparable tourism industries. </p>\n<p>In the absence of labour force surveys, some countries may use an establishment survey to derive information for this indicator. However, such surveys usually have a minimum establishment size cut&#x2011;off point, and small units are not officially registered and are therefore not included. Consequently, employment data in the tourism industries may be underestimated.</p>\n<p>An important issue in tourism relates to the seasonality, stemming from variations in visitor flows over the year and therefore in the related demand for services and labour inputs (in particular, in the industries pertaining to accommodation for visitors and to food and beverage serving activities). Fluctuations over the year are smoothed over in yearly figures.</p>","DATA_COMP__GLOBAL":"<p>The indicator is the sum of employed persons in the tourism industries listed in the section above: &#x201C;2.c. Classifications&#x201D;.</p>","DATA_VALIDATION__GLOBAL":"<p>UN Tourism maintains close communication with the reporting countries. Countries are invited to report their official data and are requested to verify, confirm, and update any pre-filled data. In case of any inconsistencies in the reported data, follow-ups are conducted with the respective countries.</p>\n<p>ILO holds annual consultations with its Member States through the ILOSTAT questionnaire and the related Statistics Reporting System (StaRS). National data providers receive a link to the portal where they can review the data available on ILOSTAT.</p>","ADJUSTMENT__GLOBAL":"<p>When the data are only available in the ILO &#x201C;Employment by economic activity &#x2013; ISIC level 2&#x201D; dataset, these are adjusted using ISIC level 4 shares from countries with similar characteristics. Such adjusted data values are indicated with a note, as &#x201C;country adjusted data&#x201D;. In the UN Tourism pre-filled questionnaires, countries are invited to verify and confirm their agreement with these values, and the note is adjusted accordingly.</p>","IMPUTATION__GLOBAL":"<p>Country level employment data, if available for categories broader than those in scope, may be adjusted to estimate the part that is relevant for this indicator, as indicated in section 4.e above: &#x201C;adjustments&#x201D;. Those country adjusted data are identified with the note for Nature &#x201C;CA&#x201D;. </p>\n<p>Gaps in the time series of country data may also be imputed with linear interpolation or carry forward/backward, for the calculation of regional and global aggregates. Multiple regression and cross-validation techniques may also be used. These imputed country values are used only as inputs to calculate the global and regional estimates and are not published as country data.</p>","REG_AGG__GLOBAL":"<p>Regional and global aggregates are obtained by a simple sum of the employed persons in the tourism industries. Each individual record may correspond to: (i) official statistics reported by countries to UN Tourism and to ILO, (ii) data adjusted by UN Tourism based on ILO available data at ISIC level 2, and (iii) imputed missing values calculated by UN Tourism specifically for regional aggregate purposes. </p>","DOC_METHOD__GLOBAL":"<p>The Statistical Framework for Measuring the Sustainability of Tourism (United Nations Statistical Commission, 2024) is the internationally agreed reference framework for measuring the economic, social and environmental aspects of tourism.</p>\n<p>The International Recommendations for Tourism Statistics 2008 (United Nations and World Tourism Organization, 2010) provide a comprehensive methodological framework for the collection and compilation of tourism statistics in all countries.</p>\n<p>The Guidelines on the implementation of the IRTS 2008 are provided in the Compilation Guide (United Nations, 2016).</p>\n<p>The Resolution concerning statistics of work, employment and labour underutilization (including amendments) (International Labour Organization, 2023) provides the definition of employment.</p>\n<p>The International Standard Industrial Classification of All Economic Activities 2008 (United Nations, 2008) provide a description of the activities identified as corresponding to each tourism industry.</p>","QUALITY_MGMNT__GLOBAL":"<p>UN Tourism follows the recommendations on quality management available in the International Recommendations for Tourism Statistics 2008 (United Nations and World Tourism Organization, 2010) and the Statistical Framework for Measuring the sustainability of Tourism (United Nations Statistical Commission, 2024), as based on international good practice. </p>\n<p>The processes of compilation, production, and publication of ILO data, including its quality control, are carried out following the methodological framework and standards established by the ILO Department of Statistics, in compliance with the information technology and management standards of ILO.</p>","QUALITY_ASSURE__GLOBAL":"<p>Data consistency and quality checks are regularly conducted for validation of the data before dissemination. Any discrepancies are addressed through written communication with countries.</p>","QUALITY_ASSMNT__GLOBAL":"<p>The data should comply with the recommendations on concepts, definitions, and classifications provided in the Statistical Framework for Measuring the Sustainability of Tourism (United Nations Statistical Commission, 2024) and the International Recommendations for Tourism Statistics 2008 (United Nations and World Tourism Organization, 2010).</p>\n<p>The final assessment of the quality of the information is carried out by UN Tourism&apos;s Statistics, Standards and Data Department. In cases of doubt about the quality of specific data, values are reviewed by engaging with the official national agencies responsible for producing the data. If the issue cannot be entirely solved, the data may be either published with a note or removed.</p>","COVERAGE__GLOBAL":"<p><strong>Data availability:</strong> Data are currently included for 89 countries. These comprise countries in all regions. UN Tourism is working with ILO and with the countries to further harmonise the available data to expand this coverage.</p>\n<p><strong>Time series:</strong> Data for this indicator are available from 2008.</p>\n<p><strong>Disaggregation:</strong> The current edition of this indicator provides the total number of employed persons in tourism industries, by country and year. Notwithstanding, this indicator can potentially be disaggregated by tourism industry, sex, status in employment, age, education level, etc., depending on data availability in countries. UN Tourism is working with ILO to expand the availability of data disaggregated by tourism industry, sex and status in employment, to include those dimension in this indicator.</p>","COMPARABILITY__GLOBAL":"<p>Discrepancies between categories may arise due to a) the national data sources used and their coverage (geographical, tourism industries covered, types of establishments covered, etc.), b) the ISIC revision used by a country, c) the inclusion or not of informal employment and e) the working-age population definition.</p>","OTHER_DOC__GLOBAL":"<p>International Labour Organization (no date) Worker and sector profiles (PROFILES database). Available at: <a href=\"https://ilostat.ilo.org/methods/concepts-and-definitions/description-worker-and-sector-profiles/#elementor-toc__heading-anchor-13\">https://ilostat.ilo.org/methods/concepts-and-definitions/description-worker-and-sector-profiles/#elementor-toc__heading-anchor-13</a>.</p>\n<p>International Labour Organization (2018) Decent Work and the Sustainable Development Goals: A Guidebook on SDG Labour Market Indicators. Department of Statistics. Available at: <a href=\"https://www.ilo.org/publications/decent-work-and-sustainable-development-goals-guidebook-sdg-labour-market\">https://www.ilo.org/publications/decent-work-and-sustainable-development-goals-guidebook-sdg-labour-market</a>. </p>\n<p>International Labour Organization (2023) Resolution concerning statistics of work, employment and labour underutilization (including amendments). Adopted by the 21st International Conference of Labour Statisticians (October 2023). Available at: <a href=\"https://www.ilo.org/resource/resolution-concerning-statistics-work-employment-and-labour\">https://www.ilo.org/resource/resolution-concerning-statistics-work-employment-and-labour</a>.</p>\n<p>United Nations (2003) Agreement between the United Nations and the World Tourism Organization. Available at: <a href=\"https://digitallibrary.un.org/record/505135\">https://digitallibrary.un.org/record/505135</a>. </p>\n<p>United Nations (2008) International Standard Industrial Classification of All Activities (ISIC). Revision 4. Available at: <a href=\"https://unstats.un.org/unsd/classifications/Econ/Download/In%20Text/ISIC_Rev_4_publication_English.pdf\">https://unstats.un.org/unsd/classifications/Econ/Download/<br>In%20Text/ISIC_Rev_4_publication_English.pdf</a>. </p>\n<p>United Nations and World Tourism Organization (2010), International Recommendations for Tourism Statistics 2008. Available at: <a href=\"https://www.unwto.org/tourism-statistics/on-basic-tourism-statistics-irts-2008\">https://www.unwto.org/tourism-statistics/on-basic-tourism-statistics-irts-2008</a>.</p>\n<p>United Nations, World Tourism Organization, Commission of the European Communities, and Organization for Economic Co-operation and Development (2010) Tourism Satellite Account: Recommended Methodological Framework 2008. Available at: <a href=\"https://unstats.un.org/unsd/publication/Seriesf/SeriesF_80rev1e.pdf\">https://unstats.un.org/unsd/publication/Seriesf/SeriesF_80rev1e.pdf</a></p>\n<p>United Nations (2016), International Recommendations for Tourism Statistics 2008 Compilation Guide. Available at: <a href=\"https://unstats.un.org/unsd/tourism/publications/E-IRTS-Comp-Guide%202008%20For%20Web.pdf\">https://unstats.un.org/unsd/tourism/publications/E-IRTS-Comp-Guide%202008%20For%20Web.pdf</a>. </p>\n<p>United Nations Statistical Commission (2017) UNSC Decision 48/115, chapter: I, section: C. Available at: <a href=\"https://unstats.un.org/unsd/statcom/decisions-ref/?code=48/115\">https://unstats.un.org/unsd/statcom/decisions-ref/?code=48/115</a>. </p>\n<p>United Nations Statistical Commission (2022) UNSC Decision 53/101, chapter: I, section: C. Available at: <a href=\"https://unstats.un.org/unsd/statcom/decisions-ref/?code=53/101\">https://unstats.un.org/unsd/statcom/decisions-ref/?code=53/101</a>.</p>\n<p>United Nations Statistical Commission (2024) Statistical Framework for Measuring the Sustainability of Tourism (unedited version). Available at: <a href=\"https://unstats.un.org/UNSDWebsite/statcom/session_55/documents/BG-4a-SF-MST-E.pdf\">https://unstats.un.org/UNSDWebsite/statcom/session_55/documents/BG-4a-SF-MST-E.pdf</a></p>","indicator_number":"8.9.2","target_number":"8.9","goal_number":"8","reporting_status":"notstarted","data_non_statistical":true,"graph_type":"line","indicator_sort_order":"08-09-02","indicator_name":"Employed persons in the tourism industries","graph_title":"Employed persons in the tourism industries"};
+      opensdg.configForm.repoUrl = "https://github.com/open-sdg/open-sdg-data-starter";
+    
+  </script>
+  
+  
+  
+  <script src="https://open-sdg.org/open-sdg-config-form/bundle.js"></script>
+</div>
+<footer role="contentinfo">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div id="footerLinks">
+                    <ul>
+                        <li>
+                            <a href="https://open-sdg.org">Built using Open SDG</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/open-sdg-site-starter/contact-us">Contact us</a>
+                            
+                        </li>
+                        <li>
+                            
+                            <a href="https://twitter.com/MyTwitterAccount" target="_blank">Twitter</a>
+                            
+                        </li>
+                        <li>
+                            
+                            <a href="https://facebook.com/MyFacebookAccount" target="_blank">Facebook</a>
+                            
+                        </li>
+                        <li>
+                            <a href="/open-sdg-site-starter/about/cookies-and-privacy/">Cookies</a>
+                            
+                        </li>
+                        
+                        
+                        
+                        <li>
+                            <a href="/open-sdg-site-starter/config">Configuration</a>
+                        </li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js" integrity="sha384-ficRBwtap/VLzILv81vIvgp30PoJYnlCm96tPpNYHXAf+h9SIThOZxxIzRUzbpAh" crossorigin="anonymous"></script>
+<script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js" integrity="sha384-jIAE3P7Re8BgMkT0XOtfQ6lzZgbDw/02WeRMJvXK3WMHBNynEx5xofqia1OHuGh0" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js" integrity="sha256-Y26AMvaIfrZ1EQU49pf6H4QzVTrOI8m9wQYKkftBt4s=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/patternomaly@1.3.2/dist/patternomaly.js" integrity="sha384-kdgUFNEbslNOEAQ/zFH9wjDORAbvN0KUYOpfJIJYPdjtzLXkZsMJAXU9HPpi5B5c" crossorigin="anonymous"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha384-eEX5kO4tdQpY+eTjDbZNPlMm4QhsK+kosSZtkzp+uZk0L5g0lSzmWXWHzKDoOzA7" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.3/dist/html2canvas.js" integrity="sha384-3qyhlVVDXXiWhzgKIoL/aw+uaXN5kyAFE0Jv2LGoV+nnQnum4ebt1QAtRbjnz9pL" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js" integrity="sha384-KQ8aykg/lc6595wSrMplFVs4kRS66x+EdkX7EQsJ2Pe6FX7l3tMqyD1Am0c2dKBG" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+<script>translations['general'] = translations['general'] || {};
+    translations['general']['hide'] = 'hide';</script>
+
+<script>translations['search'] = translations['search'] || {};
+    translations['search']['search'] = 'Search';</script>
+
+<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20250819114449'></script>
+
+
+    
+    
+    <script src="/open-sdg-site-starter/assets/js/custom.js?v=20250819114449"></script><script>
+    new indicatorInit();
+    new accessibilitySwitcher();
+</script>
+
+
+</body>
+</html>

@@ -1977,104 +1977,20 @@ body.contrast-high .indicator.goal-banner .goal-tiles img {
 body.contrast-high.layout-goals #main-content .goal-tiles .global-goals-extra-icon img:hover {
   box-shadow: none; }
 
-.layout-config-builder .je-checkbox {
-  margin-right: 10px; }
-.layout-config-builder i.fa {
-  color: #0b0c0c; }
-.layout-config-builder .btn-group .btn span {
-  color: #0b0c0c; }
-.layout-config-builder .config-widgets {
-  margin-top: 30px;
-  margin-bottom: 10px;
-  background-color: #f5f5f5;
-  padding: 20px; }
-  .layout-config-builder .config-widgets #button_holder {
-    margin-top: 10px; }
-    .layout-config-builder .config-widgets #button_holder .config-download-button {
-      margin-top: 10px;
-      margin-bottom: 0; }
-    .layout-config-builder .config-widgets #button_holder .config-repository-button {
-      margin-top: 10px; }
-    @media only screen and (min-width: 768px) {
-      .layout-config-builder .config-widgets #button_holder {
-        margin-top: 0;
-        text-align: right; }
-        .layout-config-builder .config-widgets #button_holder .config-repository-button {
-          margin-left: 10px; } }
-    @media only screen and (min-width: 1200px) {
-      .layout-config-builder .config-widgets #button_holder .config-download-button, .layout-config-builder .config-widgets #button_holder .config-repository-button {
-        margin-top: 0; } }
-.layout-config-builder .well {
-  background: none;
-  padding: 0;
-  border: none; }
-.layout-config-builder div[data-schemapath="root"] > .well > div > div > .row {
-  margin-bottom: 30px;
-  padding-bottom: 5px;
-  padding-top: 10px;
-  background-color: #f5f5f5; }
-.layout-config-builder div[data-schemapath="root"] > .well > div > div > .row > div[data-schematype] > div > label {
-  font-size: 24px;
-  font-weight: 700; }
-.layout-config-builder div[data-schemapath="root"] > .well > div > div > .row > div[data-schematype] > div a {
-  margin-top: 15px;
-  display: block;
-  margin-bottom: 15px; }
-.layout-config-builder div[data-schemapath="root"] > .je-header {
-  display: none !important; }
-.layout-config-builder .help-block {
-  color: #0b0c0c; }
-.layout-config-builder #no_results {
-  background-color: #f0ad4e;
-  padding: 20px;
-  margin: 20px; }
-.layout-config-builder .errormsg {
-  color: #a94442;
-  font-weight: bold; }
-.layout-config-builder .config-required {
-  color: #a94442; }
-.layout-config-builder .translation-link {
-  margin-top: 0;
-  margin-bottom: 20px; }
-.layout-config-builder.contrast-high .config-widgets {
-  background-color: black; }
-.layout-config-builder.contrast-high div[data-schemapath="root"] > .well > div > div > .row {
-  background-color: black; }
-.layout-config-builder.contrast-high .help-block {
-  color: white; }
-.layout-config-builder.contrast-high #no_results {
-  background-color: #FFDD00;
-  color: black; }
-.layout-config-builder.contrast-high .errormsg {
-  color: #a94442; }
-.layout-config-builder.contrast-high .config-required {
-  color: #a94442; }
-.layout-config-builder.contrast-high .editor-toolbar {
-  background-color: white;
-  opacity: 1;
-  border-bottom: 2px solid black; }
-.layout-config-builder.contrast-high .btn-group .btn span {
-  color: black; }
-
-body.contrast-high.layout-config-builder .config-widgets {
-  background-color: black; }
-body.contrast-high.layout-config-builder .config-repository-button span {
-  color: black; }
-
-.layout-config-builder-2 .MuiGrid-container > .MuiGrid-root.MuiGrid-item.MuiGrid-grid-xs-true:not(:empty) {
+.layout-config-builder .MuiGrid-container > .MuiGrid-root.MuiGrid-item.MuiGrid-grid-xs-true:not(:empty) {
   border-top: 5px solid #1976d2;
   padding-top: 20px;
   margin-top: 20px; }
-  .layout-config-builder-2 .MuiGrid-container > .MuiGrid-root.MuiGrid-item.MuiGrid-grid-xs-true:not(:empty):first-child {
+  .layout-config-builder .MuiGrid-container > .MuiGrid-root.MuiGrid-item.MuiGrid-grid-xs-true:not(:empty):first-child {
     margin-top: -0.5em; }
-  .layout-config-builder-2 .MuiGrid-container > .MuiGrid-root.MuiGrid-item.MuiGrid-grid-xs-true:not(:empty) .MuiGrid-container > .MuiGrid-root.MuiGrid-item.MuiGrid-grid-xs-true:not(:empty) {
+  .layout-config-builder .MuiGrid-container > .MuiGrid-root.MuiGrid-item.MuiGrid-grid-xs-true:not(:empty) .MuiGrid-container > .MuiGrid-root.MuiGrid-item.MuiGrid-grid-xs-true:not(:empty) {
     border-top: none; }
-.layout-config-builder-2 .MuiButton-root,
-.layout-config-builder-2 .MuiTab-root,
-.layout-config-builder-2 .MuiTypography-root,
-.layout-config-builder-2 .MuiFormLabel-root {
+.layout-config-builder .MuiButton-root,
+.layout-config-builder .MuiTab-root,
+.layout-config-builder .MuiTypography-root,
+.layout-config-builder .MuiFormLabel-root {
   font-family: "Open Sans", Helvetica, Arial, sans-serif; }
-.layout-config-builder-2 .MuiButton-root {
+.layout-config-builder .MuiButton-root {
   color: white;
   border: none !important;
   background: #00703c !important;
@@ -2083,9 +1999,9 @@ body.contrast-high.layout-config-builder .config-repository-button span {
   border-radius: 0;
   position: relative;
   text-transform: capitalize; }
-  .layout-config-builder-2 .MuiButton-root:visited {
+  .layout-config-builder .MuiButton-root:visited {
     color: white; }
-  .layout-config-builder-2 .MuiButton-root:focus {
+  .layout-config-builder .MuiButton-root:focus {
     color: #0b0c0c;
     color: #0b0c0c !important;
     outline: 3px solid transparent !important;
@@ -2093,115 +2009,118 @@ body.contrast-high.layout-config-builder .config-repository-button span {
     outline-offset: 0 !important;
     box-shadow: 0 -2px #ffdd00, 0 4px #0b0c0c !important;
     text-decoration: none !important; }
-  .layout-config-builder-2 .MuiButton-root:active {
+  .layout-config-builder .MuiButton-root:active {
     background: #005a30 !important; }
-  .layout-config-builder-2 .MuiButton-root:hover {
+  .layout-config-builder .MuiButton-root:hover {
     background: #005a30 !important; }
-  .layout-config-builder-2 .MuiButton-root:visited {
+  .layout-config-builder .MuiButton-root:visited {
     color: white !important; }
-  .layout-config-builder-2 .MuiButton-root:focus {
+  .layout-config-builder .MuiButton-root:focus {
     background: #fd0 !important;
     color: #0b0c0c !important; }
-.layout-config-builder-2 .MuiTab-root {
+.layout-config-builder .MuiTab-root {
   text-transform: capitalize; }
-.layout-config-builder-2 .MuiAppBar-root {
+.layout-config-builder .MuiAppBar-root {
   background-color: #eee;
   color: #0b0c0c; }
-.layout-config-builder-2 .MuiInput-input:not([role="combobox"]) {
+.layout-config-builder .MuiInput-input:not([role="combobox"]) {
   border: 1px solid #767676;
   padding: 5px; }
-.layout-config-builder-2 .MuiTabs-scroller {
+.layout-config-builder .MuiTabs-scroller {
   padding-left: 10px;
   padding-right: 10px; }
-.layout-config-builder-2 .MuiGrid-spacing-xs-2 {
+.layout-config-builder .MuiGrid-spacing-xs-2 {
   justify-content: space-between; }
-  .layout-config-builder-2 .MuiGrid-spacing-xs-2 > .MuiGrid-item:first-child {
+  .layout-config-builder .MuiGrid-spacing-xs-2 > .MuiGrid-item:first-child {
     max-width: 100%; }
-  .layout-config-builder-2 .MuiGrid-spacing-xs-2 > .MuiGrid-itm:last-child {
+  .layout-config-builder .MuiGrid-spacing-xs-2 > .MuiGrid-itm:last-child {
     max-width: 50%; }
-    .layout-config-builder-2 .MuiGrid-spacing-xs-2 > .MuiGrid-itm:last-child .MuiListItem-root .MuiListItemText-root {
+    .layout-config-builder .MuiGrid-spacing-xs-2 > .MuiGrid-itm:last-child .MuiListItem-root .MuiListItemText-root {
       min-width: fit-content; }
-    .layout-config-builder-2 .MuiGrid-spacing-xs-2 > .MuiGrid-itm:last-child .MuiListItemSecondaryAction-root {
+    .layout-config-builder .MuiGrid-spacing-xs-2 > .MuiGrid-itm:last-child .MuiListItemSecondaryAction-root {
       right: -50px; }
+.layout-config-builder .docs-content {
+  max-width: 1000px;
+  overflow: scroll; }
 
-body.contrast-high.layout-config-builder-2 .config-widgets {
+body.contrast-high.layout-config-builder .config-widgets {
   background-color: black; }
-body.contrast-high.layout-config-builder-2 .config-repository-button span {
+body.contrast-high.layout-config-builder .config-repository-button span {
   color: black; }
-body.contrast-high.layout-config-builder-2 .MuiInputBase-root textarea {
+body.contrast-high.layout-config-builder .MuiInputBase-root textarea {
   background-color: white; }
-body.contrast-high.layout-config-builder-2 .MuiIconButton-root {
+body.contrast-high.layout-config-builder .MuiIconButton-root {
   background-color: white;
   color: black; }
-body.contrast-high.layout-config-builder-2 .MuiToolbar-root .MuiIconButton-root {
+body.contrast-high.layout-config-builder .MuiToolbar-root .MuiIconButton-root {
   background-color: white; }
-body.contrast-high.layout-config-builder-2 .MuiButton-root {
+body.contrast-high.layout-config-builder .MuiButton-root {
   color: black !important;
   background: #eeeeee !important; }
-  body.contrast-high.layout-config-builder-2 .MuiButton-root:visited {
+  body.contrast-high.layout-config-builder .MuiButton-root:visited {
     color: black !important; }
-  body.contrast-high.layout-config-builder-2 .MuiButton-root:focus {
+  body.contrast-high.layout-config-builder .MuiButton-root:focus {
     color: black !important;
     color: #0b0c0c !important;
     background-color: #ffdd00 !important;
     box-shadow: 0 -2px #ffdd00, 0 4px #0b0c0c !important; }
-  body.contrast-high.layout-config-builder-2 .MuiButton-root:active {
+  body.contrast-high.layout-config-builder .MuiButton-root:active {
     background: #FFDD00 !important; }
-  body.contrast-high.layout-config-builder-2 .MuiButton-root:hover {
+  body.contrast-high.layout-config-builder .MuiButton-root:hover {
     background: #DBDAD9 !important; }
-  body.contrast-high.layout-config-builder-2 .MuiButton-root:focus {
+  body.contrast-high.layout-config-builder .MuiButton-root:focus {
     background: #FFDD00 !important; }
-body.contrast-high.layout-config-builder-2 .MuiInputLabel-root {
+body.contrast-high.layout-config-builder .MuiInputLabel-root {
   color: white; }
-body.contrast-high.layout-config-builder-2 .MuiInputLabel-animated {
+body.contrast-high.layout-config-builder .MuiInputLabel-animated {
   color: black;
   background-color: white;
   z-index: 999; }
-body.contrast-high.layout-config-builder-2 .MuiAutocomplete-popper .MuiPaper-root .MuiAutocomplete-listbox .MuiAutocomplete-option {
+body.contrast-high.layout-config-builder .MuiAutocomplete-popper .MuiPaper-root .MuiAutocomplete-listbox .MuiAutocomplete-option {
   color: black; }
-body.contrast-high.layout-config-builder-2 input {
+body.contrast-high.layout-config-builder input {
   background-color: white; }
-body.contrast-high.layout-config-builder-2 .MuiAccordionSummary-root, body.contrast-high.layout-config-builder-2 .MuiAccordionSummary-root:focus {
+body.contrast-high.layout-config-builder .MuiAccordionSummary-root, body.contrast-high.layout-config-builder .MuiAccordionSummary-root:focus {
   color: black !important;
   background-color: white !important; }
-  body.contrast-high.layout-config-builder-2 .MuiAccordionSummary-root .MuiAccordionSummary-content .MuiTypography-root, body.contrast-high.layout-config-builder-2 .MuiAccordionSummary-root .MuiAccordionSummary-content span, body.contrast-high.layout-config-builder-2 .MuiAccordionSummary-root:focus .MuiAccordionSummary-content .MuiTypography-root, body.contrast-high.layout-config-builder-2 .MuiAccordionSummary-root:focus .MuiAccordionSummary-content span {
+  body.contrast-high.layout-config-builder .MuiAccordionSummary-root .MuiAccordionSummary-content .MuiTypography-root, body.contrast-high.layout-config-builder .MuiAccordionSummary-root .MuiAccordionSummary-content span, body.contrast-high.layout-config-builder .MuiAccordionSummary-root:focus .MuiAccordionSummary-content .MuiTypography-root, body.contrast-high.layout-config-builder .MuiAccordionSummary-root:focus .MuiAccordionSummary-content span {
     color: black;
     background-color: white; }
-body.contrast-high.layout-config-builder-2 .MuiAccordionSummary-content .MuiIconButton-root {
+body.contrast-high.layout-config-builder .MuiAccordionSummary-content .MuiIconButton-root {
   background-color: black;
   color: white !important; }
-  body.contrast-high.layout-config-builder-2 .MuiAccordionSummary-content .MuiIconButton-root .MuiSvgIcon-root {
+  body.contrast-high.layout-config-builder .MuiAccordionSummary-content .MuiIconButton-root .MuiSvgIcon-root {
     z-index: 999;
     background-color: black; }
-  body.contrast-high.layout-config-builder-2 .MuiAccordionSummary-content .MuiIconButton-root .MuiTouchRipple-root {
+  body.contrast-high.layout-config-builder .MuiAccordionSummary-content .MuiIconButton-root .MuiTouchRipple-root {
     background-color: black !important; }
-  body.contrast-high.layout-config-builder-2 .MuiAccordionSummary-content .MuiIconButton-root:focus .MuiSvgIcon-root {
+  body.contrast-high.layout-config-builder .MuiAccordionSummary-content .MuiIconButton-root:focus .MuiSvgIcon-root {
     background-color: #FFDD00;
     color: black; }
-  body.contrast-high.layout-config-builder-2 .MuiAccordionSummary-content .MuiIconButton-root:focus .MuiTouchRipple-root {
+  body.contrast-high.layout-config-builder .MuiAccordionSummary-content .MuiIconButton-root:focus .MuiTouchRipple-root {
     background-color: #FFDD00 !important; }
-body.contrast-high.layout-config-builder-2 .MuiCollapse-root {
+body.contrast-high.layout-config-builder .MuiCollapse-root {
   background-color: black; }
-body.contrast-high.layout-config-builder-2 .MuiTableHead-root .MuiIconButton-root {
+body.contrast-high.layout-config-builder .MuiTableHead-root .MuiIconButton-root {
   background-color: white; }
-body.contrast-high.layout-config-builder-2 .docs-content {
+body.contrast-high.layout-config-builder .docs-content {
   padding: 5px; }
-  body.contrast-high.layout-config-builder-2 .docs-content p, body.contrast-high.layout-config-builder-2 .docs-content h1, body.contrast-high.layout-config-builder-2 .docs-content h2, body.contrast-high.layout-config-builder-2 .docs-content h3, body.contrast-high.layout-config-builder-2 .docs-content h4, body.contrast-high.layout-config-builder-2 .docs-content h5, body.contrast-high.layout-config-builder-2 .docs-content h6, body.contrast-high.layout-config-builder-2 .docs-content span, body.contrast-high.layout-config-builder-2 .docs-content td, body.contrast-high.layout-config-builder-2 .docs-content th, body.contrast-high.layout-config-builder-2 .docs-content li, body.contrast-high.layout-config-builder-2 .docs-content {
+  body.contrast-high.layout-config-builder .docs-content p, body.contrast-high.layout-config-builder .docs-content h1, body.contrast-high.layout-config-builder .docs-content h2, body.contrast-high.layout-config-builder .docs-content h3, body.contrast-high.layout-config-builder .docs-content h4, body.contrast-high.layout-config-builder .docs-content h5, body.contrast-high.layout-config-builder .docs-content h6, body.contrast-high.layout-config-builder .docs-content span, body.contrast-high.layout-config-builder .docs-content td, body.contrast-high.layout-config-builder .docs-content th, body.contrast-high.layout-config-builder .docs-content li, body.contrast-high.layout-config-builder .docs-content {
     color: black;
     background-color: white; }
-body.contrast-high.layout-config-builder-2 .MuiCard-root {
+body.contrast-high.layout-config-builder .MuiCard-root {
   background-color: black; }
-body.contrast-high.layout-config-builder-2 .MuiSwitch-track {
+body.contrast-high.layout-config-builder .MuiSwitch-track {
   background-color: #767676;
   opacity: 0.9; }
-body.contrast-high.layout-config-builder-2 .MuiSwitch-switchBase.Mui-checked .MuiSwitch-thumb {
+body.contrast-high.layout-config-builder .MuiSwitch-switchBase.Mui-checked .MuiSwitch-thumb {
   background-color: #FFDD00; }
-body.contrast-high.layout-config-builder-2 .MuiDialog-container .MuiPaper-root {
+body.contrast-high.layout-config-builder .MuiDialog-container .MuiPaper-root {
   background-color: black;
   border: 1px solid white; }
-body.contrast-high.layout-config-builder-2 .Mui-error {
+body.contrast-high.layout-config-builder .Mui-error {
   color: red; }
-body.contrast-high.layout-config-builder-2 .MuiFormHelperText-root.Mui-error {
+body.contrast-high.layout-config-builder .MuiFormHelperText-root.Mui-error {
   background-color: white;
   margin-bottom: 10px; }
 
