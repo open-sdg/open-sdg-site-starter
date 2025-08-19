@@ -128,7 +128,7 @@ opensdg.autotrack = function(preset, category, action, label) {
     this.proxy = options.proxy;
     this.proxySerieses = options.proxySerieses;
     this.startValues = options.startValues;
-    this.configObsAttributes = null;
+    this.configObsAttributes = [];
     this.allObservationAttributes = options.allObservationAttributes;
     this._browserDecimalSeparator = this.viewHelpers.getBrowserDecimalSeparator();
 
@@ -1372,7 +1372,7 @@ function nonFieldColumns() {
       columns.push(tsAttribute.field);
     });
   }
-  var observationAttributes = null;
+  var observationAttributes = [];
   if (observationAttributes && observationAttributes.length > 0) {
     observationAttributes.forEach(function(oAttribute) {
       columns.push(oAttribute.field);
@@ -2574,7 +2574,7 @@ function prepareDataForDataset(years, rows, allObservationAttributes) {
     data: [],
     observationAttributes: [],
   };
-  var configObsAttributes = null;
+  var configObsAttributes = [];
   if (configObsAttributes && configObsAttributes.length > 0) {
     configObsAttributes = configObsAttributes.map(function(obsAtt) {
       return obsAtt.field;
@@ -2803,7 +2803,7 @@ function inputEdges(edges) {
       return true;
     });
   }
-  var configuredObservationAttributes = null;
+  var configuredObservationAttributes = [];
   if (configuredObservationAttributes && configuredObservationAttributes.length > 0) {
     configuredObservationAttributesFlat = configuredObservationAttributes.map(function(att) { return att.field; });
     edgesData = edgesData.filter(function(edge) {
@@ -2847,7 +2847,7 @@ function getAllObservationAttributes(rows) {
   }
   var obsAttributeHash = {},
       footnoteNumber = 0,
-      configObsAttributes = null;
+      configObsAttributes = [];
   if (configObsAttributes && configObsAttributes.length > 0) {
     configObsAttributes = configObsAttributes.map(function(obsAtt) {
       return obsAtt.field;
@@ -3465,7 +3465,7 @@ function updateObservationAttributes(obsAttributes) {
  * Gets the text of an observation attribute for display to the end user.
  */
 function getObservationAttributeText(obsAttribute) {
-    var configuredObsAttributes = null;
+    var configuredObsAttributes = [];
     var attributeConfig = _.find(configuredObsAttributes, function(configuredObsAttribute) {
         return configuredObsAttribute.field === obsAttribute.field;
     });
