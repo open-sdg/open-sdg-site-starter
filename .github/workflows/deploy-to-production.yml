@@ -43,10 +43,10 @@ jobs:
         bundle install
         JEKYLL_ENV=production bundle exec jekyll build --config _config.yml,_config_prod.yml
     - name: Deploy to GitHub Pages
-      uses: JamesIves/github-pages-deploy-action@3.7.1
+      uses: JamesIves/github-pages-deploy-action@v4
       with:
-        REPOSITORY_NAME: PRODUCTION_ORGANISATION/PRODUCTION_ORGANISATION.github.io
-        ACCESS_TOKEN: ${{ secrets.token }}
-        BRANCH: main
-        FOLDER: _site
-        CLEAN: true
+        repository-name: PRODUCTION_ORGANISATION/PRODUCTION_ORGANISATION.github.io
+        token: ${{ secrets.token }}
+        branch: main
+        folder: _site
+        clean: true
