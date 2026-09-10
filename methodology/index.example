@@ -142,7 +142,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20251016095401">
+        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20260910105643">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -447,7 +447,7 @@ The thresholds are described in the table below:
 </table>
 *<em>The scaling factor C is only applied for indicators with natural limits as defined below. It is a variable between 0 and 1 that reduces thresholds greater than 0% to produce more realistic progress assessments near limits.</em>
 
-In some cases, indicators may have natural maximum or minimum limits. For example, GIF indicator 7.1.1 *Proportion of population with access to electricity* cannot exceed a maximum limit of 100%. If the value of the indicator in the base year is already near the natural limit, it may be impossible to achieve the growth rates required to attain a progress status of “On track” or “Progress made but acceleration needed” without exceeding the maximum limit of 100%. In these cases, the growth rate thresholds presented in the table are scaled down by a factor that accounts for the base value *y*<sub>0</sub> and natural limit *y*<sub>lim</sub> of the indicator. Progress thresholds greater than 0% are reduced by a factor of
+In some cases, indicators may have natural maximum or minimum limits. For example, GIF indicator 9.c.1 *Proportion of population covered by a mobile network, by technology* cannot exceed a maximum limit of 100%. If the value of the indicator in the base year is already near the natural limit, it may be impossible to achieve the growth rates required to attain a progress status of “On track” or “Progress made but acceleration needed” without exceeding the maximum limit of 100%. In these cases, the growth rate thresholds presented in the table are scaled down by a factor that accounts for the base value *y*<sub>0</sub> and natural limit *y*<sub>lim</sub> of the indicator. Progress thresholds greater than 0% are reduced by a factor of
 
 ![Scaling factor equation](https://raw.githubusercontent.com/sdg-data-canada-odd-donnees/cif-cic_dev/develop/assets/img/methodology/coeff.svg)
 
@@ -959,12 +959,12 @@ Sachs, J., Kroll, C., Lafortune, G., Fuller, G., Woelm, F. (2021). *The Decade o
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = '';</script>
 
-<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20251016095401'></script>
+<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20260910105643'></script>
 
 
     
     
-    <script src="/open-sdg-site-starter/assets/js/custom.js?v=20251016095401"></script><script>
+    <script src="/open-sdg-site-starter/assets/js/custom.js?v=20260910105643"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
