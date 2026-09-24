@@ -19,7 +19,7 @@ breadcrumbs:
       label: general.home
     - path: /news
       label: menu.updates
-config_form_library_src: https://open-sdg.org/open-sdg-config-form/2.4.0/bundle.js
+config_form_library_src: https://open-sdg.org/open-sdg-config-form/2.4.1/bundle.js
 cookie_consent_form:
   enabled: false
 country:
